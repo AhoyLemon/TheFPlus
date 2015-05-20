@@ -1,0 +1,17 @@
+@media (min-width: $desktop-min) {
+  .mobile-menu { display: none; }
+  a.flapjax { display: none; }
+}
+
+@media (max-width: $mobile-max) {
+  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:60px; background: $black;
+    .flapjax { display: block; width:60px; height: 60px; float: left; 
+      svg { height:100%; width:100%; }
+    }
+    .mobile-logo { display: block; height: 60px; float: right; }
+  }
+}
+
+.flapjax { @include transition(all, 0.62s);
+  &.active { @include rotate(180deg); }
+}

@@ -1,0 +1,25 @@
+//NORMALIZE, GET DEFAULTS
+@import "partials/_reset";
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/_extends";
+@import "partials/_z-index";
+@import "partials/_defaults";
+
+//STUFF
+@import "partials/_sidebar";
+//@import "partials/_mobile-menu";
+@import "partials/_main";
+@import "partials/_summaries";
+@import "partials/_tags";
+@import "partials/_episode";
+@import "partials/_person";
+@import "partials/_blog";
+
+//A COUPLE UTILITIES
+@import "partials/_disqus";
+@import "partials/_search";
+@import "partials/_youtube";
+
+//SPECIFIC PAGES
+@import "partials/_dump";

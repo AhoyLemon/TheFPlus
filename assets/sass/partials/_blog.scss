@@ -1,0 +1,43 @@
+.blog.full {
+  header {
+    h4 { float: right; padding-right: 1em; margin: 0; }
+    time { float: left; display:block; padding-top: 0.3em; }
+  }
+  .social-actions { padding-top: 0.25em; clear: both; float: none; text-align: right;
+    > a { display:inline-block;
+      &.social { height:36px; width:36px; margin-right: 1%;
+        &:hover { @include scale(1.4);
+          &.download { color:#6f2db9 }
+          &.read { color:#1f879d; }
+          &.twitter { color:#55acee; }
+          &.googleplus { color:#D34836; }
+          &.flattr { color:#93d72e; }
+          &.facebook { color:#3B5998; }
+        }
+      }
+    }
+    .share-label { display:inline-block; padding-top: 1em; text-align: right; }
+  }
+}
+
+.blog-tags {
+  .label { display: block; }
+  ul { padding-left: 0; }
+  a { @extend %tag; cursor: text;
+    &:hover { text-decoration: none !important; }
+    &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
+      &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; }
+    }
+  }
+}
+
+.summaries {
+  .read {
+    .image-holder {
+      &:hover {
+        img { @include filter(grayscale,0.7); opacity: 0.7; }
+        .hover-cover { @include translateY(0); }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+%clearfix {
+  &:after { content: ""; display: table;clear: both; }
+}
+
+%truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+%commalist {
+  li { display: inline;
+    &:after { content:','; }
+    &:last-child:after { content:''; }
+  }
+}
+
+%fanart { background-color:$episode; border:1px solid #777; display: inline-block; max-width: 480px;
+  img { padding: 15px; }
+  figcaption { background-color:#777; color:$white; text-align: center; }
+}

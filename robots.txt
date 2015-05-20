@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /fanart
+Disallow: /error
+Disallow: /find
+Disallow: /page:*
+Disallow: /*?option
+Disallow: /episode/tag:*

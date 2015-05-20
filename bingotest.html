@@ -1,0 +1,185 @@
+<html>
+  <body>
+
+    <div id="buttondiv">
+      <button id="NewCard" onclick="reset()">New Card</button>
+      <button id="SaveCard" onclick="savecard()">Save Card</button>
+      <button id="LoadCard" onclick="loadcard()">Load Card</button>
+      <button id="DeleteSavedCard" onclick="clearsaved()">Delete Saved Card</button>
+    </div>
+    
+    <div id="carddiv" onload="loadorreset()">
+      <table class = "bingotable">
+        <tr class="bingorow">
+          <td onclick="toggle(this)" class="bingocell" id="cell1"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell2"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell3"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell4"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell5"></td>
+        </tr>
+        <tr class="bingorow">
+          <td onclick="toggle(this)" class="bingocell" id="cell6"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell7"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell8"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell9"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell10"></td>
+        </tr>
+        <tr class="bingorow">
+          <td onclick="toggle(this)" class="bingocell" id="cell11"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell12"></td>
+          <td class="bingocellselected" id="centercell">Bad Writing (Free Space)</td>
+          <td onclick="toggle(this)" class="bingocell" id="cell13"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell14"></td>
+        </tr>
+        <tr class="bingorow">
+          <td onclick="toggle(this)" class="bingocell" id="cell15"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell16"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell17"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell18"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell19"></td>
+        </tr>
+        <tr class="bingorow">
+          <td onclick="toggle(this)" class="bingocell" id="cell20"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell21"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell22"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell23"></td>
+          <td onclick="toggle(this)" class="bingocell" id="cell24"></td>
+        </tr>
+      </table>
+      <br>
+    </div>
+    
+    <script>
+	function reset(){
+		var toReset = document.getElementsByClassName("bingocellselected");
+		while(toReset.length > 0){
+			toReset[0].className="bingocell";
+		}
+		document.getElementById("centercell").className="bingocellselected";
+		var messages = [
+			"Furry",
+			"Terrible Advice",
+			"Video Game Reference",
+			"Cartoon or Anime Reference",
+			"Misogyny or PUA",
+			"Poor Understanding of Human Anatomy",
+			"Poor Understanding of the Opposite Sex",
+            "Poor Understanding of Human Emotions in General",
+			"Obviously Fake Story",
+			"\"I'm the idea guy, you do all the work.\"",
+			"Community Specific Jargon",
+			"Community Specific Username",
+			"Horrible Things Near, On, or Inside of Genitals",
+			"\"Please normalize my fucked up behavior, Internet.\"",
+			"Asexuality",
+			"New Age or Pagan Bullshit",
+			"Poetry",
+			"Fan Fiction",
+			"Terrible Pun",
+			"Sexualization of Entertainment Made for Children",
+			"A Fetish Unrelated to the Episode's Topic",
+			"Oddly Low or High Post Count",
+			"\"I don't have that problem. Goodbye!\"",
+			"\"Give me money.\"",
+			"Pointless Drama",
+			"Actually Good Pun",
+			"\"Nevermind that, let's talk about me.\"",
+			"Inappropriate Reference to a Family Member",
+			"Tumblr",
+			"Drug or Alcohol Reference",
+			"Extremely Specific Sexual Orientation or Fetish",
+			"Ugly Website",
+			"Someone Who Should Probably Be in Jail",
+			"Incredibly Petty Complaint",
+			"Way Too Much Pop Culture",
+			"A Statement that Leaves Everyone Stunned",
+			"Many Words About Something That Will Never Exist",
+			"Sex or Masturbation Story",
+			"A List That is Way Too Long",
+			"Extreme Narcissism",
+			"A Recipe or Instructions for Something Terrible",
+			"\"Help me make this important life decision, Internet.\"",
+			"A POST IN ALL CAPS",
+            "A Surprisingly Intelligent Post",
+            "A Post that is Nonsense Even in Context",
+            "Someone Who Probably Doesn't Belong in the Community",
+            "Cutesy Term for Something Disgusting or Sexual",
+			"A **** That Actually Means \"Fuck.\""
+			];
+		var i,selected;
+		for(i=1; i < 25; i++){
+			selected = Math.floor(Math.random() * messages.length);	
+			document.getElementById("cell" + i).innerHTML = messages[selected];
+			messages.splice(selected,1);
+		}
+	}
+	function toggle(id){
+		if(id.className == "bingocell"){
+			id.className = "bingocellselected";
+		}
+		else{
+			id.className = "bingocell";
+		}
+	}
+
+    function savecard(){
+        var selected = document.getElementsByClassName("bingocellselected");
+        var i;
+        for (i = 0; i < selected.length; i++){
+          localStorage.setItem("fplusbingo"+selected[i].id+"message",selected[i].innerHTML);
+          localStorage.setItem("fplusbingo"+selected[i].id+"selected",1);
+        }
+        selected = document.getElementsByClassName("bingocell");
+        for (i = 0; i < selected.length; i++){
+          localStorage.setItem("fplusbingo"+selected[i].id+"message",selected[i].innerHTML);
+          localStorage.setItem("fplusbingo"+selected[i].id+"selected",0);
+        }
+    }
+
+    function loadcard(){
+        if(localStorage.getItem("fplusbingocell1message")==null){
+          return;
+        }
+        var i;
+        for(i = 1; i < 25; i++){
+          document.getElementById("cell"+i).innerHTML = localStorage.getItem("fplusbingocell"+i+"message");
+          if(localStorage.getItem("fplusbingocell"+i+"selected")=="0"){
+            document.getElementById("cell"+i).className="bingocell";
+          }
+          else{
+             document.getElementById("cell"+i).className="bingocellselected";
+          }
+        }
+    }
+
+    function clearsaved(){
+      var i;
+      for(i=1; i<25;i++){
+        localStorage.removeItem("fplusbingocell"+i+"selected");
+        localStorage.removeItem("fplusbingocell"+i+"message");
+      }
+    }
+    function loadorreset(){
+       if(localStorage.getItem("fplusbingocell1message")==null){
+          reset();
+        }
+        else{
+          loadcard();
+        }
+    }
+</script>
+    
+    <style>
+      .bingotable { border:25px solid #ccc; font-size:1.1vw; }
+   .bingocell, .bingocellselected { border: 1px solid #aaa; cursor: pointer; vertical-align: middle; }
+    .bingocell:hover { background-color:#343434; color:#fff; }
+   .bingotable {border-collapse: collapse; margin-left: auto; margin-right: auto; }
+   .bingocell, .bingocellselected { text-align: center; background-color: white; height: 8em; width: 8em;padding:0.5em; }
+   .bingocellselected {background-image:url("http://thefpl.us/also-made/bingo/fplus-daub.png"); background-repeat:no-repeat; background-position:center center; background-size:contain; }
+   #buttondiv {text-align:center; margin-bottom: 1em; }
+    #buttondiv button { border: none; color: #e22626; padding: .5em 1em; background-color: #eee; border: 1px solid #e22626; font-size: .8em; font-family: 'Source Sans Pro', sans-serif; cursor: pointer; outline:none; }
+      #buttondiv button:hover { background-color:#e22626; color:#fff; }
+    </style>
+
+  </body>
+</html>

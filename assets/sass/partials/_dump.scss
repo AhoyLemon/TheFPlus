@@ -1,0 +1,12 @@
+ul.dump { padding-left: 0; display: table; width: 100%;
+  li { display: table-row;
+    > a, > span, > time { display: table-cell; padding: 0.2em 0.5em;  }
+    &:nth-child(even) { background-color:rgba($black, 0.1); }
+  }
+  time { font-size:0.8em; }
+  .thead {
+    .th { text-transform: uppercase; font-weight: $normal;
+      &:first-child { padding-left: 0.5em; }
+    }
+  }
+}
