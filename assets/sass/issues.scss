@@ -1,0 +1,29 @@
+//NORMALIZE, GET DEFAULTS
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/_extends";
+@import "partials/_z-index";
+
+//STUFF
+.issue-box { border:1px solid $teal; margin-bottom: 2em;
+  header { background-color:$teal; color:$body; padding:0 10px !important; 
+    span { font-size:1.7em; font-weight: 600; text-transform: uppercase; }
+  }
+  dt { border-top:1px solid $teal; padding-left: 10px; padding-right: 10px; }
+  dd { padding:0 10px 10px 10px; font-size:80%; }
+  .title { font-size: 1.25em; font-weight: 400; color:$teal; }
+  .type { font-size:90%;
+    &:before { content:"("; }
+    &:after { content:")"; }
+  }
+  .description { display: block; }
+  .date { display: block; text-align: right; }
+}
+#LoadingIssues { padding-bottom: 1em; text-align: center; }
+
+.issues-nav { text-align: center; padding-bottom: 1em; 
+  &.hidden { display: none; }
+  button { font-family:$source; background-color:$body; color:$red; border:1px solid $red; font-size:1em; cursor: pointer; outline: none; font-weight: 300; padding:.25em .75em;
+    &:hover, &.active { background-color:$red; color:$body; }
+  }
+}

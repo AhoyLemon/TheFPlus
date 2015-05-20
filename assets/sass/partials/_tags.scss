@@ -1,0 +1,29 @@
+$tag-bg: rgba($white,0.5);
+$tag-border: rgba($black,0.8);
+
+%tag {
+  font-size:0.6em;
+  background-color: $tag-bg;
+  border: 2px solid $tag-border;
+  display: inline-block;
+  position: relative;
+  border-radius: 0.3em;
+  padding: 0 0.5em 0 1em;
+  line-height: 1.6em;
+  overflow: visible;
+  color: $tag-border;
+  margin-right: 0.2em;
+  margin-bottom: 0.2em;
+  font-weight: 400;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0.2em;
+    content: '\2022';
+    font-size:1.3em;
+    font-weight: 300;
+    color:rgba($black,0.5);
+  }
+}
+
+ul.tags > li { @extend %tag; }

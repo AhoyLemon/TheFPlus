@@ -1,0 +1,72 @@
+.sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 300px; background-color: $black; color: $white; overflow-x: hidden; overflow-y: auto; z-index:$z-sidebar; font-family:$sans-serif; padding-left: 1em; padding-right:1em; 
+  > * { display: block; width: 100%; }
+  > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none;
+    &.colophon { font-size:1rem; padding-top: 2em; color:yellow; }
+  }
+  h4 { font-size: 1.1rem; color: $white; text-transform: uppercase; margin-top: 1em; }
+  .main-link { font-size: 1.6rem; padding: 0.25em 0; font-weight: 100; color: $white; text-decoration: none; display: block; border: none;
+    &:hover { background-color: $white; color: $black; }
+    &:active {background-color: $red; }
+  }
+  .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
+    a { width: 56px; height:56px; margin-right: 6px; display: block; float: left;
+      &:last-child { margin-right: 0; }
+      g { @include transition(all, 0.5s); -ms-transform-origin: 50% 50%; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+      svg {
+        .twitter *{ fill: #55acee; }
+        .ballpit * { fill: #4eb85d; }
+        .rss * { fill: #ea832f; }
+        circle { fill: none; stroke: $white; }
+      }
+      &:hover g { @include rotate(360deg); }
+      &:active g { @include scale(0.65); }
+    }
+    &.ballpit:hover svg circle { stroke: #4eb85d; }
+    &.rss:hover svg circle { stroke: #ea832f; }
+    .flattr {
+      .orange { fill:#fabb32; }
+      .green { fill:#a9c54f; }
+    }
+  }
+}
+
+.sidebar .circles a.twitter:hover svg circle { stroke:#55acee; }
+.sidebar .circles a.ballpit:hover svg circle { stroke:#4eb85d; }
+.sidebar .circles a.flattr:hover svg circle { stroke:#fabb32; }
+.sidebar .circles a.rss:hover svg circle { stroke:#ea832f; }
+
+ul.tag-cloud { padding-left: 0; clear: both; float: none;
+  li { display: inline;font-size: 0.75rem; }
+  a { color: #ffa3a3; text-decoration: none;
+    &:hover { color: #ff5c5c; }
+  }
+}
+
+#SidebarSearch { margin-top: 1em; padding: 0.25em 1em; background-color: transparent; border: 1px solid $white; font-size: 1.1em; font-family:$sans-serif; color: $white;
+  &:hover, &:focus { background-color: $white; color:$black; }
+}
+
+.flapjax { @include transition(all, 0.62s);
+  &.active { @include rotate(180deg); }
+}
+
+@media (min-width: $desktop-min) {
+  .mobile-menu { display: none; }
+  a.flapjax { display: none; }
+}
+
+@media (max-width: $mobile-max) {
+  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:60px; background: $black;
+    .flapjax { display: block; width:60px; height: 60px; float: left; 
+      svg { height:100%; width:100%; }
+    }
+    .mobile-logo { display: block; height: 60px; float: right; }
+  }
+  .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
+    &.visible { @include translateX(0); }
+    .desktop-logo { height: 60px; }
+    .flapjax { width: 70px; height: 60px; float: right; padding: 0; margin-top: 0.25em; color:$red;
+      svg { height: 100%; width:100%; }
+    }
+  }
+}

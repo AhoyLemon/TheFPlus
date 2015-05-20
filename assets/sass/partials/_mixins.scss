@@ -1,0 +1,148 @@
+
+@mixin transition($property: all, $duration: 0.3s, $animation: ease, $delay:0) { 
+  -webkit-transition: $property $duration $animation $delay;
+     -moz-transition: $property $duration $animation $delay;
+          transition: $property $duration $animation $delay;
+}
+
+@mixin background($size:cover, $position:center, $repeat:no-repeat) {
+   background-size:$size; background-position:$position; background-repeat:$repeat;
+}
+
+@mixin linear-gradient($direction, $fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background: -webkit-linear-gradient($direction, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background:    -moz-linear-gradient($direction, $fromColor, $toColor); /* FF3.6 */
+  background:     -ms-linear-gradient($direction, $fromColor, $toColor); /* IE10 */
+  background:      -o-linear-gradient($direction, $fromColor, $toColor); /* Opera 11.10+ */
+  background:         linear-gradient($direction, $fromColor, $toColor);
+}
+@mixin radial-gradient($from, $to) {
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(0,0,0,0.7)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  rgba(0,0,0,0.7) 0%,rgba(255,255,255,0) 70%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3000000', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin filter($filter-type,$filter-amount) { 
+  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
+  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
+  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
+  -o-filter: $filter-type+unquote('(#{$filter-amount})');
+  filter: $filter-type+unquote('(#{$filter-amount})');
+}
+
+@mixin flex-container($direction:row, $wrap:wrap, $align:strech) {
+  display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex;
+  @if $direction == row-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: horizontal;
+   } @else if $direction == column {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+   } @else if $direction == column-reverse {
+    -webkit-box-direction: reverse;
+    -webkit-box-orient: vertical;
+   } @else {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+   }
+   -webkit-flex-direction: $direction;
+   -moz-flex-direction: $direction;
+   -ms-flex-direction: $direction;
+   flex-direction: $direction;
+  -webkit-flex-wrap:$wrap; -moz-flex-wrap:$wrap; 
+  @if $wrap == nowrap {
+    -ms-flex-wrap: none;
+  } @else { 
+    -ms-flex-wrap: $wrap; 
+  }
+  flex-wrap: $wrap;
+  @if $align == flex-start { -webkit-box-align: start; -ms-flex-align: start;
+  } @else if $align == flex-end { -webkit-box-align: end; -ms-flex-align: end;
+  } @else { -webkit-box-align: $align; -ms-flex-align: $align; }
+  -webkit-align-items: $align; -moz-align-items: $align; align-items: $align;
+}
+@mixin flex-item($basis, $align:auto, $grow:1, $shrink:1) {
+  flex-basis: $basis;
+  -webkit-box-flex: $grow; -moz-box-flex: $grow; -webkit-flex:$basis $grow $shrink; -ms-flex:$basis $grow $shrink; flex:$basis $grow $shrink;
+  -webkit-align-self: $align; -ms-flex-item-align:$align; align-self: $align;
+}
+
+@mixin animation ($name, $duration, $iteration:1, $delay:0) {
+    -webkit-animation-name: $name;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $iteration;
+    -webkit-animation-delay:$delay;
+    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    -moz-animation-name: $name;
+    -moz-animation-duration: $duration;
+    -moz-animation-iteration-count: $iteration;
+    -moz-animation-delay:$delay;
+    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+ 
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration;
+    animation-delay:$delay;
+    animation-fill-mode: forwards; /* this prevents the animation from restarting! */
+}
+
+@mixin transforms($value) {
+  -webkit-transform: $value;
+      -ms-transform: $value;
+          transform: $value;
+}
+@mixin translate($x, $y) {
+     -moz-transform: translate($x, $y);
+         -o-transform: translate($x, $y);
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin translateX($percent) {
+     -moz-transform: translateX($percent);
+         -o-transform: translateX($percent);
+  -webkit-transform: translateX($percent);
+      -ms-transform: translateX($percent);
+          transform: translateX($percent);
+}
+
+@mixin translateY($percent) {
+     -moz-transform: translateY($percent);
+         -o-transform: translateY($percent);
+  -webkit-transform: translateY($percent);
+      -ms-transform: translateY($percent);
+          transform: translateY($percent);
+}
+
+@mixin rotate($d) {
+  -webkit-transform: rotate($d);
+      -ms-transform: rotate($d);
+          transform: rotate($d);
+}
+
+@mixin rotateX($d) {
+      -ms-transform: rotate($d);
+          transform: rotate($d);
+  -webkit-transform: rotateX($d);
+      -ms-transform: rotateX($d);
+          transform: rotateX($d);
+}
+@mixin skew($x, $y:0) {
+  -webkit-transform: skew($x, $y);
+      -ms-transform: skew($x, $y);
+          transform: skew($x, $y);
+}
+
+@mixin transition($property: all, $duration: 0.3s, $animation: ease, $delay:0s) { 
+  -webkit-transition: $property $duration $animation $delay;
+          transition: $property $duration $animation $delay;
+}
+@mixin scale($ratio) { -webkit-transform: scale($ratio); -ms-transform: scale($ratio); transform: scale($ratio); }

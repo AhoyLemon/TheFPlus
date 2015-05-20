@@ -1,0 +1,92 @@
+.tags.filtered { text-align: right; padding:0 1em 0.5em 0;
+  li { font-size:1.2em;
+    label { }
+  }
+}
+
+.summaries {
+  article { margin-bottom:20px;
+    header { padding:0 1em .25em 1em; } 
+    .cover { width: 100%; margin: auto; display: block; }
+    .title { font-size:1.4rem; line-height: 120%; @extend %truncate;
+      a { text-decoration: none;
+        &:hover { text-decoration: underline; }
+      }
+    }
+    summary { padding: 1em 1em 2.5em 1em; display: block; }
+    &.person summary { padding-bottom: 0; }
+    .content { text-align: justify; }
+    &.brief { position: relative;
+      .image-holder { position:relative; display: block; overflow: hidden;
+        img { @include transition(all, 1s); margin-left: 1px; margin-right:1px; }
+        .hover-cover { position: absolute; right:0; bottom:0; left:0; @include translateY(105%); @include transition();
+          svg { display: none; }
+        }
+      }
+      .cast { margin-bottom: 1em; font-size:0.85em; padding-left: 0; }
+      .author-block { margin-bottom: 1em; font-size: 0.85em; }
+      .tags { padding:1em; text-align: right;
+        li { font-size:0.8em; }
+      }
+      .published { font-size: 0.85em; }
+      //.comment.count { position: absolute; bottom:0; right:0; display: block; text-align: right; padding-right: 1.5em; line-height: 1.2em; background-image: url(../svg/comment_strong.svg); background-repeat:no-repeat; background-position: top right; background-size:contain; }
+      &.episode { background-color: $episode; border:1px solid darken($episode,35%); box-shadow: 2px 2px 2px darken($episode,35%);
+        .hover-cover { @include linear-gradient(top, rgba($episode,0), rgba($episode,0.85)); }
+      }
+      &.wrote { background-color:$wrote; border:1px solid darken($wrote,5%); box-shadow: 2px 2px 2px darken($wrote,5%);
+        .hover-cover { @include linear-gradient(top, rgba($wrote,0), rgba($wrote,0.85)); }
+      }
+      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); box-shadow: 2px 2px 2px darken($also-made,5%);
+        .hover-cover { @include linear-gradient(top, rgba($also-made,0), rgba($also-made,0.85)); }
+      }
+      .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
+        &:before { content:'#'; }
+      }
+      .time-estimate { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%); }
+    }
+  }
+  .fa { color:lighten($black,20%); }
+}
+
+nav.toggle { padding-top: 1em; padding-bottom: 1em;
+  label {font-weight: 400; }
+   a  { margin-right: 1em; font-weight: 300;
+    .checkbox { height: 1em; width: 1em; display: inline-block;
+      * { stroke-width: 10px; stroke:$black; fill: none; }
+    }
+    &.active .checkbox * { fill:$red; }
+    &:hover { 
+      .checkbox * { fill:$yellow; }
+      span { text-decoration: underline; }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .summaries { display: block; 
+    article.brief { display: block; }
+  }
+  nav.toggle {
+    a { display: block; }
+  }
+}
+@media (min-width: 461px) {
+  .summaries { @include flex-container(); justify-content: space-around; }
+}
+@media (min-width: 461px) and (max-width:1000px) {
+  .summaries {
+    article.brief { @include flex-item(calc(50% - 20px), auto, 0, 0); }
+  }
+}
+
+@media (min-width: 1001px) and (max-width:1600px) {
+  .summaries {
+    article.brief { @include flex-item(calc(33.3333% - 20px), auto, 0, 0); }
+  }
+}
+
+@media (min-width: 1601px) {
+  .summaries { 
+    article.brief { @include flex-item(calc(25% - 20px), auto, 0, 0); }
+  }
+}
