@@ -2,7 +2,7 @@
   &:hover { /*@include scale(1.2); */ @include translateY(-25%); }
 }
 
-#CommentsPage { font-size:0.75em;
+#CommentsPage { font-size:16px; padding-left: 0;
   li { list-style-type: none; }
   h5 { margin: 0; padding: 0.1em 0.7em 0 0.7em;
     a { font-weight: 100; text-transform: uppercase;
