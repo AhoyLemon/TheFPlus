@@ -1,8 +1,6 @@
 
 @mixin transition($property: all, $duration: 0.3s, $animation: ease, $delay:0) { 
-  -webkit-transition: $property $duration $animation $delay;
-     -moz-transition: $property $duration $animation $delay;
-          transition: $property $duration $animation $delay;
+  transition: $property $duration $animation $delay;
 }
 
 @mixin background($size:cover, $position:center, $repeat:no-repeat) {
@@ -29,63 +27,35 @@
 }
 
 @mixin filter($filter-type,$filter-amount) { 
-  -webkit-filter: $filter-type+unquote('(#{$filter-amount})');
-  -moz-filter: $filter-type+unquote('(#{$filter-amount})');
-  -ms-filter: $filter-type+unquote('(#{$filter-amount})');
-  -o-filter: $filter-type+unquote('(#{$filter-amount})');
   filter: $filter-type+unquote('(#{$filter-amount})');
 }
 
 @mixin flex-container($direction:row, $wrap:wrap, $align:strech) {
-  display: -webkit-box; display: -webkit-flex; display: -moz-flex; display: -ms-flexbox; display: flex;
-  @if $direction == row-reverse {
-    -webkit-box-direction: reverse;
-    -webkit-box-orient: horizontal;
-   } @else if $direction == column {
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-   } @else if $direction == column-reverse {
-    -webkit-box-direction: reverse;
-    -webkit-box-orient: vertical;
-   } @else {
-    -webkit-box-direction: normal;
-    -webkit-box-orient: horizontal;
-   }
-   -webkit-flex-direction: $direction;
-   -moz-flex-direction: $direction;
-   -ms-flex-direction: $direction;
-   flex-direction: $direction;
+  display: flex;
+  flex-direction: $direction;
   -webkit-flex-wrap:$wrap; -moz-flex-wrap:$wrap; 
-  @if $wrap == nowrap {
-    -ms-flex-wrap: none;
-  } @else { 
-    -ms-flex-wrap: $wrap; 
-  }
   flex-wrap: $wrap;
-  @if $align == flex-start { -webkit-box-align: start; -ms-flex-align: start;
-  } @else if $align == flex-end { -webkit-box-align: end; -ms-flex-align: end;
-  } @else { -webkit-box-align: $align; -ms-flex-align: $align; }
-  -webkit-align-items: $align; -moz-align-items: $align; align-items: $align;
+  @if $align == flex-start { 
+    -webkit-box-align: start; -ms-flex-align: start;
+  } @else if $align == flex-end { 
+    -webkit-box-align: end; -ms-flex-align: end;
+  } @else { 
+    -webkit-box-align: $align; -ms-flex-align: $align;
+  }
+  align-items: $align;
 }
 @mixin flex-item($basis, $align:auto, $grow:1, $shrink:1) {
-  flex-basis: $basis;
-  -webkit-box-flex: $grow; -moz-box-flex: $grow; -webkit-flex:$basis $grow $shrink; -ms-flex:$basis $grow $shrink; flex:$basis $grow $shrink;
-  -webkit-align-self: $align; -ms-flex-item-align:$align; align-self: $align;
+  @if $grow == 0 {
+    width:$basis;
+  } @else {
+    flex-basis: $basis;
+  }
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+  align-self: $align;
 }
 
 @mixin animation ($name, $duration, $iteration:1, $delay:0) {
-    -webkit-animation-name: $name;
-    -webkit-animation-duration: $duration;
-    -webkit-animation-iteration-count: $iteration;
-    -webkit-animation-delay:$delay;
-    -webkit-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
- 
-    -moz-animation-name: $name;
-    -moz-animation-duration: $duration;
-    -moz-animation-iteration-count: $iteration;
-    -moz-animation-delay:$delay;
-    -moz-animation-fill-mode: forwards; /* this prevents the animation from restarting! */
- 
     animation-name: $name;
     animation-duration: $duration;
     animation-iteration-count: $iteration;
@@ -94,55 +64,34 @@
 }
 
 @mixin transforms($value) {
-  -webkit-transform: $value;
-      -ms-transform: $value;
-          transform: $value;
+  transform: $value;
 }
 @mixin translate($x, $y) {
-     -moz-transform: translate($x, $y);
-         -o-transform: translate($x, $y);
-  -webkit-transform: translate($x, $y);
-      -ms-transform: translate($x, $y);
-          transform: translate($x, $y);
+  transform: translate($x, $y);
 }
 
 @mixin translateX($percent) {
-     -moz-transform: translateX($percent);
-         -o-transform: translateX($percent);
-  -webkit-transform: translateX($percent);
-      -ms-transform: translateX($percent);
-          transform: translateX($percent);
+  transform: translateX($percent);
 }
 
 @mixin translateY($percent) {
-     -moz-transform: translateY($percent);
-         -o-transform: translateY($percent);
-  -webkit-transform: translateY($percent);
-      -ms-transform: translateY($percent);
-          transform: translateY($percent);
+  transform: translateY($percent);
 }
 
 @mixin rotate($d) {
-  -webkit-transform: rotate($d);
-      -ms-transform: rotate($d);
-          transform: rotate($d);
+  transform: rotate($d);
 }
 
 @mixin rotateX($d) {
-      -ms-transform: rotate($d);
-          transform: rotate($d);
-  -webkit-transform: rotateX($d);
-      -ms-transform: rotateX($d);
-          transform: rotateX($d);
+  transform: rotateX($d);
 }
 @mixin skew($x, $y:0) {
-  -webkit-transform: skew($x, $y);
-      -ms-transform: skew($x, $y);
-          transform: skew($x, $y);
+  transform: skew($x, $y);
 }
 
 @mixin transition($property: all, $duration: 0.3s, $animation: ease, $delay:0s) { 
-  -webkit-transition: $property $duration $animation $delay;
-          transition: $property $duration $animation $delay;
+  transition: $property $duration $animation $delay;
 }
-@mixin scale($ratio) { -webkit-transform: scale($ratio); -ms-transform: scale($ratio); transform: scale($ratio); }
+@mixin scale($ratio) {
+  transform: scale($ratio); 
+}

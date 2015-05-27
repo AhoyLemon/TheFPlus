@@ -1,25 +1,3 @@
-/**
-#comments { min-height: 200px; overflow-x: hidden; overflow-y: auto; margin-bottom: 1em;
-  a { color: #eee; text-decoration: none; font-size: 0.75rem; display: block; margin-bottom: 1em; }
- cite { padding-left: 0.7em;
-      &:before { content: '\2014'; }
-    }
-  > blockquote { font-size: 0.75rem;  }
-}
-
-a.recent-comment { color: #eee; text-decoration: none; font-size: 0.75rem; display: block; margin-bottom: 1em;
-  img { display: none; }
-  blockquote { 
-    &:before { content: '\201C'; } 
-    &:after { content: '\201D'; }
-  }
-  cite {padding-left: 0.7em;
-    &:before { content: '\2014'; }
-  }
-  &:hover blockquote { color: #ff6666; }
-}
-**/
-
 .disqus-comment-count { position: absolute; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(../svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; @include transition();
   &:hover { /*@include scale(1.2); */ @include translateY(-25%); }
 }
