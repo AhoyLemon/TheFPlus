@@ -1,5 +1,5 @@
 .disqus-comment-count { position: absolute; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(../svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; @include transition();
-  &:hover { /*@include scale(1.2); */ @include translateY(-25%); }
+  &:hover { @include translateY(-25%); }
 }
 
 #CommentsPage { font-size:16px; padding-left: 0;
@@ -11,7 +11,7 @@
   }
   blockquote { margin: 0; quotes: "\201C" "\201D" "\201C" "\201D"; position:relative; padding: 0.5em 2em 0.5em 10px;
     &:before { float: left; padding-top: 0.35em; margin-right: 0.05em; }
-    p { margin-bottom: 0; }
+    p:last-child { margin-bottom: 0; }
     .score { position: absolute; bottom:5px; right:5px; font-weight: $normal; font-size:1.25em;
       &.positive { color:$green;
         &:before { content:'+'; }
@@ -20,4 +20,8 @@
     }
   }
   cite { display: block; font-size: 0.85em; text-align: right; }
+}
+
+@media (min-width:1200px) {
+  #CommentsPage { font-size:1.5vw; }
 }
