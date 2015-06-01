@@ -17,7 +17,7 @@
       }
     ?>
     <?php if (!$ftag): ?>
-      <?php $articles = $page->children()->visible()->paginate(28) ?>
+      <?php $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(28) ?>
     <?php endif ?>
     <?php if ($ftag): ?>
       <?php $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->paginate(28) ?>
@@ -30,7 +30,12 @@
             <meta itemprop="url" content="<?php echo $article->url(); ?>" />
             <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
             <summary>
-              <h4 itemprop="name" class="title"><?php echo $article->title() ?></h4>
+              <h4 class="title">
+                <?php if ($article->parent()->slug() == "episode"): ?>
+                  <?php echo $article->uid(); ?>:
+                <?php endif ?>
+                <span itemprop="name"><?php echo $article->title() ?></span>
+              </h4>
               <p itemprop="description"><?php echo excerpt($article->text(), 185) ?></p>
             </summary>
             <span itemprop="discussionUrl" class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span>
@@ -64,7 +69,7 @@
 
 <style>
   .covers-only a { position:relative; }
-.disqus-comment-count { position: absolute; font-size:135%; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(http://hirelemon.com/kirby/assets/svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; display:none; }
+  /* .disqus-comment-count { position: absolute; font-size:135%; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(http://hirelemon.com/kirby/assets/svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; display:none; } */
   .covers-only a:hover .disqus-comment-count { display:block; }
 </style>
 <?php snippet('disqus-alt', array('allow_comments' => false)) ?>

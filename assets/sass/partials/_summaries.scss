@@ -22,6 +22,10 @@
         .hover-cover { position: absolute; right:0; bottom:0; left:0; @include translateY(105%); @include transition();
           svg { display: none; }
         }
+        &:hover {
+          img { opacity: 0.5; }
+          .hover-cover { @include translateY(0); }
+        }
       }
       .cast { margin-bottom: 1em; font-size:0.85em; padding-left: 0; }
       .author-block { margin-bottom: 1em; font-size: 0.85em; }
@@ -31,13 +35,16 @@
       .published { font-size: 0.85em; }
       //.comment.count { position: absolute; bottom:0; right:0; display: block; text-align: right; padding-right: 1.5em; line-height: 1.2em; background-image: url(../svg/comment_strong.svg); background-repeat:no-repeat; background-position: top right; background-size:contain; }
       &.episode { background-color: $episode; border:1px solid darken($episode,35%); box-shadow: 2px 2px 2px darken($episode,35%);
-        .hover-cover { @include linear-gradient(top, rgba($episode,0), rgba($episode,0.85)); }
+        //.hover-cover { @include linear-gradient(180deg, rgba($episode,0), rgba($episode,0.85)); }
+        .hover-cover { background:rgba($episode,0.85); }
       }
       &.wrote { background-color:$wrote; border:1px solid darken($wrote,5%); box-shadow: 2px 2px 2px darken($wrote,5%);
-        .hover-cover { @include linear-gradient(top, rgba($wrote,0), rgba($wrote,0.85)); }
+        //.hover-cover { @include linear-gradient(180deg, rgba($wrote,0), rgba($wrote,0.85)); }
+        .hover-cover { background:rgba($wrote,0.85); }
       }
       &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); box-shadow: 2px 2px 2px darken($also-made,5%);
-        .hover-cover { @include linear-gradient(top, rgba($also-made,0), rgba($also-made,0.85)); }
+        //.hover-cover { @include linear-gradient(180deg, rgba($also-made,0), rgba($also-made,0.85)); }
+        .hover-cover { background:rgba($also-made,0.85); }
       }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
         &:before { content:'#'; }
@@ -71,7 +78,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1em;
   }
 }
 @media (min-width: 461px) {
-  .summaries { @include flex-container(); justify-content: space-around; }
+  .summaries { @include flex-container(); justify-content: space-between; }
 }
 @media (min-width: 461px) and (max-width:1000px) {
   .summaries {
