@@ -37,7 +37,7 @@
           </a>
         </h2>
         <h3 class="job" itemprop="jobTitle">
-          <?php echo html($article->job()) ?>
+          <?php echo $article->job() ?>
         </h3>
       </header>
       <?php if($image = $article->image()): ?>
