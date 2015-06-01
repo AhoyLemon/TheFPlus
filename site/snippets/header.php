@@ -52,21 +52,6 @@
   <!-- Font -->
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
   <?php echo css('assets/css/thefplus.css?=052715') ?>
-  
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "PerformingGroup",
-      "name": "The F Plus",
-      "url": "http://thefpl.us",
-      "logo": "http://thefpl.us/favicon-192x192.png",
-      "sameAs" : [ 
-        "https://www.facebook.com/thefplus",
-        "https://twitter.com/TheFPlus",
-        "https://plus.google.com/+TheFPlus"
-      ]
-    }
-  </script>
 
 </head>
 <body>

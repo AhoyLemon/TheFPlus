@@ -69,7 +69,6 @@
 
 <style>
   .covers-only a { position:relative; }
-  /* .disqus-comment-count { position: absolute; font-size:135%; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(http://hirelemon.com/kirby/assets/svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; display:none; } */
   .covers-only a:hover .disqus-comment-count { display:block; }
 </style>
 <?php snippet('disqus-alt', array('allow_comments' => false)) ?>

@@ -154,8 +154,10 @@ $songs = explode(",", $page->music_used());
       
       <!-- FLATTR TIP -->
       <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
-        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-          <path d="M37.1,3.3C14.7,3.3,3.3,16.2,3.3,40.2l0,0V57v33.6l21.9-21.9V43.1c0-10,2.6-16.3,11.5-17.7l0,0c3.1-0.6,9.5-0.4,13.6-0.4l0,0v15.2c0,0.1,0,0.4,0.1,0.5l0,0c0.2,0.6,0.7,1.1,1.4,1.1l0,0c0.4,0,0.7-0.2,1.1-0.5l0,0L90.8,3.3l-25.5,0H37.1z M75.5,31.9v25.6c0,10-2.6,16.3-11.5,17.7l0,0c-3.1,0.6-9.5,0.4-13.6,0.4l0,0V60.5c0-0.1,0-0.4-0.1-0.5l0,0c-0.2-0.6-0.7-1.1-1.4-1.1l0,0c-0.4,0-0.7,0.2-1.1,0.5l0,0L9.9,97.4l25.5,0h28.3c22.4,0,33.8-12.9,33.8-36.9l0,0V43.7V10L75.5,31.9z"/>
+        <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400" xml:space="preserve">
+          <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
+            <path d="M37.1,3.3C14.7,3.3,3.3,16.2,3.3,40.2l0,0V57v33.6l21.9-21.9V43.1c0-10,2.6-16.3,11.5-17.7l0,0c3.1-0.6,9.5-0.4,13.6-0.4l0,0v15.2c0,0.1,0,0.4,0.1,0.5l0,0c0.2,0.6,0.7,1.1,1.4,1.1l0,0c0.4,0,0.7-0.2,1.1-0.5l0,0L90.8,3.3l-25.5,0H37.1z M75.5,31.9v25.6c0,10-2.6,16.3-11.5,17.7l0,0c-3.1,0.6-9.5,0.4-13.6,0.4l0,0V60.5c0-0.1,0-0.4-0.1-0.5l0,0c-0.2-0.6-0.7-1.1-1.4-1.1l0,0c-0.4,0-0.7,0.2-1.1,0.5l0,0L9.9,97.4l25.5,0h28.3c22.4,0,33.8-12.9,33.8-36.9l0,0V43.7V10L75.5,31.9z"/>
+          </svg>
         </svg>
       </a>
 
