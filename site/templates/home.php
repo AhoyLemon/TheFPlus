@@ -16,6 +16,10 @@
   </script>
 
   <main class="main" role="main">
+    <?php if (param('flush') == "everything"): ?>
+      <?php cache::flush(); ?>
+      <h2>Cache flushed</h2>
+    <?php endif ?>
     <?php snippet('briefs') ?>
   </main>
 

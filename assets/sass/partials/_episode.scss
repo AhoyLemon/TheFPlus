@@ -8,15 +8,7 @@
       h3 { text-align: center; }
     }
     .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(105%); @include transition(); }
-    
-    &:hover {
-      summary { @include translateY(0); }
-      .disqus-comment-count { @include translateY(0); }
-    }
   }
-  
-  
-  
 }
 
 section.fanart {
@@ -27,12 +19,17 @@ figure.fanart { @extend %fanart; }
 
 @media (min-width: $desktop-min) {
   .covers-only {
-    a { @include flex-item(25%, stretch, 0, 0); }
+    a { @include flex-item(25%, stretch, 0, 0);
+      &:hover {
+        summary { @include translateY(0); }
+        .disqus-comment-count { @include translateY(0); }
+      }
+    }
   }
 }
 
 @media (max-width: $mobile-max) {
   .covers-only {
-    a { @include flex-item(25%, stretch, 0, 0); }
+    a { @include flex-item(50%, stretch, 0, 0); }
   }
 }
