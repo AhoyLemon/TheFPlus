@@ -85,11 +85,11 @@ $songs = explode(",", $page->music_used());
 
       <!-- EDITOR -->
       <?php if ($page->editor() != ""): ?>
-        <div class="editor">
+        <div class="edited-by">
           <label>edited by</label>
           <span class="editor" itemprop="editor">
             <?php echo $page->editor() ?>
-          </span>.
+          </span>
         </div>
       <?php endif ?>
     </div>
