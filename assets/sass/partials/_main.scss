@@ -6,7 +6,7 @@ article { font-weight: $light;
     h1, h2, h3, h4, h5, h6 { font-weight: 400; margin-top: 0.5em; }
     img { max-width: 100%; height: auto; }
     p { margin-bottom: 1em; }
-    header { padding-bottom:1em; font-size:0.7em; }
+    header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
     .featured-site { float: right; }
     summary { text-align: justify; }
     ul.cast { padding-left: 0; }
@@ -37,18 +37,21 @@ article { font-weight: $light;
   }
   .cast { 
     li { display: inline;
-      &:after { content:',' }
-      &:nth-last-child(2):after { content:''; }
+      &:after { content:','; margin-left:-0.2em; }
+      &:nth-last-child(2):after { content:''; margin-left:0;  }
       &:last-child { 
         &:before { content:'and '; }
         &:after { content:'.' };
       }
-      &:first-child:before { content:'with: '; }
+      &:first-child:before { content:'with '; }
     }
   }
   .sites { @extend %commalist;
     li:first-child:before { content:'reading: '; }
   } 
+}
+.content-provider, .edited-by {
+  &:after { content:'.'; margin-left: -0.2em; }
 }
 
 .pagination { display: block; @extend %clearfix; font-size:1.35em; margin-right: 1vw; padding-top: 1em;
@@ -67,6 +70,7 @@ article { font-weight: $light;
   }
 }
 article.full {
+  .episode-actions { @extend %clearfix; }
   .episode-actions, .otherproject-actions {
     > a { transition:all 0.5s ease;
       //&.download { color:#6f2db9 }
@@ -97,7 +101,6 @@ article.full {
   }
   article {
     &.full { font-size:1.6vw;
-      header { @extend %clearfix; }
       .cover { float: right; max-width: 40%; margin-left: 2.5vw; }
       .episode-actions { @include flex-container; padding-top: 0.25em; clear: both; float: none;
         > a {
@@ -122,7 +125,7 @@ article.full {
   article {
     &.full { font-size:4.3vw;
       .cover { width:100%; height:auto; margin-bottom: 10px; }
-      .episode-actions { padding-top: 0.25em; clear: both; float: none; margin-bottom: 3vh; @extend %clearfix;
+f      .episode-actions { padding-top: 0.25em; clear: both; float: none; margin-bottom: 3vh;
         > a { 
           &.action { display: inline-block; width:48px; height:48px; margin-right:2%; padding-top: 0.5em; }
           &.social { display: block; float: right; width:36px; height:36px; margin-right:5px; padding-top: 0.5em; }
