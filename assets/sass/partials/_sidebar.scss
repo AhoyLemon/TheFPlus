@@ -60,7 +60,7 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
     .flapjax { display: block; width:60px; height: 60px; float: left; 
       svg { height:100%; width:100%; }
     }
-    .mobile-logo { display: block; height: 60px; float: right; }
+    .mobile-logo { display: block; height: 52px; float: right; padding-top: 4px; padding-bottom: 4px; padding-right: 15px; }
   }
   .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
     &.visible { @include translateX(0); }
