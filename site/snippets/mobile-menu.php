@@ -7,5 +7,5 @@
     </svg>
   </a>
   
-  <a href="<?php echo url::home() ?>"><img src="<?php echo url::home() ?>/assets/svg/logo.svg" class="mobile-logo" alt="The F Plus Logo" /></a>
+  <a href="<?php echo url::home() ?>"><img src="<?php echo url::home() ?>/assets/svg/logo-pride.svg" class="mobile-logo" alt="The F Plus Logo" /></a>
 </header>
