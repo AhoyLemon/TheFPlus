@@ -8,7 +8,7 @@
     </svg>
   </a>
 
-  <a href="<?php echo url::home() ?>"><img src="<?php echo url::home() ?>/assets/svg/logo.svg" class="desktop-logo" alt="The F Plus Logo" /></a>
+  <a href="<?php echo url::home() ?>"><img src="<?php echo url::home() ?>/assets/svg/logo-pride.svg" class="desktop-logo" alt="The F Plus Logo" /></a>
   <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
   <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
   <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>

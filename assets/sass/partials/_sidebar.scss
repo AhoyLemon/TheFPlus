@@ -56,7 +56,7 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 }
 
 @media (max-width: $mobile-max) {
-  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:60px; background: $black;
+  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:56px; background: $black;
     .flapjax { display: block; width:60px; height: 60px; float: left; 
       svg { height:100%; width:100%; }
     }
