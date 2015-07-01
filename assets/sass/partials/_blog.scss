@@ -46,7 +46,7 @@
 section.blogs {
 	article { @include flex-container(); margin-bottom: 1em;
 		aside { @include flex-item(200px, auto, 0, 0); }
-		summary { @include flex-item(50%); padding-left: 1em; position: relative;
+		summary { @include flex-item(50%); padding-left: 1em; padding-bottom: 2em; position: relative;
 			.title { text-transform: uppercase; font-size:1.5rem;
 				a { text-decoration: none;
 					&:hover { text-decoration: underline; }

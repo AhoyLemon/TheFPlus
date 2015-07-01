@@ -6,7 +6,7 @@
       "@type": "PerformingGroup",
       "name": "The F Plus",
       "url": "http://thefpl.us",
-      "logo": "http://thefpl.us/favicon-192x192.png",
+      "logo": "http://thefpl.us/schemaLogo.png",
       "sameAs" : [ 
         "https://www.facebook.com/thefplus",
         "https://twitter.com/TheFPlus",

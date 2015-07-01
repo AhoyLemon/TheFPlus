@@ -7,7 +7,7 @@
     </svg>
   </a>
   
-  <a href="<?php echo url::home() ?>">
+  <a href="<?php echo url::home() ?>" class="home-link">
 		<svg class="mobile-logo" alt="The F Plus Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 80">
 			<style>
 				.st0{fill:#c6c5d3;} .st1{fill:#C0282D;}
