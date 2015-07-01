@@ -20,7 +20,7 @@ function readingtime($content, $params = array()) {
     'minutes'             => 'minutes',
     'second'              => 'second',
     'seconds'             => 'seconds',
-    'format'              => '{minutesCount} {minutesLabel}, {secondsCount} {secondsLabel}',
+    'format'              => '{minutesCount}',
     'format.alt'          => '{secondsCount} {secondsLabel}',
     'format.alt.enable'   => false
   );
