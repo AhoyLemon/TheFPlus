@@ -1,8 +1,7 @@
 $tag-bg: rgba($white,0.5);
 $tag-border: rgba($black,0.8);
 
-%tag {
-  font-size:0.6em;
+%tag { font-size:0.6em;
   background-color: $tag-bg;
   border: 2px solid $tag-border;
   display: inline-block;
@@ -15,6 +14,7 @@ $tag-border: rgba($black,0.8);
   margin-right: 0.2em;
   margin-bottom: 0.2em;
   font-weight: 400;
+	text-decoration: none;
   &:after {
     position: absolute;
     top: 0;
@@ -24,6 +24,14 @@ $tag-border: rgba($black,0.8);
     font-weight: 300;
     color:rgba($black,0.5);
   }
+	
+	//&:hover { text-decoration: none !important; }
+	&[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
+		&:after { color:#6d0c0c; }
+		&:hover { background:#6d0c0c !important; color:$white !important;
+			&:after { color:$white !important; }
+		}
+	}
 }
 
 ul.tags > li { @extend %tag; }

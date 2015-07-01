@@ -26,7 +26,8 @@ c::set('cache.ignore', array(
   'episode/feed',
   'find',
   'sitemap',
-  'tags'
+  'tags',
+	'wrote'
 ));
 // valid values: file|memcached|apc
 c::set('cache.driver', 'file');
