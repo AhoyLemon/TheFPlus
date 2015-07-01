@@ -8,14 +8,6 @@
     &:hover { background-color: $white; color: $black; }
     &:active {background-color: $red; }
   }
-	.home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
-		&:hover { background-color:$white;
-			.st0 { fill:#212221; }
-		}
-		&:active { background-color:$red;
-			.st1 { fill:#212221; }
-		}
-	}
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
     a { width: 56px; height:56px; margin-right: 6px; display: block; float: left;
       &:last-child { margin-right: 0; }
@@ -54,13 +46,21 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
   &:hover, &:focus { background-color: $white; color:$black; }
 }
 
-.flapjax { @include transition(all, 0.62s);
-  &.active { @include rotate(180deg); }
+.flapjax { @include transition(all, 0.82s);
+  &.active { transform: rotateY(180deg) }
 }
 
 @media (min-width: $desktop-min) {
   .mobile-menu { display: none; }
   a.flapjax { display: none; }
+	.home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
+		&:hover { background-color:$white;
+			.st0 { fill:#212221; }
+		}
+		&:active { background-color:$red;
+			.st1 { fill:#212221; }
+		}
+	}
 }
 
 @media (max-width: $mobile-max) {
@@ -68,8 +68,14 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
     .flapjax { display: block; width:60px; height: 60px; float: left; 
       svg { height:100%; width:100%; }
     }
-    .mobile-logo { display: block; height: 57px; float: right; padding-top: 4px; padding-bottom: 4px; padding-right: 15px; }
+    .mobile-logo { display: block; height: 56px; float: right; padding-top: 4px; padding-bottom: 4px; padding-right: 15px;}
   }
+	.home-link { display: block;
+		&:hover, &:active {
+			svg { background:$white; }
+			.st0 { fill:#212221; }
+		}
+	}
   .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
     &.visible { @include translateX(0); }
     .desktop-logo { height: 60px; }
