@@ -165,6 +165,7 @@
           <div class="content">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
+					<span class="time-estimate"><?php echo $article->text()->readingtime() ?></span>
           <a itemprop="discussionUrl" class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
         </summary>
       </article>
