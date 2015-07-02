@@ -51,6 +51,7 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 }
 
 .flapjax { @include transition(all, 0.82s);
+	svg * { fill:$red; }
   &.active { transform: rotateY(180deg) }
 }
 

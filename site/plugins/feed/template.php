@@ -6,7 +6,7 @@
     <copyright>2009 - <?php echo date("Y") ?> Creative Commons</copyright>
     <description>The F Plus is a weekly podcast wherein we find terrible writing from the internet and beyond, wrap a theme around it, and then bring it to you in the most entertaining way we can.</description>
     <image>
-      <url>http://thefpl.us/podcasts/logo3_144.png</url>
+      <url>http://thefpl.us/podcasts/feedburner_144.png</url>
       <title>The F Plus</title>
       <link>http://thefpl.us</link>
     </image>
