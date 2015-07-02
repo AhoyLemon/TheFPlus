@@ -37,8 +37,8 @@ article { font-weight: $light;
   }
   .cast { 
     li { display: inline;
-      &:after { content:','; margin-left:-0.2em; }
-      &:nth-last-child(2):after { content:''; margin-left:0;  }
+      &:after { content:', '; }
+      &:nth-last-child(2):after { content:'';  }
       &:last-child { 
         &:before { content:'and '; }
         &:after { content:'.' };

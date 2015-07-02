@@ -65,10 +65,8 @@ $songs = explode(",", $page->music_used());
     <ul class="cast authors ridiculists info-block">
       <?php foreach($persons as $person): ?>
         <li itemprop="actor">
-          <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>">
-            <span><?php echo $person ?></span>
-          </a>
-      </li>
+          <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><span><?php echo $person ?></span></a>
+      	</li>
       <?php endforeach ?>
     </ul>
     

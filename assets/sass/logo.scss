@@ -3,8 +3,8 @@
 @import "partials/_mixins";
 @import "partials/_extends";
 
-.logo-examples { @include flex-container(); justify-content: space-between;
-	figure { @include flex-item(320px, auto, 0, 0); text-align: center; border:1px solid $black;
+.logo-examples { @include flex-container(); justify-content: space-around;
+	figure { @include flex-item(270px, auto, 0, 0); text-align: center; border:1px solid $black; margin-bottom: 10px;
 		img { height: 160px; }
 		figcaption { border-top: 1px solid $black; font-size: 16px; padding: 0.2em 0.6em; }
 
@@ -14,8 +14,8 @@
 	}
 }
 
-.color-palette { @include flex-container(); justify-content: space-between;
-	figure { @include flex-item(320px, auto, 0, 0); padding-top: 100px; border:1px solid $black; }
+.color-palette { @include flex-container(); justify-content:space-around;
+	figure { @include flex-item(270px, auto, 0, 0); padding-top: 100px; border:1px solid $black; margin-bottom: 10px; }
 	figcaption { border-top: 1px solid $black; font-size: 16px; padding: 0.2em 0.6em; background-color:$white;
 		span { display: block;
 			&.name { font-size:1.2em; text-align: center; font-weight: $bold; }
