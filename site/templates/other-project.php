@@ -60,7 +60,7 @@
       <?php echo $page->text()->kirbytext() ?>
     </summary>
 
-    <div class="otherproject-actions">
+    <div class="otherproject-actions episode-actions">
       <?php if ($page->episode_file() != ""): ?>
         <!-- DOWNLOAD FILE -->
         <a itemprop="audio" class="action download" href="<?php echo $page->episode_file() ?>" title="Download episode" download>
@@ -69,11 +69,12 @@
           </svg>
         </a>
       <?php endif ?>
-
-      <!-- AUDIO CONTAINER -->
-      <?php if ($page->episode_file() != ""): ?>
-        <audio src="<?php echo $page->episode_file() ?>" preload="none" controls></audio>
-      <?php endif ?>
+			<div class="audio-holder">
+				<!-- AUDIO CONTAINER -->
+				<?php if ($page->episode_file() != ""): ?>
+					<audio src="<?php echo $page->episode_file() ?>" preload="none" controls></audio>
+				<?php endif ?>
+			</div>
 
       <span class="share-label">share: </span>
 
