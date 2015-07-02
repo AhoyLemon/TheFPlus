@@ -11,29 +11,33 @@
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
     a { width: 56px; height:56px; margin-right: 6px; display: block; float: left;
       &:last-child { margin-right: 0; }
-      g { @include transition(all, 0.5s); -ms-transform-origin: 50% 50%; -webkit-transform-origin: 50% 50%; transform-origin: 50% 50%; }
+      .inside { @include transition(all, 0.5s); transform-origin: 50% 50%; }
       svg {
-        .twitter *{ fill: #55acee; }
-        .ballpit * { fill: #4eb85d; }
-        .rss * { fill: #ea832f; }
-        circle { fill: none; stroke: $white; }
-      }
-      &:hover g { @include rotate(360deg); }
-      &:active g { @include scale(0.65); }
-    }
-    &.ballpit:hover svg circle { stroke: #4eb85d; }
-    &.rss:hover svg circle { stroke: #ea832f; }
-    .flattr {
-      .orange { fill:#fabb32; }
+        .bird { fill: #55acee; }
+        .snake { fill: #4eb85d; }
+        .rss { fill: #ea832f; }
+				.circle { fill:$white; }
+				.orange { fill:#fabb32; }
       .green { fill:#a9c54f; }
+      }
+      &:hover .inside { @include rotate(360deg); }
+      &:active .inside { @include scale(0.65); }
+			&:hover {
+				&.twitter .circle { fill:#55acee; }
+				&.ballpit .circle { fill:#4eb85d; }
+				&.flattr .circle { fill:#fabb32; }
+				&.rss .circle { fill:#ea832f; }
+			}
     }
   }
 }
 
+/*
 .sidebar .circles a.twitter:hover svg circle { stroke:#55acee; }
 .sidebar .circles a.ballpit:hover svg circle { stroke:#4eb85d; }
 .sidebar .circles a.flattr:hover svg circle { stroke:#fabb32; }
 .sidebar .circles a.rss:hover svg circle { stroke:#ea832f; }
+**/
 
 ul.tag-cloud { padding-left: 0; clear: both; float: none;
   li { display: inline;font-size: 0.75rem; }
