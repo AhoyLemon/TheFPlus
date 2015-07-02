@@ -5,7 +5,7 @@
 }
 
 .summaries {
-  article { margin-bottom:20px;
+  article { margin-bottom:10px;
     header { padding:0 1em .25em 1em; } 
     .cover { width: 100%; margin: auto; display: block; }
     .title { font-size:1.4rem; line-height: 120%; @extend %truncate;
@@ -38,7 +38,7 @@
         //.hover-cover { @include linear-gradient(180deg, rgba($episode,0), rgba($episode,0.85)); }
         .hover-cover { background:rgba($episode,0.85); }
       }
-      &.wrote { background-color:$wrote; border:1px solid darken($wrote,5%); box-shadow: 2px 2px 2px darken($wrote,5%);
+      &.wrote { background-color:$wrote; border:1px solid darken($wrote,25%);
         //.hover-cover { @include linear-gradient(180deg, rgba($wrote,0), rgba($wrote,0.85)); }
         .hover-cover { background:rgba($wrote,0.85); }
       }
@@ -84,18 +84,18 @@ nav.toggle { padding-top: 1em; padding-bottom: 1em;
 }
 @media (min-width: 461px) and (max-width:1000px) {
   .summaries {
-    article.brief { @include flex-item(calc(50% - 20px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(50% - 5px), auto, 0, 0); }
   }
 }
 
 @media (min-width: 1001px) and (max-width:1600px) {
   .summaries {
-    article.brief { @include flex-item(calc(33.3333% - 20px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(33.3333% - 5px), auto, 0, 0); }
   }
 }
 
 @media (min-width: 1601px) {
   .summaries { 
-    article.brief { @include flex-item(calc(25% - 20px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(25% - 5px), auto, 0, 0); }
   }
 }

@@ -71,7 +71,7 @@ article { font-weight: $light;
 }
 article.full {
   .episode-actions { @extend %clearfix; }
-	a { transition:all 0.5s ease; transform-origin: center;
+	a { 
 		&.action * { fill:$red; }
 		&.twitter * { fill:#55acee; }
 		&.github { fill:#181616; }
@@ -81,14 +81,18 @@ article.full {
 			.green { fill:#89b443; }
 		}
 		&.facebook { fill:#3B5998; }
-		&.action:hover, &.social:hover { transform:rotateY(360deg); }
+		
+		&.action, &.social { transition:all 0.5s ease; transform-origin: center;
+			svg { transform:scale(1.2); }
+			&:hover { transform:rotateY(360deg); }
+		}
 	}
 }
 
 
 // DESKTOP REAKPOINT
 @media (min-width: $desktop-min) {
-  main { display: block; padding:20px 0 20px 320px; height:100vh; overflow-y: auto;
+  main { display: block; padding:20px 0 20px 310px; height:100vh; overflow-y: auto;
     &.page { padding-right: 1vw; }
   }
   article {
@@ -117,8 +121,9 @@ article.full {
     &.full { font-size:4.3vw;
       .cover { width:100%; height:auto; margin-bottom: 10px; }
 			 a { 
-				&.action { display: inline-block; width:48px; height:48px; margin-right:2%; padding-top: 0.5em; }
-				&.social { display: block; float: right; width:36px; height:36px; margin-right:5px; padding-top: 0.5em; }
+				&.action { display: inline-block; }
+				&.social { display: block; float: right;  }
+				&.action, &.social { width:50px; height:50px; }
 			}
       .episode-actions { padding-top: 0.25em; clear: both; float: none; margin-bottom: 3vh;
         .audio-holder { width:100%; padding-top: 1em; }
