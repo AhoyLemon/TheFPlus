@@ -61,7 +61,7 @@
         <?php endif ?>
         
         <?php $randumb = $page->children()->visible()->shuffle()->first(); ?>    
-        <a class="randumb" href="<?php echo $randumb->url(); ?>">random</a>
+        <a class="randumb" href="<?php echo url() . '/episode/random' ?>">random</a>
       </nav>
     <?php endif ?>
 

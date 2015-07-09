@@ -43,3 +43,19 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+/*
+---------------------------------------
+Routing
+---------------------------------------
+*/
+c::set('routes', array(
+  array(
+    'pattern' => 'episode/random',
+    'action'  => function() {
+    	$page = page('episode')->children('visible')->shuffle()->first();
+      	//go($page->url());
+			return site()->visit($page);
+    }
+  )
+));
