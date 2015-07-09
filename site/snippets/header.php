@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="twitter:image" content="http://thefpl.us/assets/images/twitter-card.png" />
+		<meta name="twitter:image" content="http://thefpl.us/assets/images/twitter-newcard.png" />
 	<?php endif ?>
   <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
   <!-- Facebook -->
