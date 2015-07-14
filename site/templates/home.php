@@ -6,7 +6,10 @@
       "@type": "PerformingGroup",
       "name": "The F Plus",
       "url": "http://thefpl.us",
+      "email": "lemon@thefpl.us",
+      "foundingDate": "2009",
       "logo": "http://thefpl.us/schemaLogo.png",
+      "alternateName": "The F+",
       "sameAs" : [ 
         "https://www.facebook.com/thefplus",
         "https://twitter.com/TheFPlus",
