@@ -1,6 +1,7 @@
 <?php snippet('header') ?>
   <main class="main" role="main">    
     <?php $ftag = urldecode (param('tag')); ?>
+    <?php $thispage = urldecode (param('page')); ?>
     <?php if ($ftag): ?>
       <ul class="tags filtered">
         <label>browsing: </label>
@@ -17,13 +18,27 @@
       }
     ?>
     <?php if (!$ftag): ?>
-      <?php $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(28) ?>
+      <?php if ($page->uri() == "episode" && $thispage == "") {
+        $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(27);
+        $showRandom = true;
+      } else {
+        $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(28);
+        $showRandom = false;
+      } ?>
     <?php endif ?>
     <?php if ($ftag): ?>
       <?php $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->paginate(28) ?>
     <?php endif ?>
-    
     <section class="<?php echo $page->slug(); ?> covers-only">
+      <?php if ($showRandom == true): ?>
+        <a href="/episode/random" title="Pick a random episode">
+          <img src="/assets/images/random-card.png" class="cover">
+          <summary>
+            <h3 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h3>
+            <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
+          </summary>
+        </a>
+      <?php endif ?>
       <?php foreach($articles as $article): ?>
         <?php if($image = $article->image()): ?>
           <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>" itemscope itemtype="<?php echo $itemType; ?>">
@@ -54,14 +69,11 @@
     <?php if($articles->pagination()->hasPages()): ?>
       <nav class="pagination">
         <?php if($articles->pagination()->hasNextPage()): ?>
-          <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">older posts</a>
+          <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">older episodes</a>
         <?php endif ?>
         <?php if($articles->pagination()->hasPrevPage()): ?>
-          <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">newer posts</a>
+          <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">newer episodes</a>
         <?php endif ?>
-        
-        <?php $randumb = $page->children()->visible()->shuffle()->first(); ?>    
-        <a class="randumb" href="<?php echo url() . '/episode/random' ?>">random</a>
       </nav>
     <?php endif ?>
 
