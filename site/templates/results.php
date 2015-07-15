@@ -9,9 +9,10 @@
       <li class="tag selected"><?php echo $ftag ?></li>
     </ul>
     
-    <section class="results summaries">
-        
-      <?php foreach($site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->paginate(12) as $article): ?>
+    <section class="results summaries" data-updated="7/14/2015">
+      
+      <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->paginate(12) ?>
+      <?php foreach($articles as $article): ?>
 
         <article class="<?php echo html($article->parent()->slug()) ?> brief">
           <header>
@@ -76,6 +77,17 @@
 
       <?php endforeach ?>
     </section>
+    
+    <?php if($articles->pagination()->hasPages()): ?>
+      <nav class="pagination">
+        <?php if($articles->pagination()->hasNextPage()): ?>
+          <a class="next" href="<?php echo $articles->pagination()->nextPageURL() ?>">older episodes</a>
+        <?php endif ?>
+        <?php if($articles->pagination()->hasPrevPage()): ?>
+          <a class="prev" href="<?php echo $articles->pagination()->prevPageURL() ?>">newer episodes</a>
+        <?php endif ?>
+      </nav>
+    <?php endif ?>
 
   </main>
 
