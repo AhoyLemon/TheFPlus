@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-  <main class="main" role="main">    
+  <main class="main edge-to-edge" role="main">    
     <?php $ftag = urldecode (param('tag')); ?>
     <?php $thispage = urldecode (param('page')); ?>
     <?php if ($ftag): ?>
