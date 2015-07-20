@@ -55,8 +55,6 @@ $('a.social').click(function(event) {
   event.preventDefault();
 });
 
-
-
 // Google Analytics commands
 $('audio').bind('play,ended', function(e){
   var s = $(this).attr('src');
