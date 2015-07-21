@@ -34,7 +34,7 @@
         <a href="/episode/random" title="Pick a random episode">
           <img src="/assets/images/random-card.png" class="cover">
           <summary>
-            <h3 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h3>
+            <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
             <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
           </summary>
         </a>
