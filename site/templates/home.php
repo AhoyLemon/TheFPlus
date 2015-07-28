@@ -5,7 +5,7 @@
       "@context": "http://schema.org",
       "@type": "PerformingGroup",
       "name": "The F Plus",
-      "url": "http://thefpl.us",
+      "url": "https://thefpl.us",
       "email": "lemon@thefpl.us",
       "foundingDate": "2009",
       "logo": "http://thefpl.us/schemaLogo.png",

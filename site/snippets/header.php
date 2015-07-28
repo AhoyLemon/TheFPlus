@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="twitter:image" content="http://thefpl.us/assets/images/twitter-newcard.png" />
+		<meta name="twitter:image" content="https://thefpl.us/assets/images/twitter-newcard.png" />
 	<?php endif ?>
   <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
   <!-- Facebook -->
@@ -52,16 +52,17 @@
     <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="og:image" content="http://thefpl.us/assets/images/og-image.png" />
+		<meta name="og:image" content="https://thefpl.us/assets/images/og-image.png" />
 	<?php endif ?>
   <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
   <meta property="og:email" content="lemon@thefpl.us">
   
   <!-- Font -->
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  <?php echo css('assets/css/thefplus.css?=070205') ?>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href="/assets/css/thefplus.css?=072415" rel="stylesheet" type="text/css">
 
 </head>
 <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <?php snippet('mobile-menu') ?>
   <?php snippet('menu') ?>

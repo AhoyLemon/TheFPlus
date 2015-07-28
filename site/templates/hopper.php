@@ -7,6 +7,7 @@
       <?php echo $page->text()->kirbytext() ?>
     </article>
     
+    <h4 id="LoadingContent"></h4>
     <ol id="ContentSubmitted">
       
     </ol>
@@ -23,6 +24,43 @@
   span.submitter { font-size:0.85em; }
   span.submitter:before { content:' submitted by '; }
 </style>
+
+
+<script type="text/javascript" src="http://thefpl.us/assets/js/vendor/tabletop.js"></script>
+<script type="text/javascript">
+  window.onload = function() { init() };
+  $('#LoadingContent').text('Loading documents...');
+
+  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?key=0ApOT20mhinGpdFJEUllGOFUtWjEweURzNTNRMzB6NXc&single=true&gid=0&range=A2%3AB150&output=csv';
+
+  function init() {
+    Tabletop.init( { key: public_spreadsheet_url,
+                    callback: showInfo,
+                    simpleSheet: true } )
+  }
+
+  function showInfo(data, tabletop) {
+    console.log(data);
+    data.reverse();
+    $('#LoadingContent').remove();
+    $.each(data, function(i, content) {
+      $('#ContentSubmitted').append('<li><span class="submission">'+content.document+'</span><span class="submitter">'+content.submitter+'</span></li>');
+      /**
+      if (issue.status == "complete") {
+        $('#CompletedIssues').prepend('<dt><span class="title">'+issue.title+'</span> <span class="type">'+issue.type+'</span></dt><dd><span class="description">'+issue.description+'</span><span class="date">issue resolved: '+issue.date+'</span></dd>');
+      } else if (issue.status == "in progress") {
+        $('#IssuesInProgress').prepend('<dt><span class="title">'+issue.title+'</span> <span class="in-progress">in progress</span> <span class="type">'+issue.type+'</span></dt><dd><span class="description">'+issue.description+'</span></dd>');
+      } else if (issue.status == "known") {
+        $('#KnownIssues').prepend('<dt><span class="title">'+issue.title+'</span> <span class="type">'+issue.type+'</span></dt><dd><span class="description">'+issue.description+'</span></dd>');
+      } else if (issue.status == "ignored") {
+        $('#IgnoredIssues').prepend('<dt><span class="title">'+issue.title+'</span> <span class="type">'+issue.type+'</span></dt><dd><span class="description">'+issue.description+'</span></dd>');
+      }
+      **/
+    });
+  }
+</script>
+
+<!--
 
 <script>
     $(document).ready(function() {
@@ -58,3 +96,5 @@
       });
     });
   </script>
+
+-->
