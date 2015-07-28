@@ -31,7 +31,7 @@ c::set('cache.ignore', array(
 ));
 // valid values: file|memcached|apc
 c::set('cache.driver', 'file');
-
+//c::set('ssl',true);
 /*
 
 ---------------------------------------
