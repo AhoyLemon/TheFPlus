@@ -78,7 +78,7 @@
         <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
         <itunes:summary><?php echo $item->text()->xml() ?></itunes:summary>
         <?php if($image = $item->image()): ?>
-          <itunes:image href="<?php echo $item->image()->url() ?>" />
+          <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
         <?php endif ?>
         <atom:link rel="payment" type="text/html" href="https://flattr.com/submit/auto?user_id=TheFPlus&amp;url=<?php echo rawurlencode ($item->url()); ?>&amp;title=<?php echo rawurlencode($item->title()); ?>"/>
       </item>

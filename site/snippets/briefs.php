@@ -119,6 +119,7 @@
             <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
               <span itemprop="name"><?php echo html($article->title()) ?></span>
             </a>
+						<meta itemprop="headline" content="<?php echo html($article->title()) ?>" />
           </h2>
           <time class="published released" itemprop="datePublished" content="<?php echo $article->date('Y-m-d'); ?>T<?php echo $article->time(); ?>+06:00">
             <span class="date">

@@ -7,7 +7,7 @@ header('Content-type: text/xml; charset="utf-8"');
 
 // echo the doctype
 echo '<?xml version="1.0" encoding="utf-8"?>';
-
+	$ignore = array('sitemap', 'error', 'find', 'fanart', 'error/flush');
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <?php foreach($pages->index() as $p): ?>
