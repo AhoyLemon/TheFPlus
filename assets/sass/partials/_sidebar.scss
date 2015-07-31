@@ -9,7 +9,7 @@
     &:active {background-color: $red; }
   }
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
-    a { width: 56px; height:56px; margin-right: 6px; display: block; float: left;
+    a { width: 56px; height:56px; margin-right: 6px; display: block; float: left; @include transition(all, 0.5s);
       &:last-child { margin-right: 0; }
       .inside { @include transition(all, 0.5s); transform-origin: 50% 50%; }
       svg {
@@ -20,7 +20,7 @@
 				.orange { fill:#fabb32; }
       .green { fill:#a9c54f; }
       }
-      &:hover .inside { @include rotate(360deg); }
+      &:hover { @include rotate(360deg); }
       &:active .inside { @include scale(0.65); }
 			&:hover {
 				&.twitter .circle { fill:#55acee; }

@@ -17,13 +17,14 @@ for more information: http://getkirby.com/license
 
 c::set('license', 'K2-PERSONAL-497f4bbccfeb1d2e52113a557a6a6543');
 c::set('rewrite', true);
-c::set('cache', true);
+c::set('cache', false);
 c::set('cache.ignore', array(
   'home',
   'episode',
   'also-made',
   'search',
   'episode/feed',
+	'episode/random',
   'find',
   'sitemap',
   'tags',
@@ -54,7 +55,7 @@ c::set('routes', array(
     'pattern' => 'episode/random',
     'action'  => function() {
     	$page = page('episode')->children('visible')->shuffle()->first();
-      	//go($page->url());
+      //go($page->url());
 			return site()->visit($page);
     }
   )
