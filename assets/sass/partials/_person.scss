@@ -39,7 +39,7 @@
 @media (min-width: $desktop-min) {
   .summaries {
     .person {
-      &.brief { @include flex-item(245px, stretch, 0, 0); justify-content:space-between; }
+      &.brief { @include flex-item(245px, stretch, 0, 0); max-width: 245px; justify-content:space-between; }
     }
   }
   .person.full {

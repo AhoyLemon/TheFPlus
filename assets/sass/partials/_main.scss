@@ -100,8 +100,12 @@ article.full {
     &.full { font-size:1.6vw;
       .cover { float: right; max-width: 40%; margin-left: 2.5vw; }
 			a {
-				&.action { @include flex-item(70px,auto,0,0); }
-				&.social { @include flex-item(60px,auto,0,0); }
+				&.action { @include flex-item(70px,auto,0,0); 
+					svg { max-width: 70px; }
+				}
+				&.social { @include flex-item(60px,auto,0,0);
+					svg { max-width: 60px; }
+				}
 			}
       .episode-actions { @include flex-container; padding-top: 0.25em; clear: both; float: none;
         .audio-holder { @include flex-item(40%); padding-top: 0.5em; }
