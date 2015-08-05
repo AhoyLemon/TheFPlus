@@ -23,9 +23,9 @@
         <span class="th"></span>
         <span class="th">Document</span>
         <span class="th">submitted by</span>
-        <span class="th">submitted on</span>
+        <span class="th">dumped on</span>
       </li>
-      <?php foreach($page->builder()->toStructure()->sortBy('subdate', 'desc') as $section): ?>
+      <?php foreach($page->builder()->toStructure()->flip() as $section): ?>
         <?php if (strpos($section->submitter(),',') !== false) {
           $multisubmit = true;
           $docsubmitters = explode(",", $section->submitter()); 
@@ -34,15 +34,9 @@
         } ?>
         <li>
           <span class="number-cell"></span>
-          <?php if ((param('show') == "links")) { ?>
-            <a class="submission" href="<?php echo $section->docurl(); ?>" target="_blank">
-              <?php echo $section->title(); ?>
-            </a>
-          <?php } else { ?>
-            <span class="submission">
-              <?php echo $section->title(); ?>
-            </span>
-          <?php } ?>
+          <a class="submission" href="<?php echo $section->docurl(); ?>" target="_blank">
+            <?php echo $section->title(); ?>
+          </a>
           <span class="submitter">
             <?php if ($multisubmit == false) { ?>
               <?php $meetslug = strtolower(preg_replace('/\s+/', '-', $section->submitter())); ?>
@@ -68,9 +62,9 @@
               </span>
             <?php } ?>
           </span>
-          <?php if ($section->subdate() != "") { ?>
-            <time class="submitted-date">
-              <?php $docdate = strtotime($section->subdate()); ?>
+          <?php if ($section->rejectdate() != "") { ?>
+            <time class="rejected-date">
+              <?php $docdate = strtotime($section->rejectdate()); ?>
               <?php echo date('F jS, Y', $docdate); ?>
             </time>
           <?php } else { ?>
