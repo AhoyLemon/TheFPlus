@@ -77,19 +77,19 @@
   </form>
   
   <div class="circles">
-    <a class="twitter" href="https://twitter.com/TheFPlus" alt="The F Plus on Twitter" target="_blank">
+    <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
 			<svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
 				<use class="bird inside" xlink:href="#IconTwitter"></use>
 			</svg>
     </a>
-    <a class="ballpit" href="http://ballp.it" alt="Ballp.it is our community forum" target="_blank">
+    <a class="ballpit" href="http://ballp.it" title="Ballp.it is our community forum" target="_blank">
 			<svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
 				<use class="snake inside" xlink:href="#IconBallpit"></use>
 			</svg>
     </a>
-    <a class="flattr" alt="Tip us with Flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=http%3A%2F%2Fthefpl.us&title=The%20F%20Plus%20Podcast" target="_blank">
+    <a class="flattr" title="Tip us with Flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=http%3A%2F%2Fthefpl.us&title=The%20F%20Plus%20Podcast" target="_blank">
       <svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
 				<g class="inside">
