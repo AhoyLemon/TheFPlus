@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="twitter:image" content="https://thefpl.us/assets/images/twitter-newcard.png" />
+		<meta name="twitter:image" content="http://thefpl.us/assets/images/twitter-newcard.png" />
 	<?php endif ?>
   <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
   <!-- Facebook -->
@@ -52,7 +52,7 @@
     <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="og:image" content="https://thefpl.us/assets/images/og-image.png" />
+		<meta name="og:image" content="http://thefpl.us/assets/images/og-image.png" />
 	<?php endif ?>
   <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
   <meta property="og:email" content="lemon@thefpl.us">

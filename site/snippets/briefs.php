@@ -7,7 +7,7 @@
       <article class="episode brief" itemscope itemtype="https://schema.org/RadioEpisode">
         <header>
           <h2 class="title">
-            <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>" alt="<?php echo $article->title(); ?>">
+            <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
               <span itemprop="name" class="name">
                 <?php echo html($article->title()) ?>
               </span>
@@ -25,7 +25,7 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>">
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
@@ -79,8 +79,8 @@
           </time>
         </header>
         <?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo $article->title(); ?>">
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+          <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
@@ -132,8 +132,8 @@
           </time>
         </header>
         <?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo $article->title(); ?>">
-            <img  itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+          <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+            <img  itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
