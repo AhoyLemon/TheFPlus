@@ -1,0 +1,100 @@
+@charset "UTF-8";
+.sticker-buy-buttons {
+  text-align: center;
+}
+
+.sticker-buy-button {
+  display: inline-block;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.sticker-buy-button button {
+  display: block;
+  font-size: 1em;
+  font-family: "Source Sans Pro", sans-serif;
+  border: 2px solid #c0282d;
+  background-color: #fff;
+  color: #c0282d;
+  padding: 0.2em 1em;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.3em;
+}
+
+.sticker-buy-button button:hover {
+  background: #c0282d;
+  color: #eee;
+}
+
+.sticker-series {
+  border-bottom: 1px solid #343434;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  clear: both;
+}
+
+.sticker-series .row.first {
+  font-size: 1.2em;
+  line-height: 95%;
+}
+
+.sticker-series .row.second {
+  font-size: 0.75em;
+}
+
+.sticker-series img.thumbnail {
+  float: left;
+  margin-right: 20px;
+}
+
+.sticker-series .series-name {
+  font-weight: 600;
+}
+
+.sticker-series .run:before {
+  content: ' • ';
+}
+
+.sticker-series .remaining:before {
+  content: ' • ';
+}
+
+.sticker-series .creator {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.sticker-series dd {
+  padding-top: 10px;
+  clear: both;
+}
+
+.sticker-photos {
+  border: 2px solid #4e7f71;
+  margin-top: 10px;
+}
+
+.sticker-photos dt {
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.2em;
+  color: #4e7f71;
+  cursor: pointer;
+}
+
+.sticker-photos dt:hover {
+  background-color: #4e7f71;
+  color: #eee;
+}
+
+.sticker-photos dd {
+  display: none;
+  padding: 10px;
+  text-align: left;
+}
+
+.sticker-photos dd img {
+  display: inline;
+  margin-bottom: 5px;
+}

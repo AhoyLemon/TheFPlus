@@ -6,19 +6,8 @@
       <h1><?php echo $page->title() ?></h1>
       <?php echo $page->text()->kirbytext() ?>
     </article>
-    
-    <style>
-      ul.submitted-content { counter-reset:docNumber -1; }
-        ul.submitted-content li { counter-increment: docNumber; }
-        ul.submitted-content .number-cell { width:1em; text-align:right; }
-        ul.submitted-content .number-cell:before { content: counter(docNumber); }
-        .submitted-content a { text-decoration:none; }
-          .submitted-content a:hover { text-decoration:underline; }
-      .comma-this .add-comma:after { content:'& '; }
-      .comma-this .add-comma:last-child:after { content:''; }
-    </style>
 
-    <ul class="submitted-content dump">
+    <ul class="submitted-content hopper">
       <li class="thead">
         <span class="th"></span>
         <span class="th">Document</span>
@@ -34,15 +23,22 @@
         } ?>
         <li>
           <span class="number-cell"></span>
-          <?php if ((param('show') == "links")) { ?>
-            <a class="submission" href="<?php echo $section->docurl(); ?>" target="_blank">
-              <?php echo $section->title(); ?>
-            </a>
-          <?php } else { ?>
-            <span class="submission">
-              <?php echo $section->title(); ?>
-            </span>
-          <?php } ?>
+          <span class="submission">
+            <?php if ((param('show') == "links")) { ?>
+              <a href="<?php echo $section->docurl(); ?>" target="_blank">
+                <?php echo $section->title(); ?>
+              </a>
+            <?php } else { ?>
+              <span>
+                <?php echo $section->title(); ?>
+              </span>
+            <?php } ?>
+            <?php if ($section->recorded()->bool()): ?>
+              <span class="recorded">
+                | <b>RECORDED</b>
+              </span>
+            <?php endif ?>
+          </span>
           <span class="submitter">
             <?php if ($multisubmit == false) { ?>
               <?php $meetslug = strtolower(preg_replace('/\s+/', '-', $section->submitter())); ?>
@@ -52,15 +48,15 @@
                 <?php echo $section->submitter() ?>
               <?php } ?>
             <?php } else if ($multisubmit == true) { ?>
-              <span class="comma-this">
+              <span class="multiple-items">
                 <?php foreach($docsubmitters as $docsubmitter): ?>
                   <?php $meetslug = strtolower(preg_replace('/\s+/', '-', $docsubmitter)); ?>
                   <?php if($site->find('meet/'.$meetslug)){ ?>
-                    <span class="add-comma">
+                    <span class="item">
                       <a href="/meet/<?php echo $meetslug; ?>"><?php echo $docsubmitter ?></a>
                     </span>
                   <?php } else { ?>
-                    <span class="add-comma">
+                    <span class="item">
                       <?php echo $docsubmitter ?>
                     </span>
                   <?php } ?>

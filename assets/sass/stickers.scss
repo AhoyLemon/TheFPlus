@@ -1,0 +1,38 @@
+//NORMALIZE, GET DEFAULTS
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/_extends";
+@import "partials/_z-index";
+
+//STUFF
+.sticker-buy-buttons { text-align: center; }
+.sticker-buy-button { display: inline-block; padding-left: 0.5em; padding-right: 0.5em;
+  button { display: block; font-size: 1em; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.2em 1em; cursor: pointer; font-weight:$bold; margin-top:0.3em;
+    &:hover { background:$red; color:$white; }
+  }
+}
+
+.sticker-series { border-bottom: 1px solid $black; padding-bottom: 1em; margin-bottom: 1em; clear: both;
+  .row {
+    &.first { font-size:1.2em;  line-height:95%;  }
+    &.second { font-size:0.75em; } 
+  }
+  
+  // STICKER SUMMARY INFORMATION
+  img.thumbnail { float: left; margin-right: 20px; }
+  .series-name { font-weight: $bold; }
+  .run:before { content: ' • '; }
+  .remaining:before { content: ' • '; }
+  .creator { font-style: italic; font-size:0.8em; }
+  
+  dd { padding-top: 10px; clear: both; }
+}
+
+.sticker-photos { border:2px solid $teal; margin-top:10px;
+  dt { font-weight:$bold; text-align: center; font-size:1.2em; color:$teal; cursor: pointer;
+    &:hover { background-color:$teal; color:$white; }
+  }
+  dd { display: none; padding:10px; text-align: left;
+    img { display: inline; margin-bottom: 5px; }
+  }
+}
