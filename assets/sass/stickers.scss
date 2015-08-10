@@ -7,7 +7,7 @@
 //STUFF
 .sticker-buy-buttons { text-align: center; }
 .sticker-buy-button { display: inline-block; padding-left: 0.5em; padding-right: 0.5em;
-  button { display: block; font-size: 1em; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.2em 1em; cursor: pointer; font-weight:$bold; margin-top:0.3em;
+  button { display: block; font-size: 1em; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.2em 1em; cursor: pointer; font-weight:$bold; margin-bottom:0.3em;
     &:hover { background:$red; color:$white; }
   }
 }
