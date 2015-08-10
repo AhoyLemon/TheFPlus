@@ -39,3 +39,8 @@ fields:
             type: date
             width: 1/2
             format: MM/DD/YY
+          recorded:
+            label: Recorded 
+            type: checkbox
+            text: yup
+            width: 1/4

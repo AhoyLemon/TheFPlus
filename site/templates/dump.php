@@ -6,17 +6,6 @@
       <h1><?php echo $page->title() ?></h1>
       <?php echo $page->text()->kirbytext() ?>
     </article>
-    
-    <style>
-      ul.submitted-content { counter-reset:docNumber -1; }
-        ul.submitted-content li { counter-increment: docNumber; }
-        ul.submitted-content .number-cell { width:1em; text-align:right; }
-        ul.submitted-content .number-cell:before { content: counter(docNumber); }
-        .submitted-content a { text-decoration:none; }
-          .submitted-content a:hover { text-decoration:underline; }
-      .comma-this .add-comma:after { content:'& '; }
-      .comma-this .add-comma:last-child:after { content:''; }
-    </style>
 
     <ul class="submitted-content dump">
       <li class="thead">
