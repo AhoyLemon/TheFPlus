@@ -1,101 +1,162 @@
-These are die cut, 3"x3" stickers, polyvinyl with a UV laminate, which means these stickers are *super durable*. Waterproof,  sunlight resistant, dishwasher safe stickers from Sticker Mule, so wherever you put this sticker, it'll stay there for a while.
+<link href="/assets/css/stickers.css?=081015" rel="stylesheet" type="text/css">
 
-We're gonna be doing limited runs of each sticker design, and trying out a new design when the previous one gets low on inventory, so each design only gets printed once. 
+Each sticker is polyvinyl with a UV laminate, which means these things are *super durable*. Waterproof, sunlight resistant, dishwasher safe stickers from Sticker Mule, so wherever you put these things, they'll stay there for a while. Ideal for laptops, but appropriate anywhere.
 
-Our first design is unofficial F+ Mascot Foxie showing off her F+ Flava Flav clock.
+We're doing limited runs (quantity specified) of each design from different illustrators. Once a series is down to less than half of the supply, we'll print up the next series. And when a series is gone, it's gone. 
 
-Transactions are handled securely offsite by PayPal.
+Shipping is included. Transactions are handled securely offsite by PayPal.
 
-<div class="sticker-buy-buttons">
-  <div class="sticker-buy-button">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="LYBWGFQAL6PMW">
-      <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
-      <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-      <img src="/also-made/stickers/z1sticker3bucks.jpg" alt="1 sticker = $3" />
-      <button type="submit">BUY 1 ($3)</button>
-    </form>
-  </div>
-  <div class="sticker-buy-button">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="7MQFGM8W928YY">
-      <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
-      <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-      <img src="/also-made/stickers/z2stickers5bucks.jpg" alt="2 stickers = $5" />
-      <button type="submit">BUY 2 ($5)</button>
-    </form>
-  </div>
-  <div class="sticker-buy-button">
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_s-xclick">
-      <input type="hidden" name="hosted_button_id" value="ARXM745CQYSKC">
-      <!-- <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"> -->
-      <!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
-      <img src="/also-made/stickers/z5stickers10bucks.jpg" alt="5 stickers = $10" />
-      <button type="submit">BUY 5 ($10)</button>
-    </form>
-  </div>
-</div>
-
-<style>
-  .sticker-buy-buttons { text-align: center; }
-  .sticker-buy-button { display: inline-block; padding-left: 0.5em; padding-right: 0.5em; }
-  .sticker-buy-button button { display: block; font-size: 1.35em; font-family: 'Source Sans Pro', sans-serif; border: 2px solid #c0282d; background-color: #fff; color: #c0282d; padding: 0.2em 1em; cursor: pointer; font-weight: 700; }
-  .sticker-buy-button button:hover { background:#c0282d; color:#fff; }
-</style>
-
-<script src="https://checkout.stripe.com/checkout.js"></script>
-
-<select id="StickerSelect">
-	<option data-stickers="1" data-cost="3">1 Sticker ($3)</option>
-	<option data-stickers="2" data-cost="5">2 Stickers ($5)</option>
-	<option data-stickers="5" data-cost="10">5 Stickers ($10)</option>
-</select>
-
-<button id="customButton">Purchase</button>
-
-<script>
-	var myStickers = "1";
-	var myDescription = "one sticker";
-	var myCost = "3";
-	var myAmount = "300";
-  var handler = StripeCheckout.configure({
-    key: 'pk_live_RMubcJfOrNeR2nAM4XMttjse',
-    image: '/stickerstripe.png',
-    token: function(token) {
-      // Use the token to create the charge with a server-side script.
-      // You can access the token ID with `token.id`
-    }
-  });
-	$('#StickerSelect').change(function() {
-		myStickers = $('#StickerSelect option:selected').attr('data-stickers');
-		if (myStickers == "1") {
-			myDescription = "one sticker";
-		} else {
-			myDescription = myStickers+ " stickers";
-		}
-		myCost = $('#StickerSelect option:selected').attr('data-cost');
-		myAmount = myCost*100;
-		//alert(myStickers+' stickers will cost you $'+myCost+'.');
-	});
-	
-
-  $('#customButton').on('click', function(e) {
-    // Open Checkout with further options
-    handler.open({
-      //name: 'F Plus Stickers',
-			shippingAddress: true,
-			billingAddress:false,
-      description: myDescription,
-      amount: myAmount
-    });
-    e.preventDefault();
-  });
-
-  // Close Checkout on page navigation
-  $(window).on('popstate', function() {
-    handler.close();
-  });
-</script>
+<dl class="sticker-series">
+  <dt>
+    <img src="/also-made/stickers/series3thumb.png" class="thumbnail">
+    <div class="row first">
+      <span class="series-number">Series 3:</span>
+      <span class="series-name">Hypno Boobs Turned Me Gay</span>
+    </div>
+    <div class="row first">
+      <span class="creator">
+        by <a href="http://travramsey.com/" target="_blank">Travis Ramsey</a>
+      </span>
+    </div>
+    <div class="row second">
+      <span class="details">4"x2" rectangular</span>
+      <span class="run">100 printed</span>
+    </div>
+    <div class="row second">
+      <span class="release">Released on August 11th</span>
+    </div>
+  </dt>
+  <dd>
+    <div class="sticker-buy-buttons">
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="S4WRPWJMCFNZS">
+          <button type="submit">BUY 1 ($3)</button>
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="LNRSDW3FYDREA">
+          <button type="submit">BUY 2 ($5)</button>
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="3TAKDAK8R4QTJ">
+          <button type="submit">BUY 5 ($10)</button>
+        </form>
+      </div>
+    </div>
+  </dd>
+</dl>
+<dl class="sticker-series">
+  <dt>
+    <img src="/also-made/stickers/series2thumb.png" class="thumbnail">
+    <div class="row first">
+      <span class="series-number">Series 2:</span>
+      <span class="series-name">Black & Red Logo on clear</span>
+    </div>
+    <div class="row first">
+      <span class="creator">
+        by <a href="http://thefpl.us/meet/lemon">Lemon</a>
+      </span>
+    </div>
+    <div class="row second">
+      <span class="details">3" x 2.6194", die cut</span>
+      <span class="run">200 printed</span>
+    </div>
+    <div class="row second">
+      <span class="release">Released on August 11th</span>
+    </div>
+  </dt>
+  <dd>
+    <div class="sticker-buy-buttons">
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="S4WRPWJMCFNZS">
+          <button type="submit">BUY 1 ($3)</button>
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="LNRSDW3FYDREA">
+          <button type="submit">BUY 2 ($5)</button>
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="3TAKDAK8R4QTJ">
+          <button type="submit">BUY 5 ($10)</button>
+        </form>
+      </div>
+    </div>
+  </dd>
+</dl>
+<dl class="sticker-series">
+  <dt>
+      <img src="/also-made/stickers/series1thumb.png" class="thumbnail">
+    <div class="row first">
+      <span class="series-number">Series 1:</span>
+      <span class="series-name">F+lava F+lav F+oxie</span>
+    </div>
+    <div class="row first">
+      <span class="creator">
+        by <a href="http://thefpl.us/meet/portaxx">Portaxx</a>
+      </span>
+    </div>
+    <div class="row second">
+      <span class="details">2.9663" x 3", die cut</span>
+      <span class="run">100 printed</span>
+    </div>
+    <div class="row second">
+      <span class="release">Released on July 25th</span>
+      <span class="remaining">few left</span>
+    </div>
+  </dt>
+  <dd>
+    <div class="sticker-buy-buttons">
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="LYBWGFQAL6PMW">
+          <button type="submit">BUY 1 ($3)</button>
+          <img src="/also-made/stickers/z1sticker3bucks.jpg" alt="1 sticker = $3" />
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="7MQFGM8W928YY">
+          <button type="submit">BUY 2 ($5)</button>
+          <img src="/also-made/stickers/z2stickers5bucks.jpg" alt="2 stickers = $5" />
+        </form>
+      </div>
+      <div class="sticker-buy-button">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="ARXM745CQYSKC">
+          <button type="submit">BUY 5 ($10)</button>
+          <img src="/also-made/stickers/z5stickers10bucks.jpg" alt="5 stickers = $10" />
+        </form>
+      </div>
+    </div>
+    <dl class="sticker-photos">
+      <dt onclick="$(this).next('dd').slideToggle(300);">
+        SEE PHOTOS
+      </dt>
+      <dd>
+        <img src="/also-made/stickers/foxie320.png" />
+        <img src="/also-made/stickers/circleoffoxie.jpg" />
+        <img src="/also-made/stickers/pileoffoxie.jpg" />
+        <img src="/also-made/stickers/simoneupstairsonlaptop.jpg" />
+        <img src="/also-made/stickers/foxieenvelope.jpg" />
+      </dd>
+    </dl>
+  </dd>
+</dl>

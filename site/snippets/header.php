@@ -59,7 +59,7 @@
   
   <!-- Font -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  <link href="/assets/css/thefplus.css?=072815" rel="stylesheet" type="text/css">
+  <link href="/assets/css/thefplus.css?=081115" rel="stylesheet" type="text/css">
 
 </head>
 <body>
