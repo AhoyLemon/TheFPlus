@@ -11,14 +11,15 @@
 
 .sticker-buy-button button {
   display: block;
-  font-size: 1em;
+  font-size: 0.9em;
+  width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   border: 2px solid #c0282d;
   background-color: #fff;
   color: #c0282d;
-  padding: 0.2em 1em;
+  padding: 0.3em 0;
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 0.3em;
 }
 
@@ -70,22 +71,45 @@
   clear: both;
 }
 
+.sticker-series footer.add-your-own {
+  color: #4e7f71;
+  font-size: 0.65em;
+  padding: 0.2em 1em;
+  text-align: right;
+}
+
 .sticker-photos {
   border: 2px solid #4e7f71;
   margin-top: 10px;
 }
 
 .sticker-photos dt {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #4e7f71;
   cursor: pointer;
 }
 
+.sticker-photos dt:after {
+  content: 'SEE PHOTOS';
+}
+
 .sticker-photos dt:hover {
+  background-color: #e5e972;
+}
+
+.sticker-photos dt.active {
   background-color: #4e7f71;
   color: #eee;
+}
+
+.sticker-photos dt.active:after {
+  content: 'HIDE PHOTOS';
+}
+
+.sticker-photos dt.active:hover {
+  color: #e5e972;
 }
 
 .sticker-photos dd {
