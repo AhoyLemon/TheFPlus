@@ -7,7 +7,7 @@
 //STUFF
 .sticker-buy-buttons { text-align: center; }
 .sticker-buy-button { display: inline-block; padding-left: 0.5em; padding-right: 0.5em;
-  button { display: block; font-size: 1em; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.2em 1em; cursor: pointer; font-weight:$bold; margin-bottom:0.3em;
+  button { display: block; font-size: 0.9em; width:100%; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.3em 0; cursor: pointer; font-weight:$normal; margin-bottom:0.3em;
     &:hover { background:$red; color:$white; }
   }
 }
@@ -26,12 +26,22 @@
   .creator { font-style: italic; font-size:0.8em; }
   
   dd { padding-top: 10px; clear: both; }
+  
+  // FOOTER
+  footer.add-your-own { color: #4e7f71; font-size: 0.65em; padding: .2em 1em; text-align: right; }
 }
 
 .sticker-photos { border:2px solid $teal; margin-top:10px;
-  dt { font-weight:$bold; text-align: center; font-size:1.2em; color:$teal; cursor: pointer;
-    &:hover { background-color:$teal; color:$white; }
+  dt { font-weight:$normal; text-align: center; font-size:1em; color:$teal; cursor: pointer;
+    &:after { content: 'SEE PHOTOS'; }
+    &:hover { background-color:$yellow; }
+    
+    &.active { background-color:$teal; color:$white;
+      &:after { content: 'HIDE PHOTOS'; }
+      &:hover { color:$yellow; }
+    }
   }
+
   dd { display: none; padding:10px; text-align: left;
     img { display: inline; margin-bottom: 5px; }
   }
