@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.sticker-buy-buttons {
-  text-align: center;
-}
-
 .sticker-buy-button {
   display: inline-block;
   padding-left: 0.5em;
@@ -79,13 +75,11 @@
 }
 
 .sticker-photos {
-  border: 2px solid #4e7f71;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .sticker-photos dt {
   font-weight: 400;
-  text-align: center;
   font-size: 1em;
   color: #4e7f71;
   cursor: pointer;
@@ -93,22 +87,21 @@
 
 .sticker-photos dt:after {
   content: 'SEE PHOTOS';
+  padding: 0.2em 1em;
+  border: 2px solid #4e7f71;
 }
 
-.sticker-photos dt:hover {
+.sticker-photos dt:hover:after {
   background-color: #e5e972;
-}
-
-.sticker-photos dt.active {
-  background-color: #4e7f71;
-  color: #eee;
 }
 
 .sticker-photos dt.active:after {
   content: 'HIDE PHOTOS';
+  background-color: #4e7f71;
+  color: #eee;
 }
 
-.sticker-photos dt.active:hover {
+.sticker-photos dt.active:hover:after {
   color: #e5e972;
 }
 
@@ -116,6 +109,7 @@
   display: none;
   padding: 10px;
   text-align: left;
+  border: 2px solid #4e7f71;
 }
 
 .sticker-photos dd img {
