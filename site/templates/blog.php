@@ -35,7 +35,7 @@
       <meta itemprop="headline" content="<?php echo $page->title() ?>" />
 			<meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
     </header>
-
+    
     <div class="content" itemprop="articleBody">
       <?php echo $page->text()->kirbytext() ?>
     </div>
