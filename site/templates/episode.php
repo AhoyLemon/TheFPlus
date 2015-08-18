@@ -18,7 +18,7 @@ $etags = explode(",", $page->tags());
 $songs = explode(",", $page->music_used());
   ?>
 
-  <article class="episode full" itemscope itemtype="https://schema.org/RadioEpisode">
+  <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
     <header>
       <h1>
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
