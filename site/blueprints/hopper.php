@@ -37,7 +37,8 @@ fields:
           subdate:
             label: Date Submitted
             type: date
-            width: 1/2
+            default: today
+            width: 1/4
             format: MM/DD/YY
           recorded:
             label: Recorded 

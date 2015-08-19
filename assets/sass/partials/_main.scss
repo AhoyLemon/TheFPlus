@@ -3,7 +3,7 @@ article { font-weight: $light;
     header { @extend %clearfix; }
   }
   &.full { 
-    h1, h2, h3, h4, h5, h6 { font-weight: 400; margin-top: 0.5em; }
+    h1, h2, h3, h4, h5, h6 { font-weight: 400; }
     img { max-width: 100%; height: auto; }
     p { margin-bottom: 1em; }
     header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
@@ -20,6 +20,12 @@ article { font-weight: $light;
 
     a { text-decoration: none;
       &:hover { text-decoration: underline; }
+    }
+    .cast {
+      li {
+        &:after { margin-left: -0.2em; }
+        &:nth-last-child(2):after { margin-left:0; }
+      }
     }
     .episode-tags {
       .label { display: block; }
@@ -38,7 +44,7 @@ article { font-weight: $light;
   .cast { 
     li { display: inline;
       &:after { content:', '; }
-      &:nth-last-child(2):after { content:'';  }
+      &:nth-last-child(2):after { content:''; }
       &:last-child { 
         &:before { content:'and '; }
         &:after { content:'.' };
