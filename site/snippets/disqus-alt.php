@@ -2,7 +2,7 @@
 <?php $disqus_identifier = $page->uri(); ?>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
-  var disqus_shortname = 'thefplus'; // required: replace example with your forum shortname
+  var disqus_shortname = 'thefplus';
   var disqus_identifier = '<?php echo $disqus_identifier ?>';
   <?php if ($allow_comments ==  true): ?>
   (function() {

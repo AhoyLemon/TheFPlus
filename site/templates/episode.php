@@ -74,7 +74,7 @@ $songs = explode(",", $page->music_used());
       <!-- CONTENT PROVIDER -->
       <?php if ($page->provider() != ""): ?>
         <div class="content-provider">
-          <label>content for this episode was compiled by</label>
+          <label>Content for this episode was compiled by</label>
           <a href="<?php echo url::home() ?>/meet/<?php $plink = strtolower(preg_replace('/\s+/', '-', $page->provider())); echo strtolower($plink) ?>">
             <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
           </a>
@@ -84,7 +84,7 @@ $songs = explode(",", $page->music_used());
       <!-- EDITOR -->
       <?php if ($page->editor() != ""): ?>
         <div class="edited-by">
-          <label>edited by</label>
+          <label>Edited by</label>
           <span class="editor" itemprop="editor">
             <?php echo $page->editor() ?>
           </span>

@@ -13,15 +13,6 @@
   <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
-      <!-- AUTHOR -->
-      <?php if ($page->author() != ""): ?>
-      <h3 style="margin:-.5em 0 0 0; float:right;">
-        <span>by</span>
-        <a href="<?php echo url::home() ?>/meet/<?php $plink = strtolower(preg_replace('/\s+/', '-', $page->author())); echo $plink ?>">
-          <span itemprop="author"><?php echo $page->author() ?></span>
-        </a>
-      </h3>
-      <?php endif ?>
       <!-- DATE & TIME -->
       <time class="released">
         <span class="date" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
@@ -32,6 +23,15 @@
           <?php echo $pubtime; ?>
         </span>
       </time>
+      <!-- AUTHOR -->
+      <?php if ($page->author() != ""): ?>
+        <h4 class="author">
+          <span>by</span>
+          <a href="<?php echo url::home() ?>/meet/<?php $plink = strtolower(preg_replace('/\s+/', '-', $page->author())); echo $plink ?>">
+            <span itemprop="author"><?php echo $page->author() ?></span>
+          </a>
+        </h4>
+      <?php endif ?>
       <meta itemprop="headline" content="<?php echo $page->title() ?>" />
 			<meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
     </header>
