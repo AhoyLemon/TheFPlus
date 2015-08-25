@@ -1,0 +1,53 @@
+<style>
+  h1 { display:none; }
+</style>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.4.0/jquery.timeago.min.js"></script>
+<script>
+
+$(document).ready(function() {
+  $commentDiv = $("#CommentsPage");
+
+  $.get("https://disqus.com/api/3.0/forums/listPosts.json?forum=thefplus&limit=20&related=thread&api_key=RzacHatO5AX9Lg0qexKqWCIXkbitwPo52meOZiGbYQW9fpETiLIjCWVb3S4Nrc4L", function(res, code) {
+    //Good response?
+    for(var i=0, len=res.response.length; i<len; i++) {
+      var post = res.response[i];
+      var ago = jQuery.timeago(post.createdAt+"+0000");
+      var xtraContent = "";
+      //alert(ago);
+      console.dir(post);
+      var pScore = "";
+      if (post.points > 0) {
+        pScore = '<span class="score positive">'+post.points+'</span>'
+      } else if (post.points < 0) {
+        pScore = '<span class="score negative">'+post.points+'</span>'
+      } else {
+        pScore = "";
+      }
+      var msg = post.raw_message;
+      //msg = msg.replace(/\r?\n/g, '<br />');
+      var xtraContent = '';
+      if (post.media.length > 0) {
+        //console.log(post.media[0]);
+        for(var j=0, l=post.media.length; j<l; j++) {
+          if (post.media[j].mediaType == "3") {
+            xtraContent = xtraContent + ' <img src="http://www.squarepegtheatre.co.uk/css/images/icons/youtube_icon.png" class="thumbnail">';
+          } else if (post.media[j].mediaType == "2") {
+            xtraContent = xtraContent + ' <img src="'+post.media[j].thumbnailURL+'" class="thumbnail">';
+          } else {
+            xtraContent = xtraContent + ' [extra content]';
+          }
+        }
+        /**
+        if (post.media[0].mediaType == "3") {
+          
+        } else if (post.media[0].mediaType == "2") {
+          // THIS IS AN IMAGE, DISPLAY THE THUMBNAIL
+          xtraContent = xtraContent + ' <img src="'+post.media[0].thumbnailURL+'" class="thumbnail">';
+        }
+        **/
+      }
+      $commentDiv.append('<li><h5><a href="'+post.url+'">'+post.thread.clean_title+'</a></h5><blockquote><p>'+msg+'</p>'+xtraContent+' '+pScore+'</blockquote><cite>—<a href="https://disqus.com/home/user/'+post.author.username+'/" data-action="profile" data-user="'+post.author.id+'" data-username="'+post.author.username+'" data-role="username">'+post.author.name+'</a>, '+ago+'</cite></li>');
+    }
+  });
+});  
+</script>
