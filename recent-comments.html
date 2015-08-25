@@ -24,13 +24,13 @@ $(document).ready(function() {
         pScore = "";
       }
       var msg = post.raw_message;
-      //msg = msg.replace(/\r?\n/g, '<br />');
+      //msg = msg.replace(/^(\[url=)?(https?:\/\/)?(www\.|\S+?\.)(\S+?\.)?\S+$\s*/mg, '');
       var xtraContent = '';
       if (post.media.length > 0) {
         //console.log(post.media[0]);
         for(var j=0, l=post.media.length; j<l; j++) {
           if (post.media[j].mediaType == "3") {
-            xtraContent = xtraContent + ' <img src="http://www.squarepegtheatre.co.uk/css/images/icons/youtube_icon.png" class="thumbnail">';
+            xtraContent = xtraContent + ' <img src="http://www.squarepegtheatre.co.uk/css/images/icons/youtube_icon.png" class="thumbnail" style="height:75px; width:75px;">';
           } else if (post.media[j].mediaType == "2") {
             xtraContent = xtraContent + ' <img src="'+post.media[j].thumbnailURL+'" class="thumbnail">';
           } else {
