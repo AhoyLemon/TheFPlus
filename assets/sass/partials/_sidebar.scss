@@ -16,18 +16,18 @@
         .bird { fill: #55acee; }
         .snake { fill: #4eb85d; }
         .rss { fill: #ea832f; }
-				.circle { fill:$white; }
-				.orange { fill:#fabb32; }
-      .green { fill:#a9c54f; }
+        .circle { fill:$white; }
+        .orange { fill:#fabb32; }
+        .green { fill:#a9c54f; }
       }
       &:hover { @include rotate(360deg); }
       &:active .inside { @include scale(0.65); }
-			&:hover {
-				&.twitter .circle { fill:#55acee; }
-				&.ballpit .circle { fill:#4eb85d; }
-				&.flattr .circle { fill:#fabb32; }
-				&.rss .circle { fill:#ea832f; }
-			}
+      &:hover {
+        &.twitter .circle { fill:#55acee; }
+        &.ballpit .circle { fill:#4eb85d; }
+        &.flattr .circle { fill:#fabb32; }
+        &.rss .circle { fill:#ea832f; }
+      }
     }
   }
 }
@@ -51,21 +51,21 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 }
 
 .flapjax { @include transition(all, 0.82s);
-	svg * { fill:$red; }
+  svg * { fill:$red; }
   &.active { transform: rotateY(180deg) }
 }
 
 @media (min-width: $desktop-min) {
   .mobile-menu { display: none; }
   a.flapjax { display: none; }
-	.home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
-		&:hover { background-color:$white;
-			.st0 { fill:#212221; }
-		}
-		&:active { background-color:$red;
-			.st1 { fill:#212221; }
-		}
-	}
+  .home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
+    &:hover { background-color:$white;
+      .st0 { fill:#212221; }
+    }
+    &:active { background-color:$red;
+      .st1 { fill:#212221; }
+    }
+  }
 }
 
 @media (max-width: $mobile-max) {
@@ -73,14 +73,18 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
     .flapjax { display: block; width:60px; height: 60px; float: left; 
       svg { height:100%; width:100%; }
     }
-    .mobile-logo { display: block; height: 56px; float: right; padding-top: 4px; padding-bottom: 4px; padding-right: 15px;}
+    .mobile-logo { display: block; height: 56px; padding-top: 4px; padding-bottom: 4px; padding-right: 15px; float: right; }
   }
-	.home-link { display: block;
-		&:hover, &:active {
-			svg { background:$white; }
-			.st0 { fill:#212221; }
-		}
-	}
+  
+  .home-link { display: block; 
+    &:hover, &:active {
+      svg { background:$white; }
+      .st0 { fill:#212221; }
+    }
+    header & { max-width: 200px; float: right; }
+    .sidebar & { display: inline-block; max-width: 170px; }
+  }
+  header .home-link {  }
   .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
     &.visible { @include translateX(0); }
     .desktop-logo { height: 60px; }
