@@ -18,7 +18,7 @@
 
   <article class="episode full" itemscope itemtype="https://schema.org/CreativeWork">
     <header>
-      <h1><?php echo $page->title() ?></h1>
+      <h1 itemprop="name"><?php echo $page->title() ?></h1>
 
       <!-- DATE & TIME -->
       <time class="released" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
@@ -55,8 +55,8 @@
       </div>
     <?php endif ?>
     
-    <!-- EPISODE SUMMARY TEXT -->
-    <summary class="info-block" itemprop="description">
+    <!-- SUMMARY TEXT -->
+    <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
       <?php echo $page->text()->kirbytext() ?>
     </summary>
 
