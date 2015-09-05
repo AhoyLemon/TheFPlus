@@ -1,14 +1,14 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>The F Plus</title>
-    <link>http://thefpl.us</link>
+    <link>https://thefpl.us</link>
     <language>en-us</language>
     <copyright>2009 - <?php echo date("Y") ?> Creative Commons</copyright>
     <description>The F Plus is a weekly podcast wherein we find terrible writing from the internet and beyond, wrap a theme around it, and then bring it to you in the most entertaining way we can.</description>
     <image>
-      <url>http://thefpl.us/podcasts/feedburner_144.png</url>
+      <url>https://thefpl.us/podcasts/feedburner_144.png</url>
       <title>The F Plus</title>
-      <link>http://thefpl.us</link>
+      <link>https://thefpl.us</link>
     </image>
     <itunes:subtitle>Terrible things read with enthusiasm.</itunes:subtitle>	
     <itunes:author>The F Plus</itunes:author>
@@ -19,7 +19,7 @@
     </itunes:owner>
     <itunes:category text="Comedy"></itunes:category>
     <itunes:explicit>yes</itunes:explicit>
-    <itunes:image href="http://thefpl.us/podcasts/logo3.png" />
+    <itunes:image href="https://thefpl.us/podcasts/logo4.png" />
 
     <generator><?php echo c::get('feed.generator', 'Kirby') ?></generator>
 
@@ -46,7 +46,7 @@
             <?php if ($item->cast() != ""): ?>
               <p>with:
                 <?php foreach($persons as $person): ?>
-                  <a href="http://thefpl.us/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a> &nbsp;
+                  <a href="https://thefpl.us/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a> &nbsp;
                 <?php endforeach ?>
               </p>
             <?php endif ?>
