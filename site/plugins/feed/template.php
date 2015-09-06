@@ -54,13 +54,16 @@
               <p>reading: 
                 <?php if ($multisite == true): ?>
                   <?php foreach($fsites as $fsite): ?>
-                    <b><?php echo trim($fsite) ?></b> &nbsp;
+                    <code><?php echo trim($fsite) ?></code> &nbsp;
                   <?php endforeach ?>
                 <?php endif ?>
                 <?php if ($multisite == false): ?>
-                  <b><?php echo trim($item->featured_site()) ?></b>
+                  <code><?php echo trim($item->featured_site()) ?></code>
                 <?php endif ?>
               </p>
+            <?php endif ?>
+            <?php if ($item->provider() != ""): ?>
+              <p>Content provided by <?php echo $item->provider(); ?></p>
             <?php endif ?>
             <?php echo $item->{$textfield}()->kirbytext() ?>
             <?php if ($item->music_used() != ""): ?>
