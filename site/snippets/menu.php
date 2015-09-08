@@ -53,7 +53,6 @@
 	</svg>
 
   <a href="<?php echo url::home() ?>" class="home-link">
-		<!-- <img src="<?php echo url::home() ?>/assets/svg/logo-modern-inverse.svg" class="desktop-logo" alt="The F Plus Logo" /> -->
 		<svg class="desktop-logo" alt="The F Plus Logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 273 80">
 			<style>
 				.st0{fill:#c6c5d3;} .st1{fill:#C0282D;}
@@ -98,7 +97,7 @@
 				</g>
 			</svg>
     </a>
-    <a class="rss" title="RSS Feed" href="http://feeds.feedburner.com/TheFPlus" target="_blank">
+    <a class="rss" title="RSS Feed" href="https://feeds.feedburner.com/TheFPlus" target="_blank">
       <svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
 				<use class="rss inside" xlink:href="#IconRSS"></use>
