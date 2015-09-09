@@ -29,22 +29,22 @@
   
   <section class="people summaries">
     <?php foreach($page->children() as $article): ?>
-    <article class="person brief <?php echo $article->role() ?>" itemscope itemtype="http://schema.org/Person">
+    <article class="person brief <?php echo $article->role() ?>">
       <header>
         <h2 class="title">
-          <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-            <span itemprop="name"><?php echo html($article->title()) ?></span>
+          <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+            <?php echo $article->title(); ?>
           </a>
         </h2>
-        <h3 class="job" itemprop="jobTitle">
+        <h3 class="job">
           <?php echo $article->job() ?>
         </h3>
       </header>
       <?php if($image = $article->image()): ?>
         <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
-          <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+          <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
           <div class="hover-cover">
-            <div class="content" itemprop="description">
+            <div class="content">
               <?php echo excerpt($article->text(), 222) ?>
             </div>
         </div>
@@ -52,7 +52,7 @@
       <?php endif ?>
       <?php if(!$image = $article->image()): ?>
         <summary>
-          <div class="content" itemprop="description">
+          <div class="content">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
         </summary>

@@ -64,9 +64,7 @@ $songs = explode(",", $page->music_used());
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">
       <?php foreach($persons as $person): ?>
-        <li itemprop="actor">
-          <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><span><?php echo $person ?></span></a>
-      	</li>
+      <li itemprop="actor"><a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a></li>
       <?php endforeach ?>
     </ul>
     
@@ -112,7 +110,7 @@ $songs = explode(",", $page->music_used());
 
     <div class="episode-actions">
       <!-- DOWNLOAD FILE -->
-      <a itemprop="audio" class="action download" href="<?php echo $page->episode_file() ?>" title="Download episode" download>
+      <a itemprop="audio" class="action download" href="/podcasts/<?php echo $page->episode_file() ?>" title="Download episode" download>
         <svg viewBox="0 0 100 100">
 					<use xlink:href="#IconDownload"></use>
 				</svg>
@@ -129,7 +127,7 @@ $songs = explode(",", $page->music_used());
 
       <!-- AUDIO CONTAINER -->
       <div class="audio-holder">
-        <audio src="<?php echo $page->episode_file() ?>" preload="none" controls></audio>
+        <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
       </div>
 
       <span class="share-label">share: </span>

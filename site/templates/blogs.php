@@ -6,27 +6,27 @@
     <section class="<?php echo $page->slug(); ?> blogs">
       <?php foreach($articles as $article): ?>
 				
-				<article class="wrote brief" itemscope itemtype="http://schema.org/BlogPosting">
+				<article class="wrote brief">
 					<aside>
 						<?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo $article->title(); ?>">
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
           </a>
         <?php endif ?>
 					</aside>
 					<summary>
 						<h2 class="title">
-							<a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-								<span itemprop="name"><?php echo html($article->title()) ?></span>
+							<a href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+								<span><?php echo html($article->title()) ?></span>
 							</a>
 						</h2>
 						<?php if ($article->author() != ""): ?>
 							<div class="author-block">
 								by: 
-								<span itemprop="author" class="author"><?php echo $article->author() ?></span>
+								<span class="author"><?php echo $article->author() ?></span>
 							</div>
 						<?php endif ?>
-						<time class="published released" itemprop="datePublished" content="<?php echo $article->date('Y-m-d'); ?>T<?php echo $article->time(); ?>+06:00">
+						<time class="published released">
 							<span class="date">
 								<?php echo date('l, F jS Y', $article->date()) ?>
 							</span>
@@ -41,7 +41,7 @@
 						<?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
-							<ul class="blog-tags" itemprop="keywords" content="<?php echo $article->tags(); ?>">
+							<ul class="blog-tags">
 								<?php foreach($etags as $etag): ?>
 									<?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
 									<?php $x = 0; ?>
@@ -51,7 +51,7 @@
 								<?php endforeach ?>
 							</ul>
 						<?php endif ?>
-						<a itemprop="discussionUrl" class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
+						<a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
 					</summary>
 				</article>
 			

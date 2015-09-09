@@ -6,3 +6,4 @@ Disallow: /page:*
 Disallow: /*?option
 Disallow: /episode/random
 Disallow: /episode/tag:*
+Disallow: /index.php/page:*
