@@ -11,10 +11,7 @@
     
     <?php 
       if ($page->slug() == "episode") {
-        $itemType = "https://schema.org/RadioEpisode";
-        $fsites = explode(",", $page->featured_site()); 
-      } else if ($page->slug() == "also-made") {
-        $itemType = "https://schema.org/CreativeWork";
+        $fsites = explode(",", $page->featured_site());
       }
     ?>
     <?php if (!$ftag): ?>
@@ -41,25 +38,23 @@
       <?php endif ?>
       <?php foreach($articles as $article): ?>
         <?php if($image = $article->image()): ?>
-          <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>" itemscope itemtype="<?php echo $itemType; ?>">
-            <meta itemprop="url" content="<?php echo $article->url(); ?>" />
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+          <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
             <summary>
               <h4 class="title">
                 <?php if ($article->parent()->slug() == "episode"): ?>
                   <?php echo $article->uid(); ?>:
                 <?php endif ?>
-                <span itemprop="name"><?php echo $article->title() ?></span>
+                <span><?php echo $article->title() ?></span>
               </h4>
-              <p itemprop="description"><?php echo excerpt($article->text(), 185) ?></p>
+              <p><?php echo excerpt($article->text(), 185) ?></p>
             </summary>
-            <span itemprop="discussionUrl" class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span>
+            <span class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span>
           </a>
         <?php endif ?>
         <?php if(!$image = $article->image()): ?>
-          <a href="<?php echo $article->url() ?>" class="no-image" title="<?php echo $article->title() ?>" itemscope itemtype="<?php echo $itemType; ?>">
-            <meta itemprop="url" content="<?php echo $article->url(); ?>" />
-            <h3 itemprop="name"><?php echo $article->title() ?></h3>
+          <a href="<?php echo $article->url() ?>" class="no-image" title="<?php echo $article->title() ?>">
+            <h3><?php echo $article->title() ?></h3>
             <span class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span>
           </a>
         <?php endif ?>

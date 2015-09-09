@@ -34,8 +34,9 @@ fields:
     icon: users  
   episode_file:
     label: Episode File
-    type: url
+    type: text
     icon: volume-up
+    placeholder: ex: fplus_055.mp3
     width:1/2
   runtime:
     label: Runtime

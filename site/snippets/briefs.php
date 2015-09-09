@@ -4,16 +4,16 @@
   
     <?php if ($article->parent()->slug() == "episode"): ?>
       <!-- EPISODE BRIEF -->
-      <article class="episode brief" itemscope itemtype="https://schema.org/RadioEpisode">
+      <article class="episode brief">
         <header>
           <h2 class="title">
-            <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-              <span itemprop="name" class="name">
+            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+              <span class="name">
                 <?php echo html($article->title()) ?>
               </span>
             </a>
           </h2>
-          <time class="published released" itemprop="datePublished" content="<?php echo $article->date('Y-m-d'); ?>T<?php echo $article->time(); ?>+06:00">
+          <time class="published released">
             <span class="date">
               <?php echo date('l, F jS Y', $article->date()) ?>
             </span>
@@ -25,12 +25,12 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>">
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
               <div class="hover-cover">
-                <ul class="tags" itemprop="keywords" content="<?php echo $article->tags() ?>">
+                <ul class="tags">
                   <?php foreach($etags as $etag): ?>
                   <li><?php echo $etag ?></li>
                   <?php endforeach ?>
@@ -45,30 +45,28 @@
           ?>
             <ul class="cast ridiculists">
               <?php foreach($persons as $person): ?>
-                <li itemprop="actor"><?php echo $person ?></li>
+                <li><?php echo $person ?></li>
               <?php endforeach ?>
             </ul>
           <?php endif ?>
-          <div class="content" itemprop="description">
+          <div class="content">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
         </summary>
-        <span itemprop="episodeNumber" class="episode-number"><?php echo $article->uid(); ?></span>
-        <a itemprop="discussionUrl" class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
+        <span class="episode-number"><?php echo $article->uid(); ?></span>
+        <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
       </article>
     <?php endif ?>
     <?php if ($article->parent()->slug() == "also-made"): ?>
       <!-- ALSO MADE BRIEF -->
-      <article class="also-made brief" itemscope itemtype="https://schema.org/CreativeWork">
+      <article class="also-made brief">
         <header>
           <h2 class="title">
-            <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-              <span itemprop="name" class="name">
-                <?php echo html($article->title()) ?>
-              </span>
+            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+              <?php echo html($article->title()) ?>
             </a>
           </h2>
-          <time class="published released" itemprop="datePublished" content="<?php echo $article->date('Y-m-d'); ?>T<?php echo $article->time(); ?>+06:00">
+          <time class="published released">
             <span class="date">
               <?php echo date('l, F jS Y', $article->date()) ?>
             </span>
@@ -80,12 +78,12 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-            <img itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
               <div class="hover-cover">
-                <ul class="tags" itemprop="keywords" content="<?php echo $article->tags() ?>">
+                <ul class="tags">
                   <?php foreach($etags as $etag): ?>
                   <li><?php echo $etag ?></li>
                   <?php endforeach ?>
@@ -100,28 +98,27 @@
           ?>
             <ul class="cast authors">
               <?php foreach($persons as $person): ?>
-                <li itemprop="contributor"><?php echo $person ?></li>
+                <li><?php echo $person ?></li>
               <?php endforeach ?>
             </ul>
           <?php endif ?>
-          <div class="content" itemprop="description">
+          <div class="content">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
         </summary>
-        <a itemprop="discussionUrl" class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
+        <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
       </article>
     <?php endif ?>
     <?php if ($article->parent()->slug() == "wrote"): ?>
       <!-- WROTE BRIEF -->
-      <article class="wrote brief" itemscope itemtype="http://schema.org/BlogPosting">
+      <article class="wrote brief">
         <header>
           <h2 class="title">
-            <a itemprop="url" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-              <span itemprop="name"><?php echo html($article->title()) ?></span>
+            <a href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+              <?php echo html($article->title()) ?>
             </a>
-						<meta itemprop="headline" content="<?php echo html($article->title()) ?>" />
           </h2>
-          <time class="published released" itemprop="datePublished" content="<?php echo $article->date('Y-m-d'); ?>T<?php echo $article->time(); ?>+06:00">
+          <time class="published released">
             <span class="date">
               <?php echo date('l, F jS Y', $article->date()) ?>
             </span>
@@ -133,12 +130,12 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-            <img  itemprop="image" src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
               <div class="hover-cover">
-                <ul class="tags" itemprop="keywords" content="<?php echo $article->tags() ?>">
+                <ul class="tags">
                   <?php foreach($etags as $etag): ?>
                   <li><?php echo $etag ?></li>
                   <?php endforeach ?>
@@ -153,21 +150,21 @@
           ?>
             <ul class="cast ridiculists authors">
               <?php foreach($persons as $person): ?>
-              <li itemprop="author"><?php echo $person ?></li>
+              <li><?php echo $person ?></li>
               <?php endforeach ?>
             </ul>
           <?php endif ?>
           <?php if ($article->author() != ""): ?>
             <div class="author-block">
               by: 
-              <span itemprop="author" class="author"><?php echo $article->author() ?></span>
+              <span class="author"><?php echo $article->author() ?></span>
             </div>
           <?php endif ?>
           <div class="content">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
 					<span class="time-estimate"><?php echo $article->text()->readingtime() ?></span>
-          <a itemprop="discussionUrl" class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
+          <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
         </summary>
       </article>
     <?php endif ?>

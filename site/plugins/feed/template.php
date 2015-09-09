@@ -40,7 +40,7 @@
         <guid><?php echo xml($item->url()) ?></guid>
         <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
         <description><?php echo $item->text()->xml() ?></description>
-        <enclosure url="<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
+        <enclosure url="http://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
         <content:encoded>
           <![CDATA[
             <?php if ($item->cast() != ""): ?>
