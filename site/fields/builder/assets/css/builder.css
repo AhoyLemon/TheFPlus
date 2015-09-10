@@ -14,7 +14,7 @@
   margin-bottom: 0;
 }
 .builder-entry-content {
-  padding: 1.5em;
+  padding: 1em 1em 0.5em 1em;
   border-bottom: 1px solid #efefef;
   position: relative;
 }
@@ -22,13 +22,13 @@
   cursor: move;  
 }
 .builder-entry-options .btn {
-  padding: .75em 1.5em;
+  padding: .5em 1em;
   width: 50%;
   float: left;
   border-right: 1px solid #efefef;
 }
 .builder-empty {
-  padding: 1.5em;
+  padding: 1em;
   background: #ddd;
 }
 .builder-empty a {
@@ -41,7 +41,7 @@
 .builder-entry-fieldset {
   font-size: 12px;
   text-transform: uppercase;
-  padding: 2px 5px;
+  padding: 0 5px;
   color: #B3B3B3;
   position: absolute;
   left: 0;
@@ -71,6 +71,9 @@
 .drop-down .drop-down-toggle{
   position: relative;
 }
+.drop-down-toggle {
+  cursor: pointer;
+}
 .drop-down ul li{
   border-top: 1px solid #202020;
 }
@@ -79,7 +82,7 @@
 }
 .drop-down ul li a{
   color: #FFF;
-  padding: .75em 1.5em;
+  padding: .5em 1em;
   display: block;
   line-height: 1em;
 }
