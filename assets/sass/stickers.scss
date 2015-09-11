@@ -5,8 +5,8 @@
 @import "partials/_z-index";
 
 //STUFF
-.sticker-buy-button { display: inline-block; padding-left: 0.5em; padding-right: 0.5em;
-  button { display: block; font-size: 0.9em; width:100%; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.3em 0; cursor: pointer; font-weight:$normal; margin-bottom:0.3em;
+.sticker-buy-button { display: inline-block;
+  button { display: block; font-size: 0.9em; width:100%; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.3em 1em; border-radius: 5em; cursor: pointer; font-weight:$normal; margin-bottom:0.3em; outline:none;
     &:hover { background:$red; color:$white; }
   }
 }

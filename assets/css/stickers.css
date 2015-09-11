@@ -1,8 +1,6 @@
 @charset "UTF-8";
 .sticker-buy-button {
   display: inline-block;
-  padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 
 .sticker-buy-button button {
@@ -13,10 +11,12 @@
   border: 2px solid #c0282d;
   background-color: #fff;
   color: #c0282d;
-  padding: 0.3em 0;
+  padding: 0.3em 1em;
+  border-radius: 5em;
   cursor: pointer;
   font-weight: 400;
   margin-bottom: 0.3em;
+  outline: none;
 }
 
 .sticker-buy-button button:hover {
