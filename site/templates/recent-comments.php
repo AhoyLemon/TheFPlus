@@ -25,7 +25,7 @@ $(document).ready(function() {
       } else {
         pScore = "";
       }
-      var msg = post.raw_message;
+      var msg = post.message;
       var xtraContent = '';
       if (post.media.length > 0) {
         // This part adds thumbnails.
@@ -49,8 +49,10 @@ $(document).ready(function() {
           }
         }
       }
-      $commentDiv.append('<li><h5><a href="'+post.url+'">'+post.thread.clean_title+'</a></h5><blockquote><p>'+msg+'</p>'+xtraContent+' '+pScore+'</blockquote><cite>—<a href="https://disqus.com/home/user/'+post.author.username+'/" data-action="profile" data-user="'+post.author.id+'" data-username="'+post.author.username+'" data-role="username">'+post.author.name+'</a>, '+ago+'</cite></li>');
+      $commentDiv.append('<li><h5><a href="'+post.url+'">'+post.thread.clean_title+'</a></h5><blockquote>'+msg+xtraContent+' '+pScore+'</blockquote><cite>—<a href="https://disqus.com/home/user/'+post.author.username+'/" data-action="profile" data-user="'+post.author.id+'" data-username="'+post.author.username+'" data-role="username">'+post.author.name+'</a>, '+ago+'</cite></li>');
     }
+    // Remove links in the text, they are unwanted.
+    $('#CommentsPage blockquote a').contents().unwrap();
   });
 });  
     </script>
