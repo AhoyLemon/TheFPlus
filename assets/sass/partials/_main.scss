@@ -8,7 +8,7 @@ article { font-weight: $light;
     p { margin-bottom: 1em; }
     header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
     .featured-site { float: right; }
-    summary { text-align: justify; }
+    summary, .content { text-align: justify; }
     ul.cast { padding-left: 0; }
     .info-block { padding-bottom: 1em; }
     ol { padding-left: 1.5em; padding-bottom: 1em;
