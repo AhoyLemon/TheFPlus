@@ -58,5 +58,13 @@ c::set('routes', array(
       //go($page->url());
 			return site()->visit($page);
     }
+  ),
+  array(
+    'pattern' => 'episode/100',
+    'action'  => function() {
+    	//$page = page('episode')->children('visible')->shuffle()->first();
+      //go($page->url());
+			 header::redirect('/episode/100a', 301);
+    }
   )
 ));
