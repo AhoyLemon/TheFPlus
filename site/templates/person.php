@@ -103,9 +103,9 @@
           <span class="list-leader"><?php echo $findme; ?> appears in:</span>
           <ul>
             <?php foreach($articles as $article): ?>
-              <li itemscope itemtype="https://schema.org/RadioEpisode">
-                <a itemprop="url" href="<?php echo $article->url() ?>">
-                  <span itemprop="name"><?php echo $article->title() ?></span>
+              <li>
+                <a href="<?php echo $article->url() ?>">
+                  <span><?php echo $article->title() ?></span>
                 </a>
               </li>
             <?php endforeach ?>
