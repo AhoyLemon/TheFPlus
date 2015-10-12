@@ -38,6 +38,10 @@
   color: #eee;
 }
 
+.buy-buttons button .small {
+  font-size: 0.6em;
+}
+
 .buy-buttons h4 {
   margin-top: 1em;
   margin-bottom: 0.25em;
@@ -60,6 +64,7 @@
   font-size: 1rem;
   padding: 0.25em;
   border-radius: 5em;
+  width: 100%;
 }
 
 .paypal-buy-form button {
@@ -124,45 +129,54 @@
   text-align: right;
 }
 
-.sticker-photos {
+.merch-photos {
   margin-top: 20px;
+  clear: both;
+  padding-top: 1.2em;
 }
 
-.sticker-photos dt {
+.merch-photos dt {
   font-weight: 400;
   font-size: 1em;
   color: #4e7f71;
   cursor: pointer;
 }
 
-.sticker-photos dt:after {
+.merch-photos dt:after {
   content: 'SEE PHOTOS';
   padding: 0.2em 1em;
   border: 2px solid #4e7f71;
 }
 
-.sticker-photos dt:hover:after {
+.merch-photos dt:hover:after {
   background-color: #e5e972;
 }
 
-.sticker-photos dt.active:after {
+.merch-photos dt.active:after {
   content: 'HIDE PHOTOS';
   background-color: #4e7f71;
   color: #eee;
 }
 
-.sticker-photos dt.active:hover:after {
+.merch-photos dt.active:hover:after {
   color: #e5e972;
 }
 
-.sticker-photos dd {
+.merch-photos dd {
   display: none;
   padding: 10px;
   text-align: left;
   border: 2px solid #4e7f71;
 }
 
-.sticker-photos dd img {
+.merch-photos dd img {
   display: inline;
   margin-bottom: 5px;
+}
+
+.merch-photos footer.add-your-own {
+  color: #4e7f71;
+  font-size: 0.65em;
+  padding: 0.2em 1em;
+  text-align: right;
 }
