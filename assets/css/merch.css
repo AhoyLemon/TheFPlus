@@ -1,0 +1,168 @@
+@charset "UTF-8";
+.buy-buttons {
+  display: block;
+}
+
+.buy-buttons button {
+  display: inline-block;
+  font-size: 0.9em;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  border: 2px solid #c0282d;
+  background-color: #fff;
+  color: #c0282d;
+  padding: 0.3em 1em;
+  border-radius: 5em;
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+  outline: none;
+  width: auto;
+}
+
+.buy-buttons button:hover {
+  background: #c0282d;
+  color: #eee;
+}
+
+.buy-buttons button[disabled] {
+  opacity: 0.5;
+  color: #343434;
+  background-color: rgba(52, 52, 52, 0.1);
+  border-color: rgba(52, 52, 52, 0.6);
+  cursor: default;
+}
+
+.buy-buttons button.active {
+  background: #343434;
+  color: #eee;
+}
+
+.buy-buttons h4 {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+}
+
+.buy-buttons h6 {
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.paypal-buy-form {
+  display: block;
+  float: left;
+  width: 12em;
+}
+
+.paypal-buy-form select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  padding: 0.25em;
+  border-radius: 5em;
+}
+
+.paypal-buy-form button {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5em;
+  font-size: 125%;
+}
+
+.hidden {
+  display: none;
+}
+
+.sticker-series {
+  border-bottom: 1px solid #343434;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  clear: both;
+}
+
+.sticker-series .row.first {
+  font-size: 1.2em;
+  line-height: 95%;
+}
+
+.sticker-series .row.second {
+  font-size: 0.75em;
+}
+
+.sticker-series img.thumbnail {
+  float: left;
+  margin-right: 20px;
+}
+
+.sticker-series .series-name {
+  font-weight: 600;
+}
+
+.sticker-series .run:before {
+  content: ' • ';
+}
+
+.sticker-series .remaining:before {
+  content: ' • ';
+}
+
+.sticker-series .creator {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+.sticker-series dd {
+  padding-top: 10px;
+  clear: both;
+}
+
+.sticker-series footer.add-your-own {
+  color: #4e7f71;
+  font-size: 0.65em;
+  padding: 0.2em 1em;
+  text-align: right;
+}
+
+.sticker-photos {
+  margin-top: 20px;
+}
+
+.sticker-photos dt {
+  font-weight: 400;
+  font-size: 1em;
+  color: #4e7f71;
+  cursor: pointer;
+}
+
+.sticker-photos dt:after {
+  content: 'SEE PHOTOS';
+  padding: 0.2em 1em;
+  border: 2px solid #4e7f71;
+}
+
+.sticker-photos dt:hover:after {
+  background-color: #e5e972;
+}
+
+.sticker-photos dt.active:after {
+  content: 'HIDE PHOTOS';
+  background-color: #4e7f71;
+  color: #eee;
+}
+
+.sticker-photos dt.active:hover:after {
+  color: #e5e972;
+}
+
+.sticker-photos dd {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  border: 2px solid #4e7f71;
+}
+
+.sticker-photos dd img {
+  display: inline;
+  margin-bottom: 5px;
+}

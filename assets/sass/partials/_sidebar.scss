@@ -19,6 +19,7 @@
         .circle { fill:$white; }
         .orange { fill:#fabb32; }
         .green { fill:#a9c54f; }
+        .youtube { fill:#e52d27; }
       }
       &:hover { @include rotate(360deg); }
       &:active .inside { @include scale(0.65); }
@@ -27,6 +28,7 @@
         &.ballpit .circle { fill:#4eb85d; }
         &.flattr .circle { fill:#fabb32; }
         &.rss .circle { fill:#ea832f; }
+        &.youtube .circle { fill:#e52d27; }
       }
     }
   }

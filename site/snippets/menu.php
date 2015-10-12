@@ -27,6 +27,9 @@
 				<path id="FlattrTopLeft" class="orange" d="M41.4 21.5c-13.7 0-20.6 7.9-20.6 22.5v30.7l13.3-13.3V45.8c0-6.1 1.6-9.9 7-10.8 1.9-.4 5.8-.2 8.3-.2V44c0 .1 0 .2.1.3.1.4.4.7.9.7.2 0 .4-.1.7-.3l23.1-23.2H41.4z"/>
 				<path id="FlattrBottomRight" class="green" d="M63.6 37.1v15.6c0 6.1-1.6 9.9-7 10.8-1.9.4-5.8.2-8.3.2v-9.2c0-.1 0-.2-.1-.3-.1-.4-.4-.7-.9-.7-.2 0-.4.1-.7.3l-23 23.3h32.7c13.7 0 20.6-7.9 20.6-22.5V23.8L63.6 37.1z"/>
 			</g>
+          <g id="IconYouTube">
+            <path d="M81.3 37.9s-.6-4.3-2.5-6.2c-2.4-2.5-5.1-2.5-6.3-2.7-8.8-.6-22-.6-22-.6s-13.2 0-22 .6c-1.2.1-3.9.2-6.3 2.7-1.9 1.9-2.5 6.2-2.5 6.2s-.6 5.1-.6 10.2v4.8c0 5.1.6 10.2.6 10.2s.6 4.3 2.5 6.2c2.4 2.5 5.5 2.4 6.9 2.7 5 .5 21.4.6 21.4.6s13.2 0 22-.7c1.2-.1 3.9-.2 6.3-2.7 1.9-1.9 2.5-6.2 2.5-6.2s.6-5.1.6-10.2V48c0-5-.6-10.1-.6-10.1zM44 58.7V41l17 8.9-17 8.8z" />
+            </g>
 			<g id="IconRSS">
 				<path d="M24.6 69.7c0 4.1 3.2 7.4 7 7.4 3.9 0 7.1-3.3 7.1-7.4 0-4.1-3.2-7.4-7.1-7.4-3.8 0-7 3.4-7 7.4z"/>
 				<path d="M24.6 51c6.6 0 12.8 2.7 17.5 7.6s7.3 11.5 7.3 18.4h10.2c0-20.3-15.7-36.7-35-36.7V51z"/>
@@ -88,6 +91,13 @@
 				<use class="snake inside" xlink:href="#IconBallpit"></use>
 			</svg>
     </a>
+    <a class="youtube" title="View our YouTube Channel" href="http://YouTube.com/TheFPlus/playlists" target="blank">
+      <svg viewBox="0 0 100 100">
+        <use class="circle" xlink:href="#IconCircle"></use>
+        <use class="youtube inside" xlink:href="#IconYouTube"></use>
+      </svg>
+    </a>
+    <!--
     <a class="flattr" title="Tip us with Flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=http%3A%2F%2Fthefpl.us&title=The%20F%20Plus%20Podcast" target="_blank">
       <svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
@@ -97,6 +107,7 @@
 				</g>
 			</svg>
     </a>
+  -->
     <a class="rss" title="RSS Feed" href="https://feeds.feedburner.com/TheFPlus" target="_blank">
       <svg viewBox="0 0 100 100">
 				<use class="circle" xlink:href="#IconCircle"></use>
