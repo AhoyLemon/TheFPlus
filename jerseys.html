@@ -1,4 +1,4 @@
-<link href="/assets/css/merch.css?=09.11.15" rel="stylesheet" type="text/css">
+<link href="/assets/css/merch.css?=10.12.15" rel="stylesheet" type="text/css">
 
 **Join Team Internet**. These jerseys are printed on Champion Baseball raglan, 3/4 sleeves, 100% cotton and tagless. <a href="http://www.customink.com/items/sizing/99000_lineup/standard.htm" target="_blank">Click here for sizing guidelines.</a>
 
@@ -8,12 +8,21 @@ Shipping is included. Transactions are handled securely offsite by PayPal.
 
 <div class="buy-buttons" data-step="sizes" id="SizeStep">
   <h4>To begin, select your size</h4>
-  <button disabled id="SizeSmall" data-size="small">Small (sold out)</button>
-  <button id="SizeMedium" data-size="medium">Medium</button>
   <button id="SizeLarge" data-size="large">Large</button>
   <button id="SizeXL" data-size="xl">XL</button>
   <button id="SizeXXL" data-size="xxl">XXL</button>
-  <button id="SizeXXL" data-size="xxxl">XXXL</button>
+  <button disabled id="SizeSmall" data-size="small">
+    Small
+    <span class="small">(sold out)</span>
+  </button>
+  <button disabled id="SizeMedium" data-size="medium">
+    Medium
+    <span class="small">(sold out)</span>
+  </button>
+  <button disabled id="SizeXXXL" data-size="xxxl">
+    XXXL
+    <span class="small">(sold out)</span>
+  </button>
 </div>
 
 <div class="buy-buttons hidden" data-step="locations" id="LocationStep">
@@ -24,7 +33,7 @@ Shipping is included. Transactions are handled securely offsite by PayPal.
 </div>
 
 <div class="buy-buttons hidden" data-step="BuyNow" id="BuyNowStep">
-  <h4>Great, let's get you a jersey.</h3>
+  <h4>Great, let's get you a jersey.</h4>
   <div class="paypal-buy-form" data-size="medium">
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
@@ -92,46 +101,58 @@ Shipping is included. Transactions are handled securely offsite by PayPal.
   </div>
 </div>
 
-<script>
-$('#SizeStep button').click(function() {
-  var size = $(this).attr('data-size');
-  $('#LocationStep').slideDown(300);
-  $('#BuyNowStep .paypal-buy-form').hide();
-  $('#BuyNowStep .paypal-buy-form[data-size="'+size+'"]').show();
-  $(this).addClass('active');
-  $(this).siblings('button').removeClass('active');
-});
-$('#LocationStep button').click(function() {
-  var location = $(this).attr('data-ship');
-  if (location == "UnitedStates") {
-    $('.paypal-buy-form select').val('United States');
-    $('.paypal-buy-form select option').attr('selected', false);
-    $('.paypal-buy-form select option[value="United States"]').attr('selected', true);
-  } else if (location == "Canada") {
-    $('.paypal-buy-form select').val('Canada');
-    $('.paypal-buy-form select option').attr('selected', false);
-    $('.paypal-buy-form select option[value="Canada"]').attr('selected', true);
-  } else if (location == "SomewhereElse") {
-    $('.paypal-buy-form select').val('Anywhere Else');
-    $('.paypal-buy-form select option').attr('selected', false);
-    $('.paypal-buy-form select option[value="Anywhere Else"]').attr('selected', true);
-  }
-  $(this).addClass('active');
-  $(this).siblings('button').removeClass('active');
-  $('#BuyNowStep').slideDown(300);
-});
+<dl class="merch-photos">
+  <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
+  <dd>
+    <img src="/also-made/internet-jerseys/internet.png" />
+    <img src="/also-made/internet-jerseys/gallery1.jpg" />
+    <img src="/also-made/internet-jerseys/gallery2.jpg" />
+    <footer class="add-your-own">
+      Want to share your own photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
+    </footer>
+  </dd>
+</dl>
 
-$('.paypal-buy-form select').change(function() {
-  var newPlace = $(this).val();
-  if (newPlace == "United States") {
-    $('#LocationStep button[data-ship="UnitedStates"]').addClass('active');
-    $('#LocationStep button[data-ship="UnitedStates"]').siblings('button').removeClass('active');
-  } else if (newPlace == "Canada") {
-    $('#LocationStep button[data-ship="Canada"]').addClass('active');
-    $('#LocationStep button[data-ship="Canada"]').siblings('button').removeClass('active');
-  } else if (newPlace == "Anywhere Else") {
-    $('#LocationStep button[data-ship="SomewhereElse"]').addClass('active');
-    $('#LocationStep button[data-ship="SomewhereElse"]').siblings('button').removeClass('active');
-  }
-});
+<script>
+  $('#SizeStep button').click(function() {
+    var size = $(this).attr('data-size');
+    $('#LocationStep').slideDown(300);
+    $('#BuyNowStep .paypal-buy-form').hide();
+    $('#BuyNowStep .paypal-buy-form[data-size="'+size+'"]').show();
+    $(this).addClass('active');
+    $(this).siblings('button').removeClass('active');
+  });
+  $('#LocationStep button').click(function() {
+    var location = $(this).attr('data-ship');
+    if (location == "UnitedStates") {
+      $('.paypal-buy-form select').val('United States');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="United States"]').attr('selected', true);
+    } else if (location == "Canada") {
+      $('.paypal-buy-form select').val('Canada');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="Canada"]').attr('selected', true);
+    } else if (location == "SomewhereElse") {
+      $('.paypal-buy-form select').val('Anywhere Else');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="Anywhere Else"]').attr('selected', true);
+    }
+    $(this).addClass('active');
+    $(this).siblings('button').removeClass('active');
+    $('#BuyNowStep').slideDown(300);
+  });
+
+  $('.paypal-buy-form select').change(function() {
+    var newPlace = $(this).val();
+    if (newPlace == "United States") {
+      $('#LocationStep button[data-ship="UnitedStates"]').addClass('active');
+      $('#LocationStep button[data-ship="UnitedStates"]').siblings('button').removeClass('active');
+    } else if (newPlace == "Canada") {
+      $('#LocationStep button[data-ship="Canada"]').addClass('active');
+      $('#LocationStep button[data-ship="Canada"]').siblings('button').removeClass('active');
+    } else if (newPlace == "Anywhere Else") {
+      $('#LocationStep button[data-ship="SomewhereElse"]').addClass('active');
+      $('#LocationStep button[data-ship="SomewhereElse"]').siblings('button').removeClass('active');
+    }
+  });
 </script>
