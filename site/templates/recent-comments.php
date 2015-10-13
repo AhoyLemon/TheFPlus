@@ -44,7 +44,10 @@ $(document).ready(function() {
             } else {
               xtraContent = xtraContent + ' <div class="gif-thumb" style="display:inline-block; display: inline-block; border: 1px solid #444; font-size: 1.5em; padding: 0.2em 0.5em; background-color: #e5e972;  text-transform:uppercase;">IMG</div>';
             }
-          } else {
+          } else if (post.media[j].mediaType == "4") {
+            // Link to external site.
+            // Let's do nothing with this.
+          }else {
             xtraContent = xtraContent + ' [extra content]';
           }
         }
