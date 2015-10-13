@@ -36,9 +36,11 @@
             <?php echo $article->title(); ?>
           </a>
         </h2>
+        <!--
         <h3 class="job">
           <?php echo $article->job() ?>
         </h3>
+        -->
       </header>
       <?php if($image = $article->image()): ?>
         <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
