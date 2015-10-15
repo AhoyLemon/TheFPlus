@@ -1,310 +1,164 @@
-<link href="/assets/css/stickers.css?=09.11.15" rel="stylesheet" type="text/css">
+<link href="/assets/css/merch.css?=10.12.15" rel="stylesheet" type="text/css">
 
-Each sticker is polyvinyl with a UV laminate, which means these things are *super durable*. Waterproof, sunlight resistant, dishwasher safe stickers from Sticker Mule, so wherever you put these things, they'll stay there for a while. Ideal for laptops, but appropriate anywhere.
-
-We're doing limited runs (quantity specified) of each design from different illustrators. Once a series is down to less than half of the supply, we'll print up the next series. And when a series is gone, it's gone. 
+**Join Team Internet**. These jerseys are printed on Champion Baseball raglan, 3/4 sleeves, 100% cotton and tagless. <a href="http://www.customink.com/items/sizing/99000_lineup/standard.htm" target="_blank">Click here for sizing guidelines.</a>
 
 Shipping is included. Transactions are handled securely offsite by PayPal.
 
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/s6-thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 6:</span>
-      <span class="series-name">Upgrade Your Ears Today</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="/meet/lady-frenzy">Lady Frenzy</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">3" x 3", circle</span>
-      <span class="run">100 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released September 17th</span>
-    </div>
-  </dt>
+**UPDATE:** Based on the success of these shirts, we're doing a second batch. Please check back on this page real soon as we'll be taking preorders for specific sizes.
+
+<div class="buy-buttons" data-step="sizes" id="SizeStep">
+  <h4>To begin, select your size</h4>
+  <button id="SizeLarge" data-size="large">
+    Large
+    <span class="small">(1 left)</span>
+  </button>
+  <button id="SizeXL" data-size="xl">XL</button>
+  <button disabled id="SizeSmall" data-size="small">
+    Small
+    <span class="small">(sold out)</span>
+  </button>
+  <button disabled id="SizeMedium" data-size="medium">
+    Medium
+    <span class="small">(sold out)</span>
+  </button>
+  <button disabled id="SizeXXL" data-size="xxl">
+    XXL
+    <span class="small">(sold out)</span>
+  </button>
+  <button disabled id="SizeXXXL" data-size="xxxl">
+    XXXL
+    <span class="small">(sold out)</span>
+  </button>
+</div>
+
+<div class="buy-buttons hidden" data-step="locations" id="LocationStep">
+  <h4>Okay, where is this shipping to?</h4>
+  <button id="ShipToUS" data-ship="UnitedStates">United States</button>
+  <button id="ShipToCanada" data-ship="Canada">Canada</button>
+  <button id="ShipToSomewhereElse" data-ship="SomewhereElse">Somewhere Else</button>
+</div>
+
+<div class="buy-buttons hidden" data-step="BuyNow" id="BuyNowStep">
+  <h4>Great, let's get you a jersey.</h4>
+  <div class="paypal-buy-form" data-size="medium">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="6B6GFY39ZHDPY">
+      <select name="os0" data-select="location">
+       <option value="United States">United States $27.50 USD</option>
+       <option value="Canada">Canada $30.50 USD</option>
+       <option value="Anywhere Else">Anywhere Else $36.00 USD</option>
+      </select>
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" onclick="sendGA('merch', 'Team Internet Jersey', 'Medium', '22');">BUY IT</button>
+    </form>
+  </div>
+  <div class="paypal-buy-form" data-size="large">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="EXGTJS4KVD9XQ">
+      <select name="os0" data-select="location">
+       <option value="United States">United States $27.50 USD</option>
+       <option value="Canada">Canada $30.50 USD</option>
+       <option value="Anywhere Else">Anywhere Else $36.00 USD</option>
+      </select>
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" onclick="sendGA('merch', 'Team Internet Jersey', 'Large', '22');">BUY IT</button>
+    </form>
+  </div>
+  <div class="paypal-buy-form" data-size="xl">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="FDUJBZSHDUCK4">
+      <select name="os0" data-select="location">
+       <option value="United States">United States $27.50 USD</option>
+       <option value="Canada">Canada $30.50 USD</option>
+       <option value="Anywhere Else">Anywhere Else $36.00 USD</option>
+      </select>
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" onclick="sendGA('merch', 'Team Internet Jersey', 'XL', '22');">BUY IT</button>
+    </form>
+  </div>
+  <div class="paypal-buy-form" data-size="xxl">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="DTL6FC4NQ5SM2">
+      <select name="os0" data-select="location">
+       <option value="United States">United States $27.50 USD</option>
+       <option value="Canada">Canada $30.50 USD</option>
+       <option value="Anywhere Else">Anywhere Else $36.00 USD</option>
+      </select>
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" onclick="sendGA('merch', 'Team Internet Jersey', 'XXL', '22');">BUY IT</button>
+    </form>
+  </div>
+  <div class="paypal-buy-form" data-size="xxxl">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="RFMNL3G282GYS">
+      <select name="os0" data-select="location">
+       <option value="United States">United States $27.50 USD</option>
+       <option value="Canada">Canada $30.50 USD</option>
+       <option value="Anywhere Else">Anywhere Else $36.00 USD</option>
+      </select>
+      <input type="hidden" name="currency_code" value="USD">
+      <button type="submit" onclick="sendGA('merch', 'Team Internet Jersey', 'XXXL', '22');">BUY IT</button>
+    </form>
+  </div>
+</div>
+
+<dl class="merch-photos">
+  <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
   <dd>
-   <div class="sticker-buy-buttons">
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="J8WHR2LSQS5HC">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Ear Upgrade)', '1 @ $3', '3');">BUY 1 ($3)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="272QJW2JLCHQA">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Ear Upgrade)', '2 @ $5', '5');">BUY 2 ($5)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="6X6FQT4VW42P2">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Ear Upgrade)', '5 @ $10', '10');">BUY 5 ($10)</button>
-        </form>
-      </div>
-    </div>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/earupgrade320.png" />
-        <img src="/also-made/stickers/s6-headphones.jpg" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
+    <img src="/also-made/internet-jerseys/internet.png" />
+    <img src="/also-made/internet-jerseys/gallery1.jpg" />
+    <img src="/also-made/internet-jerseys/gallery2.jpg" />
+    <footer class="add-your-own">
+      Want to share your own photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
+    </footer>
   </dd>
 </dl>
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/s5-thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 5:</span>
-      <span class="series-name">There's a Ghost In My Butt</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="/meet/king-kalamari">King Kalamari</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">3" x 2.296", die cut on clear vinyl</span>
-      <span class="run">100 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released September 10th</span>
-    </div>
-  </dt>
-  <dd>
-   <div class="sticker-buy-buttons">
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="S2AH99ZZYXVY2">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Butt Ghost)', '1 @ $3', '3');">BUY 1 ($3)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="G2W8FBVGQUJPJ">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Butt Ghost)', '2 @ $5', '5');">BUY 2 ($5)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="3Q7MAAE55MU2G">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Butt Ghost)', '5 @ $10', '10');">BUY 5 ($10)</button>
-        </form>
-      </div>
-    </div>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/buttghost320.png" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
-  </dd>
-</dl>
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/s4-thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 4:</span>
-      <span class="series-name">Logo & Tagline Square</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="/meet/lemon">Lemon</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">3" x 3", square</span>
-      <span class="run">200 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released on September 10th</span>
-    </div>
-  </dt>
-  <dd>
-   <div class="sticker-buy-buttons">
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="PAGRRMPRLJUNN">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Logo Square)', '1 @ $3', '3');">BUY 1 ($3)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="9N87GGTREWEB4">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Logo Square)', '3 @ $5', '5');">BUY 3 ($5)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="DWNZ63Z33HCHS">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Logo Square)', '7 @ $10', '10');">BUY 7 ($10)</button>
-        </form>
-      </div>
-    </div>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/logosquare320.png" />
-        <img src="/also-made/stickers/s4greenmacbook.jpg" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
-  </dd>
-</dl>
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/series3thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 3:</span>
-      <span class="series-name">Hypno Boobs Turned Me Gay</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="http://travramsey.com/" target="_blank">Travis Ramsey</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">4"x2" rectangular</span>
-      <span class="run">100 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released on August 11th</span>
-      <span class="remaining">Less than half left</span>
-    </div>
-  </dt>
-  <dd>
-    <div class="sticker-buy-buttons">
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="WMXQ3XHWZ5G8Q">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Hypnoboobs)', '1 @ $3', '3');">BUY 1 ($3)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="NN83DK8L7KRX6">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Hypnoboobs)', '2 @ $5', '5');">BUY 2 ($5)</button>
-        </form>
-      </div>
-      <div class="sticker-buy-button">
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="AZMACSCFM9M62">
-          <button type="submit" onclick="sendGA('merch', 'Stickers (Hypnoboobs)', '5 @ $10', '10');">BUY 5 ($10)</button>
-        </form>
-      </div>
-    </div>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/hypno320.png" />
-        <img src="/also-made/stickers/hypnokeva.jpg" />
-        <img src="/also-made/stickers/hypnowallet.jpg" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
-  </dd>
-</dl>
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/s2-thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 2:</span>
-      <span class="series-name">Black & Red Logo on clear</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="/meet/lemon">Lemon</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">3" x 2.6194", die cut</span>
-      <span class="run">200 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released on August 11th</span>
-      <span class="remaining">Sold out on August 26th</span>
-    </div>
-  </dt>
-  <dd>
-   <h3>SOLD OUT</h3>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/logo320.png" />
-        <img src="/also-made/stickers/coder-macbook.jpg" />
-        <img src="/also-made/stickers/logomug.jpg" />
-        <img src="/also-made/stickers/logotoilet.jpg" />
-        <img src="/also-made/stickers/logotacoma.jpg" />
-        <img src="/also-made/stickers/logocollie.jpg" />
-        <img src="/also-made/stickers/s2-wallet.jpg" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
-  </dd>
-</dl>
-<dl class="sticker-series">
-  <dt>
-    <img src="/also-made/stickers/series1thumb.png" class="thumbnail">
-    <div class="row first">
-      <span class="series-number">Series 1:</span>
-      <span class="series-name">F+lava F+lav F+oxie</span>
-    </div>
-    <div class="row first">
-      <span class="creator">
-        by <a href="/meet/portaxx">Portaxx</a>
-      </span>
-    </div>
-    <div class="row second">
-      <span class="details">2.9663" x 3", die cut</span>
-      <span class="run">100 printed</span>
-    </div>
-    <div class="row second">
-      <span class="release">Released on July 25th</span>
-      <span class="remaining">Sold out on August 24th</span>
-    </div>
-  </dt>
-  <dd>
-   <h3>SOLD OUT</h3>
-    <dl class="sticker-photos">
-      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
-      <dd>
-        <img src="/also-made/stickers/foxie320.png" />
-        <img src="/also-made/stickers/circleoffoxie.jpg" />
-        <img src="/also-made/stickers/simoneupstairsonlaptop.jpg" />
-        <img src="/also-made/stickers/foxieenvelope.jpg" />
-        <footer class="add-your-own">
-          Want to share your own sticker photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
-        </footer>
-      </dd>
-    </dl>
-  </dd>
-</dl>
+
+<script>
+  $('#SizeStep button').click(function() {
+    var size = $(this).attr('data-size');
+    $('#LocationStep').slideDown(300);
+    $('#BuyNowStep .paypal-buy-form').hide();
+    $('#BuyNowStep .paypal-buy-form[data-size="'+size+'"]').show();
+    $(this).addClass('active');
+    $(this).siblings('button').removeClass('active');
+  });
+  $('#LocationStep button').click(function() {
+    var location = $(this).attr('data-ship');
+    if (location == "UnitedStates") {
+      $('.paypal-buy-form select').val('United States');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="United States"]').attr('selected', true);
+    } else if (location == "Canada") {
+      $('.paypal-buy-form select').val('Canada');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="Canada"]').attr('selected', true);
+    } else if (location == "SomewhereElse") {
+      $('.paypal-buy-form select').val('Anywhere Else');
+      $('.paypal-buy-form select option').attr('selected', false);
+      $('.paypal-buy-form select option[value="Anywhere Else"]').attr('selected', true);
+    }
+    $(this).addClass('active');
+    $(this).siblings('button').removeClass('active');
+    $('#BuyNowStep').slideDown(300);
+  });
+
+  $('.paypal-buy-form select').change(function() {
+    var newPlace = $(this).val();
+    if (newPlace == "United States") {
+      $('#LocationStep button[data-ship="UnitedStates"]').addClass('active');
+      $('#LocationStep button[data-ship="UnitedStates"]').siblings('button').removeClass('active');
+    } else if (newPlace == "Canada") {
+      $('#LocationStep button[data-ship="Canada"]').addClass('active');
+      $('#LocationStep button[data-ship="Canada"]').siblings('button').removeClass('active');
+    } else if (newPlace == "Anywhere Else") {
+      $('#LocationStep button[data-ship="SomewhereElse"]').addClass('active');
+      $('#LocationStep button[data-ship="SomewhereElse"]').siblings('button').removeClass('active');
+    }
+  });
+</script>
