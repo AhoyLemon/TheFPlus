@@ -20,7 +20,7 @@
 
 .summaries {
   .person { background-color:#ffe; border:1px solid #ccc; box-shadow: 1px 1px 1px #aaa;
-    header { text-align: center; text-transform: uppercase; }
+    header { text-align: center; }
     .job { font-size: 1.1rem; @extend %truncate;
       &:after { content:'\00A0'; }
     }
