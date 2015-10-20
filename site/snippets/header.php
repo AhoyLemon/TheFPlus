@@ -41,7 +41,7 @@
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php endif ?>
 	<?php if(!$image = $page->image()): ?>
-		<meta name="twitter:image" content="https://thefpl.us/assets/images/twitter-newcard.png" />
+		<meta name="twitter:image" content="https://thefpl.us/assets/images/og-image.png" />
 	<?php endif ?>
   <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
   <!-- Facebook -->
@@ -59,7 +59,7 @@
   
   <!-- Font -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-  <link href="/assets/css/thefplus.css?=10.11.15" rel="stylesheet" type="text/css">
+  <link href="/assets/css/thefplus.css?=10.20.15" rel="stylesheet" type="text/css">
 
 </head>
 <body>
