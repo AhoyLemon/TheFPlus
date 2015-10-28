@@ -14,6 +14,7 @@ $disqus_developer = ($disqus_developer) ? 'true' : 'false';
   var disqus_developer  = '<?php echo $disqus_developer ?>'; // developer mode
   var disqus_identifier = '<?php echo $disqus_identifier ?>';
   var disqus_url        = '<?php echo $disqus_url ?>';
+  var disqus_category   = 'Podcast';
 
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

@@ -71,6 +71,7 @@
   <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
   <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
   <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
+  <a class="main-link" href="<?php echo url::home() ?>/find/tag:f%20plus%20live">f plus live</a>
   <a class="main-link" href="<?php echo url::home() ?>/recent-comments">recent comments</a>
   
   <form id="SidebarSearchForm">
@@ -91,7 +92,7 @@
 				<use class="snake inside" xlink:href="#IconBallpit"></use>
 			</svg>
     </a>
-    <a class="youtube" title="View our YouTube Channel" href="http://YouTube.com/TheFPlus/playlists" target="blank">
+    <a class="youtube" title="View our YouTube Channel" href="http://YouTube.com/TheFPlus" target="blank">
       <svg viewBox="0 0 100 100">
         <use class="circle" xlink:href="#IconCircle"></use>
         <use class="youtube inside" xlink:href="#IconYouTube"></use>
