@@ -71,8 +71,8 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 }
 
 @media (max-width: $mobile-max) {
-  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:56px; background: $black;
-    .flapjax { display: block; width:60px; height: 60px; float: left; 
+  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; padding-left:0.5em; height:$mobile-top; background: $black;
+    .flapjax { display: block; width:60px; height: 60px; float: left; margin-right:0.5em;
       svg { height:100%; width:100%; }
     }
     .mobile-logo { display: block; height: 56px; padding-top: 4px; padding-bottom: 4px; padding-right: 15px; float: right; }
@@ -86,12 +86,15 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
     header & { max-width: 200px; float: right; }
     .sidebar & { display: inline-block; max-width: 170px; }
   }
-  header .home-link {  }
-  .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
+  .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px; top:$mobile-top;
     &.visible { @include translateX(0); }
     .desktop-logo { height: 60px; }
+    /**
     .flapjax { width: 70px; height: 60px; float: right; padding: 0; margin-top: 0.25em; color:$red;
       svg { height: 100%; width:100%; }
     }
+    **/
+    .flapjax { display: none; }
+    .home-link { display: none; }
   }
 }

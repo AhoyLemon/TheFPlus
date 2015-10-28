@@ -33,13 +33,16 @@
         }
         $songs = explode(",", $item->music_used());
         $persons = explode(",", $item->cast());
+        $desc = strip_tags($item->text()->kirbytext());
       ?>
       <item>
         <title><?php echo $item->uid() ?>: <?php echo xml($item->title()) ?></title>
         <link><?php echo xml($item->url()) ?></link>
         <guid><?php echo xml($item->url()) ?></guid>
         <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
-        <description><?php echo $item->text()->xml() ?></description>
+        <description alt="8">
+          <?php echo $desc; ?>
+        </description>
         <enclosure url="http://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
         <content:encoded>
           <![CDATA[
@@ -79,7 +82,7 @@
         <itunes:author>The F Plus</itunes:author>
         <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
         <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
-        <itunes:summary><?php echo $item->text()->xml() ?></itunes:summary>
+        <itunes:summary><?php echo $desc; ?></itunes:summary>
         <?php if($image = $item->image()): ?>
           <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
         <?php endif ?>
