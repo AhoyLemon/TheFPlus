@@ -47,6 +47,9 @@ $(document).ready(function() {
           } else if (post.media[j].mediaType == "4") {
             // Link to external site.
             // Let's do nothing with this.
+          } else if (post.media[j].mediaType == "5") {
+            // Somebody posted a tweet. Let's try to handle this intelligently.
+            xtraContent = xtraContent + '<span style="width:60px; height:60px; display:inline-block; color:#55acee;"><svg viewBox="0 0 100 100"><use class="bird inside" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#IconTwitter"></use></svg></span>';
           }else {
             xtraContent = xtraContent + ' [extra content]';
           }
