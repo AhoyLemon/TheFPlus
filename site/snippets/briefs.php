@@ -7,7 +7,7 @@
       <article class="episode brief">
         <header>
           <h2 class="title">
-            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+            <a href="<?php echo $article->url() ?>">
               <span class="name">
                 <?php echo html($article->title()) ?>
               </span>
@@ -24,7 +24,7 @@
           </time>
         </header>
         <?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>">
+          <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
             <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
@@ -62,7 +62,7 @@
       <article class="also-made brief">
         <header>
           <h2 class="title">
-            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+            <a href="<?php echo $article->url() ?>">
               <?php echo html($article->title()) ?>
             </a>
           </h2>
@@ -114,7 +114,7 @@
       <article class="wrote brief">
         <header>
           <h2 class="title">
-            <a href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+            <a href="<?php echo $article->url() ?>">
               <?php echo html($article->title()) ?>
             </a>
           </h2>
