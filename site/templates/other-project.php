@@ -79,42 +79,33 @@
       <span class="share-label">share: </span>
 
       <!-- TWEET THIS -->
-      <?php if ($page->category() != "wrongest"): ?>
+      <?php if ($page->tweet_intent() != "") { ?>
+        <a class="social twitter" href="<?php echo $page->tweet_intent(); ?>" target="blank" title="Tweet this">
+      <?php } else { ?>
         <a class="social twitter" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->url()); ?>%20<?php echo ('via @TheFPlus')?>" target="blank" title="Tweet this">
-      <?php endif ?>
-      <?php if ($page->category() == "wrongest"): ?>
-        <a class="social twitter" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwrongest.net&amp;text=Playing%20The%20Wrongest%20Words%20gets%20you%20laid!&amp;via=WrongestWords" target="blank" title="Tweet this">
-      <?php endif ?>
+      <?php } ?>
         <svg viewBox="0 0 100 100">
 					<use xlink:href="#IconTwitter"></use>
 				</svg>
       </a>
 
-      <?php if ($page->category() != "wrongest"): ?>
       <!-- GOOGLE+ SHARE -->
-        <a class="social googleplus" href="https://plusone.google.com/_/+1/confirm?hl=de&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="blank" title="Share on Google+">
-          <svg viewBox="0 0 100 100">
-						<use xlink:href="#IconGooglePlus"></use>
-					</svg>
-        </a>
-      <?php endif ?>
+      <a class="social googleplus" href="https://plusone.google.com/_/+1/confirm?hl=de&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="blank" title="Share on Google+">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="#IconGooglePlus"></use>
+        </svg>
+      </a>
           
-      <?php if ($page->category() == "wrongest"): ?>
-        <!-- GITHUB -->
-        <a class="social github" data-network="GitHub" href="https://github.com/AnotherDole/wrongest/" title="Contribute on GitHub">
+      <?php if ($page->github_repo() != ""): ?>
+        <a class="social github" data-network="GitHub" href="<?php echo $page->github_repo(); ?>" title="Contribute on GitHub">
           <svg viewBox="0 0 100 100">
-						<use xlink:href="#IconGitHub"></use>
-					</svg>
+            <use xlink:href="#IconGitHub"></use>
+          </svg>
         </a>
       <?php endif ?>
       
       <!-- FLATTR TIP -->
-      <?php if ($page->category() != "wrongest"): ?>
-        <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
-      <?php endif ?>
-      <?php if ($page->category() == "wrongest"): ?>
-        <a class="social flattr" data-network="Flattr" href="https://flattr.com/submit/auto?url=http%3A%2F%2Fwrongest.net%2F&amp;user_id=thefplus&amp;title=The%20Wrongest%20Words" title="Tip us with Flattr">
-      <?php endif ?>
+      <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
         <svg viewBox="0 0 100 100">
 					<use class="top-left orange" xlink:href="#FlattrTopLeft"></use>
 					<use class="bottom-right green" xlink:href="#FlattrBottomRight"></use>
