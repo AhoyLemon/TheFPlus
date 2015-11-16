@@ -110,11 +110,13 @@ $songs = explode(",", $page->music_used());
 
     <div class="episode-actions">
       <!-- DOWNLOAD FILE -->
-      <a itemprop="audio" class="action download" href="/podcasts/<?php echo $page->episode_file() ?>" title="Download episode" download>
-        <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconDownload"></use>
-				</svg>
-      </a>
+      <?php if ($page->episode_file() != ""): ?>
+        <a itemprop="audio" class="action download" href="/podcasts/<?php echo $page->episode_file() ?>" title="Download episode" download>
+          <svg viewBox="0 0 100 100">
+            <use xlink:href="#IconDownload"></use>
+          </svg>
+        </a>
+      <?php endif; ?>
 
       <!-- READ DOCUMENT -->
       <?php if ($page->document_link() != ""): ?>
@@ -126,14 +128,17 @@ $songs = explode(",", $page->music_used());
       <?php endif ?>
 
       <!-- AUDIO CONTAINER -->
-      <div class="audio-holder">
-        <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
-      </div>
+      <?php if ($page->episode_file() != ""): ?>
+        <div class="audio-holder">
+          <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
+        </div>
+      <?php endif; ?>
 
       <span class="share-label">share: </span>
 
       <!-- TWEET THIS -->
-      <a class="social twitter" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->url()); ?>%20<?php echo ('via @TheFPlus')?>" target="_blank" title="Tweet this">
+      
+      <a class="social twitter" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode($page->title()); ?>%0A&url=<?php echo rawurlencode($page->url()); ?>&via=TheFPlus" target="_blank" title="Tweet this">
         <svg viewBox="0 0 100 100">
 					<use xlink:href="#IconTwitter"></use>
 				</svg>
