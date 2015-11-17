@@ -9,9 +9,9 @@
       <li class="tag selected"><?php echo $ftag ?></li>
     </ul>
     
-    <section class="results summaries" data-updated="7/14/2015">
+    <section class="results summaries">
       
-      <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->paginate(12) ?>
+      <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(28) ?>
       <?php foreach($articles as $article): ?>
 
         <article class="<?php echo html($article->parent()->slug()) ?> brief">

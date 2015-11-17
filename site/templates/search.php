@@ -9,7 +9,7 @@
 
   <section class="episodes summaries">
     
-  <?php foreach($results as $result): ?>    
+  <?php foreach($results->sortBy('date', 'desc') as $result): ?>    
     <article class="<?php echo html($result->parent()->slug()) ?> brief">
       <header>
       <h2 class="title">
