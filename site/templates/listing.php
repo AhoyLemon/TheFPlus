@@ -24,7 +24,7 @@
       } ?>
     <?php endif ?>
     <?php if ($ftag): ?>
-      <?php $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->paginate(28) ?>
+      <?php $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(28) ?>
     <?php endif ?>
     <section class="<?php echo $page->slug(); ?> covers-only">
       <?php if ($showRandom == true): ?>
