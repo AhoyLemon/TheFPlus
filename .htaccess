@@ -34,6 +34,10 @@
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^(.*) index.php [L]
+  
+  #force https for panel
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^panel/(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
 
 </IfModule>
 
