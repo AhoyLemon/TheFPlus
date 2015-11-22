@@ -16,6 +16,9 @@ if (strpos($page->featured_site(),',') !== false) {
 }
 $etags = explode(",", $page->tags());
 $songs = explode(",", $page->music_used());
+if ($page->provider() != "") {
+  $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $page->provider()));
+}
   ?>
 
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
@@ -73,9 +76,13 @@ $songs = explode(",", $page->music_used());
       <?php if ($page->provider() != ""): ?>
         <div class="content-provider">
           <label>Content for this episode was compiled by</label>
-          <a href="<?php echo url::home() ?>/meet/<?php $plink = strtolower(preg_replace('/\s+/', '-', $page->provider())); echo strtolower($plink) ?>">
-            <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
-          </a>
+            <?php if ($site->find($plink)) { ?>
+              <a href="<?php echo url::home() ?>/<?php echo $plink; ?>">
+                <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
+              </a>
+            <?php } else { ?>
+              <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
+            <?php } ?>
         </div>
       <?php endif ?>
 
