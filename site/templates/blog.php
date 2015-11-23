@@ -33,7 +33,9 @@
         </h4>
       <?php endif ?>
       <meta itemprop="headline" content="<?php echo $page->title() ?>" />
+        <?php if ($page->image): ?>
 			<meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
+        <?php endif; ?>
     </header>
     
     <div class="content" itemprop="articleBody">
@@ -44,35 +46,39 @@
 			
 			<div class="audio-holder"></div>
 
-      <span class="share-label">share: </span>
+      <!-- <span class="share-label">share: </span> -->
+      
+      <!-- Contribute To The F Plus -->
+      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
+        <svg viewBox="0 0 100 100">
+          <use class="top lid" xlink:href="#IconContributeTop"></use>
+          <use class="bottom" xlink:href="#IconContributeBottom"></use>
+        </svg>
+        <span class="label">Contribute to the Podcast</span>
+      </a>
 
       <!-- TWEET THIS -->
       <a class="social twitter" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->url()); ?>%20<?php echo ('via @TheFPlus')?>" target="blank" title="Tweet this">
         <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconTwitter"></use>
-				</svg>
+          <use xlink:href="#IconTwitter"></use>
+        </svg>
+        <span class="label">Tweet this</span>
       </a>
 
       <!-- GOOGLE+ SHARE -->
-      <a class="social googleplus" href="https://plusone.google.com/_/+1/confirm?hl=de&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="blank" title="Share on Google+">
+      <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
         <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconGooglePlus"></use>
-				</svg>
-      </a>
-      
-      <!-- FLATTR TIP -->
-      <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
-        <svg viewBox="0 0 100 100">
-					<use class="top-left orange" xlink:href="#FlattrTopLeft"></use>
-					<use class="bottom-right green" xlink:href="#FlattrBottomRight"></use>
-				</svg>
+          <use xlink:href="#IconGooglePlus"></use>
+        </svg>
+        <span class="label">Share on Google+</span>
       </a>
 
       <!-- FACEBOOK SHARE -->
       <a class="social facebook" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
         <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconFacebook"></use>
-				</svg>
+          <use xlink:href="#IconFacebook"></use>
+        </svg>
+        <span class="label">Share on Facebook</span>
       </a>
 
     </div>

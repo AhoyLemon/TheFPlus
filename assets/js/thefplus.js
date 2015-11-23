@@ -50,6 +50,10 @@ $(document).ready(function() {
 // Handling social links (popups and corresponding analytics)
 $('a.social').click(function(event) {
   var p = window.location.pathname;
+  if ( $(this).hasClass('contribute') ) {
+    sendGA("social", "Contribute", p, '1');
+    window.open($(this).attr("href"));
+  }
   if ( $(this).hasClass('twitter') ) {
     sendGA("social", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
@@ -66,7 +70,6 @@ $('a.social').click(function(event) {
     sendGA("social", "GitHub", p);
     window.open($(this).attr("href"));
   }
-  event.preventDefault();
 });
 
 // Google Analytics commands
