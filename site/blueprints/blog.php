@@ -22,11 +22,10 @@ fields:
     label: Publish Time
     type: time
     width:1/2
-  tags:
-    label: Tags
-    type: tags
   text:
     label: Start writing, fucko!
     type: textarea
     icon: align-left
-  
+  tags:
+    label: Tags
+    type: tags

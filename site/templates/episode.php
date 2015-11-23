@@ -122,6 +122,7 @@ if ($page->provider() != "") {
           <svg viewBox="0 0 100 100">
             <use xlink:href="#IconDownload"></use>
           </svg>
+          <span class="label go-right">Download this episode</span>
         </a>
       <?php endif; ?>
 
@@ -129,8 +130,9 @@ if ($page->provider() != "") {
       <?php if ($page->document_link() != ""): ?>
         <a itemprop="citation" class="action read" href="<?php echo $page->document_link() ?>" title="Read <?php echo $page->provider() ?>'s document"  target="_blank">
           <svg viewBox="0 0 100 100">
-						<use xlink:href="#IconDocument"></use>
-					</svg>
+            <use xlink:href="#IconDocument"></use>
+          </svg>
+          <span class="label go-right">Read <?php echo $page->provider() ?>'s document</span>
         </a>
       <?php endif ?>
 
@@ -141,37 +143,49 @@ if ($page->provider() != "") {
         </div>
       <?php endif; ?>
 
-      <span class="share-label">share: </span>
+      <!-- <span class="share-label">share: </span> -->
+      
+      <!-- Contribute To The F Plus -->
+      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
+        <svg viewBox="0 0 100 100">
+          <use class="top lid" xlink:href="#IconContributeTop"></use>
+          <use class="bottom" xlink:href="#IconContributeBottom"></use>
+        </svg>
+        <span class="label">Contribute to the Podcast</span>
+      </a>
 
       <!-- TWEET THIS -->
-      
       <a class="social twitter" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode($page->title()); ?>%0A&url=<?php echo rawurlencode($page->url()); ?>&via=TheFPlus" target="_blank" title="Tweet this">
         <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconTwitter"></use>
-				</svg>
+          <use xlink:href="#IconTwitter"></use>
+        </svg>
+        <span class="label">Tweet this episode</span>
+      </a>
+      
+      <!-- FACEBOOK SHARE -->
+      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="#IconFacebook"></use>
+        </svg>
+        <span class="label">Share on Facebook</span>
       </a>
 
       <!-- GOOGLE+ SHARE -->
       <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
         <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconGooglePlus"></use>
-				</svg>
+          <use xlink:href="#IconGooglePlus"></use>
+        </svg>
+        <span class="label">Share on Google+</span>
       </a>
       
-      <!-- FLATTR TIP -->
+      <!-- FLATTR TIP 
       <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
         <svg viewBox="0 0 100 100">
 					<use class="top-left orange" xlink:href="#FlattrTopLeft"></use>
 					<use class="bottom-right green" xlink:href="#FlattrBottomRight"></use>
 				</svg>
       </a>
-
-      <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-        <svg viewBox="0 0 100 100">
-					<use xlink:href="#IconFacebook"></use>
-				</svg>
-      </a>
+      -->
     </div>
 
     <!-- EPISODE TAGS -->
