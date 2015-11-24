@@ -40,7 +40,7 @@
         <link><?php echo xml($item->url()) ?></link>
         <guid><?php echo xml($item->url()) ?></guid>
         <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
-        <description alt="8">
+        <description>
           <?php echo $desc; ?>
         </description>
         <enclosure url="http://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
@@ -86,7 +86,6 @@
         <?php if($image = $item->image()): ?>
           <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
         <?php endif ?>
-        <atom:link rel="payment" type="text/html" href="https://flattr.com/submit/auto?user_id=TheFPlus&amp;url=<?php echo rawurlencode ($item->url()); ?>&amp;title=<?php echo rawurlencode($item->title()); ?>"/>
       </item>
     <?php endforeach ?>
 

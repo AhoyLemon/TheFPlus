@@ -178,14 +178,6 @@ if ($page->provider() != "") {
         <span class="label">Share on Google+</span>
       </a>
       
-      <!-- FLATTR TIP 
-      <a class="social flattr" href="https://flattr.com/submit/auto?user_id=TheFPlus&url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Tip us with Flattr">
-        <svg viewBox="0 0 100 100">
-					<use class="top-left orange" xlink:href="#FlattrTopLeft"></use>
-					<use class="bottom-right green" xlink:href="#FlattrBottomRight"></use>
-				</svg>
-      </a>
-      -->
     </div>
 
     <!-- EPISODE TAGS -->
