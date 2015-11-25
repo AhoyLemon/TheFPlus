@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'K2-PERSONAL-497f4bbccfeb1d2e52113a557a6a6543');
+c::set('license', 'K2-PRO-a81a3a8225827a2b0ca48316273fc3b4');
 c::set('rewrite', true);
 c::set('cache', false);
 c::set('cache.ignore', array(
@@ -24,11 +24,11 @@ c::set('cache.ignore', array(
   'also-made',
   'search',
   'episode/feed',
-	'episode/random',
+  'episode/random',
   'find',
   'sitemap',
   'tags',
-	'wrote'
+  'wrote'
 ));
 // valid values: file|memcached|apc
 c::set('cache.driver', 'file');
