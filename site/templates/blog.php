@@ -13,6 +13,8 @@
   <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
+      <meta itemprop="headline" content="<?php echo $page->title() ?>" />
+      <meta itemprop="wordCount" content="<?php echo $page->text()->words(); ?>" />
       <!-- DATE & TIME -->
       <time class="released">
         <span class="date" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
@@ -32,10 +34,9 @@
           </a>
         </h4>
       <?php endif ?>
-      <meta itemprop="headline" content="<?php echo $page->title() ?>" />
-        <?php if ($page->image): ?>
-			<meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
-        <?php endif; ?>
+      <?php if ($page->image()): ?>
+          <meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
+      <?php endif; ?>
     </header>
     
     <div class="content" itemprop="articleBody">
