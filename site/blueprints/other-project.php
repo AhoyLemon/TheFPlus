@@ -27,36 +27,34 @@ fields:
     label: Release Time
     type: time
     interval: 1
-    width:1/4
+    width: 1/4
   show_image:
     label: Show image on page?
     type: toggle
     text: yes/no
-    width:1/2
+    width: 1/2
   cast:
-    label:Cast
-    type:tags
-    lowercase:true
-    icon:users
+    label: Cast
+    type: tags
+    icon: users
   text:
     label: Item Summary
-    type: textarea
-    icon: align-left
+    type: markdown
   episode_file:
     label: Episode File
     type: url
     placeholder: (if applicable)
     icon: volume-up
-    width:1/2
+    width: 1/2
   github_repo:
     label: GitHub Repo URL
     type: url
     placeholder: (if applicable)
     icon: github
-    width:1/2
+    width: 1/2
   tags:
     label: Project Tags
-    lowercase:true
+    lowercase: true
     type: tags
   tweet_intent:
     label: Custom Tweet Intent
@@ -65,5 +63,5 @@ fields:
     icon: retweet
   bonus_content:
     label: Bonus Content
-    type:textarea
-    icon:code
+    type: textarea
+    icon: code

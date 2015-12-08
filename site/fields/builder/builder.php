@@ -1,5 +1,8 @@
 <?php
-class BuilderField extends BaseField {
+
+use Kirby\Panel\Models\Page\Blueprint\Field;
+
+class BuilderField extends StructureField {
 
   static public $assets = array(
     'js' => array(
@@ -10,97 +13,71 @@ class BuilderField extends BaseField {
     )
   );
 
-  public $fields = array();
-  public $entry  = null;
-
-  public function fields() {
-
-    $output = array();
-
-    foreach($this->fields as $k => $v) {
-      $v['name']  = $k;
-      $v['value'] = '{{' . $k . '}}';
-      $output[] = $v;
-    }
-
-    return $output;
-
+  public function fieldset($fieldsetName) {
+    return new Field($this->fieldsets[$fieldsetName], $this->page());;
   }
 
-  public function value() {
+  public function entry($data) {
 
-    if(is_string($this->value)) {
-      $this->value = yaml::decode($this->value);
-    }
+    if(isset($data->_fieldset))
+      $fieldsetName = $data->_fieldset;
+    else
+      return "No fieldset found in entry.";
 
-    return $this->value;
+    if(isset($this->fieldsets[$fieldsetName])) {
+      $fieldset = $this->fieldset($fieldsetName);
 
-  }
+      $this->entry = $fieldset->entry();
+      $this->fields = $fieldset->fields();
+    } else 
+      return 'No fieldset with name "'. $fieldsetName . '" found.';
 
-  public function result() {
-    $result = parent::result();
-    $raw    = (array)json_decode($result);
-    $data   = array();
-    foreach($raw as $key => $row) {
-      unset($row->_id);
-      unset($row->_csfr);
-      $data[$key] = (array)$row;
-    }
-    return yaml::encode($data);
-  }
-
-  public function entryTemplate($fieldsetName) {
-
-    if(!isset($this->fieldsets[$fieldsetName]['entry']) or !is_string($this->fieldsets[$fieldsetName]['entry'])) {
-      $html = array();
-      foreach($this->fieldsets[$fieldsetName]['fields'] as $name => $field) {
-        $html[] = '{{' . $name . '}}';
-      }
-      return implode('<br>', $html);
-    } else {
-      return $this->fieldsets[$fieldsetName]['entry'];
-    }
-
-  }
-
-  public function label() {
-    return null;
+    $data->_fileUrl = $this->page->url() . DS;
+    return parent::entry($data);
   }
 
   public function headline() {
 
     if(!$this->readonly) {
 
-      $fieldName = $this->name;
-      $blueprint  = blueprint::find($this->page());
-      $fieldsets = $blueprint->fields()->$fieldName->fieldsets;
-      $fieldsetcount = count($blueprint->fields()->$fieldName->fieldsets);
+      $fieldsets = $this->fieldsets();
 
-      $addDropdownHtml = '<div class="drop-down">';
-      if ($fieldsetcount > 1 ) {
-        $addDropdownHtml .= '<a class="drop-down-toggle label-option"><i class="icon icon-left fa fa-chevron-circle-down"></i>' . l('fields.structure.add') . '</a>';
-      } else {
-        $addDropdownHtml .= '<a class="drop-down-toggle label-option"><i class="icon icon-left fa fa-plus-circle"></i>' . l('fields.structure.add') . '</a>';
+      $add = new Brick('a');
+      $add->html('<i class="icon icon-left fa fa-chevron-circle-down"></i>' . l('fields.structure.add'));
+      $add->addClass('structure-add-button label-option');
+      $add->data('modal', true);
+
+      $dropDown = new Brick("div");
+      $dropDown->addClass('builder-drop-down');
+
+      $addList = new Brick('ul');
+      $addList->addClass('builder-add-list');
+
+      foreach ($fieldsets as $fieldsetName => $fieldset) {
+        $fieldset = $this->fieldset($fieldsetName);
+        
+        $addListItem = new Brick('li');
+
+        $addListItemLink = new Brick('a');
+        $addListItemLink->html('<i class="icon icon-left fa fa-plus-circle"></i>' . $fieldset->label());
+        $addListItemLink->addClass('builder-add-button');
+        $addListItemLink->data('modal', true);
+        $addListItemLink->attr('href', purl($this->page, 'field/' . $this->name . '/builder/add?fieldset=' . $fieldsetName));
+
+        $addListItem->append($addListItemLink);
+        $addList->append($addListItem);
       }
-      $addDropdownHtml .= '<ul>';
-      foreach ($fieldsets as $fieldsetName => $fieldsetFields) {
-        $addDropdownHtml .= '<li>';
-        $addDropdownHtml .= '<a href="#0" class="builder-add-button" data-fieldset="'.$fieldsetName.'"><i class="icon icon-left fa fa-plus-circle"></i>' . $fieldsetFields['label'] . '</a>';
-        $addDropdownHtml .= '</li>';
-      }
-      $addDropdownHtml .= '</ul>';
-      $addDropdownHtml .= '</div>';
+
+      $dropDown->append($addList);
 
     } else {
-      $addButtons[] = null;
+      $addList = null;
+      $add = null;
     }
-
-    $label = parent::label();
-    $label->addClass('builder-label');
-    // foreach ($addButtons as $key => $value) {
-    //   $label->append($add[$key]);
-    // }
-    $label->append($addDropdownHtml);
+    
+    $label = BaseField::label();
+    $label->append($add);
+    $label->append($dropDown);
 
     return $label;
 
@@ -110,19 +87,8 @@ class BuilderField extends BaseField {
     return tpl::load(__DIR__ . DS . 'template.php', array('field' => $this));
   }
 
-  public function files()
-    {
-        if (!is_null($this->page)) {
-            $files = $this->page->files();
-        } else {
-            if (version_compare(Kirby::version(), '2.1', '>=')) {
-                $files = site()->files();
-            } else {
-                return new Collection();
-            }
-        }
-
-        return $files;
-    }
+  public function url($action) {
+    return purl($this->model(), 'field/' . $this->name() . '/builder/' . $action);
+  }  
 
 }

@@ -1,47 +1,21 @@
-.builder {
-  padding-bottom: .5em;
-}
-.builder-entry {
-  background: #fff;
-  border: 2px solid #ddd;
-  margin-bottom: .5em;
-}
-.builder-readonly .builder-entry {
-  background: #efefef;
-  color: #777;
-}
-.builder-entry:last-child {
-  margin-bottom: 0;
-}
-.builder-entry-content {
-  padding: 1em 1em 0.5em 1em;
-  border-bottom: 1px solid #efefef;
+.structure-entry-content {
   position: relative;
 }
-.builder[data-sortable=true] .builder-entry-content {
-  cursor: move;  
+
+.structure-table-fieldset {
+  width: 8rem;
 }
-.builder-entry-options .btn {
-  padding: .5em 1em;
-  width: 50%;
-  float: left;
-  border-right: 1px solid #efefef;
+
+.structure-table-fieldset a {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #B3B3B3;
 }
-.builder-empty {
-  padding: 1em;
-  background: #ddd;
-}
-.builder-empty a {
-  border-bottom: 2px solid #aaa;
-  margin-left: .5em;
-}
-.builder-empty a:hover {
-  border-color: #000;
-}
+
 .builder-entry-fieldset {
   font-size: 12px;
   text-transform: uppercase;
-  padding: 0 5px;
+  padding: 2px 5px;
   color: #B3B3B3;
   position: absolute;
   left: 0;
@@ -49,13 +23,14 @@
   width: 100%;
   text-align: center;
 }
-.drop-down{
+
+.builder-drop-down{
   position: absolute;
   width: 100%;
   top: 0;
   text-align: right;
 }
-.drop-down ul{
+.builder-drop-down ul{
   background-color: #000;
   list-style: none;
   position: absolute;
@@ -64,29 +39,27 @@
   text-align: left;
   z-index: 100;
   display: none;
+  margin-top: 25px;
 }
-.drop-down.active ul{
+.builder-drop-down.active ul{
   display: block;
 }
-.drop-down .drop-down-toggle{
+.builder-drop-down .drop-down-toggle{
   position: relative;
 }
-.drop-down-toggle {
-  cursor: pointer;
-}
-.drop-down ul li{
+.builder-drop-down ul li{
   border-top: 1px solid #202020;
 }
-.drop-down ul li:first-child{
+.builder-drop-down ul li:first-child{
   border-top: none;
 }
-.drop-down ul li a{
+.builder-drop-down ul li a{
   color: #FFF;
-  padding: .5em 1em;
+  padding: .75em 1.5em;
   display: block;
   line-height: 1em;
 }
-.drop-down ul li a:hover{
+.builder-drop-down ul li a:hover{
   background-color: #202020;
 }
 
