@@ -21,11 +21,11 @@ fields:
   time:
     label: Publish Time
     type: time
-    width:1/2
+    width: 1/2
   text:
     label: Start writing, fucko!
-    type: textarea
-    icon: align-left
+    type: markdown
   tags:
     label: Tags
+    lowercase: true
     type: tags
