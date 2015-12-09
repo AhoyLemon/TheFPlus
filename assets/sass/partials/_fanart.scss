@@ -1,0 +1,7 @@
+.fanart-list { @include flex-container(); justify-content: space-between; padding-left: 0;
+  li { list-style-type: none; }
+  .fanart-link { display: block; border:4px solid transparent;
+    &:hover { border-color:$link; }
+  }
+  .fanart-thumb { height: 250px; }
+}

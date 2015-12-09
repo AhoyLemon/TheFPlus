@@ -196,7 +196,8 @@ if ($page->provider() != "") {
 
     <!-- ADDITIONAL FUN -->
     <?php if ($page->bonus_content() != ""): ?>
-      <div class="info-block custom-html">
+      <div class="info-block additional-fun">
+        <a name="AdditionalFun"></a>
         <h4>Additional Fun</h4>
         <?php echo $page->bonus_content()->kirbytext() ?>
       </div>
