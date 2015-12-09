@@ -2,13 +2,13 @@
   
   <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
+      "@context": "https://schema.org",
       "@type": "PerformingGroup",
       "name": "The F Plus",
       "url": "https://thefpl.us",
       "email": "lemon@thefpl.us",
       "foundingDate": "2009",
-      "logo": "http://thefpl.us/schemaLogo.png",
+      "logo": "https://thefpl.us/schemaLogo.png",
       "alternateName": "The F+",
       "sameAs" : [ 
         "https://www.facebook.com/thefplus",

@@ -46,7 +46,7 @@
         <use class="snake inside" xlink:href="#IconBallpit"></use>
       </svg>
     </a>
-    <a class="youtube" title="View our YouTube Channel" href="http://YouTube.com/TheFPlus" target="blank">
+    <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
       <svg viewBox="0 0 100 100">
         <use class="circle" xlink:href="#IconCircle"></use>
         <use class="youtube inside" xlink:href="#IconYouTube"></use>

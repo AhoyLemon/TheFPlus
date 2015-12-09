@@ -111,7 +111,7 @@
       </a>
           
       <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
         <svg viewBox="0 0 100 100">
           <use xlink:href="#IconFacebook"></use>
         </svg>
