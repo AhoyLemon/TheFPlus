@@ -67,7 +67,18 @@ if ($page->provider() != "") {
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">
       <?php foreach($persons as $person): ?>
-      <li itemprop="actor"><a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a></li>
+        <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $person)); ?>
+        <?php if ($site->find($mlink)) { ?>
+          <li itemprop="actor">
+            <a href="<?php echo url::home() ?>/<?php echo $mlink; ?>">
+              <?php echo $person ?>
+            </a>
+          </li>
+        <?php } else { ?>
+          <li itemprop="actor">
+            <?php echo $person ?>
+          </li>
+        <?php } ?>
       <?php endforeach ?>
     </ul>
     
