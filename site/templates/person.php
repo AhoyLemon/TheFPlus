@@ -97,7 +97,7 @@
       <?php
         $findme = $page->title();
       ?>
-      <?php $articles = $site->grandChildren()->visible()->filterBy('cast', $findme, ',') ?>
+      <?php $articles = $site->grandChildren()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
       <?php if ($articles->count() > 0): ?>
         <div class="info-block appears-in">
           <span class="list-leader"><?php echo $findme; ?> appears in:</span>
