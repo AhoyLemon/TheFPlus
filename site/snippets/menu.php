@@ -27,6 +27,7 @@
   <a class="main-link" href="<?php echo url::home() ?>/contribute">contribute</a>
   <a class="main-link" href="<?php echo url::home() ?>/recent-comments">recent comments</a>
   
+  
 
   <form id="SidebarSearchForm">
     <input type="search" id="SidebarSearch" placeholder="Search..." />
@@ -59,7 +60,7 @@
       </svg>
     </a>
   </div>
-  
-  <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
+  <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
+  <!--<a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a> -->
   
 </nav>
