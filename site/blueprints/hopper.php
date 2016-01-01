@@ -16,13 +16,13 @@ fields:
     fieldsets:
       submitteddoc:
         label: Submitted Document
+        modalsize: large
         entry: >
           <div class="document-block"><a href="{{docurl}}" target="_blank">{{title}}</a>, submitted by {{submitter}} {{subdate}}</div>
         fields:
           title:
             label: Title
             type: text
-            width: 1/2
             icon: file-text-o
           docurl:
             label: URL
@@ -38,10 +38,11 @@ fields:
             label: Date Submitted
             type: date
             default: today
-            width: 1/4
+            width: 1/2
             format: MM/DD/YY
           recorded:
             label: Recorded 
             type: checkbox
             text: yup
-            width: 1/4
+            width: 1/2
+            icon: play-circle
