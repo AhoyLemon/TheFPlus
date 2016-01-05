@@ -5,20 +5,20 @@
 
   <!-- SET UP VARIABLES -->
   <?php 
-  $persons = explode(",", $page->cast()); 
-$pubdate = date('l, F jS Y', $page->date());
-$pubtime = date("g:ia", strtotime($page->time()));
-if (strpos($page->featured_site(),',') !== false) {
-  $multisite = true;
-  $fsites = explode(",", $page->featured_site()); 
-} else if ($page->featured_site() != '') {
-  $multisite = false;
-}
-$etags = explode(",", $page->tags());
-$songs = explode(",", $page->music_used());
-if ($page->provider() != "") {
-  $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $page->provider()));
-}
+    $persons = explode(",", $page->cast()); 
+    $pubdate = date('l, F jS Y', $page->date());
+    $pubtime = date("g:ia", strtotime($page->time()));
+    if (strpos($page->featured_site(),',') !== false) {
+      $multisite = true;
+      $fsites = explode(",", $page->featured_site()); 
+    } else if ($page->featured_site() != '') {
+      $multisite = false;
+    }
+    $etags = explode(",", $page->tags());
+    $songs = explode(",", $page->music_used());
+    if ($page->provider() != "") {
+      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $page->provider()));
+    }
   ?>
 
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
