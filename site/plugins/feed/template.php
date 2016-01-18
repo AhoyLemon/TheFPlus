@@ -4,7 +4,7 @@
     <link>https://thefpl.us</link>
     <language>en-us</language>
     <copyright>2009 - <?php echo date("Y") ?> Creative Commons</copyright>
-    <description>The F Plus is a weekly podcast wherein we find terrible writing from the internet and beyond, wrap a theme around it, and then bring it to you in the most entertaining way we can.</description>
+    <description>The F Plus is a weekly podcast wherein we find terrible writing from the internet, wrap a theme around it, and then bring it to you in the most entertaining way we can.</description>
     <image>
       <url>https://thefpl.us/podcasts/feedburner_144.png</url>
       <title>The F Plus</title>
@@ -12,7 +12,7 @@
     </image>
     <itunes:subtitle>Terrible things read with enthusiasm.</itunes:subtitle>	
     <itunes:author>The F Plus</itunes:author>
-    <itunes:summary>The F Plus is a weekly podcast wherein we find terrible writing from the internet and beyond, wrap a theme around it, and then bring it to you in the most entertaining way we can.</itunes:summary>
+    <itunes:summary>The F Plus is a weekly podcast wherein we find terrible writing from the internet, wrap a theme around it, and then bring it to you in the most entertaining way we can.</itunes:summary>
     <itunes:owner>
       <itunes:name>Lemon</itunes:name>		
       <itunes:email>lemon@thefpl.us</itunes:email>
@@ -43,7 +43,7 @@
         <description>
           <?php echo $desc; ?>
         </description>
-        <enclosure url="http://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
+        <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
         <content:encoded>
           <![CDATA[
             <?php if ($item->cast() != ""): ?>
