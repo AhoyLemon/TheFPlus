@@ -53,7 +53,9 @@
   <meta property="og:email" content="lemon@thefpl.us">
   
   <!-- Font -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
+  
+  <!-- Master CSS -->
   <link href="/assets/css/thefplus.css?=11.23.15" rel="stylesheet" type="text/css">
 
 </head>
