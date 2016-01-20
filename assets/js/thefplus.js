@@ -45,6 +45,10 @@ $(document).ready(function() {
       e.preventDefault();
     }
   });
+  
+  $('figure.fanart').click(function() {
+    $(this).toggleClass('big');
+  });
 });
 
 // Handling social links (popups and corresponding analytics)

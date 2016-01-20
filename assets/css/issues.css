@@ -76,7 +76,7 @@
   cursor: pointer;
   outline: none;
   font-weight: 300;
-  padding: 0.25em 0.75em;
+  padding: .25em .75em;
 }
 
 .issues-nav button:hover, .issues-nav button.active {
