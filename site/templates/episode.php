@@ -69,15 +69,9 @@
       <?php foreach($persons as $person): ?>
         <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $person)); ?>
         <?php if ($site->find($mlink)) { ?>
-          <li itemprop="actor">
-            <a href="<?php echo url::home() ?>/<?php echo $mlink; ?>">
-              <?php echo $person ?>
-            </a>
-          </li>
+          <li itemprop="actor"><a href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><?php echo $person ?></a></li>
         <?php } else { ?>
-          <li itemprop="actor">
-            <?php echo $person ?>
-          </li>
+          <li itemprop="actor"><?php echo $person ?></li>
         <?php } ?>
       <?php endforeach ?>
     </ul>
