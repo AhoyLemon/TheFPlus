@@ -81,7 +81,12 @@
           ]]>
         </content:encoded>
         <itunes:author>The F Plus</itunes:author>
-        <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
+        <?php if ($item->featured_site() != "") { ?>
+          <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
+        <?php } else { ?>
+          <itunes:subtitle><?php echo excerpt($item->text()->xml(), 100); ?></itunes:subtitle>
+        <?php } ?>
+        
         <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
         <itunes:summary><?php echo $desc; ?></itunes:summary>
         <?php if($image = $item->image()): ?>
