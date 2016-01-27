@@ -85,18 +85,20 @@
     </div>
 
     <!-- EPISODE TAGS -->
-    <div class="info-block blog-tags">
-      <span class="label">This post is tagged:</span>
-        <ul itemprop="keywords" content="<?php echo $page->tags(); ?>">
-        <?php foreach($etags as $etag): ?>
-          <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-          <?php $x = 0; ?>
-          <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
+    <?php if ($page->tags() != ""): ?>
+      <div class="info-block blog-tags">
+        <span class="label">This post is tagged:</span>
+          <ul itemprop="keywords" content="<?php echo $page->tags(); ?>">
+          <?php foreach($etags as $etag): ?>
+            <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
+            <?php $x = 0; ?>
+            <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
+            <?php endforeach ?>
+            <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
           <?php endforeach ?>
-          <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-        <?php endforeach ?>
-        </ul>
-    </div>
+          </ul>
+      </div>
+    <?php endif; ?>
     
   </article>
 
