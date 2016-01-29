@@ -64,9 +64,11 @@ $('a.social').click(function(event) {
   } else if ( $(this).hasClass('googleplus') ) {
     sendGA("social", "Google+", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
+  /**
   } else if ( $(this).hasClass('flattr') ) {
     sendGA("social", "Flattr", p);
     window.open($(this).attr("href"), "popupWindow", "width=995,height=550");
+  **/
   } else if ( $(this).hasClass('facebook') ) {
     sendGA("social", "Facebook", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=450");

@@ -46,10 +46,12 @@
         <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
           <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
           <div class="hover-cover">
-            <div class="content">
-              <?php echo excerpt($article->text(), 222) ?>
-            </div>
-        </div>
+            <?php if ($article->text() != ""): ?>
+              <div class="content">
+                <?php echo excerpt($article->text(), 222) ?>
+              </div>
+            <?php endif; ?>
+          </div>
         </a>
       <?php endif ?>
       <?php if(!$image = $article->image()): ?>
