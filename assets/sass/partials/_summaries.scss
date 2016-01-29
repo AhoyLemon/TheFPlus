@@ -57,8 +57,8 @@
   .fa { color:lighten($black,20%); }
 }
 
-nav.toggle { padding-top: 1em; padding-bottom: 1em;
-  label {font-weight: 400; }
+nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
+  label {font-weight: 400; margin-right: 1em; }
    a  { margin-right: 1em; font-weight: 300;
     .checkbox { height: 1em; width: 1em; display: inline-block;
       * { stroke-width: 10px; stroke:$black; fill: none; }
