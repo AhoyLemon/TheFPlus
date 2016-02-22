@@ -118,7 +118,7 @@ article.full {
 }
 
 
-// DESKTOP REAKPOINT
+// DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
   main { display: block; padding:20px 10px 20px 310px; height:100vh; overflow-y: auto;
     &.page { padding-right: 1vw; }
@@ -131,7 +131,9 @@ article.full {
       li { font-size:1.6vw; }
     }
       */
-      .cover { float: right; max-width: 40%; margin-left: 2.5vw; }
+      .cover { float: right; max-width: 40%; margin-left: 2.5vw;
+        &.left { float: left; margin-right: 2.5vw; margin-left: 0; }
+      }
       a {
         &.action { @include flex-item(70px,auto,0,0); 
           svg { max-width: 70px; }
