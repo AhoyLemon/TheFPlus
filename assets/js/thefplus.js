@@ -40,7 +40,7 @@ $(document).ready(function() {
   $('#SidebarSearch').keydown(function(e) {
     if (e.keyCode == 13) {
       var s = $('#SidebarSearch').val();
-      var url = "http://thefpl.us/search?q="+s;
+      var url = "https://thefpl.us/search?q="+s;
       window.location = url;
       e.preventDefault();
     }
