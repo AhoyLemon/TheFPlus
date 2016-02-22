@@ -3,14 +3,18 @@
 <script type="text/javascript">
   var disqus_shortname = 'thefplus';
   var disqus_identifier = '<?php echo $page->uri(); ?>';
-  var disqus_title = "<?php echo $page->uid() ?>: <?php echo $page->title(); ?>";
+  <?php if ($page->parent()->slug() == "episode") {
+    echo 'var disqus_title = "' . $page->uid() . ': ' . $page->title() . '";';
+  } else {
+    echo 'var disqus_title = "' . $page->title() . '";';
+  } ?>
+  
   <?php
     if (strpos($disqus_identifier,'episode') !== false) {
       echo 'var disqus_category_id = "3926085";
 ';
     }
   ?>
-  console.log(disqus_title);
   <?php if ($allow_comments ==  true): ?>
   (function() {
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
