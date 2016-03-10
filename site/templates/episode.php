@@ -147,8 +147,6 @@
           <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
         </div>
       <?php endif; ?>
-
-      <!-- <span class="share-label">share: </span> -->
       
       <!-- Contribute To The F Plus -->
       <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
