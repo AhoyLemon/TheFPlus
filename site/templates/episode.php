@@ -188,7 +188,7 @@
     <!-- EPISODE TAGS -->
     <div class="info-block episode-tags">
       <span class="label">Episode Tags:</span>
-      <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
+      <div itemprop="keywords" content="<?php echo $page->tags() ?>">
         <?php foreach($etags as $etag): ?>
           <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
           <?php $x = 0; ?>
@@ -196,7 +196,7 @@
           <?php endforeach ?>
           <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo rawurlencode($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
         <?php endforeach ?>
-      </ul>
+      </div>
     </div>
 
     <!-- ADDITIONAL FUN -->
