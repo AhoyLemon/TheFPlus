@@ -55,16 +55,6 @@ article { font-weight: $light;
   &:after { content:'.'; margin-left: -0.2em; }
 }
 
-.pagination { display:flex; justify-content: space-between;
-  svg * { fill: $red; }
-  a { 
-    &:hover { background-color:$red;
-      svg * { fill:$white; }
-    }
-    &:active { background-color: $black; }
-  }
-}
-
 article.full {
   .episode-actions { @extend %clearfix;
     a { position: relative;
@@ -138,12 +128,6 @@ article.full {
       }
     }
   }
-  
-  .pagination {
-    .prev, .next, .blank { width:9rem;
-      &.tile { width:25%; }
-    }
-  }
 }
 
 // MOBILE BREAKPOINT
@@ -166,9 +150,4 @@ article.full {
       }
     }
   }
-  
-  .pagination {
-    .prev, .next, .blank { width:50%; }
-  }
-  
 }
