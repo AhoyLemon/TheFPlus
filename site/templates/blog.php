@@ -46,8 +46,6 @@
     <div class="social-actions episode-actions">
 			
 			<div class="audio-holder"></div>
-
-      <!-- <span class="share-label">share: </span> -->
       
       <!-- Contribute To The F Plus -->
       <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
