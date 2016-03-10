@@ -1,8 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8" />
+  
+  
+  
+  
+  <?php if($page->isHomePage()): ?>
+  
+  
+
+  
+  
+
+<!--
+                                                                                                                                                           
+b.             8     ,o888888o.               8 888888888o.       8 8888     ,o888888o.        ,o888888o.     8 8888 8888888 8888888888 `8.`8888.      ,8' 
+888o.          8  . 8888     `88.             8 8888    `^888.    8 8888    8888     `88.     8888     `88.   8 8888       8 8888        `8.`8888.    ,8'  
+Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888       `8. ,8 8888       `8.  8 8888       8 8888         `8.`8888.  ,8'   
+.`Y888888o.    8 88 8888        `8b           8 8888         `88  8 8888 88 8888           88 8888            8 8888       8 8888          `8.`8888.,8'    
+8o. `Y888888o. 8 88 8888         88           8 8888          88  8 8888 88 8888           88 8888            8 8888       8 8888           `8.`88888'     
+8`Y8o. `Y88888o8 88 8888         88           8 8888          88  8 8888 88 8888           88 8888            8 8888       8 8888            `8. 8888      
+8   `Y8o. `Y8888 88 8888        ,8P           8 8888         ,88  8 8888 88 8888   8888888 88 8888   8888888  8 8888       8 8888             `8 8888      
+8      `Y8o. `Y8 `8 8888       ,8P            8 8888        ,88'  8 8888 `8 8888       .8' `8 8888       .8'  8 8888       8 8888              8 8888      
+8         `Y8o.`  ` 8888     ,88'             8 8888    ,o88P'    8 8888    8888     ,88'     8888     ,88'   8 8888       8 8888              8 8888      
+8            `Yo     `8888888P'               8 888888888P'       8 8888     `8888888P'        `8888888P'     8 8888       8 8888              8 8888      
+  -->  
+  
+  
+  
+  
+  
+  <?php endif; ?>
+  
+  
+  
+  
+  
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
@@ -21,7 +55,6 @@
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="/manifest.json">
-  <link rel="shortcut icon" href="/favicon.ico">
   <meta name="apple-mobile-web-app-title" content="The F Plus">
   <meta name="application-name" content="The F Plus">
   <meta name="msapplication-TileColor" content="#c0282d">
