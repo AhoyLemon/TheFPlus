@@ -1,8 +1,3 @@
-
-@mixin transition($property: all, $duration: 0.3s, $animation: ease, $delay:0) { 
-  transition: $property $duration $animation $delay;
-}
-
 @mixin background($size:cover, $position:center, $repeat:no-repeat) {
    background-size:$size; background-position:$position; background-repeat:$repeat;
 }
@@ -95,4 +90,29 @@
 }
 @mixin scale($ratio) {
   transform: scale($ratio); 
+}
+
+@mixin position($type, $top:null, $right:null, $bottom:null, $left:null) {
+  position:$type;
+  @if $top {
+    top:$top;
+  }
+  @if $right {
+    right:$right;
+  }
+  @if $bottom {
+    bottom:$bottom;
+  }
+  @if $left {
+    left:$left;
+  }
+}
+
+@mixin respond-to($media) {
+  @if $media == desktop {
+    @media only screen and (min-width: $desktop-min) { @content; }
+  }
+  @else if $media == mobile {
+    @media only screen and (max-width: $mobile-max) { @content; }
+  }
 }
