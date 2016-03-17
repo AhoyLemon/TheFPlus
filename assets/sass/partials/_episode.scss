@@ -26,10 +26,21 @@ figure.fanart { @extend %fanart; }
       }
     }
   }
+  .pagination {
+    .prev, .next, .blank {
+      &.tile {width: 25%; }
+    }
+  }
 }
 
 @media (max-width: $mobile-max) {
   .covers-only {
     a { @include flex-item(50%, stretch, 0, 0); }
   }
+  .pagination {
+    .prev, .next, .blank {
+      &.tile {width: 50%; }
+    }
+  }
 }
+
