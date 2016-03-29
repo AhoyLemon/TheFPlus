@@ -10,7 +10,10 @@
         <?php $fa = explode("-", $fanart->filename()); ?>
         <li>
           <a href="/episode/<?php echo $fa[0]; ?>#AdditionalFun" class="fanart-link">
+            <img src="<?php echo $fanart->crop(250)->url(); ?>" class="fanart-thumb">
+            <!--
             <img src="/fanart/<?php echo $fanart->filename(); ?>" class="fanart-thumb">
+            -->
           </a>
         </li>
       <?php endforeach; ?>
