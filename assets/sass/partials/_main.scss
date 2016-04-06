@@ -19,14 +19,12 @@ article { font-weight: $light;
       &:before { color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
     }
 
-    a { text-decoration: none;
-      &:hover { text-decoration: underline; }
-    }
+    a { @extend %textlink; }
     .episode-tags {
       .label { display: block; }
       ul { padding-left: 0; }
       a { @extend %tag; cursor: text;
-        &:hover { text-decoration: none; }
+        //&:hover { text-decoration: none; }
         &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
           &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; }
         }
@@ -95,7 +93,7 @@ article.full {
         &:not(.go-right) { right:0; }
         &.go-right { background:$link; left:0; }
       }
-      &:hover { 
+      &:hover { border:none;
         .label { transform:translateY(0); opacity: 1; }
       }
     }
