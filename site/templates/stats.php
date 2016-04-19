@@ -42,12 +42,12 @@
         </tr>
       </thead>
       <tbody>
-        <?php foreach($ridiculists as $ed): ?>
-          <tr>
-            <td><?php echo $ed['name']; ?></td>
-            <td><?php echo $ed['edits']; ?></td>
-          </tr>
-        <?php endforeach; ?>
+        <?php foreach($ridiculists as $ed):
+          echo "<tr>\n" .
+            "<td>" . $ed['name'] . "</td>\n" .
+            "<td>" . $ed['edits'] . "</td>\n" .
+          "</tr>\n";
+        ?>
       </tbody>
     </table>
     
