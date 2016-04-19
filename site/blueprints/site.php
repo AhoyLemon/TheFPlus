@@ -9,6 +9,7 @@ pages:
     - results
     - blogs
     - page_withbonus
+    - stats
 fields:
   title:
     label: Title
