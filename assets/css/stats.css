@@ -1,0 +1,61 @@
+.table-flexes {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: strech;
+  -ms-flex-align: strech;
+  align-items: strech;
+}
+
+.table-flexes .table-holder {
+  flex-basis: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  padding-top: 2em;
+}
+
+table.stats {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+table.stats th {
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 80%;
+  padding-left: 0.5em;
+  font-size: 1.35em;
+  white-space: nowrap;
+}
+
+table.stats th:nth-child(2) {
+  max-width: 2rem;
+  transform: rotate(90deg);
+  transform-origin: bottom right;
+  position: absolute;
+  top: 1.5rem;
+  right: -0.5rem;
+}
+
+table.stats td {
+  padding: 0.25rem 1rem;
+  border: 1px solid #343434;
+  vertical-align: middle;
+}
+
+table.stats td:last-child {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+table.stats tr:nth-child(even) td {
+  background: rgba(52, 52, 52, 0.2);
+}
