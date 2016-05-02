@@ -17,7 +17,7 @@
     $etags = explode(",", $page->tags());
     $songs = explode(",", $page->music_used());
     if ($page->provider() != "") {
-      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $page->provider()));
+      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $page->provider())));
     }
   ?>
 
@@ -67,7 +67,7 @@
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">
       <?php foreach($persons as $person): ?>
-        <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', $person)); ?>
+        <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
         <?php if ($site->find($mlink)) { ?>
           <li itemprop="actor"><a href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><?php echo $person ?></a></li>
         <?php } else { ?>
