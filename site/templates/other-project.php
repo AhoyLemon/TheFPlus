@@ -90,7 +90,7 @@
       
       <!-- Fork on GitHub -->
       <?php if ($page->github_repo() != ""): ?>
-        <a class="social github" data-network="GitHub" href="<?php echo $page->github_repo(); ?>" title="Contribute on GitHub">
+        <a class="social github" data-network="GitHub" href="<?php echo $page->github_repo(); ?>" title="Contribute on GitHub" target="_blank">
           <svg viewBox="0 0 100 100">
             <use xlink:href="#IconGitHub"></use>
           </svg>

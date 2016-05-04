@@ -8,6 +8,17 @@
   .table-holder { @include flex-item(300px); padding-top: 2em; }
 }
 
+.chart-holder { @include position(fixed,null,0,0,0); mix-blend-mode: overlay; z-index: 9; @include flex-container();
+  canvas { margin-left: auto; margin-right: auto; display: block; }
+  .chart-square { @include flex-item(33.33333%,0);
+    //canvas { max-width: 100%; }
+  }
+}
+
+.top-chart { 
+  canvas { margin-left: auto; margin-right: auto; display: block; }
+}
+
 table.stats { margin-left: auto; margin-right: auto; position: relative;
   th { font-weight:$light; text-transform: uppercase; line-height: 80%; padding-left: 0.5em; font-size:1.35em; white-space: nowrap;
     &:nth-child(2) { max-width: 2rem; transform: rotate(90deg); transform-origin: bottom right; @include position(absolute,1.5rem,-0.5rem); }
@@ -15,4 +26,8 @@ table.stats { margin-left: auto; margin-right: auto; position: relative;
   td { padding:0.25rem 1rem; border: 1px solid $black; vertical-align: middle; }
   td:last-child { font-weight: $bold; font-size:1.25em; }
   tr:nth-child(even) td { background:rgba($black,0.2); }
+}
+
+@media (min-width: $desktop-min) {
+  .chart-holder { padding-left: 320px; }
 }

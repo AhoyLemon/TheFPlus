@@ -55,26 +55,18 @@ $(document).ready(function() {
 $('a.social').click(function(event) {
   var p = window.location.pathname;
   if ( $(this).hasClass('contribute') ) {
-    sendGA("social", "Contribute", p, '1');
-    window.open($(this).attr("href"));
-  }
-  if ( $(this).hasClass('twitter') ) {
+    sendGA("social", "Contribute", p);
+  } else if ( $(this).hasClass('twitter') ) {
     sendGA("social", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
   } else if ( $(this).hasClass('googleplus') ) {
     sendGA("social", "Google+", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
-  /**
-  } else if ( $(this).hasClass('flattr') ) {
-    sendGA("social", "Flattr", p);
-    window.open($(this).attr("href"), "popupWindow", "width=995,height=550");
-  **/
   } else if ( $(this).hasClass('facebook') ) {
     sendGA("social", "Facebook", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
   } else if ( $(this).hasClass('github') ) {
     sendGA("social", "GitHub", p);
-    window.open($(this).attr("href"));
   }
 });
 
@@ -96,9 +88,24 @@ $('.sidebar .circles a').click(function() {
     sendGA("social", "Twitter", "sidebar");
   } else if ( $(this).hasClass('ballpit') ) {
     sendGA("social", "ballp.it", "sidebar");
-  } else if ( $(this).hasClass('flattr') ) {
-    sendGA("social", "Flattr", "sidebar");
+  } else if ( $(this).hasClass('youtube') ) {
+    sendGA("social", "YouTube", "sidebar");
   } else if ( $(this).hasClass('rss') ) {
     sendGA("social", "Feedburner", "sidebar");
   }
 });
+
+
+/**
+window.addEventListener('load', function()
+	{
+		if(window.ga && ga.create) 
+		{
+			console.log('Google Analytics is loaded');
+		} 
+		else 
+		{
+			console.log('Google Analytics is not loaded');    
+		}
+	}, false);
+**/
