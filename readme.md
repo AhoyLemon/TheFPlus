@@ -1,6 +1,6 @@
 # The F Plus
 
-This repo contains all the template and design files which make [thefpl.us](http://thefpl.us) work and operate the way it does. It does not contain the content or the kirby source files, as those aren't really relevant here.
+This repo contains all the template and design files which make [thefpl.us](https://thefpl.us) work and operate the way it does. It does not contain the content or the kirby source files, as those aren't really relevant here.
 
 To get this repo up and running, first [download Kirby](https://github.com/bastianallgeier/kirby) and then copy over the contents of this repo into your folder. You now have a working version of The F Plus ready for content.
 
