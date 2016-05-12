@@ -100,6 +100,14 @@ table.stats tr:nth-child(even) td {
   background: rgba(52, 52, 52, 0.2);
 }
 
+table.stats a:hover, table.stats a:focus {
+  text-decoration: underline;
+}
+
+table.stats a:active {
+  font-weight: 600;
+}
+
 @media (min-width: 768px) {
   .chart-holder {
     padding-left: 320px;

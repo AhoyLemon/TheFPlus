@@ -10,7 +10,7 @@ fields:
   text:
     label: Page Text
     type: markdown
-  bonus_code:
+  bonus_content:
     label: Bonus Content
     placeholder: HTML, CSS and Javascript
     type: textarea

@@ -8,10 +8,8 @@ fields:
     label: Title
     type:  text
   text:
-    label: Page Text
+    label: Page Description (not visible)
     type: markdown
-  bonus_code:
-    label: Bonus Content
-    placeholder: HTML, CSS and Javascript
-    type: textarea
-    icon: code
+  bonus_content:
+    label: Page Notes
+    type: markdown
