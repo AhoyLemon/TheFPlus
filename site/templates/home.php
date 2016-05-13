@@ -9,6 +9,7 @@
       "email": "lemon@thefpl.us",
       "foundingDate": "2009",
       "logo": "https://thefpl.us/schemaLogo.png",
+      "description": "Terrible things, read with enthusiasm.",
       "alternateName": "The F+",
       "sameAs" : [ 
         "https://www.facebook.com/thefplus",
