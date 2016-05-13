@@ -12,6 +12,7 @@
 
   <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
     <header>
+      <meta itemprop="mainEntityOfPage" content="<?php echo $page->url(); ?>" />
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
       <meta itemprop="headline" content="<?php echo $page->title() ?>" />
       <meta itemprop="wordCount" content="<?php echo $page->text()->words(); ?>" />
@@ -25,6 +26,8 @@
           <?php echo $pubtime; ?>
         </span>
       </time>
+      
+      <meta itemprop="dateModified" content="<?php echo $page->modified('d/m/Y H:i+06:00') ?>" />
       <!-- AUTHOR -->
       <?php if ($page->author() != ""): ?>
         <h4 class="author">
@@ -35,7 +38,11 @@
         </h4>
       <?php endif ?>
       <?php if ($page->image()): ?>
-          <meta itemprop="image" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
+        <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+          <meta itemprop="url" content="<?php echo $page->url() ?>/<?php echo $page->image()->filename() ?>" />
+          <meta itemprop="height" content="<?php echo $page->image()->height(); ?>" />
+          <meta itemprop="width" content="<?php echo $page->image()->width(); ?>" />
+        </div>
       <?php endif; ?>
     </header>
     
@@ -97,7 +104,13 @@
           </div>
       </div>
     <?php endif; ?>
-    
+    <div itemprop="publisher" itemscope itemtype="http://schema.org/PerformingGroup">
+      <meta itemprop="name" content="<?php echo $site->title(); ?>" />
+      <meta itemprop="url" content="<?php echo $site->url(); ?>" />
+      <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="https://thefpl.us/schemaLogo.png" />
+      </div>
+    </div>
   </article>
 
   <section class="comments disqus">

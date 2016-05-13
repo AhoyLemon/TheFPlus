@@ -69,7 +69,11 @@
       <?php foreach($persons as $person): ?>
         <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
         <?php if ($site->find($mlink)) { ?>
-          <li itemprop="actor"><a href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><?php echo $person ?></a></li>
+          <li itemprop="actor" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>">
+              <span itemprop="name"><?php echo $person ?></span>
+            </a>
+          </li>
         <?php } else { ?>
           <li itemprop="actor"><?php echo $person ?></li>
         <?php } ?>
@@ -82,9 +86,11 @@
         <div class="content-provider">
           <label>Content for this episode was compiled by</label>
             <?php if ($site->find($plink)) { ?>
-              <a href="<?php echo url::home() ?>/<?php echo $plink; ?>">
-                <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
-              </a>
+              <span itemprop="contributor" itemscope itemtype="http://schema.org/Person">
+                <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $plink; ?>">
+                  <span itemprop="name" class="provider"><?php echo $page->provider() ?></span>
+                </a>
+              </span>
             <?php } else { ?>
               <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
             <?php } ?>
@@ -102,7 +108,6 @@
       <?php endif ?>
     </div>
 
-
     <!-- EPISODE SUMMARY TEXT -->
     <summary class="info-block" itemprop="description">
       <?php echo $page->text()->kirbytext() ?>
@@ -112,9 +117,11 @@
     <?php if ($page->music_used() != ""): ?>
       <div class="music-used info-block">
         <span class="list-leader">MUSIC USED:</span>
-        <ol itemscope itemtype="http://schema.org/MusicPlaylist">
+        <ol itemprop="musicBy" itemscope itemtype="http://schema.org/MusicPlaylist">
           <?php foreach($songs as $song): ?>
-          <li itemprop="track"><?php echo trim($song) ?></li>
+          <li itemprop="track" itemscope itemtype="http://schema.org/MusicRecording">
+            <span itemprop="name"><?php echo trim($song) ?></span>
+          </li>
           <?php endforeach ?>
         </ol>
       </div>
@@ -143,7 +150,7 @@
 
       <!-- AUDIO CONTAINER -->
       <?php if ($page->episode_file() != ""): ?>
-        <div class="audio-holder">
+        <div class="audio-holder" itemprop="audio">
           <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
         </div>
       <?php endif; ?>

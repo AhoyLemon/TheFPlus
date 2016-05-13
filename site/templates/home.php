@@ -12,10 +12,18 @@
       "description": "Terrible things, read with enthusiasm.",
       "alternateName": "The F+",
       "sameAs" : [ 
-        "https://www.facebook.com/thefplus",
+        "http://feeds.feedburner.com/TheFPlus",
         "https://twitter.com/TheFPlus",
-        "https://plus.google.com/+TheFPlus"
-      ]
+        "https://plus.google.com/+TheFPlus",
+        "https://www.facebook.com/thefplus"
+      ],
+      "owns": {
+        "@context": "https://schema.org",
+        "@type": "Brand",
+        "name": "Ball Pit",
+        "url": "http://ballp.it",
+        "logo": "http://ballp.it/Themes/Giggle/svg/new-logo.svg"
+      }
     }
   </script>
 
