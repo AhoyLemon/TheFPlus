@@ -25,7 +25,11 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } ?>
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
@@ -78,7 +82,11 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } ?>
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>
@@ -130,7 +138,11 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } ?>
             <?php if ($article->tags() != ""):
               $etags = explode(",", $article->tags());
             ?>

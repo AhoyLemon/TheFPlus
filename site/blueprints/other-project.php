@@ -28,6 +28,10 @@ fields:
     type: time
     interval: 1
     width: 1/4
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/2
   show_image:
     label: Show image on page?
     type: toggle
@@ -37,6 +41,7 @@ fields:
     label: Cast
     type: tags
     icon: users
+    width: 1/2
   text:
     label: Item Summary
     type: markdown

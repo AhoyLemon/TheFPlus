@@ -59,10 +59,12 @@
         </span>
       </time>
     </header>
-
-    <?php if($image = $page->image()): ?>
+    
+    <?php if($page->cover() != "") { ?>
+      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+    <?php } else if($image = $page->image()) { ?>
       <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php endif ?>
+    <?php } ?>
 
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">

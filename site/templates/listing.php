@@ -39,7 +39,12 @@
       <?php foreach($articles as $article): ?>
         <?php if($image = $article->image()): ?>
           <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            <?php } ?>
+            
             <summary>
               <h4 class="title">
                 <?php if ($article->parent()->slug() == "episode"): ?>

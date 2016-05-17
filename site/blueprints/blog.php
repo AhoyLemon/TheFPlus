@@ -9,18 +9,22 @@ fields:
     type:  text
     width: 1/2
   author:
-    label: author
-    type: text
+    label: Author
+    type: tags
     icon: user
     width: 1/2
   date:
     label: Publish Date
     type: date
     format: MM/DD/YYYY
-    width: 1/2
+    width: 1/4
   time:
     label: Publish Time
     type: time
+    width: 1/4
+  cover:
+    label: Cover Image
+    type: image
     width: 1/2
   text:
     label: Start writing, fucko!

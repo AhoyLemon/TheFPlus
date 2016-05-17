@@ -33,8 +33,12 @@
 
     </header>
     <?php if( $image = $page->image()):  ?>
-      <?php if(  $page->show_image() == 'true'):  ?>
-        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+      <?php if($page->show_image() == 'true'):  ?>
+        <?php if ($page->cover() != "") { ?>
+          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+        <?php } else { ?>
+          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+        <?php } ?>
       <?php endif ?>
     <?php endif ?>
 

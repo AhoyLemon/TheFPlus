@@ -24,10 +24,9 @@ fields:
     type: time
     interval: 1
     width: 1/4
-  editor:
-    label: Editor
-    type: tags
-    icon: scissors
+  cover:
+    label: Cover Image
+    type: image
     width: 1/2
   cast:
     label: Cast
@@ -56,10 +55,15 @@ fields:
     type: url
     icon: file-text-o
     width: 1/2
+  editor:
+    label: Editor
+    type: tags
+    icon: scissors
+    width: 1/4
   provider:
     label: Provider
     type: tags
-    width: 1/2
+    width: 1/4
     icon: gift
   text:
     label: Episode Summary
