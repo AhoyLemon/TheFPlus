@@ -1,7 +1,11 @@
+assets/avatars
 panel/
 kirby/
 crap/
 podcasts/
 content/
 backup/
-site/config/config.php
+site/accounts
+site/cache
+site/config
+thumbs
