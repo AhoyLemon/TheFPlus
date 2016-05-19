@@ -1,0 +1,159 @@
+﻿pick 401a02e Add'l metadata.
+pick 9407b57 Schema improvements.
+pick eee12ae Variable cover option.
+pick e4131fd Ignore better stuff.
+pick e7fb1d6 ...
+pick 23abbc5 ...
+pick fef6a26 Init.
+pick 84e4dde New readme.md
+pick 90654ea Ignoring /crap and /podcasts folders as well.
+pick ccdbe84 Fixed a FireFox flexbox issue.
+pick 4005890 Normalized font size when you're looking at recent comments.
+pick 7350221 Meet page tweaks to get better PageSpeed score.
+pick c229a41 Recent comments text styles.
+pick d9b2f42 Safari-friendly flexbox.
+pick 6f1c712 Style tweaks.
+pick cc7a697 Better schema data. Need to get the cache flushing back
+pick bc5cb6a Fixed the cache flushing.
+pick c4f109f Deleting unnecessary files.
+pick d42ea88 Resolving issue with spacing before commas.
+pick 572bcbe Update for Pride.
+pick 703f0c5 Tweak to mobile logo.
+pick e4a9b82 New logo system, and a summary for the ~/wrote page.
+pick 33bae19 Reading time is back in the briefs.
+pick f1de57c Schema.org fix, flajax menu tweak.
+pick e45b379 Consistent social icons cross-site.
+pick e0adb36 Gap spacing for the summary boxes.
+pick f3816e3 Mostly just cleanup.
+pick 133d580 ~/episode/random works properly now.
+pick 3c8e00f New image for twitter summary.
+pick f56089d Closes #1. Also closes #2.
+pick a94e20b Added pagination to the results template. Closes #3.
+pick 2d744ec "newer posts" instead of "newer episodes".
+pick 22c7c35 Edge To Edge for the covers only display.
+pick 15c8c88 Tablesaw for submission hopper. This also closes #6.
+pick eea9c29 Whitespace gone.
+pick 72eeecb Consistent typography.
+pick 4ff5b3e Adding the Irregular AI file for later use.
+pick a7ee740 Fixing a couple schema bugs, better image urls in the xml.
+pick e4c989b Nice job with your new browser there, Microsoft.
+pick d1d2823 The hopper page has been redone. The Dump still needs work.
+pick 9b4a193 Dump and Hopper are built and cool. I need to add the css to the master Sass
+pick 3eb3c23 Updates to hopper and dump, stickers have defined CSS.
+pick 59a327b Buttons should go above those pics.
+pick 63128d3 Sticker page markup (temporary)
+pick 32f3822 Final sticker layout.
+pick 712e9e5 More sticker changes.
+pick db1f270 I can't stop changing this sticker page.
+pick 5cc4409 Tiny schema fix.
+pick 01bf6b0 Oh, just a buncha changes. I'm not really sure, mostly some page layouts.
+pick b565d84 Changed around how "recent comments" works a number of times.
+pick e7f358c Revision to recent comments
+pick 663d9f9 Okay, I think I'm happy with this comment page.
+pick ce718d5 I want to send GA events whenever somebody buys a sticker.
+pick 91d402f Header navigation improvements for second-tier browsers.
+pick a2766f7 Fixed schema in the "other projects" template.
+pick 90a889e Page content changes.
+pick 9be5c5d Updated podcast image, prefer https in several cases.
+pick 02826b1 Error in the feed xml.
+pick 704d447 Bit o' cleanup
+pick bedb99a Removing duplicate schema entries, separate template for recent comments.
+pick 96e8a77 Match to https://github.com/AhoyLemon/kirby-builder
+pick 07e0843 Leaner recent-comments code.
+pick 3b98538 Stickers CSS
+pick b0bec92 Final (hopefully) revision to the recent comments template.
+pick 17d3cec Justifying more text, purely to annoy designers.
+pick 3cec97d Modified layouts.
+pick ba5fab6 Route `episode/100` to `episode/100a`
+pick 2f05e98 Person doesn't need to have Schema data for the linked episodes.
+pick 5e34730 Uncommented sticker buy buttons.
+pick adcdc78 Jersey page laid out. YouTube replaces Flattr.
+pick 053907f All set up to accept jersey orders.
+pick 11a4ae7 Slight change to recent-comments page.
+pick 33ed980 Redid the person squares on ~/meet
+pick fb26fbb Jerseys & Stickers updated.
+pick 768b0a5 Slight change to meet index
+pick 4dff6b1 A number of thoughtful tweaks into how the topNav & sidebar function on mobile. This closes #7.
+pick 9b47837 YouTube embed padding fix.
+pick 7c7472d Want to have this QE title card available if I need it later.
+pick ac9e52f Recent comment tweet (partial) support
+pick 1c60a8a Tweet intent and GitHub repo are handled inside the content panel.
+pick 958cd60 Episode tweet_indent. Also conditional audio holders.
+pick df41dfd Needs to match the link red color elsewhere.
+pick eabf18b Force https on /panel/*
+pick c4ab4e0 Stacking all the results chronologically.
+pick ef08907 Just a bit of CSS to handle the (fanart) boxes.
+pick 62b768c Episode pages have /meet condition.
+pick 60d3ed1 Update that removes Flattr, adds Contribute page
+pick c1adf1e Removing Flattr remnants, better handling of inline svg.
+pick dcf8b56 Config shouldn't be in the repo.
+pick 26bb972 Delete config.php
+pick 40f062c Double entry not necessary.
+pick ea73ab6 Dunno
+pick 178b36c Slight social meta tweaks.
+pick b09a78f Updated site backend to Kirby 2.2.2
+pick 105bf28 Made a fanart page.
+pick 7699fdb Reader list links are conditional.
+pick d20768e Tweaks not worth mentioning.
+pick 11157bc Hopper tweak
+pick 20d1518 Deleting useless files.
+pick 309af71 Formatting.
+pick 04f67a5 gzip
+pick ecc89ce Edited the feed xml
+pick b393a66 Smaller stylesheet.
+pick 9b3a5ec I have no idea what's in this commit
+pick ead090b content should be in gitignore.
+pick 6724e26 That cachebuster isn't necessary anymore.
+pick 67c7bc6 fanart changes.
+pick edbaec5 Weird post-comma padding fixed.
+pick 7da2684 Feed XML fix (itunes specific)
+pick 835cd71 gcm_sender_id
+pick 021320b Little changes to /meet page.
+pick c68fa46 I'll need these images later.
+pick e01e995 https
+pick d02aae1 Disqus fixes (hopefully)
+pick 1037401 No diggity. No doubt.
+pick 77ec1b4 Semantic svg elements.
+pick 13639da Previous / Next links restyled
+pick e8d61b0 Styled up prev/next
+pick bb2d05f SVGs have titles now.
+pick 6c1f337 Crop that fanart, babycakes.
+pick c498606 I hope this doesn't cause a merge conflict.
+pick deee0b6 Need to finish this cover later.
+pick 8b39840 Restyled hover
+pick 00c89b6 This file isn't needed.
+pick a47b3dd This isn't working.
+pick 5370835 Several attempts at pie charts, all failed.
+pick 3228f74 This is coming along.
+pick 05773da Heelies related URL checks.
+pick 01ebc70 DO YOU ABSOLUTELY HAVE TO SLEEP ALL DAY!!?
+pick d1e140e Slight padding adjust.
+pick 5bfdf68 Largely the stats page.
+pick 43123d8 Add'l metadata.
+pick 029372f Schema improvements.
+pick 9aa1249 Variable cover option.
+pick df4885c Ignore better stuff.
+pick fa9bf77 ...
+pick 05b26ac ...
+pick b623cba Delete ClipsAgainstHumanity.png
+pick 8bd5bfc Delete ExperienceProject.jpg
+
+# Rebase 9c35382..db224a2 onto 9c35382 (139 command(s))
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+
