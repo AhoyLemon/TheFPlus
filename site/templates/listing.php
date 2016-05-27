@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
   <main class="main edge-to-edge" role="main">    
     <?php $ftag = urldecode (param('tag')); ?>
-    <?php $thispage = urldecode (param('page')); ?>
+    <?php $thispage = urldecode(param('page')); ?>
     <?php if ($ftag): ?>
       <ul class="tags filtered">
         <label>browsing: </label>

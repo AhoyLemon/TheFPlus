@@ -89,9 +89,15 @@
         
         <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
         <itunes:summary><?php echo $desc; ?></itunes:summary>
-        <?php if($image = $item->image()): ?>
+        
+        <?php if ($item->cover() != "") { ?>
+          <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
+        <?php } else if($image = $page->image()) { ?>
           <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
-        <?php endif ?>
+        <?php } ?>
+
+
+
       </item>
     <?php endforeach ?>
 

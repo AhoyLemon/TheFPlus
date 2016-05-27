@@ -67,7 +67,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <meta name="twitter:creator" content="@AhoyLemon">
   <meta name="twitter:title" content="<?php echo $page->title(); ?>" />
   <meta name="twitter:description" content="<?php echo excerpt($page->text()->xml(), 180) ?>" />
-  <?php if ($page->cover != "") { ?>
+  <?php if ($page->cover() != "") { ?>
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
   <?php } else if($image = $page->image()) { ?>
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
@@ -79,7 +79,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <meta property="og:title" content="<?php echo $page->title(); ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo $page->url() ;?>">
-  <?php if ($page->cover != "") { ?>
+  <?php if ($page->cover() != "") { ?>
     <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
   <?php } else if($image = $page->image()) { ?>
     <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
