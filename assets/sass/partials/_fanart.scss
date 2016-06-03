@@ -4,11 +4,9 @@
     @include respond-to(mobile) { @include flex-item(50%,stretch,0,0); }
     @include respond-to(desktop) { @include flex-item(25%,stretch,0,0); }
   }
-  .fanart-link { display: block; position:relative; // border:4px solid transparent;
-    //img { opacity:0.8; transform-origin: center; transition:all 0.3s ease; }
+  .fanart-link { display: block; position:relative;
     &:after { @include position(absolute,0,0,0,0); background-color:$red; opacity: 0; transition:opacity 0.3s ease; display: block; content:' '; }
-    &:hover {
-      //img { opacity: 1; transform: scale(1.2); }
+    &:hover { border:none;
       &:after { opacity: 0.5; }
     }
   }
