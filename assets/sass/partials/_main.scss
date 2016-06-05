@@ -51,6 +51,9 @@ article { font-weight: $light;
 }
 .content-provider, .edited-by {
   &:after { content:'.'; margin-left: -0.2em; }
+  .multi {
+    &:last-child:before { content:' & ';}
+  }
 }
 
 article.full {

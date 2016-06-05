@@ -16,8 +16,12 @@
     }
     $etags = explode(",", $page->tags());
     $songs = explode(",", $page->music_used());
-    if ($page->provider() != "") {
+    if (strpos($page->provider(),',') !== false) {
+      $submitters = explode(",", $page->provider());
+      $multisubmitter = true;
+    } else if ($page->provider() != "") {
       $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $page->provider())));
+      $multisubmitter = false;
     }
   ?>
 
@@ -87,14 +91,29 @@
       <?php if ($page->provider() != ""): ?>
         <div class="content-provider">
           <label>Content for this episode was compiled by</label>
-            <?php if ($site->find($plink)) { ?>
-              <span itemprop="contributor" itemscope itemtype="http://schema.org/Person">
-                <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $plink; ?>">
-                  <span itemprop="name" class="provider"><?php echo $page->provider() ?></span>
-                </a>
-              </span>
-            <?php } else { ?>
-              <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
+            <?php if ($multisubmitter == false) { ?>
+              <?php if ($site->find($plink)) { ?>
+                <span itemprop="contributor" itemscope itemtype="http://schema.org/Person">
+                  <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $plink; ?>">
+                    <span itemprop="name" class="provider"><?php echo $page->provider() ?></span>
+                  </a>
+                </span>
+              <?php } else { ?>
+                <span itemprop="contributor" class="provider"><?php echo $page->provider() ?></span>
+              <?php } ?>
+            <?php } else if ($multisubmitter == true) { ?>
+              <?php foreach($submitters as $submitter): ?>
+                <?php $sublink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $submitter))); ?>
+                <?php if ($site->find($sublink)) { ?>
+                  <span itemprop="contributor" itemscope itemtype="http://schema.org/Person" class="multi">
+                    <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $sublink; ?>">
+                      <span itemprop="name" class="provider"><?php echo $submitter; ?></span>
+                    </a>
+                  </span>
+                <?php } else { ?>
+                  <span itemprop="name" class="provider multi"><?php echo $submitter; ?></span>
+                <?php } ?>
+              <?php endforeach ?>
             <?php } ?>
         </div>
       <?php endif ?>

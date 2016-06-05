@@ -5,6 +5,7 @@
 @import "partials/_z-index";
 
 //STUFF
+.sticker-buy-buttons { padding-top: 0.75em; padding-bottom: 0.75em; text-align: center; }
 .sticker-buy-button { display: inline-block;
   button { display: block; font-size: 0.9em; width:100%; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding: 0.3em 1em; border-radius: 5em; cursor: pointer; font-weight:$normal; margin-bottom:0.3em; outline:none;
     &:hover { background:$red; color:$white; }

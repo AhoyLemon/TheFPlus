@@ -95,10 +95,5 @@
     <?php endif ?>
 
   </main>
-
-<style>
-  .covers-only a { position:relative; }
-  .covers-only a:hover .disqus-comment-count { display:block; }
-</style>
 <?php snippet('disqus-alt', array('allow_comments' => false)) ?>
 <?php snippet('footer') ?>

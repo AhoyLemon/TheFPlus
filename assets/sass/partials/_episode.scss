@@ -7,7 +7,7 @@
       &:hover { background-color: $red; }
       h3 { text-align: center; }
     }
-    .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(105%); @include transition(); }
+    .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(160%); @include transition(all, 0.3s, ease, 0.3s); }
   }
 }
 
