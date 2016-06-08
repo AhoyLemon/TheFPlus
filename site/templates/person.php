@@ -97,7 +97,7 @@
       <?php
         $findme = $page->title();
       ?>
-      <?php $articles = $site->grandChildren()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
+      <?php $articles = $site->find('episode')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
       <?php if ($articles->count() > 0): ?>
         <div class="info-block appears-in">
           <span class="list-leader"><?php echo $findme; ?> appears in:</span>
@@ -112,6 +112,41 @@
           </ul>
         </div>
       <?php endif ?>
+      
+      <!-- CONTRIBUTED TO PROJECTS -->
+      <?php $articles = $site->find('also-made')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
+      <?php if ($articles->count() > 0): ?>
+        <div class="info-block appears-in">
+          <span class="list-leader"><?php echo $findme; ?> Contributed To:</span>
+          <ul>
+            <?php foreach($articles as $article): ?>
+              <li>
+                <a href="<?php echo $article->url() ?>">
+                  <span><?php echo $article->title() ?></span>
+                </a>
+              </li>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php endif ?>
+      
+      <!-- BLOG CREDITS -->
+      <?php $articles = $site->find('wrote')->children()->visible()->filterBy('author', $findme, ',')->sortBy('date', 'desc') ?>
+      <?php if ($articles->count() > 0): ?>
+        <div class="info-block appears-in">
+          <span class="list-leader"><?php echo $findme; ?> Wrote:</span>
+          <ul>
+            <?php foreach($articles as $article): ?>
+              <li>
+                <a href="<?php echo $article->url() ?>">
+                  <span><?php echo $article->title() ?></span>
+                </a>
+              </li>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php endif ?>
+      
       
       <?php $provs = $site->grandChildren()->visible()->filterBy('provider', $findme, ',') ?>
       <?php if ($provs->count() > 0): ?>
