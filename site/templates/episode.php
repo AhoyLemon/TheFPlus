@@ -75,11 +75,7 @@
       <?php foreach($persons as $person): ?>
         <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
         <?php if ($site->find($mlink)) { ?>
-          <li itemprop="actor" itemscope itemtype="http://schema.org/Person">
-            <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>">
-              <span itemprop="name"><?php echo $person ?></span>
-            </a>
-          </li>
+          <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
         <?php } else { ?>
           <li itemprop="actor"><?php echo $person ?></li>
         <?php } ?>
