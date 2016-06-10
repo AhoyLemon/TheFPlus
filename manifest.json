@@ -1,5 +1,6 @@
 {
 	"name": "The F Plus",
+  "short_name": "The F Plus",
 	"icons": [
 		{
 			"src": "\/android-chrome-36x36.png",
@@ -38,7 +39,7 @@
 			"density": "4.0"
 		}
 	],
-	"start_url": "https:\/\/thefpl.us",
+	"start_url": "https://thefpl.us",
 	"display": "standalone",
 	"orientation": "portrait",
   "gcm_sender_id": "456133223354"
