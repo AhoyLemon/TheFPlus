@@ -8,7 +8,9 @@
     $pubdate = date('l, F jS Y', $page->date());
     $pubtime = date("g:ia", strtotime($page->time()));
     $etags = explode(",", $page->tags());
-    if (strpos($page->cast(),',') !== false) {
+    if ($page->cast() == "") {
+      $multiperson = false;
+    } else if (strpos($page->cast(),',') !== false) {
       $multiperson = true;
       $persons = explode(",", $page->cast()); 
     } else if ($page->cast() != '') {
@@ -43,22 +45,24 @@
     <?php endif ?>
 
     <!-- CAST LIST -->
-    <?php if ($multiperson == true): ?>
-      <ul class="cast authors ridiculists info-block">
-        <?php foreach($persons as $person): ?>
-        <li itemprop="contributor"><a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a></li>
-        <?php endforeach ?>
-      </ul>
+    <?php if ($page->cast() != ""): ?>
+      <?php if ($multiperson == true): ?>
+        <ul class="cast authors ridiculists info-block">
+          <?php foreach($persons as $person): ?>
+          <li itemprop="contributor"><a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a></li>
+          <?php endforeach ?>
+        </ul>
+      <?php endif ?>
+      <?php if ($multiperson == false): ?>
+        <div class="author info-block">
+          by 
+          <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo $clink ?>">
+            <span itemprop="contributor"><?php echo $page->cast() ?></span>
+          </a>
+        </div>
+      <?php endif ?>
     <?php endif ?>
-    <?php if ($multiperson == false): ?>
-      <div class="author info-block">
-        by 
-        <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo $clink ?>">
-          <span itemprop="contributor"><?php echo $page->cast() ?></span>
-        </a>
-      </div>
-    <?php endif ?>
-    
+
     <!-- SUMMARY TEXT -->
     <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
       <?php echo $page->text()->kirbytext() ?>
