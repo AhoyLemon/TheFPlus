@@ -32,7 +32,11 @@
           </header>
           <?php if($image = $article->image()): ?>
             <a class="image-holder" href="<?php echo $article->url() ?>">
-              <img src="<?php echo $image->url() ?>" class="cover" />
+              <?php if ($article->cover() != "") { ?>
+                <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+              <?php } else { ?>
+                <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+              <?php } ?>
               <?php if ($article->tags() != ""):
                 $etags = explode(",", $article->tags());
               ?>
