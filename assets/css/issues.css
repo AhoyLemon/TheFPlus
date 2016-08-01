@@ -1,3 +1,37 @@
+/*
+@keyframes pull-focus {
+  0%   { color:$white; }
+  44%  { color:$white; }
+  60%  { color:$white }
+  66%  { color: $yellow; }
+  88%  { color: $white; }
+  100% { color:$white; }
+}
+*/
+@keyframes pull-focus {
+  0% {
+    transform: translateY(0);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  63% {
+    transform: translateY(2px);
+  }
+  68% {
+    transform: translateY(-6px);
+  }
+  73% {
+    transform: translateY(2px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .issue-box {
   border: 1px solid #4e7f71;
   margin-bottom: 2em;

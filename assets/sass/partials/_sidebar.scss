@@ -1,12 +1,11 @@
 .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 300px; background-color: $black; color: $white; overflow-x: hidden; overflow-y: auto; z-index:$z-sidebar; font-family:$sans-serif; padding-left: 1em; padding-right:1em; 
   > * { display: block; width: 100%; }
-  > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none;
-    &.colophon { font-size:1rem; padding-top: 2em; color:yellow; }
-  }
+  > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none; }
   h4 { font-size: 1.1rem; color: $white; text-transform: uppercase; margin-top: 1em; }
   .main-link { font-size: 1.6rem; padding: 0.25em 0; font-weight: 100; color: $white; text-decoration: none; display: block; border: none;
     &:hover { background-color: $white; color: $black; }
     &:active {background-color: $red; }
+    &.draw-focus { transform-origin: center left; animation-name:pull-focus; animation-duration: 8s; animation-iteration-count: infinite; animation-timing-function: ease; }
   }
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
     a { width: 56px; height:56px; margin-right: 6px; display: block; float: left; @include transition(all, 0.5s);

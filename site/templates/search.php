@@ -20,7 +20,11 @@
       </header>
       <?php if($image = $result->image()): ?>
         <a class="image-holder" href="<?php echo html($result->url()) ?>">
-          <img src="<?php echo html($image->url()) ?>" class="cover" />
+          <?php if ($result->cover() != "") { ?>
+            <img src="<?php echo $result->cover()->toFile()->url(); ?>" class="cover" />
+          <?php } else { ?>
+            <img src="<?php echo html($image->url()) ?>" class="cover" />
+          <?php } ?>
           <?php if ($result->tags() != ""):
             $etags = explode(",", $result->tags());
           ?>
