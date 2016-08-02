@@ -31,13 +31,13 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      &.episode { background-color: $episode; border:1px solid darken($episode,35%); box-shadow: 2px 2px 2px darken($episode,35%);
+      &.episode { background-color: $episode; border:1px solid darken($episode,35%); //box-shadow: 2px 2px 2px darken($episode,35%);
         .hover-cover { background:rgba($episode,0.85); }
       }
       &.wrote { background-color:$wrote; border:1px solid darken($wrote,25%);
         .hover-cover { background:rgba($wrote,0.85); }
       }
-      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); box-shadow: 2px 2px 2px darken($also-made,5%);
+      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
         .hover-cover { background:rgba($also-made,0.85); }
       }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);

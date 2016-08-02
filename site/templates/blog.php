@@ -71,6 +71,7 @@
         <span class="label">Tweet this</span>
       </a>
 
+      <?php /*
       <!-- GOOGLE+ SHARE -->
       <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
         <svg viewBox="0 0 100 100">
@@ -78,6 +79,7 @@
         </svg>
         <span class="label">Share on Google+</span>
       </a>
+      */ ?>
 
       <!-- FACEBOOK SHARE -->
       <a class="social facebook" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
@@ -85,6 +87,14 @@
           <use xlink:href="#IconFacebook"></use>
         </svg>
         <span class="label">Share on Facebook</span>
+      </a>
+      
+      <!-- TUMBLR REBLOG -->
+      <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
+        <svg viewBox="0 0 100 100">
+          <use xlink:href="#IconTumblr"></use>
+        </svg>
+        <span class="label">Post to Tumblr</span>
       </a>
 
     </div>

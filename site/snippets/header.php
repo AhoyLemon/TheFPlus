@@ -2,17 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  
-  
-  
-  
   <?php if($page->isHomePage()): ?>
   
   
-
   
-  
-
 <!--
                                                                                                                                                            
 b.             8     ,o888888o.               8 888888888o.       8 8888     ,o888888o.        ,o888888o.     8 8888 8888888 8888888888 `8.`8888.      ,8' 
@@ -32,11 +25,6 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   
   
   <?php endif; ?>
-  
-  
-  
-  
-  
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
@@ -93,7 +81,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
   
   <!-- Master CSS -->
-  <link href="/assets/css/thefplus.css?=03.10.16" rel="stylesheet" type="text/css">
+  <link href="/assets/css/thefplus.css?=08.02.16" rel="stylesheet" type="text/css">
 
 </head>
 <body>

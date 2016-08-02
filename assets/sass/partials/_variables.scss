@@ -12,8 +12,8 @@ $copy: $black;
 $link: $red;
 $accent: $green;
 $sidebar: $black;
-$also-made: #444;
-$wrote: #f1f5d0;
+$also-made: #1b1426;
+$wrote: #faecce;
 $episode: #fff;
 
 // BRAND COLORS
@@ -23,6 +23,7 @@ $episode: #fff;
   $color-flattr-green: #89b443;
   $color-flattr-orange: #f9ad33;
   $color-facebook: #3B5998;
+  $color-tumblr: #36465d;
 
 // FONTS
 $source: 'Source Sans Pro', sans-serif;
@@ -39,26 +40,3 @@ $mobile-top:56px;
 $radius:6px;
 $mobile-max: 767px;
 $desktop-min: 768px;
-
-
-// KEYFRAMES /////////////////////////////////////////////////////////////////////////
-/*
-@keyframes pull-focus {
-  0%   { color:$white; }
-  44%  { color:$white; }
-  60%  { color:$white }
-  66%  { color: $yellow; }
-  88%  { color: $white; }
-  100% { color:$white; }
-}
-*/
-
-@keyframes pull-focus {
-  0%   { transform:translateY(0); }
-  60%  { transform:translateY(0); }
-  63%  { transform:translateY(2px); }
-  68%  { transform:translateY(-6px); }
-  73%  { transform:translateY(2px); }
-  75%  { transform:translateY(0); }
-  100% { transform:translateY(0); }
-}

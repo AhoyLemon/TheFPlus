@@ -55,18 +55,23 @@ $(document).ready(function() {
 $('a.social').click(function(event) {
   var p = window.location.pathname;
   if ( $(this).hasClass('contribute') ) {
-    sendGA("social", "Contribute", p);
+    sendGA("Contribute", "page link", p);
   } else if ( $(this).hasClass('twitter') ) {
-    sendGA("social", "Twitter", p);
+    sendGA("share", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
+    event.preventDefault();
+  } else if ( $(this).hasClass('twitter') ) {
+    sendGA("share", "tumblr", p);
   } else if ( $(this).hasClass('googleplus') ) {
-    sendGA("social", "Google+", p);
+    sendGA("share", "Google+", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
+    event.preventDefault();
   } else if ( $(this).hasClass('facebook') ) {
-    sendGA("social", "Facebook", p);
+    sendGA("share", "Facebook", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
+    event.preventDefault();
   } else if ( $(this).hasClass('github') ) {
-    sendGA("social", "GitHub", p);
+    sendGA("outside link", "GitHub", p);
   }
 });
 
@@ -85,13 +90,13 @@ $('a.action.read').click(function() {
 });
 $('.sidebar .circles a').click(function() {
   if ( $(this).hasClass('twitter') ) {
-    sendGA("social", "Twitter", "sidebar");
+    sendGA("outside link", "Twitter", "sidebar");
   } else if ( $(this).hasClass('ballpit') ) {
-    sendGA("social", "ballp.it", "sidebar");
+    sendGA("outside link", "ballp.it", "sidebar");
   } else if ( $(this).hasClass('youtube') ) {
-    sendGA("social", "YouTube", "sidebar");
+    sendGA("outside link", "YouTube", "sidebar");
   } else if ( $(this).hasClass('rss') ) {
-    sendGA("social", "Feedburner", "sidebar");
+    sendGA("outside link", "Feedburner", "sidebar");
   }
 });
 
