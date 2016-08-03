@@ -197,7 +197,6 @@
   float: left;
   padding-top: 0.21em;
   padding-bottom: 0.21em;
-  border-right: none;
   padding-left: 1em;
 }
 
@@ -220,7 +219,7 @@
   border: 2px solid #c0282d;
   background-color: #fff;
   color: #c0282d;
-  padding: 0.3em 0.8em 0.3em 0.3em;
+  padding: 0.3em 0.8em 0.3em 0.55em;
   border-top-right-radius: 1em;
   border-bottom-right-radius: 1em;
   cursor: pointer;
@@ -228,6 +227,7 @@
   outline: none;
   width: auto;
   font-size: 1.48em;
+  border-left: none;
 }
 
 #PayPalDonateForm button:hover {
@@ -237,4 +237,8 @@
 
 #PayPalDonateForm button:active {
   background-color: #343434;
+}
+
+#PayPalDonateForm button, #PayPalDonateForm .dollar-holder {
+  height: 4.5rem;
 }
