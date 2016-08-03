@@ -105,18 +105,3 @@ $('#DonateButton').click(function() {
   sendGA("donate", "PayPal", d, v);
   return false;
 });
-
-
-/**
-window.addEventListener('load', function()
-	{
-		if(window.ga && ga.create) 
-		{
-			console.log('Google Analytics is loaded');
-		} 
-		else 
-		{
-			console.log('Google Analytics is not loaded');    
-		}
-	}, false);
-**/
