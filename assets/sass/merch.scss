@@ -58,3 +58,15 @@
   // FOOTER
   footer.add-your-own { color: #4e7f71; font-size: 0.65em; padding: .2em 1em; text-align: right; }
 }
+
+#PayPalDonateForm { display: block; width: 21rem; margin-left: auto; margin-right: auto;
+  .dollar-holder { display: inline-block; border: 2px solid $black; font-size:1.5em; border-top-left-radius: 1em; border-bottom-left-radius: 1em; float:left; padding-top:0.21em; padding-bottom:0.21em; border-right:none; padding-left:1em;
+    input[type="number"] { font-size:2.4rem; width:2em; font-family:$sans-serif; border:none; background:transparent; font-weight:$light; }
+    &:hover { background:white; }
+  }
+  button { display: inline-block; font-family: $source; border: 2px solid $red; background-color: #fff; color: #c0282d; padding:0.3em 0.8em 0.3em 0.3em; border-top-right-radius: 1em; border-bottom-right-radius: 1em; cursor: pointer; font-weight:$normal; outline:none; width:auto; font-size:1.48em;
+    &:hover { background-color:$red; color:$white; }
+    &:active { background-color:$black; }
+  }
+  
+}

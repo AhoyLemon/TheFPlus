@@ -180,3 +180,61 @@
   padding: .2em 1em;
   text-align: right;
 }
+
+#PayPalDonateForm {
+  display: block;
+  width: 21rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#PayPalDonateForm .dollar-holder {
+  display: inline-block;
+  border: 2px solid #343434;
+  font-size: 1.5em;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  float: left;
+  padding-top: 0.21em;
+  padding-bottom: 0.21em;
+  border-right: none;
+  padding-left: 1em;
+}
+
+#PayPalDonateForm .dollar-holder input[type="number"] {
+  font-size: 2.4rem;
+  width: 2em;
+  font-family: "Source Sans Pro", sans-serif;
+  border: none;
+  background: transparent;
+  font-weight: 300;
+}
+
+#PayPalDonateForm .dollar-holder:hover {
+  background: white;
+}
+
+#PayPalDonateForm button {
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  border: 2px solid #c0282d;
+  background-color: #fff;
+  color: #c0282d;
+  padding: 0.3em 0.8em 0.3em 0.3em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  cursor: pointer;
+  font-weight: 400;
+  outline: none;
+  width: auto;
+  font-size: 1.48em;
+}
+
+#PayPalDonateForm button:hover {
+  background-color: #c0282d;
+  color: #eee;
+}
+
+#PayPalDonateForm button:active {
+  background-color: #343434;
+}

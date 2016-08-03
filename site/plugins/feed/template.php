@@ -67,7 +67,12 @@
               </p>
             <?php endif ?>
             <?php if ($item->provider() != ""): ?>
-              <p>Content provided by <?php echo $item->provider(); ?></p>
+              <p>
+                Content provided by <?php echo $item->provider(); ?>.
+                <?php if ($item->editor() != ""): ?>
+                <br />Edited by <?php echo $item->editor(); ?>.
+                <?php endif ?>
+              </p>
             <?php endif ?>
             <?php echo $item->{$textfield}()->kirbytext() ?>
             <?php if ($item->music_used() != ""): ?>

@@ -99,6 +99,12 @@ $('.sidebar .circles a').click(function() {
     sendGA("outside link", "Feedburner", "sidebar");
   }
 });
+$('#DonateButton').click(function() {
+  var d = "$" + $('#DonationAmount').val();
+  var v = $('#DonationAmount').val();
+  sendGA("donate", "PayPal", d, v);
+  return false;
+});
 
 
 /**
