@@ -18,6 +18,9 @@
       </ul>
       
     </article>
+    <div style="font-size:1.25em; padding:1em;">
+      <?php echo $page->text()->kirbytext(); ?>
+    </div>
     
   </main>
 

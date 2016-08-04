@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Other Project
 pages: false
 files: true

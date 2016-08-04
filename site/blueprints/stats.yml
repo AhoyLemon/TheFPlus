@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: Stats
 pages: true
 files: true
@@ -8,8 +6,8 @@ fields:
     label: Title
     type:  text
   text:
-    label: Page Description (not visible)
-    type: markdown
+    label: Metatext
+    type: textarea
   bonus_content:
     label: Page Notes
     type: markdown

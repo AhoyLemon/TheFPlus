@@ -1,5 +1,3 @@
-<?php if(!defined('KIRBY')) exit ?>
-
 title: F Plus Episode
 pages: false
 files: true
@@ -10,7 +8,7 @@ fields:
     width: 1/2
   featured_site:
     label: Site(s) featured
-    type: text
+    type: tags
     icon: globe
     width: 1/2
     help: Comma separated, no HTTP://

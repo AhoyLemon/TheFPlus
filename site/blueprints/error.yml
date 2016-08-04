@@ -1,6 +1,6 @@
-title: Fanart
+title: Error
 pages: false
-files: true
+files: false
 fields:
   title:
     label: Title
@@ -8,3 +8,4 @@ fields:
   text:
     label: Text
     type:  textarea
+    size:  large

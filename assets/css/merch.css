@@ -183,7 +183,7 @@
 
 #PayPalDonateForm {
   display: block;
-  width: 21rem;
+  width: 21em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -239,6 +239,10 @@
   background-color: #343434;
 }
 
-#PayPalDonateForm button, #PayPalDonateForm .dollar-holder {
-  height: 4.5rem;
+#PayPalDonateForm button {
+  height: 2.12em;
+}
+
+#PayPalDonateForm .dollar-holder {
+  height: 2.1em;
 }

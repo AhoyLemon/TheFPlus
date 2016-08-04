@@ -59,7 +59,7 @@
   footer.add-your-own { color: #4e7f71; font-size: 0.65em; padding: .2em 1em; text-align: right; }
 }
 
-#PayPalDonateForm { display: block; width: 21rem; margin-left: auto; margin-right: auto;
+#PayPalDonateForm { display: block; width: 21em; margin-left: auto; margin-right: auto;
   .dollar-holder { display: inline-block; border: 2px solid $black; font-size:1.5em; border-top-left-radius: 1em; border-bottom-left-radius: 1em; float:left; padding-top:0.21em; padding-bottom:0.21em; padding-left:1em;
     input[type="number"] { font-size:2.4rem; width:2em; font-family:$sans-serif; border:none; background:transparent; font-weight:$light; }
     &:hover { background:white; }
@@ -68,5 +68,6 @@
     &:hover { background-color:$red; color:$white; }
     &:active { background-color:$black; }
   }
-  button, .dollar-holder {  height:4.5rem; }
+  button  { height:2.12em; }
+  .dollar-holder { height: 2.1em; }
 }

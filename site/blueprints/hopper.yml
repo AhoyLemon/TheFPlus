@@ -1,15 +1,13 @@
-<?php if(!defined('KIRBY')) exit ?>
-
-title: Hopper
-pages: true
-files: true
+title: Submission Hopper
+pages: false
+files: false
 fields:
   title:
     label: Title
     type:  text
   text:
     label: Text
-    type:  textarea
+    type:  markdown
   builder:
     label: Hopper
     type: builder
