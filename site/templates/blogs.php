@@ -9,10 +9,10 @@
 				<article class="wrote brief">
 					<aside>
 						<?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo $article->title(); ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
-          </a>
-        <?php endif ?>
+              <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo $article->title(); ?>">
+                <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+              </a>
+            <?php endif ?>
 					</aside>
 					<summary>
 						<h2 class="title">
