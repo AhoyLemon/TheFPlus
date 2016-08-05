@@ -76,9 +76,6 @@
             }
           }
           if ($m == false) {
-            if ($provider == "portaxx") {
-              echo '<p> portaxx marked for episode ' . $episode->slug() . '.</p>';
-            }
             $e['name'] = $provider;
             $e['edits'] = 0;
             $e['appeared'] = 0;
