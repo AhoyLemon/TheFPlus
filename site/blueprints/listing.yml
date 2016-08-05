@@ -4,6 +4,7 @@ pages:
     - episode
     - other-project
     - fanart
+  sort: flip
 files: false
 fields:
   title:
