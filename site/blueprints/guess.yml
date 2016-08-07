@@ -1,0 +1,72 @@
+title: Adjudicated Guess
+pages: false
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  date:
+    label: Release Date
+    type: date
+    format: MM/DD/YYYY
+    width: 1/4
+  time:
+    label: Release Time
+    type: time
+    interval: 1
+    width: 1/4
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/2
+  cast:
+    label: Cast
+    type: tags
+    icon: users  
+  episode_file:
+    label: Episode File
+    type: text
+    icon: volume-up
+    placeholder: (ex guess_001.mp3)
+    width: 1/4
+  runtime:
+    label: Runtime
+    type: text
+    placeholder: H:MM:SS
+    icon: road 
+    width: 1/4
+  file_size:
+    label: File Size (in Mb)
+    type: number
+    placeholder: (ex 36)
+    icon: file-audio-o
+    width: 1/4
+  editor:
+    label: Editor
+    type: tags
+    icon: scissors
+    width: 1/4
+  text:
+    label: Episode Summary
+    type: markdown
+    icon: align-left
+  sources:
+    label: Sources
+    type: structure
+    entry: >
+      {{name}}
+    fields:
+      name:
+        label: Name
+        type: text
+      url:
+        label: URL
+        type: url
+      provider:
+        label: Provider
+        type: provider
+  bonus_content:
+    label: Bonus Content
+    type: markdown
+    icon: code
+    help: Optional, anything here will be under the Additional Content header

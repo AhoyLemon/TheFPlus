@@ -18,6 +18,9 @@
       <?php if ($page->uri() == "episode" && $thispage == "") {
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(27);
         $showRandom = true;
+      } else if ($page->uri() == "also-made") {
+        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(28);
+        $showRandom = false;
       } else {
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(28);
         $showRandom = false;

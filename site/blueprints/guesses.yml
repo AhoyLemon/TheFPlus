@@ -1,0 +1,29 @@
+title: AG List
+pages:
+  template:
+    - guess
+    - guess_feed
+  sort: flip
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  podcast_image:
+    label: Podcast Image
+    type: image
+    required: true
+  text:
+    label: Description of Podcast
+    type:  textarea
+  subtitle:
+    label: Subtitle
+    type: text
+    help: used in RSS feed
+  subscribe:
+    label: Subscription Options
+    type: markdown
+    help: Used on each child page.
+  contribute:
+    label: How To Contribute
+    type: markdown

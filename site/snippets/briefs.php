@@ -2,7 +2,7 @@
   <?php $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) ?>
   <?php foreach($articles as $article): ?>
   
-    <?php if ($article->parent()->slug() == "episode"): ?>
+    <?php if ($article->parent()->slug() == "episode") { ?>
       <!-- EPISODE BRIEF -->
       <article class="episode brief">
         <header>
@@ -60,8 +60,7 @@
         <span class="episode-number"><?php echo $article->uid(); ?></span>
         <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
       </article>
-    <?php endif ?>
-    <?php if ($article->parent()->slug() == "also-made"): ?>
+    <?php } else if ($article->parent()->slug() == "also-made") { ?>
       <!-- ALSO MADE BRIEF -->
       <article class="also-made brief">
         <header>
@@ -116,8 +115,7 @@
         </summary>
         <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
       </article>
-    <?php endif ?>
-    <?php if ($article->parent()->slug() == "wrote"): ?>
+    <?php } else if ($article->parent()->slug() == "wrote") { ?>
       <!-- WROTE BRIEF -->
       <article class="wrote brief">
         <header>
@@ -179,7 +177,61 @@
           <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
         </summary>
       </article>
-    <?php endif ?>
+    <?php } else if ($article->parent()->slug() == "guess") { ?>
+      <article class="also-made brief">
+        <header>
+          <h2 class="title">
+            <a href="<?php echo $article->url() ?>">
+              <?php echo html($article->title()) ?>
+            </a>
+          </h2>
+          <time class="published released">
+            <span class="date">
+              <?php echo date('l, F jS Y', $article->date()) ?>
+            </span>
+            @
+            <span class="time">
+              <?php echo date("g:ia", strtotime($article->time())) ?>
+            </span>
+          </time>
+        </header>
+        <?php if($image = $article->image()): ?>
+          <a class="image-holder" href="<?php echo $article->url() ?>" title="<?php echo $article->title(); ?>">
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } ?>
+            <?php if ($article->tags() != ""):
+              $etags = explode(",", $article->tags());
+            ?>
+              <div class="hover-cover">
+                <ul class="tags">
+                  <?php foreach($etags as $etag): ?>
+                  <li><?php echo $etag ?></li>
+                  <?php endforeach ?>
+                </ul>
+              </div>
+            <?php endif ?>
+          </a>
+        <?php endif ?>
+        <summary>
+          <?php if ($article->cast() != ""):
+            $persons = explode(",", $article->cast());
+          ?>
+            <ul class="cast authors">
+              <?php foreach($persons as $person): ?>
+                <li><?php echo $person ?></li>
+              <?php endforeach ?>
+            </ul>
+          <?php endif ?>
+          <div class="content">
+            <p><?php echo excerpt($article->text(), 222) ?></p>
+          </div>
+        </summary>
+        <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
+      </article>
+    <?php } ?>
   <?php endforeach ?>
 </section>
 

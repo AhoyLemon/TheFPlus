@@ -1,0 +1,7 @@
+title: Guess Feed
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text

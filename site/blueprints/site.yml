@@ -7,6 +7,7 @@ pages:
     - results
     - blogs
     - stats
+    - guesses
 fields:
   title:
     label: Title
