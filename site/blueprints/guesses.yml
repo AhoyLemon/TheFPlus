@@ -9,10 +9,12 @@ fields:
   title:
     label: Title
     type:  text
+    width: 1/2
   podcast_image:
     label: Podcast Image
     type: image
     required: true
+    width: 1/2
   text:
     label: Description of Podcast
     type:  textarea
