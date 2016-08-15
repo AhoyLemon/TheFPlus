@@ -20,6 +20,9 @@
     <div class="subscribe">
       <?php echo $page->subscribe()->kirbytext(); ?>
     </div>
+    
+    <?php echo $page->contribute()->kirbytext(); ?>
+    
   </article>
   
   <section class="guess-episodes">
