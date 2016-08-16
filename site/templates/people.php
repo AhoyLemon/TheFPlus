@@ -29,43 +29,46 @@
   
   <section class="people summaries">
     <?php foreach($page->children() as $article): ?>
-    <article class="person brief <?php echo $article->role() ?>">
-      <header>
-        <h2 class="title">
-          <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-            <?php echo $article->title(); ?>
+      <article class="person brief <?php echo $article->role() ?>">
+        <header>
+          <h2 class="title">
+            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+              <?php echo $article->title(); ?>
+            </a>
+          </h2>
+          <!--
+          <h3 class="job">
+            <?php echo $article->job() ?>
+          </h3>
+          -->
+        </header>
+        <?php if($image = $article->image()): ?>
+          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
+            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            <div class="hover-cover">
+              <?php if ($article->text() != ""): ?>
+                <div class="content">
+                  <?php echo excerpt($article->text(), 222) ?>
+                </div>
+              <?php endif; ?>
+            </div>
           </a>
-        </h2>
-        <!--
-        <h3 class="job">
-          <?php echo $article->job() ?>
-        </h3>
-        -->
-      </header>
-      <?php if($image = $article->image()): ?>
-        <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
-          <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
-          <div class="hover-cover">
-            <?php if ($article->text() != ""): ?>
-              <div class="content">
-                <?php echo excerpt($article->text(), 222) ?>
-              </div>
-            <?php endif; ?>
-          </div>
-        </a>
-      <?php endif ?>
-      <?php if(!$image = $article->image()): ?>
-        <summary>
-          <div class="content">
-            <p><?php echo excerpt($article->text(), 222) ?></p>
-          </div>
-        </summary>
-      <?php endif ?>
-    </article>
-    
+        <?php endif ?>
+        <?php if(!$image = $article->image()): ?>
+          <summary>
+            <div class="content">
+              <p><?php echo excerpt($article->text(), 222) ?></p>
+            </div>
+          </summary>
+        <?php endif ?>
+      </article>
     <?php endforeach ?>
-
   </section>
+  
+  <div class="undergrid">
+    <?php echo $page->undergrid()->kirbytext(); ?>
+  </div>
+  
 </main>
 
 <?php snippet('footer') ?>

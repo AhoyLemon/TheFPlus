@@ -2,7 +2,6 @@
 
   <main class="main page" role="main">
     
-    
     <article class="person full <?php echo $page->role() ?>" itemscope itemtype="http://schema.org/Person">
       <header>
       <!-- NAME -->
@@ -148,7 +147,7 @@
       <?php endif ?>
       
       
-      <?php $provs = $site->grandChildren()->visible()->filterBy('provider', $findme, ',') ?>
+      <?php $provs = $site->grandChildren()->visible()->filterBy('provider', $findme, ',')->sortBy('date', 'desc') ?>
       <?php if ($provs->count() > 0): ?>
         <div class="info-block documents-provided">
           <span class="list-leader">Documents Provided:</span>
