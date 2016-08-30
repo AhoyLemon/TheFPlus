@@ -107,7 +107,10 @@ article.full {
   }
 }
 
-.guess-episodes { clear: both; padding-bottom: 1em; margin-bottom: 1em; border-bottom: 1px solid $black;
+.guess-episodes { clear: both;
+  article { margin-bottom: 1em;
+    &:after { content: " "; width: 8em; border-bottom: 2px dashed #797979; display: block; margin-left: 2.2em; height: 1.5em; }
+  }
   header { @extend h2; letter-spacing: 0.1em; font-weight: $bold; text-transform: uppercase; }
   summary { padding-left: 2em; }
   h3 { 

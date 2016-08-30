@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 { line-height: 105%; }
 ul { padding-left: 1.5em; 
   li { list-style-type: disc; }
 }
-spoiler { background-color: currentColor; opacity: 0.6; cursor: help; transition:all 1s ease 0.5s;
+spoiler { background-color: currentColor; opacity: 0.6; cursor: help; transition:all 0.5s ease 0.5s;
   &:hover { background-color: transparent; opacity: 1; }
 }
 

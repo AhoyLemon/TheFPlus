@@ -34,4 +34,9 @@ $tag-border: rgba($black,0.8);
 	}
 }
 
+.tagcloud { padding-left:0 !important; text-align:justify;
+  li { display:inline-block; }
+}
+.episode-tags a[href] { background-color:rgba($red,0.05); }
+
 ul.tags > li { @extend %tag; }

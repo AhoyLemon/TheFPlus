@@ -1,8 +1,8 @@
 .fanart-headline { padding: 0.25em; }
-.fanart-list { @include flex-container(); justify-content: space-between; padding-left: 0;
+.fanart-list { @include flex-container(); justify-content: space-between; padding-left: 0 !important;
   li { list-style-type: none;
-    @include respond-to(mobile) { @include flex-item(50%,stretch,0,0); }
-    @include respond-to(desktop) { @include flex-item(25%,stretch,0,0); }
+    @include respond-to(mobile) { @include flex-item(33.3333%,stretch,0,0); }
+    @include respond-to(desktop) { @include flex-item(20%,stretch,0,0); }
   }
   .fanart-link { display: block; position:relative;
     &:after { @include position(absolute,0,0,0,0); background-color:$red; opacity: 0; transition:opacity 0.3s ease; display: block; content:' '; }

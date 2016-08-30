@@ -2,12 +2,6 @@
 
 
 <main class="main episode" role="main">
-  
-  <style>
-    .tagcloud { padding-left:0; text-align:justify; }
-    .tagcloud li { display:inline-block; }
-    article.full .episode-tags a[href] { background-color:rgba(174,38,38,0.05); }
-  </style>
 
   <h1>Episode Tag Index:</h1>
   <?php $tagcloud = tagcloud(page('episode')) ?>
