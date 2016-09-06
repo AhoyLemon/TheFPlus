@@ -41,7 +41,7 @@
         <use class="bird inside" xlink:href="#IconTwitter"></use>
       </svg>
     </a>
-    <a class="ballpit" href="http://ballp.it" title="Ballp.it is our community forum" target="_blank">
+    <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
       <svg viewBox="0 0 100 100">
         <use class="circle" xlink:href="#IconCircle"></use>
         <use class="snake inside" xlink:href="#IconBallpit"></use>
