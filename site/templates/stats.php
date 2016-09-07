@@ -9,17 +9,12 @@
     
     <?php foreach($episodes as $episode) {
       $editor = $episode->editor();
-      
         $m = false;
         if ($editor != "") {
-          
           foreach($ridiculists as $key => $ridiculist) {
-            //echo $z->name;
             if ($editor == (string)$ridiculist['name']) {
               $ridiculists[$key]['edits'] = $ridiculists[$key]['edits'] + 1;
               $m = true;
-            } else {
-              //echo $editor. "!= " . $z['name'] . '</br>';
             }
           }
           if ($m == false) {
@@ -35,10 +30,8 @@
         $persons = explode(",", $episode->cast()); 
   
         foreach ($persons as $person) {
-          //echo '<p> $person is ' . $person . '.</p>';
           $m = false;
           foreach($ridiculists as $key => $ridiculist) {
-            //echo $z->name;
             if ($person == (string)$ridiculists[$key]['name']) {
               if ($ridiculist['appeared']) {
                 $ridiculists[$key]['appeared'] = $ridiculists[$key]['appeared'] + 1;
@@ -49,11 +42,6 @@
             }
           }
           if ($m == false) {
-            /*
-            if ($person == "isfahan") {
-              echo '<h2>isfahan marked for ' . $episode->slug();
-            }
-            */
             $e['name'] = $person;
             $e['edits'] = 0;
             $e['appeared'] = 1;
