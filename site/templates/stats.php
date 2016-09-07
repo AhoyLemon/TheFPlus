@@ -61,27 +61,54 @@
             array_push($ridiculists,$e);
           }
         }
+        $provider = $episode->provider(); 
   
-        $provider = $episode->provider();
-        $m = false;
-        if ($provider != "") {
-          foreach($ridiculists as $key => $ridiculist) {
-            if ($provider == (string)$ridiculists[$key]['name']) {
-              if ($ridiculist['provided']) {
-                $ridiculists[$key]['provided'] = $ridiculists[$key]['provided'] + 1;
-              } else {
-                $ridiculists[$key]['provided'] = 1;
+        if (strpos($episode->provider(), ',') !== false) {
+          $pvs = explode(",", $episode->provider()); 
+          foreach ($pvs as $provider) {
+            $m = false;
+            foreach($ridiculists as $key => $ridiculist) {
+              if ($provider == (string)$ridiculists[$key]['name']) {
+                if ($ridiculist['provided']) {
+                  $ridiculists[$key]['provided'] = $ridiculists[$key]['provided'] + 1;
+                } else {
+                  $ridiculists[$key]['provided'] = 1;
+                }
+                $m = true;
               }
-              $m = true;
+            }
+            if ($m == false) {
+              $e['name'] = $provider;
+              $e['edits'] = 0;
+              $e['appeared'] = 0;
+              $e['provided'] = 1;
+              array_push($ridiculists,$e);
             }
           }
-          if ($m == false) {
-            $e['name'] = $provider;
-            $e['edits'] = 0;
-            $e['appeared'] = 0;
-            $e['provided'] = 1;
-            array_push($ridiculists,$e);
+          
+        } else {
+          
+          $m = false;
+          if ($provider != "") {
+            foreach($ridiculists as $key => $ridiculist) {
+              if ($provider == (string)$ridiculists[$key]['name']) {
+                if ($ridiculist['provided']) {
+                  $ridiculists[$key]['provided'] = $ridiculists[$key]['provided'] + 1;
+                } else {
+                  $ridiculists[$key]['provided'] = 1;
+                }
+                $m = true;
+              }
+            }
+            if ($m == false) {
+              $e['name'] = $provider;
+              $e['edits'] = 0;
+              $e['appeared'] = 0;
+              $e['provided'] = 1;
+              array_push($ridiculists,$e);
+            }
           }
+          
         }
   
         $runtime = $episode->runtime();
