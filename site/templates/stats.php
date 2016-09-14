@@ -146,6 +146,7 @@ i.Type.extend({name:"Doughnut",defaults:s,initialize:function(t){this.segments=[
     </script>
     
     <h1>Total Runtime: <?php echo $total_days; ?> days, <?php echo $total_hours; ?> hours, <?php echo $total_minutes; ?> minutes, <?php echo $total_seconds; ?> seconds</h1>
+    <h3 style="margin-top:0.5em">Click any name to build a pie chart.</h3>
     
     <div class="table-flexes">
       

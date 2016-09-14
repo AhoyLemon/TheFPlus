@@ -20,7 +20,7 @@
       $submitters = explode(",", $page->provider());
       $multisubmitter = true;
     } else if ($page->provider() != "") {
-      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $page->provider())));
+      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $page->provider())));
       $multisubmitter = false;
     }
   ?>
@@ -101,7 +101,7 @@
               <?php } ?>
             <?php } else if ($multisubmitter == true) { ?>
               <?php foreach($submitters as $submitter): ?>
-                <?php $sublink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $submitter))); ?>
+                <?php $sublink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $submitter))); ?>
                 <?php if ($site->find($sublink)) { ?>
                   <span itemprop="contributor" itemscope itemtype="http://schema.org/Person" class="multi">
                     <a itemprop="url" href="<?php echo url::home() ?>/<?php echo $sublink; ?>">
