@@ -16,9 +16,12 @@
   h6 { text-align: center; text-transform: lowercase; }
 }
 
-.paypal-buy-form { display:block; float: left; width:12em;
-  select { -webkit-appearance:none; display: block; font-size:1rem; padding: 0.25em; border-radius: 5em; width:100%; }
-  button { display: block; width: 100%; text-align: center; margin-top: 0.5em; font-size:125%; }
+#CountryHeadline { display: none; margin-bottom: 0.7em; margin-top: 0.7em; }
+.paypal-buy-form { display:block; width:12em; margin-left:auto; margin-right: auto; display: none; float:left;
+  select { display: block; font-size:1rem; padding: 0.25em; width:100%; height: 3em; font-family: $source; }
+  button { display: block; width: 100%; text-align: center; margin-top: 0.5em; font-size:125%; border:2px solid $red; border-radius:5em; background:#fff; color:$red; padding: 0.7em;
+    &:hover { background:$red; color:$white; cursor: pointer; }
+  }
 }
 
 .hidden { display: none; }
@@ -26,7 +29,7 @@
 .sticker-series { border-bottom: 1px solid $black; padding-bottom: 1em; margin-bottom: 1em; clear: both;
   .row {
     &.first { font-size:1.2em;  line-height:95%;  }
-    &.second { font-size:0.75em; } 
+    &.second { font-size:0.75em; }
   }
   
   // STICKER SUMMARY INFORMATION
