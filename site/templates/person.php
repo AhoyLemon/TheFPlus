@@ -3,6 +3,7 @@
   <main class="main page" role="main">
     
     <article class="person full <?php echo $page->role() ?>" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="url" content="<?php echo $page->url() ?>" />
       <header>
       <!-- NAME -->
       <h1>
@@ -21,7 +22,7 @@
               <polygon points="28.2,10 6.4,28.2 10.1,28.2 10.1,50 24.6,50 24.6,39.1 31.8,39.1 31.8,50 46.4,50 46.4,28.2 50,28.2 	"/>
               <polygon points="45.2,10 37.9,10 37.9,14.9 45.2,20.9 	"/>
             </svg>
-            <a itemprop="url" href="<?php echo $page->website() ?>" target="_blank"><?php echo $website_readout ?></a>
+            <a itemprop="sameAs" href="<?php echo $page->website() ?>" target="_blank"><?php echo $website_readout ?></a>
           </li>
         <?php endif ?>
         

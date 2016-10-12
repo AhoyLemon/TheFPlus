@@ -23,6 +23,10 @@
         "name": "Ball Pit",
         "url": "http://ballp.it",
         "logo": "http://ballp.it/Themes/Giggle/svg/new-logo.svg"
+      },
+      "founder": {
+        "name": "Lemon",
+        "url": "https://thefpl.us/meet/lemon"
       }
     }
   </script>
