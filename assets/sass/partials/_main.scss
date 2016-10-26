@@ -89,6 +89,10 @@ article.full {
         svg * { fill:$color-tumblr; }
         .label { background: $color-tumblr; }
       }
+      &.reddit {
+        svg * { fill:$color-reddit; }
+        .label { background: $color-reddit; }
+      }
       &.contribute {
         svg * { fill:$link; }
         .label { background:$link; }

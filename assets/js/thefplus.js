@@ -63,7 +63,7 @@ $('a.social').click(function(event) {
     sendGA("share", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
     event.preventDefault();
-  } else if ( $(this).hasClass('twitter') ) {
+  } else if ( $(this).hasClass('tumblr') ) {
     sendGA("share", "tumblr", p);
   } else if ( $(this).hasClass('googleplus') ) {
     sendGA("share", "Google+", p);

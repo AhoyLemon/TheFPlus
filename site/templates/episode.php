@@ -192,30 +192,32 @@
       </a>
       
       <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
+      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" title="Share on Facebook">
         <svg viewBox="0 0 100 100">
           <use xlink:href="#IconFacebook"></use>
         </svg>
         <span class="label">Share on Facebook</span>
       </a>
-
-      <?php /*
-      <!-- GOOGLE+ SHARE -->
-      <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconGooglePlus"></use>
-        </svg>
-        <span class="label">Share on Google+</span>
-      </a>
-      */ ?>
       
-      <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTumblr"></use>
-        </svg>
-        <span class="label">Post to Tumblr</span>
-      </a>
-         
+      
+      
+      <?php if (strpos($page->tags(), 'reddit') !== false) { ?>
+        <!-- REDDIT SHARE -->
+        <a class="social reddit" href="https://reddit.com/submit/?<?php echo rawurlencode ($page->url()); ?>" target="_blank" title="Share on Reddit">
+          <svg viewBox="0 0 100 100">
+            <use xlink:href="#IconReddit"></use>
+          </svg>
+          <span class="label">Share on Reddit</span>
+        </a>
+      <?php } else { ?>
+        <!-- TUMBLR SHARE -->
+        <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
+          <svg viewBox="0 0 100 100">
+            <use xlink:href="#IconTumblr"></use>
+          </svg>
+          <span class="label">Post to Tumblr</span>
+        </a>
+      <?php } ?>
       
     </div>
 
