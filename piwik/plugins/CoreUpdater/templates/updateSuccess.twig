@@ -1,0 +1,41 @@
+{% extends '@CoreUpdater/layout.twig' %}
+
+{% block content %}
+
+    <div class="header">
+        <h1>{{ 'CoreUpdater_UpdateSuccessTitle'|translate }}</h1>
+    </div>
+
+    <div class="content">
+
+        <h2>
+            {{ 'CoreUpdater_ThankYouUpdatePiwik'|translate }}
+        </h2>
+
+        <p>
+            {{ 'CoreUpdater_PostUpdateMessage'|translate }}
+
+        </p>
+        <p></p>
+
+        <h2>
+            {{ 'CoreUpdater_PostUpdateSupport'|translate }}
+        </h2>
+
+        <div class="row" style="margin-top:7%">
+            <div class="col-sm-5 col-sm-offset-1">
+                <a href="https://piwik.org/support/?pk_medium=Update_Success_button&pk_source=Piwik_App&pk_campaign=App_Updated" class="btn btn-lg btn-block">{{ 'CoreUpdater_ProfessionalServices'|translate }}</a>
+            </div>
+
+            <div class="col-sm-5">
+                <a href="https://piwik.org/hosting/?pk_medium=App_Cloud_button&pk_source=Piwik_App&pk_campaign=App_Updated" class="btn btn-lg btn-block">{{ 'CoreUpdater_CloudHosting'|translate }}</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a href="index.php">{{ 'General_ContinueToPiwik'|translate }}</a>
+    </div>
+
+{% endblock %}

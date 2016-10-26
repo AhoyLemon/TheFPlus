@@ -1,0 +1,18 @@
+{
+    "Feedback": {
+        "DoYouHaveBugReportOrFeatureRequest": "Har du en feil å rapportere eller ny funksjonalitet du ønsker deg?",
+        "IWantTo": "Jeg vil:",
+        "LearnWaysToParticipate": "Lær om alle måtene du kan %1$s bidra%2$s",
+        "ManuallySendEmailTo": "Send meldingen manuelt til",
+        "RateFeatureThankYouTitle": "Takk for at du rangerer «%s»!",
+        "RateFeatureTitle": "Liker du funksjonen «%s»? Vennligst ranger den og legg igjen en kommentar",
+        "SendFeedback": "Send tilbakemelding",
+        "ThankYou": "Takk for at du hjelper oss å lage Piwik bedre!",
+        "TopLinkTooltip": "Fortell oss hva du synes eller be om profesjonell støtte.",
+        "CommunityHelp": "Samfunns Hjelpere",
+        "ProfessionalHelp": "Profesjonell hjelp",
+        "ProfessionalServicesPhoneEmailSupport": "Telefon og e-post-støtte",
+        "ProfessionalServicesPremiumFeatures": "Premium-funksjoner",
+        "ContactUs": "Kontakt oss"
+    }
+}
