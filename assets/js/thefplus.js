@@ -2,16 +2,16 @@
 
 function sendGA(c, a, l, v) {
   if (v) {
-    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l, eventValue:v });
     _paq.push(['trackEvent', c, a, l, v]);
+    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l, eventValue:v });
     console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l+', VALUE:'+v);
   } else if (l) {
-    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l });
     _paq.push(['trackEvent', c, a, l]);
+    ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l });
     console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l);
   } else {
-    ga('send', 'event', { eventCategory: c, eventAction: a });
     _paq.push(['trackEvent', c, a]);
+    ga('send', 'event', { eventCategory: c, eventAction: a });
     console.log('CATEGORY: '+c+', ACTION:'+a);
   }
 }
@@ -54,9 +54,15 @@ $(document).ready(function() {
   });
 });
 
+var p = window.location.pathname;
+if (p == "/episode/random") {
+  p = '/episode/'+ $('h1 .episode-number').text() + ' (RANDOM)';
+  console.log(p);
+}
+var episodePlayed = false;
+
 // Handling social links (popups and corresponding analytics)
-$('a.social').click(function(event) {
-  var p = window.location.pathname;
+$('a.social').click(function(event) { 
   if ( $(this).hasClass('contribute') ) {
     sendGA("Contribute", "page link", p);
   } else if ( $(this).hasClass('twitter') ) {
@@ -78,19 +84,22 @@ $('a.social').click(function(event) {
   }
 });
 
+
 // Google Analytics commands
 $('audio').on('play', function(){
-  var p = window.location.pathname;
-  sendGA("listen", "play", p);
+  if (episodePlayed === false) {
+    sendGA("listen", "play", p);
+  }
 });
+
 $('a.action.download').click(function() {
-  var p = window.location.pathname;
   sendGA("listen", "download", p);
 });
+
 $('a.action.read').click(function() {
-  var p = window.location.pathname;
-  sendGA("listen", "document", p);
+  sendGA("read document", "document", p);
 });
+
 $('.sidebar .circles a').click(function() {
   if ( $(this).hasClass('twitter') ) {
     sendGA("outside link", "Twitter", "sidebar");
