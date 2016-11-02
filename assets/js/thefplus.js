@@ -69,18 +69,20 @@ $('a.social').click(function(event) {
     sendGA("share", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
     event.preventDefault();
-  } else if ( $(this).hasClass('tumblr') ) {
-    sendGA("share", "tumblr", p);
-  } else if ( $(this).hasClass('googleplus') ) {
-    sendGA("share", "Google+", p);
-    window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
-    event.preventDefault();
   } else if ( $(this).hasClass('facebook') ) {
     sendGA("share", "Facebook", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
     event.preventDefault();
+  } else if ( $(this).hasClass('tumblr') ) {
+    sendGA("share", "tumblr", p);
+  } else if ( $(this).hasClass('reddit') ) {
+    sendGA("share", "Reddit", p);
   } else if ( $(this).hasClass('github') ) {
     sendGA("outside link", "GitHub", p);
+  } else if ( $(this).hasClass('googleplus') ) {
+    sendGA("share", "Google+", p);
+    window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
+    event.preventDefault();
   }
 });
 
@@ -111,6 +113,7 @@ $('.sidebar .circles a').click(function() {
     sendGA("outside link", "Feedburner", "sidebar");
   }
 });
+
 $('#DonateButton').click(function() {
   var d = "$" + $('#DonationAmount').val();
   var v = $('#DonationAmount').val();
