@@ -89,6 +89,7 @@ $('a.social').click(function(event) {
 
 // Google Analytics commands
 $('audio').on('play', function(){
+  episodePlayed = true;
   if (episodePlayed === false) {
     sendGA("listen", "play", p);
   }
