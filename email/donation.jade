@@ -1,4 +1,5 @@
 - var font = 'Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif'
+- var baseURL = "https://thefpl.us/email/"
 
 mixin footerLink(url, name, file, last)
   if (last)
@@ -8,7 +9,7 @@ mixin footerLink(url, name, file, last)
   else
     td(align='center', style='padding-right: 20px')
       a(href='#{url}', target='_blank' title="#{name}")
-        img(alt='#{name}', src='#{file}', width='24', height='24', style="height: auto; display: block; font-family:#{font}; color: #666666; font-size: 10px;", border='0')
+        img(alt='#{name}', src='#{baseURL}/#{file}', width='24', height='24', style="height: auto; display: block; font-family:#{font}; color: #666666; font-size: 10px;", border='0')
 
 html
   head
@@ -78,8 +79,7 @@ html
           table.responsive-table(border='0', cellpadding='0', cellspacing='0', width='600')
             tr
               td(bgcolor='#ffffff', width='100', align='left')
-                a(href='https://todoist.com/#utm_source=newsletter_2016_08_integrations_en&utm_medium=email&utm_campaign=newsletter_2016_08_integrations', target='_blank')
-                  img(alt='Thanks for the donation' src='donation-header.jpg' width='600' height="400" style="height: auto; display: block;" border='0')
+                img(alt='Thanks for the donation' src='#{baseURL}/lemon-header.jpg' width='600' height="400" style="height: auto; display: block;" border='0')
     // GRID CONTAINER
     table(border='0', cellpadding='0', cellspacing='0', width='100%', style='table-layout: fixed;')
       tr
@@ -105,9 +105,9 @@ html
                             p Then I got distracted and did something else, like probably redesigning an icon again for no reason.
                             p Anyway, though this email should have come sooner, I do want to thank you for your generosity. As it stands currently, we have the F Plus server pushing out 
                               b 
-                                i 4 terabytes
-                              |  of data to listeners like yourself. Most of that data is episodes that take 2 hours to record and 3-6 hours to edit, then put up on a website which I've worked on more diligently and consistently than any other website in my life.
-                            p We do it cause we love it. And we do it without ads.
+                                i 4 terabytes a month
+                              |  to listeners like yourself. Most of that data is episodes that take 2 hours to record and 3-6 hours to edit, then put up on a website which I've worked on more diligently and consistently than any other website in my life.
+                            p We do it because we love it. And we do it without ads.
                             p So thank you for helping with that. It means a lot.
     // FOOTER
     table(border='0', cellpadding='0', cellspacing='0', width='100%', style='table-layout: fixed;')
