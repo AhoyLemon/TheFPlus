@@ -92,7 +92,7 @@ table.stats td {
 }
 
 table.stats td:last-child {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.25em;
 }
 
@@ -105,7 +105,7 @@ table.stats a:hover, table.stats a:focus {
 }
 
 table.stats a:active {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {

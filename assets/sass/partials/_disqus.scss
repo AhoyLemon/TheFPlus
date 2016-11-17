@@ -9,9 +9,9 @@
       &:hover { text-decoration: none; border-bottom: 0.05em solid $red; }
     }
   }
-  blockquote { margin: 0; quotes: "\201C" "\201D" "\201C" "\201D"; position:relative; padding: 0.5em 2em 0.5em 10px;
-    &:before { float: left; padding-top: 0.35em; margin-right: 0.05em; }
-    p:last-child { margin-bottom: 0; }
+  blockquote { // margin: 0; quotes: "\201C" "\201D" "\201C" "\201D"; position:relative; padding: 0.5em 2em 0.5em 10px;
+    //&:before { float: left; padding-top: 0.35em; margin-right: 0.05em; }
+    //p:last-child { margin-bottom: 0; }
     .score { position: absolute; bottom:5px; right:5px; font-weight: $normal; font-size:1.25em;
       &.positive { color:$green;
         &:before { content:'+'; }
