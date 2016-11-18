@@ -9,6 +9,11 @@
     }
     .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(160%); @include transition(all, 0.3s, ease, 0.3s); }
   }
+  .tile { color:$red;
+    svg { @include position(absolute,0,0,0,0); }
+    svg * { fill:currentColor; }
+    &:hover { background:$red; color:$white; }
+  }
 }
 
 section.fanart {
