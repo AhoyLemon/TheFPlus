@@ -44,7 +44,13 @@
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
+            
+            <?php if ($article->cover() != "") { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } else { ?>
+              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <?php } ?>
+            
             <div class="hover-cover">
               <?php if ($article->text() != ""): ?>
                 <div class="content">
