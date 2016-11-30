@@ -9,6 +9,7 @@ dbname = "piwik_thefpl_us"
 [General]
 salt = "3d1c5512518adf0bc59f437644273ffc"
 trusted_hosts[] = "thefpl.us"
+force_ssl = 1
 
 [PluginsInstalled]
 PluginsInstalled[] = "Diagnostics"
