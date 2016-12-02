@@ -83,7 +83,7 @@ class Visitor
         if ($type == 'returning'
             || $type == 'returningCustomer'
         ) {
-            return "plugins/Live/images/returningVisitor.gif";
+            return "plugins/Live/images/returningVisitor.png";
         }
         return null;
     }
