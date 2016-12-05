@@ -417,19 +417,19 @@ class Visitor implements VisitorInterface
                     break;
                 case Action::TYPE_DOWNLOAD:
                     $details['type'] = 'download';
-                    $details['icon'] = 'plugins/Morpheus/images/download.png';
+                    $details['icon'] = 'plugins/Live/images/download.png';
                     break;
                 case Action::TYPE_OUTLINK:
                     $details['type'] = 'outlink';
-                    $details['icon'] = 'plugins/Morpheus/images/link.gif';
+                    $details['icon'] = 'plugins/Live/images/link.png';
                     break;
                 case Action::TYPE_SITE_SEARCH:
                     $details['type'] = 'search';
-                    $details['icon'] = 'plugins/Morpheus/images/search_ico.png';
+                    $details['icon'] = 'plugins/Live/images/search.png';
                     break;
                 case Action::TYPE_EVENT:
                     $details['type'] = 'event';
-                    $details['icon'] = 'plugins/Morpheus/images/event.png';
+                    $details['icon'] = 'plugins/Live/images/event.png';
                     break;
                 default:
                     $details['type'] = 'action';

@@ -1,6 +1,6 @@
-/* jshint -W117 */
+// jshint -W117
 
-function sendGA(c, a, l, v) {
+function trackEvent(c, a, l, v) {
   if (v) {
     _paq.push(['trackEvent', c, a, l, v]);
     //ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l, eventValue:v });
@@ -57,66 +57,64 @@ $(document).ready(function() {
 var p = window.location.pathname;
 if (p == "/episode/random") {
   p = '/episode/'+ $('h1 .episode-number').text() + ' (RANDOM)';
-  console.log(p);
 }
 var episodePlayed = false;
 
 // Handling social links (popups and corresponding analytics)
 $('a.social').click(function(event) { 
   if ( $(this).hasClass('contribute') ) {
-    sendGA("Contribute", "page link", p);
+    trackEvent("Contribute", "page link", p);
   } else if ( $(this).hasClass('twitter') ) {
-    sendGA("share", "Twitter", p);
+    trackEvent("share", "Twitter", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
     event.preventDefault();
   } else if ( $(this).hasClass('facebook') ) {
-    sendGA("share", "Facebook", p);
+    trackEvent("share", "Facebook", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
     event.preventDefault();
   } else if ( $(this).hasClass('tumblr') ) {
-    sendGA("share", "tumblr", p);
+    trackEvent("share", "tumblr", p);
   } else if ( $(this).hasClass('reddit') ) {
-    sendGA("share", "Reddit", p);
+    trackEvent("share", "Reddit", p);
   } else if ( $(this).hasClass('github') ) {
-    sendGA("outside link", "GitHub", p);
+    trackEvent("outside link", "GitHub", p);
   } else if ( $(this).hasClass('googleplus') ) {
-    sendGA("share", "Google+", p);
+    trackEvent("share", "Google+", p);
     window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
     event.preventDefault();
   }
 });
 
-
 // Google Analytics commands
 $('audio').on('play', function(){
   if (episodePlayed === false) {
-    sendGA("listen", "play", p);
+    trackEvent("listen", "play", p);
     episodePlayed = true;
   }
 });
 
 $('a.action.download').click(function() {
-  sendGA("listen", "download", p);
+  trackEvent("listen", "download", p);
 });
 
 $('a.action.read').click(function() {
-  sendGA("read document", "document", p);
+  trackEvent("read document", "document", p);
 });
 
 $('.sidebar .circles a').click(function() {
   if ( $(this).hasClass('twitter') ) {
-    sendGA("outside link", "Twitter", "sidebar");
+    trackEvent("outside link", "Twitter", "sidebar");
   } else if ( $(this).hasClass('ballpit') ) {
-    sendGA("outside link", "ballp.it", "sidebar");
+    trackEvent("outside link", "ballp.it", "sidebar");
   } else if ( $(this).hasClass('youtube') ) {
-    sendGA("outside link", "YouTube", "sidebar");
+    trackEvent("outside link", "YouTube", "sidebar");
   } else if ( $(this).hasClass('rss') ) {
-    sendGA("outside link", "Feedburner", "sidebar");
+    trackEvent("outside link", "Feedburner", "sidebar");
   }
 });
 
 $('#DonateButton').click(function() {
   var d = "$" + $('#DonationAmount').val();
   var v = $('#DonationAmount').val();
-  sendGA("donate", "PayPal", d, v);
+  trackEvent("donate", "PayPal", d, v);
 });
