@@ -2,6 +2,9 @@
 <script type="text/javascript">
   var _paq = _paq || [];
   _paq.push(["setDomains", ["*.thefpl.us"]]);
+  <?php if ($page->template() == "error") {
+    echo "_paq.push(['setDocumentTitle',  '404/URL = ' +  encodeURIComponent(document.location.pathname+document.location.search) + '/From = ' + encodeURIComponent(document.referrer)]);";
+  } ?>
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
   (function() {

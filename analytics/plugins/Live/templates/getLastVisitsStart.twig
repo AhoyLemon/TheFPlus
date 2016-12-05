@@ -40,8 +40,8 @@
                          title="{{ 'General_ReturningVisitor'|translate }}"/>
                 {% endif %}
 
-                {% if visitor.visitIp %} <span title="{% if visitor.visitorId is not empty %}{{ 'General_VisitorID'|translate }}: {{ visitor.visitorId }}{% endif %}">
-                    IP: {{ visitor.visitIp }}</span>
+                {% if visitor.visitIp %}
+                  <span style="vertical-align: middle;">{{ visitor.visitIp }}</span>
                 {% endif %}
             <!--<div class="settings"></div>-->
             <span class="referrer">
@@ -113,7 +113,7 @@
                                 {%- endif %}
                             {% endset %}
                             <span title="{{- title -}}">
-						        <img class='iconPadding' src="{{ action.icon }}"/>
+						        <img src="{{ action.icon }}"/>
                                 {% if action.type == 'ecommerceOrder' %}
                                     {{ 'General_ColumnRevenue'|translate }}: {{ action.revenue|money(idSite)|raw }}
                                 {% endif %}
@@ -136,16 +136,16 @@
 {%- endset %}
                                     <img src="plugins/Live/images/file{{ col }}.png" title="{{- title -}}"/>
                                 {% elseif action.type == 'outlink' or action.type == 'download' %}
-                                    <img class='iconPadding' src="{{ action.icon }}"
+                                    <img src="{{ action.icon }}"
                                          title="{{ action.url }} - {{ action.serverTimePretty }}"/>
                                 {% elseif action.type == 'search' %}
-                                    <img class='iconPadding' src="{{ action.icon }}"
+                                    <img src="{{ action.icon }}"
                                          title="{{ 'Actions_SubmenuSitesearch'|translate }}: {{ action.siteSearchKeyword }} - {{ action.serverTimePretty }}"/>
                                 {% elseif action.eventCategory|default(false) is not empty %}
-                                    <img  class="iconPadding" src='{{ action.icon }}'
+                                    <img src='{{ action.icon }}'
                                         title="{{ 'Events_Event'|translate }} {{ action.eventCategory }} - {{ action.eventAction }} {% if action.eventName is defined %}- {{ action.eventName }}{% endif %} {% if action.eventValue is defined %}- {{ action.eventValue }}{% endif %}"/>
                                 {% else %}
-                                    <img class='iconPadding' src="{{ action.icon }}"
+                                    <img src="{{ action.icon }}"
                                          title="{{ action.goalName }} - {% if action.revenue > 0 %}{{ 'General_ColumnRevenue'|translate }}: {{ action.revenue|money(idSite)|raw }} - {% endif %} {{ action.serverTimePretty }}"/>
                                 {% endif %}
                             </a>
