@@ -1,4 +1,5 @@
 ul.submitted-content { counter-reset: docNumber -1; padding-left: 0; display: table; width:100%;
+  b { font-weight: $heavy; }
   li { counter-increment: docNumber; display: table-row; 
     > span, > a, > time { display: table-cell; padding: 0.2em 0.5em; vertical-align: middle; }
     &:nth-child(even) { background-color:rgba($black, 0.1); }

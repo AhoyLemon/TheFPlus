@@ -2,6 +2,19 @@
 {% set maxPagesDisplayedByVisitor=100 %}
 
 <ul id='visitsLive'>
+  
+  <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" display="none" style="display:none;">
+    <g id="IconProfile">
+      <path d="M8 3.1c-1.9 0-3.3 1.5-3.2 3.3 0 1.8 1.5 3.3 3.2 3.3s3.2-1.5 3.2-3.3c.1-1.8-1.3-3.3-3.2-3.3z"/>
+      <path d="M8 .5C3.8.5.5 3.8.5 8s3.4 7.5 7.5 7.5c4.2 0 7.5-3.4 7.5-7.5C15.5 3.8 12.2.5 8 .5zm4.9 12.3v-.3c0-1.3-1-2.3-2.3-2.3H5.5c-1.3 0-2.3 1-2.3 2.3v.3c-1.2-1.2-2-2.9-2-4.8 0-3.8 3.1-6.9 6.9-6.9S15 4.2 15 8c-.1 1.9-.9 3.6-2.1 4.8z"/>
+    </g>
+  </svg>
+  <style>
+    #visitsLive svg * { fill:currentColor; }
+    #visitsLive .visits-live-launch-visitor-profile { float: right; width: 16px; height: 16px; }
+    #visitsLive .visits-live-launch-visitor-profile:hover { color:#d4291f; }
+  </style>
+  
     {% for visitor in visitors %}
         <li id="{{ visitor.idVisit }}" class="visit">
             <div style="display:none;" class="idvisit">{{ visitor.idVisit }}</div>
@@ -11,17 +24,19 @@
                 {% set year = visitor.serverTimestamp|date('Y') %}
                 {{ visitor.serverDatePretty|replace({(year): ' '}) }} - {{ visitor.serverTimePretty }} {% if visitor.visitDuration > 0 %}<em>({{ visitor.visitDurationPretty|raw }})</em>{% endif %}
                 {% if visitor.visitorId|default(false) is not empty %}
-                  &nbsp;  <a class="visits-live-launch-visitor-profile rightLink" title="{{ 'Live_ViewVisitorProfile'|translate }} {% if visitor.userId is not empty %}{{ visitor.userId|raw }}{% endif %}" data-visitor-id="{{ visitor.visitorId }}">
-                        {% if visitor.userId is not empty %}<br/>{% endif %}
-                        <img src="plugins/Live/images/visitorProfileLaunch.png"/>
-                        {{ visitor.userId|default('')|raw }}
-                    </a>
+                  <a class="visits-live-launch-visitor-profile rightLink" title="{{ 'Live_ViewVisitorProfile'|translate }} {% if visitor.userId is not empty %}{{ visitor.userId|raw }}{% endif %}" data-visitor-id="{{ visitor.visitorId }}">
+                    {% if visitor.userId is not empty %}<br/>{% endif %}
+                    <svg viewBox="0 0 16 16">
+                      <use xlink:href="#IconProfile"></use>
+                    </svg>
+                    {{ visitor.userId|default('')|raw }}
+                  </a>
                 {% endif %}
                 <br />
 
                 {% if visitor.countryFlag is defined %}&nbsp;<img src="{{ visitor.countryFlag }}" title="{{ visitor.location|e('html_attr') }}, {{ 'Provider_ColumnProvider'|translate }} {% if visitor.providerName is defined %}{{ visitor.providerName }}{% endif %}"/>{% endif %}
                 {% if visitor.browserIcon is defined %}&nbsp;<img src="{{ visitor.browserIcon }}" title="{{ visitor.browser|e('html_attr') }}{% if visitor.plugins is defined %}, {{ 'General_Plugins'|translate }}: {{ visitor.plugins }}{% endif %}"/>{% endif %}
-                {% if visitor.operatingSystemIcon is defined %}&nbsp;<img src="{{ visitor.operatingSystemIcon }}" title="{{ visitor.operatingSystem }}{% if visitor.resolution is defined %}, {{ visitor.resolution }}{% endif %}"/>{% endif %}
+              {% if visitor.operatingSystemIcon is defined %}&nbsp;<img src="{{ visitor.operatingSystemIcon }}" title="{{ visitor.operatingSystem }}{% if visitor.resolution is defined %}, {{ visitor.resolution }}{% endif %}"/>{% endif %}
                 &nbsp;
                 {% if visitor.visitConverted %}
                 <span title="{{ 'General_VisitConvertedNGoals'|translate(visitor.goalConversions) }}"

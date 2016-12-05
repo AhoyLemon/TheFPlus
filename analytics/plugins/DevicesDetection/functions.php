@@ -285,28 +285,27 @@ function _mapLegacyOsShortCodes($shortCode)
  * @return string  path to image
  */
 function getOsLogo($short)
-{
-  
+{ 
   $os = substr($short, 0, 3);
   $ver = substr($short, 4, 15);
   
-  $path = 'plugins/DevicesDetection/images/png/os/%s.png';
-  
   if ($os == "WIN") {
     if ($ver == "Vista") {
-      $path = 'plugins/DevicesDetection/images/png/os/WVI.png';
+      $v = 'WVI';
     } else if ((int)$ver == 7 || $ver == "XP") {
-      $path = 'plugins/DevicesDetection/images/png/os/WI7.png';
+      $v = 'WI7';
     } else if ((int)$ver >= 10) {
-      $path = 'plugins/DevicesDetection/images/png/os/W10.png';
+      $v = 'W10';
     } else if ((int)$ver >= 8) {
-      $path = 'plugins/DevicesDetection/images/png/os/WI8.png';
+      $v = 'WI8';
     } else if ((int)$ver >= 7) {
-      $path = 'plugins/DevicesDetection/images/png/os/WI7.png';
+      $v = 'WI7';
     }
   }
-
-  $short = _mapLegacyOsShortCodes($short);
+  
+  $path = 'plugins/DevicesDetection/images/png/os/%s.png';
+  
+  //$short = _mapLegacyOsShortCodes($short);
 
   // If name is given instead of short code, try to find matching shortcode
   if (strlen($short) > 3) {

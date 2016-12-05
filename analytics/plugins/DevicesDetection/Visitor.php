@@ -61,7 +61,7 @@ class Visitor
 
     public function getOperatingSystemIcon()
     {
-        return getOsLogo($this->details['config_os']);
+      return getOsLogo($this->details['config_os']);
     }
 
     public function getBrowserEngineDescription()
