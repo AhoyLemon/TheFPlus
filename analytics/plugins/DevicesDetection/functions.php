@@ -80,7 +80,8 @@ function getBrowserName($label)
  */
 function getBrowserLogo($short)
 {
-    $path = 'plugins/DevicesDetection/images/browsers/%s.gif';
+    // $path = 'plugins/DevicesDetection/images/browsers/%s.gif';
+    $path = 'plugins/DevicesDetection/images/png/browsers/%s.png';
 
     // If name is given instead of short code, try to find matching shortcode
     if (strlen($short) > 2) {
@@ -160,21 +161,23 @@ function getDeviceTypeLogo($label)
     $label = strtolower($label);
 
     $deviceTypeLogos = Array(
-        "desktop"       => "normal.gif",
+        "camera"        => "camera.png",
+        "car browser"   => "carbrowser.png",
+        "console"       => "console.png",
+        "desktop"       => "desktop.png",
+        "feature phone" => "featurephone.png",
+        "phablet"       => "phablet.png",
+        "portable media player" => "ipod.png",
+        "smart display" => "smartdisplay.png",
         "smartphone"    => "smartphone.png",
         "tablet"        => "tablet.png",
-        "tv"            => "tv.png",
-        "feature phone" => "mobile.gif",
-        "console"       => "console.gif",
-        "car browser"   => "carbrowser.png",
-        "camera"        => "camera.png");
-
+        "tv"            => "tv.png");
     if (!array_key_exists($label, $deviceTypeLogos)) {
-        $label = 'unknown.gif';
+        $label = 'unknown.png';
     } else {
         $label = $deviceTypeLogos[$label];
     }
-    $path = 'plugins/DevicesDetection/images/screens/' . $label;
+    $path = 'plugins/DevicesDetection/images/png/screens/' . $label;
     return $path;
 }
 
@@ -282,7 +285,8 @@ function _mapLegacyOsShortCodes($shortCode)
  */
 function getOsLogo($short)
 {
-    $path = 'plugins/DevicesDetection/images/os/%s.gif';
+    //$path = 'plugins/DevicesDetection/images/os/%s.gif';
+    $path = 'plugins/DevicesDetection/images/png/os/%s.png';
 
     $short = _mapLegacyOsShortCodes($short);
 
