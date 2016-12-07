@@ -286,24 +286,47 @@ function _mapLegacyOsShortCodes($shortCode)
  */
 function getOsLogo($short)
 { 
-  $os = substr($short, 0, 3);
+  $os = strtoupper(substr($short, 0, 3));
   $ver = substr($short, 4, 15);
+  
+  $slug = $os;
   
   if ($os == "WIN") {
     if ($ver == "Vista") {
-      $v = 'WVI';
+      $slug = 'WVI';
     } else if ((int)$ver == 7 || $ver == "XP") {
-      $v = 'WI7';
+      $slug = 'WI7';
     } else if ((int)$ver >= 10) {
-      $v = 'W10';
+      $slug = 'W10';
     } else if ((int)$ver >= 8) {
-      $v = 'WI8';
+      $slug = 'WI8';
     } else if ((int)$ver >= 7) {
-      $v = 'WI7';
+      $slug = 'WI7';
+    } else {
+      //$os = "WIN";
+    }
+    //$short = $os;
+  } else if ($os == "AND") {
+    if ((int)$ver >= 7) {
+      $slug = "ANN";
+    } else if ((int)$ver >= 6) {
+      $slug = "ANM";
+    } else if ((int)$ver >= 5) {
+      $slug = "ANL";
+    } else if ((float)$ver >= 4.4) {
+      $slug = "ANK";
+    } else if ((float)$ver >= 4.1) {
+      $slug = "ANJ";
+    } else if ((float)$ver >= 4) {
+      $slug = "ANI";
+    } else if ((float)$ver >= 3) {
+      $slug = "ANH";
+    } else if ((float)$ver >= 2.3) {
+      $slug = "ANG";
     }
   }
   
-  $path = 'plugins/DevicesDetection/images/png/os/%s.png';
+  $path = 'plugins/DevicesDetection/images/png/os/'.$slug.'.png';
   
   //$short = _mapLegacyOsShortCodes($short);
 

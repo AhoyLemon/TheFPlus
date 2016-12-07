@@ -115,20 +115,6 @@ article.full {
   }
 }
 
-.guess-episodes { clear: both;
-  article { margin-bottom: 1em;
-    &:after { content: " "; width: 8em; border-bottom: 2px dashed #797979; display: block; margin-left: 2.2em; height: 1.5em; }
-  }
-  header { @extend h2; letter-spacing: 0.1em; font-weight: $bold; text-transform: uppercase; }
-  summary { padding-left: 2em; }
-  h3 { 
-    a { text-decoration: none;
-      &:hover { text-decoration: underline; }
-    }
-  }
-}
-
-
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
   main { display: block; padding:20px 20px 20px 320px; height:100vh; overflow-y: auto;
