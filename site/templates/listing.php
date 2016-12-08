@@ -19,7 +19,7 @@
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
         $showRandom = true;
       } else if ($page->uri() == "also-made") {
-        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(28);
+        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(27);
         $showRandom = false;
       } else {
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
@@ -28,6 +28,7 @@
     <?php endif ?>
     <?php if ($ftag): ?>
       <?php $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(28) ?>
+      
     <?php endif ?>
     <section class="<?php echo $page->slug(); ?> covers-only">
       <?php if ($showRandom == true): ?>
@@ -117,6 +118,8 @@
       </nav>
     <?php endif ?>
     */ ?>
+    
+    <!-- Fart! -->
 
   </main>
 <?php snippet('disqus-alt', array('allow_comments' => false)) ?>
