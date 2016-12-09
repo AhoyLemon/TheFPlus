@@ -1,6 +1,7 @@
 title: Content List
 pages:
   template:
+    - stickers
     - episode
     - other-project
     - fanart

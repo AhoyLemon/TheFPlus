@@ -1,0 +1,159 @@
+title: Stickers
+pages:
+  template:
+    - sticker
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+    width: 1/2
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/2
+  date:
+    label: Release Date
+    type: date
+    format: MM/DD/YYYY
+    width: 1/4
+  time:
+    label: Release Time
+    type: time
+    interval: 1
+    width: 1/4
+  splc_total:
+    label: SPLC Donation Total
+    type: number
+    width: 1/4
+  splc_asof:
+    label: SPLC Last Donation
+    type: date
+    width: 1/4
+  cast:
+    label: Artists
+    type: tags
+    icon: users
+  text:
+    label: Item Summary
+    type: markdown
+  stickers:
+    label: Stickers
+    type: structure
+    entry: >
+      {{title}}
+    fields:
+      pic:
+        label: Picture
+        type: image
+        required: true
+      title:
+        label: Title
+        type: text
+        required: true
+      series_num:
+        label: Series Number
+        type: number
+        required: true
+        width: 1/3
+      artist:
+        label: Artist
+        type: text
+        width: 1/3
+      printed:
+        label: Number Printed
+        type: number
+        width: 1/3
+      dimensions:
+        label: Dimensions
+        type: text
+        width: 1/3
+      shape:
+        label: Shape
+        type: text
+        width: 1/3
+      vinyl:
+        label: Vinyl
+        type: text
+        width: 1/3
+      released:
+        label: Date Released
+        type: date
+        width: 1/2
+      soldout:
+        label: Date Sold Out
+        type: date
+        width: 1/2
+      buttons_headline:
+        label: BUY NOW BUTTONS
+        type: headline
+      buttona_num:
+        label: Count
+        type: number
+        width: 1/4
+      buttona_price:
+        label: Price
+        type: number
+        width: 1/4
+      buttona_slug:
+        label: Slug
+        type: text
+        width: 1/2
+      buttonb_num:
+        label: Count
+        type: number
+        width: 1/4
+      buttonb_price:
+        label: Price
+        type: number
+        width: 1/4
+      buttonb_slug:
+        label: Slug
+        type: text
+        width: 1/2
+      buttonc_num:
+        label: Count
+        type: number
+        width: 1/4
+      buttonc_price:
+        label: Price
+        type: number
+        width: 1/4
+      buttonc_slug:
+        label: Slug
+        type: text
+        width: 1/2
+  splc_desc:
+    label: SPLC Description
+    type: Markdown
+  photos:
+    label: Photos
+    type: structure
+    entry: >
+      {{desc}}
+    fields:
+      series_num:
+        label: Series
+        type: number
+        width: 1/2
+      pic:
+        label: Image
+        type: image
+        required: true
+        width: 1/2
+      desc:
+        label: Description
+        type: text
+        required: true
+  share_cta:
+    label: Share CTA
+    type: markdown
+  tweet_intent:
+    label: Custom Tweet Intent
+    type: url
+    placeholder: Use only if you want something different.
+    icon: retweet
+  bonus_content:
+    label: Bonus Content
+    type: textarea
+    icon: code

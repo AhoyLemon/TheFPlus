@@ -1,0 +1,389 @@
+.stickers {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
+  margin-right: 10px;
+}
+
+.sticker-box {
+  -webkit-flex-basis: 33.3333%;
+      -ms-flex-preferred-size: 33.3333%;
+          flex-basis: 33.3333%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  border: 1px solid #343434;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.sticker-box .inner {
+  margin: 0.5em;
+  border: 1px solid #343434;
+}
+
+.sticker-box .thumb {
+  width: 220px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sticker-box .details {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
+}
+
+.sticker-box .details .full {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .half {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .third {
+  -webkit-flex-basis: 33.3333%;
+      -ms-flex-preferred-size: 33.3333%;
+          flex-basis: 33.3333%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .full, .sticker-box .details .half, .sticker-box .details .third {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.sticker-box .details .full:before, .sticker-box .details .half:before, .sticker-box .details .third:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #343434;
+  color: #eee;
+  font-size: 0.7rem;
+  padding: 0.1em 0.25rem;
+  text-transform: lowercase;
+}
+
+.sticker-box .title:before {
+  content: "title";
+}
+
+.sticker-box .series-number:before {
+  content: "series";
+}
+
+.sticker-box .artist:before {
+  content: "artist";
+}
+
+.sticker-box .dimensions:before {
+  content: "dimensions";
+}
+
+.sticker-box .shape:before {
+  content: "shape";
+}
+
+.sticker-box .material:before {
+  content: "vinyl";
+}
+
+.sticker-box .printed:before {
+  content: "printed";
+}
+
+.sticker-box .released:before {
+  content: "released";
+}
+
+.sticker-box .sold-out:before {
+  content: "sold out";
+}
+
+.sticker-box .title {
+  font-size: 1.2em;
+  border-top: 1px solid #343434;
+  padding: 0.6em 0.25rem 0.1em 0.25rem;
+}
+
+.sticker-box .half {
+  border-top: 1px solid #343434;
+  padding: 1rem 0.25rem 0.25rem 0.25rem;
+  position: relative;
+}
+
+.sticker-box .third {
+  border-top: 1px solid #343434;
+  padding: 1rem 0.25rem 0.25rem 0.25rem;
+  font-size: 0.85em;
+  position: relative;
+}
+
+.sticker-box .artist, .sticker-box .printed, .sticker-box .shape, .sticker-box .material, .sticker-box .sold-out {
+  border-left: 1px solid #343434;
+}
+
+.buy-buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
+  position: relative;
+  width: 100%;
+}
+
+.buy-buttons:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #343434;
+  color: #eee;
+  font-size: 0.85em;
+  content: "BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY";
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.buy-buttons form {
+  -webkit-flex-basis: 33.333%;
+      -ms-flex-preferred-size: 33.333%;
+          flex-basis: 33.333%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  text-align: center;
+  padding: 1.5em 0 0.5em 0;
+  min-width: 85px;
+}
+
+.buy-buttons form:nth-child(2), .buy-buttons form:nth-child(3) {
+  border-left: 1px solid #343434;
+}
+
+.buy-buttons button {
+  background-color: #c0282d;
+  color: white;
+  border: 1px solid #c0282d;
+  padding: 1em 0.5em;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 2px 2px 2px #343434;
+}
+
+.buy-buttons button:hover, .buy-buttons button:active {
+  color: #c0282d;
+  background: white;
+  cursor: pointer;
+}
+
+.no-buttons {
+  border-top: 1px solid #343434;
+  width: 100%;
+  padding: 1em 0.25rem;
+  text-align: center;
+}
+
+.no-buttons span {
+  font-size: 1.25em;
+}
+
+.so-box {
+  background: #343434;
+  text-align: center;
+  color: #eee;
+  font-size: 1.25em;
+  padding: 1em 0.25em;
+  font-weight: 300;
+}
+
+.sticker-photo-grid {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sticker-photo-grid img {
+  max-height: 260px;
+}
+
+.sticker-photo-grid h3, .sticker-photo-grid .share-your-photo {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+@media (max-width: 500px) {
+  .sticker-box {
+    width: calc(100% - 10px);
+    -webkit-flex-basis: calc(100% - 10px);
+        -ms-flex-preferred-size: calc(100% - 10px);
+            flex-basis: calc(100% - 10px);
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    max-width: calc(100% - 10px);
+  }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+  .sticker-box {
+    width: calc(50% - 10px);
+    -webkit-flex-basis: calc(50% - 10px);
+        -ms-flex-preferred-size: calc(50% - 10px);
+            flex-basis: calc(50% - 10px);
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    max-width: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1600px) {
+  .sticker-box {
+    width: calc(33.3333% - 10px);
+    -webkit-flex-basis: calc(33.3333% - 10px);
+        -ms-flex-preferred-size: calc(33.3333% - 10px);
+            flex-basis: calc(33.3333% - 10px);
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    max-width: calc(33.3333% - 10px);
+  }
+}
+
+@media (min-width: 1601px) {
+  .sticker-box {
+    width: calc(25% - 10px);
+    -webkit-flex-basis: calc(25% - 10px);
+        -ms-flex-preferred-size: calc(25% - 10px);
+            flex-basis: calc(25% - 10px);
+    -webkit-flex-grow: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
+    -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+            align-self: auto;
+    max-width: calc(25% - 10px);
+  }
+}
+
+/*# sourceMappingURL=sticker-boxes.css.map */

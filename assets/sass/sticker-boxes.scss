@@ -1,0 +1,73 @@
+//NORMALIZE, GET DEFAULTS
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/_extends";
+@import "partials/_z-index";
+
+.stickers { @include flex-container(); margin-right: 10px; }
+
+.sticker-box { @include flex-item(33.3333%); border:1px solid $black; margin-bottom:10px; margin-right: 10px; 
+  .inner { margin: 0.5em; border:1px solid $black; }
+  .thumb { width:220px; display: block; margin-left: auto; margin-right: auto;  }
+  .details { width: 100%; @include flex-container();
+    .full { @include flex-item(100%); }
+    .half { @include flex-item(50%); }
+    .third { @include flex-item(33.3333%); }
+    .full, .half, .third { position: relative; text-transform: uppercase;
+      &:before { @include position(absolute,0,0,null,0); background:$black; color:$white; font-size:0.7rem; padding:0.1em 0.25rem; text-transform: lowercase; }
+    }
+  }
+  
+  .title:before { content: "title"; }
+  .series-number:before { content: "series"; }
+  .artist:before { content: "artist"; }
+  .dimensions:before { content:"dimensions"; }
+  .shape:before { content: "shape"; }
+  .material:before { content: "vinyl"; }
+  .printed:before { content: "printed"; }
+  .released:before { content: "released"; }
+  .sold-out:before { content: "sold out"; }
+
+  
+  .title { font-size:1.2em; border-top:1px solid $black; padding:0.6em 0.25rem 0.1em 0.25rem }
+  
+  .half { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; position:relative; }
+  .third { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
+  .artist, .printed, .shape, .material, .sold-out { border-left: 1px solid $black; }
+}
+
+.buy-buttons { @include flex-container(); position: relative; width: 100%;
+  &:after { @include position(absolute,0,0,null,0); background:$black; color:$white; font-size:0.85em; content:"BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY"; white-space: nowrap; overflow: hidden}
+  form { @include flex-item(33.333%); text-align: center; padding:1.5em 0 0.5em 0; min-width: 85px;
+    &:nth-child(2), &:nth-child(3) { border-left: 1px solid $black; }
+  }
+  button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;
+    &:hover, &:active { color:$red; background:white; cursor: pointer; }
+  }
+}
+.no-buttons { border-top:1px solid $black; width:100%; padding: 1em 0.25rem; text-align: center;
+  span { font-size:1.25em; }
+}
+
+.so-box { background:$black; text-align: center; color:$white; font-size:1.25em; padding: 1em 0.25em; font-weight: $light;  }
+
+.sticker-photo-grid { @include flex-container(); justify-content:flex-start;
+  img { max-height: 260px; }
+  h3, .share-your-photo { @include flex-item(100%); }
+}
+
+@media (max-width:500px) {
+  .sticker-box { @include flex-item(calc(100% - 10px), auto, 0, 0); max-width:calc(100% - 10px); }
+}
+
+@media (min-width: 501px) and (max-width:1000px) {
+  .sticker-box { @include flex-item(calc(50% - 10px), auto, 0, 0); max-width:calc(50% - 10px); }
+}
+
+@media (min-width: 1001px) and (max-width:1600px) {
+  .sticker-box { @include flex-item(calc(33.3333% - 10px), auto, 0, 0); max-width:calc(33.3333% - 10px); }
+}
+
+@media (min-width: 1601px) {
+  .sticker-box { @include flex-item(calc(25% - 10px), auto, 0, 0); max-width:calc(25% - 10px); }
+}

@@ -1,0 +1,45 @@
+link(rel="stylesheet" href="assets/css/thefplus.css")
+link(rel="stylesheet" href="assets/css/sticker-boxes.css")
+
+
+mixin sticker(num,name,img,artist,slug,dimensions,shape,material,printed,released, soldout)
+  dl.sticker-box
+    dt
+      .inner
+        
+        img.thumb(src="http://thefpl.us/also-made/stickers/#{img}")
+        .details
+          span.full.title= name
+          span.third.series-number= num
+          span.third.artist
+            if (slug)
+              a(href="http://thefpl.us/meet/#{slug}")= artist
+            else
+              | #{artist}
+          span.third.printed= printed
+          span.third.dimensions= dimensions
+          span.third.shape= shape
+          span.third.material= material
+          span.half.released= released
+          if soldout
+            span.half.sold-out= soldout
+        if soldout
+          .so-box
+            span SOLD OUT
+        block
+
+mixin buyButton(name,number,cost, id)
+  form(action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top")
+    input(type="hidden" name="cmd" value="_s-xclick")
+    input(type="hidden" name="hosted_button_id" value="#{id}")
+    button(type="submit" onclick="trackEvent('stickers', '#{name}', '#{number} @ ${cost}', #{cost});") #{number} @ $#{cost}
+
+.stickers
+  +sticker(8, "Shiny Mirrored Logo", "logo-shiny.png", "Lemon", "lemon", '3" x 2.6"', "die cut", "mirrored", 100, "printing")
+  +sticker(7, "Warewolf Law is HRUH.", "hruh160.png", "Portaxx", "portaxx", '3" x 2.8"', "die cut", "white", 100, "12/08/2016")
+    .buy-buttons
+      +buyButton("Warewolf Law is HRUH.", 1, 3, "foo")
+      +buyButton("Warewolf Law is HRUH.", 2, 5, "foo")
+      +buyButton("Warewolf Law is HRUH.", 5, 10, "foo")
+  +sticker(6, "Upgrade Your Ears Today", "s6-thumb.png", "Lady Frenzy", "lady-frenzy", '3" x 3"', circle, 100, "white", "09/17/2015", "11/17/2016")
+  +sticker(5, "There's a Ghost In My Butt", "s5-thumb.png", "King Kalamari", "king-kalamari", '3" x 2.3"', "die cut", "clear", 100, "09/10/2015")
