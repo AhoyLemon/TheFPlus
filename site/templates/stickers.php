@@ -25,21 +25,6 @@
         </time>
       </header>
       
-      <!-- CAST LIST -->
-      <?php /* if ($page->cast() != "") { ?>
-        <?php $persons = explode(",", $page->cast()); ?>
-        <ul class="cast authors ridiculists info-block artists">
-          <?php foreach($persons as $person): ?>
-            <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
-            <?php if ($site->find($mlink)) { ?>
-              <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
-            <?php } else { ?>
-              <li itemprop="actor"><?php echo $person ?></li>
-            <?php } ?>
-          <?php endforeach ?>
-        </ul>
-      <?php }  */ ?>
-      
       <?php echo $page->text()->kirbytext() ?>
       
       <div class="stickers">
@@ -101,8 +86,6 @@
                   <div class="no-buttons">
                     <span>SOLD OUT</span>
                   </div>
-                <?php } else if ($sticker->released() == "") { ?>
-                  <div class="no-buttons"></div>
                 <?php } ?>
                 
               </div>
