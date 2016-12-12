@@ -1,10 +1,8 @@
 title: Content List
 pages:
   template:
-    - stickers
     - episode
     - other-project
-    - fanart
   sort: flip
 files: false
 fields:

@@ -12,7 +12,11 @@
   -ms-flex-align: strech;
   -webkit-align-items: strech;
           align-items: strech;
-  margin-right: 10px;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-right: -10px;
+  font-size: 20px;
 }
 
 .sticker-box {
@@ -272,6 +276,18 @@
   font-weight: 300;
 }
 
+.splc-description {
+  border: 1px solid #343434;
+  width: 100%;
+  padding: 1em;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+.splc-description p:last-child {
+  margin-bottom: 0;
+}
+
 .sticker-photo-grid {
   display: -webkit-flex;
   display: -moz-flex;
@@ -308,6 +324,17 @@
   -webkit-align-self: auto;
       -ms-flex-item-align: auto;
           align-self: auto;
+}
+
+.sticker-photo-grid h3 {
+  font-weight: 300;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.sticker-photo-grid .share-your-photo {
+  margin-top: 10px;
 }
 
 @media (max-width: 500px) {

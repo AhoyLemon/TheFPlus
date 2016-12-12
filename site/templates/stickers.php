@@ -10,7 +10,7 @@
 
     <article class="full default">
       <header>
-        <h1><?php echo $page->title() ?></h1>
+        <h1 style="margin-bottom:0;"><?php echo $page->title() ?></h1>
         
         <!-- DATE & TIME -->
         <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
@@ -101,33 +101,37 @@
                   <div class="no-buttons">
                     <span>SOLD OUT</span>
                   </div>
+                <?php } else if ($sticker->released() == "") { ?>
+                  <div class="no-buttons"></div>
                 <?php } ?>
                 
               </div>
             </dt>
           </dl>
         <?php endforeach; ?>
-        
-        
-        <?php echo $page->splc_desc()->kirbytext() ?>
-        
-        <div class="sticker-photo-grid">
-          <h3>Some Stickers in the world...</h3>
-          <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
-            <div class="photo-holder">
-              <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
-            </div>
-          <?php endforeach; ?>
-          <div class="share-your-photo">
-            <?php echo $page->share_cta()->kirbytext(); ?>
-          </div>
-        </div>
-        
-        
-        
-        
       </div>
+      
+      <div class="splc-description">
+        <?php echo $page->splc_desc()->kirbytext() ?>
+      </div>
+
+      <div class="sticker-photo-grid">
+        <h3>Some Stickers in the world...</h3>
+        <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
+          <div class="photo-holder">
+            <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+          </div>
+        <?php endforeach; ?>
+        <div class="share-your-photo">
+          <?php echo $page->share_cta()->kirbytext(); ?>
+        </div>
+      </div>
+      
     </article>
+  
+    <section class="comments disqus">
+      <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+    </section>
     
   </main>
 
