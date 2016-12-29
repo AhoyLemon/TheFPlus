@@ -1,0 +1,12 @@
+{
+    "VisitFrequency": {
+        "ColumnActionsByReturningVisits": "重返造訪的活動數",
+        "ColumnAverageVisitDurationForReturningVisitors": "重返造訪的平均訪問時間（以秒為單位）",
+        "ColumnAvgActionsPerReturningVisit": "每個重返造訪的平均活動數",
+        "ColumnBounceRateForReturningVisits": "回訪客的跳出率",
+        "ColumnReturningVisits": "重返造訪",
+        "SubmenuFrequency": "造訪頻率",
+        "WidgetGraphReturning": "重返造訪圖表",
+        "WidgetOverview": "造訪頻率總覽"
+    }
+}

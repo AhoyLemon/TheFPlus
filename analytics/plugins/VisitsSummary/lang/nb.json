@@ -1,0 +1,13 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "%s spørringer kjørt",
+        "GenerateTime": "%s sekunder for å generere denne siden",
+        "NbActionsDescription": "%s handlinger",
+        "PluginDescription": "Rapporterer generelle analysetall: besøk, unike besøkere, antall handlinger, sprettfrekvens, etc.",
+        "VisitsSummary": "Besøksammendrag",
+        "VisitsSummaryDocumentation": "Dette er en oversikt over besøksutvikling.",
+        "WidgetLastVisits": "Graf over siste besøk",
+        "WidgetOverviewGraph": "Oversikt med grafikk",
+        "WidgetVisits": "Besøksoversikt"
+    }
+}

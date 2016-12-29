@@ -1,0 +1,12 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "%s katkestatud päringut",
+        "GenerateTime": "Lehe genereerimiseks kulus %s sekundit",
+        "NbActionsDescription": "%s tegevust",
+        "VisitsSummary": "Külastuste kokkuvõte",
+        "VisitsSummaryDocumentation": "See on külastuste muutuse ajas ülevaade.",
+        "WidgetLastVisits": "Viimaste külastuste graafik",
+        "WidgetOverviewGraph": "Graafikutega ülevaade",
+        "WidgetVisits": "Külastuste ülevaade"
+    }
+}

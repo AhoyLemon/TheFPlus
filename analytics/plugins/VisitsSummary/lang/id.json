@@ -1,0 +1,12 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "%s kueri dijalankan",
+        "GenerateTime": "%s detik untuk menghasilkan halaman",
+        "NbActionsDescription": "%s tindakan (menampilkan halaman, mengunduh, dan tautan keluar)",
+        "VisitsSummary": "Rangkuman Kunjungan",
+        "VisitsSummaryDocumentation": "Ini merupakan iktisar perkembangan kunjungan.",
+        "WidgetLastVisits": "Grafik kunjungan terakhir",
+        "WidgetOverviewGraph": "Iktisar dengan grafik",
+        "WidgetVisits": "Iktisar kunjungan"
+    }
+}

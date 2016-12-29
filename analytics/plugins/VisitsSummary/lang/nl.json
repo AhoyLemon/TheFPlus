@@ -1,0 +1,13 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "%s queries uitgevoerd",
+        "GenerateTime": "%s seconden om deze pagina te genereren",
+        "NbActionsDescription": "%s acties",
+        "PluginDescription": "Rapporteert algemene analyse metrics: bezoeken, unieke bezoeken, aantal acties, bounce ration, enz.",
+        "VisitsSummary": "Bezoekers samenvatting",
+        "VisitsSummaryDocumentation": "Dit is een trendlijn die de ontwikkeling weergeeft.",
+        "WidgetLastVisits": "Recente bezoeken",
+        "WidgetOverviewGraph": "Totalen met trendlijn",
+        "WidgetVisits": "Bezoeken totalen"
+    }
+}

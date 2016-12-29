@@ -1,0 +1,11 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "spustené požiadavky: %s",
+        "GenerateTime": "%s sekúnd na vygenerovanie strany",
+        "NbActionsDescription": "%s akcie (zobrazenie stránok, sťahovanie a odkazujúce odkazy)",
+        "VisitsSummary": "Všetky návštevy",
+        "WidgetLastVisits": "Graf posledných návštev",
+        "WidgetOverviewGraph": "Prehľad s grafom",
+        "WidgetVisits": "Prehľad návštevníkov"
+    }
+}

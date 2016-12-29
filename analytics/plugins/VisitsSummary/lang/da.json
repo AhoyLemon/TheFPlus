@@ -1,0 +1,13 @@
+{
+    "VisitsSummary": {
+        "GenerateQueries": "%s forespørgsler kørt",
+        "GenerateTime": "Siden genereret på %s sek.",
+        "NbActionsDescription": "%s handlinger (sidevisninger, filhentninger og udgående links)",
+        "PluginDescription": "Rapporter generelle analyse målinger: besøg, unikke besøgende, antal handlinger, afvisningsrate, osv",
+        "VisitsSummary": "Besøg resumé",
+        "VisitsSummaryDocumentation": "Oversigt over besøgsudviklingen.",
+        "WidgetLastVisits": "Seneste besøg",
+        "WidgetOverviewGraph": "Oversigt med diagrammer",
+        "WidgetVisits": "Besøgsoversigt"
+    }
+}

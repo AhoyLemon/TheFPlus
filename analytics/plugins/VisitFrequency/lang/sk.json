@@ -1,0 +1,12 @@
+{
+    "VisitFrequency": {
+        "ColumnActionsByReturningVisits": "Akcie vracajúcich sa návštevníkov",
+        "ColumnAverageVisitDurationForReturningVisitors": "Avg. Navštívte Čas pre návštevníkov vracať (v sekundách)",
+        "ColumnAvgActionsPerReturningVisit": "Priemerný čas pre vracajúcich sa návštevníkov (v sekundách)",
+        "ColumnBounceRateForReturningVisits": "Miera odskočení vracajúcich sa návštev",
+        "ColumnReturningVisits": "Vracajúce sa návštevy",
+        "SubmenuFrequency": "Frekvencia",
+        "WidgetGraphReturning": "Graf vracajúcich sa",
+        "WidgetOverview": "Prehľad frekvencií"
+    }
+}
