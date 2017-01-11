@@ -15,6 +15,18 @@
     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    
+    /*
+    var checkDisqus = setInterval(function() {
+      if ($('#post-list')) {
+        console.log('found posts');
+        clearInterval(checkDisqus);
+      } else {
+        console.log('have not found it');
+      }
+    }, 50);
+    */
+    
   })();
   <?php endif ?>
   
