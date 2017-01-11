@@ -81,7 +81,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
   
   <!-- Master CSS -->
-  <link href="/assets/css/thefplus.css?=11.18.16" rel="stylesheet" type="text/css">
+  <link href="/assets/css/thefplus.css?=01.11.17" rel="stylesheet" type="text/css">
 
 </head>
 <body>

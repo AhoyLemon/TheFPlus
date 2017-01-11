@@ -135,7 +135,7 @@ article.full {
         }
       }
       .episode-actions { @include flex-container; padding-top: 0.25em; clear: both; float: none;
-        .audio-holder { @include flex-item(40%); padding-top: 0.5em; }
+        .audio-holder { @include flex-item(40%); padding: 0.5em 1em; }
         audio { width:100%; }
       }
     }

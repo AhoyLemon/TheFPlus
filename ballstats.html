@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Some stats</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="ballstats.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="chart-grid">
+      <div class="quarter">&nbsp;</div>
+      <div class="half">
+        <canvas id="BallpitUsers" width="100" height="100"></canvas>
+      </div>
+      <div class="quarter">&nbsp;</div>
+      <div class="half">
+        <canvas id="BallpitBrowsers" width="100" height="100"></canvas>
+      </div>
+      <div class="half">
+        <canvas id="TheFPlusBrowsers" width="100" height="100"></canvas>
+      </div>
+      <div class="half">
+        <canvas id="BallpitMachines" width="100" height="100"></canvas>
+      </div>
+    </div>
+    <p>Chart rendered using <a href="http://www.chartjs.org/">chart.js</a></p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+    <script>
+      var ballpitGroups = document.getElementById("BallpitUsers");
+      var ballpitBrowsers = document.getElementById("BallpitBrowsers");
+      var thefplusBrowsers = document.getElementById("TheFPlusBrowsers");
+      var ballpitMachines = document.getElementById("BallpitMachines");
+      var circleLegend = {
+        labels: {
+          fontSize: 14,
+          fontFamily: "Lora",
+          boxWidth: 12,
+          usePointStyle: true,
+          padding: 10
+        }
+      }
+      var percentTooltip = {
+        mode: 'label',
+        callbacks: {
+          label: function(tooltipItem, data) {
+            return data['labels'][tooltipItem['index']] + ": " + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+          }
+        }
+      }
+      
+      var d = {
+        borderWidth: 3,
+        pointBorderWidth: 5,
+        pointHoverRadius: 8,
+        pointHoverBorderWidth: 6,
+        pointHitRadius: 8
+      }
+      
+      // These are the device stats
+      var userPie = new Chart(ballpitGroups, {
+        type: 'pie',
+        options: {
+          title: {
+            display: true,
+            text: "ballp.it visits, by user group",
+            fontSize: 16,
+            fontFamily: "'Lora', serif"
+          },
+          legend: circleLegend,
+          tooltips: percentTooltip
+        },
+        data: {
+          labels: [
+            "Ridiculist",
+            "Paid",
+            "Unpaid",
+            "Guest"
+          ],
+          datasets: [{
+            data: [8.43, 72.275, 6.914, 12.379],
+            backgroundColor: [
+              "#ec6c73",
+              "#8ed76e",
+              "#c05eed",
+              "#5598eb"
+            ]
+          }]
+        }
+      });
+      
+      var ballpitBrowserPie = new Chart(ballpitBrowsers, {
+        type: 'pie',
+        options: {
+          title: {
+            display: true,
+            text: "ballp.it visits, by browser",
+            fontSize: 16,
+            fontFamily: "'Lora', serif"
+          },
+          legend: circleLegend,
+          tooltips: percentTooltip
+        },
+        data: {
+          labels: [
+            "Chrome",
+            "Firefox",
+            "Safari",
+            "Opera",
+            "Edge/IE",
+            "other"
+          ],
+          datasets: [{
+            data: [64.5, 19.4, 12.9, 1.5, 1.1, 0.4],
+            backgroundColor: [
+              "#7bb86d", // Chrome
+              "#e36f26", // Firefox
+              "#03bce0", // Safari
+              "#f40821", // Opera
+              "#3276bc", // Edge & IE
+              "#808080"  // Other
+            ]
+          }]
+        }
+      });
+      
+      var fplusBrowserPie = new Chart(thefplusBrowsers, {
+        type: 'pie',
+        options: {
+          title: {
+            display: true,
+            text: "thefpl.us visits, by browser",
+            fontSize: 16,
+            fontFamily: "'Lora', serif"
+          },
+          legend: circleLegend,
+          tooltips: percentTooltip
+        },
+        data: {
+          labels: [
+            "Chrome",
+            "Firefox",
+            "Safari",
+            "Opera",
+            "Edge/IE",
+            "other"
+          ],
+          datasets: [{
+            data: [64.8, 21, 7.3, 1.3, 1.3, 1.5],
+            backgroundColor: [
+              "#7bb86d", // Chrome
+              "#e36f26", // Firefox
+              "#03bce0", // Safari
+              "#f40821", // Opera
+              "#3276bc", // Edge & IE
+              "#808080"  // Other
+            ]
+          }]
+        }
+      });
+      
+      var machoinePie = new Chart(ballpitMachines, {
+        type: 'radar',
+        options: {
+          title: {
+            display: true,
+            text: "ballp.it visits, by browser",
+            fontSize: 16,
+            fontFamily: "'Lora', serif"
+          },
+          legend: circleLegend,
+          tooltips: {
+            mode: 'label',
+            callbacks: {
+              label: function(tooltipItem, data) {
+                return data['labels'][tooltipItem['index']] + ": " + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+              }
+            }
+          },
+          scale: {
+            
+          }
+        },
+        data: {
+          labels: [
+            "Windows",
+            "Android",
+            "iOS",
+            "Mac",
+            "Linux",
+            "Chrome OS",
+            "other"
+          ],
+          datasets: [
+            {
+              label: "Ball Pit",
+              data: [51.8, 28.6, 12.3, 6, 0.8, 0.4, 0.1],
+              backgroundColor: "rgba(72,186,93,0.4)",
+              borderColor: "rgba(72,186,93,0.9)",
+              pointBackgroundColor: "rgba(72,186,93,0.85)",
+              pointRadius: 9,
+              pointHoverRadius: 9
+              
+            },
+            {
+              label: "The F Plus",
+              data: [64.2, 21.8, 6.7, 5, 1.1, 0.7, 0.3],
+              backgroundColor: "rgba(185,30,49,0.4)",
+              borderColor: "rgba(185,30,49,0.9)",
+              pointBackgroundColor: "rgba(185,30,49,0.85)"
+            }
+          ]
+        }
+      });
+    </script>
+  </body>
+</html>
