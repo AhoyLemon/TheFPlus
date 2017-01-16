@@ -124,7 +124,7 @@ class Visitor implements VisitorInterface
 
     /**
      * Removes fields that are not meant to be displayed (md5 config hash)
-     * Or that the user should only access if he is Super User or admin (cookie, IP)
+     * Or that the user should only access if they are Super User or admin (cookie, IP)
      *
      * @param array $visitorDetails
      * @return array
@@ -158,7 +158,7 @@ class Visitor implements VisitorInterface
         //       ==> also update API/API.php getSuggestedValuesForSegment(), the $segmentsNeedActionsInfo array
 
         // flatten visit custom variables
-        if (!empty($visitorDetailsArray['customVariables']) 
+        if (!empty($visitorDetailsArray['customVariables'])
             && is_array($visitorDetailsArray['customVariables'])) {
             foreach ($visitorDetailsArray['customVariables'] as $thisCustomVar) {
                 $visitorDetailsArray = array_merge($visitorDetailsArray, $thisCustomVar);
@@ -306,6 +306,7 @@ class Visitor implements VisitorInterface
                     $actionDetail['eventValue'] = round($actionDetail['custom_float'], self::EVENT_VALUE_PRECISION);
                 }
             } elseif ($actionDetail['custom_float'] > 0) {
+                $actionDetail['generationTimeMilliseconds'] = $actionDetail['custom_float'];
                 $actionDetail['generationTime'] = $formatter->getPrettyTimeFromSeconds($actionDetail['custom_float'] / 1000, true);
             }
             unset($actionDetail['custom_float']);
@@ -420,19 +421,19 @@ class Visitor implements VisitorInterface
                     break;
                 case Action::TYPE_DOWNLOAD:
                     $details['type'] = 'download';
-                    $details['icon'] = 'plugins/Live/images/download.png';
+                    $details['icon'] = 'plugins/Morpheus/images/download.png';
                     break;
                 case Action::TYPE_OUTLINK:
                     $details['type'] = 'outlink';
-                    $details['icon'] = 'plugins/Live/images/link.png';
+                    $details['icon'] = 'plugins/Morpheus/images/link.png';
                     break;
                 case Action::TYPE_SITE_SEARCH:
                     $details['type'] = 'search';
-                    $details['icon'] = 'plugins/Live/images/search.png';
+                    $details['icon'] = 'plugins/Morpheus/images/search_ico.png';
                     break;
                 case Action::TYPE_EVENT:
                     $details['type'] = 'event';
-                    $details['icon'] = 'plugins/Live/images/event.png';
+                    $details['icon'] = 'plugins/Morpheus/images/event.png';
                     break;
                 default:
                     $details['type'] = 'action';
