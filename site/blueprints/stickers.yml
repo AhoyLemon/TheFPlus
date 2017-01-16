@@ -44,9 +44,14 @@ fields:
       {{title}}
     fields:
       pic:
-        label: Picture
+        label: Thumb
         type: image
         required: true
+        width: 1/2
+      fullsize:
+        label: Full Size
+        type: image
+        width: 1/2
       title:
         label: Title
         type: text

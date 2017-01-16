@@ -42,6 +42,11 @@
   border: 1px solid #343434;
 }
 
+.sticker-box a.zoom {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
 .sticker-box .thumb {
   width: 220px;
   display: block;

@@ -49,16 +49,22 @@
       <?php if ($multiperson == true): ?>
         <ul class="cast authors ridiculists info-block">
           <?php foreach($persons as $person): ?>
-          <li itemprop="contributor"><a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a></li>
+          <li itemprop="contributor" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>">
+              <span itemprop="name"><?php echo $person ?></span>
+            </a>
+          </li>
           <?php endforeach ?>
         </ul>
       <?php endif ?>
       <?php if ($multiperson == false): ?>
         <div class="author info-block">
           by 
-          <a href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo $clink ?>">
-            <span itemprop="contributor"><?php echo $page->cast() ?></span>
-          </a>
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <a itemprop="url" href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo $clink ?>">
+              <span itemprop="name" class="provider"><?php echo $page->cast() ?></span>
+            </a>
+          </span>
         </div>
       <?php endif ?>
     <?php endif ?>

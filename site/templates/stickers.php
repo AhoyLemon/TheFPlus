@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<link href="/assets/css/sticker-boxes.css" rel="stylesheet" type="text/css">
+<link href="/assets/css/sticker-boxes.css?updated=2017-01-16" rel="stylesheet" type="text/css">
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -30,13 +30,22 @@
       <div class="stickers">
         
         <?php foreach($page->stickers()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
-          <dl class="sticker-box">
+          <dl class="sticker-box" itemscope itemtype="http://schema.org/Product">
+            <meta itemprop="category" content="sticker" />
+            <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+            <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
             <dt>
               <div class="thumb-holder">
-                <img src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+                <?php if ($sticker->fullsize() != "") { ?>
+                  <a onclick="window.open('<?php echo $page->url() ?>/<?php echo $sticker->fullsize()->filename() ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
+                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+                  </a>
+                <?php } else { ?>
+                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+                <?php } ?>
               </div>
               <div class="details">
-                <div class="full title"><?php echo $sticker->title(); ?></div>
+                <div class="full title" itemprop="name"><?php echo $sticker->title(); ?></div>
                 <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
                 <div class="third artist">
                   <?php $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $sticker->artist()))); ?>
@@ -51,16 +60,26 @@
                     pending
                   <?php } else { ?>
                     <?php echo $sticker->date('m/d/y', 'released'); ?>
+                    <meta itemprop="releaseDate" content="<?php echo $sticker->released(); ?>" />
                   <?php } ?>
                 </div>
                 <?php if ($sticker->soldout() != ""): ?>
-                  <div class="half sold-out"><?php echo $sticker->date('m/d/y', 'soldout'); ?></div>
+                  <div class="half sold-out">
+                    <?php echo $sticker->date('m/d/y', 'soldout'); ?>
+                  </div>
                 <?php endif; ?>
-                
                 
                 <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
                   <div class="buy-buttons">
                     <?php if ($sticker->buttona_slug() != ""): ?>
+                      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="name" content="<?php echo $sticker->buttona_num(); ?> X <?php echo $sticker->title(); ?>" />
+                        <meta itemprop="priceCurrency" content="USD" />
+                        <meta itemprop="price" content="<?php echo $sticker->buttona_price(); ?>" />
+                        <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+                        <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
+                        <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                      </div>
                       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick"/>
                         <input type="hidden" name="hosted_button_id" value="<?php echo $sticker->buttona_slug(); ?>"/>
@@ -68,6 +87,14 @@
                       </form>
                     <?php endif; ?>
                     <?php if ($sticker->buttonb_slug() != ""): ?>
+                      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="name" content="<?php echo $sticker->buttonb_num(); ?> X <?php echo $sticker->title(); ?>" />
+                        <meta itemprop="priceCurrency" content="USD" />
+                        <meta itemprop="price" content="<?php echo $sticker->buttonb_price(); ?>" />
+                        <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+                        <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
+                        <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                      </div>
                       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick"/>
                         <input type="hidden" name="hosted_button_id" value="<?php echo $sticker->buttonb_slug(); ?>"/>
@@ -75,6 +102,14 @@
                       </form>
                     <?php endif; ?>
                     <?php if ($sticker->buttonc_slug() != ""): ?>
+                      <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <meta itemprop="name" content="<?php echo $sticker->buttonc_num(); ?> X <?php echo $sticker->title(); ?>" />
+                        <meta itemprop="priceCurrency" content="USD" />
+                        <meta itemprop="price" content="<?php echo $sticker->buttonc_price(); ?>" />
+                        <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+                        <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
+                        <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                      </div>
                       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick"/>
                         <input type="hidden" name="hosted_button_id" value="<?php echo $sticker->buttonc_slug(); ?>"/>
@@ -83,12 +118,19 @@
                     <?php endif; ?>
                   </div>
                 <?php } else if ($sticker->soldout() != "") { ?>
-                  <div class="no-buttons">
+                  <div class="no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <span>SOLD OUT</span>
+                    <meta itemprop="availability" content="http://schema.org/SoldOut" />
+                    <meta itemprop="priceCurrency" content="USD" />
+                    <meta itemprop="price" content="3" />
                   </div>
                 <?php } ?>
                 
               </div>
+              <span itemprop="brand" itemscope itemtype="http://schema.org/PerformingGroup">
+                <meta itemprop="name" content="<?php echo $site->title(); ?>" />
+                <meta itemprop="url" content="<?php echo $site->url(); ?>" />
+              </span>
             </dt>
           </dl>
         <?php endforeach; ?>
