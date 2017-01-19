@@ -7,29 +7,158 @@
   </head>
   <body>
     <div class="chart-grid">
+      <div class="full">
+        <p>Data in this chart includes November & December of 2016.</p>
+      </div>
       <div class="quarter">&nbsp;</div>
-      <div class="half">
+      <div style="padding-bottom:2em;" class="half">
         <canvas id="BallpitUsers" width="100" height="100"></canvas>
       </div>
       <div class="quarter">&nbsp;</div>
-      <div class="half">
-        <canvas id="BallpitBrowsers" width="100" height="100"></canvas>
+      <div class="third">
+        <!--canvas#BallpitBrowsers(width="100" height="100")-->
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="blank"></th>
+              <th class="logo-cell"><img src="https://ballp.it/favicon-96x96.png" class="logo site"></th>
+              <th class="logo-cell"><img src="https://thefpl.us/favicon-96x96.png" class="logo site"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/chrome.svg" class="logo browser"></td>
+              <td class="number">63.6%</td>
+              <td class="number bigger">65.3%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/firefox.svg" class="logo browser"></td>
+              <td class="number bigger">21.5%</td>
+              <td class="number">20.7%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/safari.svg" class="logo browser"></td>
+              <td class="number bigger">11.8%</td>
+              <td class="number">7.1%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/opera.svg" class="logo browser"></td>
+              <td class="number bigger">1.5%</td>
+              <td class="number">1.2%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/microsoft-edge.svg" class="logo browser"></td>
+              <td class="number">1.1%</td>
+              <td class="number bigger">1.8%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://lh3.googleusercontent.com/TAcIrBPu2YVSqrG3KclrwU7RxYmy7ab-9XTkC6ALmR9BNRQdKieV-5-VYqQK8A3c1oc=w300" class="logo browser"></td>
+              <td class="number">0.3%</td>
+              <td class="number bigger">2.3%</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="half">
-        <canvas id="TheFPlusBrowsers" width="100" height="100"></canvas>
+      <div class="third">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="blank"></th>
+              <th class="logo-cell"><img src="https://ballp.it/favicon-96x96.png" class="logo site"></th>
+              <th class="logo-cell"><img src="https://thefpl.us/favicon-96x96.png" class="logo site"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/microsoft-windows.svg" class="logo os"></td>
+              <td class="number">53.9%</td>
+              <td class="number bigger">64%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/android-icon.svg" class="logo os"></td>
+              <td class="number bigger">27.9%</td>
+              <td class="number">22.3%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/ios.svg" class="logo os"></td>
+              <td class="number bigger">11.4%</td>
+              <td class="number">6.5%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/macosx.svg" class="logo os"></td>
+              <td class="number bigger">5.7%</td>
+              <td class="number">5%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" class="logo os"></td>
+              <td class="number">0.8%</td>
+              <td class="number bigger">1.1%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img src="https://s3-us-west-2.amazonaws.com/svgporn.com/logos/chrome.svg" class="logo os"></td>
+              <td class="number">0.4%</td>
+              <td class="number bigger">0.7%</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="half">
-        <canvas id="BallpitMachines" width="100" height="100"></canvas>
+      <div class="third">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th class="blank"></th>
+              <th class="logo-cell"><img src="https://ballp.it/favicon-96x96.png" class="logo site"></th>
+              <th class="logo-cell"><img src="https://thefpl.us/favicon-96x96.png" class="logo site"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="logo-cell"><img alt="United States" src="https://lipis.github.io/flag-icon-css/flags/4x3/us.svg" class="flag"></td>
+              <td class="number">67.9%</td>
+              <td class="number bigger">74.3%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img alt="Canada" src="https://lipis.github.io/flag-icon-css/flags/4x3/ca.svg" class="flag"></td>
+              <td class="number bigger">10.3%</td>
+              <td class="number">4.3%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img alt="United Kingdom" src="https://lipis.github.io/flag-icon-css/flags/4x3/gb.svg" class="flag"></td>
+              <td class="number">7.2%</td>
+              <td class="number bigger">7.3% </td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img alt="Australia" src="https://lipis.github.io/flag-icon-css/flags/4x3/au.svg" class="flag"></td>
+              <td class="number bigger">3.5%</td>
+              <td class="number">2.2%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img alt="Israel" src="https://lipis.github.io/flag-icon-css/flags/4x3/il.svg" class="flag"></td>
+              <td class="number bigger">2%</td>
+              <td class="number">0.3%</td>
+            </tr>
+            <tr>
+              <td class="logo-cell"><img alt="Finland" src="https://lipis.github.io/flag-icon-css/flags/4x3/fi.svg" class="flag"></td>
+              <td class="number bigger">1.9%</td>
+              <td class="number">1.6%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div style="padding-top:2em;" class="half">
+        <canvas id="PopularTimes" width="100" height="100"></canvas>
+      </div>
+      <div class="full">
+        <p>Chart rendered using <a href="http://www.chartjs.org/">chart.js</a>.<br>Logos borrowed from <a href="https://svgporn.com">SVGPORN</a>.<br>Flags from Lipis' <a href="http://flag-icon-css.lip.is">flag-icon</a> project.</p>
       </div>
     </div>
-    <p>Chart rendered using <a href="http://www.chartjs.org/">chart.js</a></p>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!--script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js")-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
     <script>
       var ballpitGroups = document.getElementById("BallpitUsers");
-      var ballpitBrowsers = document.getElementById("BallpitBrowsers");
-      var thefplusBrowsers = document.getElementById("TheFPlusBrowsers");
-      var ballpitMachines = document.getElementById("BallpitMachines");
+      //var ballpitBrowsers = document.getElementById("BallpitBrowsers");
+      //var thefplusBrowsers = document.getElementById("TheFPlusBrowsers");
+      var popularTimes = document.getElementById("PopularTimes");
       var circleLegend = {
         labels: {
           fontSize: 14,
@@ -47,7 +176,6 @@
           }
         }
       }
-      
       var d = {
         borderWidth: 3,
         pointBorderWidth: 5,
@@ -62,7 +190,7 @@
         options: {
           title: {
             display: true,
-            text: "ballp.it visits, by user group",
+            text: "ballp.it sessions, by user group",
             fontSize: 16,
             fontFamily: "'Lora', serif"
           },
@@ -77,7 +205,7 @@
             "Guest"
           ],
           datasets: [{
-            data: [8.43, 72.275, 6.914, 12.379],
+            data: [8.8, 71, 6.9, 13.3],
             backgroundColor: [
               "#ec6c73",
               "#8ed76e",
@@ -88,6 +216,7 @@
         }
       });
       
+      /*
       var ballpitBrowserPie = new Chart(ballpitBrowsers, {
         type: 'pie',
         options: {
@@ -157,13 +286,14 @@
           }]
         }
       });
+      */
       
-      var machoinePie = new Chart(ballpitMachines, {
+      var timeRadar = new Chart(popularTimes, {
         type: 'radar',
         options: {
           title: {
             display: true,
-            text: "ballp.it visits, by browser",
+            text: "site visits, by hour of the day (relative to time zone)",
             fontSize: 16,
             fontFamily: "'Lora', serif"
           },
@@ -172,7 +302,9 @@
             mode: 'label',
             callbacks: {
               label: function(tooltipItem, data) {
-                return data['labels'][tooltipItem['index']] + ": " + data['datasets'][0]['data'][tooltipItem['index']] + '%';
+                //console.log(tooltipItem)
+                console.log(data)
+                return data['datasets'][tooltipItem.datasetIndex]['label'] + ': ' + data['datasets'][tooltipItem.datasetIndex]['data'][tooltipItem['index']] + '%';
               }
             }
           },
@@ -182,31 +314,28 @@
         },
         data: {
           labels: [
-            "Windows",
-            "Android",
-            "iOS",
-            "Mac",
-            "Linux",
-            "Chrome OS",
-            "other"
+            "mid", "1 AM", "2 AM", "3 AM", "4 AM", "5 AM", "6 AM", "7 AM", "8 AM", "9 AM", "10 AM", "11 AM",
+            "noon", "1 PM", "2 PM", "3 PM", "4 PM", "5 PM", "6 PM", "7 PM", "8 PM", "9 PM", "10 PM", "11 PM"
           ],
           datasets: [
             {
-              label: "Ball Pit",
-              data: [51.8, 28.6, 12.3, 6, 0.8, 0.4, 0.1],
+              label: "ballp.it",
+              data: [4.2,2.9,1.7,1.1,0.9,0.9,1.5,2.4,3.6,4.4,5.1,5,5.1,5.3,5.2,5.4,5.4,6,5.7,5.6,6.1,5.7,5.5,5.4],
               backgroundColor: "rgba(72,186,93,0.4)",
               borderColor: "rgba(72,186,93,0.9)",
               pointBackgroundColor: "rgba(72,186,93,0.85)",
-              pointRadius: 9,
-              pointHoverRadius: 9
-              
+              pointRadius: 5,
+              pointHoverBorderWidth: 5,
+              pointHoverWidth: 5
             },
             {
-              label: "The F Plus",
-              data: [64.2, 21.8, 6.7, 5, 1.1, 0.7, 0.3],
+              label: "thefpl.us",
+              data: [4.3, 3.3, 2.5, 1.9, 1.6, 1.5, 1.8, 2.4, 3.1, 4.1, 4.4, 4.5, 4.9, 5.1, 5.2, 5.4, 5.6, 5.5, 5.5, 5.4, 5.5, 5.7, 5.6, 5.2],
               backgroundColor: "rgba(185,30,49,0.4)",
               borderColor: "rgba(185,30,49,0.9)",
-              pointBackgroundColor: "rgba(185,30,49,0.85)"
+              pointBackgroundColor: "rgba(185,30,49,0.85)",
+              pointRadius: 5,
+              pointHoverRadius: 5
             }
           ]
         }

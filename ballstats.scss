@@ -29,12 +29,30 @@ canvas { max-width:100%;
   //width: 100%;
   //height:80vh !important;
 }
-p { padding:1.5em; opacity:0.7; font-size:85%; }
+p { padding:1.5em; opacity:0.85; }
 
 .chart-grid { @include flex-container(); width:100%; max-width: 800px; margin-left: auto; margin-right: auto;
   .full { @include flex-item(100%, 0, 0); }
   .half { @include flex-item(50%); }
+  .third { @include flex-item(33.33333%); }
   .quarter { @include flex-item(25%); }
   canvas { width: 100%; }
-  p { font-size:0.78em; text-align:center;}
+  p {  text-align:center; line-height: 150%;
+    a { color:rgba(185,30,49,1); text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+}
+
+.comparison-table { border-collapse: collapse; margin-left: auto; margin-right: auto; 
+  td { border:1px solid #bbb; padding: 0.25em 1em; }
+  td.number { font-size:120%; text-align: center; }
+  td.bigger { font-weight:700; }
+  //td.logo-cell { width: 40px;}
+  td:first-child { text-align: right; }
+  .logo {
+    &.site    { width: 42px; height: 42px; }
+    &.browser, &.os { width: 24px; height: 24px; }
+  }
+  .flag { width:32px; height: 24px; }
 }
