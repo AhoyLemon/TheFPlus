@@ -49,7 +49,11 @@
                 <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
                 <div class="third artist">
                   <?php $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $sticker->artist()))); ?>
-                  <a href="http://thefpl.us/meet/<?php echo $slug; ?>"><?php echo $sticker->artist(); ?></a>
+                  <?php if ($site->find('meet')->find($slug)) { ?>
+                    <a href="http://thefpl.us/meet/<?php echo $slug; ?>"><?php echo $sticker->artist(); ?></a>
+                  <?php } else { ?>
+                    <span><?php echo $sticker->artist(); ?></span>
+                  <?php } ?>
                 </div>
                 <div class="third printed"><?php echo $sticker->printed(); ?></div>
                 <div class="third dimensions"><?php echo $sticker->dimensions(); ?></div>
