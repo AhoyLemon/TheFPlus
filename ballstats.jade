@@ -239,78 +239,6 @@ html(lang="en")
         }
       });
       
-      /*
-      var ballpitBrowserPie = new Chart(ballpitBrowsers, {
-        type: 'pie',
-        options: {
-          title: {
-            display: true,
-            text: "ballp.it visits, by browser",
-            fontSize: 16,
-            fontFamily: "'Lora', serif"
-          },
-          legend: circleLegend,
-          tooltips: percentTooltip
-        },
-        data: {
-          labels: [
-            "Chrome",
-            "Firefox",
-            "Safari",
-            "Opera",
-            "Edge/IE",
-            "other"
-          ],
-          datasets: [{
-            data: [64.5, 19.4, 12.9, 1.5, 1.1, 0.4],
-            backgroundColor: [
-              "#7bb86d", // Chrome
-              "#e36f26", // Firefox
-              "#03bce0", // Safari
-              "#f40821", // Opera
-              "#3276bc", // Edge & IE
-              "#808080"  // Other
-            ]
-          }]
-        }
-      });
-      
-      var fplusBrowserPie = new Chart(thefplusBrowsers, {
-        type: 'pie',
-        options: {
-          title: {
-            display: true,
-            text: "thefpl.us visits, by browser",
-            fontSize: 16,
-            fontFamily: "'Lora', serif"
-          },
-          legend: circleLegend,
-          tooltips: percentTooltip
-        },
-        data: {
-          labels: [
-            "Chrome",
-            "Firefox",
-            "Safari",
-            "Opera",
-            "Edge/IE",
-            "other"
-          ],
-          datasets: [{
-            data: [64.8, 21, 7.3, 1.3, 1.3, 1.5],
-            backgroundColor: [
-              "#7bb86d", // Chrome
-              "#e36f26", // Firefox
-              "#03bce0", // Safari
-              "#f40821", // Opera
-              "#3276bc", // Edge & IE
-              "#808080"  // Other
-            ]
-          }]
-        }
-      });
-      */
-      
       var timeRadar = new Chart(popularTimes, {
         type: 'radar',
         options: {
@@ -346,19 +274,14 @@ html(lang="en")
               data: [4.2,2.9,1.7,1.1,0.9,0.9,1.5,2.4,3.6,4.4,5.1,5,5.1,5.3,5.2,5.4,5.4,6,5.7,5.6,6.1,5.7,5.5,5.4],
               backgroundColor: "rgba(72,186,93,0.4)",
               borderColor: "rgba(72,186,93,0.9)",
-              pointBackgroundColor: "rgba(72,186,93,0.85)",
-              pointRadius: 5,
-              pointHoverBorderWidth: 5,
-              pointHoverWidth: 5
+              pointBackgroundColor: "rgba(72,186,93,0.85)"
             },
             {
               label: "thefpl.us",
               data: [4.3, 3.3, 2.5, 1.9, 1.6, 1.5, 1.8, 2.4, 3.1, 4.1, 4.4, 4.5, 4.9, 5.1, 5.2, 5.4, 5.6, 5.5, 5.5, 5.4, 5.5, 5.7, 5.6, 5.2],
               backgroundColor: "rgba(185,30,49,0.4)",
               borderColor: "rgba(185,30,49,0.9)",
-              pointBackgroundColor: "rgba(185,30,49,0.85)",
-              pointRadius: 5,
-              pointHoverRadius: 5
+              pointBackgroundColor: "rgba(185,30,49,0.85)"
             }
           ]
         }
