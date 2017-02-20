@@ -9,3 +9,4 @@ site/accounts
 site/cache
 site/config
 thumbs
+stripe/
