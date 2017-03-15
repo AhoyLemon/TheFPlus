@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<link href="/assets/css/sticker-boxes.css?updated=2017-01-16" rel="stylesheet" type="text/css">
+<link href="/assets/css/sticker-boxes.css?updated=2017-03-15" rel="stylesheet" type="text/css">
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -46,8 +46,8 @@
               </div>
               <div class="details">
                 <div class="full title" itemprop="name"><?php echo $sticker->title(); ?></div>
-                <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
-                <div class="third artist">
+                
+                <div class="two-thirds artist">
                   <?php $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $sticker->artist()))); ?>
                   <?php if ($site->find('meet')->find($slug)) { ?>
                     <a href="http://thefpl.us/meet/<?php echo $slug; ?>"><?php echo $sticker->artist(); ?></a>
@@ -55,11 +55,13 @@
                     <span><?php echo $sticker->artist(); ?></span>
                   <?php } ?>
                 </div>
-                <div class="third printed"><?php echo $sticker->printed(); ?></div>
+                <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
+                
                 <div class="third dimensions"><?php echo $sticker->dimensions(); ?></div>
                 <div class="third shape"><?php echo $sticker->shape(); ?></div>
                 <div class="third material"><?php echo $sticker->vinyl(); ?></div>
-                <div class="half released">
+                <div class="third printed"><?php echo $sticker->printed(); ?></div>
+                <div class="third released">
                   <?php if ($sticker->released == "") { ?>
                     pending
                   <?php } else { ?>
@@ -68,7 +70,7 @@
                   <?php } ?>
                 </div>
                 <?php if ($sticker->soldout() != ""): ?>
-                  <div class="half sold-out">
+                  <div class="third sold-out">
                     <?php echo $sticker->date('m/d/y', 'soldout'); ?>
                   </div>
                 <?php endif; ?>

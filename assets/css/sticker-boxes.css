@@ -116,12 +116,57 @@
           align-self: auto;
 }
 
-.sticker-box .details .full, .sticker-box .details .half, .sticker-box .details .third {
+.sticker-box .details .two-thirds {
+  -webkit-flex-basis: 66.6666%;
+      -ms-flex-preferred-size: 66.6666%;
+          flex-basis: 66.6666%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .one-quarter {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .three-quarters {
+  -webkit-flex-basis: 75%;
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+}
+
+.sticker-box .details .full, .sticker-box .details .half, .sticker-box .details .third, .sticker-box .details .one-quarter, .sticker-box .details .three-quarters, .sticker-box .details .two-thirds {
   position: relative;
   text-transform: uppercase;
 }
 
-.sticker-box .details .full:before, .sticker-box .details .half:before, .sticker-box .details .third:before {
+.sticker-box .details .full:before, .sticker-box .details .half:before, .sticker-box .details .third:before, .sticker-box .details .one-quarter:before, .sticker-box .details .three-quarters:before, .sticker-box .details .two-thirds:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -181,14 +226,14 @@
   position: relative;
 }
 
-.sticker-box .third {
+.sticker-box .third, .sticker-box .two-thirds {
   border-top: 1px solid #343434;
   padding: 1rem 0.25rem 0.25rem 0.25rem;
   font-size: 0.85em;
   position: relative;
 }
 
-.sticker-box .artist, .sticker-box .printed, .sticker-box .shape, .sticker-box .material, .sticker-box .sold-out {
+.sticker-box .series-number, .sticker-box .shape, .sticker-box .material, .sticker-box .sold-out, .sticker-box .released {
   border-left: 1px solid #343434;
 }
 

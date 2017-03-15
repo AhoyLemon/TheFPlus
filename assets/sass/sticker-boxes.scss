@@ -14,7 +14,10 @@
     .full { @include flex-item(100%); }
     .half { @include flex-item(50%); }
     .third { @include flex-item(33.3333%); }
-    .full, .half, .third { position: relative; text-transform: uppercase;
+    .two-thirds { @include flex-item(66.6666%); }
+    .one-quarter { @include flex-item(25%); }
+    .three-quarters { @include flex-item(75%); }
+    .full, .half, .third, .one-quarter, .three-quarters, .two-thirds { position: relative; text-transform: uppercase;
       &:before { @include position(absolute,0,0,null,0); background:$black; color:$white; font-size:0.7rem; padding:0.1em 0.25rem; text-transform: lowercase; }
     }
   }
@@ -33,8 +36,9 @@
   .title { font-size:1.2em; border-top:1px solid $black; padding:0.6em 0.25rem 0.1em 0.25rem }
   
   .half { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; position:relative; }
-  .third { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
-  .artist, .printed, .shape, .material, .sold-out { border-left: 1px solid $black; }
+  .third, .two-thirds { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
+  //.one-quarter, .three-quarters { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
+  .series-number, .shape, .material, .sold-out, .released { border-left: 1px solid $black; }
 }
 
 .buy-buttons { @include flex-container(); position: relative; width: 100%;
