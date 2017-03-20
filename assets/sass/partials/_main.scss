@@ -11,9 +11,25 @@ article { font-weight: $light;
     .full-width, .centered { margin-bottom: 1rem; }
     p { margin-bottom: 1em; }
     header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
-    .featured-site { float: right; }
+    
+    .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
+      .label { padding-right: 0.5em;}
+      time { font-weight: $bold; }
+    }
+    
     summary, .content { text-align: justify; }
-    ul.cast { padding-left: 0; }
+    ul.cast { padding-left: 0; padding-bottom: 0; }
+    
+    .featured-site.multiple-sites {
+      span { 
+        &:after { content:', ' }
+        &:last-child {
+          &:before { content: ' & ';}
+          &:after { content: '';}
+        }
+      }
+    }
+    
     .info-block { padding-bottom: 1em; }
     ol, ul { padding-left: 1.5em; padding-bottom: 1em; }
     ol li { list-style-type: decimal; }
@@ -42,7 +58,7 @@ article { font-weight: $light;
       &:nth-last-child(2):after { content:''; }
       &:last-child { 
         &:before { content:'and '; }
-        &:after { content:'.' };
+        &:after { content:''; };
       }
       &:first-child:before { content:'with '; }
     }

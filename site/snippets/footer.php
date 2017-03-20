@@ -1,7 +1,22 @@
-  <footer class="footer">
-  <script src="<?php echo url::home() ?>/assets/js/thefplus.js?v=11.14.16"></script>
-  <?php snippet('analytics') ?>
-  <script src="<?php echo url::home() ?>/assets/js/newurl.js"></script>
-  </footer>
-</body>
+    <footer class="footer">
+      <script src="<?php echo url::home() ?>/assets/js/thefplus.js?v=11.14.16"></script>
+      <?php snippet('analytics') ?>
+      <script src="<?php echo url::home() ?>/assets/js/newurl.js"></script>
+    </footer>
+    <?php if($page->isHomePage()): ?>
+<!--
+                                                                                                                                   
+b.             8     ,o888888o.               8 888888888o.          ,o888888o.     8 8888      88 8 888888888o 8888888 8888888888 
+888o.          8  . 8888     `88.             8 8888    `^888.    . 8888     `88.   8 8888      88 8 8888    `88.     8 8888       
+Y88888o.       8 ,8 8888       `8b            8 8888        `88. ,8 8888       `8b  8 8888      88 8 8888     `88     8 8888       
+.`Y888888o.    8 88 8888        `8b           8 8888         `88 88 8888        `8b 8 8888      88 8 8888     ,88     8 8888       
+8o. `Y888888o. 8 88 8888         88           8 8888          88 88 8888         88 8 8888      88 8 8888.   ,88'     8 8888       
+8`Y8o. `Y88888o8 88 8888         88           8 8888          88 88 8888         88 8 8888      88 8 8888888888       8 8888       
+8   `Y8o. `Y8888 88 8888        ,8P           8 8888         ,88 88 8888        ,8P 8 8888      88 8 8888    `88.     8 8888       
+8      `Y8o. `Y8 `8 8888       ,8P            8 8888        ,88' `8 8888       ,8P  ` 8888     ,8P 8 8888      88     8 8888       
+8         `Y8o.`  ` 8888     ,88'             8 8888    ,o88P'    ` 8888     ,88'     8888   ,d8P  8 8888    ,88'     8 8888       
+8            `Yo     `8888888P'               8 888888888P'          `8888888P'        `Y88888P'   8 888888888P       8 8888       
+-->
+    <?php endif; ?>
+  </body>
 </html>
