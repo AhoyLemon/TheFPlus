@@ -28,22 +28,22 @@
           </a>
           <span class="submitter">
             <?php if ($multisubmit == false) { ?>
-              <?php $meetslug = strtolower(preg_replace('/\s+/', '-', $section->submitter())); ?>
+              <?php $meetslug = strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $section->submitter()))); ?>
               <?php if($site->find('meet/'.$meetslug)){ ?>
                 <a href="/meet/<?php echo $meetslug; ?>"><?php echo $section->submitter() ?></a>
               <?php } else { ?>
                 <?php echo $section->submitter() ?>
               <?php } ?>
             <?php } else if ($multisubmit == true) { ?>
-              <span class="comma-this">
+              <span class="multiple-items">
                 <?php foreach($docsubmitters as $docsubmitter): ?>
-                  <?php $meetslug = strtolower(preg_replace('/\s+/', '-', $docsubmitter)); ?>
+                  <?php $meetslug = strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $docsubmitter))); ?>
                   <?php if($site->find('meet/'.$meetslug)){ ?>
-                    <span class="add-comma">
+                    <span class="item">
                       <a href="/meet/<?php echo $meetslug; ?>"><?php echo $docsubmitter ?></a>
                     </span>
                   <?php } else { ?>
-                    <span class="add-comma">
+                    <span class="item">
                       <?php echo $docsubmitter ?>
                     </span>
                   <?php } ?>
