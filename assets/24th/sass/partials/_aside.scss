@@ -1,0 +1,48 @@
+aside { @include position(fixed,0,null,0,0); width:$offset;  line-height: 100%;
+  background-image: url(../img/ep_naturalblack.png); color:$white; font-family:$font; padding-left:8px; padding-right:8px;
+  /*
+  
+  .hour-box {  text-align: center;
+    .label { font-size:32px; }
+    .number { font-size:150px; line-height: 40px; font-weight: $bold; }
+  }
+  .current-box { margin-top: 70px; line-height: 120%;
+    .doc { font-size:120%; font-weight: $bold; margin-bottom: 0.5em; }
+    .readers {
+      span { display: block; font-weight: $bold; }
+    }
+    
+  }
+  */
+  
+  .iframe-holder { height:calc(100% - 60px); position: relative; }
+  .chat { width: 100%; height:100%; }
+  .dismiss-holder { text-align: center; @include position(absolute,null,0,0,0); padding-bottom: 1em;
+    a { font-size: 0.8em; font-weight: $bold; cursor: pointer;
+      &:hover { text-decoration: underline; }
+    }
+  }
+  
+  
+  
+  .donation-vertical { padding-top: 3em; }
+  .logo-box { margin-bottom: 2em; }
+  .donation-total-box { @include flex-item(30%); text-align: center; margin-bottom:2em;
+    .dollars { font-size:220%; font-weight: $bold; line-height: 120%; }
+  }
+  .recent-donation { @include flex-item(35%); margin-bottom:2em; text-align: center;
+    .label { text-transform: lowercase; font-size:80%; font-weight: $bold; }
+    .donation { margin-top: 0.5em;
+      span, time { font-weight: $bold; }
+    }
+    blockquote { font-style:italic;  margin-top: 0.5em; margin-left: 0.5em;
+      &:before { content:'“'; }
+      &:after { content:'”'; }
+    }
+  }
+  
+  .donation-button { @include flex-item(35%); text-align: center; 
+    a { padding:1em 2em;}
+  }
+  
+}

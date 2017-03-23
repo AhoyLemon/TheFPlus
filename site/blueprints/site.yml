@@ -2,12 +2,14 @@ title: Site
 pages: 
   template:
     - default
+    - episodes
     - listing
     - people
     - results
     - blogs
     - stats
     - guesses
+    - livestream
 fields:
   title:
     label: Title

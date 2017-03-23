@@ -1,0 +1,63 @@
+title: Livestream
+icon: twitch
+pages:
+  template: livestream-feed
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  logo:
+    label: Livestream Logo
+    type: image
+    width: 2/5
+  iframe_url:
+    label: iFrame URL
+    type: url
+    width: 3/5
+  current_doc:
+    label: Current Doc Title
+    icon: file-text-o
+    type: text
+    width: 1/3
+  current_doc_url:
+    label: Current Doc URL
+    type: url
+    width: 1/3
+  current_doc_provider:
+    label: Current Doc Provider
+    icon: gift
+    type: text
+    width: 1/3
+  current_readers:
+    label: Current Readers
+    type: tags
+    icon: users
+  current_artist:
+    label: Current Artist
+    icon: paint-brush
+    type: text
+    width: 1/3
+  battle_headline:
+    label: Battle
+    type: headline
+  battle_active:
+    label: Battle Active?
+    type: toggle
+    default: false
+    width: 1/3
+  battle_query_a:
+    label: Query for First Choice
+    type: text
+    width: 1/3
+  battle_query_b:
+    label: Query for Second Choice
+    type: text
+    width: 1/3
+  misc_headline:
+    label: Misc
+    type: headline
+  text:
+    label: Meta Text
+    type: markdown
+    help: (open graph shit for robots to broadcast, describes the event)

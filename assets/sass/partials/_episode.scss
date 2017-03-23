@@ -7,12 +7,7 @@
       &:hover { background-color: $red; }
       h3 { text-align: center; }
     }
-    .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(160%); @include transition(all, 0.3s, ease, 0.3s); }
-  }
-  .tile { color:$red;
-    svg { @include position(absolute,0,0,0,0); }
-    svg * { fill:currentColor; }
-    &:hover { background:$red; color:$white; }
+    .disqus-comment-count { background-image: url(/assets/svg/empty_comment.svg); background-size: cover; background-repeat: no-repeat; background-position: center; @include translateY(105%); @include transition(); }
   }
 }
 
@@ -31,21 +26,10 @@ figure.fanart { @extend %fanart; }
       }
     }
   }
-  .pagination {
-    .prev, .next, .blank {
-      &.tile {width: 25%; }
-    }
-  }
 }
 
 @media (max-width: $mobile-max) {
   .covers-only {
     a { @include flex-item(50%, stretch, 0, 0); }
   }
-  .pagination {
-    .prev, .next, .blank {
-      &.tile {width: 50%; }
-    }
-  }
 }
-

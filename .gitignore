@@ -10,3 +10,4 @@ site/cache
 site/config
 thumbs
 stripe/
+json/

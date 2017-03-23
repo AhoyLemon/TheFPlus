@@ -1,7 +1,7 @@
 // COLORS
 $white: #eee;
 $black: #343434;
-$red: #c0282d;
+$red: #e22626;
 $green: #3eae12;
 $yellow:#e5e972;
 $teal: #4e7f71;
@@ -12,33 +12,22 @@ $copy: $black;
 $link: $red;
 $accent: $green;
 $sidebar: $black;
-$also-made: #1b1426;
-$wrote: #faecce;
+$also-made: #444;
+$wrote: #f1f5d0;
 $episode: #fff;
 
-// BRAND COLORS
-  $color-twitter: #55acee;
-  $color-github: #181616;
-  $color-googleplus: #D34836;
-  $color-flattr-green: #89b443;
-  $color-flattr-orange: #f9ad33;
-  $color-facebook: #3B5998;
-  $color-tumblr: #36465d;
-  $color-reddit: #ff4500;
 
 // FONTS
 $source: 'Source Sans Pro', sans-serif;
 $font-size: 18px;
 $light:300;
 $normal:400;
-$bold:500;
-$heavy:600;
+$bold:600;
 
 // FONT UTILITIES
 $sans-serif: $source;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
-$mobile-top:56px;
 $radius:6px;
 $mobile-max: 767px;
 $desktop-min: 768px;
