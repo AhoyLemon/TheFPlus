@@ -1,0 +1,14 @@
+title: Episode List
+icon: play-circle-o
+pages:
+  template:
+    - episode
+  sort: flip
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Meta Text
+    type: textarea

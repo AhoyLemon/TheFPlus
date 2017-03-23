@@ -3,46 +3,29 @@ article { font-weight: $light;
     header { @extend %clearfix; }
   }
   &.full { 
-    h1, h2, h3, h4, h5, h6 { font-weight: 400; }
-    &.default h1 { margin-bottom: 0.5em; }
+    h1, h2, h3, h4, h5, h6 { font-weight: 400; margin-top: 0.5em; }
     img { max-width: 100%; height: auto; }
-    .full-width { width:100%; }
-    .centered { display: block; margin-left: auto; margin-right: auto; }
-    .full-width, .centered { margin-bottom: 1rem; }
     p { margin-bottom: 1em; }
     header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
-    
-    .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
-      .label { padding-right: 0.5em;}
-      time { font-weight: $bold; }
-    }
-    
-    summary, .content { text-align: justify; }
-    ul.cast { padding-left: 0; padding-bottom: 0; }
-    
-    .featured-site.multiple-sites {
-      span { 
-        &:after { content:', ' }
-        &:last-child {
-          &:before { content: ' & ';}
-          &:after { content: '';}
-        }
-      }
-    }
-    
+    .featured-site { float: right; }
+    summary { text-align: justify; }
+    ul.cast { padding-left: 0; }
     .info-block { padding-bottom: 1em; }
-    ol, ul { padding-left: 1.5em; padding-bottom: 1em; }
-    ol li { list-style-type: decimal; }
-    blockquote { background: #f9f9f9; border-left: 10px solid #ccc; margin:0 0 1em 0; padding: 0.5em 2em 0.5em 10px; quotes: "\201C" "\201D" "\201C" "\201D"; position: relative;
-      &:before { color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; float: left; padding-top: 0.35em; margin-right: 0.05em; }
-      p:last-child { margin-bottom: 0; }
+    ol { padding-left: 1.5em; padding-bottom: 1em;
+      li { list-style-type: decimal; }
     }
-    a { @extend %textlink; }
+    blockquote { background: #f9f9f9; border-left: 10px solid #ccc; margin: 1.5em 10px; padding: 0.5em 10px; quotes: "\201C""\201D""\2018""\2019";
+      &:before { color: #ccc; content: open-quote; font-size: 4em; line-height: 0.1em; margin-right: 0.25em; vertical-align: -0.4em; }
+    }
+
+    a { text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
     .episode-tags {
       .label { display: block; }
       ul { padding-left: 0; }
       a { @extend %tag; cursor: text;
-        //&:hover { text-decoration: none; }
+        &:hover { text-decoration: none; }
         &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
           &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; }
         }
@@ -55,10 +38,10 @@ article { font-weight: $light;
   .cast { 
     li { display: inline;
       &:after { content:', '; }
-      &:nth-last-child(2):after { content:''; }
+      &:nth-last-child(2):after { content:'';  }
       &:last-child { 
         &:before { content:'and '; }
-        &:after { content:''; };
+        &:after { content:'.' };
       }
       &:first-child:before { content:'with '; }
     }
@@ -67,96 +50,68 @@ article { font-weight: $light;
     li:first-child:before { content:'reading: '; }
   } 
 }
-
 .content-provider, .edited-by {
   &:after { content:'.'; margin-left: -0.2em; }
-  .multi {
-    &:last-child:before { content:' & ';}
-  }
 }
 
+.pagination { display: block; @extend %clearfix; font-size:1.35em; margin-right: 1vw; padding-top: 1em;
+  a { text-decoration: none; 
+    &:hover { text-decoration: underline; }
+  }
+  .prev { float: left;
+    &:before { content:'\00AB'; }
+  }
+  .next { float: right;
+    &:after { content:'\00BB'; }
+  }
+  .randumb { text-align: center; display: block;
+    &:before { content:'\00BF'; }
+    &:after { content:'?'; }
+  }
+}
 article.full {
-  .episode-actions { @extend %clearfix;
-    a { position: relative;
-      &.action {
-        svg * { fill:$red; }
-        .label { background:$red; }
-      }
-      &.twitter {
-        svg * { fill:$color-twitter; }
-        .label { background:$color-twitter; }
-      }
-      &.github {
-        svg * { fill:$color-github; }
-        .label { background:$color-github; }
-      }
-      &.googleplus {
-        svg * { fill:$color-googleplus; }
-        .label { background:$color-googleplus; }
-      }
-      /*
-      &.flattr svg * { fill:$color-flattr-orange;
-        .orange { fill:$color-flattr-orange; }
-        .green { fill:$color-flattr-green; }
-        .label { background:$color-flattr-orange; }
-      }
-      */
-      &.facebook { 
-        svg * { fill:$color-facebook; }
-        .label { background:$color-facebook; }
-      }
-      &.tumblr {
-        svg * { fill:$color-tumblr; }
-        .label { background: $color-tumblr; }
-      }
-      &.reddit {
-        svg * { fill:$color-reddit; }
-        .label { background: $color-reddit; }
-      }
-      &.contribute {
-        svg * { fill:$link; }
-        .label { background:$link; }
-      }
-      &.action, &.social { transform-origin: center; transition:all 0.3s cubic-bezier(.65,.05,.36,1);
-        &:hover { transform:scale(1.3); }
-      }
-      .label { position: absolute; white-space: nowrap; font-size:0.5em; padding: 0.5em; transition:all 0.3s cubic-bezier(.65,.05,.36,1); opacity:0; top:-1.5rem; transform:translateY(100%); color:$white; pointer-events: none;
-        &:not(.go-right) { right:0.7rem; }
-        &.go-right { background:$link; left:0.7rem; }
-      }
-      &:hover { border:none;
-        .label { transform:translateY(0); opacity: 1; }
-      }
-    }
-  }
+  .episode-actions { @extend %clearfix; }
+	a { 
+		&.action * { fill:$red; }
+		&.twitter * { fill:#55acee; }
+		&.github { fill:#181616; }
+		&.googleplus { fill:#D34836; }
+		&.flattr { fill:#89b443;
+			.orange { fill:#f9ad33; }
+			.green { fill:#89b443; }
+		}
+		&.facebook { fill:#3B5998; }
+		
+		&.action, &.social { transition:all 0.5s ease; transform-origin: center;
+			svg { transform:scale(1.2); }
+			&:hover { transform:rotateY(360deg); }
+		}
+	}
 }
 
-// DESKTOP BREAKPOINT
+
+// DESKTOP REAKPOINT
 @media (min-width: $desktop-min) {
-  main { display: block; padding:20px 20px 20px 320px; height:100vh; overflow-y: auto;
+  main { display: block; padding:20px 0 20px 310px; height:100vh; overflow-y: auto;
     &.page { padding-right: 1vw; }
     &.edge-to-edge { padding: 0 0 0 300px; }
   }
   article {
     &.full { font-size:1.6vw;
-      .cover { float: right; max-width: 40%; margin-left: 2.5vw;
-        &.left { float: left; margin-right: 2.5vw; margin-left: 0; }
-      }
-      a {
-        &.action { @include flex-item(70px,auto,0,0); 
-          svg { max-width: 70px; }
-        }
-        &.social { @include flex-item(60px,auto,0,0);
-          svg { max-width: 60px; }
-        }
-      }
+      .cover { float: right; max-width: 40%; margin-left: 2.5vw; }
+			a {
+				&.action { @include flex-item(70px,auto,0,0); }
+				&.social { @include flex-item(60px,auto,0,0); }
+			}
       .episode-actions { @include flex-container; padding-top: 0.25em; clear: both; float: none;
-        .audio-holder { @include flex-item(40%); padding: 0.5em 1em; }
+        .audio-holder { @include flex-item(40%); padding-top: 0.5em; }
         audio { width:100%; }
+        .share-label { @include flex-item(4em,auto,0,0); text-align: right; padding-top: 0.5em; }
       }
     }
   }
 }
+
 
 // MOBILE BREAKPOINT
 @media (max-width: $mobile-max) {
@@ -167,14 +122,15 @@ article.full {
   article {
     &.full { font-size:4.3vw;
       .cover { width:100%; height:auto; margin-bottom: 10px; }
-      a { 
-        &.action { display: inline-block; }
-        &.social { display: block; float: right;  }
-        &.action, &.social { width:50px; height:50px; }
-      }
+			 a { 
+				&.action { display: inline-block; }
+				&.social { display: block; float: right;  }
+				&.action, &.social { width:50px; height:50px; }
+			}
       .episode-actions { padding-top: 0.25em; clear: both; float: none; margin-bottom: 3vh;
         .audio-holder { width:100%; padding-top: 1em; }
         audio { width:100%; }
+        .share-label { display: none; }
       }
     }
   }

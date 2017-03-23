@@ -1,0 +1,10 @@
+title: Livestream Feed
+pages: false
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Page Text
+    type: markdown

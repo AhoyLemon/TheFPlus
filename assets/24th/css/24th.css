@@ -1,0 +1,723 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+font,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+main,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+rp,
+rt,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video,
+xmp {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+img {
+  color: transparent;
+  font-size: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+li {
+  display: list-item;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th,
+td,
+caption {
+  font-weight: normal;
+  vertical-align: top;
+  text-align: left;
+}
+
+q {
+  quotes: none;
+}
+
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+sub,
+sup,
+small {
+  font-size: 75%;
+}
+
+sub,
+sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+svg {
+  overflow: hidden;
+}
+
+footer .box {
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: #f0f1f2;
+  color: #313131;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 105%;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul {
+  padding-left: 1.5em;
+}
+
+ul li {
+  list-style-type: disc;
+}
+
+@media (min-width: 1024px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  .desktop-only {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+button, .button {
+  color: #eee;
+  background-color: #ee2a2a;
+  border: 1px solid currentColor;
+  line-height: 100%;
+  display: inline-block;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover, .button:hover {
+  background-color: #eee;
+  color: #ee2a2a;
+  box-shadow: 2px 2px 2px #313131;
+}
+
+button:active, .button:active {
+  box-shadow: inset 2px 2px 2px #313131;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  line-height: 100%;
+  background-image: url(../img/ep_naturalblack.png);
+  color: #eee;
+  font-family: "Sumana", serif;
+  padding-left: 8px;
+  padding-right: 8px;
+  /*
+  
+  .hour-box {  text-align: center;
+    .label { font-size:32px; }
+    .number { font-size:150px; line-height: 40px; font-weight: $bold; }
+  }
+  .current-box { margin-top: 70px; line-height: 120%;
+    .doc { font-size:120%; font-weight: $bold; margin-bottom: 0.5em; }
+    .readers {
+      span { display: block; font-weight: $bold; }
+    }
+    
+  }
+  */
+}
+
+aside .iframe-holder {
+  height: calc(100% - 60px);
+  position: relative;
+}
+
+aside .chat {
+  width: 100%;
+  height: 100%;
+}
+
+aside .dismiss-holder {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 1em;
+}
+
+aside .dismiss-holder a {
+  font-size: 0.8em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+aside .dismiss-holder a:hover {
+  text-decoration: underline;
+}
+
+aside .donation-vertical {
+  padding-top: 3em;
+}
+
+aside .logo-box {
+  margin-bottom: 2em;
+}
+
+aside .donation-total-box {
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+aside .donation-total-box .dollars {
+  font-size: 220%;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+aside .recent-donation {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+aside .recent-donation .label {
+  text-transform: lowercase;
+  font-size: 80%;
+  font-weight: 700;
+}
+
+aside .recent-donation .donation {
+  margin-top: 0.5em;
+}
+
+aside .recent-donation .donation span, aside .recent-donation .donation time {
+  font-weight: 700;
+}
+
+aside .recent-donation blockquote {
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+aside .recent-donation blockquote:before {
+  content: '“';
+}
+
+aside .recent-donation blockquote:after {
+  content: '”';
+}
+
+aside .donation-button {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  text-align: center;
+}
+
+aside .donation-button a {
+  padding: 1em 2em;
+}
+
+footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 260px;
+  height: 260px;
+  z-index: 4;
+  background-color: #f2eece;
+  color: #313131;
+  font-family: "Sumana", serif;
+  line-height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: strech;
+  -ms-flex-align: strech;
+  align-items: strech;
+}
+
+footer a {
+  color: #ee2a2a;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .logo-box {
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  order: 3;
+}
+
+footer .grid {
+  flex-basis: calc(100% - 200px);
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  order: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: strech;
+  -ms-flex-align: strech;
+  align-items: strech;
+  color: #313131;
+}
+
+footer .grid .box {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+footer .hour-box {
+  text-align: center;
+  font-size: 130%;
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+}
+
+footer .hour-box .number {
+  font-size: 380%;
+  font-weight: 700;
+  line-height: 80%;
+}
+
+footer .doc-box {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+}
+
+footer .doc-box .doc {
+  font-weight: 700;
+  font-size: 120%;
+}
+
+footer .label {
+  font-size: 80%;
+}
+
+footer .name {
+  font-size: 120%;
+  font-weight: 700;
+}
+
+footer .artist, footer .provider {
+  margin-top: 1em;
+}
+
+footer .participant-box {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+}
+
+footer .participant-box .readers span {
+  display: inline-block;
+  margin-right: 0.05em;
+}
+
+footer .participant-box .readers span:before, footer .participant-box .readers span:after {
+  font-size: 80%;
+  font-weight: 300;
+}
+
+footer .participant-box .readers span:after {
+  content: ", ";
+  font-weight: 300;
+}
+
+footer .participant-box .readers span:last-child:before {
+  content: " and ";
+}
+
+footer .participant-box .readers span:last-child:after {
+  content: '';
+}
+
+footer .donation-total-box {
+  flex-basis: 30%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  text-align: center;
+}
+
+footer .donation-total-box .dollars {
+  font-size: 220%;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+footer .recent-donation {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+}
+
+footer .recent-donation .donation {
+  margin-top: 0.5em;
+}
+
+footer .recent-donation .donation span, footer .recent-donation .donation time {
+  font-weight: 700;
+}
+
+footer .recent-donation blockquote {
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+footer .recent-donation blockquote:before {
+  content: '“';
+}
+
+footer .recent-donation blockquote:after {
+  content: '”';
+}
+
+footer .donation-button {
+  flex-basis: 35%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
+  text-align: center;
+}
+
+footer .donation-button .button {
+  padding: 1em 2em;
+}
+
+footer.shorter {
+  height: 140px;
+}
+
+footer .versus-stripe {
+  position: absolute;
+  top: -90px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+footer .versus-stripe * {
+  pointer-events: none;
+}
+
+footer .versus-stripe .red, footer .versus-stripe .blue {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 1px solid #313131;
+}
+
+footer .versus-stripe .red .label, footer .versus-stripe .blue .label {
+  font-size: 1.35em;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+footer .versus-stripe .red .amount, footer .versus-stripe .blue .amount {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+footer .versus-stripe .vs {
+  display: inline-block;
+  background: #eee;
+  font-size: 3.2em;
+  box-shadow: inset 0 2px 2px #313131;
+}
+
+footer .versus-stripe .blue {
+  background: #4885ed;
+  color: #eee;
+  text-align: right;
+  margin-right: -2.3rem;
+  padding-right: 2.5em;
+  transform-origin: center right;
+}
+
+footer .versus-stripe .vs {
+  color: #313131;
+  background: #eee;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #313131;
+  line-height: 100%;
+  position: relative;
+  z-index: 6;
+  transform: translateY(-10%);
+}
+
+footer .versus-stripe .vs span {
+  display: inline-block;
+  transform: translateY(-5%);
+}
+
+footer .versus-stripe .red {
+  background: #ee2a2a;
+  color: #eee;
+  text-align: left;
+  margin-left: -2.3rem;
+  padding-left: 2.5em;
+  transform-origin: center left;
+}
+
+footer .versus-stripe .red {
+  box-shadow: 0 0 4px #313131;
+}
+
+footer .versus-stripe .bigger {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px #313131;
+}
+
+main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 260px;
+  left: 260px;
+}
+
+main iframe {
+  width: 100%;
+  height: 100%;
+}
+
+main.taller {
+  bottom: 140px;
+}

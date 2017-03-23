@@ -1,0 +1,78 @@
+footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%;
+  //iframe { width:100%; height: $offset; }
+  .box { @extend %vertical-center; }
+  a { color:$red; text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
+  @include flex-container();
+  .logo-box { @include flex-item(200px); order:3 }
+  
+  
+  .grid { @include flex-item(calc(100% - 200px)); order: 1; @include flex-container(); color:$black;
+    .box { padding-left: 1em; padding-right: 1em;  }
+  }
+  
+  .hour-box { text-align: center; font-size:130%; @include flex-item(30%);
+    .number { font-size:380%; font-weight: $bold; line-height: 80%; }
+  }
+  .doc-box { @include flex-item(35%);
+    .doc { font-weight: $bold; font-size:120%;}
+  }
+  
+  .label { font-size:80%; }
+  .name  { font-size:120%; font-weight: $bold; }
+  
+  .artist, .provider { margin-top: 1em; }
+  
+  .participant-box { @include flex-item(35%);
+    .readers {
+      span { display: inline-block; margin-right:0.05em;
+        &:before, &:after { font-size:80%; font-weight: $light; }
+        &:after { content:", "; font-weight: $light;  }
+        &:last-child { 
+          &:before { content: " and "}
+          &:after { content:'' }
+        }
+      }
+    }
+  }
+  .donation-total-box { @include flex-item(30%); text-align: center;
+    .dollars { font-size:220%; font-weight: $bold; line-height: 120%; }
+  }
+  .recent-donation { @include flex-item(35%);
+    .donation { margin-top: 0.5em;
+      span, time { font-weight: $bold; }
+    }
+    blockquote { font-style:italic;  margin-top: 0.5em; margin-left: 0.5em;
+      &:before { content:'“'; }
+      &:after { content:'”'; }
+    }
+  }
+  
+  .donation-button { @include flex-item(35%); text-align: center; 
+    .button { padding:1em 2em;}
+  }
+ 
+  
+  &.shorter { height: 140px; }
+  
+  
+  
+  .versus-stripe { position:absolute; top:-90px; text-align: center; width: 100%; z-index: 10; pointer-events: none;
+    * { pointer-events: none; }
+    .red, .blue { display: inline-block; padding: 0.75em 1.5em; border:1px solid $black;
+      .label { font-size:1.35em; line-height: 120%; text-transform: uppercase; }
+      .amount { font-size:2em; font-weight: $bold; line-height: 120%; }
+    }
+    .vs { display: inline-block; background:$white; font-size:3.2em; box-shadow: inset 0 2px 2px $black; }
+    .blue {  background:$blue; color:$white; text-align: right; margin-right: -2.3rem; padding-right:2.5em; transform-origin:center right; }
+    .vs { color:$black; background:$white; border-radius: 50%; height: 4rem; width: 4rem; border:1px solid $black; line-height: 100%; position:relative; z-index: 6; transform:translateY(-10%);
+      span { display: inline-block; transform: translateY(-5%); }
+    }
+    .red {  background:$red; color:$white; text-align: left; margin-left: -2.3rem; padding-left:2.5em; transform-origin:center left; }
+    
+    .red { box-shadow: 0 0 4px $black; }
+    .bigger { transform: scale(1.2); box-shadow: 0 0 4px $black; }
+  }
+  
+}

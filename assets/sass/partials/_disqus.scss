@@ -3,13 +3,15 @@
 }
 
 #CommentsPage { font-size:16px; padding-left: 0;
-  li { list-style-type: none; margin-bottom: 1em; }
-  h5 { margin: 0; padding: 0.1em 0.7em 0.3em 0.7em;
+  li { list-style-type: none; }
+  h5 { margin: 0; padding: 0.1em 0.7em 0 0.7em;
     a { font-weight: 100; text-transform: uppercase;
-      &:hover { text-decoration: none; border-bottom: 0.05em solid $red; }
+      &:hover { text-decoration: none; font-weight: 400; }
     }
   }
-  blockquote { margin: 0;
+  blockquote { margin: 0; quotes: "\201C" "\201D" "\201C" "\201D"; position:relative; padding: 0.5em 2em 0.5em 10px;
+    &:before { float: left; padding-top: 0.35em; margin-right: 0.05em; }
+    p:last-child { margin-bottom: 0; }
     .score { position: absolute; bottom:5px; right:5px; font-weight: $normal; font-size:1.25em;
       &.positive { color:$green;
         &:before { content:'+'; }
@@ -18,7 +20,6 @@
     }
   }
   cite { display: block; font-size: 0.85em; text-align: right; }
-  .thumbnail { max-width: 120px; }
 }
 
 @media (min-width:1200px) {

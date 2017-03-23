@@ -5,6 +5,8 @@ if (path.indexOf('com_content') > -1) {
   var pathArray = path.split('&');
   var n= pathArray[2].split('=');
   var rid = n[1];
+  
+  
   if (rid == 29) {
     var reader = path.split('#');
     var r = reader[1];

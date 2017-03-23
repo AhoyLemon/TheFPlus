@@ -1,47 +1,43 @@
-@keyframes draw-focus {
-  0%   { transform:translateY(0); }
-  64%  { transform:translateY(0); }
-  67%  { transform:translateY(-6px); }
-  68%  { transform:translateY(-6px); }
-  71%  { transform:translateY(2px); }
-  72%  { transform:translateY(0); }
-  100% { transform:translateY(0); }
-}
-
 .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: 300px; background-color: $black; color: $white; overflow-x: hidden; overflow-y: auto; z-index:$z-sidebar; font-family:$sans-serif; padding-left: 1em; padding-right:1em; 
   > * { display: block; width: 100%; }
-  > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none; }
+  > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none;
+    &.colophon { font-size:1rem; padding-top: 2em; color:yellow; }
+  }
   h4 { font-size: 1.1rem; color: $white; text-transform: uppercase; margin-top: 1em; }
   .main-link { font-size: 1.6rem; padding: 0.25em 0; font-weight: 100; color: $white; text-decoration: none; display: block; border: none;
     &:hover { background-color: $white; color: $black; }
     &:active {background-color: $red; }
-    &.draw-focus { transform-origin: center left; animation-name:draw-focus; animation-duration:10s; animation-iteration-count: infinite; animation-timing-function: ease; }
   }
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
-    a { width: 56px; height:56px; margin-right: 6px; display: block; float: left; @include transition(all, 0.5s);
+    a { width: 56px; height:56px; margin-right: 6px; display: block; float: left;
       &:last-child { margin-right: 0; }
       .inside { @include transition(all, 0.5s); transform-origin: 50% 50%; }
       svg {
         .bird { fill: #55acee; }
         .snake { fill: #4eb85d; }
         .rss { fill: #ea832f; }
-        .circle { fill:$white; }
-        .orange { fill:#fabb32; }
-        .green { fill:#a9c54f; }
-        .youtube { fill:#e52d27; }
+				.circle { fill:$white; }
+				.orange { fill:#fabb32; }
+      .green { fill:#a9c54f; }
       }
-      &:hover { @include rotate(360deg); }
+      &:hover .inside { @include rotate(360deg); }
       &:active .inside { @include scale(0.65); }
-      &:hover {
-        &.twitter .circle { fill:#55acee; }
-        &.ballpit .circle { fill:#4eb85d; }
-        &.flattr .circle { fill:#fabb32; }
-        &.rss .circle { fill:#ea832f; }
-        &.youtube .circle { fill:#e52d27; }
-      }
+			&:hover {
+				&.twitter .circle { fill:#55acee; }
+				&.ballpit .circle { fill:#4eb85d; }
+				&.flattr .circle { fill:#fabb32; }
+				&.rss .circle { fill:#ea832f; }
+			}
     }
   }
 }
+
+/*
+.sidebar .circles a.twitter:hover svg circle { stroke:#55acee; }
+.sidebar .circles a.ballpit:hover svg circle { stroke:#4eb85d; }
+.sidebar .circles a.flattr:hover svg circle { stroke:#fabb32; }
+.sidebar .circles a.rss:hover svg circle { stroke:#ea832f; }
+**/
 
 ul.tag-cloud { padding-left: 0; clear: both; float: none;
   li { display: inline;font-size: 0.75rem; }
@@ -55,48 +51,41 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 }
 
 .flapjax { @include transition(all, 0.82s);
-  svg * { fill:$red; }
+	svg * { fill:$red; }
   &.active { transform: rotateY(180deg) }
 }
 
 @media (min-width: $desktop-min) {
   .mobile-menu { display: none; }
   a.flapjax { display: none; }
-  .home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
-    &:hover { background-color:$white;
-      .st0 { fill:#212221; }
-    }
-    &:active { background-color:$red;
-      .st1 { fill:#212221; }
-    }
-  }
+	.home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
+		&:hover { background-color:$white;
+			.st0 { fill:#212221; }
+		}
+		&:active { background-color:$red;
+			.st1 { fill:#212221; }
+		}
+	}
 }
 
 @media (max-width: $mobile-max) {
-  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; padding-left:0.5em; height:$mobile-top; background: $black;
-    .flapjax { display: block; width:60px; height: 60px; float: left; margin-right:0.5em;
+  .mobile-menu { display: block; position: absolute; top:0; left:0; right:0; height:56px; background: $black;
+    .flapjax { display: block; width:60px; height: 60px; float: left; 
       svg { height:100%; width:100%; }
     }
-    .mobile-logo { display: block; height: 56px; padding-top: 4px; padding-bottom: 4px; padding-right: 15px; float: right; }
+    .mobile-logo { display: block; height: 56px; float: right; padding-top: 4px; padding-bottom: 4px; padding-right: 15px;}
   }
-  
-  .home-link { display: block; 
-    &:hover, &:active {
-      svg { background:$white; }
-      .st0 { fill:#212221; }
-    }
-    header & { max-width: 200px; float: right; }
-    .sidebar & { display: inline-block; max-width: 170px; }
-  }
-  .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px; top:$mobile-top;
+	.home-link { display: block;
+		&:hover, &:active {
+			svg { background:$white; }
+			.st0 { fill:#212221; }
+		}
+	}
+  .sidebar { @include transition(); @include translateX(-105%); width: 100%; max-width: 330px;
     &.visible { @include translateX(0); }
     .desktop-logo { height: 60px; }
-    /**
     .flapjax { width: 70px; height: 60px; float: right; padding: 0; margin-top: 0.25em; color:$red;
       svg { height: 100%; width:100%; }
     }
-    **/
-    .flapjax { display: none; }
-    .home-link { display: none; }
   }
 }
