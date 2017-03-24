@@ -1,4 +1,4 @@
-title: Livestream
+teftitle: Livestream
 icon: twitch
 pages:
   template: livestream-feed
@@ -38,6 +38,26 @@ fields:
     icon: paint-brush
     type: text
     width: 1/3
+  goal_headline:
+    label: Donation Goal
+    type: headline
+  goal_active:
+    label: Goal Active?
+    type: toggle
+    default: false
+    width: 1/4
+  goal_title:
+    label: Goal Title
+    type: text
+    width: 1/4
+  goal_max:
+    label: Goal Amount
+    type: number
+    width: 1/4
+  goal_min:
+    label: Goal Start Amount
+    type: number
+    width: 1/4
   battle_headline:
     label: Battle
     type: headline

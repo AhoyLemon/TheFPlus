@@ -31,11 +31,11 @@
           <div class="amount">$333</div>
         </div>
       </div>
-      <?php if ($page->livestream_logo() != "") { ?>
-        <div class="logo-box box">
-          <div class="inside"><img src="<?php echo $page->url(); ?>/<?php echo $page->livestream_logo(); ?>" class="trashfire"></div>
-        </div>
-      <?php } ?>
+      
+      
+      <div class="logo-box box<?php if ($page->livestream_logo() == "") { echo ' hidden'; } ?>">
+        <div class="inside"><img src="<?php echo $page->url(); ?>/<?php echo $page->livestream_logo(); ?>" class="trashfire"></div>
+      </div>
       <div id="FooterGrid" class="grid">
         <div class="hour-box box">
           <div class="inside">
@@ -107,9 +107,29 @@
       </div>
     </footer>
     <main>
-      <?php /*
+      
+      <div class="donation-counter<?php if ($page->goal_active() != "true") { echo " hidden"; } ?>">
+        
+        <?php 
+          //$maff = ((int)(string)$page->gtest() / 600);
+          $gmin = (int)(string)$page->goal_min();
+          $gmax = (int)(string)$page->goal_max();
+          $gdiff = ((250 - $gmin) / ($gmax - $gmin) * 100);
+          //$goal_pct = (441.56 - $page->goal_min()) / ($page->goal_min() - $page->goal_min());
+        ?>
+        
+        <div class="donation-goal" data-holds="goal_title"><?php echo $page->goal_title(); ?></div>
+        <div class="donation-price" data-holds="goal_max">$<?php echo number_format($gmax); ?></div>
+        <div class="donation-meter">
+          <div class="heat" style="height: <?php echo $gdiff; ?>%;">
+            <span class="current-total" data-holds="currentTotal">$250.50</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- iFrame -->
       <iframe src="<?php echo $page->iframe_url(); ?>" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
-      */ ?>
+      
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/24th/js/moment.js"></script>
@@ -121,8 +141,11 @@
       <?php } ?>
 
       setInterval(function(){ 
-        refreshInfo();
-      }, 3000);
+        getDonations();
+        setTimeout(function(){
+          refreshInfo();
+        }, 2000);
+      }, 10000);
 
     </script>
   </body>
