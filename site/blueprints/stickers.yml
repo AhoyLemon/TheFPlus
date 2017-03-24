@@ -131,7 +131,7 @@ fields:
         width: 1/2
   splc_desc:
     label: SPLC Description
-    type: Markdown
+    type: markdown
   photos:
     label: Photos
     type: structure
