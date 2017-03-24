@@ -1,6 +1,11 @@
 // jshint -W117
 // jshint -W041
 
+
+
+var currentTotal = 0;
+
+
 $('a[data-toggle="chat"]').click(function() {
   var t = $(this).attr('data-chat');
   if (t == "yes") { 
@@ -41,11 +46,6 @@ $('body').on('click', '.button', function() {
   return false;
 });
 
-
-
-var donations;
-var ajaxText;
-
 function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -62,6 +62,7 @@ function getDonations() {
       //alert(response[0].amount);
       $('.recent-donation .name').text(response[0].name);
       $('.recent-donation .amount').text('$'+response[0].amount);
+      
       $('.recent-donation time').text(moment(response[0].created_at).local().format('LT'));
       if (response[0].message) {
         $('.recent-donation blockquote').text(response[0].message).show();
@@ -79,6 +80,8 @@ function getDonations() {
 
     success: function(response) {
       console.log(response);
+      
+      currentTotal = parseFloat(response);
       $('.donation-total-box .dollars').text('$'+numberWithCommas(response));
     }	
   });
@@ -181,7 +184,42 @@ function refreshInfo() {
         $('[data-holds="artist name"]').text(info.current_artist);
         $('.artist').removeClass('hidden');
       }
-       
+      
+      
+      
+      // DONATION GOAL METER...
+      if (info.goal_active == "true") {
+        
+        // set goal title
+        $('[data-holds="goal_title"]').text(info.goal_title);
+        
+        // set goal max
+        $('[data-holds="goal_max"]').text('$'+numberWithCommas(info.goal_max));
+        
+        // show current total
+        $('[data-holds="currentTotal"]').text('$'+numberWithCommas(currentTotal));
+        
+        // heat math
+        var n = parseInt(info.goal_min);
+        var x = parseInt(info.goal_max);
+        
+        var pct = ((currentTotal - n) / (x - n) * 100);
+        $('.heat').css('height', pct+'%');
+        
+        // show the heat div
+        $('.donation-counter').removeClass('hidden');
+        
+      } else {
+        // show the heat div
+        $('.donation-counter').addClass('hidden');
+      }
+      
+      
+      
+      
+      
+      
+      
     }
     
     

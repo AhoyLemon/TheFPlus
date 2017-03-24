@@ -18,7 +18,11 @@ $json[] = array(
   'current_readers'      => (string)$data->current_readers(),
   'battle_active'        => (string)$data->battle_active(),
   'battle_query_a'       => (string)$data->battle_query_a(),
-  'battle_query_b'       => (string)$data->battle_query_b()
+  'battle_query_b'       => (string)$data->battle_query_b(),
+  'goal_active'          => (string)$data->goal_active(),
+  'goal_title'           => (string)$data->goal_title(),
+  'goal_max'             => (string)$data->goal_max(),
+  'goal_min'             => (string)$data->goal_min()
 );
 
 echo json_encode($json);

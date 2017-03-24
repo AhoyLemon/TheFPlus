@@ -711,6 +711,7 @@ main {
   right: 0;
   bottom: 260px;
   left: 260px;
+  font-family: "Sumana", serif;
 }
 
 main iframe {
@@ -720,4 +721,44 @@ main iframe {
 
 main.taller {
   bottom: 140px;
+}
+
+.donation-counter {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  text-align: right;
+  line-height: 1.2em;
+  color: #eee;
+  text-shadow: -1px -1px 1px #313131;
+}
+
+.donation-counter .donation-price {
+  font-size: 200%;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  line-height: 1.2em;
+}
+
+.donation-counter .donation-meter {
+  height: 50vh;
+  border: solid 2px #313131;
+  position: relative;
+  width: 4.5em;
+  float: right;
+}
+
+.donation-counter .donation-meter .heat {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(238, 42, 42, 0.85);
+  width: 100%;
+  text-align: left;
+  transition: all 3s ease;
+}
+
+.donation-counter .donation-meter .heat span {
+  color: #eee;
+  text-shadow: 1px 1px 0 #313131, -1px -1px 0 #313131;
+  font-weight: 700;
 }
