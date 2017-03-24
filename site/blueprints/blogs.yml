@@ -2,6 +2,7 @@ title: Blog Posts
 pages:
   template:
     - blog
+  sort: flip
 files: true
 fields:
   title:

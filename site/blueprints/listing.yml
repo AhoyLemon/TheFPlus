@@ -4,6 +4,7 @@ pages:
     - episode
     - other-project
   sort: flip
+  num: date
 files: false
 fields:
   title:

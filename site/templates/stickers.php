@@ -144,6 +144,7 @@
       
       <div class="splc-description">
         <?php echo $page->splc_desc()->kirbytext() ?>
+        <p>Sales of these stickers have contributed <strong>$<?php echo $page->splc_total(); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
       </div>
 
       <div class="sticker-photo-grid">

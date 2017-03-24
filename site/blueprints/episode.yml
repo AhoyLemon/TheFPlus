@@ -3,6 +3,7 @@ icon: play-circle-o
 pages: false
 files: true
 fields:
+  prevnext: prevnext
   title:
     label: Title
     type:  text
@@ -74,10 +75,10 @@ fields:
     icon: music
   tags:
     label: Episode Tags
-    lowercase:true
+    lowercase: true
     type: tags
   bonus_content:
     label: Bonus Content
     type: markdown
-    icon:code
+    icon: code
     help: Optional, anything here will be under the Additional Content header
