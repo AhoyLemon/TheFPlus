@@ -5,7 +5,6 @@
 
 var currentTotal = 0;
 
-
 $('a[data-toggle="chat"]').click(function() {
   var t = $(this).attr('data-chat');
   if (t == "yes") { 
@@ -82,7 +81,7 @@ function getDonations() {
       console.log(response);
       
       currentTotal = parseFloat(response);
-      $('.donation-total-box .dollars').text('$'+numberWithCommas(response));
+      $('.donation-total-box .dollars').text('$'+numberWithCommas(currentTotal));
     }	
   });
 
@@ -105,7 +104,7 @@ function getBattle(qa, qb) {
       $('.versus-stripe .red .label').text(response[1].name);
       $('.versus-stripe .red .amount').text('$'+numberWithCommas(response[1].amount));
       
-      $('.versus-stripe').show();
+      $('.versus-stripe').removeClass('hidden');
       
       if (parseFloat(response[0].amount) > parseFloat(response[1].amount)) {
         $('.versus-stripe .blue').addClass('bigger');
@@ -204,25 +203,41 @@ function refreshInfo() {
         var x = parseInt(info.goal_max);
         
         var pct = ((currentTotal - n) / (x - n) * 100);
-        $('.heat').css('height', pct+'%');
+        
+        if (pct >= 100) {
+          $('.heat').css('height', '100%');
+          $('.donation-goal').addClass('goal-met');
+        } else {
+          $('.heat').css('height', pct+'%');
+        }
+        
+        
         
         // show the heat div
-        $('.donation-counter').removeClass('hidden');
+        $('.donation-goal').removeClass('hidden');
         
       } else {
         // show the heat div
-        $('.donation-counter').addClass('hidden');
+        $('.donation-goal').addClass('hidden');
       }
       
       
+      // If there's a current battle, run getBattle() with the values.
+      if (info.battle_active == "true") {
+        getBattle(info.battle_query_a, info.battle_query_b);
+      } else {
+        $('.versus-stripe').addClass('hidden');
+      }
       
-      
-      
-      
+      // Text overlay? Sure, if you like.
+      if (info.overlay_active == "true") {
+        $('[data-holds="overlay_text"]').html(info.overlay_text);
+        $('.text-overlay').removeClass('hidden');
+      } else {
+        $('.text-overlay').addClass('hidden');
+      }
       
     }
-    
-    
     
   });
   

@@ -65,15 +65,42 @@ fields:
     label: Battle Active?
     type: toggle
     default: false
-    width: 1/3
+    width: 1/4
   battle_query_a:
     label: Query for First Choice
     type: text
-    width: 1/3
+    width: 1/4
   battle_query_b:
     label: Query for Second Choice
     type: text
-    width: 1/3
+    width: 1/4
+  counter_headline:
+    label: On Screen Counter
+    type: headline
+  counter_active:
+    label: Counter Active?
+    type: toggle
+    default: false
+    width: 1/4
+  counter_label:
+    label: Counter Label
+    type: text
+    width: 1/2
+  counter_number:
+    label: Counter Number
+    type: text
+    width: 1/4
+  overlay_headline:
+    label: Overlay
+    type: headline
+  overlay_active:
+    label: Overlay Active?
+    type: toggle
+    width: 1/4
+  overlay_text:
+    label: Start Writing
+    type: markdown
+    width: 3/4
   misc_headline:
     label: Misc
     type: headline

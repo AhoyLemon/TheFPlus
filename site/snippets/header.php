@@ -56,6 +56,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
 	<?php } ?>
   <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
   <!-- OpenGraph  -->
+  <meta property="og:site_name" content="<?php echo $site->title(); ?>" />
   <meta property="og:title" content="<?php echo $page->title(); ?>">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo $page->url() ;?>">

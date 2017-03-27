@@ -1,17 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title><?php echo $site->title(); ?> | <?php echo $page->title(); ?></title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sumana:400,700">
+    
+    <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+    
+    <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-title" content="The F Plus">
+    <meta name="application-name" content="The F Plus">
+    <meta name="msapplication-TileColor" content="#c0282d">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#c0282d">
+    
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@TheFPlus" />
+    <meta name="twitter:creator" content="@AhoyLemon">
+    <meta name="twitter:title" content="<?php echo $page->title(); ?>" />
+    <meta name="twitter:description" content="<?php echo excerpt($page->text()->xml(), 180) ?>" />
+    <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $page->livestream_logo(); ?>" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="<?php echo $page->title(); ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo $page->url() ;?>">
+    <meta property="og:image" content="<?php echo $page->url(); ?>/<?php echo $page->livestream_logo(); ?>" />
+    <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
+    <meta property="og:email" content="lemon@thefpl.us">
+    
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/assets/24th/css/24th.css">
+    
   </head>
   <body>
     <aside>
       <div id="ChatHolder" class="iframe-holder">
-        <?php /*
-        <iframe src="http://www.twitch.tv/TwitchPresents/chat" frameborder="0" scrolling="no" class="chat"></iframe>
-        */ ?>
+        <iframe src="https://www.twitch.tv/TheFPlus/chat" frameborder="0" scrolling="no" class="chat"></iframe>
       </div>
       <div id="DonationVertical" style="display:none;" class="donation-vertical"></div>
       <div class="dismiss-holder"><a data-toggle="chat" data-chat="yes">dismiss chat</a></div>
@@ -20,28 +61,18 @@
       <?php $streamStart = new DateTime('2017-03-23T11:25CDT'); ?>
       <?php $thisIsNow = new DateTime("now"); ?>
       <?php $interval = $streamStart->diff($thisIsNow); ?>
-      <div style="display:none;" class="versus-stripe">
-        <div class="blue">
-          <div class="label">BLUE</div>
-          <div class="amount">$666</div>
-        </div>
-        <div class="vs"><span>vs</span></div>
-        <div class="red">
-          <div class="label">RED</div>
-          <div class="amount">$333</div>
-        </div>
-      </div>
       
-      
+      <!-- STREAM LOGO -->
       <div class="logo-box box<?php if ($page->livestream_logo() == "") { echo ' hidden'; } ?>">
         <div class="inside"><img src="<?php echo $page->url(); ?>/<?php echo $page->livestream_logo(); ?>" class="trashfire"></div>
       </div>
+      
       <div id="FooterGrid" class="grid">
         <div class="hour-box box">
           <div class="inside">
             <div class="label">This is hour</div>
             <div class="number" data-holds="current hour">
-              <?php /* echo $interval->format('%H%'); */ ?>
+              <?php echo $interval->format('%H%'); ?>
             </div>
           </div>
         </div>
@@ -62,7 +93,7 @@
             <div class="provider<?php if ($page->current_doc_provider() == "") { echo " hidden"; } ?>">
               <div class="label">provided by</div>
               <div class="name" data-holds="provider">
-                <?php /* echo $page->current_doc_provider(); */ ?>
+                <?php echo $page->current_doc_provider(); ?>
               </div>
             </div>
           </div>
@@ -81,7 +112,7 @@
             <div class="artist<?php if ($page->current_artist() == "") { echo " hidden"; } ?>">
               <div class="label">Your Artist:</div>
               <div class="name" data-holds="artist name">
-                <?php /* echo $page->current_artist(); */ ?>
+                <?php echo $page->current_artist(); ?>
               </div>
             </div>
           </div>
@@ -95,7 +126,11 @@
         <div class="recent-donation box">
           <div class="inside">
             <div class="label">Last Donation:</div>
-            <div class="donation last-donation"><span class="name"></span> gave <span class="amount"></span> at 
+            <div class="donation last-donation">
+              <span class="name"></span> 
+              gave 
+              <span class="amount"></span> 
+              at 
               <time></time>
             </div>
             <blockquote></blockquote>
@@ -108,21 +143,44 @@
     </footer>
     <main>
       
-      <div class="donation-counter<?php if ($page->goal_active() != "true") { echo " hidden"; } ?>">
+      <!-- OVERLAY -->
+      <div class="text-overlay<?php if ($page->overlay_active() != "true") { echo " hidden"; } ?>">
+        <div class="inner" data-holds="overlay_text">
+          <?php echo $page->overlay_text()->kirbytext(); ?>
+        </div>
+      </div>
+      
+      <!-- BATTLE -->
+      <div class="versus-stripe hidden">
+        <div class="blue">
+          <div class="label"></div>
+          <div class="amount"></div>
+        </div>
+        <div class="vs"><span>vs</span></div>
+        <div class="red">
+          <div class="label"></div>
+          <div class="amount"></div>
+        </div>
+      </div>
+      
+      <!-- BUILD YOUR OWN COUNTER -->
+      
+      <div class="osd-counter<?php if ($page->counter_active() != "true") { echo " hidden"; } ?>">
+        <div class="inside">
+          <div class="label"><?php echo $page->counter_label(); ?></div>
+          <div class="count"><?php echo $page->counter_number(); ?></div>
+        </div>
+      </div>
+      
+      
+      <!-- DONATION GOAL -->
+      <div class="donation-goal hidden">
         
-        <?php 
-          //$maff = ((int)(string)$page->gtest() / 600);
-          $gmin = (int)(string)$page->goal_min();
-          $gmax = (int)(string)$page->goal_max();
-          $gdiff = ((250 - $gmin) / ($gmax - $gmin) * 100);
-          //$goal_pct = (441.56 - $page->goal_min()) / ($page->goal_min() - $page->goal_min());
-        ?>
-        
-        <div class="donation-goal" data-holds="goal_title"><?php echo $page->goal_title(); ?></div>
-        <div class="donation-price" data-holds="goal_max">$<?php echo number_format($gmax); ?></div>
+        <div class="goal-title" data-holds="goal_title"></div>
+        <div class="donation-price" data-holds="goal_max"></div>
         <div class="donation-meter">
-          <div class="heat" style="height: <?php echo $gdiff; ?>%;">
-            <span class="current-total" data-holds="currentTotal">$250.50</span>
+          <div class="heat" style="height: 0">
+            <span class="current-total" data-holds="currentTotal"></span>
           </div>
         </div>
       </div>
@@ -135,10 +193,6 @@
     <script src="/assets/24th/js/moment.js"></script>
     <script src="/assets/24th/js/24th.js"></script>
     <script>
-
-      <?php if ($page->battle_active() == "true" && $page->battle_query_a() != "" && $page->battle_query_b() != "") { ?>
-        getBattle('<?php echo $page->battle_query_a(); ?>', '<?php echo $page->battle_query_b(); ?>');
-      <?php } ?>
 
       setInterval(function(){ 
         getDonations();

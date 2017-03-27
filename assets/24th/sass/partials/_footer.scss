@@ -56,23 +56,4 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
   
   &.shorter { height: 140px; }
   
-  
-  
-  .versus-stripe { position:absolute; top:-90px; text-align: center; width: 100%; z-index: 10; pointer-events: none;
-    * { pointer-events: none; }
-    .red, .blue { display: inline-block; padding: 0.75em 1.5em; border:1px solid $black;
-      .label { font-size:1.35em; line-height: 120%; text-transform: uppercase; }
-      .amount { font-size:2em; font-weight: $bold; line-height: 120%; }
-    }
-    .vs { display: inline-block; background:$white; font-size:3.2em; box-shadow: inset 0 2px 2px $black; }
-    .blue {  background:$blue; color:$white; text-align: right; margin-right: -2.3rem; padding-right:2.5em; transform-origin:center right; }
-    .vs { color:$black; background:$white; border-radius: 50%; height: 4rem; width: 4rem; border:1px solid $black; line-height: 100%; position:relative; z-index: 6; transform:translateY(-10%);
-      span { display: inline-block; transform: translateY(-5%); }
-    }
-    .red {  background:$red; color:$white; text-align: left; margin-left: -2.3rem; padding-left:2.5em; transform-origin:center left; }
-    
-    .red { box-shadow: 0 0 4px $black; }
-    .bigger { transform: scale(1.2); box-shadow: 0 0 4px $black; }
-  }
-  
 }

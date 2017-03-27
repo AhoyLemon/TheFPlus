@@ -4,12 +4,48 @@ main { @include position(fixed,0,0,$offset,$offset); font-family: $font;
   &.taller { bottom:140px; }
 }
 
+.versus-stripe { @include position(absolute,null,null, 50px); text-align: center; width: 100%; z-index:$z-battle; pointer-events: none;
+  * { pointer-events: none; }
+  .red, .blue { display: inline-block; padding: 0.75em 1.5em; border:1px solid $black;
+    .label { font-size:1.35em; line-height: 120%; text-transform: uppercase; }
+    .amount { font-size:2em; font-weight: $bold; line-height: 120%; }
+  }
+  .vs { display: inline-block; background:$white; font-size:3em; box-shadow: inset 0 2px 2px $black; }
+  .blue { background:#579923; color:$white; text-align: right; margin-right: -2.3rem; padding-right:2.5em; transform-origin:center right; }
+  .vs { color:$black; background:$white; border-radius: 50%; height: 4rem; width: 4rem; border:1px solid $black; line-height: 125%; position:relative; z-index:$z-battle-vs; transform:translateY(-15%);
+    span { display: inline-block; }
+  }
+  .red {  background:#761D7F; color:$white; text-align: left; margin-left: -2.3rem; padding-left:2.5em; transform-origin:center left; }
+  .bigger { transform: scale(1.2); box-shadow: 0 0 4px $black; }
+}
 
-.donation-counter { @include position(absolute,20px,10px); text-align: right; line-height: 1.2em; color:$white; text-shadow:-1px -1px 1px $black;
+
+.donation-goal { @include position(absolute,30px,20px); text-align: right; line-height: 1.2em; color:$white; text-shadow:-1px -1px 1px $black; z-index:$z-donation-goal;
   .donation-price { font-size:200%; font-weight: $bold; margin-bottom: 0.5em; line-height: 1.2em; }
   .donation-meter { height: 50vh; border:solid 2px $black; position: relative; width: 4.5em; float: right;
-    .heat { @include position(absolute,null,null,0); background-color:rgba($red,0.85); width:100%; text-align: left; transition:all 3s ease;
+    .heat { @include position(absolute,null,null,0); background: linear-gradient(to right, rgba(#a58d0b,0.85) 0%, rgba(#FFD700,0.85) 50%, rgba(#a58d0b,0.85) 100%); width:100%; text-align: left; transition:all 5s ease;
       span { color:$white; text-shadow: 1px 1px 0 $black, -1px -1px 0 $black; font-weight: $bold; }
     }
   }
+  
+  &.goal-met {
+    .goal-title { transform-origin: center right; animation-name: throb; animation-duration: 4s; animation-iteration-count: infinite; }
+  }
+}
+
+.osd-counter { @include position(absolute,null,null,60px,20px); z-index: $z-counter; pointer-events: none; color:$white;
+  .label { line-height: 100%; text-shadow: 1px 1px 0 #000; }
+  .count { line-height: 100%; font-size:350%; font-weight: $bold; text-shadow: 3px 3px 1px #000; }
+}
+
+.text-overlay { @include position(absolute,0,0,0,0); @extend %vertical-center; z-index: $z-text-overlay; pointer-events: none;
+  .inner { background-color:rgba($black,0.65); color:$white; text-align: center; font-size:1.25em; line-height: 1.25em; 
+    a { pointer-events: all; color:$red; }
+  }
+}
+
+@keyframes throb {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(2.25); }
+    100% { transform: scale(1); }
 }
