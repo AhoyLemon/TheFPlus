@@ -22,8 +22,11 @@ $json[] = array(
   'goal_active'          => (string)$data->goal_active(),
   'goal_title'           => (string)$data->goal_title(),
   'goal_max'             => (string)$data->goal_max(),
-  'goal_min'             => (string)$data->goal_min()
+  'goal_min'             => (string)$data->goal_min(),
+  'overlay_active'       => (string)$data->overlay_active(),
+  'overlay_text'         => (string)$data->overlay_text()->kirbytext()
 );
+
 
 echo json_encode($json);
 

@@ -188,13 +188,25 @@ svg {
   overflow: hidden;
 }
 
-footer .box {
-  align-self: stretch;
-  flex-grow: 1;
-  flex-shrink: 1;
+footer .box, .text-overlay {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
@@ -305,7 +317,7 @@ aside {
   line-height: 100%;
   background-image: url(../img/ep_naturalblack.png);
   color: #eee;
-  font-family: "Sumana", serif;
+  font-family: "Bitter", serif;
   padding-left: 8px;
   padding-right: 8px;
   /*
@@ -362,10 +374,18 @@ aside .logo-box {
 }
 
 aside .donation-total-box {
-  flex-basis: 30%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
   text-align: center;
   margin-bottom: 2em;
 }
@@ -377,10 +397,18 @@ aside .donation-total-box .dollars {
 }
 
 aside .recent-donation {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
   margin-bottom: 2em;
   text-align: center;
 }
@@ -414,10 +442,18 @@ aside .recent-donation blockquote:after {
 }
 
 aside .donation-button {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
   text-align: center;
 }
 
@@ -434,20 +470,21 @@ footer {
   z-index: 4;
   background-color: #f2eece;
   color: #313131;
-  font-family: "Sumana", serif;
+  font-family: "Bitter", serif;
   line-height: 100%;
-  display: -webkit-box;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: strech;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: strech;
-  align-items: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
 }
 
 footer a {
@@ -460,31 +497,52 @@ footer a:hover {
 }
 
 footer .logo-box {
-  flex-basis: 200px;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
-  order: 3;
+  -webkit-flex-basis: 200px;
+      -ms-flex-preferred-size: 200px;
+          flex-basis: 200px;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 footer .grid {
-  flex-basis: calc(100% - 200px);
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
-  order: 1;
-  display: -webkit-box;
+  -webkit-flex-basis: calc(100% - 200px);
+      -ms-flex-preferred-size: calc(100% - 200px);
+          flex-basis: calc(100% - 200px);
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: strech;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: strech;
-  align-items: strech;
+  -webkit-align-items: strech;
+          align-items: strech;
   color: #313131;
 }
 
@@ -496,10 +554,18 @@ footer .grid .box {
 footer .hour-box {
   text-align: center;
   font-size: 130%;
-  flex-basis: 30%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
 }
 
 footer .hour-box .number {
@@ -509,10 +575,18 @@ footer .hour-box .number {
 }
 
 footer .doc-box {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
 }
 
 footer .doc-box .doc {
@@ -534,10 +608,18 @@ footer .artist, footer .provider {
 }
 
 footer .participant-box {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
 }
 
 footer .participant-box .readers span {
@@ -564,10 +646,18 @@ footer .participant-box .readers span:last-child:after {
 }
 
 footer .donation-total-box {
-  flex-basis: 30%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 30%;
+      -ms-flex-preferred-size: 30%;
+          flex-basis: 30%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
   text-align: center;
 }
 
@@ -578,10 +668,18 @@ footer .donation-total-box .dollars {
 }
 
 footer .recent-donation {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
 }
 
 footer .recent-donation .donation {
@@ -607,10 +705,18 @@ footer .recent-donation blockquote:after {
 }
 
 footer .donation-button {
-  flex-basis: 35%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  align-self: auto;
+  -webkit-flex-basis: 35%;
+      -ms-flex-preferred-size: 35%;
+          flex-basis: 35%;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+          align-self: auto;
   text-align: center;
 }
 
@@ -622,96 +728,13 @@ footer.shorter {
   height: 140px;
 }
 
-footer .versus-stripe {
-  position: absolute;
-  top: -90px;
-  text-align: center;
-  width: 100%;
-  z-index: 10;
-  pointer-events: none;
-}
-
-footer .versus-stripe * {
-  pointer-events: none;
-}
-
-footer .versus-stripe .red, footer .versus-stripe .blue {
-  display: inline-block;
-  padding: 0.75em 1.5em;
-  border: 1px solid #313131;
-}
-
-footer .versus-stripe .red .label, footer .versus-stripe .blue .label {
-  font-size: 1.35em;
-  line-height: 120%;
-  text-transform: uppercase;
-}
-
-footer .versus-stripe .red .amount, footer .versus-stripe .blue .amount {
-  font-size: 2em;
-  font-weight: 700;
-  line-height: 120%;
-}
-
-footer .versus-stripe .vs {
-  display: inline-block;
-  background: #eee;
-  font-size: 3.2em;
-  box-shadow: inset 0 2px 2px #313131;
-}
-
-footer .versus-stripe .blue {
-  background: #4885ed;
-  color: #eee;
-  text-align: right;
-  margin-right: -2.3rem;
-  padding-right: 2.5em;
-  transform-origin: center right;
-}
-
-footer .versus-stripe .vs {
-  color: #313131;
-  background: #eee;
-  border-radius: 50%;
-  height: 4rem;
-  width: 4rem;
-  border: 1px solid #313131;
-  line-height: 100%;
-  position: relative;
-  z-index: 6;
-  transform: translateY(-10%);
-}
-
-footer .versus-stripe .vs span {
-  display: inline-block;
-  transform: translateY(-5%);
-}
-
-footer .versus-stripe .red {
-  background: #ee2a2a;
-  color: #eee;
-  text-align: left;
-  margin-left: -2.3rem;
-  padding-left: 2.5em;
-  transform-origin: center left;
-}
-
-footer .versus-stripe .red {
-  box-shadow: 0 0 4px #313131;
-}
-
-footer .versus-stripe .bigger {
-  transform: scale(1.2);
-  box-shadow: 0 0 4px #313131;
-}
-
 main {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 260px;
   left: 260px;
-  font-family: "Sumana", serif;
+  font-family: "Bitter", serif;
 }
 
 main iframe {
@@ -723,24 +746,111 @@ main.taller {
   bottom: 140px;
 }
 
-.donation-counter {
+.versus-stripe {
   position: absolute;
-  top: 20px;
-  right: 10px;
+  bottom: 50px;
+  text-align: center;
+  width: 100%;
+  z-index: 12;
+  pointer-events: none;
+}
+
+.versus-stripe * {
+  pointer-events: none;
+}
+
+.versus-stripe .red, .versus-stripe .blue {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border: 1px solid #313131;
+}
+
+.versus-stripe .red .label, .versus-stripe .blue .label {
+  font-size: 1.35em;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.versus-stripe .red .amount, .versus-stripe .blue .amount {
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.versus-stripe .vs {
+  display: inline-block;
+  background: #eee;
+  font-size: 3em;
+  box-shadow: inset 0 2px 2px #313131;
+}
+
+.versus-stripe .blue {
+  background: #579923;
+  color: #eee;
+  text-align: right;
+  margin-right: -2.3rem;
+  padding-right: 2.5em;
+  -webkit-transform-origin: center right;
+      -ms-transform-origin: center right;
+          transform-origin: center right;
+}
+
+.versus-stripe .vs {
+  color: #313131;
+  background: #eee;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  border: 1px solid #313131;
+  line-height: 125%;
+  position: relative;
+  z-index: 13;
+  -webkit-transform: translateY(-15%);
+      -ms-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.versus-stripe .vs span {
+  display: inline-block;
+}
+
+.versus-stripe .red {
+  background: #761D7F;
+  color: #eee;
+  text-align: left;
+  margin-left: -2.3rem;
+  padding-left: 2.5em;
+  -webkit-transform-origin: center left;
+      -ms-transform-origin: center left;
+          transform-origin: center left;
+}
+
+.versus-stripe .bigger {
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  box-shadow: 0 0 4px #313131;
+}
+
+.donation-goal {
+  position: absolute;
+  top: 30px;
+  right: 20px;
   text-align: right;
   line-height: 1.2em;
   color: #eee;
   text-shadow: -1px -1px 1px #313131;
+  z-index: 14;
 }
 
-.donation-counter .donation-price {
+.donation-goal .donation-price {
   font-size: 200%;
   font-weight: 700;
   margin-bottom: 0.5em;
   line-height: 1.2em;
 }
 
-.donation-counter .donation-meter {
+.donation-goal .donation-meter {
   height: 50vh;
   border: solid 2px #313131;
   position: relative;
@@ -748,17 +858,105 @@ main.taller {
   float: right;
 }
 
-.donation-counter .donation-meter .heat {
+.donation-goal .donation-meter .heat {
   position: absolute;
   bottom: 0;
-  background-color: rgba(238, 42, 42, 0.85);
+  background: linear-gradient(to right, rgba(165, 141, 11, 0.85) 0%, rgba(255, 215, 0, 0.85) 50%, rgba(165, 141, 11, 0.85) 100%);
   width: 100%;
   text-align: left;
-  transition: all 3s ease;
+  transition: all 5s ease;
 }
 
-.donation-counter .donation-meter .heat span {
+.donation-goal .donation-meter .heat span {
   color: #eee;
   text-shadow: 1px 1px 0 #313131, -1px -1px 0 #313131;
   font-weight: 700;
 }
+
+.donation-goal.goal-met .goal-title {
+  -webkit-transform-origin: center right;
+      -ms-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-animation-name: throb;
+          animation-name: throb;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.osd-counter {
+  position: absolute;
+  bottom: 60px;
+  left: 20px;
+  z-index: 11;
+  pointer-events: none;
+  color: #eee;
+}
+
+.osd-counter .label {
+  line-height: 100%;
+  text-shadow: 1px 1px 0 #000;
+}
+
+.osd-counter .count {
+  line-height: 100%;
+  font-size: 350%;
+  font-weight: 700;
+  text-shadow: 3px 3px 1px #000;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.text-overlay .inner {
+  background-color: rgba(49, 49, 49, 0.65);
+  color: #eee;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.25em;
+}
+
+.text-overlay .inner a {
+  pointer-events: all;
+  color: #ee2a2a;
+}
+
+@-webkit-keyframes throb {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.25);
+            transform: scale(2.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes throb {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2.25);
+            transform: scale(2.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=24th.css.map */
