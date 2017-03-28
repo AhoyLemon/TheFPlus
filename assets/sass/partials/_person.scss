@@ -20,6 +20,7 @@
 
 .summaries {
   .person { background-color:#ffe; border:1px solid #ccc; box-shadow: 1px 1px 1px #aaa;
+    header { text-align: center; }
     .job { font-size: 1.1rem; @extend %truncate;
       &:after { content:'\00A0'; }
     }
@@ -39,7 +40,7 @@
 @media (min-width: $desktop-min) {
   .summaries {
     .person {
-      &.brief { @include flex-item(245px, stretch, 0, 0); justify-content:space-between; }
+      &.brief { @include flex-item(245px, stretch, 0, 0); max-width: 245px; justify-content:space-between; }
     }
   }
   .person.full {

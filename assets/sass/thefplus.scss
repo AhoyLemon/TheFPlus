@@ -15,6 +15,7 @@
 @import "partials/_episode";
 @import "partials/_person";
 @import "partials/_blog";
+@import "partials/_guess";
 
 //A COUPLE UTILITIES
 @import "partials/_disqus";
@@ -25,3 +26,6 @@
 @import "partials/_hopper";
 @import "partials/_stickers";
 @import "partials/_fanart";
+
+//MARATHON CTA (remove after 24th)
+@import "partials/_24th";

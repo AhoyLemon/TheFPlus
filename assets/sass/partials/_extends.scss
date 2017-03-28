@@ -11,7 +11,21 @@
   }
 }
 
-%fanart { background-color:$episode; border:1px solid #777; display: inline-block; max-width: 480px;
-  img { padding: 15px; }
+%fanart { background-color:$episode; border:1px solid #777; display: inline-block; max-width: 480px; margin-bottom: 1em; margin-right: 0.75em;
+  img { padding: 15px; max-height: 320px; }
+  video { margin: 0.50rem 0.5rem 0 0.5rem; max-height:225px; }
   figcaption { background-color:#777; color:$white; text-align: center; }
+  &:hover { background-color: lighten($yellow,15%); cursor: pointer; }
+  &.big { max-width: 100%;
+    video { max-height:none; }
+    img { max-height: none; }
+  }
+}
+
+%textlink { text-decoration: none;
+  &:hover { border-bottom: 0.05em solid $red; }
+}
+
+%center-child {
+  align-self: stretch; flex-grow: 1; flex-shrink: 1; flex-basis: auto; display: flex; flex-direction: column; justify-content: center;
 }

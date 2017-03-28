@@ -58,9 +58,12 @@
       <div class="dismiss-holder"><a data-toggle="chat" data-chat="yes">dismiss chat</a></div>
     </aside>
     <footer>
-      <?php $streamStart = new DateTime('2017-03-23T11:25CDT'); ?>
-      <?php $thisIsNow = new DateTime("now"); ?>
-      <?php $interval = $streamStart->diff($thisIsNow); ?>
+      <?php 
+        $marathonStart = new DateTime('2017-03-31T18:00CDT');
+        $marathonStartUnix = $marathonStart->getTimestamp();
+        $intervalSeconds = time() - $marathonStartUnix;
+        $interval = ceil($intervalSeconds / 3600) + 1;
+      ?>
       
       <!-- STREAM LOGO -->
       <div class="logo-box box<?php if ($page->livestream_logo() == "") { echo ' hidden'; } ?>">
@@ -72,7 +75,7 @@
           <div class="inside">
             <div class="label">This is hour</div>
             <div class="number" data-holds="current hour">
-              <?php echo $interval->format('%H%'); ?>
+              <?php echo strval($interval); ?>
             </div>
           </div>
         </div>
@@ -83,7 +86,7 @@
               <div class="name" data-holds="document name">
                 <?php if ($page->current_doc_url() != "") { ?>
                   <a href="<?php echo $page->current_doc_url(); ?>" class="doc-link">
-                    <?php echo $page->current_doc_url(); ?>
+                    <?php echo $page->current_doc(); ?>
                   </a>
                 <?php } else { ?>
                   <span><?php echo $page->current_doc(); ?></span>
@@ -123,7 +126,7 @@
             <div class="dollars"></div>
           </div>
         </div>
-        <div class="recent-donation box">
+        <div class="recent-donation box transparent">
           <div class="inside">
             <div class="label">Last Donation:</div>
             <div class="donation last-donation">
