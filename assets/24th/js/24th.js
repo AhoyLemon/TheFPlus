@@ -1,9 +1,8 @@
 // jshint -W117
 // jshint -W041
 
-
-
 var currentTotal = 0;
+var marathonStart = moment("03/31/2017 18:00 CDT");
 
 $('a[data-toggle="chat"]').click(function() {
   var t = $(this).attr('data-chat');
@@ -58,15 +57,17 @@ function getDonations() {
 
     success: function(response) {
       console.log(response);
-      //alert(response[0].amount);
-      $('.recent-donation .name').text(response[0].name);
-      $('.recent-donation .amount').text('$'+response[0].amount);
-      
-      $('.recent-donation time').text(moment(response[0].created_at).local().format('LT'));
-      if (response[0].message) {
-        $('.recent-donation blockquote').text(response[0].message).show();
-      } else {
-        $('.recent-donation blockquote').hide();
+      if (response[0]) {
+        $('.recent-donation .name').text(response[0].name);
+        $('.recent-donation .amount').text('$'+response[0].amount);
+
+        $('.recent-donation time').text(moment(response[0].created_at).local().format('LT'));
+        if (response[0].message) {
+          $('.recent-donation blockquote').text(response[0].message).show();
+        } else {
+          $('.recent-donation blockquote').hide();
+        }
+        $('.recent-donation.box').removeClass('transparent');
       }
     }	
   });
@@ -79,7 +80,6 @@ function getDonations() {
 
     success: function(response) {
       console.log(response);
-      
       currentTotal = parseFloat(response);
       $('.donation-total-box .dollars').text('$'+numberWithCommas(currentTotal));
     }	
@@ -97,7 +97,7 @@ function getBattle(qa, qb) {
          'battlestr1' : qa ,
          'battlestr2' : qb },
     success: function(response) { 
-      console.log(response);
+      //console.log(response);
       $('.versus-stripe .blue .label').text(response[0].name);
       $('.versus-stripe .blue .amount').text('$'+numberWithCommas(response[0].amount));
       
@@ -122,13 +122,14 @@ function getBattle(qa, qb) {
 function refreshInfo() {
   
   var now = moment();
-  var then = moment("03/23/2017 11:25 CDT");
-  
-  
-  var thisHour = moment.duration(now.diff(then)).hours();
+  var thisHour = Math.ceil(moment.duration(now.diff(marathonStart)).asHours()) + 1;
   //console.log(moment.duration(now.diff(then)).hours());
-  if (thisHour < 10) {
+  thisHour++;
+  if (thisHour < 10 && thisHour > -1) {
     thisHour = "0" + thisHour;
+  }
+  else if (thisHour > 24) {
+    thisHour = "Fucking done!";
   }
   //console.log(moment(d).format())
   
@@ -139,8 +140,8 @@ function refreshInfo() {
 
     success: function(response) {
       var info = response[0];
-      console.log(response);
-      
+      console.log(info);
+ 
       // setCurrentHour
       $('[data-holds="current hour"]').text(thisHour);
       
@@ -209,6 +210,7 @@ function refreshInfo() {
           $('.donation-goal').addClass('goal-met');
         } else {
           $('.heat').css('height', pct+'%');
+          $('.donation-goal').removeClass('goal-met');
         }
         
         

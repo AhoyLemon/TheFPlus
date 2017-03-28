@@ -19,7 +19,7 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
     .doc { font-weight: $bold; font-size:120%;}
   }
   
-  .label { font-size:80%; }
+  .label { font-size:80%; text-transform: lowercase; }
   .name  { font-size:120%; font-weight: $bold; }
   
   .artist, .provider { margin-top: 1em; }

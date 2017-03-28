@@ -101,6 +101,32 @@ fields:
     label: Start Writing
     type: markdown
     width: 3/4
+  teaser_headline:
+    label: Teasers
+    type: headline
+    help: This section is for the teasers that appear throughout the rest of the site.
+  teaser_active:
+    label: Show Teasers?
+    type: toggle
+    width: 1/4
+  teaser_pre:
+    label: text before count
+    type: text
+    width: 1/4
+    default: This is hour
+    placeholder: This is hour
+  teaser_post:
+    label: text after count
+    type: text
+    width: 1/4
+    default: of **24 Terrible Hours**
+    placeholder: of **24 Terrible Hours**
+  teaser_button:
+    label: Button Text
+    type: text
+    width: 1/4
+    default: Watch Now
+    placeholder: Watch Now
   misc_headline:
     label: Misc
     type: headline

@@ -1,0 +1,42 @@
+
+main {
+  .tease-livestream { @include flex-item(100%); height:calc(100vh - 25px); @extend %center-child;
+    .inner { font-size:1.45vw;
+      p { display: inline; }
+    }
+    .this-is { text-align: center; margin-bottom:0.5em;
+      span { font-weight: $bold; }
+    }
+
+    .button-holder { text-align: center; }
+    .button { background-color:$red; color:$white; text-decoration: none; display: inline-block; padding: 0.35em 1em;
+      &:hover { box-shadow: 0.1em 0.1em 0.1em $black; }
+      &:active { box-shadow: inset 0.1em 0.1em 0.1em $black; }
+    }
+  }
+}
+
+
+
+footer {
+  .tease-livestream { @include position(fixed,null,0,0,300px); background-color:$yellow; z-index: 333;
+    .inner { padding: 0.5em 1em;
+      p { display: inline; }
+    }
+    .this-is, .button-holder { display: inline-block; }
+    .this-is { margin-right: 1em; font-size:1.05rem;
+      .hour, .name { font-weight: $bold; }
+    }
+    .button { background-color:$red; color:$white; text-decoration: none; display: inline-block; padding: 0.35em 1em;
+      &:hover { box-shadow: 0.1em 0.1em 0.1em $black; }
+      &:active { box-shadow: inset 0.1em 0.1em 0.1em $black; }
+    }
+  }
+}
+
+
+@media (max-width: $mobile-max) {
+  footer {
+    .tease-livestream { left: 0; }
+  }
+}

@@ -1,0 +1,36 @@
+.guess-episodes { clear: both; @include flex-container(); justify-content: space-between;
+  header { @include flex-item(100%); @extend h2; letter-spacing: 0.1em; font-weight: $bold; text-transform: uppercase; }
+  article { margin-bottom: 1em; background-color: $also-made; color:$white;
+    // &:after { content: " "; width: 8em; border-bottom: 2px dashed #797979; display: block; margin-left: 2.2em; height: 1.5em; }
+  }
+  
+  //summary { padding-left: 2em; }
+  h3 { padding:0.5rem; margin: 0;
+    a { text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
+  }
+  summary { padding: 0.5rem; font-size:0.85em; }
+  ol { padding-left: 1em; list-style-type: decimal;
+    li { padding-left: 0.5em; }
+  }
+}
+
+// DESKTOP BREAKPOINT
+@media (min-width:1181px) {
+  .guess-episodes {
+    article {  @include flex-item(calc(33% - 0.5em), stretch, 0); }
+  }
+}
+
+@media (min-width:889px) and (max-width:1180px) {
+  .guess-episodes {
+    article { @include flex-item(calc(50% - 0.5em), stretch, 0); }
+  }
+}
+
+@media (max-width:888px) {
+  .guess-episodes {
+    article { @include flex-item(100%); }
+  }
+}

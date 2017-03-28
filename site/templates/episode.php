@@ -33,17 +33,26 @@
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
         <span itemprop="name" class="episode-title"><?php echo $page->title() ?></span>
       </h1>
-    </header>
-    
-    <?php if($page->cover() != "") { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } else if($image = $page->image()) { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } ?>
-    
-    <div class="date-wrapper">
-        
-      <span class="label">Released:</span>
+
+      <!-- FEATURED SITES -->
+      <?php if ($page->featured_site() != ""): ?>
+        <?php if ($multisite == true): ?>
+        <div class="featured-site">
+          Featured Sites: 
+          <?php foreach($fsites as $fsite): ?>
+          <span class="site"><?php echo trim($fsite) ?></span>
+          <?php endforeach ?>
+        </div>
+        <?php endif ?>
+        <?php if ($multisite == false): ?>
+        <div class="featured-site">
+          Featured Site:
+          <span class="site">
+            <?php echo trim($page->featured_site()) ?>
+          </span>
+          <?php endif ?>
+        </div>
+      <?php endif ?>
 
       <!-- DATE & TIME -->
       <time class="released" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
@@ -55,47 +64,25 @@
           <?php echo $pubtime; ?>
         </span>
       </time>
-      
-    </div>
+    </header>
     
+    <?php if($page->cover() != "") { ?>
+      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+    <?php } else if($image = $page->image()) { ?>
+      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+    <?php } ?>
 
-    
-    <div class="info-block">
-      
-      <!-- CAST LIST -->
-      <ul class="cast authors ridiculists">
-        <?php foreach($persons as $person): ?>
-          <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
-          <?php if ($site->find($mlink)) { ?>
-            <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
-          <?php } else { ?>
-            <li itemprop="actor"><?php echo $person ?></li>
-          <?php } ?>
-        <?php endforeach ?>
-      </ul>
-      
-      <!-- FEATURED SITES -->
-      <?php if ($page->featured_site() != ""): ?>
-        <?php if ($multisite == true): ?>
-        <div class="featured-site multiple-sites">
-          reading 
-          <?php foreach($fsites as $fsite): ?>
-          <span class="site"><?php echo trim($fsite) ?></span>
-          <?php endforeach ?>
-        </div>
-        <?php endif ?>
-        <?php if ($multisite == false): ?>
-        <div class="featured-site">
-          reading 
-          <span class="site">
-            <?php echo trim($page->featured_site()) ?>
-          </span>
-          <?php endif ?>
-        </div>
-      <?php endif ?>
-      
-    </div>
-    
+    <!-- CAST LIST -->
+    <ul class="cast authors ridiculists info-block">
+      <?php foreach($persons as $person): ?>
+        <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
+        <?php if ($site->find($mlink)) { ?>
+          <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
+        <?php } else { ?>
+          <li itemprop="actor"><?php echo $person ?></li>
+        <?php } ?>
+      <?php endforeach ?>
+    </ul>
     
     <div class="info-block">
       <!-- CONTENT PROVIDER -->

@@ -8,10 +8,8 @@
   article { margin-bottom:10px;
     header { padding:0 1em .25em 1em; } 
     .cover { width: 100%; margin: auto; display: block; }
-    .title { font-size:1.4rem; line-height: 120%; @extend %truncate;
-      a { text-decoration: none;
-        &:hover { text-decoration: underline; }
-      }
+    .title { font-size:1.4rem; line-height: 120%; @extend %truncate; height:1.3em; margin-bottom: 0;
+      a { @extend %textlink; }
     }
     summary { padding: 1em 1em 2.5em 1em; display: block; }
     &.person summary { padding-bottom: 0; }
@@ -33,17 +31,13 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      //.comment.count { position: absolute; bottom:0; right:0; display: block; text-align: right; padding-right: 1.5em; line-height: 1.2em; background-image: url(../svg/comment_strong.svg); background-repeat:no-repeat; background-position: top right; background-size:contain; }
-      &.episode { background-color: $episode; border:1px solid darken($episode,35%); box-shadow: 2px 2px 2px darken($episode,35%);
-        //.hover-cover { @include linear-gradient(180deg, rgba($episode,0), rgba($episode,0.85)); }
+      &.episode { background-color: $episode; border:1px solid darken($episode,35%); //box-shadow: 2px 2px 2px darken($episode,35%);
         .hover-cover { background:rgba($episode,0.85); }
       }
       &.wrote { background-color:$wrote; border:1px solid darken($wrote,25%);
-        //.hover-cover { @include linear-gradient(180deg, rgba($wrote,0), rgba($wrote,0.85)); }
         .hover-cover { background:rgba($wrote,0.85); }
       }
-      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); box-shadow: 2px 2px 2px darken($also-made,5%);
-        //.hover-cover { @include linear-gradient(180deg, rgba($also-made,0), rgba($also-made,0.85)); }
+      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
         .hover-cover { background:rgba($also-made,0.85); }
       }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
@@ -57,8 +51,18 @@
   .fa { color:lighten($black,20%); }
 }
 
-nav.toggle { padding-top: 1em; padding-bottom: 1em;
-  label {font-weight: 400; }
+.pagination { display:flex; justify-content: space-between;
+  svg * { fill: $red; }
+  a { 
+    &:hover { background-color:$red;
+      svg * { fill:$white; }
+    }
+    &:active { background-color: $black; }
+  }
+}
+
+nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
+  label {font-weight: 400; margin-right: 1em; }
    a  { margin-right: 1em; font-weight: 300;
     .checkbox { height: 1em; width: 1em; display: inline-block;
       * { stroke-width: 10px; stroke:$black; fill: none; }
@@ -84,18 +88,27 @@ nav.toggle { padding-top: 1em; padding-bottom: 1em;
 }
 @media (min-width: 461px) and (max-width:1000px) {
   .summaries {
-    article.brief { @include flex-item(calc(50% - 5px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(50% - 5px), auto, 0, 0); max-width:calc(50% - 5px); }
+  }
+  .pagination {
+    .prev, .next, .blank { width:50%; }
   }
 }
 
 @media (min-width: 1001px) and (max-width:1600px) {
   .summaries {
-    article.brief { @include flex-item(calc(33.3333% - 5px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(33.3333% - 5px), auto, 0, 0); max-width:calc(33.3333% - 5px); }
+  }
+  .pagination {
+    .prev, .next, .blank { width:33.3333%; }
   }
 }
 
 @media (min-width: 1601px) {
   .summaries { 
-    article.brief { @include flex-item(calc(25% - 5px), auto, 0, 0); }
+    article.brief { @include flex-item(calc(25% - 5px), auto, 0, 0); max-width: calc(25% - 5px); }
+  }
+  .pagination {
+    .prev, .next, .blank { width:25%; }
   }
 }

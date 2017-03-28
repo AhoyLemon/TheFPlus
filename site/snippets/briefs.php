@@ -1,5 +1,10 @@
 <section class="briefs summaries">
   <?php $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) ?>
+  
+  <?php if(!$articles->pagination()->hasPrevPage()) { ?>
+    <?php snippet('tease-livestream') ?>
+  <?php } ?>
+  
   <?php foreach($articles as $article): ?>
   
     <?php if ($article->parent()->slug() == "episode") { ?>

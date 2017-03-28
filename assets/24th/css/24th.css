@@ -287,6 +287,10 @@ ul li {
   display: none;
 }
 
+.transparent {
+  opacity: 0;
+}
+
 button, .button {
   color: #eee;
   background-color: #ee2a2a;
@@ -596,6 +600,7 @@ footer .doc-box .doc {
 
 footer .label {
   font-size: 80%;
+  text-transform: lowercase;
 }
 
 footer .name {
