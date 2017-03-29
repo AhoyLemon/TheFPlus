@@ -1,5 +1,5 @@
 title: Episode List
-icon: play-circle-o
+icon: podcast
 pages:
   template:
     - episode

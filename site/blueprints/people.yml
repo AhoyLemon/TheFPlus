@@ -1,5 +1,6 @@
 title: People
 pages:
+  sort: role asc
   template:
     - person
 files: false
