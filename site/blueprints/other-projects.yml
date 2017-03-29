@@ -1,0 +1,15 @@
+title: Other Projects
+icon: circle
+pages:
+  template:
+    - other-project
+  sort: flip
+  num: date
+files: false
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea

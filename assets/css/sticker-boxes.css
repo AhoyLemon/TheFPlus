@@ -48,7 +48,8 @@
 }
 
 .sticker-box .thumb {
-  width: 220px;
+  max-height: 230px;
+  max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -462,5 +463,3 @@
     max-width: calc(25% - 10px);
   }
 }
-
-/*# sourceMappingURL=sticker-boxes.css.map */

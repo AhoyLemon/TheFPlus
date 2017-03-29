@@ -144,7 +144,8 @@
       
       <div class="splc-description">
         <?php echo $page->splc_desc()->kirbytext() ?>
-        <p>Sales of these stickers have contributed <strong>$<?php echo $page->splc_total(); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
+        <?php $splc_total = (int)(string)$page->splc_total(); ?>
+        <p>Sales of these stickers have contributed <strong>$<?php echo number_format($splc_total); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
       </div>
 
       <div class="sticker-photo-grid">
@@ -158,6 +159,23 @@
           <?php echo $page->share_cta()->kirbytext(); ?>
         </div>
       </div>
+      
+      <!-- TAGS -->
+      <?php if ($page->tags() != "") { ?>
+        <div class="info-block episode-tags">
+          <span class="label">Tags:</span>
+          <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
+            <?php $etags = explode(",", $page->tags()); ?>
+            <?php foreach($etags as $etag): ?>
+              <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
+              <?php $x = 0; ?>
+              <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
+              <?php endforeach ?>
+              <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
+            <?php endforeach ?>
+          </ul>
+        </div>
+      <?php } ?>
       
     </article>
   

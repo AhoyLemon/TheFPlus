@@ -85,7 +85,7 @@
               <div class="label">currently reading</div>
               <div class="name" data-holds="document name">
                 <?php if ($page->current_doc_url() != "") { ?>
-                  <a href="<?php echo $page->current_doc_url(); ?>" class="doc-link">
+                  <a href="<?php echo $page->current_doc_url(); ?>" target="_blank" class="doc-link">
                     <?php echo $page->current_doc(); ?>
                   </a>
                 <?php } else { ?>

@@ -470,7 +470,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 260px;
-  height: 260px;
+  min-height: 260px;
   z-index: 4;
   background-color: #f2eece;
   color: #313131;
@@ -629,7 +629,7 @@ footer .participant-box {
 
 footer .participant-box .readers span {
   display: inline-block;
-  margin-right: 0.05em;
+  margin-right: 0.2em;
 }
 
 footer .participant-box .readers span:before, footer .participant-box .readers span:after {
@@ -730,7 +730,7 @@ footer .donation-button .button {
 }
 
 footer.shorter {
-  height: 140px;
+  min-height: 140px;
 }
 
 main {

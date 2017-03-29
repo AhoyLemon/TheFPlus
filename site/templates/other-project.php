@@ -7,7 +7,6 @@
   <?php 
     $pubdate = date('l, F jS Y', $page->date());
     $pubtime = date("g:ia", strtotime($page->time()));
-    $etags = explode(",", $page->tags());
     if ($page->cast() == "") {
       $multiperson = false;
     } else if (strpos($page->cast(),',') !== false) {
@@ -152,18 +151,21 @@
     </div>
 
     <!-- TAGS -->
-    <div class="info-block episode-tags">
-      <span class="label">Tags:</span>
-      <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
-        <?php foreach($etags as $etag): ?>
-          <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-          <?php $x = 0; ?>
-          <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
+      <?php if ($page->tags != "") { ?>
+      <div class="info-block episode-tags">
+        <span class="label">Tags:</span>
+        <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
+          <?php $etags = explode(",", $page->tags()); ?>
+          <?php foreach($etags as $etag): ?>
+            <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
+            <?php $x = 0; ?>
+            <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
+            <?php endforeach ?>
+            <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
           <?php endforeach ?>
-          <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-        <?php endforeach ?>
-      </ul>
-    </div>
+        </ul>
+      </div>
+    <?php } ?>
 
     <!-- BONUS CONTENT -->
     <?php if ($page->bonus_content() != ""): ?>
