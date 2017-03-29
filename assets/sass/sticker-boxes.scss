@@ -9,7 +9,7 @@
 .sticker-box { @include flex-item(33.3333%); border:1px solid $black; margin-bottom:10px; margin-right: 10px; 
   .inner { margin: 0.5em; border:1px solid $black; }
   a.zoom { cursor: zoom-in; }
-  .thumb { width:220px; display: block; margin-left: auto; margin-right: auto;  }
+  .thumb { max-height: 230px; max-width: 100%; display: block; margin-left: auto; margin-right: auto;  }
   .details { width: 100%; @include flex-container();
     .full { @include flex-item(100%); }
     .half { @include flex-item(50%); }
@@ -37,7 +37,6 @@
   
   .half { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; position:relative; }
   .third, .two-thirds { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
-  //.one-quarter, .three-quarters { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
   .series-number, .shape, .material, .sold-out, .released { border-left: 1px solid $black; }
 }
 

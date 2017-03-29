@@ -1,4 +1,4 @@
-footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%;
+footer { @include position(fixed,null,0,0,$offset); min-height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%;
   //iframe { width:100%; height: $offset; }
   .box { @extend %vertical-center; }
   a { color:$red; text-decoration: none;
@@ -26,7 +26,7 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
   
   .participant-box { @include flex-item(35%);
     .readers {
-      span { display: inline-block; margin-right:0.05em;
+      span { display: inline-block; margin-right:0.2em;
         &:before, &:after { font-size:80%; font-weight: $light; }
         &:after { content:", "; font-weight: $light;  }
         &:last-child { 
@@ -54,6 +54,6 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
   }
  
   
-  &.shorter { height: 140px; }
+  &.shorter { min-height: 140px; }
   
 }

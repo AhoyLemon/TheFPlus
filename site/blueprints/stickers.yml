@@ -1,8 +1,6 @@
 title: Stickers
 icon: sun-o
-pages:
-  template:
-    - sticker
+pages: false
 files: true
 fields:
   title:
@@ -14,12 +12,12 @@ fields:
     type: image
     width: 1/2
   date:
-    label: Release Date
+    label: Last Release Date
     type: date
     format: MM/DD/YYYY
     width: 1/4
   time:
-    label: Release Time
+    label: Last Release Time
     type: time
     interval: 1
     width: 1/4
@@ -131,7 +129,7 @@ fields:
         width: 1/2
   splc_desc:
     label: SPLC Description
-    type: markdown
+    type: Markdown
   photos:
     label: Photos
     type: structure
@@ -154,12 +152,7 @@ fields:
   share_cta:
     label: Share CTA
     type: markdown
-  tweet_intent:
-    label: Custom Tweet Intent
-    type: url
-    placeholder: Use only if you want something different.
-    icon: retweet
-  bonus_content:
-    label: Bonus Content
-    type: textarea
-    icon: code
+  tags:
+    label: Project Tags
+    lowercase: true
+    type: tags
