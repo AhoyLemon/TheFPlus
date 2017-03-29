@@ -1,6 +1,7 @@
-title: Page
-pages: true
-files: true
+title: Recent Comments
+icon: comments
+pages: false
+files: false
 fields:
   title:
     label: Title

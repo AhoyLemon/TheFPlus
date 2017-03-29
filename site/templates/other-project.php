@@ -151,7 +151,7 @@
     </div>
 
     <!-- TAGS -->
-      <?php if ($page->tags != "") { ?>
+      <?php if ($page->tags() != "") { ?>
       <div class="info-block episode-tags">
         <span class="label">Tags:</span>
         <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
