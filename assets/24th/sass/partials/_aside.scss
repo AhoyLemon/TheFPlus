@@ -42,6 +42,7 @@ aside { @include position(fixed,0,null,0,0); width:$offset;  line-height: 100%;
   }
   
   .donation-button { @include flex-item(35%); text-align: center; 
+    .donation-benefactor { font-size:80%; padding-top: 0.5em; }
     a { padding:1em 2em;}
   }
   

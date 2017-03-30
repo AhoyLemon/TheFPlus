@@ -1,5 +1,4 @@
-footer { @include position(fixed,null,0,0,$offset); min-height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%;
-  //iframe { width:100%; height: $offset; }
+footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%; padding-top:10px; padding-bottom:10px;
   .box { @extend %vertical-center; }
   a { color:$red; text-decoration: none;
     &:hover { text-decoration: underline; }
@@ -10,6 +9,12 @@ footer { @include position(fixed,null,0,0,$offset); min-height: $offset; z-index
   
   .grid { @include flex-item(calc(100% - 200px)); order: 1; @include flex-container(); color:$black;
     .box { padding-left: 1em; padding-right: 1em;  }
+  }
+  
+  .explanation-box { @include flex-item(100%); font-size:0.85em; padding:5px 10px; text-align: right;
+    background-color:$black; color:$white; order: 12; margin-top: 10px; margin-bottom: -10px; 
+    background-image: url(../img/ep_naturalblack.png);
+    p { margin-bottom: 0;}
   }
   
   .hour-box { text-align: center; font-size:130%; @include flex-item(30%);
@@ -38,6 +43,9 @@ footer { @include position(fixed,null,0,0,$offset); min-height: $offset; z-index
   }
   .donation-total-box { @include flex-item(30%); text-align: center;
     .dollars { font-size:220%; font-weight: $bold; line-height: 120%; }
+    .see-all-wrapper { padding-top: 0.5em; font-size: 80%; 
+      a { cursor: pointer; }
+    }
   }
   .recent-donation { @include flex-item(35%);
     .donation { margin-top: 0.5em;
@@ -51,9 +59,10 @@ footer { @include position(fixed,null,0,0,$offset); min-height: $offset; z-index
   
   .donation-button { @include flex-item(35%); text-align: center; 
     .button { padding:1em 2em;}
+    .donation-benefactor { font-size:80%; padding-top: 0.5em; }
   }
  
   
-  &.shorter { min-height: 140px; }
+  &.shorter { height: 140px; }
   
 }

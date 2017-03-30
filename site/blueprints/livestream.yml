@@ -37,6 +37,10 @@ fields:
     label: Current Artist
     icon: paint-brush
     type: text
+    width: 2/3
+  text_under_button:
+    label: Text under donation button
+    type: text
     width: 1/3
   goal_headline:
     label: Donation Goal
