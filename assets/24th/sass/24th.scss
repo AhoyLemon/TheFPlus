@@ -6,11 +6,11 @@
 @import "globals/_z-index";
 @import "globals/_defaults";
 
-
-$offset:260px;
+$offset:310px;
 
 // SITE SPECIFIC
 @import "partials/_forms";
 @import "partials/_aside";
 @import "partials/_footer";
 @import "partials/_main";
+@import "partials/_donation-list";

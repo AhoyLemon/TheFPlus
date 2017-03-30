@@ -71,6 +71,7 @@
       </div>
       
       <div id="FooterGrid" class="grid">
+        
         <div class="hour-box box">
           <div class="inside">
             <div class="label">This is hour</div>
@@ -124,6 +125,9 @@
           <div class="inside"> 
             <div class="label">Donation Total</div>
             <div class="dollars"></div>
+            <div class="see-all-wrapper">
+              <a data-show="list-all-donations">see all</a>
+            </div>
           </div>
         </div>
         <div class="recent-donation box transparent">
@@ -140,9 +144,17 @@
           </div>
         </div>
         <div class="donation-button box">
-          <div class="inside"><a href="https://twitch.streamlabs.com/thefplus" target="_blank" class="button">DONATE NOW</a></div>
+          <div class="inside">
+            <a href="https://twitch.streamlabs.com/thefplus" target="_blank" class="button">DONATE NOW</a>
+            <?php if ($page->text_under_button()) { ?>
+              <div class="donation-benefactor" data-holds="text_under_button">
+                <?php echo $page->text_under_button(); ?>
+              </div>
+            <?php } ?>
+          </div>
         </div>
       </div>
+      
     </footer>
     <main>
       
@@ -192,6 +204,12 @@
       <iframe src="<?php echo $page->iframe_url(); ?>" frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
       
     </main>
+    
+    <div class="list-all-donations">
+      <a class="close" data-hide="list-all-donations">X</a>
+      <ol class="donation-list" id="FullDonationList"></ol>
+    </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/24th/js/moment.js"></script>
     <script src="/assets/24th/js/24th.js"></script>

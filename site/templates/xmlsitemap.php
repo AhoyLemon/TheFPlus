@@ -7,10 +7,10 @@ header('Content-type: text/xml; charset="utf-8"');
 
 // echo the doctype
 echo '<?xml version="1.0" encoding="utf-8"?>';
-	$ignore = array('sitemap', 'error', 'find', 'fanart', 'error/flush');
+	$ignore = array('sitemap', 'error', 'find', 'error/flush');
 ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <?php foreach($pages->index() as $p): ?>
+  <?php foreach($pages->index()->visible() as $p): ?>
   <?php if(in_array($p->uri(), $ignore)) continue ?>
   <url>
     <loc><?php echo html($p->url()) ?></loc>

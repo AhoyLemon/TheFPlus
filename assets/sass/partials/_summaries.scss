@@ -14,7 +14,7 @@
     summary { padding: 1em 1em 2.5em 1em; display: block; }
     &.person summary { padding-bottom: 0; }
     .content { text-align: justify; }
-    &.brief { position: relative;
+    &.brief { position: relative; background-color:#fff; border:1px solid #aaa;
       .image-holder { position:relative; display: block; overflow: hidden;
         img { @include transition(all, 1s); margin-left: 1px; margin-right:1px; }
         .hover-cover { position: absolute; right:0; bottom:0; left:0; @include translateY(105%); @include transition();
@@ -31,13 +31,13 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      &.episode { background-color: $episode; border:1px solid darken($episode,35%); //box-shadow: 2px 2px 2px darken($episode,35%);
+      &.episode { background-color: $episode; border-color: darken($episode,35%); //box-shadow: 2px 2px 2px darken($episode,35%);
         .hover-cover { background:rgba($episode,0.85); }
       }
-      &.wrote { background-color:$wrote; border:1px solid darken($wrote,25%);
+      &.wrote { background-color:$wrote; border-color:darken($wrote,25%);
         .hover-cover { background:rgba($wrote,0.85); }
       }
-      &.also-made { background-color: $also-made; color:$white; border:1px solid darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
+      &.also-made { background-color: $also-made; color:$white; border-color: darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
         .hover-cover { background:rgba($also-made,0.85); }
       }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);

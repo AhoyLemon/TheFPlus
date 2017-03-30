@@ -4,11 +4,17 @@
 var currentTotal = 0;
 var marathonStart = moment("03/31/2017 18:00 CDT");
 
+var current = {
+  info_active: false,
+  info_text: ""
+};
+
 $('a[data-toggle="chat"]').click(function() {
   var t = $(this).attr('data-chat');
   if (t == "yes") { 
     $('#ChatHolder').hide();
     $('#DonationVertical').append($('.logo-box'));
+    $('#DonationVertical').append($('.explanation-box'));
     $('#DonationVertical').append($('.donation-total-box'));
     $('#DonationVertical').append($('.recent-donation'));
     $('#DonationVertical').append($('.donation-button'));
@@ -23,6 +29,7 @@ $('a[data-toggle="chat"]').click(function() {
     $('#FooterGrid').append($('.donation-total-box'));
     $('#FooterGrid').append($('.recent-donation'));
     $('#FooterGrid').append($('.donation-button'));
+    $('footer').append($('.explanation-box'));
     $('footer').removeClass('shorter');
     $('main').removeClass('taller');
     $('#DonationVertical').hide();
@@ -119,12 +126,55 @@ function getBattle(qa, qb) {
 }
 
 
+function showAllDonations() {
+  
+  $('#FullDonationList').empty();
+  
+  jQuery.ajax({
+    type: "POST",
+    url: '/json/fplus_donation.php',
+    dataType: 'json',
+    data: {'callGetDonations' : ''},
+
+    success: function(response) {
+      console.log(response);
+      if (response[0]) {
+        for (var i = 0, len = response.length; i < len; i++) {
+          
+          var h = '<li class="donation">'
+          h = h +'<span>'+response[i].name+'</span>'
+          h = h + ' gave ';
+          h = h + '<span class="amount">'+response[i].amount+'</span>';
+          h = h + ' at ';
+          h = h + '<time>'+moment(response[i].created_at).local().format('LT')+'</time>';
+          if (response[i].message) { 
+            h = h + '<blockquote>'+response[i].message+'</blockquote>';
+          }
+          h = h + '</li>';
+          $('#FullDonationList').append(h);
+          
+        }
+        
+        $('.list-all-donations').addClass('visible');
+        
+      }
+    }	
+  });
+  
+}
+
+$('[data-show="list-all-donations"]').click(function() {
+  showAllDonations();
+});
+$('[data-hide="list-all-donations"]').click(function() {
+  $('.list-all-donations').removeClass('visible');
+});
+
+
 function refreshInfo() {
   
   var now = moment();
   var thisHour = Math.ceil(moment.duration(now.diff(marathonStart)).asHours()) + 1;
-  //console.log(moment.duration(now.diff(then)).hours());
-  thisHour++;
   if (thisHour < 10 && thisHour > -1) {
     thisHour = "0" + thisHour;
   }
@@ -141,6 +191,14 @@ function refreshInfo() {
     success: function(response) {
       var info = response[0];
       console.log(info);
+      
+      // Stream info text
+      if (info.text_under_button) {
+        $('[data-holds="text_under_button"]').html(info.text_under_button);
+        $('[data-holds="text_under_button"]').removeClass('hidden');
+      } else {
+        $('[data-holds="text_under_button"]').addClass('hidden');
+      }     
  
       // setCurrentHour
       $('[data-holds="current hour"]').text(thisHour);

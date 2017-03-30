@@ -11,6 +11,7 @@ $json[] = array(
   'title'                => (string)$data->title(),
   'logo'                 => (string)$data->livestream_logo(),
   'iframe_url'           => (string)$data->iframe_url(),
+  'text_under_button'    => (string)$data->text_under_button(),
   'current_doc'          => (string)$data->current_doc(),
   'current_doc_url'      => (string)$data->current_doc_url(),
   'current_doc_provider' => (string)$data->current_doc_provider(),
@@ -26,7 +27,6 @@ $json[] = array(
   'overlay_active'       => (string)$data->overlay_active(),
   'overlay_text'         => (string)$data->overlay_text()->kirbytext()
 );
-
 
 echo json_encode($json);
 

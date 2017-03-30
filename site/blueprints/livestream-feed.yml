@@ -5,6 +5,10 @@ fields:
   title:
     label: Title
     type:  text
-  text:
-    label: Page Text
-    type: markdown
+  info:
+    type: info
+    text: >
+      This page generates Ajax fields from its parent. Nothing needs to be edited here, since the page should never actually be seen.
+      
+      
+      Go about your business; nothing to see here.

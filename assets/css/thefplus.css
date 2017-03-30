@@ -1158,6 +1158,8 @@ article.full .episode-actions a:hover .label {
 
 .summaries article.brief {
   position: relative;
+  background-color: #fff;
+  border: 1px solid #aaa;
 }
 
 .summaries article.brief .image-holder {
@@ -1219,7 +1221,7 @@ article.full .episode-actions a:hover .label {
 
 .summaries article.brief.episode {
   background-color: #fff;
-  border: 1px solid #a6a6a6;
+  border-color: #a6a6a6;
 }
 
 .summaries article.brief.episode .hover-cover {
@@ -1228,7 +1230,7 @@ article.full .episode-actions a:hover .label {
 
 .summaries article.brief.wrote {
   background-color: #faecce;
-  border: 1px solid #eebf5a;
+  border-color: #eebf5a;
 }
 
 .summaries article.brief.wrote .hover-cover {
@@ -1238,7 +1240,7 @@ article.full .episode-actions a:hover .label {
 .summaries article.brief.also-made {
   background-color: #1b1426;
   color: #eee;
-  border: 1px solid #0f0b15;
+  border-color: #0f0b15;
 }
 
 .summaries article.brief.also-made .hover-cover {
