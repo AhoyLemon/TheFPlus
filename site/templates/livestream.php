@@ -121,7 +121,7 @@
             </div>
           </div>
         </div>
-        <div class="donation-total-box box">
+        <div class="donation-total-box box hidden">
           <div class="inside"> 
             <div class="label">Donation Total</div>
             <div class="dollars"></div>
@@ -184,6 +184,15 @@
         <div class="inside">
           <div class="label" data-holds="counter_label"><?php echo $page->counter_label(); ?></div>
           <div class="count" data-holds="counter_number"><?php echo $page->counter_number(); ?></div>
+        </div>
+      </div>
+      
+      <!-- BREAK MESSAGE -->
+      
+      <div class="on-break hidden">
+        <div class="inside">
+          <div class="label" data-holds="break_label"></div>
+          <div class="time" data-holds="break_time"></div>
         </div>
       </div>
       

@@ -33,6 +33,11 @@ main { @include position(fixed,0,0,$offset,$offset); font-family: $font;
   }
 }
 
+.on-break { @include position(absolute,100px,null,null,20px); z-index: $z-on-break; pointer-events: none; color:$white; text-shadow: 1px 1px 1px $black;
+  .time { font-weight: $bold; font-size:180%; }
+  .timezone { font-size:80%; }
+}
+
 .osd-counter { @include position(absolute,null,null,60px,20px); z-index: $z-counter; pointer-events: none; color:$white;
   .label { line-height: 100%; text-shadow: 1px 1px 0 #000; }
   .count { line-height: 100%; font-size:350%; font-weight: $bold; text-shadow: 3px 3px 1px #000; }
