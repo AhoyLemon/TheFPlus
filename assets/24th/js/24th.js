@@ -12,6 +12,9 @@ var current = {
   current_doc_provider: "",
   current_readers: "",
   current_artist: "",
+  break_active: "",
+  break_label: "",
+  break_time: "",
   last_donation_id: 0,
   info_active: false,
   info_text: "",
@@ -104,6 +107,9 @@ function getDonations() {
         current.total = response;
         currentTotal = parseFloat(response);
         $('.donation-total-box .dollars').text('$'+numberWithCommas(currentTotal));
+      }
+      if (currentTotal != 0) {
+        $('.donation-total-box').removeClass('hidden');
       }
     }
   });
@@ -263,6 +269,23 @@ function refreshInfo() {
           $('[data-holds="artist name"]').text(info.current_artist);
           $('.artist').removeClass('hidden');
         }
+      }
+      
+      // Are we on a break?
+      if (info.break_active == "true" && info.break_active != current.break_active) {
+        current.break_active = info.break_active;
+        if (current.break_label != info.break_label || current.break_time != info.break_time) {
+          current.break_label = info.break_label;
+          current.break_time = info.break_time;
+          $('[data-holds="break_label"]').text(info.break_label);
+          var b = moment().format('MM/DD/YYYY') + " " + info.break_time + " CDT";
+          var t = moment(b).local().format('h:mmA');
+          $('[data-holds="break_time"]').text(t);
+        }
+        $('.on-break').removeClass('hidden');
+      } else if (info.break_active != current.break_active) {
+        current.break_active = info.break_active;
+        $('.on-break').addClass('hidden');
       }
       
       // DONATION GOAL METER...

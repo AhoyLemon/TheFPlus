@@ -44,6 +44,22 @@ fields:
     label: Text under donation button
     type: text
     width: 1/3
+  break_headline:
+    label: Breaktime Display
+    type: headline
+  break_active:
+    label: On Break?
+    type: toggle
+    width: 1/4
+  break_label:
+    label: Break Label
+    type: text
+    width: 1/2
+  break_time:
+    label: Back @
+    type: time
+    width: 1/4
+    help: (Central time. The page will adjust.)
   goal_headline:
     label: Donation Goal
     type: headline

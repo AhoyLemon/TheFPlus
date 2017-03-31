@@ -288,7 +288,7 @@ abbr[title] {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .transparent {
@@ -919,7 +919,7 @@ main.taller {
   line-height: 1.2em;
   color: #eee;
   text-shadow: -1px -1px 1px #313131;
-  z-index: 14;
+  z-index: 15;
 }
 
 .donation-goal .donation-price {
@@ -962,6 +962,25 @@ main.taller {
           animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+.on-break {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  z-index: 14;
+  pointer-events: none;
+  color: #eee;
+  text-shadow: 1px 1px 1px #313131;
+}
+
+.on-break .time {
+  font-weight: 700;
+  font-size: 180%;
+}
+
+.on-break .timezone {
+  font-size: 80%;
 }
 
 .osd-counter {
@@ -1047,7 +1066,7 @@ main.taller {
   bottom: 0;
   max-width: 50%;
   padding: 20px;
-  z-index: 15;
+  z-index: 16;
   border-right: 2px solid #aaa;
   box-shadow: 4px 0 8px #313131;
   overflow-x: hidden;
