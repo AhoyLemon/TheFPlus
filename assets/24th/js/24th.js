@@ -134,17 +134,17 @@ function showAllDonations() {
     type: "POST",
     url: '/json/fplus_donation.php',
     dataType: 'json',
-    data: {'callGetDonations' : ''},
+    data: {'callGetAllDonations' : ''},
 
     success: function(response) {
       console.log(response);
       if (response[0]) {
         for (var i = 0, len = response.length; i < len; i++) {
           
-          var h = '<li class="donation">'
-          h = h +'<span>'+response[i].name+'</span>'
+          var h = '<li class="donation">';
+          h = h +'<span>'+response[i].name+'</span>';
           h = h + ' gave ';
-          h = h + '<span class="amount">'+response[i].amount+'</span>';
+          h = h + '<span class="amount">$'+response[i].amount+'</span>';
           h = h + ' at ';
           h = h + '<time>'+moment(response[i].created_at).local().format('LT')+'</time>';
           if (response[i].message) { 

@@ -58,7 +58,7 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
   }
   
   .donation-button { @include flex-item(35%); text-align: center; 
-    .button { padding:1em 2em;}
+    .button { padding:1em 2em; text-decoration: none; }
     .donation-benefactor { font-size:80%; padding-top: 0.5em; }
   }
  

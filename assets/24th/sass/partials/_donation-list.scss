@@ -1,7 +1,15 @@
-.list-all-donations { background-color:#fff; color:$black; @include position(fixed,0,null,0,null); max-width: 50%; padding:60px 20px 20px 20px; z-index:$z-donation-list; border-right:2px solid #aaa; box-shadow:4px 0 8px $black;
-  .close { @include position(absolute,0,10px); font-size:2.5em; font-weight: $bold; color:$red; cursor: pointer; }
-  ol { padding-left: 1em; }
-  li { list-style: decimal; margin-bottom: 1em; }
+.list-all-donations { background-color:#fff; font-family: $font; color:$black; @include position(fixed,0,null,0,null); max-width: 50%; padding:20px; z-index:$z-donation-list; border-right:2px solid #aaa; box-shadow:4px 0 8px $black; overflow-x:hidden; overflow-y:visible;
+  .close { @include position(absolute,10px,10px); font-weight: $bold; color:$red; cursor: pointer; width: 2.5em; height: 2.5em;
+    //.x, .outline, .fill { transition: all 0.3s ease; }
+    .x, .outline { fill:$red; }
+    .fill { fill:#fff; }
+    &:hover {
+      .x { fill:#fff; }
+      .fill { fill: $red; }
+    }
+  }
+  ul { padding-left:0; max-height: calc(100vh - 40px); overflow-x: hidden; overflow-y: auto; padding-right: 5px; font-size:14px; }
+  li { list-style:none; margin-bottom: 1em; border: 1px solid #aaa; padding: 5px; }
   
   .donation {
     span, time { font-weight: $bold; }
@@ -11,11 +19,8 @@
     &:after { content:'”'; }
   }
   
+  transform: translateX(-106%); transition:all 1s ease;
   
-  opacity: 0; transform: translateX(-106%); transition:transform 1s ease;
-  
-  &.visible { opacity: 1; transform: translateX(0);
-    
-  }
+  &.visible { transform: translateX(0); }
   
 }
