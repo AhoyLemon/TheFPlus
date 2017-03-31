@@ -5,8 +5,21 @@ var currentTotal = 0;
 var marathonStart = moment("03/31/2017 18:00 CDT");
 
 var current = {
+  total: 0,
+  text_under_button: "",
+  current_doc: "",
+  current_doc_url: "",
+  current_doc_provider: "",
+  current_readers: "",
+  current_artist: "",
+  last_donation_id: 0,
   info_active: false,
-  info_text: ""
+  info_text: "",
+  counter_active: "",
+  counter_label: "",
+  counter_number: "",
+  overlay_active: "",
+  overlay_text: ""
 };
 
 $('a[data-toggle="chat"]').click(function() {
@@ -46,7 +59,7 @@ $('body').on('click', '.button', function() {
   var pWidth = 666;
   var pHeight = 802;
   var lef = ((sWidth / 2) - (pWidth / 2));
-
+  _paq.push(['trackEvent', "Donation Button", "Clicked"]);
   window.open($(this).attr("href"), "popupWindow", "width="+pWidth+",height="+pHeight+",top="+top+",left="+lef);
   return false;
 });
@@ -64,10 +77,10 @@ function getDonations() {
 
     success: function(response) {
       console.log(response);
-      if (response[0]) {
+      if (response[0] && response[0].id != current.last_donation_id) {
+        current.last_donation_id = response[0].id;
         $('.recent-donation .name').text(response[0].name);
         $('.recent-donation .amount').text('$'+response[0].amount);
-
         $('.recent-donation time').text(moment(response[0].created_at).local().format('LT'));
         if (response[0].message) {
           $('.recent-donation blockquote').text(response[0].message).show();
@@ -86,10 +99,13 @@ function getDonations() {
     data: {'callGetDonationTotal' : ''},
 
     success: function(response) {
-      console.log(response);
-      currentTotal = parseFloat(response);
-      $('.donation-total-box .dollars').text('$'+numberWithCommas(currentTotal));
-    }	
+      //console.log(response);
+      if (response != current.total) {
+        current.total = response;
+        currentTotal = parseFloat(response);
+        $('.donation-total-box .dollars').text('$'+numberWithCommas(currentTotal));
+      }
+    }
   });
 
 }
@@ -104,7 +120,6 @@ function getBattle(qa, qb) {
          'battlestr1' : qa ,
          'battlestr2' : qb },
     success: function(response) { 
-      //console.log(response);
       $('.versus-stripe .blue .label').text(response[0].name);
       $('.versus-stripe .blue .amount').text('$'+numberWithCommas(response[0].amount));
       
@@ -179,7 +194,7 @@ function refreshInfo() {
     thisHour = "0" + thisHour;
   }
   else if (thisHour > 24) {
-    thisHour = "Fucking done!";
+    thisHour = "∞";
   }
   //console.log(moment(d).format())
   
@@ -193,7 +208,8 @@ function refreshInfo() {
       console.log(info);
       
       // Stream info text
-      if (info.text_under_button) {
+      if (info.text_under_button && info.text_under_button != current.text_under_button) {
+        current.text_under_button = info.text_under_button;
         $('[data-holds="text_under_button"]').html(info.text_under_button);
         $('[data-holds="text_under_button"]').removeClass('hidden');
       } else {
@@ -207,10 +223,11 @@ function refreshInfo() {
       // Current document name (and link)
       if (info.current_doc == "") { 
         $('.doc-box').addClass('hidden');
-      } else {
+      } else if (info.current_doc != current.current_doc || info.current_doc_url != current.current_doc_url) {
+        current.current_doc = info.current_doc;
+        current.current_doc_url = info.current_doc_url;
         if (info.current_doc_url != "") { 
-          //$('[data-holds="document name"]').html('hello!');
-        $('[data-holds="document name"]').html('<a href="'+info.current_doc_url+'" class="doc-link">'+info.current_doc+'</a>');
+          $('[data-holds="document name"]').html('<a href="'+info.current_doc_url+'" class="doc-link">'+info.current_doc+'</a>');
         } else {
           $('[data-holds="document name"]').html('<span>'+info.current_doc+'</span>');
         }        
@@ -220,30 +237,33 @@ function refreshInfo() {
       // Current document provider
       if (info.current_doc_provider == "") {
         ('.provider').addClass('hidden');
-      } else {
+      } else if (info.current_doc_provider != current.current_doc_provider)  {
+        current.current_doc_provider = info.current_doc_provider;
         $('[data-holds="provider"]').text(info.current_doc_provider);
         $('.provider').removeClass('hidden');
       }
       
       
       // Current Readers
-      
-      $('.readers').attr('data-readers',info.current_readers);
-      var readers = info.current_readers.split(',');
-      $('.readers').empty();
-      readers.forEach(function(reader) {
-        $('.readers').append('<span class="name">'+reader+'</span>');
-      });
-      
-      
-      if (info.current_artist == "") {
-        $('.artist').addClass('hidden');
-      } else {
-        $('[data-holds="artist name"]').text(info.current_artist);
-        $('.artist').removeClass('hidden');
+      if (current.current_readers != info.current_readers) {
+        current.current_readers = info.current_readers;
+        var readers = info.current_readers.split(',');
+        $('.readers').empty();
+        readers.forEach(function(reader) {
+          $('.readers').append('<span class="name">'+reader+'</span>');
+        });
       }
       
-      
+      // Current Artist
+      if (current.current_artist != info.current_artist) {
+        current.current_artist = info.current_artist;
+        if (info.current_artist == "") {
+          $('.artist').addClass('hidden');
+        } else {
+          $('[data-holds="artist name"]').text(info.current_artist);
+          $('.artist').removeClass('hidden');
+        }
+      }
       
       // DONATION GOAL METER...
       if (info.goal_active == "true") {
@@ -271,8 +291,6 @@ function refreshInfo() {
           $('.donation-goal').removeClass('goal-met');
         }
         
-        
-        
         // show the heat div
         $('.donation-goal').removeClass('hidden');
         
@@ -289,11 +307,32 @@ function refreshInfo() {
         $('.versus-stripe').addClass('hidden');
       }
       
-      // Text overlay? Sure, if you like.
+      
+      // OSD Counter
+      if (info.counter_active == "true") {
+        current.counter_active = info.counter_active;
+        if (current.counter_label != info.counter_label || current.counter_number != info.counter_number) {
+          current.counter_label = info.counter_label;
+          current.counter_number = info.counter_number;
+          $('[data-holds="counter_label"]').text(current.counter_label);
+          $('[data-holds="counter_number"]').text(current.counter_number);
+        }
+        $('.osd-counter').removeClass('hidden');
+      } else {
+        current.counter_active = info.counter_active;
+        $('.osd-counter').addClass('hidden');
+      }
+      
+      // TEXT OVERLAY
       if (info.overlay_active == "true") {
-        $('[data-holds="overlay_text"]').html(info.overlay_text);
+        current.overlay_active = info.overlay_active;
+        if (current.overlay_text != info.overlay_text) {
+          current.overlay_text = info.overlay_text;
+          $('[data-holds="overlay_text"]').html(current.overlay_text);
+        }
         $('.text-overlay').removeClass('hidden');
       } else {
+        current.overlay_active = info.overlay_active;
         $('.text-overlay').addClass('hidden');
       }
       
