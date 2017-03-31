@@ -14,6 +14,7 @@ p { margin-bottom: 1em; }
 ul { padding-left: 1.5em; 
   li { list-style-type: disc; }
 }
+abbr[title] { cursor:help; }
 
 @media (min-width: $desktop-min) {
   .mobile-only { display: none; }

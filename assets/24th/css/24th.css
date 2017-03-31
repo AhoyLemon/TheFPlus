@@ -271,6 +271,10 @@ ul li {
   list-style-type: disc;
 }
 
+abbr[title] {
+  cursor: help;
+}
+
 @media (min-width: 1024px) {
   .mobile-only {
     display: none;
@@ -362,6 +366,7 @@ aside .dismiss-holder {
 aside .dismiss-holder a {
   font-size: 0.8em;
   font-weight: 700;
+  color: #ee2a2a;
   cursor: pointer;
 }
 
@@ -398,6 +403,16 @@ aside .donation-total-box .dollars {
   font-size: 220%;
   font-weight: 700;
   line-height: 120%;
+}
+
+aside .donation-total-box .see-all-wrapper {
+  padding-top: 0.5em;
+  font-size: 80%;
+}
+
+aside .donation-total-box .see-all-wrapper a {
+  cursor: pointer;
+  color: #ee2a2a;
 }
 
 aside .recent-donation {
@@ -773,6 +788,7 @@ footer .donation-button {
 
 footer .donation-button .button {
   padding: 1em 2em;
+  text-decoration: none;
 }
 
 footer .donation-button .donation-benefactor {
@@ -1017,41 +1033,65 @@ main.taller {
 
 .list-all-donations {
   background-color: #fff;
+  font-family: "Bitter", serif;
   color: #313131;
   position: fixed;
   top: 0;
   bottom: 0;
   max-width: 50%;
-  padding: 60px 20px 20px 20px;
+  padding: 20px;
   z-index: 15;
   border-right: 2px solid #aaa;
   box-shadow: 4px 0 8px #313131;
-  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: visible;
   -webkit-transform: translateX(-106%);
       -ms-transform: translateX(-106%);
           transform: translateX(-106%);
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  transition: all 1s ease;
 }
 
 .list-all-donations .close {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 10px;
-  font-size: 2.5em;
   font-weight: 700;
   color: #ee2a2a;
   cursor: pointer;
+  width: 2.5em;
+  height: 2.5em;
 }
 
-.list-all-donations ol {
-  padding-left: 1em;
+.list-all-donations .close .x, .list-all-donations .close .outline {
+  fill: #ee2a2a;
+}
+
+.list-all-donations .close .fill {
+  fill: #fff;
+}
+
+.list-all-donations .close:hover .x {
+  fill: #fff;
+}
+
+.list-all-donations .close:hover .fill {
+  fill: #ee2a2a;
+}
+
+.list-all-donations ul {
+  padding-left: 0;
+  max-height: calc(100vh - 40px);
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 5px;
+  font-size: 14px;
 }
 
 .list-all-donations li {
-  list-style: decimal;
+  list-style: none;
   margin-bottom: 1em;
+  border: 1px solid #aaa;
+  padding: 5px;
 }
 
 .list-all-donations .donation span, .list-all-donations .donation time {
@@ -1073,7 +1113,6 @@ main.taller {
 }
 
 .list-all-donations.visible {
-  opacity: 1;
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);

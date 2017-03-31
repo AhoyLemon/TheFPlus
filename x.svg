@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+</style>
+<g id="fill">
+	<circle class="st0" cx="50" cy="50" r="43.4"/>
+</g>
+<g id="outline">
+	<path id="HamburgerCircle" d="M50,96C24.6,96,4,75.4,4,50S24.6,4,50,4s46,20.6,46,46S75.4,96,50,96z M50,9.8
+		C27.8,9.8,9.8,27.8,9.8,50s18,40.3,40.2,40.3S90.3,72.2,90.3,50S72.2,9.8,50,9.8z"/>
+</g>
+<g id="x">
+	<path id="HamburgerX" d="M54.1,50l10.2-10.2c1.1-1.1,1.1-2.9,0-4.1s-2.9-1.1-4.1,0L50,45.9L39.8,35.8c-1.1-1.1-2.9-1.1-4.1,0
+		s-1.1,2.9,0,4.1L45.9,50L35.8,60.2c-1.1,1.1-1.1,2.9,0,4.1c1.1,1.1,2.9,1.1,4.1,0L50,54.1l10.2,10.2c1.1,1.1,2.9,1.1,4.1,0
+		c1.1-1.1,1.1-2.9,0-4.1L54.1,50z"/>
+</g>
+</svg>
