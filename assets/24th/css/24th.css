@@ -496,7 +496,7 @@ footer {
   color: #313131;
   font-family: "Bitter", serif;
   line-height: 100%;
-  padding-top: 10px;
+  overflow-y: auto;
   padding-bottom: 10px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -511,6 +511,13 @@ footer {
   -ms-flex-align: strech;
   -webkit-align-items: strech;
           align-items: strech;
+}
+
+footer .box {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-top: 10px;
 }
 
 footer a {
@@ -609,7 +616,6 @@ footer .explanation-box p {
 
 footer .hour-box {
   text-align: center;
-  font-size: 130%;
   -webkit-flex-basis: 30%;
       -ms-flex-preferred-size: 30%;
           flex-basis: 30%;
@@ -784,6 +790,7 @@ footer .donation-button {
       -ms-flex-item-align: auto;
           align-self: auto;
   text-align: center;
+  padding-top: 30px;
 }
 
 footer .donation-button .button {

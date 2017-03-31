@@ -182,8 +182,8 @@
       
       <div class="osd-counter<?php if ($page->counter_active() != "true") { echo " hidden"; } ?>">
         <div class="inside">
-          <div class="label"><?php echo $page->counter_label(); ?></div>
-          <div class="count"><?php echo $page->counter_number(); ?></div>
+          <div class="label" data-holds="counter_label"><?php echo $page->counter_label(); ?></div>
+          <div class="count" data-holds="counter_number"><?php echo $page->counter_number(); ?></div>
         </div>
       </div>
       
@@ -216,18 +216,35 @@
       <ul class="donation-list" id="FullDonationList"></ul>
     </div>
     
+    
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.thefpl.us"]]);
+        _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//thefpl.us/analytics/";
+        _paq.push(['setTrackerUrl', u+'pwk.php']);
+        _paq.push(['setSiteId', '1']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pwk.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//thefpl.us/analytics/pwk.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Piwik Code -->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="/assets/24th/js/moment.js"></script>
     <script src="/assets/24th/js/24th.js"></script>
+    
     <script>
-
       setInterval(function(){ 
         getDonations();
         setTimeout(function(){
           refreshInfo();
         }, 2000);
       }, 10000);
-
     </script>
   </body>
 </html>

@@ -24,6 +24,9 @@ $json[] = array(
   'goal_title'           => (string)$data->goal_title(),
   'goal_max'             => (string)$data->goal_max(),
   'goal_min'             => (string)$data->goal_min(),
+  'counter_active'       => (string)$data->counter_active(),
+  'counter_label'        => (string)$data->counter_label(),
+  'counter_number'       => (string)$data->counter_number(),
   'overlay_active'       => (string)$data->overlay_active(),
   'overlay_text'         => (string)$data->overlay_text()->kirbytext()
 );

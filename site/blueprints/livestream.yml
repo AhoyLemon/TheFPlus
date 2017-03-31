@@ -1,7 +1,9 @@
 teftitle: Livestream
 icon: twitch
 pages:
-  template: livestream-feed
+  template:
+    - default
+    - livestream-feed
 files: true
 fields:
   title:

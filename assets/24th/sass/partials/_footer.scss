@@ -1,5 +1,5 @@
-footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%; padding-top:10px; padding-bottom:10px;
-  .box { @extend %vertical-center; }
+footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4; background-color:#f2eece; color:$black; font-family:$font; line-height:100%; overflow-y: auto; padding-bottom: 10px;
+  .box { @extend %vertical-center; justify-content: flex-start; padding-top: 10px; }
   a { color:$red; text-decoration: none;
     &:hover { text-decoration: underline; }
   }
@@ -17,7 +17,7 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
     p { margin-bottom: 0;}
   }
   
-  .hour-box { text-align: center; font-size:130%; @include flex-item(30%);
+  .hour-box { text-align: center; @include flex-item(30%);
     .number { font-size:380%; font-weight: $bold; line-height: 80%; }
   }
   .doc-box { @include flex-item(35%);
@@ -57,7 +57,7 @@ footer { @include position(fixed,null,0,0,$offset); height: $offset; z-index: 4;
     }
   }
   
-  .donation-button { @include flex-item(35%); text-align: center; 
+  .donation-button { @include flex-item(35%); text-align: center; padding-top: 30px;
     .button { padding:1em 2em; text-decoration: none; }
     .donation-benefactor { font-size:80%; padding-top: 0.5em; }
   }
