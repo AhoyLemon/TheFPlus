@@ -1,4 +1,5 @@
 title: Submission Hopper
+icon: spinner
 pages: false
 files: false
 fields:
@@ -22,16 +23,15 @@ fields:
             label: Title
             type: text
             icon: file-text-o
+          submitter:
+            label: Submitter
+            type: tags
+            icon: gift
           docurl:
             label: URL
             type: url
             width: 1/2
             icon: link
-          submitter:
-            label: Submitter
-            type: tags
-            width: 1/2
-            icon: gift
           subdate:
             label: Date Submitted
             type: date
@@ -44,3 +44,8 @@ fields:
             text: yup
             width: 1/2
             icon: play-circle
+          livestream_hour:
+            label: Livestream Hour?
+            type: number
+            width: 1/2
+            icon: twitch
