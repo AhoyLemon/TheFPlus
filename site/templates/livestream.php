@@ -253,7 +253,7 @@
         setTimeout(function(){
           refreshInfo();
         }, 2000);
-      }, 10000);
+      }, 60000);
     </script>
   </body>
 </html>

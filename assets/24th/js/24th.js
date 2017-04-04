@@ -214,10 +214,12 @@ function refreshInfo() {
       console.log(info);
       
       // Stream info text
-      if (info.text_under_button && info.text_under_button != current.text_under_button) {
-        current.text_under_button = info.text_under_button;
-        $('[data-holds="text_under_button"]').html(info.text_under_button);
-        $('[data-holds="text_under_button"]').removeClass('hidden');
+      if (info.text_under_button) {
+        if (info.text_under_button != current.text_under_button) {
+          current.text_under_button = info.text_under_button;
+          $('[data-holds="text_under_button"]').html(info.text_under_button);
+          $('[data-holds="text_under_button"]').removeClass('hidden');
+        }
       } else {
         $('[data-holds="text_under_button"]').addClass('hidden');
       }     
