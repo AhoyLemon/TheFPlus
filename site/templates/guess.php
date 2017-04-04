@@ -135,6 +135,28 @@
          
     </div>
 
+    
+    <!-- SOURCES -->
+    
+    <?php if ($page->sources() != "") { ?>
+      <div class="info-block sources">
+        <b>Sources</b>
+        <ul>
+          <?php foreach ($page->sources()->toStructure() as $source) { ?>
+            <li>
+              <a href="<?php echo $source->url(); ?>" target="_blank">
+                <?php echo $source->name(); ?>
+              </a>
+              <?php if ($source->provider() != "") { ?>
+                ( <?php echo $source->provider(); ?> )
+              <?php } ?>
+            </li>
+          <?php } ?>
+        </ul>
+      </div>
+    <?php } ?>
+    
+    
     <!-- ADDITIONAL FUN -->
     <?php if ($page->bonus_content() != ""): ?>
       <div class="info-block additional-fun">

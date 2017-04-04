@@ -60,12 +60,14 @@ fields:
       name:
         label: Name
         type: text
+        required: true
       url:
         label: URL
         type: url
+        required: true
       provider:
-        label: Provider
-        type: provider
+        label: Organization
+        type: text
   bonus_content:
     label: Bonus Content
     type: markdown
