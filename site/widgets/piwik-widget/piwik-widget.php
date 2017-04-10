@@ -1,6 +1,6 @@
 <?php
 return array(
-	'title' => 'Piwik Stats For Today',
+	'title' => 'Piwik Stats',
 	'html'  => function() {
 
 		$data = array(

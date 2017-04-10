@@ -179,7 +179,7 @@
         </summary>
       </article>
     <?php } else if ($article->parent()->slug() == "guess") { ?>
-      <article class="also-made brief">
+      <article class="adjudicated-guess brief">
         <header>
           <h2 class="title">
             <a href="<?php echo $article->url() ?>">
