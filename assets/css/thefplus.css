@@ -1247,6 +1247,11 @@ article.full .episode-actions a:hover .label {
   background: rgba(27, 20, 38, 0.85);
 }
 
+.summaries article.brief.adjudicated-guess {
+  background-color: #afdbfe;
+  border-color: #96d0fe;
+}
+
 .summaries article.brief .episode-number {
   position: absolute;
   bottom: 0.2em;

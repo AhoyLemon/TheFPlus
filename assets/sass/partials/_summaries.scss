@@ -40,6 +40,9 @@
       &.also-made { background-color: $also-made; color:$white; border-color: darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
         .hover-cover { background:rgba($also-made,0.85); }
       }
+      &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%);
+        
+      }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
         &:before { content:'#'; }
       }
