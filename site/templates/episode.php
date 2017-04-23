@@ -254,4 +254,29 @@
 
 </main>
 
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "<?php echo $page->parent()->url(); ?>",
+        "url": "<?php echo $page->parent()->url(); ?>",
+        "name": "<?php echo $page->parent()->title(); ?>"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "<?php echo $page->url(); ?>",
+        "url": "<?php echo $page->url(); ?>",
+        "name": "<?php echo $page->title(); ?>"
+      }
+    }]
+  }
+</script>
+
+
 <?php snippet('footer') ?>
