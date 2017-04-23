@@ -1,6 +1,9 @@
 <?php snippet('header') ?>
 
 
+<!-- RSS LINK -->
+<link type="application/rss+xml" rel="alternate" title="Adjudicated Guess" href="http://feeds.feedburner.com/aguess"/>
+
 <main class="main page" role="main">
 
   <article class="episode full">
