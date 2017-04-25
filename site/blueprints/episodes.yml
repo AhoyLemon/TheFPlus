@@ -3,6 +3,7 @@ icon: podcast
 pages:
   template:
     - episode
+    - marathon
   sort: flip
 files: false
 fields:

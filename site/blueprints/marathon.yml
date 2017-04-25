@@ -1,0 +1,97 @@
+title: Marathon Recording
+icon: clock-o
+pages: false
+files: true
+fields:
+  prevnext: prevnext
+  title:
+    label: Title
+    type:  text
+  first_hour:
+    label: First Hour
+    type: number
+    width: 1/4
+  last_hour:
+    label: Last Hour
+    type: number
+    width: 1/4
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/2
+  date:
+    label: Release Date
+    type: date
+    format: MM/DD/YYYY
+    width: 1/4
+  time:
+    label: Release Time
+    type: time
+    interval: 1
+    width: 1/4
+  featured_site:
+    label: Site(s) featured
+    type: tags
+    icon: globe
+    width: 1/2
+    help: Comma separated, no HTTP://
+  text:
+    label: Summary
+    type: markdown
+    icon: align-left
+  
+  hours:
+    label: Hours
+    type: structure
+    entry: >
+      HOUR {{hour}}: {{name}}
+    fields:
+      hour:
+        label: Hour
+        type: number
+        width: 1/4
+      name:
+        label: Name
+        type: text
+        width: 3/4
+      provider:
+        label: Provider
+        type: text
+        width: 1/2
+        icon: gift
+      document_link:
+        label: Document Link
+        type: url
+        icon: file-text-o
+        width: 1/2
+      cast:
+        label: Readers
+        type: tags
+        icon: users
+      artist:
+        label: Artist
+        type: tags
+        icon: users
+        width: 1/2
+      youtube_url:
+        label: YouTube Slug
+        type: text
+        icon: youtube
+        width: 1/2
+      text:
+        label: Summary
+        type: markdown
+        icon: align-left
+        
+  cast:
+    label: Participants
+    type: tags
+    icon: users
+  tags:
+    label: Episode Tags
+    lowercase: true
+    type: tags
+  leadout:
+    label: Lead Out
+    type: markdown
+    icon: align-left
