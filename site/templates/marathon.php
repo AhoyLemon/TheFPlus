@@ -8,26 +8,37 @@
   <div class="full marathon-block">
     <h1><?php echo $page->title(); ?></h1>
     
-    <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
-      <span class="date">
-        <?php echo $pubdate ?>
-      </span>
-      @
-      <span class="time">
-        <?php echo $pubtime; ?>
-      </span>
-    </time>
+    <div class="recorded">
+      <time>
+        Recorded: 
+        <span class="date">
+          <?php echo date('l, F jS Y', strtotime($page->record_date_start())); ?>
+        </span>
+        @
+        <span class="time">
+          <?php echo date("g:ia", strtotime($page->record_time_start())); ?>
+        </span>
+        - 
+        <span class="time">
+          <?php echo date("g:ia", strtotime($page->record_time_end())); ?>
+        </span>
+        CST
+      </time>
+    </div>
     
-    
-    <time class="released" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
-      <span class="date">
-        <?php echo $pubdate ?>
-      </span>
-      @
-      <span class="time">
-        <?php echo $pubtime; ?>
-      </span>
-    </time>
+    <div class="released">
+      <time>
+        Released: 
+        <span class="date">
+          <?php echo date('l, F jS Y', $page->date()); ?>
+        </span>
+        @
+        <span class="time">
+          <?php echo date("g:ia", strtotime($page->time())); ?>
+        </span>
+        CST
+      </time>
+    </div>
     
     <?php if ($page->text() != "") { ?>
       <summary class="info-block hours-leadin">
