@@ -1,4 +1,5 @@
 title: Tag Cloud
+icon: tags
 pages: false
 fields:
   title:

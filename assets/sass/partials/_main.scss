@@ -131,6 +131,43 @@ article.full {
   }
 }
 
+
+// MARATHON SPECIFIC BITS
+.marathon-block {
+  h1 { font-weight:400; }
+  .hours-leadin, .hours-leadout { font-size:1.6vw; font-weight: $light; }
+  .hours-leadin { padding-top: 1em; }
+  .hours-leadout { padding-bottom: 1em; }
+}
+
+.marathon-hours { padding-top: 2em; }
+.marathon-hour { margin-bottom: 2em; border-bottom: 1px solid rgba($black,0.75);
+  //iframe { margin-left: auto; margin-right:auto; display: block; }
+  @include flex-container();
+  header { @include flex-item(100%); padding-bottom:0; }
+  .video-holder { @include flex-item(560px,auto,0); }
+  .detail-holder { @include flex-item(50%); }
+  summary { padding-top: 1em; }
+  .doc-link-holder { @include flex-container(); justify-content: flex-end;
+    a { @include flex-item(70px,auto,0,0); height: 70px;
+      &:hover { text-decoration: none;}
+    }
+    svg { width:100%; height: 100%;
+      * { fill:$red; }
+    }
+  }
+}
+@media (min-width: 888px) {
+  .marathon-hour {
+    .video-holder { order:4; }
+    .detail-holder { padding-right: 1em; }
+  }
+}
+
+
+
+
+
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
   main { display: block; padding:20px 20px 20px 320px; height:100vh; overflow-y: auto;

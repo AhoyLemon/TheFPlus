@@ -1,62 +1,46 @@
 @charset "UTF-8";
 .buy-buttons {
-  display: block;
-}
-
-.buy-buttons button {
-  display: inline-block;
-  font-size: 0.9em;
-  width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid #c0282d;
-  background-color: #fff;
-  color: #c0282d;
-  padding: 0.3em 1em;
-  border-radius: 5em;
-  cursor: pointer;
-  font-weight: 400;
-  margin-bottom: 0.3em;
-  outline: none;
-  width: auto;
-}
-
-.buy-buttons button:hover {
-  background: #c0282d;
-  color: #eee;
-}
-
-.buy-buttons button[disabled] {
-  opacity: 0.5;
-  color: #343434;
-  background-color: rgba(52, 52, 52, 0.1);
-  border-color: rgba(52, 52, 52, 0.6);
-  cursor: default;
-}
-
-.buy-buttons button.active {
-  background: #343434;
-  color: #eee;
-}
-
-.buy-buttons button .small {
-  font-size: 0.6em;
-}
-
-.buy-buttons h4 {
-  margin-top: 1em;
-  margin-bottom: 0.25em;
-}
-
-.buy-buttons h6 {
-  text-align: center;
-  text-transform: lowercase;
-}
+  display: block; }
+  .buy-buttons button {
+    display: inline-block;
+    font-size: 0.9em;
+    width: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 2px solid #c0282d;
+    background-color: #fff;
+    color: #c0282d;
+    padding: 0.3em 1em;
+    border-radius: 5em;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 0.3em;
+    outline: none;
+    width: auto; }
+    .buy-buttons button:hover {
+      background: #c0282d;
+      color: #eee; }
+    .buy-buttons button[disabled] {
+      opacity: 0.5;
+      color: #343434;
+      background-color: rgba(52, 52, 52, 0.1);
+      border-color: rgba(52, 52, 52, 0.6);
+      cursor: default; }
+    .buy-buttons button.active {
+      background: #343434;
+      color: #eee; }
+    .buy-buttons button .small {
+      font-size: 0.6em; }
+  .buy-buttons h4 {
+    margin-top: 1em;
+    margin-bottom: 0.25em; }
+  .buy-buttons h6 {
+    text-align: center;
+    text-transform: lowercase; }
 
 #CountryHeadline {
   display: none;
   margin-bottom: 0.7em;
-  margin-top: 0.7em;
-}
+  margin-top: 0.7em; }
 
 .paypal-buy-form {
   display: block;
@@ -64,205 +48,142 @@
   margin-left: auto;
   margin-right: auto;
   display: none;
-  float: left;
-}
-
-.paypal-buy-form select {
-  display: block;
-  font-size: 1rem;
-  padding: 0.25em;
-  width: 100%;
-  height: 3em;
-  font-family: "Source Sans Pro", sans-serif;
-}
-
-.paypal-buy-form button {
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: 0.5em;
-  font-size: 125%;
-  border: 2px solid #c0282d;
-  border-radius: 5em;
-  background: #fff;
-  color: #c0282d;
-  padding: 0.7em;
-}
-
-.paypal-buy-form button:hover {
-  background: #c0282d;
-  color: #eee;
-  cursor: pointer;
-}
+  float: left; }
+  .paypal-buy-form select {
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    width: 100%;
+    height: 3em;
+    font-family: "Source Sans Pro", sans-serif; }
+  .paypal-buy-form button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5em;
+    font-size: 125%;
+    border: 2px solid #c0282d;
+    border-radius: 5em;
+    background: #fff;
+    color: #c0282d;
+    padding: 0.7em; }
+    .paypal-buy-form button:hover {
+      background: #c0282d;
+      color: #eee;
+      cursor: pointer; }
 
 .hidden {
-  display: none;
-}
+  display: none; }
 
 .sticker-series {
   border-bottom: 1px solid #343434;
   padding-bottom: 1em;
   margin-bottom: 1em;
-  clear: both;
-}
-
-.sticker-series .row.first {
-  font-size: 1.2em;
-  line-height: 95%;
-}
-
-.sticker-series .row.second {
-  font-size: 0.75em;
-}
-
-.sticker-series img.thumbnail {
-  float: left;
-  margin-right: 20px;
-}
-
-.sticker-series .series-name {
-  font-weight: 600;
-}
-
-.sticker-series .run:before {
-  content: ' • ';
-}
-
-.sticker-series .remaining:before {
-  content: ' • ';
-}
-
-.sticker-series .creator {
-  font-style: italic;
-  font-size: 0.8em;
-}
-
-.sticker-series dd {
-  padding-top: 10px;
-  clear: both;
-}
-
-.sticker-series footer.add-your-own {
-  color: #4e7f71;
-  font-size: 0.65em;
-  padding: .2em 1em;
-  text-align: right;
-}
+  clear: both; }
+  .sticker-series .row.first {
+    font-size: 1.2em;
+    line-height: 95%; }
+  .sticker-series .row.second {
+    font-size: 0.75em; }
+  .sticker-series img.thumbnail {
+    float: left;
+    margin-right: 20px; }
+  .sticker-series .series-name {
+    font-weight: 500; }
+  .sticker-series .run:before {
+    content: ' • '; }
+  .sticker-series .remaining:before {
+    content: ' • '; }
+  .sticker-series .creator {
+    font-style: italic;
+    font-size: 0.8em; }
+  .sticker-series dd {
+    padding-top: 10px;
+    clear: both; }
+  .sticker-series footer.add-your-own {
+    color: #4e7f71;
+    font-size: 0.65em;
+    padding: .2em 1em;
+    text-align: right; }
 
 .merch-photos {
   margin-top: 20px;
   clear: both;
-  padding-top: 1.2em;
-}
-
-.merch-photos dt {
-  font-weight: 400;
-  font-size: 1em;
-  color: #4e7f71;
-  cursor: pointer;
-}
-
-.merch-photos dt:after {
-  content: 'SEE PHOTOS';
-  padding: 0.2em 1em;
-  border: 2px solid #4e7f71;
-}
-
-.merch-photos dt:hover:after {
-  background-color: #e5e972;
-}
-
-.merch-photos dt.active:after {
-  content: 'HIDE PHOTOS';
-  background-color: #4e7f71;
-  color: #eee;
-}
-
-.merch-photos dt.active:hover:after {
-  color: #e5e972;
-}
-
-.merch-photos dd {
-  display: none;
-  padding: 10px;
-  text-align: left;
-  border: 2px solid #4e7f71;
-}
-
-.merch-photos dd img {
-  display: inline;
-  margin-bottom: 5px;
-}
-
-.merch-photos footer.add-your-own {
-  color: #4e7f71;
-  font-size: 0.65em;
-  padding: .2em 1em;
-  text-align: right;
-}
+  padding-top: 1.2em; }
+  .merch-photos dt {
+    font-weight: 400;
+    font-size: 1em;
+    color: #4e7f71;
+    cursor: pointer; }
+    .merch-photos dt:after {
+      content: 'SEE PHOTOS';
+      padding: 0.2em 1em;
+      border: 2px solid #4e7f71; }
+    .merch-photos dt:hover:after {
+      background-color: #e5e972; }
+    .merch-photos dt.active:after {
+      content: 'HIDE PHOTOS';
+      background-color: #4e7f71;
+      color: #eee; }
+    .merch-photos dt.active:hover:after {
+      color: #e5e972; }
+  .merch-photos dd {
+    display: none;
+    padding: 10px;
+    text-align: left;
+    border: 2px solid #4e7f71; }
+    .merch-photos dd img {
+      display: inline;
+      margin-bottom: 5px; }
+  .merch-photos footer.add-your-own {
+    color: #4e7f71;
+    font-size: 0.65em;
+    padding: .2em 1em;
+    text-align: right; }
 
 #PayPalDonateForm {
   display: block;
   width: 21em;
   margin-left: auto;
-  margin-right: auto;
-}
-
-#PayPalDonateForm .dollar-holder {
-  display: inline-block;
-  border: 2px solid #343434;
-  font-size: 1.5em;
-  border-top-left-radius: 1em;
-  border-bottom-left-radius: 1em;
-  float: left;
-  padding-top: 0.21em;
-  padding-bottom: 0.21em;
-  padding-left: 1em;
-}
-
-#PayPalDonateForm .dollar-holder input[type="number"] {
-  font-size: 2.4rem;
-  width: 2em;
-  font-family: "Source Sans Pro", sans-serif;
-  border: none;
-  background: transparent;
-  font-weight: 300;
-}
-
-#PayPalDonateForm .dollar-holder:hover {
-  background: white;
-}
-
-#PayPalDonateForm button {
-  display: inline-block;
-  font-family: "Source Sans Pro", sans-serif;
-  border: 2px solid #c0282d;
-  background-color: #fff;
-  color: #c0282d;
-  padding: 0.3em 0.8em 0.3em 0.55em;
-  border-top-right-radius: 1em;
-  border-bottom-right-radius: 1em;
-  cursor: pointer;
-  font-weight: 400;
-  outline: none;
-  width: auto;
-  font-size: 1.48em;
-  border-left: none;
-}
-
-#PayPalDonateForm button:hover {
-  background-color: #c0282d;
-  color: #eee;
-}
-
-#PayPalDonateForm button:active {
-  background-color: #343434;
-}
-
-#PayPalDonateForm button {
-  height: 2.12em;
-}
-
-#PayPalDonateForm .dollar-holder {
-  height: 2.1em;
-}
+  margin-right: auto; }
+  #PayPalDonateForm .dollar-holder {
+    display: inline-block;
+    border: 2px solid #343434;
+    font-size: 1.5em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    float: left;
+    padding-top: 0.21em;
+    padding-bottom: 0.21em;
+    padding-left: 1em; }
+    #PayPalDonateForm .dollar-holder input[type="number"] {
+      font-size: 2.4rem;
+      width: 2em;
+      font-family: "Source Sans Pro", sans-serif;
+      border: none;
+      background: transparent;
+      font-weight: 300; }
+    #PayPalDonateForm .dollar-holder:hover {
+      background: white; }
+  #PayPalDonateForm button {
+    display: inline-block;
+    font-family: "Source Sans Pro", sans-serif;
+    border: 2px solid #c0282d;
+    background-color: #fff;
+    color: #c0282d;
+    padding: 0.3em 0.8em 0.3em 0.55em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    cursor: pointer;
+    font-weight: 400;
+    outline: none;
+    width: auto;
+    font-size: 1.48em;
+    border-left: none; }
+    #PayPalDonateForm button:hover {
+      background-color: #c0282d;
+      color: #eee; }
+    #PayPalDonateForm button:active {
+      background-color: #343434; }
+  #PayPalDonateForm .dollar-holder, #PayPalDonateForm button {
+    height: 81px; }

@@ -1,4 +1,5 @@
 title: People
+icon: users
 pages:
   sort: role asc
   template:
