@@ -7,18 +7,31 @@ fields:
   title:
     label: Title
     type:  text
-  first_hour:
-    label: First Hour
-    type: number
-    width: 1/4
-  last_hour:
-    label: Last Hour
-    type: number
-    width: 1/4
+    width: 1/2
   cover:
     label: Cover Image
     type: image
     width: 1/2
+  record_date_start:
+    label: Record Date (START)
+    type: date
+    format: MM/DD/YYYY
+    width: 1/4
+  record_time_start:
+    label: Record Time (START)
+    type: time
+    interval: 1
+    width: 1/4
+  record_date_end:
+    label: Record Date (END)
+    type: date
+    format: MM/DD/YYYY
+    width: 1/4
+  record_time_end:
+    label: Record Time (END)
+    type: time
+    interval: 1
+    width: 1/4
   date:
     label: Release Date
     type: date
