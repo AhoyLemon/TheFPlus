@@ -77,7 +77,7 @@
                   <?php } ?>
                 <?php endforeach ?>
               </ul>
-              <?php if ($hour->artist()) { ?>
+              <?php if ($hour->artist() != "") { ?>
                 <?php 
                   $alink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $hour->artist())));
                 ?>
@@ -97,14 +97,12 @@
                 </div>
               <?php } ?>
               <summary>
+                <a class="action read" href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
+                  <svg viewBox="0 0 100 100">
+                    <use xlink:href="#IconDocument"></use>
+                  </svg>
+                </a>
                 <?php echo $hour->text()->kirbytext(); ?>
-                <div class="doc-link-holder">
-                  <a itemprop="citation" class="action read" href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
-                    <svg viewBox="0 0 100 100">
-                      <use xlink:href="#IconDocument"></use>
-                    </svg>
-                  </a>
-                </div>
               </summary>
             </div>
         </article>
@@ -162,11 +160,25 @@
       
     </div> */ ?>
 
+    <!-- ADDITIONAL FUN -->
+    <?php if ($page->leadout() != "") { ?>
+      <summary class="info-block hours-leadout">
+        <?php echo $page->leadout()->kirbytext() ?>
+      </summary>
+    <?php } ?>
+    
+    <!-- LIVESTREAM GALLERY -->
+    
+    <summary class="info-block marathon-gallery button-holder">
+      <a href="https://goo.gl/photos/t7iy7MhVPXNXJUKo9" target="_blank" class="button">All Livestream Art</a>
+    </summary>
+    
     <!-- EPISODE TAGS -->
     <?php if ($page->tags() != "") { ?>
+      <?php $etags = explode(",", $page->tags()); ?>
       <div class="info-block episode-tags">
         <span class="label">Episode Tags:</span>
-        <div itemprop="keywords" content="<?php echo $page->tags() ?>">
+        <div style="font-size:1.4rem;">
           <?php foreach($etags as $etag): ?>
             <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
             <?php $x = 0; ?>
@@ -177,13 +189,7 @@
         </div>
       </div>
     <?php } ?>
-
-    <!-- ADDITIONAL FUN -->
-    <?php if ($page->leadout() != "") { ?>
-      <summary class="info-block hours-leadout">
-        <?php echo $page->leadout()->kirbytext() ?>
-      </summary>
-    <?php } ?>
+    
     
   </div>
 
