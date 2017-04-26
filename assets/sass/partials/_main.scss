@@ -169,9 +169,14 @@ article.full {
 }
 
 @media (max-width: 887px) {
+  .marathon-block {
+    .hours-leadin, .hours-leadout { font-size:1rem; }
+  }
   .marathon-hour {
-    .video-holder { @include flex-item(100%); }
-    .detail-holder { @include flex-item(100%); }
+    .video-holder { @include flex-item(100%);
+      iframe { max-width: 100%; max-height: 53vw; }
+    }
+    .detail-holder { @include flex-item(100%); font-size:0.9rem; }
   }
 }
 
