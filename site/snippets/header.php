@@ -69,11 +69,13 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo $page->url() ;?>">
   <?php if ($page->cover() != "") { ?>
-    <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
+    <meta property="og:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
+    <meta property="og:image:width" content="<?php echo $page->cover()->toFile()->width(); ?>" />
+    <meta property="og:image:height" content="<?php echo $page->cover()->toFile()->height(); ?>" />
   <?php } else if($image = $page->image()) { ?>
-    <meta name="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
+    <meta property="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
   <?php } else { ?>
-    <meta name="og:image" content="https://thefpl.us/assets/images/og-image.png" />
+    <meta property="og:image" content="https://thefpl.us/assets/images/og-image.png" />
 	<?php } ?>
   <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
   <meta property="og:email" content="lemon@thefpl.us">

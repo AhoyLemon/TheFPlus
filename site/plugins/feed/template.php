@@ -36,74 +36,73 @@
         $persons = explode(",", $item->cast());
         $desc = strip_tags($item->text()->kirbytext());
       ?>
-      <item>
-        <title><?php echo $item->uid() ?>: <?php echo xml($item->title()) ?></title>
-        <link><?php echo xml($item->url()) ?></link>
-        <guid><?php echo xml($item->url()) ?></guid>
-        <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
-        <description>
-          <?php echo $desc; ?>
-        </description>
-        <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
-        <content:encoded>
-          <![CDATA[
-            <?php if ($item->cast() != ""): ?>
-              <p>with:
-                <?php foreach($persons as $person): ?>
-                  <a href="https://thefpl.us/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a> &nbsp;
-                <?php endforeach ?>
-              </p>
-            <?php endif ?>
-            <?php if ($item->featured_site() != ""): ?>
-              <p>reading: 
-                <?php if ($multisite == true): ?>
-                  <?php foreach($fsites as $fsite): ?>
-                    <code><?php echo trim($fsite) ?></code> &nbsp;
+      <?php if ($item->episode_file() != "") { ?>
+        <item>
+          <title><?php echo $item->uid() ?>: <?php echo xml($item->title()) ?></title>
+          <link><?php echo xml($item->url()); ?></link>
+          <guid><?php echo xml($item->url()); ?></guid>
+          <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
+          <description>
+            <?php echo $desc; ?>
+          </description>
+          <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
+          <content:encoded>
+            <![CDATA[
+              <?php if ($item->cast() != ""): ?>
+                <p>with:
+                  <?php foreach($persons as $person): ?>
+                    <a href="https://thefpl.us/meet/<?php $clink = preg_replace('/\s+/', '-', $person); echo strtolower($clink) ?>"><?php echo $person ?></a> &nbsp;
                   <?php endforeach ?>
-                <?php endif ?>
-                <?php if ($multisite == false): ?>
-                  <code><?php echo trim($item->featured_site()) ?></code>
-                <?php endif ?>
-              </p>
-            <?php endif ?>
-            <?php if ($item->provider() != ""): ?>
-              <p>
-                Content provided by <?php echo $item->provider(); ?>.
-                <?php if ($item->editor() != ""): ?>
-                <br />Edited by <?php echo $item->editor(); ?>.
-                <?php endif ?>
-              </p>
-            <?php endif ?>
-            <?php echo $item->{$textfield}()->kirbytext() ?>
-            <?php if ($item->music_used() != ""): ?>
-              <p>Music used:</p>
-              <ol>
-                <?php foreach($songs as $song): ?>
-                  <li><?php echo trim($song) ?></li>
-                <?php endforeach ?>
-              </ol>
-            <?php endif ?>
-          ]]>
-        </content:encoded>
-        <itunes:author>The F Plus</itunes:author>
-        <?php if ($item->featured_site() != "") { ?>
-          <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
-        <?php } else { ?>
-          <itunes:subtitle><?php echo excerpt($item->text()->xml(), 100); ?></itunes:subtitle>
-        <?php } ?>
-        
-        <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
-        <itunes:summary><?php echo $desc; ?></itunes:summary>
-        
-        <?php if ($item->cover() != "") { ?>
-          <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
-        <?php } else if($image = $page->image()) { ?>
-          <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
-        <?php } ?>
+                </p>
+              <?php endif ?>
+              <?php if ($item->featured_site() != ""): ?>
+                <p>reading: 
+                  <?php if ($multisite == true): ?>
+                    <?php foreach($fsites as $fsite): ?>
+                      <code><?php echo trim($fsite) ?></code> &nbsp;
+                    <?php endforeach ?>
+                  <?php endif ?>
+                  <?php if ($multisite == false): ?>
+                    <code><?php echo trim($item->featured_site()) ?></code>
+                  <?php endif ?>
+                </p>
+              <?php endif ?>
+              <?php if ($item->provider() != ""): ?>
+                <p>
+                  Content provided by <?php echo $item->provider(); ?>.
+                  <?php if ($item->editor() != ""): ?>
+                  <br />Edited by <?php echo $item->editor(); ?>.
+                  <?php endif ?>
+                </p>
+              <?php endif ?>
+              <?php echo $item->{$textfield}()->kirbytext() ?>
+              <?php if ($item->music_used() != ""): ?>
+                <p>Music used:</p>
+                <ol>
+                  <?php foreach($songs as $song): ?>
+                    <li><?php echo trim($song) ?></li>
+                  <?php endforeach ?>
+                </ol>
+              <?php endif ?>
+            ]]>
+          </content:encoded>
+          <itunes:author>The F Plus</itunes:author>
+          <?php if ($item->featured_site() != "") { ?>
+            <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
+          <?php } else { ?>
+            <itunes:subtitle><?php echo excerpt($item->text()->xml(), 100); ?></itunes:subtitle>
+          <?php } ?>
 
+          <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
+          <itunes:summary><?php echo $desc; ?></itunes:summary>
 
-
-      </item>
+          <?php if ($item->cover() != "") { ?>
+            <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
+          <?php } else if($image = $page->image()) { ?>
+            <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
+          <?php } ?>
+        </item>
+      <?php } ?>
     <?php endforeach ?>
 
 </channel>
