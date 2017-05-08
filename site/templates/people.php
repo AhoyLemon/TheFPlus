@@ -28,7 +28,7 @@
   </nav>
   
   <section class="people summaries">
-    <?php foreach($page->children() as $article): ?>
+    <?php foreach($page->children()->visible()->sortBy('title', 'asc') as $article): ?>
       <article class="person brief <?php echo $article->role() ?>">
         <header>
           <h2 class="title">
