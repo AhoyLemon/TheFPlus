@@ -62,9 +62,8 @@ article { font-weight: $light;
   .label { display: block; }
   ul { padding-left: 0; }
   a { @extend %tag; cursor: text;
-    //&:hover { text-decoration: none; }
     &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
-      &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; }
+      &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; border:2px solid; }
     }
   }
 }
