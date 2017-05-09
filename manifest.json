@@ -42,5 +42,7 @@
 	"start_url": "https://thefpl.us",
 	"display": "standalone",
 	"orientation": "portrait",
-  "gcm_sender_id": "456133223354"
+  "gcm_sender_id": "456133223354",
+  "theme_color": "#c0282d",
+  "background_color": "#eee"
 }
