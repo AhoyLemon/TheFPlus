@@ -130,6 +130,10 @@
                     <meta itemprop="priceCurrency" content="USD" />
                     <meta itemprop="price" content="3" />
                   </div>
+                <?php } else if ($sticker->released == "") { ?>
+                  <div class="no-buttons">
+                    <span>PRINTING</span>
+                  </div>
                 <?php } ?>
                 
               </div>

@@ -31,7 +31,6 @@
   .printed:before { content: "printed"; }
   .released:before { content: "released"; }
   .sold-out:before { content: "sold out"; }
-
   
   .title { font-size:1.2em; border-top:1px solid $black; padding:0.6em 0.25rem 0.1em 0.25rem }
   
@@ -43,7 +42,7 @@
 .buy-buttons { @include flex-container(); position: relative; width: 100%;
   &:after { @include position(absolute,0,0,null,0); background:$black; color:$white; font-size:0.85em; content:"BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY BUY"; white-space: nowrap; overflow: hidden}
   form { @include flex-item(33.333%); text-align: center; padding:1.5em 0 0.5em 0; min-width: 85px;
-    &:nth-child(2), &:nth-child(3) { border-left: 1px solid $black; }
+    // &:nth-child(2), &:nth-child(3) { border-left: 1px solid $black; }
   }
   button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;
     &:hover, &:active { color:$red; background:white; cursor: pointer; }
