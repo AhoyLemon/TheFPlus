@@ -59,7 +59,7 @@
               </h5>
             </header> 
             <div class="video-holder">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $hour->youtube_url(); ?>" frameborder="0" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $hour->youtube_url(); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
             </div>
 
             <div class="detail-holder">
