@@ -8,7 +8,10 @@
 
 .sticker-box { @include flex-item(33.3333%); border:1px solid $black; margin-bottom:10px; margin-right: 10px; 
   .inner { margin: 0.5em; border:1px solid $black; }
-  a.zoom { cursor: zoom-in; }
+  a.zoom { cursor: zoom-in;
+    //img { transform-origin: center; transition:all 0.075s linear; position: relative; z-index: 3; }
+    //&:hover img { transform:scale(1.06); }
+  }
   .thumb { max-height: 230px; max-width: 100%; display: block; margin-left: auto; margin-right: auto;  }
   .details { width: 100%; @include flex-container();
     .full { @include flex-item(100%); }
@@ -45,7 +48,8 @@
     // &:nth-child(2), &:nth-child(3) { border-left: 1px solid $black; }
   }
   button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;
-    &:hover, &:active { color:$red; background:white; cursor: pointer; }
+    &:hover { color:$red; background:white; cursor: pointer; }
+    &:active { box-shadow: none; transform:translate(2px,2px); }
   }
 }
 .no-buttons { border-top:1px solid $black; width:100%; padding: 1em 0.25rem; text-align: center;

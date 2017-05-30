@@ -161,10 +161,13 @@
     font-weight: 600;
     font-size: 1rem;
     box-shadow: 2px 2px 2px #343434; }
-    .buy-buttons button:hover, .buy-buttons button:active {
+    .buy-buttons button:hover {
       color: #c0282d;
       background: white;
       cursor: pointer; }
+    .buy-buttons button:active {
+      box-shadow: none;
+      transform: translate(2px, 2px); }
 
 .no-buttons {
   border-top: 1px solid #343434;
