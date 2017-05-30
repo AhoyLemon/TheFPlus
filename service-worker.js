@@ -1,6 +1,6 @@
 'use strict';
 
-const cacheName = 'v1.2';
+const cacheName = 'v1.21';
 const offlineUrl = '/offline.html';
 
 
@@ -29,6 +29,11 @@ self.addEventListener('fetch', function(event) {
   if (event.request.url.includes('panel')) {
     event.respondWith(fetch(event.request));
     console.log('panel editing, stay away');
+  } else if (event.request.url.includes('analytics')) {
+    event.respondWith(fetch(event.request));
+    console.log('In Piwik');
+  } else if (event.request.url.includes('podcasts')) {
+    event.respondWith(fetch(event.request));
   } else if (event.request.method !== 'GET') {
     // don't do nothing
   } else if (event.request.mode === 'navigate' || (event.request.method === 'GET' && event.request.headers.get('accept').includes('text/html'))) {
