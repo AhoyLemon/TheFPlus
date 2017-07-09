@@ -20,13 +20,13 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
 8            `Yo     `8888888P'               8 888888888P'       8 8888     `8888888P'        `8888888P'     8 8888       8 8888              8 8888      
   -->  
   
-  
-  
-  
-  
   <?php endif; ?>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <?php if ($page->isHomePage()) { ?>
+    <title>The F Plus: Terrible Things Read With Enthusiasm</title>
+  <?php } else { ?>
+    <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
+  <?php } ?>
   <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
   <!-- Favicons -->  
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
