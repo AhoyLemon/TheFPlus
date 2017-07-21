@@ -75,7 +75,9 @@ article { font-weight: $light;
 .content-provider, .edited-by {
   &:after { content:'.'; margin-left: -0.2em; }
   .multi {
-    &:last-child:before { content:' & ';}
+    &:after { content:', '; }
+    &:nth-last-child(2):after { content: ' & '; }
+    &:last-child:after { content: ''; }
   }
 }
 
