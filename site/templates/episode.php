@@ -254,6 +254,7 @@
 
 </main>
 
+<?php /*
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -277,6 +278,7 @@
     }]
   }
 </script>
+*/ ?>
 
 
 <?php snippet('footer') ?>

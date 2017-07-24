@@ -29,17 +29,17 @@
   } else if (r < 3) {
     character = "lemon";
     $('#CrossWord').addClass('cross evil');
-    $('#CharacterHolder').html('<img src="https://thefpl.us/assets/svg/404/lime-curse.svg" class="lime-curse character slide-up">');
+    $('#CharacterHolder').html('<img src="/assets/svg/404/lime-curse.svg" class="lime-curse character slide-up">');
   } else if ( r == 3) {
     character = "toast";
     $('#CrossWord').addClass('cross bad');
-    $('#CharacterHolder').html('<img src="https://thefpl.us/assets/svg/404/texas-toast.svg" class="texas-toast character slide-left">');
+    $('#CharacterHolder').html('<img src="/assets/svg/404/texas-toast.svg" class="texas-toast character slide-left">');
   } else if ( r == 4) {
     character = "portaxx";
     $('#ErrorNum').remove();
     $('#SomethingHas').text("Bird knees do not bend backwards.");
     $('#CrossHolder').remove();
-    $('#CharacterHolder').html('<img src="https://thefpl.us/assets/svg/404/portaxx-legs.svg" class="portaxx-legs character">');
+    $('#CharacterHolder').html('<img src="/assets/svg/404/portaxx-legs.svg" class="portaxx-legs character">');
   } else if ( r == 5) {
     character = 'jackchick';
     $('#ErrorNum').text('666');

@@ -114,7 +114,7 @@
           </div>
       </div>
     <?php endif; ?>
-    <div itemprop="publisher" itemscope itemtype="http://schema.org/PerformingGroup">
+    <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="<?php echo $site->title(); ?>" />
       <meta itemprop="url" content="<?php echo $site->url(); ?>" />
       <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">

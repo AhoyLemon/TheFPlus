@@ -1,0 +1,92 @@
+{
+  "@context": "http://schema.org",
+  "@type": "ComedyEvent",
+  "name": "The F Plus Live 6",
+  "url": "https://thefpl.us/panel/pages/wrote/f-plus-live-6",
+  "sameAs": "https://www.eventbrite.com/e/f-plus-live-tickets-35918225379",
+  "startDate": "2017-08-19T21:00:00-05:00",
+  "endDate": "2017-08-20T02:00:00-05:00",
+  "image": "https://thefpl.us/content/7-wrote/13-f-plus-live-6/live-satan-one.jpg",
+  "description": "This year's F Plus Live is promising to be the biggest year ever. And I don't mean that metaphorically, either. We have about five times the space as ever before, and we're going to fill it with our own peculiar kind of insanity.",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1111 S Washington Ave",
+      "addressLocality": "Minneapolis",
+      "addressRegion": "MN",
+      "postalCode": "55415"
+    },
+    "telephone": "612-340-9738",
+    "name": "Grumpy's Downtown",
+    "alternateName": "Grumpy's",
+    "sameAs": [
+      "http://www.grumpys-bar.com/downtown.html",
+      "https://twitter.com/grumpysdt",
+      "https://www.facebook.com/grumpysdt"
+    ],
+    "logo": "http://www.grumpys-bar.com/img/logo.png"
+  },
+  "performer": [
+    {
+      "@type" : "PerformingGroup",
+      "name" : "The F Plus",
+      "url": "https://thefpl.us/",
+      "sameAs": "https://twitter.com/thefplus",
+      "logo": "https://thefpl.us/schemaLogo.png",
+      "alternateName": "The F+",
+      "image": [
+        "https://lh3.googleusercontent.com/Unm-68-X78iIZuJLhIftCKBHhpGpQh2X8AgmZmJGXh9m=w1266-h949-no",
+        "https://lh3.googleusercontent.com/-hJoGqAczhwvw5wshiIiV4lxvvdIGoJO1n_7R4VLgxzV=w1266-h949-no",
+        "https://lh3.googleusercontent.com/v5ZbR_A9pyaj7ERJK7qCYrfg6aN02u4--S17-qLlX5AP=w1266-h949-no"
+      ]
+    },
+    {
+      "@type" : "Person",
+      "name"  : "Lemon",
+      "url"   : "https://thefpl.us/meet/lemon",
+      "sameAs": "http://ahoylemon.xyz",
+      "image": "https://thefpl.us/meet/lemon/lemonsquare.jpg"
+    },
+    {
+      "@type" : "Person",
+      "name"  : "Boots Raingear",
+      "url"   : "https://thefpl.us/meet/boots-raingear",
+      "image" : "https://thefpl.us/meet/boots-raingear/boots.jpg"
+    },
+    {
+      "@type" : "Person",
+      "name"  : "Adam Bozarth",
+      "url"   : "https://thefpl.us/meet/adam-bozarth",
+      "image" : "https://thefpl.us/meet/adam-bozarth/adambozarth.jpg"
+    },
+    {
+      "@type" : "Person",
+      "name"  : "J W Friedman",
+      "url"   : "https://thefpl.us/meet/j-w-friedman",
+      "sameAs": "http://idontevenownatelevision.com/",
+      "image" : "https://thefpl.us/meet/j-w-friedman/j-w-friedman.jpg"
+    },
+    {
+      "@type" : "Person",
+      "name"  : "Lou Fernandez",
+      "url"   : "https://thefpl.us/meet/lou-fernandez",
+      "sameAs": "http://loureads.com/",
+      "image" : "https://thefpl.us/meet/lou-fernandez/lou.jpg"
+    },
+    {
+      "@type" : "Person",
+      "name"  : "Jack Chick",
+      "url"   : "https://thefpl.us/meet/jack-chick",
+      "image" : "https://thefpl.us/meet/jack-chick/jack-makeup.jpg"
+    }
+  ],
+  "offers": {
+    "@type" : "Offer",
+    "availability" : "http://schema.org/LimitedAvailability",
+    "url": "https://www.eventbrite.com/e/f-plus-live-tickets-35918225379",
+    "price": "10",
+    "priceCurrency": "USD",
+    "validFrom": "2017-07-04"
+  }
+}
