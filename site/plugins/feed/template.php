@@ -24,6 +24,8 @@
 
     <generator><?php echo c::get('feed.generator', 'Kirby') ?></generator>
 
+    <?php $itemCount = 0; ?>
+
     <?php foreach($items as $item): ?>
       <?php 
         if (strpos($item->featured_site(),',') !== false) {
@@ -37,15 +39,17 @@
         $desc = strip_tags($item->text()->kirbytext());
       ?>
       <?php if ($item->episode_file() != "") { ?>
+        <?php $itemCount++; ?>
         <item>
           <title><?php echo $item->uid() ?>: <?php echo xml($item->title()) ?></title>
           <link><?php echo xml($item->url()); ?></link>
           <guid><?php echo xml($item->url()); ?></guid>
           <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
+          <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
+<?php if ($itemCount < 50) { ?>
           <description>
             <?php echo $desc; ?>
           </description>
-          <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
           <content:encoded>
             <![CDATA[
               <?php if ($item->cast() != ""): ?>
@@ -86,6 +90,21 @@
               <?php endif ?>
             ]]>
           </content:encoded>
+          <itunes:summary><?php echo $desc; ?></itunes:summary>
+<?php } else { ?>
+          <description>
+            Show notes at <?php echo xml($item->url()); ?>
+          </description>
+          <content:encoded>
+            <![CDATA[
+              <p>Show notes available in the <a href="<?php echo xml($item->url()); ?>">episode page</p>
+            ]]>
+          </content:encoded>
+          <description>
+            Show notes at <?php echo xml($item->url()); ?>
+          </description>
+<?php } ?>
+          
           <itunes:author>The F Plus</itunes:author>
           <?php if ($item->featured_site() != "") { ?>
             <itunes:subtitle>reading <?php echo xml($item->featured_site()) ?></itunes:subtitle>
@@ -94,7 +113,6 @@
           <?php } ?>
 
           <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
-          <itunes:summary><?php echo $desc; ?></itunes:summary>
 
           <?php if ($item->cover() != "") { ?>
             <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
