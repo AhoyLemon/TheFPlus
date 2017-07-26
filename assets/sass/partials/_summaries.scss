@@ -21,7 +21,6 @@
           svg { display: none; }
         }
         &:hover {
-          img { opacity: 0.5; }
           .hover-cover { @include translateY(0); }
         }
       }
