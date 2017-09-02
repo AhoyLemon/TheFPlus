@@ -1,0 +1,28 @@
+@import "partials/_variables";
+@import "partials/_mixins";
+.location-selector { font-size:1.2rem; font-family:"Source Sans Pro", sans-serif; height:3em; padding:0.5em 1em; background:white;
+  
+}
+.price-readout { margin-top: 1em; margin-bottom: 1rem; display: none; font-weight: $bold; }
+.size-buttons { display: none; }
+ul.size-array { @include flex-container(); width:100%; padding:0 !important;
+  .cut { min-width: 6em; text-align: right;
+    span { text-transform: uppercase; line-height: 90%; display: block; }
+    .size-chart-link { font-size:80%; color:$red; }
+  }
+  li { list-style: none; padding-left: 0.25em; padding-right: 0.25em; padding-bottom: 1em; }
+  
+  button { background-color:$red; color:$white; border:none; font-family:"Source Sans Pro", sans-serif; font-size:1.25rem; padding:0.5em 1em; font-weight: $bold; cursor: pointer;
+    &:hover { transform:scale(1.1); }
+    &:active { transform:scale(0.9); }
+    &[disabled] { background-color:rgba($black,0.5); color:$black; transform:scale(1);
+      &:after { content:'sold out'; font-size:50%; display: block; }
+    }
+  }
+}
+
+@media (max-width:600px) {
+  ul.size-array { margin-bottom:0.5em; border-bottom: 1px solid rgba($black,0.5);
+    button { font-size:3vw; }
+  }
+}

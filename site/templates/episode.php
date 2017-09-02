@@ -170,7 +170,9 @@
       <!-- AUDIO CONTAINER -->
       <?php if ($page->episode_file() != ""): ?>
         <div class="audio-holder" itemprop="audio">
-          <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
+          <audio preload="none" controls>
+            <source src="/podcasts/<?php echo $page->episode_file() ?>" type="audio/mpeg" />
+          </audio>
         </div>
       <?php endif; ?>
       

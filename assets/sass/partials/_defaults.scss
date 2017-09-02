@@ -21,6 +21,11 @@ spoiler { background-color: currentColor; opacity: 0.6; cursor: help; transition
   &:hover { background-color: transparent; opacity: 1; }
 }
 
+button.button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;
+  &:hover { color:$red; background:white; cursor: pointer; }
+  &:active { box-shadow: none; transform:translate(2px,2px); }
+}
+
 @media (min-width: $desktop-min) {
   .mobile-only { display: none; }
 }
