@@ -1,0 +1,20 @@
+extends _layout.pug
+
+block header
+  tr
+    td(bgcolor='#ffffff' width='100' align='left' style="padding-top:30px;")
+      +image("shirt_piles.jpg","piles o' shirts",600,161)
+      
+block content
+  +textRow(2)
+    b Your shirt is at my house.
+  +textRow(1)
+    p You're getting this email because back at some point in July, you used my preorder form to indicate what size shirt you like, and I told you that I'd give you first dibs after F Plus Live 6 was over.
+    p Well, F Plus Live 6 has been over for a week, and I'm mostly awake enough to start sticking things into packages, so please click the button below to be taken to a 
+      i secret URL 
+      | (shhh!) 
+      | where you can get your shirts before anyone else.
+    p But be quick about it cause it ain't gonna be secret for long.
+    +button("https://thefpl.us/also-made/logo-mural-shirts", "GIVE ME MY SHIRT")  
+    br
+    
