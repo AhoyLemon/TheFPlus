@@ -120,6 +120,11 @@
     position: relative; }
   .sticker-box .series-number, .sticker-box .shape, .sticker-box .material, .sticker-box .sold-out, .sticker-box .released {
     border-left: 1px solid #343434; }
+  .sticker-box.tattoo .thumb-holder {
+    background-size: cover;
+    background-position: center; }
+    .sticker-box.tattoo .thumb-holder .thumb {
+      mix-blend-mode: hard-light; }
 
 .buy-buttons {
   display: -webkit-flex;

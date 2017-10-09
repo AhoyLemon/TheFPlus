@@ -1,5 +1,5 @@
 <?php snippet('header') ?>
-<link href="/assets/css/sticker-boxes.css?updated=2017-03-15" rel="stylesheet" type="text/css">
+<link href="/assets/css/sticker-boxes.css?updated=2017-10-09" rel="stylesheet" type="text/css">
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -29,15 +29,15 @@
       
       <div class="stickers">
         
-        <?php foreach($page->stickers()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
-          <dl class="sticker-box" itemscope itemtype="http://schema.org/Product">
+        <?php foreach($page->tattoos()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
+          <dl class="sticker-box tattoo" itemscope itemtype="http://schema.org/Product">
             <meta itemprop="category" content="sticker" />
             <meta itemprop="url" content="<?php echo $page->url(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
             <dt>
-              <div class="thumb-holder">
+              <div class="thumb-holder" style="background-image:url(<?= $page->skin()->toFile()->url(); ?>)">
                 <?php if ($sticker->fullsize() != "") { ?>
-                  <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
+                  <a onclick="window.open('<?= $sticker->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
                     <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
                   </a>
                 <?php } else { ?>
@@ -57,9 +57,9 @@
                 </div>
                 <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
                 
-                <div class="third dimensions"><?php echo $sticker->dimensions(); ?></div>
-                <div class="third shape"><?php echo $sticker->shape(); ?></div>
-                <div class="third material"><?php echo $sticker->vinyl(); ?></div>
+                <div class="third dimensions" style="border-right:1px solid currentColor;"><?php echo $sticker->dimensions(); ?></div>
+                <!--<div class="third shape"><?php echo $sticker->shape(); ?></div>
+                <div class="third material"><?php echo $sticker->vinyl(); ?></div> -->
                 <div class="third printed"><?php echo $sticker->printed(); ?></div>
                 <div class="third released">
                   <?php if ($sticker->released == "") { ?>
@@ -145,15 +145,9 @@
           </dl>
         <?php endforeach; ?>
       </div>
-      
-      <div class="splc-description">
-        <?php echo $page->splc_desc()->kirbytext() ?>
-        <?php $splc_total = (int)(string)$page->splc_total(); ?>
-        <p>Sales of these stickers have contributed <strong>$<?php echo number_format($splc_total); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
-      </div>
 
-      <div class="sticker-photo-grid">
-        <h3>Some Stickers in the world...</h3>
+      <div class="sticker-photo-grid" style="margin-top:3em;">
+        <h3>Some Tattoos in the world...</h3>
         <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
           <div class="photo-holder">
             <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
