@@ -40,6 +40,15 @@
   .half { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; position:relative; }
   .third, .two-thirds { border-top:1px solid $black; padding:1rem 0.25rem 0.25rem 0.25rem; font-size:0.85em; position:relative; }
   .series-number, .shape, .material, .sold-out, .released { border-left: 1px solid $black; }
+  
+  
+  // TATTOO VARIANT
+  &.tattoo {
+    .thumb-holder { background-size:cover; background-position: center;
+      .thumb { mix-blend-mode: hard-light; }
+    }
+  }
+  
 }
 
 .buy-buttons { @include flex-container(); position: relative; width: 100%;

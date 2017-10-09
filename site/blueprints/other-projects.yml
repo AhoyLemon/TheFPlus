@@ -3,6 +3,7 @@ icon: circle
 pages:
   template:
     - other-project
+    - tattoos
   sort: flip
   num: date
 files: false
