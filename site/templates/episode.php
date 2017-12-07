@@ -149,7 +149,7 @@
     <div class="episode-actions">
       <!-- DOWNLOAD FILE -->
       <?php if ($page->episode_file() != ""): ?>
-        <a itemprop="audio" class="action download" href="<?= $site->url(); ?>/podcasts/<?php echo $page->episode_file() ?>" title="Download episode" download>
+        <a itemprop="audio" class="action download" href="<?= $site->url(); ?>/podcasts/<?php echo $page->episode_file() ?>" title="Download episode">
           <svg viewBox="0 0 100 100">
             <use xlink:href="#IconDownload"></use>
           </svg>
