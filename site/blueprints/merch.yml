@@ -1,0 +1,70 @@
+title: Merch
+icon: dollar
+pages: true
+files: true
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Page Text
+    type: markdown
+  current_merch:
+    label: Current Merch
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+        required: true
+      url:
+        label: URL
+        type: url
+      pic:
+        label: Pic
+        type: image
+        help: 300x300
+        required: true
+      type:
+        label: Type
+        type: text
+      price:
+        label: Price
+        type: text
+      release_date:
+        label: Release Date
+        type: date
+        format: MM/DD/YYYY
+  sold_merch:
+    label: Sold Out Merch
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+        required: true
+      url:
+        label: URL
+        type: url
+        required: false
+      pic:
+        label: Pic
+        type: image
+        help: 300x300
+        required: true
+      type:
+        label: Type
+        type: text
+      price:
+        label: Price
+        type: text
+      release_date:
+        label: Release Date
+        type: date
+        format: MM/DD/YYYY
+      sold_date:
+        label: Sold Out Date
+        type: date
+        format: MM/DD/YYYY
