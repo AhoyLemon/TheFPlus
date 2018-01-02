@@ -10,6 +10,7 @@ pages:
     - stats
     - guesses
     - livestream
+    - merch
 fields:
   title:
     label: Title

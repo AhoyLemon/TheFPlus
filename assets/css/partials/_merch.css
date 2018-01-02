@@ -1,0 +1,6 @@
+.merch-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px; }
+  .merch-grid .grid-box {
+    grid-column: span 1; }
