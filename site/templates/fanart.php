@@ -8,9 +8,14 @@
         
       <?php foreach ($page->images()->shuffle() as $fanart): ?>
         <?php $fa = explode("-", $fanart->filename()); ?>
+        <?php 
+          if (count($fa) > 2) { 
+          $x = explode('.', $fa[2]); $slug = $x[0];
+          } else { $slug = "episode"; }
+        ?>
         <li>
-          <a href="/episode/<?php echo $fa[0]; ?>#AdditionalFun" class="fanart-link">
-            <img src="<?php echo $fanart->crop(250, 250)->url(); ?>" class="fanart-thumb">
+          <a href="/<?php echo $slug; ?>/<?php echo $fa[0]; ?>#AdditionalFun" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
+            <figure style="background-image:url(<?= $fanart->crop(250, 250)->url(); ?>);">&nbsp;</figure>
           </a>
         </li>
       <?php endforeach; ?>
