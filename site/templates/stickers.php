@@ -1,5 +1,7 @@
 <?php snippet('header') ?>
+<? /*
 <link href="/assets/css/sticker-boxes.css?updated=2017-03-15" rel="stylesheet" type="text/css">
+*/ ?>
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -27,27 +29,35 @@
       
       <?php echo $page->text()->kirbytext() ?>
       
-      <div class="stickers">
+    </article>
+      
+      <div class="merch-grid stickers">
         
         <?php foreach($page->stickers()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
-          <dl class="sticker-box" itemscope itemtype="http://schema.org/Product">
+          <div class="grid-box sticker-box" itemscope itemtype="http://schema.org/Product">
             <meta itemprop="category" content="sticker" />
             <meta itemprop="url" content="<?php echo $page->url(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
-            <dt>
-              <div class="thumb-holder">
-                <?php if ($sticker->fullsize() != "") { ?>
-                  <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
-                  </a>
-                <?php } else { ?>
+            <figure class="thumb-holder">
+              <?php if ($sticker->fullsize() != "") { ?>
+                <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
                   <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
-                <?php } ?>
+                </a>
+              <?php } else { ?>
+                <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+              <?php } ?>
+            </figure>
+            <div class="details">
+              <div class="detail full name">
+                <label>Name</label>
+                <div class="text" itemprop="name">
+                  <?php echo $sticker->title(); ?>
+                </div>
               </div>
-              <div class="details">
-                <div class="full title" itemprop="name"><?php echo $sticker->title(); ?></div>
-                
-                <div class="two-thirds artist">
+
+              <div class="detail two-thirds artist">
+                <label>Artist</label>
+                <div class="text">
                   <?php $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $sticker->artist()))); ?>
                   <?php if ($site->find('meet')->find($slug)) { ?>
                     <a href="http://thefpl.us/meet/<?php echo $slug; ?>"><?php echo $sticker->artist(); ?></a>
@@ -55,13 +65,45 @@
                     <span><?php echo $sticker->artist(); ?></span>
                   <?php } ?>
                 </div>
-                <div class="third series-number"><?php echo $sticker->series_num(); ?></div>
-                
-                <div class="third dimensions"><?php echo $sticker->dimensions(); ?></div>
-                <div class="third shape"><?php echo $sticker->shape(); ?></div>
-                <div class="third material"><?php echo $sticker->vinyl(); ?></div>
-                <div class="third printed"><?php echo $sticker->printed(); ?></div>
-                <div class="third released">
+              </div>
+              
+              <div class="detail third series-number">
+                <label>Series</label>
+                <div class="text">
+                  <?php echo $sticker->series_num(); ?>
+                </div>
+              </div>
+
+              <div class="detail third dimensions">
+                <label>Dimensions</label>
+                <div class="text">
+                  <?php echo $sticker->dimensions(); ?>
+                </div>
+              </div>
+              
+              <div class="detail third shape">
+                <label>Shape</label>
+                <div class="text">
+                  <?php echo $sticker->shape(); ?>
+                </div>
+              </div>
+              
+              <div class="detail third material">
+                <label>Material</label>
+                <div class="text">
+                  <?php echo $sticker->vinyl(); ?>
+                </div>
+              </div>
+              
+              <div class="detail third printed">
+                <label>Printed</label>
+                <div class="text">
+                  <?php echo $sticker->printed(); ?>
+                </div>
+              </div>
+              <div class="detail third released">
+                <label>Released</label>
+                <div class="text">
                   <?php if ($sticker->released == "") { ?>
                     pending
                   <?php } else { ?>
@@ -69,14 +111,20 @@
                     <meta itemprop="releaseDate" content="<?php echo $sticker->released(); ?>" />
                   <?php } ?>
                 </div>
-                <?php if ($sticker->soldout() != ""): ?>
-                  <div class="third sold-out">
+              </div>
+              <?php if ($sticker->soldout() != ""): ?>
+                <div class="detail third sold-out">
+                  <label>Sold Out</label>
+                  <div class="text">
                     <?php echo $sticker->date('m/d/y', 'soldout'); ?>
                   </div>
-                <?php endif; ?>
-                
-                <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
-                  <div class="buy-buttons">
+                </div>
+              <?php endif; ?>
+
+              <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
+                <div class="detail full buy-buttons">
+                  <label>Buy Now</label>
+                  <div class="buttons">
                     <?php if ($sticker->buttona_slug() != ""): ?>
                       <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                         <meta itemprop="name" content="<?php echo $sticker->buttona_num(); ?> X <?php echo $sticker->title(); ?>" />
@@ -123,36 +171,38 @@
                       </form>
                     <?php endif; ?>
                   </div>
-                <?php } else if ($sticker->soldout() != "") { ?>
-                  <div class="no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                    <span>SOLD OUT</span>
-                    <meta itemprop="availability" content="http://schema.org/SoldOut" />
-                    <meta itemprop="priceCurrency" content="USD" />
-                    <meta itemprop="price" content="3" />
-                  </div>
-                <?php } else if ($sticker->released == "") { ?>
-                  <div class="no-buttons">
-                    <span>PRINTING</span>
-                  </div>
-                <?php } ?>
-                
-              </div>
+                </div>
+              <?php } else if ($sticker->soldout() != "") { ?>
+                <div class="detail full no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                  <span>SOLD OUT</span>
+                  <meta itemprop="availability" content="http://schema.org/SoldOut" />
+                  <meta itemprop="priceCurrency" content="USD" />
+                  <meta itemprop="price" content="3" />
+                </div>
+              <?php } else if ($sticker->released == "") { ?>
+                <div class="detail full no-buttons">
+                  <span>PRINTING</span>
+                </div>
+              <?php } ?>
+
+            </div>
               <span itemprop="brand" itemscope itemtype="http://schema.org/PerformingGroup">
                 <meta itemprop="name" content="<?php echo $site->title(); ?>" />
                 <meta itemprop="url" content="<?php echo $site->url(); ?>" />
               </span>
-            </dt>
-          </dl>
+          </div>
         <?php endforeach; ?>
       </div>
-      
-      <div class="splc-description">
-        <?php echo $page->splc_desc()->kirbytext() ?>
-        <?php $splc_total = (int)(string)$page->splc_total(); ?>
-        <p>Sales of these stickers have contributed <strong>$<?php echo number_format($splc_total); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
-      </div>
+  
+      <article class="full default" style="margin-top:20px;">
+        <div class="splc-description">
+          <?php echo $page->splc_desc()->kirbytext() ?>
+          <?php $splc_total = (int)(string)$page->splc_total(); ?>
+          <p>Sales of these stickers have contributed <strong>$<?php echo number_format($splc_total); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
+        </div>
+      <article class="full default">
 
-      <div class="sticker-photo-grid">
+      <div class="product-photos">
         <h3>Some Stickers in the world...</h3>
         <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
           <div class="photo-holder">
@@ -180,8 +230,6 @@
           </ul>
         </div>
       <?php } ?>
-      
-    </article>
   
     <section class="comments disqus">
       <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
