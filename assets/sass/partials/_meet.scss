@@ -18,24 +18,47 @@
   }
 }
 
-.summaries {
-  .person { background-color:#ffe; border:1px solid #ccc; box-shadow: 1px 1px 1px #aaa;
-    header { text-align: center; }
-    .job { font-size: 1.1rem; @extend %truncate;
-      &:after { content:'\00A0'; }
+.people-grid { display: grid; grid-gap: 20px;
+  .person { grid-column: span 1; background:white; border:1px solid $black;
+    &.hidden { display: none; }
+  }
+  header { padding: 0 1em .25em 1em; font-size:24px; @extend %truncate;
+    a { text-decoration: none; }
+  }
+  .image-holder { position:relative; display: block; overflow: hidden;
+    img { @include transition(all, 1s); width: 100%; }
+    .hover-cover { position: absolute; right:0; bottom:0; left:0; @include linear-gradient(top, rgba(#ffe,0), rgba(#ffe,0.85)); @include translateY(105%); @include transition(transform, .5s);
+      .content { color:$black; padding: 1em;  }
     }
-    .image-holder { position:relative; display: block; overflow: hidden;
-      img { @include transition(all, 1s); width: 100%; }
-      .hover-cover { position: absolute; right:0; bottom:0; left:0; @include linear-gradient(top, rgba(#ffe,0), rgba(#ffe,0.85)); @include translateY(105%); @include transition(transform, .5s);
-        .content { color:$black; padding: 1em;  }
-      }
-      &:hover {
-        img { opacity: 0.2; }
-        .hover-cover { @include translateY(0);}
-      }
+    &:hover {
+      img { opacity: 0.2; }
+      .hover-cover { @include translateY(0);}
     }
   }
 }
+
+@media (min-width:1561px) {
+  .people-grid { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+}
+
+@media (max-width:1560px) {
+  .people-grid { grid-template-columns: 1fr 1fr 1fr 1fr; }
+}
+
+@media (max-width:1240px) {
+  .people-grid { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+@media (max-width:998px) {
+  .people-grid { grid-template-columns: 1fr 1fr;  }
+}
+
+@media (max-width:480px) {
+  .people-grid { display: block; 
+    .person { display: block; width:260px; margin-bottom: 20px; }
+  }
+}
+
 
 @media (min-width: $desktop-min) {
   .summaries {
