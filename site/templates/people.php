@@ -3,9 +3,6 @@
 <main class="main" role="main">
   
   <nav class="toggle people">
-    <style>
-      .summaries .person.guest, .summaries .person.submitter { display:none; }
-    </style>
     <label>Show:</label>
     <a class="active" data-for="regular">
       <svg class="checkbox" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
@@ -27,20 +24,13 @@
     </a>
   </nav>
   
-  <section class="people summaries">
+  <section class="people people-grid">
     <?php foreach($page->children()->visible()->sortBy('title', 'asc') as $article): ?>
-      <article class="person brief <?php echo $article->role() ?>">
+      <article class="person brief <?php echo $article->role() ?> <?php if ($article->role() != "regular") { echo 'hidden'; } ?>">
         <header>
-          <h2 class="title">
-            <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-              <?php echo $article->title(); ?>
-            </a>
-          </h2>
-          <!--
-          <h3 class="job">
-            <?php echo $article->job() ?>
-          </h3>
-          -->
+          <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
+            <?php echo $article->title(); ?>
+          </a>
         </header>
         <?php if($image = $article->image()): ?>
           <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">

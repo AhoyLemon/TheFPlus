@@ -21,8 +21,10 @@ $('nav.toggle a').click(function() {
   var n = $(this).attr('data-for');
   if ($(this).hasClass('active')) {
     $('.summaries').children('.'+n).show(500);
+    $('.people-grid').children('.'+n).removeClass('hidden');
   } else {
     $('.summaries').children('.'+n).hide(500);
+    $('.people-grid').children('.'+n).addClass('hidden');
   }
 });
 

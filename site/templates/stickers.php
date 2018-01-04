@@ -1,7 +1,4 @@
 <?php snippet('header') ?>
-<? /*
-<link href="/assets/css/sticker-boxes.css?updated=2017-03-15" rel="stylesheet" type="text/css">
-*/ ?>
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -34,7 +31,9 @@
       <div class="merch-grid stickers">
         
         <?php foreach($page->stickers()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
+        
           <div class="grid-box sticker-box" itemscope itemtype="http://schema.org/Product">
+            <a name="<?= $sticker->series_num(); ?>"></a>
             <meta itemprop="category" content="sticker" />
             <meta itemprop="url" content="<?php echo $page->url(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
