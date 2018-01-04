@@ -1,0 +1,11 @@
+#PayPalDonateForm { display: block; width: 21em;
+  .dollar-holder { display: inline-block; border: 2px solid $black; font-size:1.5em; float:left; padding-top:0.21em; padding-bottom:0.21em; padding-left:1em; background:$white;
+    input[type="number"] { font-size:2.4rem; width:2em; font-family:$sans-serif; border:none; font-weight:$light; background:transparent; }
+    &:hover { background:#d0f5c7; }
+  }
+  button { display: inline-block; font-family: $source; border: 2px solid $black; background-color: $red; color: #fff; padding:0.3em 0.8em 0.4em 0.55em; cursor: pointer; font-weight:$normal; outline:none; width:auto; font-size:1.48em; border-left:none;
+    &:hover { background-color:$white; color:$red; }
+    &:active { background-color:$black; }
+  }
+  .dollar-holder, button { height: 81px; }
+}
