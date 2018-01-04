@@ -7,7 +7,7 @@ fields:
     label: Title
     type:  text
   text:
-    label: Page Text
+    label: Intro Text
     type: markdown
   current_merch:
     label: Current Merch
@@ -32,10 +32,9 @@ fields:
       price:
         label: Price
         type: text
-      release_date:
-        label: Release Date
-        type: date
-        format: MM/DD/YYYY
+  sold_text:
+    label: Sold Out Lead In
+    type: markdown
   sold_merch:
     label: Sold Out Merch
     type: structure
@@ -57,14 +56,8 @@ fields:
       type:
         label: Type
         type: text
-      price:
-        label: Price
-        type: text
-      release_date:
-        label: Release Date
-        type: date
-        format: MM/DD/YYYY
       sold_date:
         label: Sold Out Date
         type: date
+        required: true
         format: MM/DD/YYYY

@@ -45,15 +45,15 @@ RewriteRule ^(.*) index.php [L]
 
 </IfModule>
 
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
+</ifmodule>
+# END GZIP
+
 # Additional recommended values
 # Remove comments for those you want to use.
 #
 # AddDefaultCharset UTF-8
 #
 # php_flag short_open_tag on
-
-# BEGIN GZIP
-<ifmodule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</ifmodule>
-# END GZIP
