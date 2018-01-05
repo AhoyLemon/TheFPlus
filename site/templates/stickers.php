@@ -205,7 +205,7 @@
         <h3>Some Stickers in the world...</h3>
         <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
           <div class="photo-holder">
-            <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+            <img src="<?php echo $photo->pic()->toFile()->url(); ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
           </div>
         <?php endforeach; ?>
         <div class="share-your-photo">

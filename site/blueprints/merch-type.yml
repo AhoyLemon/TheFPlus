@@ -1,5 +1,5 @@
-title: Tattoos
-icon: anchor
+title: Merch Type
+icon: dollar
 pages: false
 files: true
 fields:
@@ -21,20 +21,16 @@ fields:
     type: time
     interval: 1
     width: 1/4
-  skin:
-    label: Skin Texture
-    type: image
-    width: 1/2
-    required: true
   cast:
     label: Artists
     type: tags
     icon: users
+    width: 1/2
   text:
     label: Item Summary
     type: markdown
-  tattoos:
-    label: Tattoos
+  products:
+    label: Products
     type: structure
     entry: >
       {{title}}
@@ -69,6 +65,10 @@ fields:
         label: Dimensions
         type: text
         width: 1/2
+      material:
+        label: Material
+        type: text
+        width: 1/2
       released:
         label: Date Released
         type: date
@@ -80,6 +80,29 @@ fields:
       buttons_headline:
         label: BUY NOW BUTTONS
         type: headline
+      buy_type:
+        label: Purchase Type
+        type: fieldtoggle
+        options:
+          single:   Single
+          multiple: Multiple
+        show:
+          single: price single_slug single_buttontext
+          multiple: buttona_num buttona_price buttona_slug buttonb_num buttonb_price buttonb_slug buttonc_num buttonc_price buttonc_slug
+        hide:
+          multiple: price single_slug single_buttontext
+          single: buttona_num buttona_price buttona_slug buttonb_num buttonb_price buttonb_slug buttonc_num buttonc_price buttonc_slug
+      price:
+        label: Price
+        type: number
+        width: 1/2
+      single_slug:
+        label: Slug
+        type: text
+        width: 1/2
+      single_buttontext:
+        label: Button Text
+        type: text
       buttona_num:
         label: Count
         type: number
@@ -116,6 +139,9 @@ fields:
         label: Slug
         type: text
         width: 1/2
+  photos_leadin:
+    label: Photo Lead In Text
+    type: text
   photos:
     label: Photos
     type: structure
