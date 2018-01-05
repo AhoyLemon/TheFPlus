@@ -1,3 +1,4 @@
+
 .merch-grid { display: grid; grid-gap:20px;
   article {
     h3 { letter-spacing: .25em; font-weight: $bold; }
@@ -6,9 +7,8 @@
     figure { border:1px solid $black; }
     .thumb-holder {
       img { max-height: 230px; width: auto; display: block; margin-left: auto; margin-right: auto; }
-      a.zoom { cursor: zoom-in; }
     }
-    
+    a.zoom { cursor:zoom-in !important; }
     img { width: 100%; }
     .details { @include flex-container(); border-top: none; border-left: none; border-bottom: 1px solid $black; border-right: 1px solid $black;
       .detail { border-left: 1px solid $black;
@@ -31,11 +31,12 @@
       .third { @include flex-item(33.333%); }
       
       .buy-buttons { @include flex-item(100%);
-        .buttons { @include flex-container(); padding-top: 10px; padding-bottom: 10px; }
+        .buttons { @include flex-container(); padding: 10px; }
         form { @include flex-item(33.333%); text-align: center; }
         button, .button { background-color: $red; color: white; border: 1px solid $red; padding: 1em 0.5em; font-weight: 600; font-size: 1rem; box-shadow: 2px 2px 2px $black; cursor: pointer; 
           &:hover { background-color:white; color:$red; }
           &:active { background-color:$black; color:white; }
+          &.single-button { display: block; width:100%; }
         }
       }
       .no-buttons { @include flex-item(100%); border-top:1px solid $black; padding: 0.75rem 0.25rem; text-align: center;
