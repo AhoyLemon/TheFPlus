@@ -30,7 +30,7 @@
       .half { @include flex-item(50%); }
       .third { @include flex-item(33.333%); }
       
-      .buy-buttons { @include flex-item(100%);
+      .buy-buttons { @include flex-item(100%); border-top:1px solid $black;
         .buttons { @include flex-container(); padding: 10px; }
         form { @include flex-item(33.333%); text-align: center; }
         button, .button { background-color: $red; color: white; border: 1px solid $red; padding: 1em 0.5em; font-weight: 600; font-size: 1rem; box-shadow: 2px 2px 2px $black; cursor: pointer; 
@@ -39,7 +39,7 @@
           &.single-button { display: block; width:100%; }
         }
       }
-      .no-buttons { @include flex-item(100%); border-top:1px solid $black; padding: 0.75rem 0.25rem; text-align: center;
+      .no-buttons { @include flex-item(100%); border-top:1px solid $black; padding: 0.75rem 0.25rem; text-align: center; background-color:$black; color:$white;
         span { font-size:115%; font-weight: 300; }
       }
     }

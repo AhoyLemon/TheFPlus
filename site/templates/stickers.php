@@ -35,7 +35,7 @@
           <div class="grid-box sticker-box" itemscope itemtype="http://schema.org/Product">
             <a name="<?= $sticker->series_num(); ?>"></a>
             <meta itemprop="category" content="sticker" />
-            <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+            <meta itemprop="url" content="<?php echo $page->url() . '#'. $sticker->series_num(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
             <figure class="thumb-holder">
               <?php if ($sticker->fullsize() != "") { ?>
@@ -122,7 +122,6 @@
 
               <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
                 <div class="detail full buy-buttons">
-                  <label>Buy Now</label>
                   <div class="buttons">
                     <?php if ($sticker->buttona_slug() != ""): ?>
                       <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
