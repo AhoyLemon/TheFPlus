@@ -29,9 +29,12 @@ fields:
       type:
         label: Type
         type: text
+        width: 1/2
       price:
         label: Price
         type: text
+        width: 1/2
+        placeholder: "include $"
   sold_text:
     label: Sold Out Lead In
     type: markdown

@@ -61,9 +61,11 @@
     <?php endforeach ?>
   </section>
   
-  <div class="undergrid">
-    <?php echo $page->undergrid()->kirbytext(); ?>
-  </div>
+  <?php if ($page->undergrid() != "") { ?>
+    <div class="undergrid" style="margin-top:1em; margin-bottom:1em;">
+      <?php echo $page->undergrid()->kirbytext(); ?>
+    </div>
+  <?php } ?>
   
 </main>
 

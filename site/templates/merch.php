@@ -12,7 +12,7 @@
         <?php echo $page->text()->kirbytext() ?>
       </article>
       
-      <?php foreach($page->current_merch()->toStructure() as $merch) { ?>
+      <?php foreach($page->current_merch()->toStructure()->flip() as $merch) { ?>
       
         <a href="<?= $merch->url(); ?>" class="grid-box">
           <figure>

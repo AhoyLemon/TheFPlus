@@ -36,16 +36,16 @@
         <?php foreach($page->products()->toStructure()->sortBy('series_num', 'desc') as $product): ?>
           <div class="grid-box button" itemscope itemtype="http://schema.org/Product">
             <a name="<?= $product->series_num(); ?>"></a>
-            <meta itemprop="category" content="sticker" />
-            <meta itemprop="url" content="<?php echo $page->url(); ?>" />
+            <!-- <meta itemprop="category" content="sticker" /> -->
+            <meta itemprop="url" content="<?php echo $page->url() . '#'. $product->series_num(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
             <figure>
               <?php if ($product->fullsize() != "") { ?>
                 <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
-                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $product->pic()->filename() ?>" class="thumb" />
+                  <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
                 </a>
               <?php } else { ?>
-                <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $product->pic()->filename() ?>" class="thumb" />
+                <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
               <?php } ?>
             </figure>
             <div class="details">
@@ -132,11 +132,15 @@
               <?php endif; ?>
               
               <?php $productAvailable = false; ?>
-              <?php if ($product->buy_type() == "single") { ?>
+              <?php if ($product->buy_type() == "single" && $product->released != "") { ?>
                 <?php if ($product->soldout() == "" && $product->single_slug() != "") { ?>
                   <?php $productAvailable = true; ?>
-                  <div class="detail full buy-buttons">
-                    <label>Buy Now</label>
+                  <div class="detail full buy-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer" >
+                    <meta itemprop="priceCurrency" content="USD" />
+                    <meta itemprop="price" content="<?php echo $product->price(); ?>" />
+                    <meta itemprop="url" content="<?php echo $page->url() . '#'. $product->series_num(); ?>" />
+                    <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
+                    <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
                     <div class="buttons single-button">
                       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                         <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -152,7 +156,6 @@
                 <?php if ($product->soldout() == "" && $product->buttona_slug() != "") { ?>
                   <?php $productAvailable = true; ?>
                   <div class="detail full buy-buttons">
-                    <label>Buy Now</label>
                     <div class="buttons">
                       <?php if ($product->buttona_slug() != ""): ?>
                         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
