@@ -40,14 +40,14 @@
         .hover-cover { background:rgba($also-made,0.85); }
       }
       &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%);
-        
+
       }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
         &:before { content:'#'; }
       }
       .time-estimate { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
-				&:after { content:' min read'; font-size:0.5em; }
-			}
+        &:after { content:' min read'; font-size:0.5em; }
+      }
     }
   }
   .fa { color:lighten($black,20%); }
@@ -65,13 +65,16 @@
 
 nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   label {font-weight: 400; margin-right: 1em; }
-   a  { margin-right: 1em; font-weight: 300;
+  a  { margin-right: 1em; font-weight: 300;
     .checkbox { height: 1em; width: 1em; display: inline-block;
-      * { stroke-width: 10px; stroke:$black; fill: none; }
+      .check { fill: $red; opacity: 0; }
+      .box { fill:$black; }
     }
-    &.active .checkbox * { fill:$red; }
+    &.active .checkbox {
+      .check { opacity: 1; }
+    }
     &:hover { 
-      .checkbox * { fill:$yellow; }
+      .checkbox .box { fill:$red; }
       span { text-decoration: underline; }
     }
   }

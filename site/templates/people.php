@@ -5,20 +5,23 @@
   <nav class="toggle people">
     <label>Show:</label>
     <a class="active" data-for="regular">
-      <svg class="checkbox" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-        <rect fill="#EE1C4E" stroke="#000000"  stroke-miterlimit="10" width="100" height="100"/>
+      <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path class="box" d="M85.6 95.5h-83V12.4h83.1v83.1zm-79-4h75.1V16.4H6.6v75.1z" />
+        <path class="check" d="M83.9 5.3c.4-.4.9-.6 1.5-.6s1.1.2 1.5.6L98 16.6c.4.4.6.9.6 1.4 0 .6-.2 1.1-.6 1.4L45.1 72.3c-.4.4-.9.6-1.5.6h-.1c-.6 0-1.1-.2-1.5-.6L21.6 52c-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.4l11.2-11.2c.4-.4.9-.6 1.4-.6.6 0 1.1.2 1.5.6l7.8 7.8L83.9 5.3z" fill="#ed214f"/>
       </svg>
       <span>Regular Cast</span>
     </a>
     <a data-for="guest">
-      <svg class="checkbox" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-        <rect fill="#EE1C4E" stroke="#000000"  stroke-miterlimit="10" width="100" height="100"/>
+      <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path class="box" d="M85.6 95.5h-83V12.4h83.1v83.1zm-79-4h75.1V16.4H6.6v75.1z" />
+        <path class="check" d="M83.9 5.3c.4-.4.9-.6 1.5-.6s1.1.2 1.5.6L98 16.6c.4.4.6.9.6 1.4 0 .6-.2 1.1-.6 1.4L45.1 72.3c-.4.4-.9.6-1.5.6h-.1c-.6 0-1.1-.2-1.5-.6L21.6 52c-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.4l11.2-11.2c.4-.4.9-.6 1.4-.6.6 0 1.1.2 1.5.6l7.8 7.8L83.9 5.3z" fill="#ed214f"/>
       </svg>
       <span>Guest Readers</span>
     </a>
     <a data-for="submitter">
-      <svg class="checkbox" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" xml:space="preserve">
-        <rect fill="#EE1C4E" stroke="#000000"  stroke-miterlimit="10" width="100" height="100"/>
+      <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path class="box" d="M85.6 95.5h-83V12.4h83.1v83.1zm-79-4h75.1V16.4H6.6v75.1z" />
+        <path class="check" d="M83.9 5.3c.4-.4.9-.6 1.5-.6s1.1.2 1.5.6L98 16.6c.4.4.6.9.6 1.4 0 .6-.2 1.1-.6 1.4L45.1 72.3c-.4.4-.9.6-1.5.6h-.1c-.6 0-1.1-.2-1.5-.6L21.6 52c-.4-.4-.6-.9-.6-1.5s.2-1.1.6-1.4l11.2-11.2c.4-.4.9-.6 1.4-.6.6 0 1.1.2 1.5.6l7.8 7.8L83.9 5.3z" fill="#ed214f"/>
       </svg>
       <span>Content Providers</span>
     </a>
