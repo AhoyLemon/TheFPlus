@@ -55,18 +55,14 @@ fields:
         label: Title
         type: text
         required: true
+      artist:
+        label: Artist
+        type: text
+        width: 2/3
       series_num:
         label: Series Number
         type: number
         required: true
-        width: 1/3
-      artist:
-        label: Artist
-        type: text
-        width: 1/3
-      printed:
-        label: Number Printed
-        type: number
         width: 1/3
       dimensions:
         label: Dimensions
@@ -80,14 +76,21 @@ fields:
         label: Vinyl
         type: text
         width: 1/3
+      printed:
+        label: Number Printed
+        type: number
+        width: 1/3
       released:
         label: Date Released
         type: date
-        width: 1/2
+        width: 1/3
       soldout:
         label: Date Sold Out
         type: date
-        width: 1/2
+        width: 1/3
+      reference:
+        label: Episode Slug
+        type: text
       buttons_headline:
         label: BUY NOW BUTTONS
         type: headline

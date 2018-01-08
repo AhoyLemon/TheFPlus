@@ -224,20 +224,7 @@
     </div>
 
     <!-- EPISODE TAGS -->
-    <?php if ($page->tags() != "") { ?>
-      <div class="info-block episode-tags">
-        <span class="label">Episode Tags:</span>
-        <div itemprop="keywords" content="<?php echo $page->tags() ?>">
-          <?php foreach($etags as $etag): ?>
-            <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-            <?php $x = 0; ?>
-            <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
-            <?php endforeach ?>
-            <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo rawurlencode($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-          <?php endforeach ?>
-        </div>
-      </div>
-    <?php } ?>
+    <?php snippet('tags') ?>
 
     <!-- ADDITIONAL FUN -->
     <?php if ($page->bonus_content() != ""): ?>
@@ -255,32 +242,6 @@
   </section>
 
 </main>
-
-<?php /*
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 2,
-      "item": {
-        "@id": "<?php echo $page->parent()->url(); ?>",
-        "url": "<?php echo $page->parent()->url(); ?>",
-        "name": "<?php echo $page->parent()->title(); ?>"
-      }
-    },{
-      "@type": "ListItem",
-      "position": 3,
-      "item": {
-        "@id": "<?php echo $page->url(); ?>",
-        "url": "<?php echo $page->url(); ?>",
-        "name": "<?php echo $page->title(); ?>"
-      }
-    }]
-  }
-</script>
-*/ ?>
 
 
 <?php snippet('footer') ?>

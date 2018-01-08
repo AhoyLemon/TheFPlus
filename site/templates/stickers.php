@@ -72,6 +72,24 @@
                   <?php echo $sticker->series_num(); ?>
                 </div>
               </div>
+              
+             <?php if ($sticker->reference() != "") { ?>
+                <div class="detail full reference"> 
+                  <label>Reference</label>
+                  <?php if ($site->find('episode')->find($sticker->reference())) { ?>
+                    <?php $ep = $site->find('episode')->find($sticker->reference()); ?>
+                    <div class="text">
+                      <a href="<?= $ep->url(); ?>">
+                        <?= $ep->slug() . ': ' .  $ep->title(); ?>
+                      </a>
+                    </div>
+                  <?php } else { ?>
+                    <div class="text">
+                      <?= $sticker->reference(); ?>
+                    </div>
+                  <?php } ?>
+                </div>
+              <?php } ?>
 
               <div class="detail third dimensions">
                 <label>Dimensions</label>
@@ -122,6 +140,7 @@
 
               <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
                 <div class="detail full buy-buttons">
+                  <label>Buy Now</label>
                   <div class="buttons">
                     <?php if ($sticker->buttona_slug() != ""): ?>
                       <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -212,22 +231,7 @@
         </div>
       </div>
       
-      <!-- TAGS -->
-      <?php if ($page->tags() != "") { ?>
-        <div class="info-block episode-tags">
-          <span class="label">Tags:</span>
-          <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
-            <?php $etags = explode(",", $page->tags()); ?>
-            <?php foreach($etags as $etag): ?>
-              <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-              <?php $x = 0; ?>
-              <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
-              <?php endforeach ?>
-              <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-            <?php endforeach ?>
-          </ul>
-        </div>
-      <?php } ?>
+      <?php snippet('tags') ?>
   
     <section class="comments disqus">
       <?php snippet('disqus-alt', array('allow_comments' => true)) ?>

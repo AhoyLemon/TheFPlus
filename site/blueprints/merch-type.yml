@@ -21,14 +21,30 @@ fields:
     type: time
     interval: 1
     width: 1/4
+  product_image_type:
+    label: Product Image Type
+    type: fieldtoggle
+    required: true
+    width: 1/4
+    options:
+      square: Square
+      maxheight: Max Height
+    show:
+      maxheight: figure_bg
+    hide:
+      square: figure_bg
+  figure_bg:
+    label: Figure Background
+    type: image
+    width: 1/4
   cast:
     label: Artists
     type: tags
     icon: users
-    width: 1/2
   text:
     label: Item Summary
     type: markdown
+
   products:
     label: Products
     type: structure
@@ -67,6 +83,10 @@ fields:
         width: 1/2
       material:
         label: Material
+        type: text
+        width: 1/2
+      reference:
+        label: Episode Slug
         type: text
         width: 1/2
       released:
