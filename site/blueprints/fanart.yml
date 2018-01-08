@@ -6,6 +6,9 @@ fields:
   title:
     label: Title
     type:  text
+  page_headline:
+    label: Page Headline
+    type: text
   text:
     label: Text Under Pics
     type:  markdown

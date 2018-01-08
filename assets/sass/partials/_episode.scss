@@ -1,8 +1,7 @@
-.covers-only { @include flex-container(); // justify-content: space-around;
-  
+.covers-only { @include flex-container();
   a { @include background(); color:$black; text-decoration: none; position: relative; overflow: hidden;
     .cover { width: 100%; height: auto; }
-    summary { background-color: rgba(255,255,255,0.85); padding: 1em; @include transition(); @include translateY(102%); position: absolute; right:0; bottom:0; left:0; }
+    summary { background-color: rgba(0,0,0,0.75); color:$white; padding: 1em 1em 1em 2em; @include transition(); @include translateY(102%); position: absolute; right:0; bottom:0; left:0; }
     &.no-image { background-color: $black; padding: 1em; color:$white; text-decoration: none;
       &:hover { background-color: $red; }
       h3 { text-align: center; }
@@ -26,7 +25,7 @@ figure.fanart { @extend %fanart; }
   .covers-only {
     a { @include flex-item(25%, stretch, 0, 0);
       &:hover {
-        summary { @include translateY(0); }
+        summary { @include translateY(5px); }
         .disqus-comment-count { @include translateY(0); }
       }
     }
