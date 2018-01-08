@@ -230,7 +230,7 @@
         <?php endforeach; ?>
       </div>
   
-      <article class="full default" style="margin-top:20px;">
+      <article class="full default">
 
         <?php if ($page->photos() != "") { ?>
           <div class="product-photos" style="margin-top:3em;">
