@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
   <main class="main edge-to-edge" role="main">
-    <h1 class="fanart-headline"><?php echo $page->title(); ?></h1>
+    <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
 
     <article class="full default">
       <ul class="fanart-list">

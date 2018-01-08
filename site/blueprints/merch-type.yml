@@ -151,6 +151,7 @@ fields:
       series_num:
         label: Series
         type: number
+        required: true
         width: 1/2
       pic:
         label: Image
