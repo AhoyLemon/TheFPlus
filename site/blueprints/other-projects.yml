@@ -3,7 +3,6 @@ icon: circle
 pages:
   template:
     - other-project
-    - tattoos
     - merch-type
   sort: flip
   num: date

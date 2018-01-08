@@ -130,16 +130,6 @@
         </svg>
         <span class="label">Share on Facebook+</span>
       </a>
-
-      <?php /*
-      <!-- GOOGLE+ SHARE -->
-      <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconGooglePlus"></use>
-        </svg>
-        <span class="label">Share on Google+</span>
-      </a>
-      */ ?>
           
       <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
         <svg viewBox="0 0 100 100">
@@ -150,22 +140,7 @@
       
     </div>
 
-    <!-- TAGS -->
-      <?php if ($page->tags() != "") { ?>
-      <div class="info-block episode-tags">
-        <span class="label">Tags:</span>
-        <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
-          <?php $etags = explode(",", $page->tags()); ?>
-          <?php foreach($etags as $etag): ?>
-            <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-            <?php $x = 0; ?>
-            <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
-            <?php endforeach ?>
-            <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-          <?php endforeach ?>
-        </ul>
-      </div>
-    <?php } ?>
+    <?php snippet('tags') ?>
 
     <!-- BONUS CONTENT -->
     <?php if ($page->bonus_content() != ""): ?>

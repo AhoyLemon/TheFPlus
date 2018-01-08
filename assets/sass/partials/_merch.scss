@@ -17,7 +17,7 @@
         }
       }
       label { display: block; background:$black; color:$white; font-size:80%; padding: 2px 10px; text-transform:lowercase; }
-      .text { display: block; padding: 4px 10px; text-transform: uppercase; @extend %truncate; }
+      .text { display: block; padding: 4px 10px; text-transform: uppercase; @extend %truncate; max-width: 320px; }
       .name {
         .text { font-size:120%; }
       }

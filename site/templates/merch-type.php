@@ -39,15 +39,32 @@
             <!-- <meta itemprop="category" content="sticker" /> -->
             <meta itemprop="url" content="<?php echo $page->url() . '#'. $product->series_num(); ?>" />
             <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
-            <figure>
-              <?php if ($product->fullsize() != "") { ?>
-                <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
+            
+            <?php if ($page->product_image_type() == "maxheight") { ?>
+              <?php
+                $figStyle = "";
+                if ($page->figure_bg() != "") { $figStyle = 'style="background-image:url('.$page->figure_bg()->toFile()->url().')"'; }
+              ?>
+              <figure class="thumb-holder" <?= $figStyle; ?>>
+                <?php if ($product->fullsize() != "") { ?>
+                  <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
+                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $product->pic()->filename() ?>" class="thumb" />
+                  </a>
+                <?php } else { ?>
+                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $product->pic()->filename() ?>" class="thumb" />
+                <?php } ?>
+              </figure>
+            <?php } else { ?>
+              <figure>
+                <?php if ($product->fullsize() != "") { ?>
+                  <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
+                    <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
+                  </a>
+                <?php } else { ?>
                   <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
-                </a>
-              <?php } else { ?>
-                <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
-              <?php } ?>
-            </figure>
+                <?php } ?>
+              </figure>
+            <?php } ?>
             <div class="details">
               <div class="detail full name" itemprop="name">
                 <label>Name</label>
@@ -71,6 +88,24 @@
                   <?php echo $product->series_num(); ?>
                 </div>
               </div>
+              
+              <?php if ($product->reference() != "") { ?>
+                <div class="detail full reference"> 
+                  <label>Reference</label>
+                  <?php if ($site->find('episode')->find($product->reference())) { ?>
+                    <?php $ep = $site->find('episode')->find($product->reference()); ?>
+                    <div class="text">
+                      <a href="<?= $ep->url(); ?>">
+                        <?= $ep->slug() . ': ' .  $ep->title(); ?>
+                      </a>
+                    </div>
+                  <?php } else { ?>
+                    <div class="text">
+                      <?= $product->reference(); ?>
+                    </div>
+                  <?php } ?>
+                </div>
+              <?php } ?>
               
               <?php if ($product->dimensions() != "") { ?>
                 <div class="detail third dimensions">
@@ -156,6 +191,7 @@
                 <?php if ($product->soldout() == "" && $product->buttona_slug() != "") { ?>
                   <?php $productAvailable = true; ?>
                   <div class="detail full buy-buttons">
+                    <label>Buy Now</label>
                     <div class="buttons">
                       <?php if ($product->buttona_slug() != ""): ?>
                         <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -247,23 +283,8 @@
             </div>
           </div>
         <?php } ?>
-
-        <!-- TAGS -->
-        <?php if ($page->tags() != "") { ?>
-          <div class="info-block episode-tags">
-            <span class="label">Tags:</span>
-            <ul itemprop="keywords" content="<?php echo $page->tags() ?>">
-              <?php $etags = explode(",", $page->tags()); ?>
-              <?php foreach($etags as $etag): ?>
-                <?php $tagmatches = $site->grandChildren()->filterBy('tags', $etag, ','); ?>
-                <?php $x = 0; ?>
-                <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
-                <?php endforeach ?>
-                <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo trim($etag) ?>" <?php endif ?>><?php echo trim($etag) ?></a>
-              <?php endforeach ?>
-            </ul>
-          </div>
-        <?php } ?>
+        
+        <?php snippet('tags') ?>
         
       </article>
   
