@@ -23,10 +23,10 @@
   <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
   <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
   <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
-  <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
-  <a class="main-link" href="<?php echo url::home() ?>/recent-comments">recent comments</a>
-  <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
   <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
+  <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
+  <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
+  <a class="main-link" href="<?php echo url::home() ?>/submit">buy some merch</a>
   <a class="main-link draw-focus" href="<?php echo url::home() ?>/contribute/donate">donate</a>
 
   <form id="SidebarSearchForm">
