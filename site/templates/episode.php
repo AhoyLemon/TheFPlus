@@ -84,6 +84,8 @@
       <?php endforeach ?>
     </ul>
     
+    <div class="article-text">
+    
     <div class="info-block">
       <!-- CONTENT PROVIDER -->
       <?php if ($page->provider() != ""): ?>
@@ -128,7 +130,7 @@
     </div>
 
     <!-- EPISODE SUMMARY TEXT -->
-    <summary class="info-block article-text" itemprop="description">
+    <summary class="info-block" itemprop="description">
       <?php echo $page->text()->kirbytext() ?>
     </summary>
 
@@ -145,6 +147,8 @@
         </ol>
       </div>
     <?php endif ?>
+    
+    </div>
 
     <div class="episode-actions">
       <!-- DOWNLOAD FILE -->
