@@ -9,7 +9,9 @@
     <section class="merch-grid current">
       
       <article class="full default">
-        <?php echo $page->text()->kirbytext() ?>
+        <div class="article-text">
+          <?php echo $page->text()->kirbytext() ?>
+        </div>
       </article>
       
       <?php foreach($page->current_merch()->toStructure()->flip() as $merch) { ?>

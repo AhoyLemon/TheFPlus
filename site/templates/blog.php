@@ -46,7 +46,7 @@
       <?php endif; ?>
     </header>
     
-    <div class="content" itemprop="articleBody">
+    <div class="content article-text" itemprop="articleBody">
       <?php echo $page->text()->kirbytext() ?>
     </div>
 

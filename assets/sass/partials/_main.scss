@@ -41,6 +41,9 @@ article { font-weight: $light;
     .custom-html { font-size:75%;
       h4 { padding-bottom: 0.5em; }
     }
+    
+    
+    
   }
   .cast { 
     li { display: inline;
@@ -193,6 +196,18 @@ article.full {
 
 
 
+@media (min-width:1401px) {
+  article {
+    .article-text { max-width: 30em; text-align: justify; font-size:26px; }
+  }
+}
+
+@media (min-width:$mobile-max) and (max-width:1400px) {
+  article {
+    .article-text { font-size:2vw; }
+  }
+}
+
 
 
 // DESKTOP BREAKPOINT
@@ -202,7 +217,7 @@ article.full {
     &.edge-to-edge { padding: 0 0 0 300px; }
   }
   article {
-    &.full { font-size:1.6vw;
+    &.full { font-size:26px;
       .cover { float: right; max-width: 40%; margin-left: 2.5vw;
         &.left { float: left; margin-right: 2.5vw; margin-left: 0; }
       }

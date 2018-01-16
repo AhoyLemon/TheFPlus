@@ -26,7 +26,14 @@
   <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
   <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
   <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
-  <a class="main-link" href="<?php echo url::home() ?>/submit">buy some merch</a>
+  
+  <?php /* MERCH */ ?>
+  <?php $merchPage = $site->find('merch'); ?>
+  <a class="main-link" href="<?= $merchPage->url(); ?>">
+    buy some merch
+    <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
+  </a>
+  
   <a class="main-link draw-focus" href="<?php echo url::home() ?>/contribute/donate">donate</a>
 
   <form id="SidebarSearchForm">
