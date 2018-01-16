@@ -27,7 +27,9 @@
         </time>
       </header>
       
-      <?php echo $page->text()->kirbytext() ?>
+      <div class="article-text">
+        <?php echo $page->text()->kirbytext() ?>
+      </div>
       
     </article>
       

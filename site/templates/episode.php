@@ -128,7 +128,7 @@
     </div>
 
     <!-- EPISODE SUMMARY TEXT -->
-    <summary class="info-block" itemprop="description">
+    <summary class="info-block article-text" itemprop="description">
       <?php echo $page->text()->kirbytext() ?>
     </summary>
 

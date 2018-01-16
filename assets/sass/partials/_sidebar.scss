@@ -13,9 +13,12 @@
   > a { font-size: 2.2em; padding: 0.25em 0; font-weight: 100; color: white; text-decoration: none; }
   h4 { font-size: 1.1rem; color: $white; text-transform: uppercase; margin-top: 1em; }
   .main-link { font-size: 1.6rem; padding: 0.25em 0; font-weight: 100; color: $white; text-decoration: none; display: block; border: none;
-    &:hover { background-color: $white; color: $black; }
-    &:active {background-color: $red; }
     &.draw-focus { transform-origin: center left; animation-name:draw-focus; animation-duration:10s; animation-iteration-count: infinite; animation-timing-function: ease; }
+    .count { font-size: 42%; width: 1.35em; height: 1.35em; border: 1px solid $white; display: inline-block; text-align: center; border-radius: 50%; line-height: 125%; transform: translateY(-80%); }
+    &:hover { background-color: $white; color: $black;
+      .count { border-color: $black; }
+    }
+    &:active {background-color: $red; }
   }
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
     a { width: 56px; height:56px; margin-right: 6px; display: block; float: left; @include transition(all, 0.5s);
@@ -26,8 +29,8 @@
         .snake { fill: #4eb85d; }
         .rss { fill: #ea832f; }
         .circle { fill:$white; }
-        .orange { fill:#fabb32; }
-        .green { fill:#a9c54f; }
+        //.orange { fill:#fabb32; }
+        //.green { fill:#a9c54f; }
         .youtube { fill:#e52d27; }
       }
       &:hover { @include rotate(360deg); }
@@ -35,7 +38,7 @@
       &:hover {
         &.twitter .circle { fill:#55acee; }
         &.ballpit .circle { fill:#4eb85d; }
-        &.flattr .circle { fill:#fabb32; }
+        //&.flattr .circle { fill:#fabb32; }
         &.rss .circle { fill:#ea832f; }
         &.youtube .circle { fill:#e52d27; }
       }
