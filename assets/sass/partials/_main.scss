@@ -2,7 +2,7 @@ article { font-weight: $light;
   &.featured {
     header { @extend %clearfix; }
   }
-  &.full { 
+  &.full { line-height: 140%;
     h1, h2, h3, h4, h5, h6 { font-weight: 400; }
     &.default h1 { margin-bottom: 0.5em; }
     img { max-width: 100%; height: auto; }
@@ -38,12 +38,6 @@ article { font-weight: $light;
       p:last-child { margin-bottom: 0; }
     }
     a { @extend %textlink; }
-    .custom-html { font-size:75%;
-      h4 { padding-bottom: 0.5em; }
-    }
-    
-    
-    
   }
   .cast { 
     li { display: inline;
@@ -198,7 +192,7 @@ article.full {
 
 @media (min-width:1401px) {
   article {
-    .article-text { max-width: 30em; text-align: justify; font-size:26px; }
+    .article-text { max-width: 32em; text-align: justify; font-size:26px; }
   }
 }
 
