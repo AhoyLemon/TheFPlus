@@ -3,7 +3,7 @@
   <main class="main" role="main">
 
     
-    <?php $ftag = urldecode (param('tag')); ?>
+    <?php $ftag = urldecode(param('tag')); ?>
     <ul class="tags filtered">
       <label>browsing: </label>
       <li class="tag selected"><?php echo $ftag ?></li>

@@ -13,7 +13,7 @@
           if ($tag == "merch") {
             echo '<a href="'.$site->url().'/merch">merch</a>';
           } else if ($x > 1) {
-            echo '<a href="'.$site->url().'/find/tag:'.$tag.'">'.$tag.'</a>';
+            echo '<a href="'.$site->url().'/find/tag:'. urlencode($tag) .'">'.$tag.'</a>';
           } else {
             echo '<a>'.$tag.'</a>';
           }
