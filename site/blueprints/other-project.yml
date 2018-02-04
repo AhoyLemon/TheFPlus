@@ -67,5 +67,5 @@ fields:
     icon: retweet
   bonus_content:
     label: Bonus Content
-    type: textarea
+    type: markdown
     icon: code
