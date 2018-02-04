@@ -144,6 +144,7 @@
 
     <!-- BONUS CONTENT -->
     <?php if ($page->bonus_content() != ""): ?>
+      <a name="AdditionalFun"></a>
       <div class="info-block custom-html">
         <?php echo $page->bonus_content()->kirbytext() ?>
       </div>
