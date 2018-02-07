@@ -122,6 +122,28 @@ $('#DonateButton').click(function() {
 });
 
 
+if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+  if (sessionStorage.merchVisited) {
+    // You've clicke the merch link this session.
+  } else {
+    $('.main-link .count').addClass('visible');
+  }
+  
+  $('.merch-link').click(function() {
+    sessionStorage.setItem('merchVisited', 'true');
+  });
+  
+} else {
+  // There's no web storage
+  $('.main-link .count').addClass('visible');
+}
+
+
+
+
+
+
 // Register the service worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/service-worker.js').then(function(registration) {

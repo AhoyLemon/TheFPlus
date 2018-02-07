@@ -14,11 +14,15 @@
   h4 { font-size: 1.1rem; color: $white; text-transform: uppercase; margin-top: 1em; }
   .main-link { font-size: 1.6rem; padding: 0.25em 0; font-weight: 100; color: $white; text-decoration: none; display: block; border: none;
     &.draw-focus { transform-origin: center left; animation-name:draw-focus; animation-duration:10s; animation-iteration-count: infinite; animation-timing-function: ease; }
-    .count { font-size: 42%; width: 1.35em; height: 1.35em; border: 1px solid $white; display: inline-block; text-align: center; border-radius: 50%; line-height: 125%; transform: translateY(-80%); }
+    .count { font-size: 42%; width: 1.6em; height: 1.6em; border: 1px solid $white; display: inline-block; text-align: center; border-radius: 50%; line-height: 1.6em; transform: translateY(-80%); opacity: 0;
+      &.visible { opacity: 1; }
+    }
     &:hover { background-color: $white; color: $black;
       .count { border-color: $black; }
     }
-    &:active {background-color: $red; }
+    &:active { background-color: $red; }
+    
+    
   }
   .circles { padding-top: 1em; padding-bottom: 1em; overflow: hidden;
     a { width: 56px; height:56px; margin-right: 6px; display: block; float: left; @include transition(all, 0.5s);
