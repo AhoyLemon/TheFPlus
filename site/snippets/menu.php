@@ -29,7 +29,7 @@
   
   <?php /* MERCH */ ?>
   <?php $merchPage = $site->find('merch'); ?>
-  <a class="main-link" href="<?= $merchPage->url(); ?>">
+  <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
     buy some merch
     <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
   </a>
