@@ -1,8 +1,11 @@
 title: Blog Posts
+icon: newspaper-o
 pages:
   template:
     - blog
-  sort: flip
+  sort: date desc
+  # sort: flip
+  # num: date
 files: true
 fields:
   title:
