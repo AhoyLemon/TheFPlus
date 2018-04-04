@@ -29,7 +29,7 @@
 
         .garbage-day-banner.visible { transform: translateX(0); }
       </style>
-      
+
       <div class="garbage-day-banner" id="GarbageDayBanner">
         <div class="box days-box">
           <?php if ($diff->format('%d') > 0) {
@@ -42,9 +42,9 @@
         </div>
         
         <div class="box days-box">
-          <?php if ($diff->format('%d') > 0) {
-              echo '<div class="count">' . $diff->format('%D') . '</div>';
-            } else if ($diff->format('%d') < 1) {
+          <?php if ($diff->format('%h') > 0) {
+              echo '<div class="count">' . $diff->format('%H') . '</div>';
+            } else if ($diff->format('%h') < 1) {
               echo '<div class="count">00</div>';
             }
           ?>
