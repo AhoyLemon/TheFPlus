@@ -34,6 +34,17 @@
         <span itemprop="name" class="episode-title"><?php echo $page->title() ?></span>
       </h1>
 
+      <!-- DATE & TIME -->
+      <time class="released" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
+        <span class="date">
+          <?php echo $pubdate ?>
+        </span>
+        @
+        <span class="time">
+          <?php echo $pubtime; ?>
+        </span>
+      </time>
+      
       <!-- FEATURED SITES -->
       <?php if ($page->featured_site() != ""): ?>
         <?php if ($multisite == true): ?>
@@ -53,17 +64,7 @@
           <?php endif ?>
         </div>
       <?php endif ?>
-
-      <!-- DATE & TIME -->
-      <time class="released" itemprop="datePublished" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
-        <span class="date">
-          <?php echo $pubdate ?>
-        </span>
-        @
-        <span class="time">
-          <?php echo $pubtime; ?>
-        </span>
-      </time>
+      
     </header>
     
     <?php if($page->cover() != "") { ?>
