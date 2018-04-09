@@ -37,10 +37,6 @@
               <span class="recorded">
                 | <b>RECORDED</b>
               </span>
-            <?php } else if ($section->livestream_hour() != "") { ?>
-              <span class="recorded">
-                | <b>IN 24TH (HOUR <?php echo $section->livestream_hour(); ?>)</b>
-              </span>
             <?php } ?>
           </span>
           <span class="submitter">
