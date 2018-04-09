@@ -14,7 +14,12 @@ class BuilderField extends StructureField {
   );
 
   public function fieldset($fieldsetName) {
-    return new Field($this->fieldsets[$fieldsetName], $this->page());;
+    return new Field($this->fieldsets[$fieldsetName], $this->page());
+  }
+
+  public function modalsize() {
+    $sizes = array('small', 'medium', 'large', 'extralarge');
+    return in_array($this->modalsize, $sizes) ? $this->modalsize : 'large';
   }
 
   public function entry($data) {
@@ -26,61 +31,31 @@ class BuilderField extends StructureField {
 
     if(isset($this->fieldsets[$fieldsetName])) {
       $fieldset = $this->fieldset($fieldsetName);
-
+      $this->snippet = $fieldset->snippet();
       $this->entry = $fieldset->entry();
       $this->fields = $fieldset->fields();
     } else 
       return 'No fieldset with name "'. $fieldsetName . '" found.';
 
     $data->_fileUrl = $this->page->contentUrl() . DS;
-    return parent::entry($data);
+    if ($this->snippet){
+      $data = structure((array) $data, $this->page());
+      return tpl::load(c::get( 'buildersnippets.path', kirby()->roots()->snippets() ) . DS . $this->snippet . '.php', array(
+        'page' => $this->page(),
+        'data' => $data,
+      ));
+    } else {
+      return parent::entry($data);
+    }
   }
 
   public function headline() {
-
-    if(!$this->readonly) {
-
-      $fieldsets = $this->fieldsets();
-
-      $add = new Brick('a');
-      $add->html('<i class="icon icon-left fa fa-chevron-circle-down"></i>' . l('fields.structure.add'));
-      $add->addClass('structure-add-button label-option');
-      $add->data('modal', true);
-
-      $dropDown = new Brick("div");
-      $dropDown->addClass('builder-drop-down');
-
-      $addList = new Brick('ul');
-      $addList->addClass('builder-add-list');
-
-      foreach ($fieldsets as $fieldsetName => $fieldset) {
-        $fieldset = $this->fieldset($fieldsetName);
-        
-        $addListItem = new Brick('li');
-
-        $addListItemLink = new Brick('a');
-        $addListItemLink->html('<i class="icon icon-left fa fa-plus-circle"></i>' . $fieldset->label());
-        $addListItemLink->addClass('builder-add-button');
-        $addListItemLink->data('modal', true);
-        $addListItemLink->attr('href', purl($this->page, 'field/' . $this->name . '/builder/add?fieldset=' . $fieldsetName));
-
-        $addListItem->append($addListItemLink);
-        $addList->append($addListItem);
-      }
-
-      $dropDown->append($addList);
-
-    } else {
-      $addList = null;
-      $add = null;
-    }
-    
     $label = BaseField::label();
-    $label->append($add);
-    $label->append($dropDown);
-
     return $label;
+  }
 
+  public function style() {
+    return 'items';
   }
 
   public function content() {
