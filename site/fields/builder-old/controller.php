@@ -86,7 +86,6 @@ class BuilderFieldController extends StructureFieldController {
     }
 
     $modalsize = $this->field()->modalsize();
-    // $style = $this->field()->style();
     $form      = $this->form('update', array($model, $fieldsetStructure, $entry), function($form) use($model, $structure, $self, $entryId) {
 
       // run the form validator
@@ -98,7 +97,7 @@ class BuilderFieldController extends StructureFieldController {
 
       $structure->update($entryId, $form->serialize());
       $self->notify(':)');
-      $self->redirect($model);  
+      $self->redirect($model);
 
     });
 

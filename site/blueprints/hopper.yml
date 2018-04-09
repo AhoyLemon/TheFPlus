@@ -15,8 +15,10 @@ fields:
     fieldsets:
       submitteddoc:
         label: Submitted Document
-        modalsize: large
-        style: table
+        #modalsize: large
+        #style: table
+        flip: true 
+        snippet: builder/hopper
         fields:
           title:
             label: Title

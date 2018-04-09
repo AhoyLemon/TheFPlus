@@ -15,8 +15,8 @@ fields:
     fieldsets:
       submitteddoc:
         label: Rejected Document
-        entry: >
-          <div class="document-block"><a href="{{docurl}}" target="_blank">{{title}}</a>, submitted by {{submitter}} {{rejectdate}}</div>
+        flip: true
+        snippet: builder/dump
         fields:
           title:
             label: Title
