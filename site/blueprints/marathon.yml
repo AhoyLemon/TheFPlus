@@ -108,3 +108,11 @@ fields:
     label: Lead Out
     type: markdown
     icon: align-left
+  button_url:
+    label: Button URL
+    type: url
+    width: 2/3
+  button_text:
+    label: Button Text
+    type: text
+    width: 1/3
