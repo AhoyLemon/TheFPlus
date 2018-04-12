@@ -164,7 +164,7 @@ article.full {
   }
 }
 .marathon-gallery {text-align: center; padding: 1em;
-  .button { display: inline-block; border: 2px solid currentColor; padding: 0.5em 1em; font-size: 150%; text-decoration: none; border-radius: 0.5em;
+  .button { display: inline-block; border: 2px solid currentColor; padding: 0.5em 1em; font-size: 125%; margin-right: 0.3em; text-decoration: none; border-radius: 0.5em;
     &:hover { background-color:$red; color:$white; }
   }
 }
@@ -182,9 +182,9 @@ article.full {
 }
 
 @media (min-width: 888px) {
-  .marathon-hour {
+  .marathon-hour { justify-content: space-between;
     .video-holder { order:4; @include flex-item(560px,auto,0); }
-    .detail-holder { padding-right: 1em;  @include flex-item(calc(100% - 560px)); }
+    .detail-holder { padding-right: 1em; max-width: 32em; line-height: 180%; @include flex-item(calc(100% - 560px)); }
   }
 }
 

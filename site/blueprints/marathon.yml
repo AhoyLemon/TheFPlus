@@ -108,11 +108,22 @@ fields:
     label: Lead Out
     type: markdown
     icon: align-left
-  button_url:
-    label: Button URL
-    type: url
-    width: 2/3
-  button_text:
-    label: Button Text
-    type: text
-    width: 1/3
+    
+  buttons:
+    label: Buttons
+    type: structure
+    style: table
+    fields:
+      url:
+        label: URL
+        type: url
+      text:
+        label: Button Text
+        type: text
+        width: 1/2
+      target_blank:
+        label: &nbsp;
+        type: checkbox
+        text: New Window?
+        width: 1/2
+  
