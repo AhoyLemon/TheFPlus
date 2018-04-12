@@ -169,9 +169,16 @@
     
     <!-- LIVESTREAM GALLERY -->
     
-    <summary class="info-block marathon-gallery button-holder">
-      <a href="https://goo.gl/photos/t7iy7MhVPXNXJUKo9" target="_blank" class="button">All Livestream Art</a>
-    </summary>
+    <?php if ($page->buttons() != "") { ?>
+      <summary class="info-block marathon-gallery button-holder">
+        
+        <?php foreach ($page->buttons()->toStructure() as $button) { ?>
+          <a href="<?= $button->url(); ?>" <?php if ($button->target_blank() == "1") { echo 'target="_blank"'; } ?> class="button">
+            <?= $button->text(); ?>
+          </a>
+        <?php } ?>
+      </summary>
+    <?php } ?>
     
     <!-- EPISODE TAGS -->
     <?php if ($page->tags() != "") { ?>
