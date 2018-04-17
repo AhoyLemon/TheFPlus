@@ -122,8 +122,8 @@ fields:
         type: text
         width: 1/2
       target_blank:
-        label: &nbsp;
+        label: Open in New Window?
         type: checkbox
-        text: New Window?
+        text: yup
         width: 1/2
   
