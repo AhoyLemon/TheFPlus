@@ -1,6 +1,6 @@
 'use strict';
 
-const cacheName = 'v1.21';
+const cacheName = 'v1.22';
 const offlineUrl = '/offline.html';
 
 
@@ -13,17 +13,14 @@ self.addEventListener('install', e => {
         '/',
         '/assets/css/thefplus.css',
         '/assets/js/thefplus.js',
-        offlineUrl
-        /*
-          DEAR READER,
-          ADD A LIST OF YOUR ASSETS THAT
-          YOU WANT TO WORK WHEN OFFLINE
-          TO THIS ARRAY OF URLS
-        */
       ]).then(() => self.skipWaiting());
     })
   );
 });
+
+
+
+/*
 
 self.addEventListener('fetch', function(event) {
   if (event.request.url.includes('panel')) {
@@ -49,3 +46,5 @@ self.addEventListener('fetch', function(event) {
     );
   }
 });
+
+*/
