@@ -2,7 +2,7 @@
 - var baseURL = "https://thefpl.us/email/img/"
 - var textColor = "#333"
 - var maxWidth = 600
-
+block variables
 
 mixin footerLink(url, name, file, last)
   if (last)
@@ -55,7 +55,7 @@ mixin button(url,text,color)
 
 html
   head
-    title Come back and Pay Tenbux
+    title #{title}
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width')
     style(type='text/css').
