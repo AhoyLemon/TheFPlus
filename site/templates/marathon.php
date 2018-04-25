@@ -97,11 +97,13 @@
                 </div>
               <?php } ?>
               <summary>
-                <a class="action read" href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
-                  <svg viewBox="0 0 100 100">
-                    <use xlink:href="#IconDocument"></use>
-                  </svg>
-                </a>
+                <?php if ($hour->provider() != "" && $hour->document_link() != "") { ?>
+                  <a class="action read" href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
+                    <svg viewBox="0 0 100 100">
+                      <use xlink:href="#IconDocument"></use>
+                    </svg>
+                  </a>
+                <?php } ?>
                 <?php echo $hour->text()->kirbytext(); ?>
               </summary>
             </div>

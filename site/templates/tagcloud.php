@@ -11,7 +11,7 @@
       <?php foreach($tagcloud as $tag): ?>
       <li>
         <?php $x = 0; ?>
-        <?php $tagmatches = $site->grandChildren()->filterBy('template','episode')->filterBy('tags', $tag->name(), ','); ?>
+        <?php $tagmatches = $site->grandChildren()->filterBy('tags', $tag->name(), ','); ?>
         <?php foreach($tagmatches as $tagmatch): $x = $x+1; ?>
         <?php endforeach ?>
         <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo rawurlencode($tag->name()) ?>" <?php endif ?>><?php echo trim($tag->name()) ?> (<?php echo $x; ?>)</a>
