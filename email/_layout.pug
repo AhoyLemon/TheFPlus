@@ -1,6 +1,8 @@
 - var font = 'Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;'
 - var baseURL = "https://thefpl.us/email/img/"
 - var textColor = "#333"
+- var maxWidth = 600
+
 
 mixin footerLink(url, name, file, last)
   if (last)
@@ -24,6 +26,16 @@ mixin textRow(size)
   tr
     td(align="justify" color=textColor style="border-left: 2px solid #aaa; color:"+textColor+"; padding-left:32px; padding-bottom: 0; font-family:"+font+"; font-size:"+fontSize+"; font-weight: 300; line-height:"+lineHeight+";")
       block
+      
+
+mixin imageRow(filename,alt,height)
+  
+  if !height
+    - height = 'auto'
+
+  tr
+    td(align="center")
+      img(src=baseURL+filename alt=alt width=maxWidth height=height)
 
 mixin textLink(url,txt)
   a(href=url)

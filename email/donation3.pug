@@ -1,0 +1,20 @@
+extends _layout.pug
+
+block header
+  +imageRow('../lemon-header.jpg', 'thanks for the donation', 400)
+      
+      
+block content
+  +textRow(2.25)
+    b(style="font-weight:bold;") Hi, it's Lemon.
+  
+  +textRow
+    p I do want to send you a quick note thanking you for the recent donation you gave. 
+    //p At some point in the past, I got an email from PayPal saying that you donated to the podcast and I thought "That was nice, I should really send an email to that person saying that I appreciate their donation."
+    //p Then I got distracted and did something else, like probably redesigning an icon again for no reason.
+    p As it stands currently, we have the F Plus server pushing out 
+      b 
+        i 4 terabytes a month
+      |  to listeners like yourself. Most of that data is episodes that take 2 hours to record and 3-6 hours to edit, then put up on a website which I've worked on more diligently and consistently than any other website in my life.
+    p We do it because we love it. And we do it without ads.
+    p So thank you for helping with that. It means a lot.
