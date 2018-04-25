@@ -38,7 +38,7 @@
       <?php } ?>
     </section>
     
-    <section class="merch-grid sold-out">
+    <section class="merch-grid sold-out" style="margin-top:4em;">
       <article class="full default">
         <?php echo $page->sold_text()->kirbytext() ?>
       </article>
