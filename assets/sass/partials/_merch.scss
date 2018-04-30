@@ -4,7 +4,9 @@
     h3 { letter-spacing: .25em; font-weight: $bold; }
   }
   .grid-box { grid-column: span 1; color:$black; text-decoration: none;
-    figure { border:1px solid $black; }
+    figure { border:1px solid $black; position: relative; overflow: hidden; }
+    .almost-gone { @include position(absolute,null,0,0); width:10em; }
+    .almost-gone-text { fill:$white; }
     .thumb-holder {
       img { max-height: 230px; width: auto; display: block; margin-left: auto; margin-right: auto; }
     }
@@ -52,6 +54,7 @@
     figure img { opacity: 0.5; }
     .details { color: $red; }
     .name .title { text-decoration: underline; }
+    .almost-gone-text { fill:$red; }
   }
 }
 
