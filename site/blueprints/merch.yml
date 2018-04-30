@@ -18,23 +18,30 @@ fields:
         label: Title
         type: text
         required: true
-      url:
-        label: URL
-        type: url
+        width: 1/2
       pic:
         label: Pic
         type: image
         help: 300x300
         required: true
+        width: 1/2
+      url:
+        label: URL
+        type: url
       type:
         label: Type
         type: text
-        width: 1/2
+        width: 2/3
       price:
         label: Price
         type: text
-        width: 1/2
+        width: 1/3
         placeholder: "include $"
+      almost_gone:
+        label: Almost Gone?
+        type: checkbox
+        text: yeah, these are almost gone.
+      
   sold_text:
     label: Sold Out Lead In
     type: markdown
