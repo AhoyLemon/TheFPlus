@@ -96,6 +96,12 @@
 
 
 .product-photos { @include flex-container(); justify-content:flex-start;
+  a.zoom { position: relative; display: block; background:$red; overflow: hidden; cursor: zoom-in;
+    img { border:2px solid $red; }
+    &:hover { border-bottom: none;
+      &:after { content: ' '; @include position(absolute,0,0,0,0); background:$red; opacity: 0.5; mix-blend-mode:overlay; }
+    }
+  }
   img { max-height: 260px; }
   h3, .share-your-photo { @include flex-item(100%); }
   h3 { font-weight: $light; font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.15em; }

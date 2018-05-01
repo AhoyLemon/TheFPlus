@@ -277,7 +277,13 @@
             <?php } ?>
             <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
               <div class="photo-holder">
-                <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                <?php if ($photo->full_size() != "") { ?>
+                <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
+                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                </a>
+                <?php } else { ?>
+                  <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                <?php } ?>
               </div>
             <?php endforeach; ?>
             <div class="share-your-photo">
