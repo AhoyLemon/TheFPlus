@@ -182,6 +182,10 @@ fields:
         label: Description
         type: text
         required: true
+      full_size:
+        label: Full Size Image
+        type: image
+        required: false
   share_cta:
     label: Share CTA
     type: markdown
