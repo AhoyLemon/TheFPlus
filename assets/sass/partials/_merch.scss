@@ -27,7 +27,7 @@
         .text { text-transform: lowercase; }
       }
       
-      .full { @include flex-item(100%); }
+      .full { @include flex-item(100%); max-width: 100%; }
       .two-thirds { @include flex-item(66.666%); }
       .half { @include flex-item(50%); }
       .third { @include flex-item(33.333%); }
@@ -89,7 +89,7 @@
 
 @media (max-width:582px) {
   .merch-grid { display: block;
-    .grid-box { display: block; width:360px; margin-bottom: 20px; }
+    .grid-box { display: block; width:360px; max-width: 100%; margin-bottom: 20px; }
   }
 }
 
