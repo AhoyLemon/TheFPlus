@@ -154,7 +154,7 @@
     <div class="episode-actions">
       <!-- DOWNLOAD FILE -->
       <?php if ($page->episode_file() != ""): ?>
-        <a itemprop="audio" class="action download" href="<?= $site->url(); ?>/podcasts/<?php echo $page->episode_file() ?>" title="Download episode">
+        <a itemprop="audio" class="action download" href="<?= $site->url(); ?>/podcasts/<?php echo $page->episode_file() ?>" download title="Download episode">
           <svg viewBox="0 0 100 100">
             <use xlink:href="#IconDownload"></use>
           </svg>
@@ -247,6 +247,45 @@
   </section>
 
 </main>
+
+<?php if ($page->cover() != "") { ?>
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "<?= $site->url(); ?>",
+          "name": "<?php $site->title(); ?>",
+          "image": "https://thefpl.us/assets/images/og-image.png"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@id": "https://thefpl.us/episode",
+          "name": "Episodes",
+          "image": "https://thefpl.us/assets/images/og-image.png"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "<?= $page->url(); ?>",
+          "name": "<?= $page->title(); ?>",
+          "image": "<?= $page->cover()->toFile()->url(); ?>"
+        }
+      }
+    ]
+  }
+  </script>
+<?php } ?>
+
 
 
 <?php snippet('footer') ?>

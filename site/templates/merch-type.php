@@ -250,7 +250,11 @@
                     <span>SOLD OUT</span>
                     <meta itemprop="availability" content="http://schema.org/SoldOut" />
                     <meta itemprop="priceCurrency" content="USD" />
-                    <meta itemprop="price" content="3" />
+                    <?php if ($product->price() != "") { ?>
+                      <meta itemprop="price" content="<?= $product->price(); ?>" />
+                    <?php } else if ($product->buttona_price() != "") { ?> 
+                      <meta itemprop="price" content="<?= $product->buttona_price(); ?>" />
+                    <?php } ?>
                   </div>
                 <?php } else if ($product->released == "") { ?>
                   <div class="detail no-buttons">

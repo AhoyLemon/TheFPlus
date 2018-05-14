@@ -3,7 +3,7 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "PerformingGroup",
+      "@type": "Organization",
       "name": "The F Plus",
       "url": "https://thefpl.us",
       "email": "lemon@thefpl.us",
@@ -30,6 +30,8 @@
       }
     }
   </script>
+  <!-- RSS FEED -->
+  <link rel="alternate" type="application/rss+xml" title="The F Plus Episodes" href="http://feeds.feedburner.com/TheFPlus" />
 
   <main class="main" role="main">
     <?php if (param('flush') == "everything"): ?>

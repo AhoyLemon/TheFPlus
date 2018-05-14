@@ -100,9 +100,6 @@
               <p>Show notes available in the <a href="<?php echo xml($item->url()); ?>">episode page</p>
             ]]>
           </content:encoded>
-          <description>
-            Show notes at <?php echo xml($item->url()); ?>
-          </description>
 <?php } ?>
           
           <itunes:author>The F Plus</itunes:author>
