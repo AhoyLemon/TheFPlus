@@ -1,7 +1,4 @@
 <?php
-
-$ignore = array('sitemap', 'error', 'fanart');
-
 // send the right header
 header('Content-type: text/xml; charset="utf-8"');
 
