@@ -69,9 +69,11 @@
     <?php endif ?>
 
     <!-- SUMMARY TEXT -->
-    <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
-      <?php echo $page->text()->kirbytext() ?>
-    </summary>
+    <div class="article-text">
+      <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
+        <?php echo $page->text()->kirbytext() ?>
+      </summary>
+    </div>
 
     <div class="otherproject-actions episode-actions">
       <?php if ($page->episode_file() != ""): ?>
@@ -139,6 +141,29 @@
       </a>
       
     </div>
+      
+    <?php if ($page->photos() != "") { ?>
+      <div class="product-photos" style="margin-top:3em;">
+        <?php if ($page->photos_leadin() != "") { ?>
+          <h3><?= $page->photos_leadin(); ?></h3>
+        <?php } ?>
+        <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
+          <div class="photo-holder">
+            <?php if ($photo->full_size() != "") { ?>
+              <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
+                  <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+              </a>
+            <?php } else { ?>
+              <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+            <?php } ?>
+          </div>
+        <?php endforeach; ?>
+        <div class="share-your-photo">
+          <?php echo $page->share_cta()->kirbytext(); ?>
+        </div>
+      </div>
+    <?php } ?>  
+    
 
     <?php snippet('tags') ?>
 
@@ -149,6 +174,10 @@
         <?php echo $page->bonus_content()->kirbytext() ?>
       </div>
     <?php endif ?>
+      
+      
+      
+    
   </article>
 
   <section class="comments disqus">

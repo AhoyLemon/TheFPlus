@@ -6,17 +6,27 @@ fields:
   title:
     label: Title
     type:  text
-    width: 1/2
   category:
     label: Category
-    type: select
-    width: 1/2
+    type: fieldtoggle
     options:
       qe: Quite Exasperating
       irregular: Irregular
       website: Website
       merch: Merchandise
       else: Something Else
+    show:
+      qe:
+      irregular: episode_file
+      website: github_repo
+      merch: photos
+      else:
+    hide:
+      qe: photos github_repo episode_file
+      irregular: photos github_repo
+      website: github_repo
+      merch: github_repo
+      else:
   date:
     label: Release Date
     type: date
@@ -69,3 +79,27 @@ fields:
     label: Bonus Content
     type: markdown
     icon: code
+  photos:
+    label: Photos
+    type: structure
+    entry: >
+      {{desc}}
+    fields:
+      series_num:
+        label: Series
+        type: number
+        width: 1/2
+      pic:
+        label: Image
+        type: image
+        required: true
+        width: 1/2
+        help: "260px in height"
+      desc:
+        label: Description
+        type: text
+        required: true
+      full_size:
+        label: Full Size Image
+        type: image
+        required: false
