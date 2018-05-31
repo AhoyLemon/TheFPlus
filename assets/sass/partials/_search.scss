@@ -1,8 +1,14 @@
-.page-search { padding-top: 1em; padding-bottom: 1em; @include flex-container(); margin-right: 1.5vw;
+.page-search { padding-top: 1em; padding-bottom: 1em; @include flex-container();
   input[type=search] { @include flex-item(80%); font-family:$sans-serif; font-size: 3vw; padding: 0.25em 1em; color:lighten($black,20%); border:1px solid lighten($black,20%); border-right:none; }
   input[type=submit] { @include flex-item(20%); font-family:$sans-serif; font-size: 2vw; background-color:$episode; color:$red; border:1px solid $red;
     &:hover, &:active { cursor: pointer; background-color:$red; color:$white; }
   }
+}
+
+.all-search-results { margin:1em 0 0 0; }
+.no-search-results { @include flex-item(100%); font-size:1.5vw; border:1px solid rgba($black,0.75); padding:1em 1em 0 1em;
+  p { color:rgba($black,0.75); margin-bottom: 1em; }
+  b { font-weight: $bold; }
 }
 
 #SidebarSearch { margin-top: 1em; padding: 0.25em 1em; background-color: transparent; border: 1px solid $white; font-size: 1.1em; font-family:$sans-serif; color: $white;
