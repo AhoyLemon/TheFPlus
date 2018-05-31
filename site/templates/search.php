@@ -13,7 +13,7 @@
   <?php if ($results->count() < 1) { ?>
     
     <?php
-      $searchesToTry = array('britain', 'recipes', 'satan', 'furries', 'crime', 'juggalos', 'wikihow', 'magick', 'penis', 'drugs', 'reddit', 'teenagers', 'vampire', 'dragon', 'gross');
+      $searchesToTry = array('britain', 'recipes', 'satan', 'furries', 'crime', 'juggalos', 'wikihow', 'magick', 'penis', 'drugs', 'reddit', 'teenagers', 'vampire', 'dragon', 'gross', 'questions');
       shuffle($searchesToTry);
       $searchesToTry = array_slice($searchesToTry, 0, 4)
     ?>
@@ -34,6 +34,10 @@
           }
         ?>
       <p>
+    </summary>
+  <?php } else { ?>
+    <summary class="search-results-count">
+      <?= $results->count(); ?> results found.
     </summary>
   <?php } ?>
 
