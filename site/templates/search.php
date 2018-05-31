@@ -7,8 +7,36 @@
     <input type="submit" value="search">
   </form>
 
-  <section class="episodes summaries">
+  <section class="episodes summaries all-search-results">
+  
+  
+  <?php if ($results->count() < 1) { ?>
     
+    <?php
+      $searchesToTry = array('britain', 'recipes', 'satan', 'furries', 'crime', 'juggalos', 'wikihow', 'magick', 'penis', 'drugs', 'reddit', 'teenagers', 'vampire', 'dragon', 'gross');
+      shuffle($searchesToTry);
+      $searchesToTry = array_slice($searchesToTry, 0, 4)
+    ?>
+
+    <article class="no-search-results full">
+      <p>
+      No results for <b><?= $query; ?></b>.
+      </p>
+      <p>
+        Maybe try searching for 
+        <?php 
+          $termcount = 0;
+          foreach($searchesToTry as $searchTerm) {
+            $termcount++;
+            if ($termcount == count($searchesToTry)) { echo 'or &nbsp;'; }
+            echo '<a href="' . $site->url() . '/search?q=' .  $searchTerm . '">' . $searchTerm . '</a>';
+            if ($termcount < count($searchesToTry)) { echo ', &nbsp;'; } else { echo '?'; }
+          }
+        ?>
+      <p>
+    </summary>
+  <?php } ?>
+
   <?php foreach($results->sortBy('date', 'desc') as $result): ?>    
     <article class="<?php echo html($result->parent()->slug()) ?> brief">
       <header>
