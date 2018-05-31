@@ -72,6 +72,8 @@
     <?php } else if($image = $page->image()) { ?>
       <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
     <?php } ?>
+    
+    <div class="article-text">
 
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">
@@ -84,8 +86,6 @@
         <?php } ?>
       <?php endforeach ?>
     </ul>
-    
-    <div class="article-text">
     
     <div class="info-block">
       <!-- CONTENT PROVIDER -->
