@@ -1,15 +1,15 @@
 {
-  "manifest_version": 3,
+  "manifest_version": "3.1",
   "name": "The F Plus",
-  "short_name": "The F Plus",
+  "short_name": "thefplus",
   "description": "Terrible things read with enthusiasm.",
-  "version": "3.15b",
   "default_locale": "en",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url" : "https://thefpl.us/",
   "theme_color": "#c0282d",
   "background_color": "#eeeeee",
+  "orientation" : "portrait-primary",
   "icons": [
     {
       "src": "/android-chrome-36x36.png",
@@ -27,13 +27,33 @@
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-96x96.png",
-      "sizes": "96x96",
+      "src": "/android-chrome-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon-76x76.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon-120x120.png",
+      "sizes": "120x120",
       "type": "image/png"
     },
     {
       "src": "/android-chrome-144x144.png",
       "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon-180x180.png",
+      "sizes": "180x180",
       "type": "image/png"
     },
     {
