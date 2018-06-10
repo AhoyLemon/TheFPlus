@@ -228,6 +228,18 @@
       
     </div>
 
+    <?php if ($page->cover_cite_title() != "") { ?>
+      <div class="cover-image-citation" style="margin-top:1em; margin-bottom:1em;">
+        Cover image uses 
+        <strong><?= $page->cover_cite_title(); ?></strong>
+        <?php if ($page->cover_cite_artist() != "" && $page->cover_cite_url() != "" ) { ?>
+          by <a href="<?= $page->cover_cite_url(); ?>"><?= $page->cover_cite_artist(); ?></a>
+        <?php } else if ($page->cover_cite_artist() != "") { ?>
+          by <?= $page->cover_cite_artist(); ?>
+        <?php } ?>
+      </div>
+    <?php } ?>
+
     <!-- EPISODE TAGS -->
     <?php snippet('tags') ?>
 
