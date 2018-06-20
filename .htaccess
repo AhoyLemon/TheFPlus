@@ -7,19 +7,11 @@
 # http://yourdomain.com/about-us/team
 RewriteEngine on
 
-# make sure to set the RewriteBase correctly
-# if you are running the site in a subfolder.
-# Otherwise links or the entire site will break.
-#
 # If your homepage is http://yourdomain.com/mysite
 # Set the RewriteBase to:
-#
-RewriteBase /thefplus
-
-# In some enviroments it's necessary to
-# set the RewriteBase to:
-#
-# RewriteBase /
+<If "req('Host') == 'localhost'>
+  RewriteBase /thefplus
+</If>
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
@@ -50,10 +42,3 @@ RewriteRule ^(.*) index.php [L]
   AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </ifmodule>
 # END GZIP
-
-# Additional recommended values
-# Remove comments for those you want to use.
-#
-# AddDefaultCharset UTF-8
-#
-# php_flag short_open_tag on
