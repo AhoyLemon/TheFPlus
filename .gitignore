@@ -7,7 +7,7 @@ content/
 backup/
 site/accounts
 site/cache
-site/config
-thumbs
+site/config/config.php
+thumbs/
 stripe/
 json/
