@@ -1,2 +1,3 @@
-c::set('debug', false);
-c::set('ssl',true);
+<?php
+  c::set('debug', false);
+  c::set('ssl',true);
