@@ -46,6 +46,10 @@
       <?php endif; ?>
     </header>
     
+    <?php if ($page->cover() != "") { ?>
+      <img itemprop="image" src="<?= $page->cover()->toFile()->url(); ?> " class="cover" alt="<?= $page->title(); ?>" />
+    <?php } ?>
+
     <div class="content article-text" itemprop="articleBody">
       <?php echo $page->text()->kirbytext() ?>
     </div>
