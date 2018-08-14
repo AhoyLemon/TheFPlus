@@ -228,7 +228,7 @@
       
     </div>
 
-    <?php if ($page->cover_cite_title() != "") { ?>
+    <?php if ($page->cover_cite_toggle() == "yes") { ?>
       <div class="cover-image-citation" style="margin-top:1em; margin-bottom:1em;">
         Cover image uses 
         <strong><?= $page->cover_cite_title(); ?></strong>
