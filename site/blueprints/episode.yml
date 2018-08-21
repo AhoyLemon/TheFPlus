@@ -14,6 +14,9 @@ fields:
     icon: globe
     width: 1/2
     help: Comma separated, no HTTP://
+  description:
+    label: Description
+    type: textarea
   date:
     label: Release Date
     type: date
