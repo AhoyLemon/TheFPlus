@@ -206,7 +206,7 @@ article.full {
 
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
-  main { display: block; padding:20px 20px 20px 320px; height:100vh; overflow-y: auto;
+  main { display: block; padding:20px 20px 20px 320px;
     &.page { padding-right: 1vw; }
     &.edge-to-edge { padding: 0 0 0 300px; }
   }
