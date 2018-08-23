@@ -38,6 +38,18 @@
                 | <b>RECORDED</b>
               </span>
             <?php } ?>
+            
+            <?php if ((param('show') == "links") && ($section->dibs()->isNotEmpty())) { ?>
+              <?php $dibs = explode(',', $section->dibs()); ?>
+              <span class="dibs dibs-icon">
+                <?= count($dibs); ?>
+              </span>
+              <div class="dibs dibs-list">
+                <strong>Dibs:</strong>
+                <?= $section->dibs(); ?>
+              </div>
+            <?php } ?>
+
           </span>
           <span class="submitter">
             <?php if ($multisubmit == false) { ?>
