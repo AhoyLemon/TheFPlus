@@ -32,15 +32,21 @@ fields:
             label: Submitter
             type: tags
             icon: gift
+            width: 1/2
           subdate:
             label: Date Submitted
             type: date
             default: today
             width: 1/2
             format: MM/DD/YY
+          dibs:
+            label: Dibs
+            type: tags
+            icon: flag
+            width: 3/4
           recorded:
-            label: Recorded 
+            label: Recorded?
             type: checkbox
             text: yup
-            width: 1/2
+            width: 1/4
             icon: play-circle

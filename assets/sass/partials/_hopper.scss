@@ -23,4 +23,8 @@ ul.submitted-content { counter-reset: docNumber -1; padding-left: 0; display: ta
       &:last-child:after { content:''; }
     }
   }
+  .dibs-icon { display: inline-block; background: $black; font-size: 50%; color: $white; width: 1.8em; text-align: center; line-height: 180%; border-radius: 50%; height: 1.8em; transform: translateY(-35%); }
+  .dibs-list { font-size:75%;
+    strong { font-weight: 600; }
+  }
 }
