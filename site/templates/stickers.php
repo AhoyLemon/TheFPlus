@@ -148,7 +148,7 @@
                 </div>
               <?php endif; ?>
 
-              <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != "") { ?>
+              <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != ""  && $sticker->released() != "") { ?>
                 <div class="detail full buy-buttons">
                   <label>Buy Now</label>
                   <div class="buttons">
