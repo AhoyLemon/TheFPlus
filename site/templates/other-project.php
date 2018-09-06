@@ -174,6 +174,9 @@
         <?php echo $page->bonus_content()->kirbytext() ?>
       </div>
     <?php endif ?>
+      
+      
+      
     
   </article>
 

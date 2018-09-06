@@ -13,6 +13,10 @@ fields:
     label: Current Merch
     type: structure
     style: table
+    entry:
+      - title
+      - type
+      - url
     fields:
       title:
         label: Title
