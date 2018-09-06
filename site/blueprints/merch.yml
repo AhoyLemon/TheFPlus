@@ -53,6 +53,10 @@ fields:
     label: Sold Out Merch
     type: structure
     style: table
+    entry:
+      - title
+      - type
+      - sold_date
     fields:
       title:
         label: Title
