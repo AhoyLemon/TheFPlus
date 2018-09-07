@@ -12,8 +12,16 @@
         <div class="article-text">
           <?php echo $page->text()->kirbytext() ?>
         </div>
+        <a name="available"></a>
       </article>
       
+
+      <?php if ($page->current_text()->isNotEmpty()) { ?>
+        <article class="full default">
+          <?php echo $page->current_text()->kirbytext() ?>
+        </article>
+      <?php } ?>
+
       <?php foreach($page->current_merch()->toStructure()->flip() as $merch) { ?>
       
         <a href="<?= $merch->url(); ?>" class="grid-box">
@@ -47,6 +55,7 @@
     </section>
     
     <section class="merch-grid sold-out" style="margin-top:4em;">
+      <a name="soldout"></a>
       <article class="full default">
         <?php echo $page->sold_text()->kirbytext() ?>
       </article>
