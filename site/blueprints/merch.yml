@@ -9,6 +9,9 @@ fields:
   text:
     label: Intro Text
     type: markdown
+  current_text:
+    label: Current Merch Lead In
+    type: markdown
   current_merch:
     label: Current Merch
     type: structure
