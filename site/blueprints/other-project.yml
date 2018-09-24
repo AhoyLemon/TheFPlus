@@ -25,7 +25,7 @@ fields:
       qe: photos github_repo episode_file
       irregular: photos github_repo
       website: github_repo
-      merch: github_repo
+      merch: github_repo episode_file
       else:
   date:
     label: Release Date
@@ -38,13 +38,28 @@ fields:
     interval: 1
     width: 1/4
   cover:
-    label: Cover Image
+    label: Teaser Image
     type: image
     width: 1/2
   show_image:
     label: Show image on page?
     type: toggle
     text: yes/no
+    width: 1/4
+  show_different_image:
+    label: Show different image on page?
+    type: fieldtoggle
+    width: 1/4
+    options:
+      no:  "No"
+      yes: "Yes"
+    show:
+      yes: page_image
+    hide:
+      no: page_image
+  page_image:
+    label: Page Image
+    type: image
     width: 1/2
   cast:
     label: Cast
