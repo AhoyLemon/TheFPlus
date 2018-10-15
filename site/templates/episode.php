@@ -271,7 +271,7 @@
         "position": 1,
         "item": {
           "@id": "<?= $site->url(); ?>",
-          "name": "<?php $site->title(); ?>",
+          "name": "<?= $site->title(); ?>",
           "image": "https://thefpl.us/assets/images/og-image.png"
         }
       },
