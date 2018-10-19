@@ -272,6 +272,7 @@
         "item": {
           "@id": "<?= $site->url(); ?>",
           "name": "<?= $site->title(); ?>",
+          "url": "<?= $site->url(); ?>",
           "image": "https://thefpl.us/assets/images/og-image.png"
         }
       },
@@ -281,6 +282,7 @@
         "item": {
           "@id": "https://thefpl.us/episode",
           "name": "Episodes",
+          "url": "<?= $page->parent()->url(); ?>",
           "image": "https://thefpl.us/assets/images/og-image.png"
         }
       },
@@ -290,6 +292,7 @@
         "item": {
           "@id": "<?= $page->url(); ?>",
           "name": "<?= $page->title(); ?>",
+          "url": "<?= $page->url(); ?>",
           "image": "<?= $page->cover()->toFile()->url(); ?>"
         }
       }
