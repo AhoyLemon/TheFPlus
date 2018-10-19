@@ -62,7 +62,7 @@
         <div class="author info-block">
           by 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <a itemprop="url" href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo $clink ?>">
+            <a itemprop="url" href="<?php echo url::home() ?>/meet/<?php $clink = preg_replace('/\s+/', '-', $page->cast()); echo strtolower($clink) ?>">
               <span itemprop="name" class="provider"><?php echo $page->cast() ?></span>
             </a>
           </span>
