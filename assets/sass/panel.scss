@@ -1,0 +1,9 @@
+@import "partials/_variables";
+@import "partials/_mixins";
+@import "partials/_extends";
+
+body.login { background-size: cover; background-position: center; background-image: url('../images/suenami.jpg');
+  form.form {
+    &:before { display: block; content: " "; height: 60px; background:url('../svg/logo-modern.svg'); background-size:contain; background-position: center; background-repeat: no-repeat; margin-bottom: 1.5rem; }
+  }
+}
