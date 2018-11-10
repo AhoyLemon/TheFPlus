@@ -32,8 +32,8 @@
       
       <div class="merch-grid stickers">
         
-        <?php foreach($page->stickers()->toStructure()->sortBy('series_num', 'desc') as $sticker): ?>
-        
+        <?php foreach($page->stickers()->toStructure()->sortBy('soldout', 'asc', 'series_num', 'desc') as $sticker): ?>
+                  
           <div class="grid-box sticker-box" itemscope itemtype="http://schema.org/Product">
             <a name="<?= $sticker->series_num(); ?>"></a>
             <meta itemprop="category" content="sticker" />
@@ -218,6 +218,7 @@
                 <meta itemprop="url" content="<?php echo $site->url(); ?>" />
               </span>
           </div>
+
         <?php endforeach; ?>
       </div>
   
