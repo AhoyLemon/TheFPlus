@@ -14,6 +14,7 @@
     <itunes:subtitle>Terrible things read with enthusiasm.</itunes:subtitle>	
     <itunes:author>The F Plus</itunes:author>
     <itunes:summary><?php echo $site->description() ?></itunes:summary>
+    <itunes:type>episodic</itunes:type>
     <itunes:owner>
       <itunes:name>Lemon</itunes:name>		
       <itunes:email>lemon@thefpl.us</itunes:email>
@@ -91,9 +92,16 @@
             ]]>
           </content:encoded>
           <itunes:summary><?php echo $desc; ?></itunes:summary>
+          <itunes:episode><?= $item->uid(); ?></itunes:episode>
+          <itunes:title><?= xml($item->title()) ?></itunes:title>
+          <?php if (is_numeric($item->uid())) { ?>
+            <itunes:episodeType>full</itunes:episodeType>
+          <?php } else { ?>
+            <itunes:episodeType>bonus</itunes:episodeType>
+          <?php } ?>
 <?php } else { ?>
           <description>
-            Show notes at <?php echo xml($item->url()); ?>
+            <?php echo $desc; ?>
           </description>
           <content:encoded>
             <![CDATA[
