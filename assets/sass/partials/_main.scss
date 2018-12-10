@@ -206,9 +206,9 @@ article.full {
 
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
-  main { display: block; padding:20px 20px 20px 320px;
+  main { display: block; padding:$gap $gap $gap ($sidebar + $gap);
     &.page { padding-right: 1vw; }
-    &.edge-to-edge { padding: 0 0 0 300px; }
+    &.edge-to-edge { padding: 0 0 0 $sidebar; }
   }
   article {
     &.full { font-size:26px;
