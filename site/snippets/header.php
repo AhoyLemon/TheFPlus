@@ -87,10 +87,9 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
 
 </head>
 <body>
-  <? /* <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> */ ?>
 
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 
   <?php snippet('svg') ?>
   <?php snippet('mobile-menu') ?>
-  <?php snippet('menu') ?>
+  <?php snippet('menu-test') ?>

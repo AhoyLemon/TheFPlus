@@ -39,7 +39,10 @@ $heavy:600;
 $sans-serif: $source;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
+$sidebar: 400px;
 $mobile-top:56px;
-$radius:6px;
+//$radius:6px;
+$gap: 10px;
+$halfGap: ($gap / 2);
 $mobile-max: 767px;
 $desktop-min: 768px;
