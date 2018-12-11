@@ -43,7 +43,7 @@
       &.wrote { background-color:$wrote; border-color:darken($wrote,25%);
         .hover-cover { background:rgba($wrote,0.85); }
       }
-      &.also-made { background-color: $also-made; color:$white; border-color: darken($also-made,5%); // box-shadow: 2px 2px 2px darken($also-made,5%);
+      &.also-made { background-color: #f3fcee; color:$black;
         .hover-cover { background:rgba($also-made,0.85); }
       }
       &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%);
@@ -88,15 +88,48 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 
-.summaries { display: grid;  grid-gap: $gap;
-  article { box-shadow:0 0 $halfGap rgba($black,0.5); }
+.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;  margin-top:20px;
+  article { box-shadow:0 0 $halfGap rgba($black,0.5);
+    
+    // .content { display:none; }  
 
+  }
+
+  /*
   @media (min-width: 2301px)                         { grid-template-columns: repeat(6,1fr); }
   @media (min-width: 1901px) and (max-width: 2300px) { grid-template-columns: repeat(5,1fr); }
   @media (min-width: 1601px) and (max-width: 1900px) { grid-template-columns: repeat(4,1fr); }
   @media (min-width: 1001px) and (max-width:1600px)  { grid-template-columns: repeat(3,1fr); }
   @media (min-width: 461px) and (max-width:1000px)   { grid-template-columns: repeat(2,1fr); }
   @media (max-width: 460px)                          { grid-template-columns: 1fr; }
+  */
+
+  grid-template-columns: repeat(auto-fill,600px);
+
+
+  article { position:relative; padding-right:calc(50% + 20px);
+    .image-holder { @include position(absolute,null,20px,-20px,null); width:50%; position:absolute !important; box-shadow:0 0 3px rgba($black,0.6); }
+    .disqus-comment-count  { display:none; }
+    header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
+    summary { padding:70px 1em 1em 1em; @include flex-container();
+      .cast, .content { @include flex-item(100%); }
+      .content { order:1; }
+      .cast { order:2; margin-top:10px; }
+    }
+    .episode-number { @include position(absolute,0,20px); left:unset !important; font-size:1.35rem !important; }
+    .cast {
+      li { display:inline-block; padding:0.05em 0.5em; border-radius:0.2em; margin-bottom:0.25em; margin-right:0.25em; background:rgba($black,0.6); color:$white;
+        &:before, &:after { content:''; }
+      }
+    }
+    &.also-made {
+      .image-holder { box-shadow:none; }
+    }
+  }
+
+
+
+
 }
 
 
