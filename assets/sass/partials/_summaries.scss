@@ -8,14 +8,11 @@
   .brief {
     header { padding:0 1em .25em 1em; } 
     .cover { width: 100%; margin: auto; display: block; }
+    /*
     .title { display:block; position: relative; height: 1.8rem; margin: 0;
       a { display:block; @include position(absolute,0,0,0,0); @extend %truncate; font-size:1.2rem; font-weight: $bold; cursor: pointer; text-decoration: none;
         &:hover { text-decoration: underline; }
       }
-    }
-    /*
-    .title { font-size:1.4rem; line-height: 120%; @extend %truncate; height:1.3em; margin-bottom: 0;
-      a { @extend %textlink; }
     }
     */
     summary { padding: 1em 1em 2.5em 1em; display: block; }
@@ -37,7 +34,7 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
+      .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:1.5em; color:lighten($black,35%);
         &:before { content:'#'; }
       }
       .time-estimate { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
@@ -97,7 +94,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
   .brief { position:relative; color:$black; text-decoration: none;
 
-    .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; box-shadow:0 0 4px rgba($black,0.2); }
+    .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; }
 
     header { border-bottom:1px solid rgba($black,0.1); padding-top:$gap;
       .title { font-size:1.2rem; font-weight: $bold; color:$red; }
@@ -111,7 +108,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
     //header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
 
-    .episode-number { @include position(absolute,0,20px); left:unset !important; font-size:1.35rem !important; }
+    .episode-number { @include position(absolute,0,20px); left:unset !important; }
     .cast {
       li { display:inline-block; padding:0.05em 0.5em; border-radius:0.2em; margin-bottom:0.25em; margin-right:0.25em; background:rgba($black,0.6); color:$white;
         &:before, &:after { content:''; }
@@ -125,6 +122,23 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
       header { grid-column: span 2; }
     }
 
+    &.also-made {
+      figure { order:1; padding-left: 20px; padding-right:0;  grid-row: span 2;
+        img { transform: translateY(-20px); display: block; }
+      }
+      figcaption { order: 3; }
+      header { order: 2; grid-column: span 1; }
+      .category { order: 4; grid-column: span 2; padding-left: 20px; padding-right: 20px;
+        font-size:1.5em; color:lighten($black,35%);
+      }
+      .cast { display: none; }
+    }
+
+    &.wrote {
+      figure { display: none; }
+      figcaption { grid-column: span 2; }
+    }
+
 
 
   }
@@ -132,13 +146,16 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 .summaries {
-  .brief { 
-    &.episode .inner           { background-color: $episode; border-color: darken($episode,35%); }
-    &.wrote .inner             { background-color:$wrote; border-color:darken($wrote,25%); }
-    &.also-made .inner         { background-color: $also-made; color:$white; border-color: darken($also-made,5%); }
-    &.adjudicated-guess .inner { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%); }
+  .brief { box-shadow:0 0 4px rgba($black,0.2);
+    &.episode           { background-color: $episode; border-color: darken($episode,35%); }
+    //&.wrote             { background-color:$wrote; border-color:darken($wrote,25%); }
+    //&.also-made .inner         { background-color: $also-made; color:$white; border-color: darken($also-made,5%); }
+    &.wrote             { background-color: $episode; border-color: darken($episode,35%); }
+    &.also-made         { background-color: $episode; border-color: darken($episode,35%); }
+    &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%); }
 
-    .inner { transition: all 0.1s ease; }
+    //.inner {  }
+    transition: all 0.1s ease;
     figure { transition: transform 0.6s ease; }
     
 
@@ -148,8 +165,8 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
       figure { transform: scale(1.1); } 
     }
 
-    &:active {
-      .inner { transform:scale(0.95); }
+    &:active {  transform:scale(0.95);
+      //.inner { }
     }
 
   }
