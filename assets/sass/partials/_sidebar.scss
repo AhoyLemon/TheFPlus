@@ -110,7 +110,7 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
   .desktop-logo { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); }
 
   .sidebar-links { @include position(absolute,null,40px,($sidebar * 0.5),40px);
-    a { display: block; margin-bottom: 1em; color:$black; text-decoration: none; font-size:140%; }
+    a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:140%; }
   }
 
 }
