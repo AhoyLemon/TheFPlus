@@ -29,7 +29,8 @@ $episode: #fff;
 
 // FONTS
 $source: 'Source Sans Pro', sans-serif;
-$font-size: 18px;
+$noto: 'Noto Serif TC', serif;
+$font-size: 16px;
 $light:300;
 $normal:400;
 $bold:500;
@@ -37,6 +38,7 @@ $heavy:600;
 
 // FONT UTILITIES
 $sans-serif: $source;
+$sans-serif: $noto;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
 $sidebar: 400px;
@@ -44,5 +46,9 @@ $mobile-top:56px;
 //$radius:6px;
 $gap: 10px;
 $halfGap: ($gap / 2);
+$doubleGap: ($gap * 2);
 $mobile-max: 767px;
 $desktop-min: 768px;
+
+// ZAZZLE!!!!!!
+$boxShadow: 0 0 4px rgba($black,0.2);

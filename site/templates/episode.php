@@ -28,6 +28,16 @@
   <meta http-equiv="last-modified" content="<?php echo $page->modified('Y-m-d@H:i:s'); ?>" />
   
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
+    
+    <figure>
+      <?php if($page->cover() != "") { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+      <?php } else if($image = $page->image()) { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+      <?php } ?>
+    </figure>
+
+
     <header>
       <h1>
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
@@ -67,11 +77,7 @@
       
     </header>
     
-    <?php if($page->cover() != "") { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } else if($image = $page->image()) { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } ?>
+    
     
     <div class="article-text">
 

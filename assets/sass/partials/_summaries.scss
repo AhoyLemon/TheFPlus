@@ -5,7 +5,7 @@
 }
 
 .summaries {
-  article {
+  .brief {
     header { padding:0 1em .25em 1em; } 
     .cover { width: 100%; margin: auto; display: block; }
     .title { display:block; position: relative; height: 1.8rem; margin: 0;
@@ -21,7 +21,7 @@
     summary { padding: 1em 1em 2.5em 1em; display: block; }
     &.person summary { padding-bottom: 0; }
     .content { text-align: justify; }
-    &.brief { position: relative; background-color:#fff;
+    &.brief { position: relative;
       .image-holder { position:relative; display: block; overflow: hidden;
         img { @include transition(all, 1s); }
         .hover-cover { position: absolute; right:0; bottom:0; left:0; @include translateY(105%); @include transition();
@@ -37,18 +37,6 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      &.episode { background-color: $episode; border-color: darken($episode,35%); //box-shadow: 2px 2px 2px darken($episode,35%);
-        .hover-cover { background:rgba($episode,0.85); }
-      }
-      &.wrote { background-color:$wrote; border-color:darken($wrote,25%);
-        .hover-cover { background:rgba($wrote,0.85); }
-      }
-      &.also-made { background-color: #f3fcee; color:$black;
-        .hover-cover { background:rgba($also-made,0.85); }
-      }
-      &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%);
-
-      }
       .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
         &:before { content:'#'; }
       }
@@ -88,8 +76,8 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 
-.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;  margin-top:20px;
-  article { box-shadow:0 0 $halfGap rgba($black,0.5);
+.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;  margin-top:20px; padding-right: 20px; 
+  article {
     
     // .content { display:none; }  
 
@@ -107,15 +95,22 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   grid-template-columns: repeat(auto-fill,600px);
 
 
-  article { position:relative; padding-right:calc(50% + 20px);
-    .image-holder { @include position(absolute,null,20px,-20px,null); width:50%; position:absolute !important; box-shadow:0 0 3px rgba($black,0.6); }
-    .disqus-comment-count  { display:none; }
-    header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
-    summary { padding:70px 1em 1em 1em; @include flex-container();
-      .cast, .content { @include flex-item(100%); }
-      .content { order:1; }
-      .cast { order:2; margin-top:10px; }
+  .brief { position:relative; color:$black; text-decoration: none;
+
+    .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; box-shadow:0 0 4px rgba($black,0.2); }
+
+    header { border-bottom:1px solid rgba($black,0.1); padding-top:$gap;
+      .title { font-size:1.2rem; font-weight: $bold; color:$red; }
     }
+    figcaption { font-size:0.95rem; padding:($gap * 2);
+      .cast { padding-top:$gap; }
+    }
+    figure { padding-right:20px;
+      img { position: relative; transform: translateY(20px); box-shadow: 0 0 6px rgba($black,0.45); }
+     }
+
+    //header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
+
     .episode-number { @include position(absolute,0,20px); left:unset !important; font-size:1.35rem !important; }
     .cast {
       li { display:inline-block; padding:0.05em 0.5em; border-radius:0.2em; margin-bottom:0.25em; margin-right:0.25em; background:rgba($black,0.6); color:$white;
@@ -125,14 +120,40 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     &.also-made {
       .image-holder { box-shadow:none; }
     }
+    
+    .inner { 
+      header { grid-column: span 2; }
+    }
+
+
+
   }
-
-
-
 
 }
 
+.summaries {
+  .brief { 
+    &.episode .inner           { background-color: $episode; border-color: darken($episode,35%); }
+    &.wrote .inner             { background-color:$wrote; border-color:darken($wrote,25%); }
+    &.also-made .inner         { background-color: $also-made; color:$white; border-color: darken($also-made,5%); }
+    &.adjudicated-guess .inner { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%); }
 
+    .inner { transition: all 0.1s ease; }
+    figure { transition: transform 0.6s ease; }
+    
+
+    &:hover {
+      .title { text-decoration: underline; }
+      //.inner { transform: scale(1.02); box-shadow:0 0 6px rgba($black,0.6); }
+      figure { transform: scale(1.1); } 
+    }
+
+    &:active {
+      .inner { transform:scale(0.95); }
+    }
+
+  }
+}
 
 
 
