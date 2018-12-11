@@ -1,8 +1,6 @@
 article { font-weight: $light;
-  &.featured {
-    header { @extend %clearfix; }
-  }
   &.full { line-height: 140%;
+
     h1, h2, h3, h4, h5, h6 { font-weight: 400; }
     &.default h1 { margin-bottom: 0.5em; }
     img { max-width: 100%; height: auto; }
@@ -10,7 +8,6 @@ article { font-weight: $light;
     .centered { display: block; margin-left: auto; margin-right: auto; }
     .full-width, .centered { margin-bottom: 1rem; }
     p { margin-bottom: 1em; }
-    header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
     
     .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
       .label { padding-right: 0.5em;}
@@ -58,14 +55,7 @@ article { font-weight: $light;
 .episode-tags {
   .label { display: block; font-size:80%; text-transform: uppercase; font-weight: $bold; }
   ul { padding-left: 0 !important; }
-  a { @extend %tag; cursor: text;
-    &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
-      &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; border:2px solid; }
-    }
-    &:not([href]) {
-      &:hover { border:2px solid; }
-    }
-  }
+  a { @extend %tag; }
 }
 
 
@@ -135,6 +125,22 @@ article.full {
 }
 
 
+
+article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:40px;
+  header { margin-bottom: 0.5em;
+    h1 { font-size:150%; font-weight:600; margin-bottom:0.3em; }
+    time, .featured-site { font-size:70%; }
+  }
+  .article-text { max-width:100% !important; text-align: justify; }
+  figure { 
+    img { transform: translateY(-50px); box-shadow: 0 0 6px rgba($black,0.45); }
+  }
+  //.cast, .content-provider, .edited-by { font-size:80%; }
+}
+
+
+
+
 // MARATHON SPECIFIC BITS
 .marathon-block {
   h1 { font-weight:400; }
@@ -192,7 +198,7 @@ article.full {
 
 @media (min-width:1401px) {
   article {
-    .article-text { max-width: 32em; text-align: justify; font-size:26px; }
+    .article-text { max-width: 32em; font-size:18px; }
   }
 }
 

@@ -6,63 +6,52 @@
     <?php if ($article->parent()->slug() == "episode") { ?>
   
       <?php if ($article->template() == "episode") { ?>
+
+
         <!-- EPISODE BRIEF -->
-        <article class="episode brief">
-          <header>
-            <h2 class="title">
-              <a href="<?php echo $article->url() ?>">
-                <span class="name">
-                  <?php echo html($article->title()) ?>
+        <a class="episode brief" href="<?= $article->url(); ?>">
+          <div class="inner">
+            <header class="name-and-title">
+              <h2 class="title"><?= $article->title(); ?></h2>
+              <time class="published released">
+                <span class="date">
+                  <?php echo date('l, F jS Y', $article->date()) ?>
                 </span>
-              </a>
-            </h2>
-            <time class="published released">
-              <span class="date">
-                <?php echo date('l, F jS Y', $article->date()) ?>
-              </span>
-              @
-              <span class="time">
-                <?php echo date("g:ia", strtotime($article->time())) ?>
-              </span>
-            </time>
-          </header>
-          <?php if($image = $article->image()): ?>
-            <a class="image-holder" href="<?= $article->url() ?>" title="<?= html($article->title()) ?>">
-              <?php if ($article->cover() != "") { ?>
-                <img src="<?= $article->cover()->toFile()->url() ?>" class="cover" alt="<?= $article->title(); ?>" />
-              <?php } else { ?>
-                <img src="<?= $image->toFile()->url() ?>" class="cover" alt="<?= $article->title(); ?>" />
-              <?php } ?>
-              <?php if ($article->tags() != ""):
-                $etags = explode(",", $article->tags());
+                @
+                <span class="time">
+                  <?php echo date("g:ia", strtotime($article->time())) ?>
+                </span>
+              </time>
+
+              <span class="episode-number"><?php echo $article->uid(); ?></span>
+            </header>
+
+            <figcaption>
+              <div class="description">
+                <p><?php echo excerpt($article->text(), 222) ?></p>
+              </div>
+              <?php if ($article->cast()->isNotEmpty()) {
+                $persons = explode(",", $article->cast());
               ?>
-                <div class="hover-cover">
-                  <ul class="tags">
-                    <?php foreach($etags as $etag): ?>
-                    <li><?php echo $etag ?></li>
-                    <?php endforeach ?>
-                  </ul>
-                </div>
-              <?php endif ?>
-            </a>
-          <?php endif ?>
-          <summary>
-            <?php if ($article->cast() != ""):
-              $persons = explode(",", $article->cast());
-            ?>
-              <ul class="cast ridiculists">
-                <?php foreach($persons as $person): ?>
-                  <li><?php echo $person ?></li>
-                <?php endforeach ?>
-              </ul>
-            <?php endif ?>
-            <div class="content">
-              <p><?php echo excerpt($article->text(), 222) ?></p>
-            </div>
-          </summary>
-          <span class="episode-number"><?php echo $article->uid(); ?></span>
-          <a class="disqus-comment-count" href="<?php echo $article->url() ?>#disqus_thread" data-disqus-identifier="<?php echo $article->uri(); ?>"></a>
-        </article>
+                <ul class="cast ridiculists">
+                  <?php foreach($persons as $person) { ?>
+                    <li><?= $person ?></li>
+                  <?php } ?>
+                </ul>
+              <?php } ?>
+            </figcaption>
+
+            <figure>
+              <?php if ($article->cover() != "") { ?>
+                <img src="<?= $article->cover()->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
+              <?php } else { ?>
+                <img src="<?= $image->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
+              <?php } ?>
+              </figure>
+
+          </div>
+        </a>
+
       <?php } else if ($article->template() == "marathon") { ?>
         <article class="episode brief marathon">
           <header>
