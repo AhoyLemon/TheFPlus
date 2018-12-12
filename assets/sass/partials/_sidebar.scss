@@ -106,18 +106,32 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 
 */
 
-.sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: $sidebar; z-index: 99;
-  .desktop-logo { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); }
 
-  .sidebar-links { @include position(absolute,null,40px,($sidebar * 0.5),40px);
-    a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:140%; }
-  }
-
-}
 
 
 @media (min-width: $desktop-min) {
   .mobile-menu { display: none; }
+  a.flapjax { display: none; }
+
+  .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: $sidebar; z-index: 99;
+    .desktop-logo { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); }
+    .sidebar-links { @include position(absolute,null,40px,($sidebar * 0.5),40px);
+      a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:1.4rem;
+        &:hover { color:$link; font-weight: $bold; text-decoration: underline; }
+      }
+    }
+
+    input { padding: 0; width:100%; background-color: transparent; border:none; border-bottom: 2px solid transparent; font-size:1.4rem; font-family:$sans-serif; color:rgba($black,0.8); outline: none;
+      &::placeholder { color:rgba($black,0.8); }
+      &:hover, &:focus { background-color: $white; color:$link; border-color:$link; }
+    }
+
+
+  }
+
+
+
+/*
   a.flapjax { display: none; }
   .home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
     &:hover { background-color:$white;
@@ -127,5 +141,6 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
       .st1 { fill:#212221; }
     }
   }
+*/
 }
 

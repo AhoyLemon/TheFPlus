@@ -29,7 +29,19 @@
     <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
     <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
     <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
-    <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
+    <a class="main-link" href="<?php echo url::home() ?>/contribute">contribute</a>
+
+    <?php $merchPage = $site->find('merch'); ?>
+    <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
+      buy some merch
+      <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
+    </a>
+
+    <form id="SidebarSearchForm">
+      <input type="search" id="SidebarSearch" placeholder="Search..." />
+      <button id="SidebarSubmit" style="display:none;">go</button>
+    </form>
+    
   </div>
 
 
