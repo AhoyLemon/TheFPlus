@@ -186,7 +186,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   figcaption { order: 2; }
   
   .timebox { @include position(absolute,10px,null,null,0); font-size:120%;
-    background:$black; color:$white; padding:5px; width:4em; height:4em; text-align: center;
+    background:$link; color:$white; padding:5px; width:4em; height:4em; text-align: center; border-top-right-radius: 6px; border-bottom-right-radius: 6px;
     .month, .day, .year { display: block; line-height: 100%; }
     .month { text-transform: uppercase; }
     .day { font-size:140%; font-weight: $bold; }
