@@ -33,7 +33,7 @@ $noto: 'Noto Serif TC', serif;
 $font-size: 16px;
 $light:300;
 $normal:400;
-$bold:500;
+$bold:700;
 $heavy:600;
 
 // FONT UTILITIES
@@ -47,6 +47,7 @@ $mobile-top:56px;
 $gap: 10px;
 $halfGap: ($gap / 2);
 $doubleGap: ($gap * 2);
+$padding: 20px;
 $mobile-max: 767px;
 $desktop-min: 768px;
 

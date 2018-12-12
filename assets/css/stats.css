@@ -71,14 +71,14 @@ table.stats {
     border: 1px solid #343434;
     vertical-align: middle; }
   table.stats td:last-child {
-    font-weight: 500;
+    font-weight: 700;
     font-size: 1.25em; }
   table.stats tr:nth-child(even) td {
     background: rgba(52, 52, 52, 0.2); }
   table.stats a:hover, table.stats a:focus {
     text-decoration: underline; }
   table.stats a:active {
-    font-weight: 500; }
+    font-weight: 700; }
 
 @media (min-width: 768px) {
   .chart-holder {
