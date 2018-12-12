@@ -18,7 +18,7 @@
       <div class="inner">
         <header class="name-and-title">
           <h2 class="title"><?= $article->title(); ?></h2>
-          <time class="published released">
+          <time class="longdate">
             <span class="date">
               <?php echo date('l, F jS Y', $article->date()) ?>
             </span>
@@ -36,15 +36,6 @@
           <div class="description">
             <p><?php echo excerpt($article->text(), 222) ?></p>
           </div>
-          <?php if ($article->cast()->isNotEmpty()) {
-            $persons = explode(",", $article->cast());
-          ?>
-            <ul class="cast ridiculists">
-              <?php foreach($persons as $person) { ?>
-                <li><?= $person ?></li>
-              <?php } ?>
-            </ul>
-          <?php } ?>
         </figcaption>
 
         <figure>
@@ -54,6 +45,8 @@
             <img src="<?= $image->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
           <?php } ?>
         </figure>
+
+        <?/* Category */ ?>
         <?php if ($briefType == 'also-made') { ?>
           <div class="category">
             <span class="category-tag">
@@ -62,9 +55,47 @@
           </div>
         <?php } ?>
 
+        <?/* Subject */ ?>
+        <?php if ($article->featured_site()->isNotEmpty()) { ?>
+          <div class="subject">
+            <?php if (strpos($article->featured_site(), ',') == false) { ?>
+              <span>reading</span> <strong class="source"><?= $article->featured_site(); ?></strong>
+            <?php } else { ?>
+              </span>reading</span> 
+              <?php $contentSource = explode(",", $article->featured_site()); ?>
+              <ul>
+                <?php foreach($contentSource as $key => $s) { ?>
+                  <li class="source"><?= $s ?></li>
+                <?php } ?>
+              </ul>
+            <?php } ?>
+          </div>
+        <?php } ?>
+
+        <?/* Cast */ ?>
+        <?php if ($article->cast()->isNotEmpty()) { ?>
+          <div class="cast">
+            <?php if ($article->cast()->isNotEmpty()) {
+              $persons = explode(",", $article->cast());
+            ?>
+              <span>with</span>
+              <ul>
+                <?php foreach($persons as $key => $person) { ?>
+                  <li><?= $person ?></li>
+                <?php } ?>
+              </ul>
+            <?php } ?>
+          </div>
+        <?php } ?>
+
 
 
       </div>
+      <time class="timebox">
+        <span class="day"><?= date('d', $article->date()); ?></span>
+        <span class="month"><?= date('M', $article->date()); ?></span>
+        <span class="year"><?= date('Y', $article->date()); ?></span>
+      </time>
     </a>
   
     <?php /*

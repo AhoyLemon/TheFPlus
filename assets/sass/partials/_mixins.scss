@@ -25,6 +25,24 @@
   filter: $filter-type+unquote('(#{$filter-amount})');
 }
 
+@mixin grammarArray() {
+  display: inline; padding-left: 0;
+  li { display: inline;
+    &:after { content: ", "; font-weight: $normal; }
+    &:nth-last-child(2) {
+      &:after { content: ''; }
+    }
+    &:last-child { 
+      &:before { content: ' and '; font-weight:$normal; font-size:80%; }
+      &:after { content: '';  }
+    }
+    &:first-child {
+      &:before { content: ''; }
+    }
+  }
+}
+
+
 @mixin flex-container($direction:row, $wrap:wrap, $align:stretch) {
   // display: -ms-flexbox; display: -webkit-box;
   display: -webkit-flex; display: -moz-flex; display: flex;
