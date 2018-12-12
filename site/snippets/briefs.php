@@ -18,6 +18,7 @@
       <div class="inner">
         <header class="name-and-title">
           <h2 class="title"><?= $article->title(); ?></h2>
+          <?php /*
           <time class="longdate">
             <span class="date">
               <?php echo date('l, F jS Y', $article->date()) ?>
@@ -27,16 +28,19 @@
               <?php echo date("g:ia", strtotime($article->time())) ?>
             </span>
           </time>
+          */ ?>
           <?php if ($briefType == 'episode') { ?>
             <span class="episode-number"><?php echo $article->uid(); ?></span>
           <?php } ?>
         </header>
 
-        <figcaption>
-          <div class="description">
-            <p><?php echo excerpt($article->text(), 222) ?></p>
-          </div>
-        </figcaption>
+        <?php if ($briefType == "wrote") { ?>
+          <figcaption>
+            <div class="description">
+              <p><?php echo excerpt($article->text(), 420) ?></p>
+            </div>
+          </figcaption>
+        <?php } ?>
 
         <figure>
           <?php if ($article->cover() != "") { ?>
