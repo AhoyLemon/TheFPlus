@@ -3,9 +3,8 @@ icon: newspaper-o
 pages:
   template:
     - blog
-  sort: date desc
-  # sort: flip
-  # num: date
+  sort: flip
+  num: date
 files: true
 fields:
   title:
