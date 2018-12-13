@@ -207,7 +207,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttona_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?>', <?php echo $product->buttona_price(); ?>);"><?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?>', <?php echo $product->buttona_price(); ?>);"><?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?></button>
                         </form>
                       <?php endif; ?>
                       <?php if ($product->buttonb_slug() != ""): ?>
@@ -222,7 +222,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttonb_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?>', <?php echo $product->buttonb_price(); ?>);"><?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?>', <?php echo $product->buttonb_price(); ?>);"><?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?></button>
                         </form>
                       <?php endif; ?>
                       <?php if ($product->buttonc_slug() != ""): ?>
@@ -237,7 +237,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttonc_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?>', <?php echo $product->buttonc_price(); ?>);"><?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?>', <?php echo $product->buttonc_price(); ?>);"><?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?></button>
                         </form>
                       <?php endif; ?>
                     </div>
