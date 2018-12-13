@@ -1,10 +1,10 @@
 <?php snippet('header') ?>
 
   <main class="main edge-to-edge" role="main">
-    <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
 
-    <article class="full default">
-      <ul class="fanart-list">
+    <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
+    
+    <ul class="fanart-list">
         
       <?php foreach ($page->images()->shuffle() as $fanart): ?>
         <?php $fa = explode("-", $fanart->filename()); ?>
@@ -21,8 +21,7 @@
       <?php endforeach; ?>
         
       </ul>
-      
-    </article>
+
     <div style="font-size:1.25em; padding:1em;">
       <?php echo $page->text()->kirbytext(); ?>
     </div>

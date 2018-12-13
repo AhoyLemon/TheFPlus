@@ -1,10 +1,6 @@
 <?php snippet('header') ?>
 
   <main class="main page" role="main">
-
-    <article class="full default">
-      
-    </article>
     
     <section class="merch-grid current">
       
