@@ -62,38 +62,34 @@ $merchBorder: rgba($black,0.3);
 }
 
 @media (min-width:1581px) {
-  .merch-grid { grid-template-columns: 1fr 1fr 1fr 1fr;
+  .merch-grid { grid-template-columns: repeat(4,1fr);
     article { grid-column: span 4; }
   }
 }
 @media (min-width:1271px) and (max-width:1580px) {
-  .merch-grid { grid-template-columns: 1fr 1fr 1fr;
+  .merch-grid { grid-template-columns: repeat(3,1fr);
     article { grid-column: span 3; }
   }
 }
 
 @media (min-width:971px) and (max-width:1270px) {
-  .merch-grid { grid-template-columns: 1fr 1fr;
+  .merch-grid { grid-template-columns: repeat(2,1fr);
     article { grid-column: span 2; }
   }
 }
 
 @media (min-width:766px) and (max-width:970px) {
-  .merch-grid { display: block;
-    .grid-box { display: block; width:360px; margin-bottom: 20px; }
-  }
+  .merch-grid { grid-template-columns: 1fr; }
 }
 
 @media (min-width:583px) and (max-width:765px) {
-  .merch-grid { grid-template-columns: 1fr 1fr;
+  .merch-grid { grid-template-columns: repeat(2,1fr);
     article { grid-column: span 2; }
   }
 }
 
 @media (max-width:582px) {
-  .merch-grid { display: block;
-    .grid-box { display: block; width:360px; max-width: 100%; margin-bottom: 20px; }
-  }
+  .merch-grid { grid-template-columns: 1fr; }
 }
 
 

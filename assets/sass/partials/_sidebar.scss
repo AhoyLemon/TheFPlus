@@ -132,6 +132,7 @@ $logoLinkHeight: 160px;
   .sidebar { position: fixed; top: 0; left: 0; bottom: 0; width: $sidebar; z-index: 99;
 
     .logo-link { display: block; @include position(absolute,null,0,0,0); height:$logoLinkHeight;
+      .logo-notch, .grow-circle, .grow-circle-2 { display: none; }
       * { pointer-events: none; }
       .logo-mark { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); transition:all 1s ease; }
       .logo-type { position:absolute; right:40px; top:20%; width:($sidebar * 0.5); transition:all 1s ease; transform: translateY(($logoLinkHeight * 1.2))  }
