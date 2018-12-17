@@ -108,6 +108,20 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 
 
 
+.sidebar {
+  .sidebar-links {
+    .count { font-size: 70%; transform: translateY(-60%); display: inline-block; border-radius: 50%; font-family: Arial, Helvetica, sans-serif; font-weight: 900; }
+
+    input { padding: 0; width:100%; background-color: transparent; border:none; border-bottom: 2px solid transparent; font-family:$sans-serif; color:rgba($black,0.8); outline: none;
+      &:hover, &:focus { background-color: $white; color:$link; border-color:$link; }
+    }
+
+
+  }
+}
+
+
+
 $logoLinkHeight: 160px;
 
 
@@ -142,11 +156,9 @@ $logoLinkHeight: 160px;
       a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:1.4rem;
         &:hover { color:$link; font-weight: $bold; }
       }
-    }
-
-    input { padding: 0; width:100%; background-color: transparent; border:none; border-bottom: 2px solid transparent; font-size:1.4rem; font-family:$sans-serif; color:rgba($black,0.8); outline: none;
-      &::placeholder { color:rgba($black,0.8); }
-      &:hover, &:focus { background-color: $white; color:$link; border-color:$link; }
+      input { font-size:1.4rem;
+        &::placeholder { color:rgba($black,0.8); }
+      }
     }
     
   }
@@ -155,6 +167,12 @@ $logoLinkHeight: 160px;
 
 $mobileLogoSize: 64px;
 $mobileLogoNotchSize: ($mobileLogoSize * 1.25);
+
+
+$mobileLogoGrowSize: 996px;
+
+
+
 //$mobileLogoBottom: (-$mobileLogoSize * 0.2);
 //$mobileLogoLeft: ($mobileLogoSize * 0.05);
 $z-grow-circle: 43;
@@ -175,21 +193,51 @@ $z-sidebar-links: 45;
     .logo-notch { @include position(fixed,null,null,(-$mobileLogoSize * .25),0); width:$mobileLogoSize; width:$mobileLogoNotchSize; height:$mobileLogoNotchSize; z-index: $z-logo-notch;
       * { fill:$white; }
     }
-    .logo-mark { @include position(fixed,null,null,0,0); height: $mobileLogoSize; z-index: $z-logo-mark; transform: translate(5px,10px);transition:transform 0.5s ease 0.5s; }
+    .logo-mark { @include position(fixed,null,null,0,0); height: $mobileLogoSize; z-index: $z-logo-mark; transform: translate(5px,10px);transition:transform 0.5s ease 0s; }
 
     .logo-link { outline: none;
       * { outline: none; }
 
+      .grow-circle-2 { @include position(fixed,null,null,-($mobileLogoGrowSize * .5),-($mobileLogoGrowSize * .5)); width:$mobileLogoGrowSize; height:$mobileLogoGrowSize; z-index: $z-logo-notch;
+        transform:scale(0.015) translate(240%, -90%);
+        opacity: 0;
+        //transition: transform 2s ease 0s, opacity 0s linear 0s; transform-origin: center; 
+        transition: transform 1s ease 0s, opacity 0.15s linear 0.8s;
+        * {
+          fill:#ed2024;
+        }
+
+      }
+
       &.active {
-        .mark-circle { opacity: 0; }
-        .logo-mark { transform: scale(1.15) translate(10px,-5px); } 
-        .grow-circle { transform:translate(100%,-100%); /* opacity: 1; */ }
+        //.mark-circle { opacity: 0; }
+        .logo-mark { transform: scale(1.5) translate(30%,-20%); transition-delay: 1s; } 
+        //.grow-circle { transform:translate(100%,-100%); /* opacity: 1; */ }
+        .grow-circle-2 { transform: scale(1); opacity: 1; transition: transform 1.2s ease 0s, opacity 0s linear 0s;  }
       }
     }
 
-    .sidebar-links { @include position(fixed,null,null,($mobileLogoSize * 1),$padding); z-index: $z-sidebar-links; transform: translateX(-100vw);
-      a { display: block; color:#121212; text-decoration: none; font-size:18px; margin-bottom:0.35em;  }
-      input { display: none; }
+    //.grow-circle { transform:translate(100%,-100%); /* opacity: 1; */ }
+
+
+    /*
+    .grow-circle-2 { @include position(fixed,null,null,-($mobileLogoSize * 5.5),-($mobileLogoSize * 5.4)); width:($mobileLogoSize * 11); height:($mobileLogoNotchSize * 11); z-index: $z-logo-notch;
+      * { fill:blue; }
+    }
+    */
+
+    .sidebar-links { @include position(fixed,null,null,($mobileLogoSize * 1.12),$padding); z-index: $z-sidebar-links; transform: translateX(-100vw);
+      a { display: block; color:#121212; text-decoration: none; margin-bottom:0.35em; }
+      input { font-size:18px;
+        &::placeholder { color:#121212; }
+      }
+
+      /*
+      input { font-size:18px; padding:0; font-family: $sans-serif; background:transparent; border:none;
+
+
+      }
+      */
 
       transition:transform 0.5s ease;
       &.active { transition-delay: 1s;

@@ -9,14 +9,18 @@
 -->
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="logo-notch">
-      <!-- <polygon points="-29.5,-29.5 436,436 -29.5,436" /> -->
-      <!-- <circle cy="400" r="400" fill="#00f"/> -->
       <circle cx="225.5" cy="227.9" r="172.1" fill="#6f6"/>
     </svg>
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="grow-circle">
       <circle cx="49.2" cy="355.1" r="336.6" fill="#ed2024"/>
     </svg>
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="grow-circle-2">
+      <circle cx="225.5" cy="227.9" r="172.1" fill="#6f6"/>
+    </svg>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="logo-mark">
       <g>
         <path class="mark-circle" d="M226.5 55.7c-51.1 0-97 22.3-128.5 57.6h203.2l-14.8 16c-7.2 7.8-7.4 7.9-13.7 17.7-5.2 8-3.8 16.5-3.8 16.5l2 10h-56.5l6.9-14-36.9.2-24.7 60.9h32l16.6-37 57.5-.1-16.6 37.2H293l-22.2 52-44.9.2-17.4 38.8-57.5.1 17.3-38.7-31.2.1-24.2 53.5c-3.2 7-7.2 13.2-12.1 18.8C132.2 379 176.9 400 226.5 400c95.1 0 172.2-77.1 172.2-172.2S321.6 55.7 226.5 55.7z" fill="#ed2024"/>
@@ -33,6 +37,7 @@
   </a>
 
   <div class="sidebar-links">
+    <a class="main-link mobile-only" href="<?php echo url::home() ?>">home</a>
     <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
     <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
     <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
