@@ -28,6 +28,13 @@ $('nav.toggle a').click(function() {
   }
 });
 
+
+$('.logo-link').click(function() {
+  $(this).toggleClass('active');
+  $('.sidebar-links').toggleClass('active');
+});
+
+
 $(document).ready(function() {
   $('a.flapjax').click(function() {
     $('a.flapjax').toggleClass('active');

@@ -127,24 +127,11 @@ $logoLinkHeight: 160px;
         }
       }
 
-
       &:hover { 
         .logo-mark { transform: scale(0.5) translate(-50%, -4%); }
         .logo-type { transform: translateY(0); transition-delay: 0.3s; }
         .slogan { opacity:1; transform:translateX(0); transition-delay: 0.6s; }
       }
-
-      
-
-
-      /*
-      &:hover {
-        .logo-mark { transform: scale(0.5) translate(-50%, -4%); }
-        .logo-type { transform: translateY(0); }
-      }
-      */
-      //.logo-mark { transform: scale(0.5) translate(-50%, -4%); }
-      //.logo-type {}
       
     }
 
@@ -161,22 +148,53 @@ $logoLinkHeight: 160px;
       &::placeholder { color:rgba($black,0.8); }
       &:hover, &:focus { background-color: $white; color:$link; border-color:$link; }
     }
-
-
+    
   }
 
-
-
-/*
-  a.flapjax { display: none; }
-  .home-link { padding:0.1em 0; line-height: 0; margin: 0.3em 0;
-    &:hover { background-color:$white;
-      .st0 { fill:#212221; }
-    }
-    &:active { background-color:$red;
-      .st1 { fill:#212221; }
-    }
-  }
-*/
 }
 
+$mobileLogoSize: 64px;
+$mobileLogoNotchSize: ($mobileLogoSize * 1.25);
+//$mobileLogoBottom: (-$mobileLogoSize * 0.2);
+//$mobileLogoLeft: ($mobileLogoSize * 0.05);
+$z-grow-circle: 43;
+$z-logo-notch: 42;
+$z-logo-mark: 44;
+$z-sidebar-links: 45;
+
+
+@media (max-width: $mobile-max) {
+  .sidebar {
+    .grow-circle { min-height: 50vh; min-width: 100vw; transform-origin: bottom left; z-index: $z-grow-circle; transition: transform 1.7s ease; pointer-events: none;
+      @include position(fixed,100vh,null,null,-100vw);
+      //opacity: 0;
+    }
+
+    .logo-type, .slogan { display: none; }
+
+    .logo-notch { @include position(fixed,null,null,(-$mobileLogoSize * .25),0); width:$mobileLogoSize; width:$mobileLogoNotchSize; height:$mobileLogoNotchSize; z-index: $z-logo-notch;
+      * { fill:$white; }
+    }
+    .logo-mark { @include position(fixed,null,null,0,0); height: $mobileLogoSize; z-index: $z-logo-mark; transform: translate(5px,10px);transition:transform 0.5s ease 0.5s; }
+
+    .logo-link { outline: none;
+      * { outline: none; }
+
+      &.active {
+        .mark-circle { opacity: 0; }
+        .logo-mark { transform: scale(1.15) translate(10px,-5px); } 
+        .grow-circle { transform:translate(100%,-100%); /* opacity: 1; */ }
+      }
+    }
+
+    .sidebar-links { @include position(fixed,null,null,($mobileLogoSize * 1),$padding); z-index: $z-sidebar-links; transform: translateX(-100vw);
+      a { display: block; color:#121212; text-decoration: none; font-size:18px; margin-bottom:0.35em;  }
+      input { display: none; }
+
+      transition:transform 0.5s ease;
+      &.active { transition-delay: 1s;
+        transform: translateY(0);
+      }
+    }
+  }
+}

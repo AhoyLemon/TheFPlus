@@ -239,7 +239,7 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 
 // MOBILE BREAKPOINT
 @media (max-width: $mobile-max) {
-  main { display: block; padding:70px 10px 0 10px;
+  main { display: block; padding:10px 10px 0 10px;
     &.noscroll { height:100vh; overflow: hidden; }
     &.edge-to-edge { padding:56px 0 0 0; }
   }
