@@ -2,7 +2,7 @@
     <script src="<?php echo url::home() ?>/assets/js/thefplus.js?v=01.06.18"></script>
     <?php snippet('analytics') ?>
 
-    <? /*
+    <?php /*
     <script type="text/javascript">
       // Register the service worker
       if ('serviceWorker' in navigator) {

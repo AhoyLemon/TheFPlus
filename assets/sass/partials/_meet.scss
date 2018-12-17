@@ -65,11 +65,13 @@
   .people-grid { grid-template-columns: 1fr 1fr;  }
 }
 
+/*
 @media (max-width:480px) {
   .people-grid { display: block; 
     .person { display: block; width:260px; margin-bottom: 20px; }
   }
 }
+*/
 
 
 @media (min-width: $desktop-min) {
