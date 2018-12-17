@@ -33,7 +33,7 @@
         li { font-size:0.8em; }
       }
       .published { font-size: 0.85em; }
-      .episode-number { position: absolute; bottom:0.2em; left:0.5em; font-size:1.5em; color:lighten($black,35%);
+      .episode-number { font-size:1.5em; color:lighten($black,35%); 
         &:before { content:'#'; }
       }
       .time-estimate { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
@@ -90,9 +90,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   @media (max-width: 460px)                          { grid-template-columns: 1fr; }
   */
 
-  grid-template-columns: repeat(3,360px); 
-
-
   .brief { position:relative; color:$black; text-decoration: none;
 
     .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; }
@@ -100,32 +97,14 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     figcaption { font-size:0.95rem; padding:($gap * 2); }
 
     //header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
-
-    .episode-number { @include position(absolute,0,20px); left:unset !important; }
     &.also-made {
       .image-holder { box-shadow:none; }
     }
-
-    /*
-    &.also-made {
-      figure { order:1; padding-left: 20px; padding-right:0;
-        img { transform: translateY(-20px); display: block; }
-      }
-      figcaption { order: 3; }
-      header { order: 2; grid-column: span 1; }
-      .category { order: 4; grid-column: span 2; padding-left: 20px; padding-right: 20px;
-        font-size:1.5em; color:lighten($black,35%);
-      }
-      .cast { display: none; }
-    }
-    */
 
     &.wrote {
       figure { display: none; }
       figcaption { grid-column: span 2; }
     }
-
-
 
   }
 
@@ -160,16 +139,30 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 
 @mixin summary600() {
+
   .inner, .grid { grid-template-columns: repeat(2,1fr); }
-  header { grid-column: span 2; }
-  figure { padding-right:20px;
-    img { position: relative; transform: translateY(20px); box-shadow: 0 0 6px rgba($black,0.45); }
+
+
+  figure { order: 1; padding-left:$padding; grid-row: span 3;
+    img { position: relative; transform: translateY(-20px); box-shadow: 0 0 6px rgba($black,0.45); }
   }
-  .cast {
-    li { display:inline-block; padding:0.05em 0.5em; border-radius:0.2em; margin-bottom:0.25em; margin-right:0.25em; background:rgba($black,0.6); color:$white;
-      &:before, &:after { content:''; }
-    }
+  header { order: 2;
+    
+    time { font-size:155%; }
   }
+
+  &.episode {
+    .title { display: none; }
+  }
+
+  .episode-number { display: none; }
+
+  .cast { order: 3; padding: $padding;
+    > span { font-size:80%; }
+    ul { @include grammarArray(); }
+  }
+  .subject { order: 4; padding-left:$padding; padding-right:$padding; }
+  .timebox { display: none; }
 }
 
 
@@ -230,14 +223,17 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 
-
-
-
-.summaries {
-  .brief { @include summary360(); }
+@media (min-width:1901px) {
+  .summaries { grid-template-columns: repeat(auto-fill,600px); 
+    .brief { @include summary600(); } 
+  } 
 }
 
-
+@media (max-width:1900px) {
+  .summaries { grid-template-columns: repeat(auto-fill,360px); 
+    .brief { @include summary360(); }
+  } 
+}
 
 
 

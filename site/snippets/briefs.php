@@ -18,17 +18,11 @@
       <div class="inner">
         <header class="name-and-title">
           <h2 class="title"><?= $article->title(); ?></h2>
-          <?php /*
           <time class="longdate">
             <span class="date">
-              <?php echo date('l, F jS Y', $article->date()) ?>
-            </span>
-            @
-            <span class="time">
-              <?php echo date("g:ia", strtotime($article->time())) ?>
+              <?php echo date('D, M jS Y', $article->date()) ?>
             </span>
           </time>
-          */ ?>
           <?php if ($briefType == 'episode') { ?>
             <span class="episode-number"><?php echo $article->uid(); ?></span>
           <?php } ?>

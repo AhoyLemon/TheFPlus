@@ -84,7 +84,8 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?>
+  <?php /* <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?> */ ?>
+  <?= css('assets/css/thefplus.css?L'); ?>
 
 </head>
 <body>
@@ -92,5 +93,5 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 
   <?php snippet('svg') ?>
-  <?php snippet('mobile-menu') ?>
+  <?php /* snippet('mobile-menu') */ ?>
   <?php snippet('menu-test') ?>
