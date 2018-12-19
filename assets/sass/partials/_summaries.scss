@@ -110,6 +110,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 }
 
+/*  
 .summaries {
   .brief { box-shadow:0 0 4px rgba($black,0.2);
     &.episode           { background-color: $episode; border-color: darken($episode,35%); }
@@ -136,6 +137,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
   }
 }
+*/
 
 
 @mixin summary600() {
@@ -168,13 +170,17 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 @mixin summary360() {
 
+  background-color: $episode; border-color: darken($episode,35%);
+
+  box-shadow:0 0 4px rgba($black,0.2);
+
   .inner, .grid { grid-template-columns: 1fr; padding-bottom:$padding; }
 
   &.episode {
     header { display: none; }
   }
   
-  figure { order:1;
+  figure { order:1; transition:transform 0.2s ease;
     img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45);}
   }
   header { order: 2; }

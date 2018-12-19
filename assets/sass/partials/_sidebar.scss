@@ -135,8 +135,8 @@ $logoLinkHeight: 160px;
       .logo-notch, .grow-circle, .grow-circle-2 { display: none; }
       * { pointer-events: none; }
       .logo-mark { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); transition:all 1s ease; }
-      .logo-type { position:absolute; right:40px; top:20%; width:($sidebar * 0.5); transition:all 1s ease; transform: translateY(($logoLinkHeight * 1.2))  }
-      .slogan { position:absolute; bottom: 10px; right:10px; width:($sidebar * 0.46); opacity:0; transition: all 1s ease; transform:translateX(100%);
+      .logo-type { position:absolute; right:30px; top:30%; width:($sidebar * 0.5); transition:all 1s ease; transform: translateY(($logoLinkHeight * 1.2))  }
+      .slogan { position:absolute; bottom: 10px; right:10px; width:($sidebar * 0.46); opacity:0; transition: all 1s ease; transform:translateX(100%); font-size:12px;
         span { display: block; text-decoration: none; font-style: italic;
           &:first-child { transform:translateX(-20%); }
         }
@@ -155,7 +155,7 @@ $logoLinkHeight: 160px;
 
     .sidebar-links { @include position(absolute,null,40px,($logoLinkHeight * 1.2),40px);
       a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:1.4rem;
-        &:hover { color:$link; font-weight: $bold; }
+        &:hover { color:$link; text-decoration: underline; }
       }
       input { font-size:1.4rem;
         &::placeholder { color:rgba($black,0.8); }
