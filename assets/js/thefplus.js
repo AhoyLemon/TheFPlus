@@ -34,7 +34,6 @@ $('.logo-link').click(function() {
   $('.sidebar-links').toggleClass('active');
 });
 
-
 $(document).ready(function() {
   $('a.flapjax').click(function() {
     $('a.flapjax').toggleClass('active');
