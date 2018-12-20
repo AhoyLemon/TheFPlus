@@ -44,7 +44,7 @@
   .fa { color:lighten($black,20%); }
 }
 
-.pagination { display: grid;  grid-gap: ($gap * 4); justify-content: end;  margin-top:20px; padding-right: 20px; 
+.pagination { display: grid; justify-content: end;  margin-top:20px; padding-right: 20px; 
   .prev { grid-column: 1; }
   svg * { fill: currentColor; }
   a { text-decoration: none; }
@@ -74,7 +74,7 @@
 
   @media (min-width:420px) {
     grid-template-columns: 180px 1fr 180px;
-    .pagination-links { grid-column: 2; text-align: center;
+    .pagination-links { grid-column: 2; text-align: center; grid-gap: ($gap * 2);
       a { font-size:26px; display: inline-block; margin-right: 0.5em; line-height: 200%;
         &.active { color:#121212; cursor: default; }
       }
@@ -82,7 +82,9 @@
     .next { grid-column: 3; }
   }
   @media (max-width:420px) {
-    grid-template-columns: repeat(2,1fr); 
+    grid-template-columns: repeat(2,1fr); grid-gap:10px;
+    .prev { grid-column: 1; }
+    .pagination-links { grid-column: span 2; font-size:26px; display: inline-block; margin-right: 0.5em; }
     .next { grid-column: 2; }
   }
 
