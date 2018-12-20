@@ -55,7 +55,7 @@
           <?php if ($article->cover() != "") { ?>
             <img src="<?= $article->cover()->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
           <?php } else { ?>
-            <img src="<?= $image->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
+            <img src="<?= $article->image()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
           <?php } ?>
         </figure>
         
