@@ -126,6 +126,7 @@ $logoLinkHeight: 160px;
 
 
 @media (min-width: $desktop-min) {
+  .mobile-only { display: none !important; }
   .mobile-menu { display: none; }
   a.flapjax { display: none; }
 
@@ -183,6 +184,7 @@ $z-sidebar-links: 45;
 
 
 @media (max-width: $mobile-max) {
+  .desktop-only { display: none !important; }
   .sidebar {
     .grow-circle { min-height: 50vh; min-width: 100vw; transform-origin: bottom left; z-index: $z-grow-circle; transition: transform 1.7s ease; pointer-events: none;
       @include position(fixed,100vh,null,null,-100vw);
