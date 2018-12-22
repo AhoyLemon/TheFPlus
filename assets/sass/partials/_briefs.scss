@@ -4,6 +4,10 @@
   }
 }
 
+
+$briefWidth: 340px;
+
+
 .summaries {
   .brief {
     header { padding:0 1em .25em 1em; } 
@@ -44,18 +48,11 @@
   .fa { color:lighten($black,20%); }
 }
 
-.pagination { display: grid; justify-content: end;  margin-top:20px; padding-right: 20px; 
+.pagination { display: grid; justify-content: end; grid-column: 1/-1;
+
   .prev { grid-column: 1; }
   svg * { fill: currentColor; }
   a { text-decoration: none; }
-  /*
-  a { 
-    &:hover { background-color:$red;
-      svg * { fill:$white; }
-    }
-    &:active { background-color: $black; }
-  }
-  */
 
   svg {
     .triangle-fill { opacity: 0; transform: scale(0.05); }
@@ -144,36 +141,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   }
 
 }
-
-/*  
-.summaries {
-  .brief { box-shadow:0 0 4px rgba($black,0.2);
-    &.episode           { background-color: $episode; border-color: darken($episode,35%); }
-    //&.wrote             { background-color:$wrote; border-color:darken($wrote,25%); }
-    //&.also-made .inner         { background-color: $also-made; color:$white; border-color: darken($also-made,5%); }
-    &.wrote             { background-color: $episode; border-color: darken($episode,35%); }
-    &.also-made         { background-color: $episode; border-color: darken($episode,35%); }
-    &.adjudicated-guess { background-color:$adjudicated-guess; border-color: darken($adjudicated-guess,5%); }
-
-    //.inner {  }
-    transition: all 0.1s ease;
-    figure { transition: transform 0.6s ease; }
-    
-
-    &:hover {
-      .title { text-decoration: underline; }
-      //.inner { transform: scale(1.02); box-shadow:0 0 6px rgba($black,0.6); }
-      figure { transform: scale(1.1); } 
-    }
-
-    &:active {  transform:scale(0.95);
-      //.inner { }
-    }
-
-  }
-}
-*/
-
 
 @mixin summary600() {
 
@@ -278,7 +245,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 */
 
 @media (min-width:420px) {
-  .summaries { grid-template-columns: repeat(auto-fill,340px); 
+  .summaries { grid-template-columns: repeat(auto-fill,$briefWidth); 
     .brief { @include summary360(); }
   } 
 }
