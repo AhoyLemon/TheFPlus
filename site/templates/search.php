@@ -3,7 +3,9 @@
 <main class="main search" role="main">
   
   <form class="page-search">
-    <input type="search" name="q" value="<?php echo esc($query) ?>">
+    <div class="input-holder">
+      <input type="search" name="q" value="<?php echo esc($query) ?>">
+    </div>
     <button type="submit">search</button>
   </form>
 
