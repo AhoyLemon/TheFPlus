@@ -106,7 +106,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 
-.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;  margin-top:20px; padding-right: 20px; 
+.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end; padding-top:($padding *2); padding-right: ($padding * 2);
   article {
     
     // .content { display:none; }  
