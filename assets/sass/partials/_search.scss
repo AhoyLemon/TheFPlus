@@ -16,14 +16,32 @@
 */
 
 main.search { 
-  form { display: grid; grid-template-columns: 1fr 12vw;
+  form { @include flex-container();
+    .input-holder { @include flex-item(50%); }
     input, button { font-family:$sans-serif; background:transparent; border:none; color:$black; }
-    input { font-size:3vw; border-bottom:0.05em solid rgba($black,0.8); font-weight: $light;
+    input { font-size:3vw; border-bottom:0.05em solid rgba($black,0.8); font-weight: $light; width: 99%;
       &:focus, &:active, :hover { border-color:$link; color:$link; }
     }
-    button { font-size:2vw;
-      &:focus, &:active, :hover { background-color:$link; color:$white; }
+    button { font-size:2vw; @include flex-item(6em,0,0);
+      &:focus, &:active, &:hover { background-color:$link; color:$white; }
     }
   }
+}
 
+
+@media (min-width:$desktop-min) {
+  main.search {
+    form {
+      input { font-size:50px; }
+      button { font-size:30px; }
+    }
+  }
+}
+@media (max-width:$mobile-max) {
+  main.search {
+    form { 
+      input { font-size:32px;  }
+      button { font-size:20px;  }
+    }
+  }
 }
