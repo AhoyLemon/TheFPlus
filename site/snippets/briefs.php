@@ -1,5 +1,5 @@
 <section class="briefs summaries">
-  <?php $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) ?>
+  <?php /*  $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) */ ?>
 
   
   <?php foreach($articles as $article): ?>
@@ -352,7 +352,7 @@
   <?php endforeach ?>
 </section>
 
-<?php if($articles->pagination()->hasPages()): ?>
+<?php if($articles->pagination() && $articles->pagination()->hasPages()): ?>
   <nav class="pagination">
     
     <?php if($articles->pagination()->hasPrevPage()) { ?>

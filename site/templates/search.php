@@ -4,10 +4,10 @@
   
   <form class="page-search">
     <input type="search" name="q" value="<?php echo esc($query) ?>">
-    <input type="submit" value="search">
+    <button type="submit">search</button>
   </form>
 
-  <section class="episodes summaries all-search-results">
+  <div class="all-search-results">
   
   
   <?php if ($results->count() < 1) { ?>
@@ -41,7 +41,9 @@
     </summary>
   <?php } ?>
 
-  <?php foreach($results->sortBy('date', 'desc') as $result): ?>    
+  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')]) ?>
+
+  <?php /* foreach($results->sortBy('date', 'desc') as $result): ?>    
     <article class="<?php echo html($result->parent()->slug()) ?> brief">
       <header>
       <h2 class="title">
@@ -85,9 +87,9 @@
         </div>
       </summary>
     </article>
-  <?php endforeach ?>
+  <?php endforeach */ ?>
     
-  </section>
+  </div>
   
 </main>
 

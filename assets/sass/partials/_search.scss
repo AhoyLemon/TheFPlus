@@ -1,3 +1,5 @@
+/*
+
 .page-search { padding-top: 1em; @include flex-container();
   input[type=search] { @include flex-item(80%); font-family:$sans-serif; font-size: 3vw; padding: 0.25em 1em; color:lighten($black,20%); border:1px solid lighten($black,20%); border-right:none; }
   input[type=submit] { @include flex-item(20%); font-family:$sans-serif; font-size: 2vw; background-color:$episode; color:$red; border:1px solid $red;
@@ -10,4 +12,18 @@
 .no-search-results { @include flex-item(100%); font-size:1.5vw; border:1px solid rgba($black,0.75); padding:1em 1em 0 1em;
   p { color:rgba($black,0.75); margin-bottom: 1em; }
   b { font-weight: $bold; }
+}
+*/
+
+main.search { 
+  form { display: grid; grid-template-columns: 1fr 12vw;
+    input, button { font-family:$sans-serif; background:transparent; border:none; color:$black; }
+    input { font-size:3vw; border-bottom:0.05em solid rgba($black,0.8); font-weight: $light;
+      &:focus, &:active, :hover { border-color:$link; color:$link; }
+    }
+    button { font-size:2vw;
+      &:focus, &:active, :hover { background-color:$link; color:$white; }
+    }
+  }
+
 }
