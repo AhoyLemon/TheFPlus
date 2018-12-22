@@ -43,7 +43,7 @@ $(document).ready(function() {
   
   $('#SidebarSearchForm').submit(function() {
     var s = $('#SidebarSearch').val();
-    var url = "http://thefpl.us/search?q="+s;
+    var url = "https://thefpl.us/search?q="+s;
     window.location = url;
     preventDefault();
   });
