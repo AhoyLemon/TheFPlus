@@ -16,6 +16,7 @@ fields:
       regular: Regular Cast
       guest: Guest Reader
       submitter: Content Provider
+    default: submitter
   cover:
     label: Cover Image
     type: image
