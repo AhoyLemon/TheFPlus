@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/
 .buy-buttons {
   display: block; }
   .buy-buttons button {

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/
 .sticker-buy-buttons {
   padding-top: 0.75em;
   padding-bottom: 0.75em;

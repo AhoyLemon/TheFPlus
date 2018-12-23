@@ -1,6 +1,9 @@
+/*
+
 .covers-only { @include flex-container();
   a { @include background(); color:$black; text-decoration: none; position: relative; overflow: hidden;
     .cover { width: 100%; height: auto; }
+
     summary { background-color: rgba(0,0,0,0.75); color:$white; padding: 1em 1em 1em 2em; @include transition(); @include translateY(102%); position: absolute; right:0; bottom:0; left:0; }
     &.no-image { background-color: $black; padding: 1em; color:$white; text-decoration: none;
       &:hover { background-color: $red; }
@@ -47,4 +50,48 @@ figure.fanart { @extend %fanart; }
     }
   }
 }
+*/
 
+section.covers-only { display: grid; gap:0;
+  .tile { position: relative;
+    img { transition:filter 0.3s linear; width:100%; height: auto; }
+    figcaption { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; padding:$padding;
+      summary { background:$card; padding:$padding; color:$copy; transform:scale(0.1); transition: all 0.3s ease; box-shadow:$boxShadow; opacity: 0;; }
+    }
+
+
+    &:hover {
+      figcaption summary { transform: scale(1); opacity: 1; }
+      h4 { color:$link; }
+      img { filter:brightness(30%); }
+    }
+
+    &:active {
+      figcaption summary { background:$link; color:$body; transition:none;
+        h4 { color:$body; }
+      }
+    }
+  }
+}
+
+@media (min-width:1601px) {
+  section.covers-only { grid-template-columns: repeat(4,1fr); }
+}
+
+@media (min-width:1201px) and (max-width:1600px) {
+  section.covers-only { grid-template-columns: repeat(3,1fr); }
+}
+
+@media (max-width:1201px) {
+  section.covers-only { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width:500px) {
+  section.covers-only { grid-template-columns: repeat(2,1fr);
+    .tile {
+      figcaption {
+        summary p { display: none; }
+      }
+    }
+  }
+}
