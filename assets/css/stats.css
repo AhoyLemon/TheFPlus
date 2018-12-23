@@ -1,3 +1,8 @@
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/
 .table-flexes {
   display: -webkit-flex;
   display: -moz-flex;

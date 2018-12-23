@@ -16,6 +16,8 @@ fields:
       regular: Regular Cast
       guest: Guest Reader
       submitter: Content Provider
+    default: submitter
+    help: "Recommended: 400x400"
   cover:
     label: Cover Image
     type: image

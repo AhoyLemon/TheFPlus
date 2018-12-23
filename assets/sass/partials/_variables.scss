@@ -1,5 +1,6 @@
 // COLORS
 $white: #eee;
+
 $black: #343434;
 $red: #c0282d;
 $green: #3eae12;
@@ -9,6 +10,8 @@ $teal: #4e7f71;
 // COLOR UTILITIES
 $body: $white;
 $copy: $black;
+$card: #fff;
+
 $link: $red;
 $accent: $green;
 $sidebar: $black;
@@ -53,3 +56,11 @@ $desktop-min: 768px;
 
 // ZAZZLE!!!!!!
 $boxShadow: 0 0 4px rgba($black,0.2);
+
+
+
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/

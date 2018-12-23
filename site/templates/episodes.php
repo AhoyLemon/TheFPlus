@@ -27,12 +27,14 @@
     
     <section class="<?php echo $page->slug(); ?> covers-only">
       <?php if ($showRandom == true): ?>
-        <a href="/episode/random" title="Pick a random episode">
-          <img src="/assets/images/random-card.png" class="cover">
-          <summary>
-            <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
-            <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
-          </summary>
+        <a class="tile" href="/episode/random" title="Pick a random episode">
+          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover">
+          <figcaption>
+            <summary>
+              <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
+              <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
+            </summary>
+          </figcaption>
         </a>
       <?php endif ?>
       <?php if($articles->pagination()->hasPrevPage()): ?>
@@ -47,23 +49,32 @@
       <?php endif; ?>
       <?php foreach($articles as $article): ?>
         <?php if($image = $article->image()) { ?>
-          <a href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
+          <a class="tile" href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
             <?php if ($article->cover() != "") { ?>
               <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" />
             <?php } else { ?>
               <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" />
             <?php } ?>
             
-            <summary>
+            <figcaption>
+              <summary>
+              <h4 class="title">
+                <?php if (is_numeric($article->uid())) { echo $article->uid() . ": "; } ?>
+                <span><?php echo $article->title() ?></span>
+              </h4>
+                <p><?php echo excerpt($article->text(), 185) ?></p>
+              </summary>
+            </figcaption>
+              <?php /*
               <h4 class="title">
                 <?php if ($article->parent()->slug() == "episode"): ?>
                   <?php echo $article->uid(); ?>:
                 <?php endif ?>
                 <span><?php echo $article->title() ?></span>
               </h4>
-              <p><?php echo excerpt($article->text(), 185) ?></p>
+              */ ?>
             </summary>
-            <span class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span>
+            <?php /* <span class="disqus-comment-count" data-disqus-identifier="<?php echo $article->uri(); ?>"></span> */ ?>
           </a>
         <?php } else { ?>
           <a href="<?php echo $article->url() ?>" class="no-image" title="<?php echo $article->title() ?>">

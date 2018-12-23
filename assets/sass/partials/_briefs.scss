@@ -107,12 +107,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 
 .summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end; padding-top:($padding *2); padding-right: ($padding * 2);
-  article {
-    
-    // .content { display:none; }  
-
-  }
-
   /*
   @media (min-width: 2301px)                         { grid-template-columns: repeat(6,1fr); }
   @media (min-width: 1901px) and (max-width: 2300px) { grid-template-columns: repeat(5,1fr); }
@@ -172,7 +166,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 @mixin summary360() {
 
-  background-color: $episode; border-color: darken($episode,35%);
+  background-color: $card; color:$copy; border-color: darken($episode,35%);
 
   box-shadow:0 0 4px rgba($black,0.2);
 
