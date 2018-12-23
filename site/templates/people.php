@@ -43,6 +43,17 @@
           <?php } ?>
         </figure>
 
+
+        <?php
+          /*
+          $findme = $article->title();
+          $allEpisodes = $site->find('episode')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc');
+          $episodeCount = 0;
+          foreach ($allEpisodes as $foo) { $episodeCount++; }
+          echo '<h1>' . $episodeCount . '</h1>';
+          */
+        ?>
+
         <?php /*
         <header>
           <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">

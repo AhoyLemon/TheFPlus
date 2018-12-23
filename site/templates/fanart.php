@@ -2,9 +2,11 @@
 
   <main class="main edge-to-edge" role="main">
 
-    <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
     
-    <ul class="fanart-grid">
+    
+    <section class="fanart-grid">
+
+      <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
         
       <?php foreach ($page->images()->shuffle() as $fanart): ?>
         <?php $fa = explode("-", $fanart->filename()); ?>
@@ -16,8 +18,9 @@
         ?>
         <a href="/<?php echo $slug; ?>/<?php echo $fa[0]; ?>#AdditionalFun" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
           <figure>
-            <img src="<?= $fanart->crop(250, 250)->url(); ?>" />
-            <?php /* <img src="<?= $fanart->url(); ?>"> */ ?>
+            <?php /* <img src="<?= $fanart->crop(250, 250)->url(); ?>" /> */ ?>
+            <?php $fileParts = explode('.', $fanart->filename()); ?>
+            <img src="https://thefpl.us/thumbs/fanart/<?= $fileParts[0] ?>-250x250.<?= $fileParts[1]; ?>" />
           </figure>
           <figcaption>
             <summary>
@@ -29,12 +32,16 @@
           </figcaption>
         </a>
       <?php endforeach; ?>
-        
-      </ul>
 
-    <div style="font-size:1.25em; padding:1em;">
-      <?php echo $page->text()->kirbytext(); ?>
-    </div>
+      <?php if ($page->text()->isNotEmpty()) { ?>
+        <div class="fanart-out">
+          <?php echo $page->text()->kirbytext(); ?>
+        </div>
+      <?php } ?>
+        
+    </section>
+
+    
     
   </main>
 
