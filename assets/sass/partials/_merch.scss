@@ -1,6 +1,6 @@
 
 
-$merchBorder: rgba($black,0.3);
+$merchBorder: lighten($black,50%);
 
 .merch-grid { display: grid; grid-gap:20px; margin-bottom: 20px;
   article {

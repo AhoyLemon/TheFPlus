@@ -72,6 +72,35 @@ section.covers-only { display: grid; gap:0;
       }
     }
   }
+
+  .pagination-tile { height: 0;
+    .arrow, .text { transform: scale(1); }
+    .arrow { fill:rgba($black,0.35); transition:all 0.5s ease; }
+    .text { fill:rgba($black,0.75); transition: all 0.3s linear; }
+  }
+
+  .pagination-tile {
+    &:hover { 
+      .arrow { fill:$link; }
+      .text  { fill:#111; transform:scale(1.3); }
+    }
+  }
+
+  .prev.tile {
+    .text { transform-origin: bottom left; }
+    &:hover {
+      .arrow { transform: translateX(-40%); }
+    }
+  }
+
+  .next.tile {
+    .text { transform-origin: bottom right; }
+    &:hover {
+      .arrow { transform: translateX(40%); }
+    }
+  }
+
+
 }
 
 @media (min-width:1601px) {

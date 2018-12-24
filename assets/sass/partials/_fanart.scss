@@ -60,3 +60,5 @@
   }
   .fanart-out { padding: 0.5em 0; grid-column: 1 / -1; } 
 }
+
+figure.fanart { @extend %fanart; }

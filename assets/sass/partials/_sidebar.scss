@@ -110,7 +110,7 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 
 .sidebar {
   .sidebar-links {
-    .count { font-size: 70%; transform: translateY(-60%); display: inline-block; border-radius: 50%; font-family: Arial, Helvetica, sans-serif; font-weight: 900; }
+    .count { font-size: 60%; transform: translateY(-60%); display: inline-block; border-radius: 50%; font-family: Arial, Helvetica, sans-serif; font-weight: 900; }
 
     input { padding: 0; width:100%; background-color: transparent; border:none; border-bottom: 2px solid transparent; font-family:$sans-serif; color:rgba($black,0.8); outline: none;
       &:hover, &:focus { background-color: $white; color:$link; border-color:$link; }
@@ -118,6 +118,17 @@ ul.tag-cloud { padding-left: 0; clear: both; float: none;
 
 
   }
+}
+
+.sidebar .sidebar-links .social-links { display:grid; grid-template-columns: repeat(4,1fr); gap:3px; max-width:12em; margin-top:10px;
+  a { color:rgba($copy,0.6);
+    &:hover svg { transform: scale(1.35); }
+    &.twitter:hover { color:$color-twitter; }
+    &.ballpit:hover { color:$color-ballpit; }
+    &.youtube:hover { color:$color-youtube; }
+    &.rss:hover     { color:#ea832f; }
+  }
+  svg * { fill:currentColor; }
 }
 
 
@@ -147,18 +158,15 @@ $logoLinkHeight: 160px;
         .logo-mark { transform: scale(0.5) translate(-50%, -4%); }
         .logo-type { transform: translateY(0); transition-delay: 0.3s; }
         .slogan { opacity:1; transform:translateX(0); transition-delay: 0.6s; }
-      }
-      
+      } 
     }
 
-    
 
-
-    .sidebar-links { @include position(absolute,null,40px,($logoLinkHeight * 1.2),40px);
-      a { display: block; margin-bottom: 1em; color:rgba($black,0.8); text-decoration: none; font-size:1.4rem;
+    .sidebar-links { @include position(absolute,null,40px,$logoLinkHeight,40px);
+      a { display: block; margin-bottom: 0.8em; color:rgba($black,0.8); text-decoration: none; font-size:1.2rem;
         &:hover { color:$link; text-decoration: underline; }
       }
-      input { font-size:1.4rem;
+      input { font-size:1.2rem;
         &::placeholder { color:rgba($black,0.8); }
       }
     }
