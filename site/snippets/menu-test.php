@@ -34,16 +34,12 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="logo-notch">
       <circle cx="225.5" cy="227.9" r="172.1" fill="#6f6"/>
     </svg>
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="grow-circle">
       <circle cx="49.2" cy="355.1" r="336.6" fill="#ed2024"/>
     </svg>
-
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="grow-circle-2">
       <circle cx="225.5" cy="227.9" r="172.1" fill="#6f6"/>
     </svg>
-
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" class="logo-mark">
       <g>
         <path class="mark-circle" d="M226.5 55.7c-51.1 0-97 22.3-128.5 57.6h203.2l-14.8 16c-7.2 7.8-7.4 7.9-13.7 17.7-5.2 8-3.8 16.5-3.8 16.5l2 10h-56.5l6.9-14-36.9.2-24.7 60.9h32l16.6-37 57.5-.1-16.6 37.2H293l-22.2 52-44.9.2-17.4 38.8-57.5.1 17.3-38.7-31.2.1-24.2 53.5c-3.2 7-7.2 13.2-12.1 18.8C132.2 379 176.9 400 226.5 400c95.1 0 172.2-77.1 172.2-172.2S321.6 55.7 226.5 55.7z" fill="#ed2024"/>
@@ -55,22 +51,49 @@
   <div class="sidebar-links">
     <a class="main-link mobile-only" href="<?php echo url::home() ?>">home</a>
     <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
+
     <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
     <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
-    <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
-    <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
     <a class="main-link" href="<?php echo url::home() ?>/contribute">contribute</a>
-
+    <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
     <?php $merchPage = $site->find('merch'); ?>
     <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
       buy some merch
       <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
     </a>
+    <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
 
     <form id="SidebarSearchForm">
       <input type="search" id="SidebarSearch" placeholder="Search..." />
       <button id="SidebarSubmit" style="display:none;">go</button>
     </form>
+
+    <div class="circles social-links">
+      <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
+        <svg viewBox="0 0 100 100">
+          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+          <use class="bird inside" xlink:href="#IconTwitter"></use>
+        </svg>
+      </a>
+      <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
+        <svg viewBox="0 0 100 100">
+          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+          <use class="snake inside" xlink:href="#IconBallpit"></use>
+        </svg>
+      </a>
+      <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
+        <svg viewBox="0 0 100 100">
+          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+          <use class="youtube inside" xlink:href="#IconYouTube"></use>
+        </svg>
+      </a>
+      <a class="rss" title="Subscribe via RSS" href="https://pca.st/TheFPlus" target="_blank">
+        <svg viewBox="0 0 100 100">
+          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+          <use class="rss inside" xlink:href="#IconRSS"></use>
+        </svg>
+      </a>
+    </div>
     
   </div>
 

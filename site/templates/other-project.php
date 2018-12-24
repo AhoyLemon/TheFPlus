@@ -18,6 +18,21 @@
   ?>
 
   <article class="episode full" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <?php if( $image = $page->image()):  ?>
+      <?php if($page->show_image() == 'true'):  ?>
+        <figure>
+          <?php if ($page->show_different_image() == "yes" && $page->page_image()->isNotEmpty()) { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } else if ($page->cover() != "") { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } else { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } ?>
+        </figure>
+      <?php endif ?>
+    <?php endif ?>
+
     <header>
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
 
@@ -33,17 +48,6 @@
       </time>
 
     </header>
-    <?php if( $image = $page->image()):  ?>
-      <?php if($page->show_image() == 'true'):  ?>
-        <?php if ($page->show_different_image() == "yes" && $page->page_image()->isNotEmpty()) { ?>
-          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
-        <?php } else if ($page->cover() != "") { ?>
-          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
-        <?php } else { ?>
-          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
-        <?php } ?>
-      <?php endif ?>
-    <?php endif ?>
 
     <!-- CAST LIST -->
     <?php if ($page->cast() != ""): ?>

@@ -19,7 +19,7 @@
 }
 
 .people-grid { display: grid; grid-gap: 30px;
-  .person { background:white; box-shadow: $boxShadow; text-decoration: none;
+  .person { background:$card; box-shadow: $boxShadow; text-decoration: none;
     &.hidden { display: none; }
 
     &:hover {
@@ -46,6 +46,11 @@
       img { opacity: 0.2; }
       .hover-cover { @include translateY(0);}
     }
+  }
+
+  .stats { display: flex; align-items: center; justify-content: center; min-height: 16em;
+    span { font-size:400%; color:$copy; letter-spacing: 0.2em; }
+    &:hover span { color:$link; }
   }
 }
 
@@ -83,9 +88,6 @@
     .person {
       &.brief { @include flex-item(245px, stretch, 0, 0); max-width: 245px; justify-content:space-between; }
     }
-  }
-  .person.full {
-    .headshot { float: right; max-width: 40%; margin-left: 1vw; }
   }
 }
 

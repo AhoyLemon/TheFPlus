@@ -1,5 +1,5 @@
 article { font-weight: $light;
-  &.full { line-height: 140%;
+  &.full { line-height: 140%; font-size:$font-size;
 
     h1, h2, h3, h4, h5, h6 { font-weight: 400; }
     &.default h1 { margin-bottom: 0.5em; }
@@ -14,7 +14,7 @@ article { font-weight: $light;
       time { font-weight: $bold; }
     }
     
-    summary, .content { text-align: justify; }
+    //summary, .content { text-align: justify; }
     ul.cast { padding-left: 0; padding-bottom: 0; }
     
     .featured-site.multiple-sites {
@@ -49,7 +49,7 @@ article { font-weight: $light;
   }
   .sites { @extend %commalist;
     li:first-child:before { content:'reading: '; }
-  } 
+  }
 }
 
 .episode-tags {
@@ -131,10 +131,8 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
     h1 { font-size:150%; font-weight:600; margin-bottom:0.3em; }
     time, .featured-site { font-size:70%; }
   }
-  .article-text { max-width:100% !important; text-align: justify; }
-  figure { 
-    img { transform: translateY(-50px); box-shadow: 0 0 6px rgba($black,0.45); }
-  }
+  .article-text { text-align: justify; letter-spacing: 180%; }
+  img.cover { transform: translateY(-50px); box-shadow: 0 0 6px rgba($black,0.45); }
   //.cast, .content-provider, .edited-by { font-size:80%; }
 }
 
@@ -197,14 +195,15 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 
 
 @media (min-width:1401px) {
+  article.full { font-size:22px; }
   article {
-    .article-text { max-width: 32em; font-size:18px; }
+    .article-text { max-width: 32em; }
   }
 }
 
 @media (min-width:$mobile-max) and (max-width:1400px) {
   article {
-    .article-text { font-size:2vw; }
+    // .article-text { font-size:2vw; }
   }
 }
 
@@ -213,13 +212,13 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
   main { display: block; padding:$gap $gap $gap ($sidebar + $gap);
-    &.page { padding-right: 1vw; }
+    &.page { padding-right: ($padding * 2); }
     &.edge-to-edge { padding: 0 0 0 $sidebar; }
   }
   article {
-    &.full { font-size:26px;
-      .cover { float: right; max-width: 40%; margin-left: 2.5vw;
-        &.left { float: left; margin-right: 2.5vw; margin-left: 0; }
+    &.full { padding:($padding * 2);
+      .cover { float: right; max-width: 40%; margin-left: ($padding * 2);
+        &.left { float: left; margin-right: ($padding * 2); margin-left: 0; }
       }
       a {
         &.action { @include flex-item(70px,auto,0,0); 
@@ -235,6 +234,8 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
       }
     }
   }
+
+  article.full.default { max-width: 42em; margin-right: auto; margin-left:auto; }
 }
 
 // MOBILE BREAKPOINT
@@ -257,4 +258,14 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
       }
     }
   }
+}
+
+@keyframes slidePageIn {
+  0%   { transform: translateY(102vh); }
+  //98%  { transform: translateY(-2%); }
+  100% { transform: translateY(0); }
+}
+
+article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-timing-function: cubic-bezier(.57,.58,.56,1.2);
+
 }

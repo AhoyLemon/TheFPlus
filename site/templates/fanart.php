@@ -16,11 +16,11 @@
           $slug = $x[0];
           } else { $slug = "episode"; }
         ?>
-        <a href="/<?php echo $slug; ?>/<?php echo $fa[0]; ?>#AdditionalFun" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
+        <a href="<?= $site->find($slug)->find($fa[0])->url(); ?>#AdditionalFun" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
           <figure>
-            <?php /* <img src="<?= $fanart->crop(250, 250)->url(); ?>" /> */ ?>
+            <img src="<?= $fanart->crop(250, 250)->url(); ?>" />
             <?php $fileParts = explode('.', $fanart->filename()); ?>
-            <img src="https://thefpl.us/thumbs/fanart/<?= $fileParts[0] ?>-250x250.<?= $fileParts[1]; ?>" />
+            <?php /* <img src="https://thefpl.us/thumbs/fanart/<?= $fileParts[0] ?>-250x250.<?= $fileParts[1]; ?>" /> */ ?>
           </figure>
           <figcaption>
             <summary>
