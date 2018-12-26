@@ -17,15 +17,6 @@
       } else if ($briefType == "also-made") {
         $altText = $article->category() . ": " . $article->title(); 
       }
-
-
-      /*
-      if ($article->template() == "episode") {
-        $briefType = "episode";
-      } else if ($article->parent()->slug() == "also-made") { ?>
-        $briefType = "epi";
-      }
-      */
     ?>
 
     <a class="brief <?= $briefType; ?>" href="<?= $article->url(); ?>" title="<?= $altText; ?>">

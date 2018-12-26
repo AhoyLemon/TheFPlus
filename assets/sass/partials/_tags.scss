@@ -15,30 +15,20 @@ $tag-border: rgba($black,0.8);
   margin-bottom: 0.4em;
   font-weight: 600;
   text-decoration: none;
-  /*
-  &:before {
-    position: absolute;
-    top: 0;
-    left:-0.25em;
-    content: '\2022';
-    line-height: 110%;
-    font-size:2em;
-    font-weight: 500;
-    //color:rgba($black,0.5);
-  }
-  */
-	
-	//&:hover { text-decoration: none !important; }
+  cursor: text;
+  &:hover { text-decoration: none !important; }
 	&[href] { background-color:rgba($link, 0.1); color:$link; cursor: pointer;
 		&:after { color:#6d0c0c; }
-		&:hover { background:#6d0c0c !important; color:$white !important;
-			&:after { color:$white !important; }
-		}
-	}
+    &:hover { background:#6d0c0c; color:$white; }
+  }
 }
 
-.tagcloud { padding-left:0 !important; text-align:justify;
-  li { display:inline-block; }
-}
 
-ul.tags > li { @extend %tag; }
+ul.tagcloud { text-align: justify;
+  > li { display: inline-block; margin-bottom: $gap; }
+  a { @extend %tag; font-size:0.8em;  
+    &[href] { background:transparent; color:$copy;
+      &:hover { background:rgba($link,0.1); color:rgba($link,0.9); }
+    }
+  }
+}

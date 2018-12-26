@@ -67,35 +67,36 @@
       <input type="search" id="SidebarSearch" placeholder="Search..." />
       <button id="SidebarSubmit" style="display:none;">go</button>
     </form>
-
-    <div class="circles social-links">
-      <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
-        <svg viewBox="0 0 100 100">
-          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-          <use class="bird inside" xlink:href="#IconTwitter"></use>
-        </svg>
-      </a>
-      <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
-        <svg viewBox="0 0 100 100">
-          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-          <use class="snake inside" xlink:href="#IconBallpit"></use>
-        </svg>
-      </a>
-      <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
-        <svg viewBox="0 0 100 100">
-          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-          <use class="youtube inside" xlink:href="#IconYouTube"></use>
-        </svg>
-      </a>
-      <a class="rss" title="Subscribe via RSS" href="https://pca.st/TheFPlus" target="_blank">
-        <svg viewBox="0 0 100 100">
-          <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-          <use class="rss inside" xlink:href="#IconRSS"></use>
-        </svg>
-      </a>
-    </div>
     
   </div>
+
+  <div class="circles social-links">
+    <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
+      <svg viewBox="0 0 100 100">
+        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+        <use class="bird inside" xlink:href="#IconTwitter"></use>
+      </svg>
+    </a>
+    <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
+      <svg viewBox="0 0 100 100">
+        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+        <use class="snake inside" xlink:href="#IconBallpit"></use>
+      </svg>
+    </a>
+    <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
+      <svg viewBox="0 0 100 100">
+        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+        <use class="youtube inside" xlink:href="#IconYouTube"></use>
+      </svg>
+    </a>
+    <a class="rss" title="Subscribe via RSS" href="https://pca.st/TheFPlus" target="_blank">
+      <svg viewBox="0 0 100 100">
+        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
+        <use class="rss inside" xlink:href="#IconRSS"></use>
+      </svg>
+    </a>
+  </div>
+
 
 
   <?php /*

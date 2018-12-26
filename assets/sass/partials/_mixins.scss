@@ -73,6 +73,11 @@
   align-self: $align;
 }
 
+@mixin flex-center() {
+  display:flex; align-items: center;
+}
+
+
 @mixin animation ($name, $duration, $iteration:1, $delay:0) {
     animation-name: $name;
     animation-duration: $duration;

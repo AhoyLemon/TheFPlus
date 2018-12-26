@@ -38,7 +38,7 @@
 }
 
 %textlink { text-decoration: none;
-  &:hover { border-bottom: 0.05em solid $red; }
+  &:hover { text-decoration: underline; }
 }
 
 %center-child {
