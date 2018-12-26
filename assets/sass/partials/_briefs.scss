@@ -239,16 +239,41 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 */
 
 @media (min-width:420px) {
-  .summaries { grid-template-columns: repeat(auto-fill,$briefWidth); 
+  .summaries { 
     .brief { @include summary360(); }
   } 
 }
+
 
 @media (max-width:419px) {
   .summaries { grid-template-columns: 1fr; 
     .brief { @include summary360(); }
   } 
 }
+
+@media (min-width:420px) and (max-width:1019px) {
+  .summaries  { grid-template-columns: repeat(auto-fill,$briefWidth); }
+}
+
+
+@media (min-width:1020px) and (max-width:1279px) {
+  .summaries  { grid-template-columns:repeat(2,1fr);  }
+}
+
+@media (min-width:1280px) and (max-width:1549px) {
+  .summaries  { grid-template-columns:repeat(3,1fr);  }
+}
+
+@media (min-width:1550px) and (max-width:1859px) {
+  .summaries  { grid-template-columns:repeat(4,1fr);  }
+}
+
+@media (min-width:1860px) {
+  .summaries  { grid-template-columns:repeat(5,1fr);  }
+}
+
+
+
 
 
 

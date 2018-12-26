@@ -49,66 +49,64 @@
   </a>
 
   <div class="sidebar-links">
-    <a class="main-link mobile-only" href="<?php echo url::home() ?>">home</a>
-    <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
 
-    <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
-    <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
-    <a class="main-link" href="<?php echo url::home() ?>/contribute">contribute</a>
-    <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
-    <?php $merchPage = $site->find('merch'); ?>
-    <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
-      buy some merch
-      <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
-    </a>
-    <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
+    <?php foreach ($site->sidebar_links()->toStructure() as $link) { ?>
 
-    <form id="SidebarSearchForm">
-      <input type="search" id="SidebarSearch" placeholder="Search..." />
-      <button id="SidebarSubmit" style="display:none;">go</button>
-    </form>
+      <?php if ($link->_fieldset() == "page_link") { ?>
+        <a href="<?= $site->url() . '/' . $link->slug(); ?>">
+          <?= $link->text(); ?>
+        </a>
+      <?php } else if ($link->_fieldset() == "page_link") { ?>
+        <a href="<?= $link->url(); ?>">
+          <?= $link->text(); ?>
+        </a>
+      <?php } else if ($link->_fieldset() == "merch_page") { ?>
+        <?php $merchPage = $site->find('merch'); ?>
+        <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
+          <?= $link->text(); ?>
+          <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
+        </a>
+      <?php } else if ($link->_fieldset() == "search_form") { ?>
+        <form id="SidebarSearchForm">
+          <input type="search" id="SidebarSearch" placeholder="<?= $link->text(); ?>" />
+          <button id="SidebarSubmit" style="display:none;">go</button>
+        </form>
+      <?php } ?>
+
+    <?php } ?>
     
   </div>
 
-  <div class="circles social-links">
-    <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-        <use class="bird inside" xlink:href="#IconTwitter"></use>
-      </svg>
-    </a>
-    <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-        <use class="snake inside" xlink:href="#IconBallpit"></use>
-      </svg>
-    </a>
-    <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
-      <svg viewBox="0 0 100 100">
-        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-        <use class="youtube inside" xlink:href="#IconYouTube"></use>
-      </svg>
-    </a>
-    <a class="rss" title="Subscribe via RSS" href="https://pca.st/TheFPlus" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <!-- <use class="circle" xlink:href="#IconCircle"></use> -->
-        <use class="rss inside" xlink:href="#IconRSS"></use>
-      </svg>
-    </a>
-  </div>
+  <?php if ($site->social_links()->isNotEmpty()) { ?>
+
+    <?php $networks = $site->social_links()->toStructure()->shuffle()->limit(4); ?>
+
+    <div class="social-links">
+
+      <?php foreach ($networks as $n) { ?>
+        <a class="<?= $n->icon(); ?>" title="<?= $n->text(); ?>" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+          <?php 
+            if ($n->icon() == "ballpit")      { echo '<path d="M32.8 32.8c.9.2 4.4-8.4 13.8-8.8 4.7-.1 8.3 3.8 8.7 3.1.5-.7-1.8-3.9-9.2-4.2-8.6 0-14.2 9.7-13.3 9.9z"/><path d="M32.7 29.6s4.2-9.7 13.4-10.3c5.8-.1 7.3 3.4 7.3 3.4s-1.2-1.8-7.3-2.1c-8.8.7-13.4 9-13.4 9z"/><ellipse cx="53" cy="36.9" rx="1.3" ry="2"/><ellipse cx="46.6" cy="36.4" rx=".9" ry="1.7"/><path d="M64.7 61.5c-8.1.1-16.5 6.6-19.5 9-2.1-1.9-3.2-4.4-2.4-7.6 0-1.8 4.5-7.6 9.1-9.4 1.2 1.5 3.3 3.7 4.1 3.4.8-.3 2.1-3.3 2.9-5.2 1.7-.3 3.4-.5 4.9-.6.8 1.7 2.4 4.7 3.4 4.6s3.2-3.2 4.3-4.8c.9 0 1.4.1 1.4.1-.2-.6-.4-1.2-.6-1.7-1.3-3-3-5.8-5.2-8.2-1.5-1.6-3.2-3.1-5-4.3-1.8-1.2-4.1-2-5.7-3.5-.7-.7-1.5-1.7-2.4-2.2-.9-.4-2.3-.3-3.1.3-.6.4-.5.6-1.1.3-1-.6-1.7-1.7-2.6-2.4-2.3-1.7-5.6-1.1-7.5.9-1 1-1.5 2.4-2.4 3.5-1.1 1.4-2.9 1.8-4.1 3-2.5 2.3-4.6 4.7-6.2 7.8-1.4 2.7-2.2 5.8-2.5 8.7-.9 8.6 1.2 16.9 15.8 25.4 13 5.8 25.9-1.8 25.9-1.8s-11.5-.6-18.5-4.6c1.2-1 3.3-2.5 7-4.1 6.4-2.6 12.9.7 13.7 2.6.8 1.9.8 6.1.8 6.1s2.2-2.4 1.9-4.9c-.3-2.6-1.3-5.2-1.3-5.2s1.8.5 3.6 2.4 2.4 5.7 2.4 5.7 1.6-3 1.5-5.5c.1-2.3-2.6-8-12.6-7.8zM41 51.7c-3.8-.7-6-6.1-4.8-12.1 1.2-5.9 5.2-10.1 9-9.4 2.1.4 3.7 2.2 4.5 4.7.5-1.4 1.3-2.4 2.4-2.7 2.4-.6 5.2 2.2 6.2 6.3s-.1 7.9-2.5 8.5c-2.1.5-4.6-1.7-5.8-5v.2c-1.2 6.1-5.2 10.3-9 9.5z"/>'; }
+            else if ($n->icon() == "github")  { echo '<path d="M50 20.9c-16.5 0-29.9 13.4-29.9 29.9 0 13.2 8.6 24.4 20.4 28.4 1.5.3 2-.6 2-1.4v-5.1c-8.3 1.8-10.1-4-10.1-4-1.4-3.4-3.3-4.4-3.3-4.4-2.7-1.9.2-1.8.2-1.8 3 .2 4.6 3.1 4.6 3.1 2.7 4.6 7 3.3 8.7 2.5.3-1.9 1-3.3 1.9-4-6.6-.7-13.6-3.3-13.6-14.8 0-3.3 1.2-5.9 3.1-8-.3-.8-1.3-3.8.3-7.9 0 0 2.5-.8 8.2 3.1 2.4-.7 4.9-1 7.5-1 2.5 0 5.1.3 7.5 1 5.7-3.9 8.2-3.1 8.2-3.1 1.6 4.1.6 7.2.3 7.9 1.9 2.1 3.1 4.8 3.1 8 0 11.5-7 14-13.6 14.7 1 .9 2 2.7 2 5.5v8.2c0 .8.5 1.7 2.1 1.4 12-3.9 20.5-15.1 20.5-28.3-.2-16.6-13.6-29.9-30.1-29.9" />';  }
+            else if ($n->icon() == "itunes")  { echo '<path d="M49.8 79.7s6.5 0 6.5-19.3c0-3.6-2.9-6.5-6.5-6.5s-6.5 2.9-6.5 6.5c0 19.3 6.5 19.3 6.5 19.3zm8-6.6c.3-1.1.5-2.2.7-3.3l.1-.9c.3-.1.6-.2.9-.4 4.5-2 8.3-5.5 10.8-9.9 1.1-2 1.9-4.1 2.4-6.4.6-2.5.7-5.1.4-7.6-.3-2.4-.9-4.7-1.9-6.9-1.2-2.6-2.7-4.9-4.8-6.9-2-2-4.5-3.7-7.1-4.9-2.7-1.2-5.7-1.9-8.7-1.9-3-.1-6 .4-8.9 1.5-2.7 1-5.2 2.6-7.4 4.5-2 1.9-3.8 4.1-5.1 6.6-1.1 2.1-1.8 4.4-2.2 6.7-.4 2.4-.4 4.9 0 7.4.3 2.2 1 4.3 1.9 6.3 2.2 4.7 5.9 8.5 10.5 10.9.6.3 1.1.5 1.7.8 0 .3.1.6.1 1 .2 1.1.4 2.2.7 3.3-1-.3-2-.7-3-1.2-5.3-2.4-9.8-6.6-12.6-11.8-1.3-2.3-2.2-4.8-2.7-7.4-.6-2.9-.7-5.9-.4-8.8.4-2.8 1.2-5.5 2.3-8 1.4-2.9 3.3-5.7 5.6-7.9 2.3-2.3 5.1-4.2 8.2-5.5 3.2-1.4 6.7-2.1 10.2-2.1 3.5 0 7 .6 10.2 1.9 3.1 1.2 6 3.1 8.5 5.4 2.4 2.2 4.4 4.9 5.8 7.8 1.2 2.5 2.1 5.1 2.5 7.9.4 2.8.4 5.7 0 8.5-.4 2.6-1.3 5.2-2.4 7.6-2.6 5.2-6.9 9.6-12.2 12.2-1.2.5-2.6 1-4.1 1.5.1 0 0 0 0 0zm1.3-10.6v-1.2c0-.8 0-1.6-.1-2.3 0-.3-.1-.6-.2-.9 1.4-1.1 2.5-2.5 3.4-4.1.6-1.2 1.1-2.5 1.4-3.8.3-1.5.4-3.1.2-4.6-.2-1.4-.6-2.7-1.1-4-.7-1.5-1.7-2.9-2.9-4.1-1.2-1.2-2.6-2.2-4.2-2.9-1.7-.7-3.6-1.2-5.4-1.2-1.9 0-3.8.3-5.5 1-1.6.6-3 1.5-4.3 2.7-1.3 1.2-2.3 2.5-3.1 4-.6 1.2-1.1 2.5-1.3 3.9-.3 1.4-.3 2.9-.1 4.3.2 1.4.6 2.7 1.1 4 .9 1.9 2.1 3.6 3.7 5l-.2 1c-.1.8-.1 1.5-.1 2.3v1c-2.6-1.6-4.8-3.9-6.2-6.6-.9-1.5-1.5-3.2-1.8-4.9-.4-1.9-.5-3.9-.2-5.8.2-1.7.7-3.5 1.4-5 .9-1.9 2.1-3.7 3.6-5.2s3.3-2.8 5.2-3.6c2.2-1 4.5-1.5 6.8-1.6 2.4 0 4.8.4 7 1.2 2 .8 3.8 1.9 5.4 3.4 1.6 1.5 2.9 3.2 3.9 5.1.8 1.6 1.4 3.2 1.7 4.9.3 1.8.4 3.6.1 5.4-.2 1.7-.7 3.5-1.5 5.1-1.4 3.2-3.9 6-7 7.9 0-.1.3-.4.3-.4zm-9.3-23.7c3.6 0 6.6 2.9 6.6 6.6 0 3.6-2.9 6.6-6.6 6.6-3.6 0-6.6-2.9-6.6-6.6s3-6.5 6.6-6.6z" />'; }
+            else if ($n->icon() == "rss")     { echo '<path d="M67.8 79.7c0-26.1-21.4-47.5-47.5-47.5V20.3c32.6 0 59.4 26.8 59.4 59.4H67.8zM28.5 63.4c4.5 0 8.1 3.7 8.1 8.2 0 4.5-3.7 8.1-8.2 8.1-4.5 0-8.1-3.6-8.1-8.1s3.7-8.2 8.2-8.2zm31.2 16.3H48.1c0-15.3-12.6-27.8-27.8-27.8V40.3c21.6 0 39.4 17.8 39.4 39.4z" />'; }
+            else if ($n->icon() == "twitter") { echo '<path d="M79.8 31.5c-2.2 1-4.6 1.6-7 1.9 2.5-1.5 4.5-3.9 5.4-6.8-2.4 1.4-5 2.4-7.8 2.9-2.2-2.4-5.4-3.9-8.9-3.9-6.8 0-12.3 5.5-12.3 12.2 0 1 .1 1.9.3 2.8-10.2-.3-19.3-5.2-25.3-12.6-1.1 1.8-1.7 3.9-1.7 6.2 0 4.3 2.2 8 5.4 10.2-2-.1-3.9-.6-5.5-1.5v.1c0 5.9 4.2 10.9 9.8 12-1 .3-2.1.4-3.2.4-.8 0-1.5-.1-2.3-.2 1.6 4.9 6.1 8.4 11.5 8.5C34 67 28.7 69 23 69c-1 0-1.9-.1-2.9-.2 5.5 3.5 11.9 5.5 18.8 5.5 22.5 0 34.9-18.7 34.9-34.8v-1.6c2.4-1.7 4.5-3.9 6.1-6.3 0-.1-.1-.1-.1-.1z" />'; }
+            else if ($n->icon() == "youtube") { echo '<path class="st0" d="M78.6 35.6c-.7-2.5-2.7-4.5-5.2-5.2-4.6-1.3-23.4-1.3-23.4-1.3s-18.7 0-23.4 1.2c-2.5.7-4.5 2.7-5.2 5.2-.9 4.8-1.3 9.6-1.3 14.5 0 4.8.4 9.7 1.3 14.4.7 2.5 2.7 4.5 5.2 5.2 4.7 1.3 23.4 1.3 23.4 1.3s18.7 0 23.4-1.3c2.5-.7 4.5-2.7 5.2-5.2.9-4.8 1.3-9.6 1.2-14.4.1-4.8-.3-9.7-1.2-14.4zM44 59V41.1l15.6 9L44 59z" />'; }
+            else if ($n->icon() == "paypal")  { echo '<path class="st0" d="M37.2 80.1h-7.8c-1.7 0-2.7-1.3-2.3-3l.4-1.7h5.2c1.7 0 3.4-1.3 3.7-3L39.1 61c.4-1.6 2-3 3.7-3H45c9.5 0 16.9-2 22.2-5.9s7.9-9 7.9-15.4c0-2.8-.5-5.2-1.5-7v-.1l.3.2c1.9 1.2 3.3 2.7 4.3 4.5 1 1.9 1.5 4.2 1.5 7 0 6.4-2.6 11.5-7.9 15.4-5.3 3.9-12.7 5.8-22.2 5.8h-2.3c-1.7 0-3.3 1.3-3.7 3L40.9 77c-.3 1.7-2 3-3.7 3.1zm-6.7-6.8h-7.8c-1.7 0-2.7-1.3-2.3-3l11-47.5c.4-1.6 2-3 3.7-3h16.2c3.5 0 6.5.2 9.1.7 2.6.5 4.8 1.3 6.7 2.5 1.8 1.2 3.3 2.7 4.3 4.6 1 1.9 1.5 4.2 1.5 7 0 6.4-2.6 11.5-7.9 15.3-5.3 3.9-12.7 5.8-22.2 5.8h-2.2c-1.7 0-3.3 1.3-3.7 2.9l-2.7 11.5c-.4 1.8-2 3.1-3.7 3.2 0-.1 0 0 0 0zm18.7-43.5h-2.5c-1.7 0-3.3 1.3-3.7 3l-2.3 10.1c-.4 1.6.7 3 2.3 3h1.9c4.2 0 7.4-.9 9.8-2.6 2.3-1.7 3.5-4.1 3.5-7.3 0-2.1-.8-3.6-2.3-4.6-1.5-1.1-3.8-1.6-6.7-1.6-.1 0 0 0 0 0z" />'; }
+            else if ($n->icon() == "pocketcasts")  { echo '<g><defs><filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="18.4" y="18.4" width="63.1" height="63.1"><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0"/></filter></defs><mask maskUnits="userSpaceOnUse" x="18.4" y="18.4" width="63.1" height="63.1" id="mask-4_1_"><g filter="url(#Adobe_OpacityMaskFilter)"><path id="path-3_1_" d="M49.3 71.2c-11.4-.4-20.5-9.7-20.5-21.2 0-11.6 9.6-21.2 21.2-21.2 11.5 0 20.8 9.1 21.2 20.5 0 .4.3.7.8.7h6.2c.4 0 .8-.4.8-.8-.6-15.6-13.3-28.1-29-28.1C34 21.1 21.1 34 21.1 50c0 15.7 12.5 28.4 28.1 28.8.4 0 .8-.3.8-.8v-6.2c0-.3-.3-.6-.7-.6zm.7-37.9c-9.2 0-16.7 7.4-16.7 16.7 0 9 7 16.3 15.9 16.7.4 0 .8-.3.8-.8V61c0-.4-.3-.7-.7-.7-5.4-.4-9.6-4.8-9.6-10.3 0-5.7 4.6-10.3 10.3-10.3 5.5 0 9.9 4.2 10.3 9.6 0 .4.4.7.7.7h4.9c.4 0 .8-.4.8-.8-.4-8.8-7.8-15.9-16.7-15.9z" fill-rule="evenodd" clip-rule="evenodd" fill="#fff"/></g></mask><polygon id="Fill-7" points="18.4,18.4 81.6,18.4 81.6,81.6 18.4,81.6" mask="url(#mask-4_1_)" fill-rule="evenodd" clip-rule="evenodd"/></g>'; }
+            else if ($n->icon() == "lemon") { echo '<g><polygon points="23.5,58.4 24.4,59 43.7,45.8 67.9,28.8 67.2,27.8 67.2,27.8"/><path d="M67.2 27.8z"/><polygon points="72.2,35.7 46.9,43.8 72.2,36.5"/><path d="M67.2 27.8c1.3 1.4 6.4 7.1 5.6 11.9-.7 4.5-3.2 11.5-9.3 16.4-5 4-11.7 7.3-20 7.9-8.2.6-16.9-2.4-20.6-5.6l-4.2 2.7c6.4 4.7 13.9 7.3 23.6 6.5 9.6-.8 19.4-5.3 22.4-7.5 2.9-2.1 10.6-8.9 12.7-16.8 1.5-5.5-.9-14.7-4.8-19.4l-5.4 3.9z"/><polygon points="46.5,63.2 43.9,45.7 45.4,63.2"/><polygon points="66.6,52.4 45.4,45.1 65.9,53.1"/><path d="M43.6 64c8.3-.6 15-3.9 20-7.9 6-4.8 8.6-11.9 9.3-16.4.8-4.9-5-11-5-11l-24.2 17-19.6 13.6c4.1 2.9 12 5.3 19.5 4.7zm28-28.7l.6 1.7-25.3 6.8 24.7-8.5zM66.9 52l-1.2 1.4L45.4 45l21.5 7zM47.3 63.2l-2.4.3-.9-17.8 3.3 17.5z"/><path d="M72.8 23.9c3.9 4.7 6.2 13.9 4.8 19.4-2.1 7.9-8.7 14.5-12.7 16.8-3 2.2-12.8 6.7-22.4 7.5-9.8.9-17.3-1.8-23.6-6.5l4.2-2.7 44.2-30.6 5.5-3.9-5.8 3.7c-13.6 9.5-47.3 33-48.8 33.9 0 0 0 3.6 10.9 10.2C41 77.8 54 75.2 58.7 72.9c3.1-1.4 12.2-4.4 18.6-19.3 6.2-16.6-.8-25.8-4.5-29.7zM24.1 59.3z"/></g>'; }
+              ?>
+          </svg>
+        </a>
+      <?php } ?>
+    </div>
+  <?php } ?>
+
 
 
 
   <?php /*
-
-  <a class="main-link" href="<?php echo url::home() ?>/about">about the podcast</a>
-  <a class="main-link" href="<?php echo url::home() ?>/episode">browse episodes</a>
-  <a class="main-link" href="<?php echo url::home() ?>/also-made">other projects</a>
-  <a class="main-link" href="<?php echo url::home() ?>/fanart">fanart</a>
-  <a class="main-link" href="<?php echo url::home() ?>/meet">meet the ridiculists</a>
-  <a class="main-link" href="<?php echo url::home() ?>/submit">submit content</a>
-
-  
 
   <?php $merchPage = $site->find('merch'); ?>
   <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
