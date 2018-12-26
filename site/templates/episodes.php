@@ -17,12 +17,15 @@
     <?php if ($thispage == "") {
       $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
       $showRandom = true;
+      $otherOptionsTile = false;
     } else if ($ftag) {
       $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(26);
       $showRandom = false;
+      $otherOptionsTile = false;
     } else {
-      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
+      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(25);
       $showRandom = false;
+      $otherOptionsTile = rand(4, 20);
     } ?>
     
     <section class="<?php echo $page->slug(); ?> covers-only">
@@ -45,7 +48,18 @@
           </svg>
         </a>
       <?php endif; ?>
-      <?php foreach($articles as $article): ?>
+      <?php $i = 0; ?>
+      <?php foreach($articles as $key => $article): ?>
+        <?php $i++; ?>
+
+        <?php if ($i == $otherOptionsTile) { ?>
+          <div class="tile other-options">
+            <div class="inner">
+              Can't find what you're looking for? Try <a href="<?= $site->find('search')->url(); ?>">seaching the site</a> or <a href="<?= $site->find('tags')->url(); ?>">browsing episode tags</a>.
+            </div>
+          </div>
+        <?php } ?>
+
         <?php snippet('coverbox',  [ 'article' => $article]); ?>
       <?php endforeach ?>
       <?php if($articles->pagination()->hasNextPage()): ?>
@@ -57,6 +71,13 @@
         </a>
       <?php endif ?>
     </section>
+
+    <?php /*
+    <div class="episode-find-options">
+      Can't find what you're looking for? Try <a href="<?= $site->find('search')->url(); ?>">seaching the site</a> or <a href="<?= $site->find('search')->url(); ?>">browsing episode tags</a>.
+    </div>
+    */ ?>
+
 
   </main>
 <?php snippet('disqus-alt', array('allow_comments' => false)) ?>

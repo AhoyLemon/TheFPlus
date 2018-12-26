@@ -26,6 +26,15 @@
   ?>
 
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
+
+    <figure>
+      <?php if($page->cover() != "") { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
+      <?php } else if($image = $page->image()) { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
+      <?php } ?>
+    </figure>
+
     <header>
       <h1>
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
@@ -43,12 +52,6 @@
         </span>
       </time>
     </header>
-    
-    <?php if($page->cover() != "") { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
-    <?php } else if($image = $page->image()) { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
-    <?php } ?>
 
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">

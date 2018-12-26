@@ -21,9 +21,11 @@
     ?>
 
     <article class="no-search-results full">
-      <p>
-      No results for <b><?= $query; ?></b>.
-      </p>
+      <?php if ($query != "") { ?>
+        <p>
+        No results for <b><?= $query; ?></b>.
+        </p>
+      <?php } ?>
       <p>
         Maybe try searching for 
         <?php 
@@ -35,8 +37,8 @@
             if ($termcount < count($searchesToTry)) { echo ', &nbsp;'; } else { echo '?'; }
           }
         ?>
-      <p>
-    </summary>
+      </p>
+    </article>
   <?php } else { ?>
     <summary class="search-results-count">
       <?= $results->count(); ?> results found.

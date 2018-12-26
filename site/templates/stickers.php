@@ -7,7 +7,7 @@
 
 <main class="main page" role="main">
 
-    <article class="full default">
+    <article class="full" style="margin-bottom:20px;">
       <header>
         <h1 style="margin-bottom:0;"><?php echo $page->title() ?></h1>
         
@@ -23,10 +23,8 @@
           </strong>
         </time>
       </header>
-      
-      <div class="article-text">
-        <?php echo $page->text()->kirbytext() ?>
-      </div>
+
+      <?php echo $page->text()->kirbytext() ?>
       
     </article>
       
@@ -417,13 +415,12 @@
         <?php endforeach; ?>
       </div>
   
-      <article class="full default" style="margin-top:20px;">
+      <article class="full" style="margin-top:20px;">
         <div class="splc-description">
           <?php echo $page->splc_desc()->kirbytext() ?>
           <?php $splc_total = (int)(string)$page->splc_total(); ?>
           <p>Sales of these stickers have contributed <strong>$<?php echo number_format($splc_total); ?></strong> to their campaign. Last donation made on <strong><?php echo date('F jS, Y', strtotime($page->splc_asof())); ?></strong></p>
         </div>
-      <article class="full default">
 
       <div class="product-photos">
         <h3>Some Stickers in the world...</h3>
@@ -444,6 +441,8 @@
       </div>
       
       <?php snippet('tags') ?>
+
+      </article>
   
     <section class="comments disqus">
       <?php snippet('disqus-alt', array('allow_comments' => true)) ?>

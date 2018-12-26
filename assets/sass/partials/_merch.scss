@@ -2,12 +2,12 @@
 
 $merchBorder: lighten($black,50%);
 
-.merch-grid { display: grid; grid-gap:20px; margin-bottom: 20px;
+.merch-grid { display: grid; grid-gap:$gap; margin-bottom: 20px; align-items: start;
   article {
     h3 { letter-spacing: .25em; font-weight: $bold; }
   }
-  .grid-box { grid-column: span 1; color:$black; text-decoration: none;
-    figure { border:1px solid $merchBorder; position: relative; overflow: hidden; }
+  .grid-box { grid-column: span 1; color:$black; text-decoration: none; box-shadow: $boxShadow;
+    figure {/*  border:1px solid $merchBorder; */ position: relative; overflow: hidden; background:$card; }
     .almost-gone { @include position(absolute,null,0,0); width:10em; }
     .almost-gone-text { fill:$white; }
     .thumb-holder {
@@ -35,7 +35,7 @@ $merchBorder: lighten($black,50%);
       .half { @include flex-item(50%); }
       .third { @include flex-item(33.333%); }
       
-      .buy-buttons { @include flex-item(100%); border-top:1px solid $black;
+      .buy-buttons { @include flex-item(100%); border-top:1px solid $merchBorder;
         .buttons { @include flex-container(); padding: 10px; }
         form { @include flex-item(33.333%); text-align: center; }
         button, .button { background-color: $red; color: white; border: 1px solid $red; padding: 1em 0.5em; font-weight: 600; font-size: 1rem; box-shadow: 2px 2px 2px $black; cursor: pointer; 
@@ -94,7 +94,8 @@ $merchBorder: lighten($black,50%);
 
 
 
-.product-photos { @include flex-container(); justify-content:flex-start;
+.product-photos { @include flex-container(); justify-content: space-between;
+  .photo-holder { margin-bottom: $gap; }
   a.zoom { position: relative; display: block; background:$red; overflow: hidden; cursor: zoom-in;
     img { border:2px solid $red; }
     &:hover { border-bottom: none;

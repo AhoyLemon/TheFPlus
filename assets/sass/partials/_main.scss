@@ -132,7 +132,7 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
     time, .featured-site { font-size:70%; }
   }
   .article-text { text-align: justify; letter-spacing: 180%; }
-  img.cover { transform: translateY(-50px); box-shadow: 0 0 6px rgba($black,0.45); }
+  img.cover { transform: translateY(-70px); box-shadow: 0 0 6px rgba($black,0.45); }
   //.cast, .content-provider, .edited-by { font-size:80%; }
 }
 
@@ -260,6 +260,8 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   }
 }
 
+/*
+
 @keyframes slidePageIn {
   0%   { transform: translateY(102vh); }
   //98%  { transform: translateY(-2%); }
@@ -269,3 +271,4 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-timing-function: cubic-bezier(.57,.58,.56,1.2);
 
 }
+*/
