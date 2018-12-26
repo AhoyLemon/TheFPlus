@@ -16,7 +16,7 @@
           $slug = $x[0];
           } else { $slug = "episode"; }
         ?>
-        <a href="<?= $site->find($slug)->find($fa[0])->url(); ?>#AdditionalFun" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
+        <a href="<?= $site->url() . '/' . $slug . '/' . $fa[0] . '#AdditionalFun'; ?>" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
           <figure>
             <img src="<?= $fanart->crop(250, 250)->url(); ?>" />
             <?php $fileParts = explode('.', $fanart->filename()); ?>
