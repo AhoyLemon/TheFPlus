@@ -445,7 +445,7 @@
       </article>
   
     <section class="comments disqus">
-      <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+      <?php snippet('disqus', array('allow_comments' => true)) ?>
     </section>
     
   </main>

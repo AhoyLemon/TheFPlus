@@ -14,5 +14,4 @@
 
   </main>
 
-<?php snippet('disqus-alt', array('allow_comments' => false)) ?>
 <?php snippet('footer') ?>
