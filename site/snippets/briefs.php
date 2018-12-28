@@ -17,7 +17,7 @@
       } else if ($briefType == "also-made") {
         $altText = $article->category() . ": " . $article->title(); 
         $category = $article->category();
-        if ($article->template() == "stickers") {
+        if ($article->template() == "stickers" || $article->template() == "merch-type") {
           $category = "merch";
         }
       }
@@ -27,13 +27,6 @@
       <div class="inner">
         <header class="name-and-title">
           <h2 class="title"><?= $article->title(); ?></h2>
-          <?php /*
-            <time class="longdate">
-              <span class="date">
-                <?php echo date('D, M jS Y', $article->date()) ?>
-              </span>
-            </time>
-          */ ?>
           <?php if ($briefType == 'episode') { ?>
             <span class="episode-number"><?php echo $article->uid(); ?></span>
           <?php } ?>
@@ -47,13 +40,13 @@
           </figcaption>
         <?php } ?>
 
-        <?php  /* if ($briefType == "also-made") { ?>
+        <?php if ($briefType == "also-made") { ?>
           <figcaption>
             <div class="description">
-              <p><?php echo excerpt($article->text(), 70) ?></p>
+              <p><?php echo excerpt($article->text(), 100) ?></p>
             </div>
           </figcaption>
-        <?php }  */ ?>
+        <?php } ?>
 
 
         <?php if ($briefType != "wrote") { ?>

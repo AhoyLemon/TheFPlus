@@ -12,13 +12,16 @@
       "description": "Terrible things, read with enthusiasm.",
       "alternateName": "The F+",
       "sameAs" : [ 
-        "http://feeds.feedburner.com/TheFPlus",
-        "https://twitter.com/TheFPlus",
-        "https://plus.google.com/+TheFPlus",
-        "https://github.com/AhoyLemon/TheFPlus/",
-        "https://www.twitch.tv/thefplus",
-        "https://www.facebook.com/thefplus",
-        "https://www.paypal.me/TheFPlus"
+        <?php 
+          $i = 0;
+          $c = count($site->schema_sameas()->toStructure());
+          foreach ($site->schema_sameas()->toStructure() as $sameas) {
+            $i++;
+            echo '"' . $sameas->url() . '"'; 
+            if ($i != $c) { echo ', 
+            '; }
+          }
+        ?>
       ],
       "owns": {
         "@context": "https://schema.org",

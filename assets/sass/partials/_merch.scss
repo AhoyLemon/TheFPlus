@@ -54,10 +54,13 @@ $merchBorder: lighten($black,50%);
     .name { color:$red; }
   }
   a.grid-box:hover {
-    figure img { opacity: 0.5; }
+    //figure img { opacity: 0.5; }
     .details { color: $red; }
-    .name .title { text-decoration: underline; }
+    .name .text { text-decoration: underline; }
+    //.name .title { text-decoration: underline; }
     .almost-gone-text { fill:$red; }
+
+    
   }
 }
 

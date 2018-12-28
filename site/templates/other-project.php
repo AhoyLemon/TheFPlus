@@ -74,6 +74,17 @@
       <?php endif ?>
     <?php endif ?>
 
+    <!-- YouTube Video -->
+    <?php if (($page->category() == "video" || $page->category() == "qe") && $page->video_url()->isNotEmpty()) { ?>
+      <figure class="video" style="margin-bottom:2em;">
+        <?php 
+          $v = explode("/", $page->video_url());
+          $youTubeURL = "https://www.youtube.com/embed/" . $v[count($v) - 1];
+        ?>
+        <iframe src="<?= $youTubeURL; ?>" frameborder="0" allowfullscreen></iframe>
+      </figure>
+    <?php }  ?>
+
     <!-- SUMMARY TEXT -->
     <div class="article-text">
       <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
