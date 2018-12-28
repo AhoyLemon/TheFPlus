@@ -58,16 +58,17 @@ $logoLinkHeight: 160px;
       svg { transform:scale(1); transition: transform 0.1s linear; }
       a { color:rgba($copy,0.6);
         &:hover svg { transform: scale(1.35); }
-        &.twitter:hover { color:$color-twitter; }
-        &.ballpit:hover { color:$color-ballpit; }
-        &.youtube:hover { color:$color-youtube; }
-        &.rss:hover     { color:#FFA500; }
-        &.lemon:hover   { color:$color-lemon;  }
-        &.paypal:hover  { color:$color-paypal; }
-        &.itunes:hover  { color:#9933CC; }
-        &.github:hover  { color:$color-github; }
-        &.twitch:hover  { color:$color-twitch; }
-        &.damndog:hover { color:#222730; }
+        &.twitter:hover     { color:$color-twitter; }
+        &.ballpit:hover     { color:$color-ballpit; }
+        &.youtube:hover     { color:$color-youtube; }
+        &.rss:hover         { color:#FFA500; }
+        &.lemon:hover       { color:$color-lemon;  }
+        &.paypal:hover      { color:$color-paypal; }
+        &.itunes:hover      { color:#9933CC; }
+        &.github:hover      { color:$color-github; }
+        &.twitch:hover      { color:$color-twitch; }
+        &.damndog:hover     { color:#222730; }
+        &.pocketcasts:hover { color:$color-pocketcasts; }
         svg * { fill:currentColor; }
       }
     }

@@ -121,7 +121,16 @@ fields:
     icon: twitter
     width: 1/2
     required: true
-  
+
+  schema_sameas:
+    label: Schema SameAs
+    type: structure
+    entry: >
+      {{url}}
+    fields:
+      url:
+        label: URL
+        type: url
 
 
   description:

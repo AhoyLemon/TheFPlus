@@ -4,10 +4,11 @@
 
     
     <?php $ftag = urldecode(param('tag')); ?>
-    <ul class="tags filtered">
-      <label>browsing: </label>
-      <li class="tag selected"><?php echo $ftag ?></li>
-    </ul>
+
+    <div class="browsing-tag">
+      <span class="label">browsing</span>
+      <span class="tag selected"><?php echo $ftag ?></span>
+    </div>
     
     <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(16) ?>
     <?php snippet('briefs',  [ 'articles' => $articles]) ?>

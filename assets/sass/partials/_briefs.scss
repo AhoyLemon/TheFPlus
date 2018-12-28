@@ -131,36 +131,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 }
 
-/*
-@mixin summary600() {
-
-  .inner, .grid { grid-template-columns: repeat(2,1fr); }
-
-
-  figure { order: 1; padding-left:$padding; grid-row: span 3;
-    img { position: relative; transform: translateY(-20px); box-shadow: 0 0 6px rgba($black,0.45); }
-  }
-  header { order: 2;
-    
-    time { font-size:155%; }
-  }
-
-  &.episode {
-    .title { display: none; }
-  }
-
-  .episode-number { display: none; }
-
-  .cast { order: 3; padding: $padding;
-    > span { font-size:80%; }
-    ul { @include grammarArray(); }
-  }
-  .subject { order: 4; padding-left:$padding; padding-right:$padding; }
-  .timebox { display: none; }
-}
-*/
-
-
 @mixin summary360() {
 
   background-color: $card; color:$copy; border-color: darken($episode,35%);
@@ -222,6 +192,10 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     ul li, .source, .title { color:$link; }
   }
 
+}
+
+.browsing-tag { font-size:200%; margin-top:0.5em; margin-bottom: 0.5em;
+  .tag.selected { font-weight: $bold; }
 }
 
 @media (min-width:420px) {

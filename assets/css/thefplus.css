@@ -605,6 +605,9 @@ button.button:active {
   .sidebar .social-links a.damndog:hover {
     color: #222730;
   }
+  .sidebar .social-links a.pocketcasts:hover {
+    color: #EF4438;
+  }
   .sidebar .social-links a svg * {
     fill: currentColor;
   }
@@ -1647,34 +1650,16 @@ nav.toggle a:hover span {
   grid-column: span 2;
 }
 
-/*
-@mixin summary600() {
-
-  .inner, .grid { grid-template-columns: repeat(2,1fr); }
-
-
-  figure { order: 1; padding-left:$padding; grid-row: span 3;
-    img { position: relative; transform: translateY(-20px); box-shadow: 0 0 6px rgba($black,0.45); }
-  }
-  header { order: 2;
-    
-    time { font-size:155%; }
-  }
-
-  &.episode {
-    .title { display: none; }
-  }
-
-  .episode-number { display: none; }
-
-  .cast { order: 3; padding: $padding;
-    > span { font-size:80%; }
-    ul { @include grammarArray(); }
-  }
-  .subject { order: 4; padding-left:$padding; padding-right:$padding; }
-  .timebox { display: none; }
+.browsing-tag {
+  font-size: 200%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
-*/
+
+.browsing-tag .tag.selected {
+  font-weight: 700;
+}
+
 @media (min-width: 420px) {
   .summaries .brief {
     background-color: #fff;
@@ -3174,15 +3159,11 @@ figure.video iframe, figure.video object, figure.video embed {
   color: #c0282d;
 }
 
-.merch-grid a.grid-box:hover figure img {
-  opacity: 0.5;
-}
-
 .merch-grid a.grid-box:hover .details {
   color: #c0282d;
 }
 
-.merch-grid a.grid-box:hover .name .title {
+.merch-grid a.grid-box:hover .name .text {
   text-decoration: underline;
 }
 
