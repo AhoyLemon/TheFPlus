@@ -15,7 +15,10 @@
         "http://feeds.feedburner.com/TheFPlus",
         "https://twitter.com/TheFPlus",
         "https://plus.google.com/+TheFPlus",
-        "https://www.facebook.com/thefplus"
+        "https://github.com/AhoyLemon/TheFPlus/",
+        "https://www.twitch.tv/thefplus",
+        "https://www.facebook.com/thefplus",
+        "https://www.paypal.me/TheFPlus"
       ],
       "owns": {
         "@context": "https://schema.org",
@@ -41,6 +44,4 @@
 
     <?php snippet('briefs',  [ 'articles' => $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12)]) ?>
   </main>
-
-<?php snippet('disqus-alt', array('allow_comments' => false)) ?>
 <?php snippet('footer') ?>

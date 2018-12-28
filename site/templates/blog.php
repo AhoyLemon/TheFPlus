@@ -11,6 +11,12 @@
   ?>
 
   <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <?php if ($page->cover()->isNotEmpty()) { ?>
+      <img itemprop="image" src="<?= $page->cover()->toFile()->url(); ?> " class="cover" alt="<?= $page->title(); ?>" />
+    <?php } ?>
+
+
     <header>
       <meta itemprop="mainEntityOfPage" content="<?php echo $page->url(); ?>" />
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
@@ -45,12 +51,8 @@
         </div>
       <?php endif; ?>
     </header>
-    
-    <?php if ($page->cover() != "") { ?>
-      <img itemprop="image" src="<?= $page->cover()->toFile()->url(); ?> " class="cover" alt="<?= $page->title(); ?>" />
-    <?php } ?>
 
-    <div class="content article-text" itemprop="articleBody">
+    <div class="content" itemprop="articleBody">
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
@@ -128,7 +130,7 @@
   </article>
 
   <section class="comments disqus">
-    <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+    <?php snippet('disqus', array('allow_comments' => true)) ?>
   </section>
 
 </main>

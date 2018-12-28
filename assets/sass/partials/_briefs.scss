@@ -106,15 +106,10 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 
-.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end; padding-top:($padding *2); padding-right: ($padding * 2);
-  /*
-  @media (min-width: 2301px)                         { grid-template-columns: repeat(6,1fr); }
-  @media (min-width: 1901px) and (max-width: 2300px) { grid-template-columns: repeat(5,1fr); }
-  @media (min-width: 1601px) and (max-width: 1900px) { grid-template-columns: repeat(4,1fr); }
-  @media (min-width: 1001px) and (max-width:1600px)  { grid-template-columns: repeat(3,1fr); }
-  @media (min-width: 461px) and (max-width:1000px)   { grid-template-columns: repeat(2,1fr); }
-  @media (max-width: 460px)                          { grid-template-columns: 1fr; }
-  */
+.summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;
+
+  @media (min-width:$desktop-min) { padding-top:($gap * 4); padding-right:($gap * 3); }
+  @media (max-width:$mobile-max)  { padding-top:($gap * 2); padding-right:($gap * 2); }
 
   .brief { position:relative; color:$black; text-decoration: none;
 
@@ -136,6 +131,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 }
 
+/*
 @mixin summary600() {
 
   .inner, .grid { grid-template-columns: repeat(2,1fr); }
@@ -162,6 +158,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   .subject { order: 4; padding-left:$padding; padding-right:$padding; }
   .timebox { display: none; }
 }
+*/
 
 
 @mixin summary360() {
@@ -202,8 +199,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     span { font-size: 80%; }
     time { font-size:110%; font-weight: $bold; } 
   }
-
-  figcaption { }
   .cast { order: 4; padding-left:$padding; padding-right:$padding;
     span { font-size:80%; }
     ul { @include grammarArray(); }
@@ -228,15 +223,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   }
 
 }
-
-
-/*
-@media (min-width:1901px) {
-  .summaries { grid-template-columns: repeat(auto-fill,600px); 
-    .brief { @include summary600(); } 
-  } 
-}
-*/
 
 @media (min-width:420px) {
   .summaries { 

@@ -92,6 +92,6 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
 
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 
-  <?php snippet('svg') ?>
+  <?php /* snippet('svg') */ ?>
   <?php /* snippet('mobile-menu') */ ?>
   <?php snippet('menu-test') ?>
