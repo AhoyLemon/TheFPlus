@@ -97,7 +97,7 @@ $merchBorder: lighten($black,50%);
 
 
 
-.product-photos { @include flex-container(); justify-content: space-between;
+.product-photos { @include flex-container();
   .photo-holder { margin-bottom: $gap; }
   a.zoom { position: relative; display: block; background:$red; overflow: hidden; cursor: zoom-in;
     img { border:2px solid $red; }

@@ -6,47 +6,128 @@ fields:
   title:
     label: Title
     type:  text
-    width: 1/2
-  cover:
-    label: Cover Image
-    type: image
-    width: 1/2
+    ## width: 1/2
   date:
-    label: Last Release Date
+    label: Release Date
     type: date
     format: MM/DD/YYYY
     width: 1/4
   time:
-    label: Last Release Time
+    label: Release Time
     type: time
     interval: 1
     width: 1/4
-  product_image_type:
-    label: Product Image Type
+  cover:
+    label: Teaser Image
+    type: image
+    width: 1/2
+
+  product_type:
+    label: Product Type
     type: fieldtoggle
-    required: true
+    options:
+      single: Single (like passports)
+      series: Series (like stickers)
+      sizes: Sizes (like shirts)
+    show:
+      single: buy_headline buy_slug buy_price buy_form_extra_html soldout
+      series: products
+      sizes: sizes
+      
+    hide:
+      single: products sizes
+      series: sizes buy_headline buy_slug buy_price buy_form_extra_html soldout
+      sizes: products buy_headline buy_slug buy_price buy_form_extra_html soldout
+      
+
+  #product_image_type:
+    #label: Product Image Type
+    #type: fieldtoggle
+    #required: true
+    #width: 1/4
+    #options:
+      #square: Square
+      #maxheight: Max Height
+    #show:
+      #maxheight: figure_bg
+    #hide:
+      #square: figure_bg
+  
+  #figure_bg:
+    #label: Figure Background
+    #type: image
+    #width: 1/4
+  
+  show_image:
+    label: Show image on page?
+    type: fieldtoggle
+    options:
+      false: "No"
+      true: "Yes"
+    show:
+      true: show_different_image
+    hide:
+      false: show_different_image page_image
+    width: 1/4
+
+  show_different_image:
+    label: Show different image on page?
+    type: fieldtoggle
     width: 1/4
     options:
-      square: Square
-      maxheight: Max Height
+      no:  "No"
+      yes: "Yes"
     show:
-      maxheight: figure_bg
+      yes: page_image
     hide:
-      square: figure_bg
-  figure_bg:
-    label: Figure Background
+      no: page_image
+  page_image:
+    label: Page Image
     type: image
-    width: 1/4
+    width: 1/2
+
   cast:
     label: Artists
     type: tags
     icon: users
+    width: 1/2
+  baseprice:
+    label: Base Price
+    type: text
+    placeholder: "(include $)"
+    width: 1/4
+  soldout:
+    label: Sold Out?
+    type: checkbox
+    width: 1/4
+    text: Yes, sold out.
+
+  
   text:
     label: Item Summary
     type: markdown
 
+  buy_headline:
+    label: Buy Now
+    type: headline
+  buy_slug:
+    label: PayPal Slug
+    type: text
+    width: 1/4
+  buy_price:
+    label: Price
+    type: number
+    step: .01
+    width: 1/4
+  buy_form_extra_html:
+    label: Form Extra HTML
+    type: textarea
+    buttons: null
+    help: like if you need a select or whatever
+    width: 1/2
+
   products:
-    label: Products
+    label: Product Series
     type: structure
     entry: >
       {{title}}
@@ -159,6 +240,19 @@ fields:
         label: Slug
         type: text
         width: 1/2
+
+  sizes:
+    type: structure
+    entry: >
+      {{title}}
+    fields:
+      title:
+        label: Title
+        type: text
+      slug:
+        label: Slug
+        type: text
+
   photos_leadin:
     label: Photo Lead In Text
     type: text
