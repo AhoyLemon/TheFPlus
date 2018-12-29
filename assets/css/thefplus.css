@@ -1371,16 +1371,6 @@ article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-t
   font-size: 1.2em;
 }
 
-.summaries .brief {
-  /*
-    .title { display:block; position: relative; height: 1.8rem; margin: 0;
-      a { display:block; @include position(absolute,0,0,0,0); @extend %truncate; font-size:1.2rem; font-weight: $bold; cursor: pointer; text-decoration: none;
-        &:hover { text-decoration: underline; }
-      }
-    }
-    */
-}
-
 .summaries .brief header {
   padding: 0 1em .25em 1em;
 }
@@ -1515,7 +1505,35 @@ article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-t
   transform: scale(1);
 }
 
-@media (min-width: 420px) {
+.pagination .pagination-links {
+  text-align: center;
+}
+
+.pagination .pagination-links a {
+  display: inline-block;
+  line-height: 170%;
+  background: #fff;
+  padding-left: .4em;
+  padding-right: 0.4em;
+  width: 1.8em;
+  border-radius: 50%;
+  height: 1.8em;
+  margin-right: .25em;
+  margin-bottom: 0.25em;
+}
+
+.pagination .pagination-links a[href]:hover {
+  background: #c0282d;
+  color: #fff;
+}
+
+.pagination .pagination-links a.active {
+  background: #676767;
+  color: #fff;
+  cursor: text;
+}
+
+@media (min-width: 1000px) {
   .pagination {
     grid-template-columns: 180px 1fr 180px;
   }
@@ -1523,35 +1541,35 @@ article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-t
     grid-column: 2;
     text-align: center;
     grid-gap: 20px;
+    padding-top: 0.7em;
   }
   .pagination .pagination-links a {
-    font-size: 26px;
-    display: inline-block;
-    margin-right: 0.5em;
-    line-height: 200%;
-  }
-  .pagination .pagination-links a.active {
-    color: #121212;
-    cursor: default;
+    text-align: center;
+    font-size: 1rem;
   }
   .pagination .next {
     grid-column: 3;
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 999px) {
   .pagination {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
   }
   .pagination .prev {
     grid-column: 1;
+    font-size: 130%;
   }
   .pagination .pagination-links {
     grid-column: span 2;
     font-size: 26px;
     display: inline-block;
     margin-right: 0.5em;
+  }
+  .pagination .pagination-links a {
+    text-align: center;
+    font-size: 1rem;
   }
   .pagination .next {
     grid-column: 2;
@@ -3230,7 +3248,6 @@ figure.video iframe, figure.video object, figure.video embed {
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-  justify-content: space-between;
 }
 
 .product-photos .photo-holder {
