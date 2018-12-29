@@ -25,46 +25,37 @@
 
     <a class="brief <?= $briefType; ?>" href="<?= $article->url(); ?>" title="<?= $altText; ?>">
       <div class="inner">
-        <header class="name-and-title">
-          <h2 class="title"><?= $article->title(); ?></h2>
-          <?php if ($briefType == 'episode') { ?>
-            <span class="episode-number"><?php echo $article->uid(); ?></span>
-          <?php } ?>
-        </header>
 
-        <?php if ($briefType == "wrote") { ?>
-          <figcaption>
-            <div class="description">
-              <p><?php echo excerpt($article->text(), 420) ?></p>
-            </div>
-          </figcaption>
-        <?php } ?>
-
-        <?php if ($briefType == "also-made") { ?>
-          <figcaption>
-            <div class="description">
-              <p><?php echo excerpt($article->text(), 100) ?></p>
-            </div>
-          </figcaption>
-        <?php } ?>
-
-
+        <?php /* Brief Image */ ?>
         <?php if ($briefType != "wrote") { ?>
           <figure>
-            <?php if ($article->cover() != "") { ?>
-              <img src="<?= $article->cover()->toFile()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
-            <?php } /* else { ?>
-              <img src="<?= $article->image()->url(); ?>" class="cover" alt="<?= $article->title(); ?>" />
-            <?php }  */ ?>
+            <?php if ($article->cover()->isNotEmpty()) { ?>
+              <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
+            <?php } else if ($article->image()->isNotEmpty())  { ?>
+              <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
+            <?php } ?>
           </figure>
         <?php } ?>
-        
-        <?php /* if ($briefType == "episode") { ?>
-          <div class="release-date">
-            <span>Released</span>
-            <time><?= date('D, M jS Y', $article->date()); ?></time>
+
+
+        <?php /* Title */ ?>
+        <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
+          <div class="name-and-title">
+            <h2 class="title"><?= $article->title(); ?></h2>
           </div>
-          <?php } */ ?>
+        <?php } ?>
+
+        <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
+          <figcaption>
+            <div class="description">
+              <?php if ($briefType == "wrote") {
+                echo excerpt($article->text(), 420);
+              } else if ($briefType == "also-made") {
+                echo excerpt($article->text(), 100);
+              } ?>
+            </div>
+          </figcaption>
+        <?php } ?>
 
         <?/* Category */ ?>
         <?php if ($briefType == 'also-made') { ?>
