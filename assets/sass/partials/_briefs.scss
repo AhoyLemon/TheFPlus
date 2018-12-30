@@ -144,7 +144,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   }
   
   figure { order:1; transition:transform 0.2s ease;
-    img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); 
+    img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); width:100%;
       &.no-shadow { box-shadow:none; }
     }
   }
@@ -195,6 +195,20 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     ul li, .source, .title { color:$link; }
   }
 
+
+
+  &.double-size { grid-column: span 2; 
+    //.inner { display: grid; grid-template-columns:1fr 1fr; }
+    .inner { display: block; }
+    time { display: block; font-size:125%; font-weight: $bold; }
+    figure { width:50%; float: right; }
+    figcaption {
+      > * { padding-bottom:$padding; padding-left:0; padding-right: 0; }
+    }
+  }
+
+
+
 }
 
 .browsing-tag { font-size:200%; margin-top:0.5em; margin-bottom: 0.5em;
@@ -210,7 +224,9 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 @media (max-width:419px) {
   .summaries { grid-template-columns: 1fr; 
-    .brief { @include summary360(); }
+    .brief { @include summary360();
+      &.double-size { grid-column: span 1; }
+    }
   } 
 }
 

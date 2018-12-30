@@ -1636,6 +1636,7 @@ nav.toggle a:hover span {
     position: relative;
     transform: translate(20px, -20px);
     box-shadow: 0 0 6px rgba(52, 52, 52, 0.45);
+    width: 100%;
   }
   .summaries .brief figure img.no-shadow {
     box-shadow: none;
@@ -1788,6 +1789,26 @@ nav.toggle a:hover span {
   }
   .summaries .brief:hover ul li, .summaries .brief:hover .source, .summaries .brief:hover .title {
     color: #c0282d;
+  }
+  .summaries .brief.double-size {
+    grid-column: span 2;
+  }
+  .summaries .brief.double-size .inner {
+    display: block;
+  }
+  .summaries .brief.double-size time {
+    display: block;
+    font-size: 125%;
+    font-weight: 700;
+  }
+  .summaries .brief.double-size figure {
+    width: 50%;
+    float: right;
+  }
+  .summaries .brief.double-size figcaption > * {
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -1816,6 +1837,7 @@ nav.toggle a:hover span {
     position: relative;
     transform: translate(20px, -20px);
     box-shadow: 0 0 6px rgba(52, 52, 52, 0.45);
+    width: 100%;
   }
   .summaries .brief figure img.no-shadow {
     box-shadow: none;
@@ -1968,6 +1990,29 @@ nav.toggle a:hover span {
   }
   .summaries .brief:hover ul li, .summaries .brief:hover .source, .summaries .brief:hover .title {
     color: #c0282d;
+  }
+  .summaries .brief.double-size {
+    grid-column: span 2;
+  }
+  .summaries .brief.double-size .inner {
+    display: block;
+  }
+  .summaries .brief.double-size time {
+    display: block;
+    font-size: 125%;
+    font-weight: 700;
+  }
+  .summaries .brief.double-size figure {
+    width: 50%;
+    float: right;
+  }
+  .summaries .brief.double-size figcaption > * {
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .summaries .brief.double-size {
+    grid-column: span 1;
   }
 }
 
