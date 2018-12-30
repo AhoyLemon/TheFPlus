@@ -45,7 +45,7 @@
     </summary>
   <?php } ?>
 
-  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')]) ?>
+  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')->paginate(14)]) ?>
 
   <?php /* foreach($results->sortBy('date', 'desc') as $result): ?>    
     <article class="<?php echo html($result->parent()->slug()) ?> brief">
