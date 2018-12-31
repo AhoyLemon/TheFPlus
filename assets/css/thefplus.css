@@ -1045,10 +1045,6 @@ article.full header h1 {
   margin-bottom: 0.3em;
 }
 
-article.full header time, article.full header .featured-site {
-  font-size: 70%;
-}
-
 article.full .article-text {
   text-align: justify;
   letter-spacing: 180%;
