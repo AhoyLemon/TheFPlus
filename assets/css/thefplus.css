@@ -571,6 +571,8 @@ button.button:active {
   }
   .sidebar .social-links a {
     color: rgba(52, 52, 52, 0.6);
+    width: 42px;
+    height: 42px;
   }
   .sidebar .social-links a:hover svg {
     transform: scale(1.35);
