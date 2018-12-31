@@ -133,7 +133,6 @@ article.full {
 article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:40px;
   header { margin-bottom: 0.5em;
     h1 { font-size:150%; font-weight:600; margin-bottom:0.3em; }
-    time, .featured-site { font-size:70%; }
   }
   .article-text { text-align: justify; letter-spacing: 180%; }
   img.cover { box-shadow: 0 0 6px rgba($black,0.45);
