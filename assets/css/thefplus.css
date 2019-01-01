@@ -2022,6 +2022,12 @@ nav.toggle a:hover span {
   }
 }
 
+@media (min-width: 730px) and (max-width: 790px) {
+  .summaries .brief.double-size {
+    grid-column: span 1;
+  }
+}
+
 @media (min-width: 420px) and (max-width: 1019px) {
   .summaries {
     grid-template-columns: repeat(auto-fill, 330px);

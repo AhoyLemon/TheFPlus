@@ -66,7 +66,7 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet">
   <!-- Master CSS -->
   <?php /* <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?> */ ?>
-  <?= css('assets/css/thefplus.css'); ?>
+  <?= css('assets/css/thefplus.css?updated=2018-01-01'); ?>
 
 </head>
 <body>
