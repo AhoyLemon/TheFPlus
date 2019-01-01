@@ -480,7 +480,7 @@ button.button:active {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 160px;
+    height: 150px;
   }
   .sidebar .logo-link .logo-notch, .sidebar .logo-link .grow-circle, .sidebar .logo-link .grow-circle-2 {
     display: none;
@@ -490,9 +490,9 @@ button.button:active {
   }
   .sidebar .logo-link .logo-mark {
     position: absolute;
-    bottom: -70px;
+    bottom: -45px;
     left: 10px;
-    width: 224px;
+    width: 192px;
     transition: all 1s ease;
   }
   .sidebar .logo-link .logo-type {
@@ -501,7 +501,7 @@ button.button:active {
     top: 30%;
     width: 160px;
     transition: all 1s ease;
-    transform: translateY(192px);
+    transform: translateY(180px);
   }
   .sidebar .logo-link .slogan {
     position: absolute;
@@ -536,7 +536,7 @@ button.button:active {
   .sidebar .sidebar-links {
     position: absolute;
     right: 40px;
-    bottom: 184px;
+    bottom: 202.5px;
     left: 40px;
   }
   .sidebar .sidebar-links a {
@@ -558,7 +558,7 @@ button.button:active {
   }
   .sidebar .social-links {
     position: fixed;
-    bottom: 125px;
+    bottom: 150px;
     left: 30px;
     width: 192px;
     display: grid;
@@ -672,7 +672,7 @@ button.button:active {
     transition: transform 1s ease 0s, opacity 0.15s linear 0.8s;
   }
   .sidebar .logo-link .grow-circle-2 * {
-    fill: #ed2024;
+    fill: #C0282D;
   }
   .sidebar .logo-link.active .logo-mark {
     transform: scale(1.5) translate(30%, -20%);
