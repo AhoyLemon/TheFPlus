@@ -17,7 +17,7 @@
   }
 }
 
-$logoLinkHeight: 160px;
+$logoLinkHeight: 150px;
 
 @media (min-width: $desktop-min) {
   .mobile-only { display: none !important; }
@@ -29,7 +29,7 @@ $logoLinkHeight: 160px;
     .logo-link { display: block; @include position(absolute,null,0,0,0); height:$logoLinkHeight;
       .logo-notch, .grow-circle, .grow-circle-2 { display: none; }
       * { pointer-events: none; }
-      .logo-mark { position: absolute; bottom:-70px; left:10px; width:($sidebar * 0.7); transition:all 1s ease; }
+      .logo-mark { position: absolute; bottom:-45px; left:10px; width:($sidebar * 0.6); transition:all 1s ease; }
       .logo-type { position:absolute; right:30px; top:30%; width:($sidebar * 0.5); transition:all 1s ease; transform: translateY(($logoLinkHeight * 1.2))  }
       .slogan { position:absolute; bottom: 10px; right:10px; width:($sidebar * 0.46); opacity:0; transition: all 1s ease; transform:translateX(100%); font-size:12px;
         span { display: block; text-decoration: none; font-style: italic;
@@ -45,7 +45,7 @@ $logoLinkHeight: 160px;
     }
 
 
-    .sidebar-links { @include position(absolute,null,40px,($logoLinkHeight * 1.15),40px);
+    .sidebar-links { @include position(absolute,null,40px,($logoLinkHeight * 1.35),40px);
       a { display: block; margin-bottom: 0.8em; color:rgba($black,0.8); text-decoration: none; font-size:1.2rem;
         &:hover { color:$link; text-decoration: underline; }
       }
@@ -54,7 +54,7 @@ $logoLinkHeight: 160px;
       }
     }
 
-    .social-links {  @include position(fixed,null,null,125px,30px); width:($sidebar * 0.6); display:grid; grid-template-columns: repeat(4,1fr); gap:3px;
+    .social-links {  @include position(fixed,null,null,($logoLinkHeight * 1),30px); width:($sidebar * 0.6); display:grid; grid-template-columns: repeat(4,1fr); gap:3px;
       svg { transform:scale(1); transition: transform 0.1s linear; }
       a { color:rgba($copy,0.6); width:42px; height: 42px;
         &:hover svg { transform: scale(1.35); }
@@ -109,7 +109,7 @@ $z-social-links: 46;
         opacity: 0;
         transition: transform 1s ease 0s, opacity 0.15s linear 0.8s;
         * {
-          fill:#ed2024;
+          fill:#C0282D;
         }
       }
 
