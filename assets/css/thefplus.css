@@ -865,7 +865,7 @@ article .cast li:last-child:before {
 }
 
 article .cast li:last-child:after {
-  content: '';
+  content: '.';
 }
 
 article .cast li:first-child:before {
