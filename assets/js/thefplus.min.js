@@ -94,7 +94,7 @@ $('a.social').click(function(event) {
 });
 
 
-// Google Analytics commands
+// Play an episode
 $('audio').on('play', function(){
   if (episodePlayed === false) {
     trackEvent("listen", "play", p);
@@ -102,26 +102,17 @@ $('audio').on('play', function(){
   }
 });
 
+// Download an episode
 $('a.action.download').click(function() {
   trackEvent("listen", "download", p);
 });
 
+// Read a document
 $('a.action.read').click(function() {
   trackEvent("read document", "document", p);
 });
 
-$('.sidebar .circles a').click(function() {
-  if ( $(this).hasClass('twitter') ) {
-    trackEvent("outside link", "Twitter", "sidebar");
-  } else if ( $(this).hasClass('ballpit') ) {
-    trackEvent("outside link", "ballp.it", "sidebar");
-  } else if ( $(this).hasClass('youtube') ) {
-    trackEvent("outside link", "YouTube", "sidebar");
-  } else if ( $(this).hasClass('rss') ) {
-    trackEvent("outside link", "Feedburner", "sidebar");
-  }
-});
-
+// Use donation form.
 $('#DonateButton').click(function() {
   var d = "$" + $('#DonationAmount').val();
   var v = $('#DonationAmount').val();
@@ -129,6 +120,7 @@ $('#DonateButton').click(function() {
 });
 
 
+// Hide/Show the merch count, depending on if you've seen the merch page this session.
 if (typeof(Storage) !== "undefined") {
   // Code for localStorage/sessionStorage.
   if (sessionStorage.merchVisited) {

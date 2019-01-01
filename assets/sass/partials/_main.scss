@@ -202,8 +202,8 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 
 @media (min-width:1401px) {
   article.full { font-size:22px; }
-  article {
-    .article-text { max-width: 32em; }
+  article.episode {
+    .article-text { max-width: 34em; }
   }
 }
 
@@ -242,6 +242,9 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   }
 
   article.full.default { max-width: 42em; margin-right: auto; margin-left:auto; }
+  article.full.blog { max-width: 42em; margin-right: auto; margin-left:auto;
+    .author { margin-bottom: 1em; }
+  }
 }
 
 // MOBILE BREAKPOINT

@@ -24,10 +24,10 @@ $tag-border: rgba($black,0.8);
 }
 
 
-ul.tagcloud { text-align: justify;
+ul.tagcloud { padding:0 !important; 
   > li { display: inline-block; margin-bottom: $gap; }
   a { @extend %tag; font-size:0.8em;  
-    &[href] { background:transparent; color:$copy;
+    &[href] { background:transparent; color:$copy; margin: 0;
       &:hover { background:rgba($link,0.1); color:rgba($link,0.9); }
     }
   }

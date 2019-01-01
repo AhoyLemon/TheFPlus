@@ -27,7 +27,7 @@
 
   <meta http-equiv="last-modified" content="<?php echo $page->modified('Y-m-d@H:i:s'); ?>" />
   
-  <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
+  <article class="episode full" itemscope itemtype="http://schema.org/Episode">
     
     <figure>
       <?php if($page->cover() != "") { ?>

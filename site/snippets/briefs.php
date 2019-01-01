@@ -31,15 +31,13 @@
         <div class="inner">
 
           <?php /* Brief Image */ ?>
-          <?php if ($briefType != "wrote") { ?>
-            <figure>
-              <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
-              <?php } else if ($article->image()->isNotEmpty())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
-              <?php } ?>
-            </figure>
-          <?php } ?>
+          <figure>
+            <?php if ($article->cover()->isNotEmpty()) { ?>
+              <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
+            <?php } else if ($article->image()->isNotEmpty())  { ?>
+              <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
+            <?php } ?>
+          </figure>
 
           <figcaption>
 
@@ -48,7 +46,11 @@
             <h2 class="title"><?= $article->title(); ?></h2>
 
             <div class="description">
-              <?php echo excerpt($article->text(), 460); ?>
+              <?php if ($briefType == "wrote") {
+                echo excerpt($article->text(), 700);
+              } else {
+                echo excerpt($article->text(), 460);
+              } ?>
             </div>
             
 
