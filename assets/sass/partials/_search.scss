@@ -1,3 +1,5 @@
+/*
+
 .page-search { padding-top: 1em; @include flex-container();
   input[type=search] { @include flex-item(80%); font-family:$sans-serif; font-size: 3vw; padding: 0.25em 1em; color:lighten($black,20%); border:1px solid lighten($black,20%); border-right:none; }
   input[type=submit] { @include flex-item(20%); font-family:$sans-serif; font-size: 2vw; background-color:$episode; color:$red; border:1px solid $red;
@@ -11,7 +13,35 @@
   p { color:rgba($black,0.75); margin-bottom: 1em; }
   b { font-weight: $bold; }
 }
+*/
 
-#SidebarSearch { margin-top: 1em; padding: 0.25em 1em; background-color: transparent; border: 1px solid $white; font-size: 1.1em; font-family:$sans-serif; color: $white;
-  &:hover, &:focus { background-color: $white; color:$black; }
+main.search { 
+  form { @include flex-container();
+    .input-holder { @include flex-item(50%); }
+    input, button { font-family:$sans-serif; background:transparent; border:none; color:$black; }
+    input { font-size:3vw; border-bottom:0.05em solid rgba($black,0.8); font-weight: $light; width: 99%;
+      &:focus, &:active, :hover { border-color:$link; color:$link; }
+    }
+    button { font-size:2vw; @include flex-item(6em,0,0);
+      &:focus, &:active, &:hover { background-color:$link; color:$white; }
+    }
+  }
+}
+
+
+@media (min-width:$desktop-min) {
+  main.search {
+    form {
+      input { font-size:50px; }
+      button { font-size:30px; }
+    }
+  }
+}
+@media (max-width:$mobile-max) {
+  main.search {
+    form { 
+      input { font-size:32px;  }
+      button { font-size:20px;  }
+    }
+  }
 }

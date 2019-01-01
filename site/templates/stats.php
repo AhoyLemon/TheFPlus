@@ -2,7 +2,7 @@
 
   
   <main class="main page" role="main">
-    <link href="/assets/css/stats.css" rel="stylesheet" type="text/css">
+    <?= css('assets/css/stats.css'); ?>
     <?php $episodes = $site->find('episode')->children()->visible(); ?>
     
     <?php $ridiculists = array(); $total_days = 0; $total_hours = 0; $total_minutes = 0; $total_seconds = 0; ?>

@@ -41,7 +41,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="<?= $site->url(); ?>/manifest.json">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0282d">
   <meta name="apple-mobile-web-app-title" content="The F Plus">
   <meta name="application-name" content="The F Plus">
@@ -82,14 +82,16 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   
   <!-- Font -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?>
+  <?php /* <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?> */ ?>
+  <?= css('assets/css/thefplus.css'); ?>
 
 </head>
 <body>
 
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 
-  <?php snippet('svg') ?>
-  <?php snippet('mobile-menu') ?>
-  <?php snippet('menu') ?>
+  <?php /* snippet('svg') */ ?>
+  <?php /* snippet('mobile-menu') */ ?>
+  <?php snippet('sidebar') ?>

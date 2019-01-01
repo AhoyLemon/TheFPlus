@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/
 .sticker-buy-buttons {
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -38,7 +43,7 @@
     float: left;
     margin-right: 20px; }
   .sticker-series .series-name {
-    font-weight: 500; }
+    font-weight: 700; }
   .sticker-series .run:before {
     content: ' • '; }
   .sticker-series .remaining:before {

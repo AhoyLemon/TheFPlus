@@ -3,7 +3,6 @@ panel/
 kirby/
 crap/
 podcasts/
-content/
 backup/
 site/accounts
 site/cache
@@ -11,3 +10,7 @@ site/config/config.php
 thumbs/
 stripe/
 json/
+
+
+content/
+!site.txt

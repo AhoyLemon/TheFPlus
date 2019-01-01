@@ -26,6 +26,15 @@
   ?>
 
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
+
+    <figure>
+      <?php if($page->cover() != "") { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
+      <?php } else if($image = $page->image()) { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
+      <?php } ?>
+    </figure>
+
     <header>
       <h1>
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
@@ -43,12 +52,6 @@
         </span>
       </time>
     </header>
-    
-    <?php if($page->cover() != "") { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
-    <?php } else if($image = $page->image()) { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="Adjudicated Guess Episode <?php echo $page->uid() ?>">
-    <?php } ?>
 
     <!-- CAST LIST -->
     <ul class="cast authors ridiculists info-block">
@@ -83,59 +86,8 @@
       <?php echo $page->parent()->subscribe()->kirbytext(); ?>
     </div>
 
-    <div class="episode-actions">
-      <!-- DOWNLOAD FILE -->
-      <?php if ($page->episode_file() != ""): ?>
-        <a itemprop="audio" class="action download" href="/podcasts/<?php echo $page->episode_file() ?>" title="Download episode" download>
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconDownload"></use>
-          </svg>
-          <span class="label go-right">Download this episode</span>
-        </a>
-      <?php endif; ?>
+    <?php snippet('episode-actions') ?>
 
-      <!-- AUDIO CONTAINER -->
-      <?php if ($page->episode_file() != ""): ?>
-        <div class="audio-holder" itemprop="audio">
-          <audio src="/podcasts/<?php echo $page->episode_file() ?>" preload="none" controls></audio>
-        </div>
-      <?php endif; ?>
-      
-      <!-- Contribute To The F Plus -->
-      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
-        <svg viewBox="0 0 100 100">
-          <use class="top lid" xlink:href="#IconContributeTop"></use>
-          <use class="bottom" xlink:href="#IconContributeBottom"></use>
-        </svg>
-        <span class="label">Contribute to the Podcast</span>
-      </a>
-
-      <!-- TWEET THIS -->
-      <a class="social twitter" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode($page->title()); ?>%0A&url=<?php echo rawurlencode($page->url()); ?>&via=TheFPlus" target="_blank" title="Tweet this">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTwitter"></use>
-        </svg>
-        <span class="label">Tweet this episode</span>
-      </a>
-      
-      <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconFacebook"></use>
-        </svg>
-        <span class="label">Share on Facebook</span>
-      </a>
-      
-      <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTumblr"></use>
-        </svg>
-        <span class="label">Post to Tumblr</span>
-      </a>
-         
-    </div>
-
-    
     <!-- SOURCES -->
     
     <?php if ($page->sources() != "") { ?>
@@ -171,7 +123,7 @@
   </article>
 
   <section class="comments disqus">
-    <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+    <?php snippet('disqus', array('allow_comments' => true)) ?>
   </section>
 
 </main>

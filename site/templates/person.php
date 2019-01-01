@@ -3,7 +3,16 @@
   <main class="main page" role="main">
     
     <article class="person full <?php echo $page->role() ?>" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="url" content="<?php echo $page->url() ?>" />
+    
+      <figure>
+        <?php if($page->cover() != "") { ?>
+          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="headshot cover" alt="Allegedly, a photo of <?php echo $page->title() ?>">
+        <?php } else if($image = $page->image()) { ?>
+          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="headshot cover" alt="Allegedly, a photo of <?php echo $page->title() ?>">
+        <?php } ?>
+      </figure>
+
+
       <header>
       <!-- NAME -->
       <h1>
@@ -67,15 +76,8 @@
         <?php endif ?>
       </ul>
     </header>
-      <!-- PHOTO -->
-      
-      <?php if($page->cover() != "") { ?>
-        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="headshot" alt="Allegedly, a photo of <?php echo $page->title() ?>">
-      <?php } else if($image = $page->image()) { ?>
-        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="headshot" alt="Allegedly, a photo of <?php echo $page->title() ?>">
-      <?php } ?>
-      
-      
+    
+    
       <?php /*
       <?php if($image = $page->image()): ?>
         <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="headshot" alt="Allegedly, a photo of <?php echo $page->title() ?>">

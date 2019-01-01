@@ -1,85 +1,61 @@
+/*
+$body: #222;
+$card: #000;
+$copy: $white;
+*/
 .issue-box {
   border: 1px solid #4e7f71;
-  margin-bottom: 2em;
-}
-
-.issue-box header {
-  background-color: #4e7f71;
-  color: #eee;
-  padding: 0 10px !important;
-}
-
-.issue-box header span {
-  font-size: 1.7em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.issue-box dt {
-  border-top: 1px solid #4e7f71;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.issue-box dd {
-  padding: 0 10px 10px 10px;
-  font-size: 80%;
-}
-
-.issue-box .title {
-  font-size: 1.25em;
-  font-weight: 400;
-  color: #4e7f71;
-}
-
-.issue-box .type {
-  font-size: 90%;
-}
-
-.issue-box .type:before {
-  content: "(";
-}
-
-.issue-box .type:after {
-  content: ")";
-}
-
-.issue-box .description {
-  display: block;
-}
-
-.issue-box .date {
-  display: block;
-  text-align: right;
-}
+  margin-bottom: 2em; }
+  .issue-box header {
+    background-color: #4e7f71;
+    color: #eee;
+    padding: 0 10px !important; }
+    .issue-box header span {
+      font-size: 1.7em;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .issue-box dt {
+    border-top: 1px solid #4e7f71;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .issue-box dd {
+    padding: 0 10px 10px 10px;
+    font-size: 80%; }
+  .issue-box .title {
+    font-size: 1.25em;
+    font-weight: 400;
+    color: #4e7f71; }
+  .issue-box .type {
+    font-size: 90%; }
+    .issue-box .type:before {
+      content: "("; }
+    .issue-box .type:after {
+      content: ")"; }
+  .issue-box .description {
+    display: block; }
+  .issue-box .date {
+    display: block;
+    text-align: right; }
 
 #LoadingIssues {
   padding-bottom: 1em;
-  text-align: center;
-}
+  text-align: center; }
 
 .issues-nav {
   text-align: center;
-  padding-bottom: 1em;
-}
-
-.issues-nav.hidden {
-  display: none;
-}
-
-.issues-nav button {
-  font-family: "Source Sans Pro", sans-serif;
-  background-color: #eee;
-  color: #c0282d;
-  border: 1px solid #c0282d;
-  font-size: 1em;
-  cursor: pointer;
-  outline: none;
-  font-weight: 300;
-  padding: 0.25em 0.75em;
-}
-
-.issues-nav button:hover, .issues-nav button.active {
-  background-color: #c0282d;
-  color: #eee;
-}
+  padding-bottom: 1em; }
+  .issues-nav.hidden {
+    display: none; }
+  .issues-nav button {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #eee;
+    color: #c0282d;
+    border: 1px solid #c0282d;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    font-weight: 300;
+    padding: .25em .75em; }
+    .issues-nav button:hover, .issues-nav button.active {
+      background-color: #c0282d;
+      color: #eee; }

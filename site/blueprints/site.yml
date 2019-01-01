@@ -15,6 +15,100 @@ fields:
   title:
     label: Title
     type:  text
+
+  sidebar_links:
+    label: Sidebar Links
+    type: builder
+    fieldsets:
+      page_link:
+        label: Page Link
+        entry: >
+          <a href="https://thefpl.us/{{slug}}">{{text}}</a>
+        fields:
+          slug:
+            label: Page
+            type: select
+            options: children
+            width: 1/2
+          text:
+            label: Text
+            type: Text
+            width: 1/2
+      custom_url:
+        label: Custom URL
+        entry: >
+          <a href="{{slug}}">{{text}}</a>
+        fields:
+          url:
+            label: URL
+            type: url
+            width: 1/2
+          text:
+            label: Text
+            type: text
+            width: 1/2
+      merch_page:
+        label: Merch Page
+        fields:
+          url:
+            label: " "
+            type: info
+            width: 1/2
+          text:
+            label: Text
+            type: text
+            width: 1/2
+      search_form:
+        label: Search Form
+        fields:
+          url:
+            label: " "
+            type: info
+            width: 1/2
+          text:
+            label: Placeholder
+            type: text
+            width: 1/2
+
+  social_links:
+    label: Social Links
+    type: builder
+    fieldsets:
+      page_link:
+        label: Network
+        entry: >
+          <a href="{{url}}" target="_blank">{{text}}</a>
+        fields:
+          icon:
+            label: Icon
+            type: select
+            width: 1/3
+            required: true
+            options:
+              ballpit: Ball Pit
+              twitter: Twitter
+              github: GitHub
+              youtube: YouTube
+              rss: RSS
+              pocketcasts: Pocket Casts
+              itunes: iTunes
+              paypal: PayPal
+              lemon: Lemon
+              damndog: Damn Dog
+              twitch: Twitch
+          url:
+            label: URL
+            type: url
+            width: 1/3
+          text:
+            label: Text
+            type: Text
+            width: 1/3
+          
+  meta_headline:
+    label: Meta Information
+    type: headline
+  
   email:
     label: Site Admin Email
     type: email
@@ -27,6 +121,18 @@ fields:
     icon: twitter
     width: 1/2
     required: true
+
+  schema_sameas:
+    label: Schema SameAs
+    type: structure
+    entry: >
+      {{url}}
+    fields:
+      url:
+        label: URL
+        type: url
+
+
   description:
     label: Description
     type:  textarea

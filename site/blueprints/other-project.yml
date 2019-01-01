@@ -14,19 +14,20 @@ fields:
       irregular: Irregular
       website: Website
       merch: Merchandise
+      video: YouTube Video
       else: Something Else
     show:
-      qe:
+      qe: video_url 
       irregular: episode_file
       website: github_repo
-      merch: photos
-      else:
+      merch: photos baseprice
+      video: video_url
     hide:
-      qe: photos github_repo episode_file
-      irregular: photos github_repo
-      website: github_repo episode_file
-      merch: github_repo episode_file
-      else:
+      qe: photos github_repo episode_file baseprice
+      irregular: photos github_repo video_url baseprice
+      website: github_repo episode_file video_url baseprice
+      merch: github_repo episode_file video_url
+      video: github_repo episode_file baseprice
   date:
     label: Release Date
     type: date
@@ -79,6 +80,27 @@ fields:
     type: tags
     icon: users
     width: 1/2
+
+  baseprice:
+    label: Base Price
+    type: text
+    placeholder: "(include $)"
+    width: 1/4
+  
+  sale_status:
+    label: Sale Status
+    type: select
+    width: 1/4
+    options:
+      available: Available
+      pending: Pending
+      soldout: Sold Out
+
+  video_url:
+    label: YouTube URL
+    type: url
+    icon: youtube
+
   text:
     label: Item Summary
     type: markdown

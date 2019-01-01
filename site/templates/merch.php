@@ -1,23 +1,17 @@
 <?php snippet('header') ?>
 
   <main class="main page" role="main">
-
-    <article class="full default">
-      
-    </article>
     
     <section class="merch-grid current">
       
-      <article class="full default">
-        <div class="article-text">
-          <?php echo $page->text()->kirbytext() ?>
-        </div>
+      <article class="full">
+        <?php echo $page->text()->kirbytext() ?>
         <a name="available"></a>
       </article>
       
 
       <?php if ($page->current_text()->isNotEmpty()) { ?>
-        <article class="full default">
+        <article>
           <?php echo $page->current_text()->kirbytext() ?>
         </article>
       <?php } ?>
@@ -36,6 +30,7 @@
             <?php } ?>
             
           </figure>
+
           <div class="details">
             <div class="detail name full">
               <label>Name</label>
@@ -56,7 +51,7 @@
     
     <section class="merch-grid sold-out" style="margin-top:4em;">
       <a name="soldout"></a>
-      <article class="full default">
+      <article class="full">
         <?php echo $page->sold_text()->kirbytext() ?>
       </article>
       <?php foreach($page->sold_merch()->toStructure()->sortBy('sold_date', 'desc') as $merch) { ?>

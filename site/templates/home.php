@@ -12,10 +12,16 @@
       "description": "Terrible things, read with enthusiasm.",
       "alternateName": "The F+",
       "sameAs" : [ 
-        "http://feeds.feedburner.com/TheFPlus",
-        "https://twitter.com/TheFPlus",
-        "https://plus.google.com/+TheFPlus",
-        "https://www.facebook.com/thefplus"
+        <?php 
+          $i = 0;
+          $c = count($site->schema_sameas()->toStructure());
+          foreach ($site->schema_sameas()->toStructure() as $sameas) {
+            $i++;
+            echo '"' . $sameas->url() . '"'; 
+            if ($i != $c) { echo ', 
+            '; }
+          }
+        ?>
       ],
       "owns": {
         "@context": "https://schema.org",
@@ -38,8 +44,7 @@
       <?php cache::flush(); ?>
       <h2>Cache flushed</h2>
     <?php endif ?>
-    <?php snippet('briefs') ?>
-  </main>
 
-<?php snippet('disqus-alt', array('allow_comments' => false)) ?>
+    <?php snippet('briefs',  [ 'articles' => $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(15)]) ?>
+  </main>
 <?php snippet('footer') ?>
