@@ -672,7 +672,7 @@ button.button:active {
     transition: transform 1s ease 0s, opacity 0.15s linear 0.8s;
   }
   .sidebar .logo-link .grow-circle-2 * {
-    fill: #C0282D;
+    fill: #c0282d;
   }
   .sidebar .logo-link.active .logo-mark {
     transform: scale(1.5) translate(30%, -20%);
