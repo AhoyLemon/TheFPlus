@@ -2126,7 +2126,7 @@ nav.toggle a:hover span {
 
 */
 .episode-tags a, ul.tagcloud a, .blog-tags a, section.blogs article .blog-tags a {
-  font-size: 0.55em;
+  font-size: 70%;
   background-color: rgba(238, 238, 238, 0.5);
   display: inline-block;
   position: relative;
@@ -2137,7 +2137,6 @@ nav.toggle a:hover span {
   color: rgba(52, 52, 52, 0.8);
   margin-right: 0.4em;
   margin-bottom: 0.4em;
-  font-weight: 600;
   text-decoration: none;
   cursor: text;
 }

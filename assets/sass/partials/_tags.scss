@@ -1,7 +1,7 @@
 $tag-bg: rgba($white,0.5);
 $tag-border: rgba($black,0.8);
 
-%tag { font-size:0.55em;
+%tag { font-size:70%;
   background-color: $tag-bg;
   //border: 1px solid $tag-border;
   display: inline-block;
@@ -13,7 +13,6 @@ $tag-border: rgba($black,0.8);
   color: $tag-border;
   margin-right: 0.4em;
   margin-bottom: 0.4em;
-  font-weight: 600;
   text-decoration: none;
   cursor: text;
   &:hover { text-decoration: none !important; }
