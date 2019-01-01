@@ -2020,11 +2020,19 @@ nav.toggle a:hover span {
   .summaries .brief.double-size {
     grid-column: span 1;
   }
+  .summaries .brief.double-size figure {
+    float: none;
+    width: 100%;
+  }
 }
 
 @media (min-width: 730px) and (max-width: 790px) {
   .summaries .brief.double-size {
     grid-column: span 1;
+  }
+  .summaries .brief.double-size figure {
+    float: none;
+    width: 100%;
   }
 }
 
