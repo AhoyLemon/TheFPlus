@@ -1,6 +1,6 @@
-ul.submitted-content { counter-reset: docNumber -1; padding-left: 0; display: table; width:100%;
+ul.submitted-content { counter-reset: docNumber -1; display: table; width:100%; padding: 0 !important;
   b { font-weight: $heavy; }
-  li { counter-increment: docNumber; display: table-row; 
+  li { counter-increment: docNumber; display: table-row; font-size:16px;
     > span, > a, > time { display: table-cell; padding: 0.2em 0.5em; vertical-align: middle; }
     &:nth-child(even) { background-color:rgba($black, 0.1); }
   }
@@ -12,7 +12,6 @@ ul.submitted-content { counter-reset: docNumber -1; padding-left: 0; display: ta
   .number-cell { width:1.5em; text-align: right; font-weight: $bold; font-size: 0.9em;
     &:before { content:counter(docNumber); }
   }
-  .submission { font-size:1.2em; }
   time { font-size:0.8em; }
   a { text-decoration: none;
     &:hover { text-decoration: underline; }

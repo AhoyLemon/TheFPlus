@@ -3,11 +3,13 @@
 <main class="main search" role="main">
   
   <form class="page-search">
-    <input type="search" name="q" value="<?php echo esc($query) ?>">
-    <input type="submit" value="search">
+    <div class="input-holder">
+      <input type="search" name="q" value="<?php echo esc($query) ?>">
+    </div>
+    <button type="submit">search</button>
   </form>
 
-  <section class="episodes summaries all-search-results">
+  <div class="all-search-results">
   
   
   <?php if ($results->count() < 1) { ?>
@@ -19,9 +21,11 @@
     ?>
 
     <article class="no-search-results full">
-      <p>
-      No results for <b><?= $query; ?></b>.
-      </p>
+      <?php if ($query != "") { ?>
+        <p>
+        No results for <b><?= $query; ?></b>.
+        </p>
+      <?php } ?>
       <p>
         Maybe try searching for 
         <?php 
@@ -33,15 +37,17 @@
             if ($termcount < count($searchesToTry)) { echo ', &nbsp;'; } else { echo '?'; }
           }
         ?>
-      <p>
-    </summary>
+      </p>
+    </article>
   <?php } else { ?>
     <summary class="search-results-count">
       <?= $results->count(); ?> results found.
     </summary>
   <?php } ?>
 
-  <?php foreach($results->sortBy('date', 'desc') as $result): ?>    
+  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')->paginate(14)]) ?>
+
+  <?php /* foreach($results->sortBy('date', 'desc') as $result): ?>    
     <article class="<?php echo html($result->parent()->slug()) ?> brief">
       <header>
       <h2 class="title">
@@ -85,9 +91,9 @@
         </div>
       </summary>
     </article>
-  <?php endforeach ?>
+  <?php endforeach */ ?>
     
-  </section>
+  </div>
   
 </main>
 

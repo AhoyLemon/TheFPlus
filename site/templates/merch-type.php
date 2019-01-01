@@ -1,7 +1,4 @@
 <?php snippet('header') ?>
-<? /*
-<link href="/assets/css/sticker-boxes.css?updated=2017-10-09" rel="stylesheet" type="text/css">
-*/ ?>
 
 <?php
   $pubdate = date('l, F jS Y', $page->date());
@@ -10,13 +7,32 @@
 
 <main class="main page" role="main">
 
-    <article class="full default">
+    <article class="full <?php if($page->show_image() != 'true') { echo 'default'; } ?>">
+
+    <?php if($page->show_image() == 'true'):  ?>
+        <figure>
+          <?php if ($page->show_different_image() == "yes" && $page->page_image()->isNotEmpty()) { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } else if ($page->cover() != "") { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } else { ?>
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+          <?php } ?>
+        </figure>
+      <?php endif ?>
+
       <header>
         <h1 style="margin-bottom:0;"><?php echo $page->title() ?></h1>
         
         <!-- DATE & TIME -->
         <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
-          <span>Last Release: </span>
+          
+          <?php if ($page->product_type() == "series") { 
+            echo '<span>Last Release: </span>'; 
+          }  else {
+            echo '<span>Released: </span>'; 
+          } ?>
+
           <strong class="date">
             <?php echo date('l, F jS Y', $page->date()); ?>
           </strong>
@@ -30,10 +46,34 @@
       <div class="article-text">
         <?php echo $page->text()->kirbytext() ?>
       </div>
-      
+
+      <? /* Single Product Form */ ?>
+      <?php if ($page->product_type() == "single" && $page->buy_slug()->isNotEmpty()) { ?>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="hosted_button_id" value="<?= $page->buy_slug(); ?>">
+          <?php if ($page->buy_form_extra_html()->isNotEmpty()) { echo $page->buy_form_extra_html(); } ?>
+          <?php 
+            $d = (string)$page->buy_price();
+            $dollaz = "$" . number_format($d, 2);
+            if (strpos($dollaz, '.00') !== false) {
+              $dollaz = explode('.00', $dollaz)[0];
+            } else {
+              $dollaz = explode('.', $dollaz)[0] . '<sup>' . explode('.', $dollaz)[1] .'</sup>';
+            }
+          ?>
+          <button class="button submit" type="submit"
+            onclick="trackEvent('merch', '<?= $page->title(); ?>', '<?= $dollaz; ?>', $page->buy_price());">
+            <?= $dollaz; ?>
+          </button>
+        </form>
+      <?php } ?>
+
     </article>
       
-      <div class="merch-grid buttons">
+
+    <?php if ($page->products()->isNotEmpty()) { ?>
+      <div class="merch-grid buttons" style="margin-top:20px;">
         
         <?php foreach($page->products()->toStructure()->sortBy('series_num', 'desc') as $product): ?>
           <div class="grid-box button" itemscope itemtype="http://schema.org/Product">
@@ -207,7 +247,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttona_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?>', <?php echo $product->buttona_price(); ?>);"><?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?>', <?php echo $product->buttona_price(); ?>);"><?php echo $product->buttona_num(); ?> @ $<?php echo $product->buttona_price(); ?></button>
                         </form>
                       <?php endif; ?>
                       <?php if ($product->buttonb_slug() != ""): ?>
@@ -222,7 +262,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttonb_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?>', <?php echo $product->buttonb_price(); ?>);"><?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?>', <?php echo $product->buttonb_price(); ?>);"><?php echo $product->buttonb_num(); ?> @ $<?php echo $product->buttonb_price(); ?></button>
                         </form>
                       <?php endif; ?>
                       <?php if ($product->buttonc_slug() != ""): ?>
@@ -237,7 +277,7 @@
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
                           <input type="hidden" name="hosted_button_id" value="<?php echo $product->buttonc_slug(); ?>"/>
-                          <button type="submit" onclick="trackEvent('stickers', '<?php echo $product->title(); ?>', '<?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?>', <?php echo $product->buttonc_price(); ?>);"><?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?></button>
+                          <button type="submit" onclick="trackEvent('merch', '<?php echo $product->title(); ?>', '<?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?>', <?php echo $product->buttonc_price(); ?>);"><?php echo $product->buttonc_num(); ?> @ $<?php echo $product->buttonc_price(); ?></button>
                         </form>
                       <?php endif; ?>
                     </div>
@@ -271,11 +311,12 @@
           </div>
         <?php endforeach; ?>
       </div>
-  
-      <article class="full default">
+    <?php } ?>
 
-        <?php if ($page->photos() != "") { ?>
-          <div class="product-photos" style="margin-top:3em;">
+    <?php if ($page->photos() != "") { ?>  
+      <article class="full">
+
+          <div class="product-photos">
             <?php if ($page->photos_leadin() != "") { ?>
               <h3><?= $page->photos_leadin(); ?></h3>
             <?php } ?>
@@ -294,14 +335,14 @@
               <?php echo $page->share_cta()->kirbytext(); ?>
             </div>
           </div>
-        <?php } ?>
         
         <?php snippet('tags') ?>
         
       </article>
+    <?php } ?>
   
     <section class="comments disqus">
-      <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+      <?php snippet('disqus', array('allow_comments' => true)) ?>
     </section>
     
   </main>

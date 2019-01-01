@@ -29,7 +29,32 @@
   
   <section class="people people-grid">
     <?php foreach($page->children()->visible()->sortBy('title', 'asc') as $article): ?>
-      <article class="person brief <?php echo $article->role() ?> <?php if ($article->role() != "regular") { echo 'hidden'; } ?>">
+      <a class="person brief <?php echo $article->role() ?> <?php if ($article->role() != "regular") { echo 'hidden'; } ?>" href="<?= $article->url(); ?>">
+
+        <figcaption>
+          <?php echo $article->title(); ?>
+        </figcaption>
+
+        <figure>
+          <?php if ($article->cover() != "") { ?>
+            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+          <?php } else { ?>
+            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+          <?php } ?>
+        </figure>
+
+
+        <?php
+          /*
+          $findme = $article->title();
+          $allEpisodes = $site->find('episode')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc');
+          $episodeCount = 0;
+          foreach ($allEpisodes as $foo) { $episodeCount++; }
+          echo '<h1>' . $episodeCount . '</h1>';
+          */
+        ?>
+
+        <?php /*
         <header>
           <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
             <?php echo $article->title(); ?>
@@ -60,15 +85,22 @@
             </div>
           </summary>
         <?php endif ?>
-      </article>
+
+        */ ?>
+      </a>
     <?php endforeach ?>
+
+    <a class="person stats stats-link" href="<?= $site->find('stats')->url(); ?>">
+      <span>stats</span>
+    </a>
   </section>
   
-  <?php if ($page->undergrid() != "") { ?>
+
+  <?php /* if ($page->undergrid() != "") { ?>
     <div class="undergrid" style="margin-top:1em; margin-bottom:1em;">
       <?php echo $page->undergrid()->kirbytext(); ?>
     </div>
-  <?php } ?>
+  <?php } */ ?>
   
 </main>
 

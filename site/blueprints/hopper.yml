@@ -17,7 +17,7 @@ fields:
         label: Submitted Document
         #modalsize: large
         #style: table
-        flip: true 
+        
         snippet: builder/hopper
         fields:
           title:

@@ -1,8 +1,6 @@
 article { font-weight: $light;
-  &.featured {
-    header { @extend %clearfix; }
-  }
-  &.full { line-height: 140%;
+  &.full { line-height: 140%; font-size:$font-size;
+
     h1, h2, h3, h4, h5, h6 { font-weight: 400; }
     &.default h1 { margin-bottom: 0.5em; }
     img { max-width: 100%; height: auto; }
@@ -10,14 +8,13 @@ article { font-weight: $light;
     .centered { display: block; margin-left: auto; margin-right: auto; }
     .full-width, .centered { margin-bottom: 1rem; }
     p { margin-bottom: 1em; }
-    header { padding-bottom:1em; font-size:0.7em; @extend %clearfix; }
     
     .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
       .label { padding-right: 0.5em;}
       time { font-weight: $bold; }
     }
     
-    summary, .content { text-align: justify; }
+    //summary, .content { text-align: justify; }
     ul.cast { padding-left: 0; padding-bottom: 0; }
     
     .featured-site.multiple-sites {
@@ -45,27 +42,20 @@ article { font-weight: $light;
       &:nth-last-child(2):after { content:''; }
       &:last-child { 
         &:before { content:'and '; }
-        &:after { content:''; };
+        &:after { content:'.'; };
       }
       &:first-child:before { content:'with '; }
     }
   }
   .sites { @extend %commalist;
     li:first-child:before { content:'reading: '; }
-  } 
+  }
 }
 
 .episode-tags {
   .label { display: block; font-size:80%; text-transform: uppercase; font-weight: $bold; }
   ul { padding-left: 0 !important; }
-  a { @extend %tag; cursor: text;
-    &[href] { background-color:rgba(174, 38, 38, 0.5); border-color:#6d0c0c; color:#6d0c0c; cursor: pointer;
-      &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; border:2px solid; }
-    }
-    &:not([href]) {
-      &:hover { border:2px solid; }
-    }
-  }
+  a { @extend %tag; }
 }
 
 
@@ -116,6 +106,10 @@ article.full {
         svg * { fill:$color-reddit; }
         .label { background: $color-reddit; }
       }
+      &.pocket {
+        svg * { fill:$color-pocket; }
+        .label { background: $color-pocket; }
+      }
       &.contribute {
         svg * { fill:$link; }
         .label { background:$link; }
@@ -133,6 +127,22 @@ article.full {
     }
   }
 }
+
+
+
+article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:40px;
+  header { margin-bottom: 0.5em;
+    h1 { font-size:150%; font-weight:600; margin-bottom:0.3em; }
+  }
+  .article-text { text-align: justify; letter-spacing: 180%; }
+  img.cover { box-shadow: 0 0 6px rgba($black,0.45);
+    @media (min-width:$desktop-min) { transform: translateY(-70px); }
+    @media (max-width:$mobile-max) { transform: translateY(-40px); margin-bottom:-20px; }
+  }
+  //.cast, .content-provider, .edited-by { font-size:80%; }
+}
+
+
 
 
 // MARATHON SPECIFIC BITS
@@ -191,14 +201,15 @@ article.full {
 
 
 @media (min-width:1401px) {
+  article.full { font-size:22px; }
   article {
-    .article-text { max-width: 32em; text-align: justify; font-size:26px; }
+    .article-text { max-width: 32em; }
   }
 }
 
 @media (min-width:$mobile-max) and (max-width:1400px) {
   article {
-    .article-text { font-size:2vw; }
+    // .article-text { font-size:2vw; }
   }
 }
 
@@ -206,14 +217,14 @@ article.full {
 
 // DESKTOP BREAKPOINT
 @media (min-width: $desktop-min) {
-  main { display: block; padding:20px 20px 20px 320px;
-    &.page { padding-right: 1vw; }
-    &.edge-to-edge { padding: 0 0 0 300px; }
+  main { display: block; padding:$gap $gap $gap ($sidebar + $gap);
+    &.page { padding-right: ($padding * 2); }
+    &.edge-to-edge { padding: 0 0 0 $sidebar; }
   }
   article {
-    &.full { font-size:26px;
-      .cover { float: right; max-width: 40%; margin-left: 2.5vw;
-        &.left { float: left; margin-right: 2.5vw; margin-left: 0; }
+    &.full { padding:($padding * 2);
+      .cover { float: right; max-width: 40%; margin-left: ($padding * 2);
+        &.left { float: left; margin-right: ($padding * 2); margin-left: 0; }
       }
       a {
         &.action { @include flex-item(70px,auto,0,0); 
@@ -229,13 +240,15 @@ article.full {
       }
     }
   }
+
+  article.full.default { max-width: 42em; margin-right: auto; margin-left:auto; }
 }
 
 // MOBILE BREAKPOINT
 @media (max-width: $mobile-max) {
-  main { display: block; padding:70px 10px 0 10px;
+  main { display: block; padding:$gap; margin-bottom:$mobileLogoSize;
     &.noscroll { height:100vh; overflow: hidden; }
-    &.edge-to-edge { padding:56px 0 0 0; }
+    &.edge-to-edge { padding:0; }
   }
   article {
     &.full { font-size:4.3vw;
@@ -252,3 +265,16 @@ article.full {
     }
   }
 }
+
+/*
+
+@keyframes slidePageIn {
+  0%   { transform: translateY(102vh); }
+  //98%  { transform: translateY(-2%); }
+  100% { transform: translateY(0); }
+}
+
+article.full { animation-name: slidePageIn; animation-duration:0.7s; animation-timing-function: cubic-bezier(.57,.58,.56,1.2);
+
+}
+*/

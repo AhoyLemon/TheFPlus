@@ -18,13 +18,25 @@
   }
 }
 
-.people-grid { display: grid; grid-gap: 20px;
-  .person { grid-column: span 1; background:white; border:1px solid $black;
+.people-grid { display: grid; grid-gap: 30px;
+  .person { background:$card; box-shadow: $boxShadow; text-decoration: none;
     &.hidden { display: none; }
+
+    &:hover {
+      figcaption { color:$link; text-decoration:underline; }
+    }
+
   }
-  header { padding: 0 1em .25em 1em; font-size:24px; @extend %truncate;
-    a { text-decoration: none; }
+
+  figcaption { padding-left: $padding; padding-right: $padding; color:$black; text-decoration: none;
+    font-size:125%; padding-top:($padding / 2); border:none;
   }
+  
+  figure { padding-right:20px; 
+    img { width:100%; display: block; transform: translate(-20px,20px); box-shadow:0 0 4px rgba($black,0.5); }
+  }
+
+
   .image-holder { position:relative; display: block; overflow: hidden;
     img { @include transition(all, 1s); width: 100%; }
     .hover-cover { position: absolute; right:0; bottom:0; left:0; @include linear-gradient(top, rgba(#ffe,0), rgba(#ffe,0.85)); @include translateY(105%); @include transition(transform, .5s);
@@ -34,6 +46,11 @@
       img { opacity: 0.2; }
       .hover-cover { @include translateY(0);}
     }
+  }
+
+  .stats { display: flex; align-items: center; justify-content: center; min-height: 16em;
+    span { font-size:400%; color:$copy; letter-spacing: 0.2em; }
+    &:hover span { color:$link; }
   }
 }
 
@@ -53,11 +70,17 @@
   .people-grid { grid-template-columns: 1fr 1fr;  }
 }
 
+@media (max-width:470px) {
+  .people-grid { grid-template-columns: 1fr; max-width: 300px; margin-left: auto; }
+}
+
+/*
 @media (max-width:480px) {
   .people-grid { display: block; 
     .person { display: block; width:260px; margin-bottom: 20px; }
   }
 }
+*/
 
 
 @media (min-width: $desktop-min) {
@@ -65,9 +88,6 @@
     .person {
       &.brief { @include flex-item(245px, stretch, 0, 0); max-width: 245px; justify-content:space-between; }
     }
-  }
-  .person.full {
-    .headshot { float: right; max-width: 40%; margin-left: 1vw; }
   }
 }
 

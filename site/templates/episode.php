@@ -28,6 +28,16 @@
   <meta http-equiv="last-modified" content="<?php echo $page->modified('Y-m-d@H:i:s'); ?>" />
   
   <article class="episode full" itemscope itemtype="http://schema.org/RadioEpisode">
+    
+    <figure>
+      <?php if($page->cover() != "") { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+      <?php } else if($image = $page->image()) { ?>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
+      <?php } ?>
+    </figure>
+
+
     <header>
       <h1>
         <span itemprop="episodeNumber" class="episode-number"><?php echo $page->uid() ?></span>:
@@ -67,11 +77,7 @@
       
     </header>
     
-    <?php if($page->cover() != "") { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } else if($image = $page->image()) { ?>
-      <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>">
-    <?php } ?>
+    
     
     <div class="article-text">
 
@@ -151,83 +157,6 @@
     
     </div>
 
-    <div class="episode-actions">
-      <!-- DOWNLOAD FILE -->
-      <?php if ($page->episode_file() != ""): ?>
-        <a itemprop="audio" class="action download" href="<?= $site->url(); ?>/podcasts/<?php echo $page->episode_file() ?>" download title="Download episode">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconDownload"></use>
-          </svg>
-          <span class="label go-right">Download this episode</span>
-        </a>
-      <?php endif; ?>
-
-      <!-- READ DOCUMENT -->
-      <?php if ($page->document_link() != ""): ?>
-        <a itemprop="citation" class="action read" href="<?php echo $page->document_link() ?>" title="Read <?php echo $page->provider() ?>'s document"  target="_blank">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconDocument"></use>
-          </svg>
-          <span class="label go-right">Read <?php echo $page->provider() ?>'s document</span>
-        </a>
-      <?php endif ?>
-
-      <!-- AUDIO CONTAINER -->
-      <?php if ($page->episode_file() != ""): ?>
-        <div class="audio-holder" itemprop="audio">
-          <audio preload="none" controls>
-            <source src="/podcasts/<?php echo $page->episode_file() ?>" type="audio/mpeg" />
-          </audio>
-        </div>
-      <?php endif; ?>
-      
-      <!-- Contribute To The F Plus -->
-      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
-        <svg viewBox="0 0 100 100">
-          <use class="top lid" xlink:href="#IconContributeTop"></use>
-          <use class="bottom" xlink:href="#IconContributeBottom"></use>
-        </svg>
-        <span class="label">Contribute to the Podcast</span>
-      </a>
-
-      <!-- TWEET THIS -->
-      <a class="social twitter" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode($page->title()); ?>%0A&url=<?php echo rawurlencode($page->url()); ?>&via=TheFPlus" target="_blank" title="Tweet this">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTwitter"></use>
-        </svg>
-        <span class="label">Tweet this episode</span>
-      </a>
-      
-      <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" title="Share on Facebook">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconFacebook"></use>
-        </svg>
-        <span class="label">Share on Facebook</span>
-      </a>
-      
-      
-      
-      <?php if (strpos($page->tags(), 'reddit') !== false) { ?>
-        <!-- REDDIT SHARE -->
-        <a class="social reddit" href="https://reddit.com/submit/?<?php echo rawurlencode ($page->url()); ?>" target="_blank" title="Share on Reddit">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconReddit"></use>
-          </svg>
-          <span class="label">Share on Reddit</span>
-        </a>
-      <?php } else { ?>
-        <!-- TUMBLR SHARE -->
-        <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconTumblr"></use>
-          </svg>
-          <span class="label">Post to Tumblr</span>
-        </a>
-      <?php } ?>
-      
-    </div>
-
     <?php if ($page->cover_cite_toggle() == "yes") { ?>
       <div class="cover-image-citation" style="margin-top:1em; margin-bottom:1em;">
         Cover image uses 
@@ -239,6 +168,8 @@
         <?php } ?>
       </div>
     <?php } ?>
+
+    <?php snippet('episode-actions') ?>
 
     <!-- EPISODE TAGS -->
     <?php snippet('tags') ?>
@@ -255,7 +186,7 @@
   </article>
 
   <section class="comments disqus">
-    <?php snippet('disqus-alt', array('allow_comments' => true)) ?>
+    <?php snippet('disqus', array('allow_comments' => true)) ?>
   </section>
 
 </main>
