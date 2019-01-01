@@ -225,7 +225,9 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 @media (max-width:419px) {
   .summaries { grid-template-columns: 1fr; 
     .brief { @include summary360();
-      &.double-size { grid-column: span 1; }
+      &.double-size { grid-column: span 1;
+        figure { float: none; width: 100%; }
+      }
     }
   } 
 }
@@ -233,7 +235,9 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 @media (min-width:730px) and (max-width:790px) {
   .summaries {
     .brief {
-      &.double-size { grid-column: span 1; }
+      &.double-size { grid-column: span 1;
+        figure { float: none; width: 100%; }
+      }
     }
   } 
 }
