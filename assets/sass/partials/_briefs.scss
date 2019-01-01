@@ -115,7 +115,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
     .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; }
 
-    figcaption { font-size:0.95rem; padding:($gap * 2); }
+    figcaption { font-size:0.95rem; padding:0 ($gap * 2); }
 
     //header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
     &.also-made {
@@ -149,13 +149,14 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     }
   }
 
-  .name-and-title { order: 2; padding-left:$padding; padding-right:$padding; }
-
-  &.also-made {
-    .title { font-size:150%; font-weight: $bold; }
+  .name-and-title { order: 2; padding-left:$padding; padding-right:$padding;
+    .title { font-size:130%; font-weight: $bold; margin-bottom: $padding; }
   }
+
+
   &.wrote {
     padding-top: 120px;
+    .title { font-size:200%; }
   }
 
   figcaption { order: 3; }
@@ -202,7 +203,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     .inner { display: block; }
     time { display: block; font-size:125%; font-weight: $bold; }
     figure { width:50%; float: right; }
-    figcaption {
+    figcaption { padding-top:$padding;
       > * { padding-bottom:$padding; padding-left:0; padding-right: 0; }
     }
   }
@@ -263,19 +264,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 @media (min-width:1860px) {
   .summaries  { grid-template-columns:repeat(5,1fr);  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*

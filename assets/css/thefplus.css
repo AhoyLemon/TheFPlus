@@ -1595,7 +1595,7 @@ nav.toggle a:hover span {
 
 .summaries .brief figcaption {
   font-size: 0.95rem;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .summaries .brief.also-made .image-holder {
@@ -1652,12 +1652,16 @@ nav.toggle a:hover span {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .summaries .brief.also-made .title {
-    font-size: 150%;
+  .summaries .brief .name-and-title .title {
+    font-size: 130%;
     font-weight: 700;
+    margin-bottom: 20px;
   }
   .summaries .brief.wrote {
     padding-top: 120px;
+  }
+  .summaries .brief.wrote .title {
+    font-size: 200%;
   }
   .summaries .brief figcaption {
     order: 3;
@@ -1810,6 +1814,9 @@ nav.toggle a:hover span {
   .summaries .brief.double-size figure {
     width: 50%;
     float: right;
+  }
+  .summaries .brief.double-size figcaption {
+    padding-top: 20px;
   }
   .summaries .brief.double-size figcaption > * {
     padding-bottom: 20px;
@@ -1853,12 +1860,16 @@ nav.toggle a:hover span {
     padding-left: 20px;
     padding-right: 20px;
   }
-  .summaries .brief.also-made .title {
-    font-size: 150%;
+  .summaries .brief .name-and-title .title {
+    font-size: 130%;
     font-weight: 700;
+    margin-bottom: 20px;
   }
   .summaries .brief.wrote {
     padding-top: 120px;
+  }
+  .summaries .brief.wrote .title {
+    font-size: 200%;
   }
   .summaries .brief figcaption {
     order: 3;
@@ -2011,6 +2022,9 @@ nav.toggle a:hover span {
   .summaries .brief.double-size figure {
     width: 50%;
     float: right;
+  }
+  .summaries .brief.double-size figcaption {
+    padding-top: 20px;
   }
   .summaries .brief.double-size figcaption > * {
     padding-bottom: 20px;

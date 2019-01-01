@@ -118,11 +118,9 @@
 
 
           <?php /* Title */ ?>
-          <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
-            <div class="name-and-title">
-              <h2 class="title"><?= $article->title(); ?></h2>
-            </div>
-          <?php } ?>
+          <div class="name-and-title">
+            <h2 class="title"><?= $article->title(); ?></h2>
+          </div>
 
           <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
             <figcaption>
