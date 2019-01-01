@@ -42,7 +42,7 @@ article { font-weight: $light;
       &:nth-last-child(2):after { content:''; }
       &:last-child { 
         &:before { content:'and '; }
-        &:after { content:''; };
+        &:after { content:'.'; };
       }
       &:first-child:before { content:'with '; }
     }
