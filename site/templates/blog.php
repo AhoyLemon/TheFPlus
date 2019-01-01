@@ -12,11 +12,6 @@
 
   <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
 
-    <?php if ($page->cover()->isNotEmpty()) { ?>
-      <img itemprop="image" src="<?= $page->cover()->toFile()->url(); ?> " class="cover" alt="<?= $page->title(); ?>" />
-    <?php } ?>
-
-
     <header>
       <meta itemprop="mainEntityOfPage" content="<?php echo $page->url(); ?>" />
       <h1 itemprop="name"><?php echo $page->title() ?></h1>
@@ -56,54 +51,7 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <div class="social-actions episode-actions">
-			
-			<div class="audio-holder"></div>
-      
-      <!-- Contribute To The F Plus -->
-      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
-        <svg viewBox="0 0 100 100">
-          <use class="top lid" xlink:href="#IconContributeTop"></use>
-          <use class="bottom" xlink:href="#IconContributeBottom"></use>
-        </svg>
-        <span class="label">Contribute to the Podcast</span>
-      </a>
-
-      <!-- TWEET THIS -->
-      <a class="social twitter" href="https://twitter.com/intent/tweet?source=webclient&text=<?php echo rawurlencode($page->title()); ?>%20<?php echo rawurlencode($page->url()); ?>%20<?php echo ('via @TheFPlus')?>" target="blank" title="Tweet this">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTwitter"></use>
-        </svg>
-        <span class="label">Tweet this</span>
-      </a>
-
-      <?php /*
-      <!-- GOOGLE+ SHARE -->
-      <a class="social googleplus" href="https://plus.google.com/share?url=<?php echo rawurlencode ($page->url()); ?>&title=<?php echo rawurlencode($page->title()); ?>" target="_blank" title="Share on Google+"> 
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconGooglePlus"></use>
-        </svg>
-        <span class="label">Share on Google+</span>
-      </a>
-      */ ?>
-
-      <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="http://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" target="blank" title="Share on Facebook">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconFacebook"></use>
-        </svg>
-        <span class="label">Share on Facebook</span>
-      </a>
-      
-      <!-- TUMBLR REBLOG -->
-      <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTumblr"></use>
-        </svg>
-        <span class="label">Post to Tumblr</span>
-      </a>
-
-    </div>
+    <?php snippet('episode-actions'); ?>
 
     <!-- EPISODE TAGS -->
     <?php if ($page->tags() != ""): ?>

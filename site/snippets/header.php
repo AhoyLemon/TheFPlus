@@ -2,25 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <?php if($page->isHomePage()): ?>
-  
-  
-  
-<!--
-                                                                                                                                                           
-b.             8     ,o888888o.               8 888888888o.       8 8888     ,o888888o.        ,o888888o.     8 8888 8888888 8888888888 `8.`8888.      ,8' 
-888o.          8  . 8888     `88.             8 8888    `^888.    8 8888    8888     `88.     8888     `88.   8 8888       8 8888        `8.`8888.    ,8'  
-Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888       `8. ,8 8888       `8.  8 8888       8 8888         `8.`8888.  ,8'   
-.`Y888888o.    8 88 8888        `8b           8 8888         `88  8 8888 88 8888           88 8888            8 8888       8 8888          `8.`8888.,8'    
-8o. `Y888888o. 8 88 8888         88           8 8888          88  8 8888 88 8888           88 8888            8 8888       8 8888           `8.`88888'     
-8`Y8o. `Y88888o8 88 8888         88           8 8888          88  8 8888 88 8888           88 8888            8 8888       8 8888            `8. 8888      
-8   `Y8o. `Y8888 88 8888        ,8P           8 8888         ,88  8 8888 88 8888   8888888 88 8888   8888888  8 8888       8 8888             `8 8888      
-8      `Y8o. `Y8 `8 8888       ,8P            8 8888        ,88'  8 8888 `8 8888       .8' `8 8888       .8'  8 8888       8 8888              8 8888      
-8         `Y8o.`  ` 8888     ,88'             8 8888    ,o88P'    8 8888    8888     ,88'     8888     ,88'   8 8888       8 8888              8 8888      
-8            `Yo     `8888888P'               8 888888888P'       8 8888     `8888888P'        `8888888P'     8 8888       8 8888              8 8888      
-  -->  
-  
-  <?php endif; ?>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <?php if ($page->isHomePage()) { ?>
     <title>The F Plus: Terrible Things Read With Enthusiasm</title>
@@ -48,7 +29,7 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
   <meta name="msapplication-TileColor" content="#c0282d">
   <meta name="msapplication-TileImage" content="/mstile-144x144.png">
   <meta name="theme-color" content="#c0282d">
-  
+
   <!-- Twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@TheFPlus" />
@@ -89,6 +70,23 @@ Y88888o.       8 ,8 8888       `8b            8 8888        `88.  8 8888 ,8 8888
 
 </head>
 <body>
+  <?php if($page->isHomePage()): ?>
+  
+<!--
+                                                                                                                                                           
+ooooo      ooo   .oooooo.        oooooooooo.   ooooo   .oooooo.      .oooooo.    ooooo ooooooooooooo oooooo   oooo 
+`888b.     `8'  d8P'  `Y8b       `888'   `Y8b  `888'  d8P'  `Y8b    d8P'  `Y8b   `888' 8'   888   `8  `888.   .8'  
+ 8 `88b.    8  888      888       888      888  888  888           888            888       888        `888. .8'   
+ 8   `88b.  8  888      888       888      888  888  888           888            888       888         `888.8'    
+ 8     `88b.8  888      888       888      888  888  888     ooooo 888     ooooo  888       888          `888'     
+ 8       `888  `88b    d88'       888     d88'  888  `88.    .88'  `88.    .88'   888       888           888      
+o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'   o888o     o888o         o888o     
+
+  -->  
+
+
+  
+  <?php endif; ?>
 
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 

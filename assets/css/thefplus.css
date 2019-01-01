@@ -1220,8 +1220,8 @@ article.full img.cover {
   article.full {
     font-size: 22px;
   }
-  article .article-text {
-    max-width: 32em;
+  article.episode .article-text {
+    max-width: 34em;
   }
 }
 
@@ -1298,6 +1298,14 @@ article.full img.cover {
     max-width: 42em;
     margin-right: auto;
     margin-left: auto;
+  }
+  article.full.blog {
+    max-width: 42em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  article.full.blog .author {
+    margin-bottom: 1em;
   }
 }
 
@@ -2126,7 +2134,7 @@ nav.toggle a:hover span {
 }
 
 ul.tagcloud {
-  text-align: justify;
+  padding: 0 !important;
 }
 
 ul.tagcloud > li {
@@ -2141,6 +2149,7 @@ ul.tagcloud a {
 ul.tagcloud a[href] {
   background: transparent;
   color: #343434;
+  margin: 0;
 }
 
 ul.tagcloud a[href]:hover {
