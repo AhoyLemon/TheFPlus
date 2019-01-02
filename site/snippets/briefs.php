@@ -128,7 +128,7 @@
                 <?php if ($briefType == "wrote") {
                   echo excerpt($article->text(), 420);
                 } else if ($briefType == "also-made") {
-                  echo excerpt($article->text(), 100);
+                  echo excerpt($article->text(), 220);
                 } ?>
               </div>
             </figcaption>
@@ -142,6 +142,18 @@
               </span>
             </div>
           <?php } ?>
+
+          <?/* Episode # */ ?>
+          <?php if ($briefType == 'episode') { ?>
+            <?php if ((int)$article->uid()) { ?>
+              <div class="category">
+                <span class="category-tag">
+                   ep #<?= $article->uid(); ?>
+                </span>
+              </div>
+            <?php } ?>
+          <?php } ?>
+
 
           <?/* Subject */ ?>
           <?php if ($article->featured_site()->isNotEmpty()) { ?>

@@ -186,14 +186,14 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     ul { @include grammarArray(); }
     .source { font-weight: $bold; }
   }
-  .category { order: 6; padding-left:$padding; padding-right: $padding; text-align: right; font-style:italic; color:rgba($black,0.8);
+  .category { order: 6; padding-left:$padding; padding-right: $padding; text-align: right; color:rgba($black,0.8);
     
   }
 
   &:hover {
-    .title { text-decoration: underline; }
+    .title { text-decoration: underline; color:$link; }
     figure { transform: scale(1.04); } 
-    ul li, .source, .title { color:$link; }
+    //  ul li, .source, .title { color:$link; }
   }
 
 

@@ -1788,17 +1788,14 @@ nav.toggle a:hover span {
     padding-left: 20px;
     padding-right: 20px;
     text-align: right;
-    font-style: italic;
     color: rgba(52, 52, 52, 0.8);
   }
   .summaries .brief:hover .title {
     text-decoration: underline;
+    color: #c0282d;
   }
   .summaries .brief:hover figure {
     transform: scale(1.04);
-  }
-  .summaries .brief:hover ul li, .summaries .brief:hover .source, .summaries .brief:hover .title {
-    color: #c0282d;
   }
   .summaries .brief.double-size {
     grid-column: span 2;
@@ -1996,17 +1993,14 @@ nav.toggle a:hover span {
     padding-left: 20px;
     padding-right: 20px;
     text-align: right;
-    font-style: italic;
     color: rgba(52, 52, 52, 0.8);
   }
   .summaries .brief:hover .title {
     text-decoration: underline;
+    color: #c0282d;
   }
   .summaries .brief:hover figure {
     transform: scale(1.04);
-  }
-  .summaries .brief:hover ul li, .summaries .brief:hover .source, .summaries .brief:hover .title {
-    color: #c0282d;
   }
   .summaries .brief.double-size {
     grid-column: span 2;
@@ -3576,6 +3570,17 @@ ul.submitted-content .dibs-list strong {
 .fanart-grid .fanart-out {
   padding: 0.5em 0;
   grid-column: 1 / -1;
+}
+
+@media (max-width: 520px) {
+  .fanart-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fanart-grid .fanart-headline {
+    font-size: 1.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=thefplus.css.map */

@@ -62,3 +62,9 @@
 }
 
 figure.fanart { @extend %fanart; }
+
+@media (max-width:520px) {
+  .fanart-grid { grid-template-columns: repeat(2, 1fr);
+    .fanart-headline { font-size:1.5rem; padding-left: $padding; padding-right: $padding;  }
+  }
+}
