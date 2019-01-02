@@ -3348,7 +3348,6 @@ ul.submitted-content .dibs-list strong {
 .fanart-grid {
   display: grid;
   gap: 0;
-  grid-template-columns: repeat(auto-fill, 250px);
   justify-content: end;
 }
 
@@ -3407,12 +3406,56 @@ ul.submitted-content .dibs-list strong {
   grid-column: 1 / -1;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 450px) {
   .fanart-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 451px) and (max-width: 700px) {
+  .fanart-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 701px) and (max-width: 980px) {
+  .fanart-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 981px) and (max-width: 1300px) {
+  .fanart-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1600px) {
+  .fanart-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 1601px) and (max-width: 1950px) {
+  .fanart-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (min-width: 1951px) and (max-width: 2200px) {
+  .fanart-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (min-width: 2201px) {
+  .fanart-grid {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+}
+
+@media (max-width: 980px) {
   .fanart-grid .fanart-headline {
-    font-size: 1.5rem;
     padding-left: 20px;
     padding-right: 20px;
   }
