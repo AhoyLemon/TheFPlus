@@ -7,20 +7,19 @@
   <?php $tagcloud = tagcloud(page('episode')) ?>
   
   <article class="full">
-    <ul class="tagcloud">
+    <section class="tagcloud">
       <?php foreach($tagcloud as $tag): ?>
-      <li>
-        <?php $x = 0; ?>
-        <?php $tagmatches = $site->grandChildren()->filterBy('tags', $tag->name(), ','); ?>
-        <?php foreach($tagmatches as $tagmatch) { $x = $x+1; } ?>
-        <a href="<?= $site->url() . '/find/tag:' .  rawurlencode($tag->name()) ?>">
-          <?= trim($tag->name()); ?>
-          <?php if ($x > 1) { echo '(' . $x . ')'; } ?>
+        <?php 
+          $x = 0;
+          $tagmatches = $site->grandChildren()->filterBy('tags', $tag->name(), ',');
+          foreach($tagmatches as $tagmatch) { $x = $x+1; }
+        ?>
+        <a class="tag" href="<?= $site->url() . '/find/tag:' .  rawurlencode($tag->name()) ?>">
+          <span class="tag-name"><?= trim($tag->name()); ?></span>
+          <span class="tag-count"><?= $x; ?></span>
         </a>
-        <?php /* <a <?php if ($x > 1): ?> href="<?php echo url::home() ?>/find/tag:<?php echo rawurlencode($tag->name()) ?>" <?php endif ?>><?php echo trim($tag->name()) ?> (<?php echo $x; ?>)</a> */ ?>
-      </li>
       <?php endforeach ?>
-    </ul>
+    </section>
   </article>
 
 </main>

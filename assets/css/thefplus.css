@@ -1954,7 +1954,7 @@ nav.toggle a:hover span {
 }
 
 */
-.episode-tags a, ul.tagcloud a, .blog-tags a, section.blogs article .blog-tags a {
+.episode-tags a, .blog-tags a, section.blogs article .blog-tags a {
   font-size: 70%;
   background-color: rgba(238, 238, 238, 0.5);
   display: inline-block;
@@ -1970,47 +1970,71 @@ nav.toggle a:hover span {
   cursor: text;
 }
 
-.episode-tags a:hover, ul.tagcloud a:hover, .blog-tags a:hover, section.blogs article .blog-tags a:hover {
+.episode-tags a:hover, .blog-tags a:hover, section.blogs article .blog-tags a:hover {
   text-decoration: none !important;
 }
 
-.episode-tags a[href], ul.tagcloud a[href], .blog-tags a[href], section.blogs article .blog-tags a[href] {
+.episode-tags a[href], .blog-tags a[href], section.blogs article .blog-tags a[href] {
   background-color: rgba(192, 40, 45, 0.1);
   color: #c0282d;
   cursor: pointer;
 }
 
-.episode-tags a[href]:after, ul.tagcloud a[href]:after, .blog-tags a[href]:after, section.blogs article .blog-tags a[href]:after {
+.episode-tags a[href]:after, .blog-tags a[href]:after, section.blogs article .blog-tags a[href]:after {
   color: #6d0c0c;
 }
 
-.episode-tags a[href]:hover, ul.tagcloud a[href]:hover, .blog-tags a[href]:hover {
+.episode-tags a[href]:hover, .blog-tags a[href]:hover {
   background: #6d0c0c;
   color: #eee;
 }
 
-ul.tagcloud {
-  padding: 0 !important;
+/*
+ul.tagcloud { padding:0 !important; @include flex-container();
+  > li { display: inline-block; margin-bottom: $gap; }
+  a { font-size:0.7em; border:1px solid rgba($black,0.2); line-height: 200%;
+    &[href] { background:transparent; color:$copy; margin: 0;
+      &:hover { background:rgba($link,0.1); color:rgba($link,0.9); }
+    }
+  }
+}
+*/
+.tagcloud {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 160px);
+  grid-gap: 10px;
 }
 
-ul.tagcloud > li {
-  display: inline-block;
-  margin-bottom: 10px;
+.tagcloud .tag {
+  position: relative;
+  border: 1px solid rgba(52, 52, 52, 0.2);
+  padding: 30px 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 15px;
 }
 
-ul.tagcloud a {
-  font-size: 0.8em;
-}
-
-ul.tagcloud a[href] {
-  background: transparent;
+.tagcloud .tag .tag-count {
+  position: absolute;
+  top: 0;
+  right: 10px;
   color: #343434;
-  margin: 0;
+  font-size: 80%;
 }
 
-ul.tagcloud a[href]:hover {
-  background: rgba(192, 40, 45, 0.1);
-  color: rgba(192, 40, 45, 0.9);
+.tagcloud .tag .tag-name {
+  color: #343434;
+  width: 100%;
+  line-height: 120%;
+}
+
+.tagcloud .tag:hover {
+  background: #c0282d;
+}
+
+.tagcloud .tag:hover .tag-name {
+  color: #fff;
 }
 
 section.covers-only {
@@ -3459,6 +3483,18 @@ ul.submitted-content .dibs-list strong {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+
+html body {
+  cursor: url(../images/logomark-120.png), auto !important;
+}
+
+html body a {
+  cursor: url(../images/logomark-120.png), auto !important;
+}
+
+html body .logo-link.desktop-only {
+  display: none !important;
 }
 
 /*# sourceMappingURL=thefplus.css.map */
