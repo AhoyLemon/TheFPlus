@@ -3485,16 +3485,4 @@ ul.submitted-content .dibs-list strong {
   }
 }
 
-html body {
-  cursor: url(../images/logomark-120.png), auto !important;
-}
-
-html body a {
-  cursor: url(../images/logomark-120.png), auto !important;
-}
-
-html body .logo-link.desktop-only {
-  display: none !important;
-}
-
 /*# sourceMappingURL=thefplus.css.map */
