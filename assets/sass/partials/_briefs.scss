@@ -216,35 +216,19 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   .tag.selected { font-weight: $bold; }
 }
 
-@media (min-width:420px) {
-  .summaries { 
-    .brief { @include summary360(); }
-  } 
+.summaries { 
+  .brief { @include summary360(); }
+} 
+
+@media (max-width:634px) {
+  .brief.double-size { display: none !important; }
+}
+@media (min-width:635px) {
+  .brief.has-double-size { display: none !important; }
 }
 
 
-@media (max-width:419px) {
-  .summaries { grid-template-columns: 1fr; 
-    .brief { @include summary360();
-      &.double-size { grid-column: span 1;
-        figure { float: none; width: 100%; }
-      }
-    }
-  } 
-}
-
-@media (min-width:730px) and (max-width:790px) {
-  .summaries {
-    .brief {
-      &.double-size { grid-column: span 1;
-        figure { float: none; width: 100%; }
-      }
-    }
-  } 
-}
-
-
-@media (min-width:420px) and (max-width:1019px) {
+@media (min-width:421px) and (max-width:1019px) {
   .summaries  { grid-template-columns: repeat(auto-fill,$briefWidth); }
 }
 
@@ -253,15 +237,15 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   .summaries  { grid-template-columns:repeat(2,1fr);  }
 }
 
-@media (min-width:1280px) and (max-width:1549px) {
+@media (min-width:1280px) and (max-width:1660px) {
   .summaries  { grid-template-columns:repeat(3,1fr);  }
 }
 
-@media (min-width:1550px) and (max-width:1859px) {
+@media (min-width:1661px) and (max-width:1900px) {
   .summaries  { grid-template-columns:repeat(4,1fr);  }
 }
 
-@media (min-width:1860px) {
+@media (min-width:1901px) {
   .summaries  { grid-template-columns:repeat(5,1fr);  }
 }
 
