@@ -23,11 +23,12 @@ fields:
       merch: photos baseprice
       video: video_url
     hide:
-      qe: photos github_repo episode_file baseprice
-      irregular: photos github_repo video_url baseprice
-      website: github_repo episode_file video_url baseprice
+      qe: photos github_repo episode_file baseprice sale_status
+      irregular: photos github_repo video_url baseprice sale_status
+      website: github_repo episode_file video_url baseprice sale_status
       merch: github_repo episode_file video_url
-      video: github_repo episode_file baseprice
+      video: github_repo episode_file baseprice sale_status
+      else: baseprice sale_status video_url
   date:
     label: Release Date
     type: date
@@ -100,6 +101,7 @@ fields:
     label: YouTube URL
     type: url
     icon: youtube
+    help: "use the https://youtu.be syntax"
 
   text:
     label: Item Summary
