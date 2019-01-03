@@ -490,7 +490,7 @@ button.button:active {
   }
   .sidebar .logo-link .logo-mark {
     position: absolute;
-    bottom: -45px;
+    bottom: -35px;
     left: 10px;
     width: 192px;
     transition: all 1s ease;
@@ -1638,7 +1638,6 @@ nav.toggle a:hover span {
 
 .summaries .brief figure {
   order: 1;
-  transition: transform 0.2s ease;
 }
 
 .summaries .brief figure img {
@@ -1652,16 +1651,32 @@ nav.toggle a:hover span {
   box-shadow: none;
 }
 
+.summaries .brief figure a {
+  transform: scale(1);
+  display: block;
+}
+
+.summaries .brief figure a:hover {
+  transform: scale(1.03);
+}
+
 .summaries .brief .name-and-title {
   order: 2;
   padding-left: 20px;
   padding-right: 20px;
 }
 
-.summaries .brief .name-and-title .title {
-  font-size: 130%;
-  font-weight: 700;
+.summaries .brief .title {
+  font-size: 150%;
   margin-bottom: 20px;
+}
+
+.summaries .brief .title a {
+  text-decoration: none;
+}
+
+.summaries .brief .title a:hover {
+  text-decoration: underline;
 }
 
 .summaries .brief.wrote {
@@ -1669,7 +1684,7 @@ nav.toggle a:hover span {
 }
 
 .summaries .brief.wrote .title {
-  font-size: 200%;
+  font-size: 220%;
 }
 
 .summaries .brief figcaption {
@@ -1829,15 +1844,6 @@ nav.toggle a:hover span {
   color: rgba(52, 52, 52, 0.8);
 }
 
-.summaries .brief:hover .title {
-  text-decoration: underline;
-  color: #c0282d;
-}
-
-.summaries .brief:hover figure {
-  transform: scale(1.04);
-}
-
 .summaries .brief.double-size {
   grid-column: span 2;
 }
@@ -1850,6 +1856,10 @@ nav.toggle a:hover span {
   display: block;
   font-size: 125%;
   font-weight: 700;
+}
+
+.summaries .brief.double-size .title {
+  font-size: 220%;
 }
 
 .summaries .brief.double-size figure {

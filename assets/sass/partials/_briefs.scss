@@ -143,20 +143,26 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     header { display: none; }
   }
   
-  figure { order:1; transition:transform 0.2s ease;
+  figure { order:1; // transition:transform 0.2s ease;
     img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); width:100%;
       &.no-shadow { box-shadow:none; }
     }
+    a { transform: scale(1); display:block; // transition: transform 0.15s linear;
+      &:hover { transform: scale(1.03); }
+    }
   }
 
-  .name-and-title { order: 2; padding-left:$padding; padding-right:$padding;
-    .title { font-size:130%; font-weight: $bold; margin-bottom: $padding; }
+  .name-and-title { order: 2; padding-left:$padding; padding-right:$padding; }
+  .title { font-size:150%; margin-bottom: $padding;
+    a { text-decoration: none;
+      &:hover { text-decoration: underline; }
+    }
   }
 
 
   &.wrote {
     padding-top: 120px;
-    .title { font-size:200%; }
+    .title { font-size:220%; }
   }
 
   figcaption { order: 3; }
@@ -186,15 +192,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     ul { @include grammarArray(); }
     .source { font-weight: $bold; }
   }
-  .category { order: 6; padding-left:$padding; padding-right: $padding; text-align: right; color:rgba($black,0.8);
-    
-  }
-
-  &:hover {
-    .title { text-decoration: underline; color:$link; }
-    figure { transform: scale(1.04); } 
-    //  ul li, .source, .title { color:$link; }
-  }
+  .category { order: 6; padding-left:$padding; padding-right: $padding; text-align: right; color:rgba($black,0.8); }
 
 
 
@@ -202,6 +200,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     //.inner { display: grid; grid-template-columns:1fr 1fr; }
     .inner { display: block; }
     time { display: block; font-size:125%; font-weight: $bold; }
+    .title { font-size:220%; }
     figure { width:50%; float: right; }
     figcaption { padding-top:$padding;
       > * { padding-bottom:$padding; padding-left:0; padding-right: 0; }

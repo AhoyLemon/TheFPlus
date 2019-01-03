@@ -17,11 +17,12 @@
         }
         
       } else if ($briefType == "also-made") {
-        $altText = $article->category() . ": " . $article->title(); 
-        $category = $article->category();
         if ($article->template() == "stickers" || $article->template() == "merch-type") {
           $category = "merch";
+        } else {
+          $category = $article->category();
         }
+        $altText = $category . ": " . $article->title(); 
       }
 
 
@@ -35,23 +36,29 @@
 
 
     <?php if ($doubleSize == true) { ?>
-      <a class="brief double-size <?= $briefType; ?>" href="<?= $article->url(); ?>" title="<?= $altText; ?>">
+      <div class="brief double-size <?= $briefType; ?>">
         <div class="inner">
 
           <?php /* Brief Image */ ?>
           <figure>
-            <?php if ($article->cover()->isNotEmpty()) { ?>
-              <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
-            <?php } else if ($article->image()->isNotEmpty())  { ?>
-              <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
-            <?php } ?>
+            <a href="<?= $article->url(); ?>" >
+              <?php if ($article->cover()->isNotEmpty()) { ?>
+                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
+              <?php } else if ($article->image()->isNotEmpty())  { ?>
+                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
+              <?php } ?>
+            </a>
           </figure>
 
           <figcaption>
 
             <time><?= date('l F jS, Y', $article->date()); ?></time>
 
-            <h2 class="title"><?= $article->title(); ?></h2>
+            <h2 class="title">
+              <a href="<?= $article->url(); ?>">
+                <?= $article->title(); ?>
+              </a>
+            </h2>
 
             <div class="description">
               <?php if ($briefType == "wrote") {
@@ -107,27 +114,33 @@
           </figcaption>
 
         </div>
-      </a>
+      </div>
     <?php }?>
 
-    <a class="brief <?= $briefType; ?> <?php if ($doubleSize == true) { echo 'has-double-size'; } ?>" href="<?= $article->url(); ?>" title="<?= $altText; ?>">
+    <div class="brief <?= $briefType; ?> <?php if ($doubleSize == true) { echo 'has-double-size'; } ?>" title="<?= $altText; ?>">
       <div class="inner">
 
         <?php /* Brief Image */ ?>
         <?php if ($briefType != "wrote") { ?>
           <figure>
-            <?php if ($article->cover()->isNotEmpty()) { ?>
-              <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
-            <?php } else if ($article->image()->isNotEmpty())  { ?>
-              <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
-            <?php } ?>
+            <a href="<?= $article->url(); ?>">
+              <?php if ($article->cover()->isNotEmpty()) { ?>
+                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
+              <?php } else if ($article->image()->isNotEmpty())  { ?>
+                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
+              <?php } ?>
+            </a>
           </figure>
         <?php } ?>
 
 
         <?php /* Title */ ?>
         <div class="name-and-title">
-          <h2 class="title"><?= $article->title(); ?></h2>
+          <h2 class="title">
+            <a href="<?= $article->url(); ?>">
+              <?= $article->title(); ?>
+            </a>
+          </h2>
         </div>
 
         <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
@@ -205,7 +218,7 @@
         <span class="year"><?= date('Y', $article->date()); ?></span>
       </time>
   
-    </a>
+    </div>
     
   <?php } ?>
 
