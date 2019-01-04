@@ -1,6 +1,8 @@
 h2, h3, h4, h5, h6 { margin-bottom: 0.3em; }
 
 .blog-tags {
+  @extend .episode-tags;
+  /*
   .label { display: block; }
   ul { padding-left: 0; }
   a { @extend %tag; cursor: text;
@@ -9,6 +11,7 @@ h2, h3, h4, h5, h6 { margin-bottom: 0.3em; }
       &:hover { background-color:rgba($red,1); background-color:#6d0c0c; color:#efc9c9; }
     }
   }
+  */
 }
 
 .summaries {

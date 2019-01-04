@@ -62,11 +62,9 @@
   <meta property="og:email" content="lemon@thefpl.us">
   
   <!-- Font -->
-  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet">
   <!-- Master CSS -->
-  <?php /* <?= css('assets/css/thefplus.css?lastUpdated=08.23.2018'); ?> */ ?>
-  <?= css('assets/css/thefplus.css'); ?>
+  <?= css('assets/css/thefplus.css?updated=2019-01-04'); ?>
 
 </head>
 <body>
