@@ -1,7 +1,7 @@
 $tag-bg: rgba($white,0.5);
 $tag-border: rgba($black,0.8);
 
-%tag { font-size:0.55em;
+%tag { font-size:70%;
   background-color: $tag-bg;
   //border: 1px solid $tag-border;
   display: inline-block;
@@ -13,7 +13,6 @@ $tag-border: rgba($black,0.8);
   color: $tag-border;
   margin-right: 0.4em;
   margin-bottom: 0.4em;
-  font-weight: 600;
   text-decoration: none;
   cursor: text;
   &:hover { text-decoration: none !important; }
@@ -24,11 +23,23 @@ $tag-border: rgba($black,0.8);
 }
 
 
-ul.tagcloud { padding:0 !important; 
+/*
+ul.tagcloud { padding:0 !important; @include flex-container();
   > li { display: inline-block; margin-bottom: $gap; }
-  a { @extend %tag; font-size:0.8em;  
+  a { font-size:0.7em; border:1px solid rgba($black,0.2); line-height: 200%;
     &[href] { background:transparent; color:$copy; margin: 0;
       &:hover { background:rgba($link,0.1); color:rgba($link,0.9); }
+    }
+  }
+}
+*/
+
+.tagcloud { display:grid; grid-template-columns: repeat(auto-fill,160px); grid-gap: $gap;
+  .tag { position: relative; border: 1px solid rgba($black,0.2); padding:($padding * 1.5) ($padding / 2); @include flex-center(); text-align: center; font-size:15px;
+    .tag-count { position:absolute; top:0; right:$gap; color:$copy; font-size:80%; }
+    .tag-name { color:$copy; width:100%; line-height: 120%; }
+    &:hover { background:$link; 
+      .tag-name { color:$card; }
     }
   }
 }

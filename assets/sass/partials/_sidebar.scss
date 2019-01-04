@@ -29,7 +29,7 @@ $logoLinkHeight: 150px;
     .logo-link { display: block; @include position(absolute,null,0,0,0); height:$logoLinkHeight;
       .logo-notch, .grow-circle, .grow-circle-2 { display: none; }
       * { pointer-events: none; }
-      .logo-mark { position: absolute; bottom:-45px; left:10px; width:($sidebar * 0.6); transition:all 1s ease; }
+      .logo-mark { position: absolute; bottom:-35px; left:10px; width:($sidebar * 0.6); transition:all 1s ease; }
       .logo-type { position:absolute; right:30px; top:30%; width:($sidebar * 0.5); transition:all 1s ease; transform: translateY(($logoLinkHeight * 1.2))  }
       .slogan { position:absolute; bottom: 10px; right:10px; width:($sidebar * 0.46); opacity:0; transition: all 1s ease; transform:translateX(100%); font-size:12px;
         span { display: block; text-decoration: none; font-style: italic;

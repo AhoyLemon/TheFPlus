@@ -85,6 +85,6 @@ table.stats {
   table.stats a:active {
     font-weight: 700; }
 
-@media (min-width: 768px) {
+@media (min-width: 981px) {
   .chart-holder {
     padding-left: 320px; } }
