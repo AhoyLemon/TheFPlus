@@ -88,6 +88,4 @@ o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'  
 
   <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
 
-  <?php /* snippet('svg') */ ?>
-  <?php /* snippet('mobile-menu') */ ?>
   <?php snippet('sidebar') ?>

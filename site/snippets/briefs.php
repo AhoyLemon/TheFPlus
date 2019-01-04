@@ -111,6 +111,17 @@
               </div>
             <?php } ?>
 
+            <?/* Episode # */ ?>
+            <?php if ($briefType == 'episode') { ?>
+              <?php if ((int)$article->uid()) { ?>
+                <div class="category">
+                  <span class="category-tag">
+                      ep #<?= $article->uid(); ?>
+                  </span>
+                </div>
+              <?php } ?>
+            <?php } ?>
+
           </figcaption>
 
         </div>
