@@ -133,7 +133,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 
 @mixin summary360() {
 
-  background-color: $card; color:$copy; border-color: darken($episode,35%);
+  background-color: $card; color:$copy; // border-color: darken($episode,35%);
 
   box-shadow:0 0 4px rgba($black,0.2);
 
