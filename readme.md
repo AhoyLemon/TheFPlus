@@ -1,4 +1,4 @@
-![F Plus Logo](https://thefpl.us/apple-touch-icon-180x180.png)
+![F Plus Logo](https://thefpl.us/android-chrome-384x384.png)
 # The F Plus
 
 
