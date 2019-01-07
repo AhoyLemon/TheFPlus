@@ -91,7 +91,10 @@ fields:
             options:
               rss: RSS
               pocketcasts: Pocket Casts
-              itunes: iTunes
+              itunes: Apple Podcasts
+              playmusic: Google Play Music
+              overcast: Overcast
+              radiopublic: Radio Public
           url:
             label: URL
             type: url

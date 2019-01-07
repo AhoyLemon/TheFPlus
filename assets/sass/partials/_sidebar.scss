@@ -69,6 +69,8 @@ $logoLinkHeight: 150px;
         &.twitch:hover      { color:$color-twitch; }
         &.damndog:hover     { color:#222730; }
         &.pocketcasts:hover { color:$color-pocketcasts; }
+        &.playmusic:hover   { color:#F1471D; }
+        &.overcast:hover    { color:#FC7E0F; }
         svg * { fill:currentColor; }
       }
     }
