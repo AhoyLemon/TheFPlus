@@ -4,7 +4,9 @@
 
     <article class="full">
       <h1><?php echo $page->title() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
+      <div class="article-text">
+        <?php echo $page->text()->kirbytext() ?>
+      </div>
     </article>
 
     <article class="full">

@@ -58,7 +58,7 @@
       img { filter:brightness(30%); }
     }
   }
-  .fanart-out { padding: 0.5em 0; grid-column: 1 / -1; } 
+  .fanart-out { padding: 1.25em 0; grid-column: 1 / -1; font-size:180%; } 
 }
 
 figure.fanart { @extend %fanart; }

@@ -1,5 +1,4 @@
 <section class="briefs summaries">
-  <?php /*  $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) */ ?>
 
     <?php $i = 0; $pageCount = urldecode(param('page')); ?>
 

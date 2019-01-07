@@ -1,3 +1,4 @@
+<?xml-stylesheet type="text/xsl" href="http://localhost/thefplus/assets/xsl/craig.xsl"?>
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>The F Plus</title>
@@ -120,6 +121,7 @@
           <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
 
           <?php if ($item->cover() != "") { ?>
+            <image><?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?></image>
             <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
           <?php } else if($image = $page->image()) { ?>
             <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />

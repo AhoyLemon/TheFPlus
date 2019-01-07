@@ -72,12 +72,5 @@
       <?php endif ?>
     </section>
 
-    <?php /*
-    <div class="episode-find-options">
-      Can't find what you're looking for? Try <a href="<?= $site->find('search')->url(); ?>">seaching the site</a> or <a href="<?= $site->find('search')->url(); ?>">browsing episode tags</a>.
-    </div>
-    */ ?>
-
-
   </main>
 <?php snippet('footer') ?>

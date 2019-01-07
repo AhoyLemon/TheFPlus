@@ -45,53 +45,7 @@
     </summary>
   <?php } ?>
 
-  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')->paginate(14)]) ?>
-
-  <?php /* foreach($results->sortBy('date', 'desc') as $result): ?>    
-    <article class="<?php echo html($result->parent()->slug()) ?> brief">
-      <header>
-      <h2 class="title">
-        <a href="<?php echo $result->url() ?>" title="<?php echo html($result->title()) ?>">
-          <?php echo $result->title() ?>
-        </a>
-      </h2>
-      </header>
-      <?php if($image = $result->image()): ?>
-        <a class="image-holder" href="<?php echo html($result->url()) ?>">
-          <?php if ($result->cover() != "") { ?>
-            <img src="<?php echo $result->cover()->toFile()->url(); ?>" class="cover" />
-          <?php } else { ?>
-            <img src="<?php echo html($image->url()) ?>" class="cover" />
-          <?php } ?>
-          <?php if ($result->tags() != ""):
-            $etags = explode(",", $result->tags());
-          ?>
-          <div class="hover-cover">
-            <ul class="tags">
-              <?php foreach($etags as $etag): ?>
-                <li><?php echo $etag ?></li>
-              <?php endforeach ?>
-            </ul>
-          </div>
-          <?php endif ?>
-        </a>
-      <?php endif ?>
-      <summary>
-        <?php if ($result->cast() != ""):
-            $persons = explode(",", $result->cast());
-          ?>
-          <ul class="cast ridiculists authors">
-            <?php foreach($persons as $person): ?>
-            <li><?php echo $person ?></li>
-            <?php endforeach ?>
-          </ul>
-        <?php endif ?>
-        <div class="content">
-          <p><?php echo excerpt($result->text(), 222) ?></p>
-        </div>
-      </summary>
-    </article>
-  <?php endforeach */ ?>
+  <?php snippet('briefs',  [ 'articles' => $results->sortBy('date', 'desc')->paginate(15)]) ?>
     
   </div>
   

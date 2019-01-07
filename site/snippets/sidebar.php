@@ -111,49 +111,5 @@
 
     </div>
   <?php } ?>
-
-  <?php /*
-
-  <?php $merchPage = $site->find('merch'); ?>
-  <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
-    buy some merch
-    <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
-  </a>
-  
-  <a class="main-link draw-focus" href="<?php echo url::home() ?>/contribute/donate">donate</a>
-
-  <form id="SidebarSearchForm">
-    <input type="search" id="SidebarSearch" placeholder="Search..." />
-    <button id="SidebarSubmit" style="display:none;">go</button>
-  </form>
-
-  <div class="circles">
-    <a class="twitter" href="https://twitter.com/TheFPlus" title="The F Plus on Twitter" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <use class="circle" xlink:href="#IconCircle"></use>
-        <use class="bird inside" xlink:href="#IconTwitter"></use>
-      </svg>
-    </a>
-    <a class="ballpit" href="https://ballp.it" title="Ballp.it is our community forum" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <use class="circle" xlink:href="#IconCircle"></use>
-        <use class="snake inside" xlink:href="#IconBallpit"></use>
-      </svg>
-    </a>
-    <a class="youtube" href="https://YouTube.com/TheFPlus" title="View our YouTube Channel" target="blank">
-      <svg viewBox="0 0 100 100">
-        <use class="circle" xlink:href="#IconCircle"></use>
-        <use class="youtube inside" xlink:href="#IconYouTube"></use>
-      </svg>
-    </a>
-    <a class="rss" title="RSS Feed" href="https://feeds.feedburner.com/TheFPlus" target="_blank">
-      <svg viewBox="0 0 100 100">
-        <use class="circle" xlink:href="#IconCircle"></use>
-        <use class="rss inside" xlink:href="#IconRSS"></use>
-      </svg>
-    </a>
-  </div>
-  */ ?>
-  
   
 </nav>
