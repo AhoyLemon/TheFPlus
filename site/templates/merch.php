@@ -58,7 +58,7 @@
       
         <div href="<?= $merch->url(); ?>" class="grid-box">
           <figure>
-            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<? $merch->title(); ?>" />
+            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" />
           </figure>
           <div class="details">
             <div class="detail name full">
