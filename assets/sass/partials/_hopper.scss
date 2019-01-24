@@ -27,3 +27,7 @@ ul.submitted-content { counter-reset: docNumber -1; display: table; width:100%; 
     strong { font-weight: 600; }
   }
 }
+
+@media (max-width:$mobile-max) {
+  .hopper-wrapper { overflow-x: scroll; }
+}
