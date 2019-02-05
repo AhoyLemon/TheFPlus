@@ -120,7 +120,6 @@ version="2.0">
         </time>
       </xsl:if>
 
-
       <xsl:value-of select="content:encoded" disable-output-escaping="yes" />
       
       <!-- <p class="episode_meta">
