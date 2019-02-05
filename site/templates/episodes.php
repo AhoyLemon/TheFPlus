@@ -1,6 +1,5 @@
 <?php snippet('header') ?>
     <!-- RSS LINK -->
-  <!-- <link type="application/rss+xml" rel="alternate" title="The F Plus" href="https://feeds.feedburner.com/TheFPlus"/> -->
 
   <main class="main edge-to-edge" role="main" data-template="episodes">
     <?php $ftag = urldecode (param('tag')); ?>
