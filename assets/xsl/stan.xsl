@@ -87,7 +87,7 @@ version="2.0">
     <article class="episode">
 
       <xsl:if test="image">
-        <figure>
+        <figure class="cover">
           <img class="cover episode-image">
             <xsl:attribute name="src">
               <xsl:value-of select="image"/>

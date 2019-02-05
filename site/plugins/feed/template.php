@@ -48,7 +48,6 @@
           <guid><?php echo xml($item->url()); ?></guid>
           <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
           <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
-<?php if ($itemCount < 50) { ?>
           <description>
             <?php echo $desc; ?>
           </description>
@@ -100,16 +99,6 @@
           <?php } else { ?>
             <itunes:episodeType>bonus</itunes:episodeType>
           <?php } ?>
-<?php } else { ?>
-          <description>
-            <?php echo $desc; ?>
-          </description>
-          <content:encoded>
-            <![CDATA[
-              <p>Show notes available in the <a href="<?php echo xml($item->url()); ?>">episode page</p>
-            ]]>
-          </content:encoded>
-<?php } ?>
           
           <itunes:author>The F Plus</itunes:author>
           <?php if ($item->featured_site() != "") { ?>
