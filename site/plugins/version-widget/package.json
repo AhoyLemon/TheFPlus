@@ -1,8 +1,0 @@
-{
-"name": "version-widget",
-"description": "Panel dashboard widget displaying installed and latest version with link to changelog",
-"author": "Mathieu Etienne",
-"license": "MIT",
-"version": "2.0.0",
-"type": "kirby-plugin"
-}
