@@ -23,7 +23,7 @@
     <article class="no-search-results full">
       <?php if ($query != "") { ?>
         <p>
-        No results for <b><?= $query; ?></b>.
+        No results for <b><?= esc($query); ?></b>.
         </p>
       <?php } ?>
       <p>
