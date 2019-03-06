@@ -16,7 +16,7 @@ version="2.0">
           (RSS Feed)
         </title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet" />
-        <link rel="stylesheet" href="http://localhost/thefplus/assets/css/stan.css" type="text/css" />
+        <link rel="stylesheet" href="https://thefpl.us/assets/css/stan.css" type="text/css" />
       </head>
     
       <xsl:apply-templates select="rss/channel"/>
@@ -50,6 +50,8 @@ version="2.0">
                   <a href="https://play.google.com/music/m/Ihlfeggusqrvudj3k22sqrvpmmu?t=The_F_Plus">Google Play Music</a>
                   or
                   <a href="https://overcast.fm/itunes334184087/the-f-plus">Overcast</a>
+                  or
+                  <a href="https://radiopublic.com/the-f-plus-GqnR55">Radio Public</a>
                   or
                   <a href="https://www.stitcher.com/podcast/the-f-plus">Stitcher</a>.
                 </p>

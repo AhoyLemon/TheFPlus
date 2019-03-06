@@ -73,6 +73,8 @@
 
     <div class="social-links">
 
+      <?php /*
+
       <a class="<?= $subscribe->icon(); ?>" href="<?= $subscribe->url(); ?>" title="<?= $subscribe->text(); ?>" target="_blank" rel="noopener" onclick="trackEvent('sidebar link', '<?= $subscribe->text(); ?>', '<?= $subscribe->url(); ?>');">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <?php 
@@ -85,6 +87,13 @@
           ?>
           </svg>
         </a>
+      */ ?>
+
+      <a class="rss" href="<?= $site->url(); ?>/episode/feed" title="RSS Feed" onclick="trackEvent('sidebar link', 'RSS Feed', '<?= $site->url(); ?>/episode/feed');">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path d="M67.8 79.7c0-26.1-21.4-47.5-47.5-47.5V20.3c32.6 0 59.4 26.8 59.4 59.4H67.8zM28.5 63.4c4.5 0 8.1 3.7 8.1 8.2 0 4.5-3.7 8.1-8.2 8.1-4.5 0-8.1-3.6-8.1-8.1s3.7-8.2 8.2-8.2zm31.2 16.3H48.1c0-15.3-12.6-27.8-27.8-27.8V40.3c21.6 0 39.4 17.8 39.4 39.4z" />
+        </svg>
+      </a>
 
       <?php foreach ($networks as $n) { ?>
         <a class="<?= $n->icon(); ?>" href="<?= $n->url(); ?>" title="<?= $n->text(); ?>" target="_blank" rel="noopener" onclick="trackEvent('sidebar link', '<?= $n->text(); ?>', '<?= $n->url(); ?>');">
