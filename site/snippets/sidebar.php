@@ -67,14 +67,10 @@
 
   <?php if ($site->social_links()->isNotEmpty()) { ?>
 
-    <?php $subscribe = $site->sidebar_subscribe()->toStructure()->shuffle()->first(); ?>
-
-    <?php $networks = $site->social_links()->toStructure()->shuffle()->limit(2); ?>
-
     <div class="social-links">
 
       <?php /*
-
+      <?php $subscribe = $site->sidebar_subscribe()->toStructure()->shuffle()->first(); ?>
       <a class="<?= $subscribe->icon(); ?>" href="<?= $subscribe->url(); ?>" title="<?= $subscribe->text(); ?>" target="_blank" rel="noopener" onclick="trackEvent('sidebar link', '<?= $subscribe->text(); ?>', '<?= $subscribe->url(); ?>');">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <?php 
@@ -95,6 +91,7 @@
         </svg>
       </a>
 
+      <?php $networks = $site->social_links()->toStructure()->shuffle()->limit(2); ?>
       <?php foreach ($networks as $n) { ?>
         <a class="<?= $n->icon(); ?>" href="<?= $n->url(); ?>" title="<?= $n->text(); ?>" target="_blank" rel="noopener" onclick="trackEvent('sidebar link', '<?= $n->text(); ?>', '<?= $n->url(); ?>');">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
