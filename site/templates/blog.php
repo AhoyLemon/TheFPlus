@@ -10,7 +10,14 @@
     $etags = explode(",", $page->tags());
   ?>
 
-  <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting">
+  <!-- <article class="blog full" itemscope itemtype="http://schema.org/BlogPosting"> -->
+  <article class="full blog" itemscope itemtype="http://schema.org/BlogPosting" <?php if ($page->cover()->isNotEmpty()) { echo 'style="max-width:unset;"'; } ?> >
+
+    <?php if ($page->cover()->isNotEmpty()) { ?>
+      <figure>
+        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+      </figure>
+    <?php } ?>
 
     <header>
       <meta itemprop="mainEntityOfPage" content="<?php echo $page->url(); ?>" />
