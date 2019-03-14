@@ -90,8 +90,14 @@
       </a>
     <?php endforeach ?>
 
-    <a class="person stats stats-link" href="<?= $site->find('stats')->url(); ?>">
-      <span>stats</span>
+    <a class="person stats" href="<?= $site->find('stats')->url(); ?>">
+        <figcaption>
+          statistics
+        </figcaption>
+
+        <figure>
+          <img src="<?php echo $site->url() ?>/assets/images/piechart.png" class="cover no-shadow" alt="Pie Chart" />
+        </figure>
     </a>
   </section>
   
