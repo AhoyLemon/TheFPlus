@@ -1,4 +1,5 @@
 <section class="briefs summaries">
+  <?php /*  $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) */ ?>
 
     <?php $i = 0; $pageCount = urldecode(param('page')); ?>
 
@@ -136,7 +137,7 @@
             <a href="<?= $article->url(); ?>">
               <?php if ($article->cover()->isNotEmpty()) { ?>
                 <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
-              <?php } else if ($article->image()->isNotEmpty())  { ?>
+              <?php } else if ($article->image())  { ?>
                 <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
               <?php } ?>
             </a>
