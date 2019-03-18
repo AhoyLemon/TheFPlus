@@ -1,7 +1,7 @@
 analytics/
 assets/avatars
-panel/
-kirby/
+#panel/
+#kirby/
 crap/
 podcasts/
 backup/
