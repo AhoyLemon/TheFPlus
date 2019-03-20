@@ -82,16 +82,18 @@
     <div class="article-text">
 
     <!-- CAST LIST -->
-    <ul class="cast authors ridiculists info-block">
-      <?php foreach($persons as $person): ?>
-        <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
-        <?php if ($site->find($mlink)) { ?>
-          <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
-        <?php } else { ?>
-          <li itemprop="actor"><?php echo $person ?></li>
-        <?php } ?>
-      <?php endforeach ?>
-    </ul>
+    <?php if ($page->cast()->isNotEmpty()) { ?>
+      <ul class="cast authors ridiculists info-block">
+        <?php foreach($persons as $person): ?>
+          <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
+          <?php if ($site->find($mlink)) { ?>
+            <li itemprop="actor" itemscope itemtype="http://schema.org/Person"><a itemprop="url" href="<?php echo url::home() ?>/<?php echo $mlink; ?>"><span itemprop="name"><?php echo $person ?></span></a></li>
+          <?php } else { ?>
+            <li itemprop="actor"><?php echo $person ?></li>
+          <?php } ?>
+        <?php endforeach ?>
+      </ul>
+    <?php } ?>
     
     <div class="info-block">
       <!-- CONTENT PROVIDER -->
