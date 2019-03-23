@@ -13,7 +13,7 @@
       <span class="tag selected"><?= $ftag; ?></span>
     </div>
     
-    <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(16) ?>
+    <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag_pre, ',')->sortBy('date', 'desc')->paginate(16) ?>
     <?php snippet('briefs',  [ 'articles' => $articles]) ?>
 
   </main>
