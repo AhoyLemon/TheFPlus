@@ -28,10 +28,10 @@
             subtitle: '<?= $site->description(); ?>',
             //summary: 'Die muntere Talk Show um Leben mit Technik, das Netz und Technikkultur. Bisweilen Apple-lastig aber selten einseitig. Wir leben und lieben Technologie und reden darüber. Mit Tim, hukl, roddi, Clemens und Denis. Freak Show hieß irgendwann mal mobileMacs.',
             poster: 'https://thefpl.us/assets/images/og-image.png',
-            url: '<?= $site->url(); ?>'
+            link: '<?= $site->url(); ?>'
         },
         duration: '<?= $page->runtime(); ?>',
-
+        link: '<?= $page->url(); ?>',
         <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
           chapters: [
             <?php foreach ($page->chapters()->toStructure() as $chapter) { ?>
