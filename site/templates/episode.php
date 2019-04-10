@@ -171,7 +171,9 @@
       </div>
     <?php } ?>
 
-    <?php snippet('episode-actions') ?>
+    <?php snippet('podlove') ?>
+
+    <?php /* snippet('episode-actions') */ ?>
 
     <!-- EPISODE TAGS -->
     <?php snippet('tags') ?>
