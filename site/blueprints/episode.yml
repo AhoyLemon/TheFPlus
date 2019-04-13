@@ -128,23 +128,20 @@ fields:
   chapters:
     label: Chapters
     type: structure
-    #entry: >
-    #  '<b>{{timestamp}}</b>: {{name}}'
+    modalsize: large
     style: table
     fields:
       timestamp:
         label: Time Stamp
         type: text
         placeholder: HH:MM:SS
-        validate:
-          min: 8
-          max: 8
-        icon: road 
+        icon: clock-o
         width: 1/3
       name:
         label: Name
         type: text
         width: 2/3
+
   chapter_provider:
     label: Chapter info provided by
     type: tags

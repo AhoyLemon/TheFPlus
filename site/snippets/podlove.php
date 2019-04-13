@@ -35,7 +35,7 @@
         <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
           chapters: [
             <?php foreach ($page->chapters()->toStructure() as $chapter) { ?>
-              { start:"<?= $chapter->timestamp(); ?>", title: '<?= $chapter->name(); ?>'},
+              { start:"<?= $chapter->timestamp(); ?>", title: '<?= addslashes($chapter->name()); ?>'},
             <?php } ?>
           ],
         <?php } ?>
@@ -53,7 +53,7 @@
 
         <?php foreach($persons as $person) { ?>
         {
-          name: `<?= $person; ?>`,
+          name: '<?= addslashes($person); ?>',
           <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
           <?php if ($site->find($mlink)) { ?>
             avatar: '<?= $site->find($mlink)->image()->url(); ?>',
