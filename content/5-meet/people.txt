@@ -1,0 +1,9 @@
+Title: Meet The Ridiculists
+
+----
+
+Text: There's a lot of people who make The F Plus possible. From the regular readers to the excellent content submitters to the people who have made artwork for the thing, the important thing is they all struggle under the thumb of Lemon.
+
+----
+
+Undergrid: <a href="\stats" style="font-size:2.5vw; text-decoration:none;">Participant Stats</a>

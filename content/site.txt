@@ -1,0 +1,145 @@
+Title: The F Plus
+
+----
+
+Description: Terrible things, read with enthusiasm.
+
+----
+
+Copyright: © 2009-(date: Year) Creative Commons CC BY-SA
+
+----
+
+Email: lemon@thefpl.us
+
+----
+
+Twitter-handle: TheFPlus
+
+----
+
+Sidebar-links: 
+
+- 
+  slug: about
+  text: about the podcast
+  _fieldset: page_link
+- 
+  slug: meet
+  text: meet the ridiculists
+  _fieldset: page_link
+- 
+  slug: episode
+  text: browse episodes
+  _fieldset: page_link
+- 
+  slug: also-made
+  text: other projects
+  _fieldset: page_link
+- 
+  slug: contribute
+  text: contribute
+  _fieldset: page_link
+- 
+  text: buy some merch
+  _fieldset: merch_page
+- 
+  slug: fanart
+  text: fanart
+  _fieldset: page_link
+- 
+  text: Search...
+  _fieldset: search_form
+
+----
+
+Social-links: 
+
+- 
+  icon: twitter
+  url: https://twitter.com/TheFPlus
+  text: @TheFPlus on Twitter
+  _fieldset: page_link
+- 
+  icon: paypal
+  url: https://www.paypal.me/TheFPlus
+  text: PayPal to The F Plus
+  _fieldset: page_link
+- 
+  icon: youtube
+  url: http://youtube.com/thefplus
+  text: TheFPlus on YouTube
+  _fieldset: page_link
+- 
+  icon: github
+  url: https://github.com/AhoyLemon/TheFPlus/
+  text: GitHub repo for AhoyLemon/TheFPlus
+  _fieldset: page_link
+- 
+  icon: lemon
+  url: http://ahoylemon.xyz
+  text: ahoylemon🍋xyz
+  _fieldset: page_link
+- 
+  icon: twitch
+  url: https://www.twitch.tv/TheFPlus
+  text: TheFPlus on Twitch
+  _fieldset: page_link
+
+----
+
+Sidebar-subscribe: 
+
+- 
+  icon: rss
+  url: https://thefpl.us/episode/feed
+  text: Subscribe via RSS
+  _fieldset: subscribe_option
+- 
+  icon: pocketcasts
+  url: https://pca.st/TheFPlus
+  text: Subscribe in Pocket Casts
+  _fieldset: subscribe_option
+- 
+  icon: itunes
+  url: >
+    https://itunes.apple.com/us/podcast/the-f-plus/id334184087
+  text: Subscribe in Apple Podcasts
+  _fieldset: subscribe_option
+- 
+  icon: playmusic
+  url: >
+    https://play.google.com/music/m/Ihlfeggusqrvudj3k22sqrvpmmu?t=The_F_Plus
+  text: Subscribe in Google Play Music
+  _fieldset: subscribe_option
+- 
+  icon: overcast
+  url: >
+    https://overcast.fm/itunes334184087/the-f-plus
+  text: Subscribe in Overcast
+  _fieldset: subscribe_option
+- 
+  icon: radiopublic
+  url: >
+    https://radiopublic.com/the-f-plus-GqnR55
+  text: Subscribe in Radio Public
+  _fieldset: subscribe_option
+
+----
+
+Schema-sameas: 
+
+- 
+  url: https://twitter.com/TheFPlus
+- 
+  url: https://plus.google.com/+TheFPlus
+- 
+  url: https://github.com/AhoyLemon/TheFPlus
+- 
+  url: https://www.twitch.tv/thefplus
+- 
+  url: https://www.paypal.me/TheFPlus
+- 
+  url: http://youtube.com/thefplus
+- 
+  url: http://feeds.feedburner.com/TheFPlus

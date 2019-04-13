@@ -1,0 +1,112 @@
+Title: Embroidered Patches
+
+----
+
+Date: 2016-07-02
+
+----
+
+Time: 09:30
+
+----
+
+Cover: sold-square.jpg
+
+----
+
+Cast: Lemon
+
+----
+
+Text: 
+
+Turn *any* piece of clothing into a reminder of internet atrocities with our custom created emroidered patches. We ordered 100 of these pliable backless patches, measuring 2.6"x3" so that you can sew them onto your shirt, backpack, hat, thong or least favorite pet. It's a world of possibilities!
+
+**Shipping is included.** Transactions handled securely offsite by PayPal.
+
+----
+
+Tags: merch,logo
+
+----
+
+Products: 
+
+- 
+  pic: s1-shirt.jpg
+  fullsize: ""
+  title: 'Black & Red'
+  series_num: "1"
+  artist: Lemon
+  printed: "100"
+  dimensions: 2.6" x 3"
+  material: ""
+  released: 2016-06-02
+  soldout: 2018-02-21
+  buy_type: multiple
+  price: ""
+  single_slug: ""
+  single_buttontext: ""
+  buttona_num: "1"
+  buttona_price: "6"
+  buttona_slug: 34KJMJLSSVZE4
+  buttonb_num: "2"
+  buttonb_price: "10"
+  buttonb_slug: 32VDPPL3LDWJ8
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+  reference: ""
+
+----
+
+Photos-leadin: Here's some patches
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: patch_bag.jpg
+  desc: messenger bag
+- 
+  series_num: "1"
+  pic: patch_updown.jpg
+  desc: patch on Lemon
+- 
+  series_num: "1"
+  pic: eyepatch_patch.jpg
+  desc: patch on Heelies
+- 
+  series_num: "1"
+  pic: gateway_bag.jpg
+  desc: patch on another bag
+- 
+  series_num: "1"
+  pic: patch_cat.jpg
+  desc: patch on cat
+- 
+  series_num: "1"
+  pic: patch_grid.jpg
+  desc: patch measurements
+- 
+  series_num: "1"
+  pic: patch_sealed.jpg
+  desc: "sealed tube o' patches"
+- 
+  series_num: "1"
+  pic: worn_hat.jpg
+  desc: patch on hat
+
+----
+
+Share-cta: Got a patch photo? Send it to [Lemon](/meet/lemon).
+
+----
+
+Product-image-type: square
+
+----
+
+Figure-bg: 

@@ -1,0 +1,55 @@
+Title: Recent Firings in San Francisco
+
+----
+
+Category: website
+
+----
+
+Date: 2015-10-29
+
+----
+
+Time: 21:00
+
+----
+
+Cast: Lemon,Boots Raingear,Jack Chick,J W Friedman
+
+----
+
+Show-image: true
+
+----
+
+Episode-file: 
+
+----
+
+Text: 
+
+After a recent round of layoffs at Twitter, we had a conversation about what kinds of jobs would be expendable in the new economy. Then Lemon bought a domain name and banged this thing out in about a day.
+
+It's powered with javascript, and the full source is [available on GitHub](https://github.com/AhoyLemon/sf-firings).  If you want to dig around in the code and add your own job titles and messages, we are happy to accept pull requests.
+
+###[firings.xyz](http://firings.xyz)
+
+----
+
+Tags: fun with javascript,not a bubble,most certainly not a bubble
+
+----
+
+Bonus-content: 
+
+----
+
+Github-repo: https://github.com/AhoyLemon/sf-firings
+
+----
+
+Tweet-intent: https://twitter.com/intent/tweet?url=http%3A%2F%2Ffirings.xyz&via=AhoyLemon&text=The%20latest%20news%20on%20firings%20from%20San%20Francisco%20start%20ups.%20Updated%20every%20second.&hashtags=NotABubble&
+
+----
+
+Cover: firings.png

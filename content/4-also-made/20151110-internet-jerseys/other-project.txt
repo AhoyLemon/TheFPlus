@@ -1,0 +1,72 @@
+Title: Team Internet Jerseys
+
+----
+
+Category: else
+
+----
+
+Date: 2015-11-10
+
+----
+
+Time: 19:20
+
+----
+
+Cast: Lemon
+
+----
+
+Show-image: true
+
+----
+
+Episode-file: 
+
+----
+
+Text: 
+
+<link href="/assets/css/merch.css?=10.12.15" rel="stylesheet" type="text/css">
+
+**Join Team Internet**. These jerseys are printed on Champion Baseball raglan, 3/4 sleeves, 100% cotton and tagless. <a href="http://www.customink.com/items/sizing/99000_lineup/standard.htm" target="_blank">Click here for sizing guidelines.</a>
+
+Shipping is included. Transactions are handled securely offsite by PayPal.
+
+#### SOLD OUT.
+
+<dl class="merch-photos">
+  <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
+  <dd>
+    <img src="/also-made/internet-jerseys/internet.png" />
+    <img src="/also-made/internet-jerseys/shot5.jpg" />
+    <img src="/also-made/internet-jerseys/shot1.jpg" />
+    <img src="/also-made/internet-jerseys/shot2.jpg" />
+    <img src="/also-made/internet-jerseys/shot3.jpg" />
+    <img src="/also-made/internet-jerseys/shot4.jpg" />
+    <footer class="add-your-own">
+      Want to share your own photo? Tweet it to <a href="https://twitter.com/TheFPlus" target="_blank">@TheFPlus</a>
+    </footer>
+  </dd>
+</dl>
+
+----
+
+Tags: merch,shirt,f plus live
+
+----
+
+Bonus-content: 
+
+----
+
+Github-repo: 
+
+----
+
+Tweet-intent: 
+
+----
+
+Cover: a-soldout.jpg

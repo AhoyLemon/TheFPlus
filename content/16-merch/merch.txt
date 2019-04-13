@@ -1,0 +1,328 @@
+Title: Buy Our Merch
+
+----
+
+Text: 
+
+# Merch For Sale
+
+The F Plus Brand® podcast is committed to providing you with the highest quality ~~podcast~~ shopping experience, so here is our list of currently available merch. If it is on the list, that's good news! It means it is available for immediate purchase. Dedicated fans of The F Plus Brand® podcast have a chance to earn the "The F Plus Brand® Podcast #1 Fan" Cheevo™<sup>1</sup> with every purchase! The elite members who hold this Cheevo™ get an exclusive<sup>2</sup> opportunity to purchase additional The F Plus Brand® podcast merchandise when it is released. Additionally, through our strategic parternship with The Bboy 360 Corporation, Cheevo™ holders have the opportunity to earn even more Cheevo™s with every purchase!
+
+<sub><strong>1:</strong> Cheevo™ is a registered trademark of The Bboy360 Corporation [BBOY]
+<strong>2:</strong> not exclusive</sub>
+
+----
+
+Current-merch: 
+
+- 
+  title: A Bitch Named Linda
+  url: 'https://thefpl.us/also-made/tattoos#2'
+  pic: linda_square.jpg
+  type: Tattoo
+  price: $4
+  publish_date: 2017-10-19
+  release_date: ""
+- 
+  title: Great British Jerk Off
+  url: 'https://thefpl.us/also-made/stickers#14'
+  pic: gbjo-square.jpg
+  type: sticker
+  price: $3
+- 
+  title: Thanks, I Hate It!
+  pic: hate_square.jpg
+  url: 'https://thefpl.us/also-made/stickers#19'
+  type: sticker
+  price: $3
+  almost_gone: "0"
+- 
+  title: Fetish Catcher
+  pic: tented_on_table.jpg
+  url: >
+    https://thefpl.us/also-made/fetish-catchers
+  type: Origami
+  price: $2.75
+  almost_gone: "0"
+- 
+  title: Internet Passports
+  pic: passport_square.jpg
+  url: https://thefpl.us/also-made/passports
+  type: Notebook
+  price: $9.5
+  almost_gone: "0"
+- 
+  title: Hoodies From The Internet
+  pic: hoodie_square.jpg
+  url: https://thefpl.us/also-made/hoodies
+  type: Hoodie
+  price: $48
+  almost_gone: "0"
+- 
+  title: Picture Of A Stump
+  pic: stump_square_bg.jpg
+  url: 'https://thefpl.us/also-made/stickers#21'
+  type: sticker
+  price: 75¢
+  almost_gone: "0"
+
+----
+
+Sold-merch: 
+
+- 
+  title: Cowboy Sans
+  url: 'https://thefpl.us/also-made/stickers#13'
+  pic: cowboy_square.jpg
+  type: Sticker
+  price: ""
+  release_date: 2017-05-16
+  sold_date: 2017-11-10
+- 
+  title: Football Congress Jersey
+  url: >
+    https://thefpl.us/also-made/football-congress-jerseys
+  pic: football-shirt.jpg
+  type: Shirt
+  price: ""
+  release_date: 2016-10-09
+  sold_date: 2017-05-23
+- 
+  title: Lift Bros
+  url: 'https://thefpl.us/also-made/stickers#11'
+  pic: lift-square.jpg
+  type: Sticker
+  price: $3
+  release_date: 2017-03-29
+  sold_date: 2017-04-26
+- 
+  title: "Don't Forget"
+  url: 'https://thefpl.us/also-made/stickers#10'
+  pic: asshole-grid.jpg
+  type: Sticker
+  price: $3
+  release_date: 2017-02-07
+  sold_date: 2017-05-17
+- 
+  title: 'Black & Red'
+  url: https://thefpl.us/also-made/magnets
+  pic: logo-magnet.jpg
+  type: magnet
+  price: ""
+  release_date: 2016-06-05
+  sold_date: 2017-06-06
+- 
+  title: Completely Wrapped
+  url: 'https://thefpl.us/also-made/stickers#9'
+  pic: orbison-circle.jpg
+  type: Sticker
+  price: $2
+  release_date: 2017-01-29
+  sold_date: 2017-03-29
+- 
+  title: Shiny Logo
+  url: 'https://thefpl.us/also-made/stickers#8'
+  pic: shiny-fistful.jpg
+  type: Sticker
+  price: $3
+  release_date: 2017-12-19
+  sold_date: 2017-04-27
+- 
+  title: Werewolf Law Is HRUH
+  url: 'https://thefpl.us/also-made/stickers#7'
+  pic: warewolf-sticker.jpg
+  type: Sticker
+  price: $3
+  release_date: 2016-12-09
+  sold_date: 2016-12-24
+- 
+  title: Team Internet Jersey
+  url: >
+    https://thefpl.us/also-made/internet-jerseys
+  pic: teaminternet.jpg
+  type: Shirt
+  price: ""
+  release_date: 2015-10-10
+  sold_date: 2016-05-17
+- 
+  title: Hooded Aaron Tank
+  url: >
+    https://thefpl.us/also-made/aaron-tank-shirts
+  pic: tank-magic.jpg
+  type: Shirt
+  price: ""
+  release_date: ""
+  sold_date: 2014-12-20
+- 
+  title: Upgrade Your Ears
+  url: 'https://thefpl.us/also-made/stickers#6'
+  pic: ears-headphone.jpg
+  type: sticker
+  price: ""
+  release_date: ""
+  sold_date: 2016-11-17
+- 
+  title: Butt Ghost
+  url: 'https://thefpl.us/also-made/stickers#5'
+  pic: ghost-smoke.jpg
+  type: sticker
+  price: ""
+  release_date: 2015-09-10
+  sold_date: 2016-12-24
+- 
+  title: Tagline Square
+  url: 'https://thefpl.us/also-made/stickers#4'
+  pic: slogan-macbook.jpg
+  type: sticker
+  price: ""
+  release_date: 2015-09-10
+  sold_date: 2016-11-30
+- 
+  title: Hypno Boobs
+  url: 'https://thefpl.us/also-made/stickers#3'
+  pic: hypno-bookmark.jpg
+  type: sticker
+  price: ""
+  release_date: 2015-08-11
+  sold_date: 2015-12-30
+- 
+  title: 'Black & Red On Clear'
+  url: 'https://thefpl.us/also-made/stickers#2'
+  pic: clear-mug.jpg
+  type: sticker
+  price: ""
+  release_date: 2015-08-11
+  sold_date: 2015-08-26
+- 
+  title: F+lava F+lav F+oxie
+  url: 'https://thefpl.us/also-made/stickers#1'
+  pic: foxy-circle.jpg
+  type: sticker
+  price: ""
+  release_date: 2015-07-25
+  sold_date: 2015-08-24
+- 
+  title: Be A Cytran
+  url: https://thefpl.us/also-made/mousepads
+  pic: mousepad-stack.jpg
+  type: mousepad
+  price: $9
+  release_date: 2012-05-29
+  sold_date: 2012-05-29
+- 
+  title: Asbestos Canoe!
+  url: 'https://thefpl.us/also-made/mousepads#2'
+  pic: mousepad_inuse.jpg
+  type: mousepad
+  sold_date: 2018-01-12
+- 
+  title: The Sound of Silence
+  url: 'https://thefpl.us/also-made/stickers#12'
+  pic: cricket_stack.jpg
+  type: sticker
+  sold_date: 2018-01-20
+- 
+  title: 'Red & Black Logo'
+  url: 'https://thefpl.us/also-made/patches#1'
+  pic: patch_square.jpg
+  type: Patch
+  sold_date: 2018-02-21
+- 
+  title: Logo Mural Shirts
+  url: >
+    https://thefpl.us/also-made/logo-mural-shirts
+  pic: logo-shirt.jpg
+  type: shirt
+  sold_date: 2018-04-16
+- 
+  title: Garbage Day Prints
+  url: https://thefpl.us/merch/prints
+  pic: prints-thumb.jpg
+  type: prints
+  sold_date: 2018-04-16
+- 
+  title: Fetish Tsunami
+  url: 'https://thefpl.us/also-made/stickers#16'
+  pic: square_tsunami.jpg
+  type: sticker
+  sold_date: 2018-05-04
+- 
+  title: Count Bitcoin (Shiny Gold)
+  url: 'https://thefpl.us/also-made/stickers#17'
+  pic: bitcoin_square.jpg
+  type: sticker
+  sold_date: 2018-05-04
+- 
+  title: Fetish Paintings
+  url: https://thefpl.us/also-made/paintings
+  pic: square_carfetish.jpg
+  type: Painting
+  sold_date: 2018-05-06
+- 
+  title: Ball Snake
+  url: 'https://thefpl.us/also-made/tattoos#2'
+  pic: bicep_snake.jpg
+  type: tattoo
+  sold_date: 2018-05-07
+- 
+  title: Magnetic Poetry Kits
+  url: >
+    https://thefpl.us/also-made/magnetic-poetry
+  pic: j_fridge.jpg
+  type: magnets
+  sold_date: 2018-07-03
+- 
+  title: AVsküll
+  url: 'https://thefpl.us/also-made/stickers#15'
+  pic: avskull_laptop.jpg
+  type: sticker
+  sold_date: 2018-09-08
+- 
+  title: Believe In Magick
+  url: 'https://thefpl.us/also-made/stickers#18'
+  pic: magick_square.jpg
+  type: sticker
+  sold_date: 2018-09-10
+- 
+  title: The Internet Relief
+  url: >
+    https://thefpl.us/also-made/wood-relief-prints
+  pic: fplus-wood-relief-square.jpg
+  type: wood relief print
+  sold_date: 2018-09-16
+- 
+  title: Bless You, Water Woman
+  url: 'https://thefpl.us/also-made/stickers#20'
+  pic: waterwoman_square_forsale.png
+  type: Sticker
+  sold_date: 2018-11-04
+- 
+  title: Live 6 Show Poster
+  url: https://thefpl.us/also-made/posters
+  pic: poster_square.jpg
+  type: poster
+  sold_date: 2018-11-04
+- 
+  title: Cloisonné Pins
+  url: https://thefpl.us/also-made/pins
+  pic: pin_square.jpg
+  type: pin
+  sold_date: 2018-11-09
+- 
+  title: Love Yourself
+  url: 'https://thefpl.us/also-made/buttons#1'
+  pic: 27-dildo.jpg
+  type: Button
+  sold_date: 2018-12-06
+
+----
+
+Sold-text: 
+
+## Sold Out
+
+Everything we print is limited edition. Here's the stuff that's been snatched up so far.
+
+----
+
+Current-text: ## Currently Available

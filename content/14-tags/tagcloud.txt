@@ -1,0 +1,5 @@
+Title: Tag Cloud
+
+----
+
+Text: This page is a list of all the tags used throughout The F Plus site.

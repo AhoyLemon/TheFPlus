@@ -8,10 +8,13 @@
 
 <?php if ( $page->chapters()->isNotEmpty()) {
   $chapters = array();
-  foreach ($page->chapters()->toStructure() as $c) { 
-    $t = trim($c->timestamp());
+  foreach ($page->chapters()->toStructure() as $c) {
+
+    $a = (float)str_replace(':', '', $c->timestamp());
+    $b = str_pad($a, 6, '0', STR_PAD_LEFT);
+    $z = rtrim(chunk_split(substr($b,-6),2,':'),':');
     $n = trim($c->name());
-    array_push($chapters, array("timestamp" => $t, "name" => $n));
+    array_push($chapters, array("timestamp" => $z, "name" => $n));
   }
 } ?>
 

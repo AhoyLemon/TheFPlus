@@ -145,3 +145,7 @@ fields:
   chapter_provider:
     label: Chapter info provided by
     type: tags
+    width: 1/2
+  chapter_provider_aftergap:
+    type: info
+    width: 1/2

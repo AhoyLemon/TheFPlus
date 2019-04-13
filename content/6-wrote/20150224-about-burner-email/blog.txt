@@ -1,0 +1,35 @@
+Title: How To Impress A Boy With Temporary Email (For Contributors)
+
+----
+
+Author: Eye of Za
+
+----
+
+Date: 2015-02-24
+
+----
+
+Time: 20:05
+
+----
+
+Tags: advice,guest post,blog,tech,explanation,software,recommendations,email
+
+----
+
+Text: 
+
+Some sites make you sign up to see everything.  While HypnoLoser may not have a problem with using his personal email address, let's say you don't want to hand out your email to any and all weird websites you come across.  But you still want to be able to sign up.
+
+What you want is a **burner email**.
+
+A burner email is a temporary address you set up, use, and then forget.  There are lots of sites out there that offer quick, easy, fairly-anonymous temporary emails.  For most of these sites, you only need to enter an address to open the inbox.  While there's no sign up, there's also nothing to stop someone else from using the same address.  That shouldn't be a problem if you're only signing up to a forum, and most burner email sites purge old messages, but that's why all these burner sites have privacy policies that say 'we have no privacy'.
+That's what a burner email is.  Now, **how to get one**.
+
+Here's two sites that offer burner email:
+
+ 1. **[MailDrop](http://maildrop.cc/):** Standard temporary email service, inbox-only with a 100kb size limit, no attachments, spam filter, maximum inbox size of 10, and automatically gets cleared after 24 hours of inactivity.
+ 2. **[Guerillamail.com](https://www.guerrillamail.com/):** Heavier on privacy and faster to delete than MailDrop.  Messages last 1 hour, no spam filter, attachments work and allows you to send emails instead of just receive.  Lets you make your burner email @sharklasers.com, too.
+
+Once you pick a site, it's as easy as coming up with a name, putting that into the site, and using that email to sign up to whatever weird forum you're checking out.  Both MailDrop and Guerillamail offer aliases/scrambled emails, which obscure your actual inbox address for a bit of extra privacy.  If you're not concerned about people peeping, you don't have to use the alias.   And that's it.  When you're done, just leave the site and the inbox will get cleared out eventually.  That's all it takes to use a temporary email address.

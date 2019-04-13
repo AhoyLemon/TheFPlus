@@ -1,0 +1,137 @@
+Title: Magnets
+
+----
+
+Date: 2016-06-05
+
+----
+
+Time: 11:21
+
+----
+
+Cover: square_soldout.jpg
+
+----
+
+Show-image: false
+
+----
+
+Cast: Lemon
+
+----
+
+Text: 
+
+<link href="/assets/css/stickers.css?=06.05.16" rel="stylesheet" type="text/css">
+
+We ordered a fresh batch of magnets, and now we want them to end up on your metal things. As with the [stickers](stickers), these are durable polyvinyl magnets with a decent hold. We ordered a *very* limited batch of only 50 of these things  so these will probably sell out quick.
+
+Shipping is included. Transactions are handled securely offsite by PayPal.
+
+**Update:** This batch of magnets sold out in about 20 hours.
+
+<dl class="sticker-series">
+  <dt>
+    <img src="/also-made/magnets/logo_thumb.png" class="thumbnail">
+    <div class="row first">
+      <span class="series-name">Red & Black Logo w/ White Trim</span>
+    </div>
+    <div class="row first">
+      <span class="creator">
+        by <a href="/meet/lemon">Lemon</a>
+      </span>
+    </div>
+    <div class="row second">
+      <span class="details">3" x 2.6", die cut</span>
+      <span class="run">50 printed</span>
+    </div>
+    <div class="row second">
+      <span class="release">Released June 5th, 2016</span>
+      <span class="remaining">Sold out on June 6th</span>
+    </div>
+  </dt>
+  <dd>
+   <div class="sticker-buy-buttons">
+      <div class="sticker-buy-button">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="R5T4F8EC7BQSW">
+<button disabled style="opacity:0.65; background:transparent; color:#c0282d; cursor:default;">SOLD OUT</button>
+</form>
+      </div>
+    </div>
+    <dl class="sticker-photos">
+      <dt onclick="$(this).toggleClass('active').next('dd').slideToggle(300);"></dt>
+      <dd>
+        <img src="/also-made/magnets/magnet_gallery.jpg">
+        <img src="/also-made/magnets/magnet2.jpg">
+        <img src="/also-made/magnets/magnet3.jpg">
+        <footer class="add-your-own">
+        Want to share your own magnet photo? Send it to <a href="/meet/lemon">Lemon</a>.</a>
+        </footer>
+      </dd>
+    </dl>
+  </dd>
+</dl>
+
+----
+
+Tags: merch,logo,illustrator,fucking magnets,they work
+
+----
+
+Show-different-image: 
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Photos: 
+
+----
+
+Product-type: 
+
+----
+
+Soldout: 
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: 

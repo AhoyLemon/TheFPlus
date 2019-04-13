@@ -57,7 +57,7 @@ section.covers-only { display: grid; gap:0;
   }
 }
 
-dl.chapters-info { margin-top:1em; margin-bottom: 1em;
+dl.chapters-info { margin-bottom: 1em;
   span { display: inline-block; }
   .icon { transition: transform 0.5s ease; }
   svg { width:0.8em; height:0.8em; fill:$red; display: inline-block; margin-right: 12px; }

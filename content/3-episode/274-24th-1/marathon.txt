@@ -1,0 +1,165 @@
+Prevnext: 
+
+----
+
+Title: 24 Terrible Hours (Hours 1-6)
+
+----
+
+Begin-hour: 1
+
+----
+
+End-hour: 6
+
+----
+
+Featured-site: 
+
+----
+
+Date: 2017-04-25
+
+----
+
+Time: 22:50
+
+----
+
+Cover: hours1-6.jpg
+
+----
+
+Text: 
+
+This is 24 Terrible Hours: a full day podcasting marathon celebrating bad writing and raising money for the Southern Poverty Law Center. It was broadcast live on March 31, 2017. It seemed like a good idea at the time.
+
+In our first couple hours we have some logistical stuff to figure out, but we soldier on because there's important work to be done.
+
+----
+
+Hours: 
+
+- 
+  hour: "1"
+  name: Beard Stuff
+  document_link: >
+    https://drive.google.com/file/d/0BwZjwR0plNy_OG5LRl81a0hvaVE/view?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Frank
+    West,Jimmyfranks
+  artist: Portaxx
+  provider: Caroline
+  youtube_url: 0Om_FFPvCXw
+  text: |
+    We start out our first ever marathon experience the right way: By immediately breaking our own website and then brodcasting a bunch of dead air while we panic and try to figure out what to do about it.
+    
+    Eventually that's resolved and we settle in for the task at hand: Reading the pontifications of fetishists. It's gonna be a fun 24 hours.
+- 
+  hour: "2"
+  name: Breatharians
+  provider: Neal
+  document_link: >
+    https://docs.google.com/document/d/1oWWY5IhVqmPAflWAovRjcM6O7zE3Y0JGOZrKOECtdiY/edit
+  cast: >
+    Boots Raingear,Lemon,Frank
+    West,Jimmyfranks,Nutshell Gulag
+  artist: Portaxx
+  youtube_url: mwkVjR5DhbI
+  text: >
+    Sex is apparently quite interesting when
+    you are on a zero calorie diet.
+- 
+  hour: "3"
+  name: IdeaDash
+  provider: MorsRattus
+  document_link: >
+    https://docs.google.com/document/d/12pDp_c6R5LopQ4AnhLQ59Y-zQe3adzqbNc4xWX1iiKk/edit
+  cast: >
+    Boots Raingear,Lemon,Nutshell
+    Gulag,STOG,John Toast
+  artist: Portaxx
+  youtube_url: pKHirF-2zsg
+  text: >
+    We stumble our way through another hole
+    that people throw their stupid ideas
+    into.
+- 
+  hour: "4"
+  name: Afraid To Ask
+  provider: SlayerOfYaks
+  document_link: >
+    https://docs.google.com/document/d/1UBza8ZhQobo60RcIjHKckTXaszWw_QU7BjLesgk0Whk/edit
+  cast: "Boots Raingear,Lemon,Achilles' Heelies,Victor Laszlo,John Toast"
+  artist: Travis Ramsey
+  youtube_url: NjiknErD7uk
+  text: >
+    A very special hour with Victor Laszlo.
+    Frank West begins his $0.50 journey.
+- 
+  hour: "5"
+  name: Not Always Learning
+  provider: Cheapskate
+  document_link: >
+    https://docs.google.com/document/d/1w9DnUf-wjaegOYaipWZNvO4v0hDbPWszngQmMyA34Rc/edit
+  cast: "Boots Raingear,Lemon,Achilles' Heelies,Adam Bozarth,John Toast,Cheapskate"
+  artist: Travis Ramsey
+  youtube_url: yZSdQL_I1ec
+  text: >
+    Lessons about learning, in script
+    format. Frank West spends a lot of time
+    on a bridge.
+- 
+  hour: "6"
+  name: F Plus Raps LIVE
+  provider: Boots Raingear
+  document_link: >
+    https://docs.google.com/document/d/1NIBtJJobgWGU6AsV36CrxFIlEI0rZxpTtLyAi1KFAwo/edit?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Adam
+    Bozarth,Isfahan,Portaxx
+  artist: Positronic
+  youtube_url: zU3xqp3YTPA
+  text: >
+    By slightly more popular demand than the
+    other option, The F Plus raps again.
+
+----
+
+Cast: Boots Raingear,Lemon,Frank West,Jimmyfranks,Nutshell Gulag,STOG,John Toast,Achilles' Heelies,Travis Ramsey,Cheapskate,Portaxx
+
+----
+
+Tags: 24 terrible hours,art,musicate my lyrics bro,please give me money for my stupid idea,advice,comic sans that font cowboy
+
+----
+
+Bonus-content: 
+
+----
+
+First-hour: 1
+
+----
+
+Last-hour: 6
+
+----
+
+Leadout: The wheels are still firmly on, so stick around for [part 2](/episode/24th-2) where we let Bunnybread pretend to read a screenplay, let Zarla scare us with creepypastas, and let Sanguinary Novel draw whatever the hell she wants while we're in the Omegaverse
+
+----
+
+Record-date-start: 2017-03-31
+
+----
+
+Record-time-start: 17:00
+
+----
+
+Record-date-end: 2017-03-31
+
+----
+
+Record-time-end: 22:50

@@ -1,0 +1,72 @@
+Title: Why Is It Called A Ten Gallon Hat?
+
+----
+
+Date: 2016-09-06
+
+----
+
+Time: 22:00
+
+----
+
+Cover: ag3.jpg
+
+----
+
+Cast: Lemon,Boots Raingear,Victor Laszlo,Squiddy
+
+----
+
+Episode-file: guess_003.mp3
+
+----
+
+Runtime: 41:05
+
+----
+
+File-size: 38
+
+----
+
+Editor: Lemon
+
+----
+
+Text: 
+
+**This episode's questions**
+1. Why is it called a ten gallon hat?
+2. Why is Pluto no longer considered a planet?
+3. How many countries have landed on the Moon?
+4. How many planets orbit the Sun?
+5. Why put avocados and bananas in a brown paper bag?
+
+**This episode's sponsor**
+* cowurine.com
+
+----
+
+Sources: 
+
+- 
+  name: |
+    What's the origin of "ten-gallon hat"?
+  url: >
+    http://www.straightdope.com/columns/read/2021/whats-the-origin-of-ten-gallon-hat
+  provider: The Straight Dope
+- 
+  name: IAU definition of planet
+  url: >
+    https://en.wikipedia.org/wiki/IAU_definition_of_planet
+  provider: Wikipedia
+- 
+  name: The Origin of Fruit Ripening
+  url: >
+    http://www.scientificamerican.com/article/origin-of-fruit-ripening/
+  provider: Scientific American
+
+----
+
+Bonus-content: * [A wild banana](http://didyouknow.doubleblindlabs.com/wp-content/uploads/2013/07/wild-banana.jpg)
