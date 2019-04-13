@@ -1,9 +1,20 @@
 <script src="https://cdn.podlove.org/web-player/embed.js"></script>
+<a name="chapters"></a>
 <div id="PodLovePlayer">
   <audio preload="none" controls>
     <source src="/podcasts/<?php echo $page->episode_file() ?>" type="audio/mpeg" />
   </audio>
 </div>
+
+<?php if ( $page->chapters()->isNotEmpty()) {
+  $chapters = array();
+  foreach ($page->chapters()->toStructure() as $c) { 
+    $t = trim($c->timestamp());
+    $n = trim($c->name());
+    array_push($chapters, array("timestamp" => $t, "name" => $n));
+  }
+} ?>
+
 <script>
     podlovePlayer('#PodLovePlayer', {
         title: '<?= $page->title(); ?>',
@@ -34,8 +45,8 @@
         link: '<?= $page->url(); ?>',
         <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
           chapters: [
-            <?php foreach ($page->chapters()->toStructure() as $chapter) { ?>
-              { start:"<?= $chapter->timestamp(); ?>", title: '<?= addslashes($chapter->name()); ?>'},
+            <?php foreach ($chapters as $chapter) { ?>
+              { start:"<?= $chapter['timestamp']; ?>", title: '<?= addslashes($chapter['name']); ?>'},
             <?php } ?>
           ],
         <?php } ?>
@@ -89,3 +100,45 @@
       ]
     });
 </script>
+
+
+<?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
+  <dl class="chapters-info">
+    <dt>
+
+      <span class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <path d="M13 10v82l80-41z"/>
+        </svg>
+      </span>
+
+      <?php if ($page->chapter_provider()->isNotEmpty()) { ?>
+        Chapters provided by <?= $page->chapter_provider(); ?>
+      <?php } else { ?>
+        Chapters
+      <?php } ?>
+    </dt>
+    <dd>
+      <table class="chapters">
+        <tbody>
+          <?php $i = 0; ?>
+          <?php foreach ($chapters as $c) { ?>
+            <?php $i++; ?>
+            <tr>
+              <td class="count"><?= $i; ?></td>
+              <td class="timestamp"><?= $c['timestamp'] ?></td>
+              <td class="name"><?= $c['name']; ?></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+    </dd>
+  </dl>
+
+  <script>
+    $('dl.chapters-info dt').click(function() {
+      $(this).parent().toggleClass('expanded');
+    });
+  </script>
+
+<?php } ?>
