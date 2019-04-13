@@ -57,6 +57,10 @@ section.covers-only { display: grid; gap:0;
   }
 }
 
+.document-link-holder { margin-bottom: 1em;
+  svg { height:24px; width:24px; fill:currentColor; }
+}
+
 dl.chapters-info { margin-bottom: 1em;
   span { display: inline-block; }
   .icon { transition: transform 0.5s ease; }
