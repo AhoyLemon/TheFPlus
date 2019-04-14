@@ -50,7 +50,7 @@ Provider: Ambious,Cheapskate
 
 ----
 
-Text: Hundreds of times a day people will sign in to Reddit to share their personal drama. They'll describe th
+Text: People need a moral arbiter in their lives, and while that's understandable, it's an odd move to trust Reddit to do it for you.
 
 ----
 
@@ -62,7 +62,10 @@ Tags: reddit
 
 ----
 
-Bonus-content: 1. Letterkenny: [Jonesy & Reilly's Powerpoint presentation](https://www.youtube.com/watch?v=XkP4GTen2Gw) (YouTube)
+Bonus-content: 
+
+1. Letterkenny: [Jonesy & Reilly's Powerpoint presentation](https://www.youtube.com/watch?v=XkP4GTen2Gw) (YouTube)
+2. [Don't Forget The Asshole Stickers](https://thefpl.us/also-made/stickers#10) (sold out)
 
 ----
 

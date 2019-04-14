@@ -41,11 +41,12 @@
         show: {
             title: '<?= $site->title(); ?>',
             subtitle: '<?= $site->description(); ?>',
-            //summary: 'Die muntere Talk Show um Leben mit Technik, das Netz und Technikkultur. Bisweilen Apple-lastig aber selten einseitig. Wir leben und lieben Technologie und reden darüber. Mit Tim, hukl, roddi, Clemens und Denis. Freak Show hieß irgendwann mal mobileMacs.',
             poster: 'https://thefpl.us/assets/images/og-image.png',
             link: '<?= $site->url(); ?>'
         },
-        duration: '<?= $page->runtime(); ?>',
+        <?php if ($page->runtime()->isNotEmpty()) { ?>
+          duration: '<?= $page->runtime(); ?>',
+        <?php } ?>
         link: '<?= $page->url(); ?>',
         <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
           chapters: [
@@ -54,61 +55,53 @@
             <?php } ?>
           ],
         <?php } ?>
-        audio: [
-          {
-            url: '<?= $site->url(); ?>/podcasts/<?= $page->episode_file(); ?>',
-            mimeType: 'audio/mp3',
-            size: <?= $page->file_size(); ?>000000,
-            title: 'Audio MP3'
-          }
-        ],
+        <?php if ($page->episode_file()->isNotEmpty()) { ?>
+          audio: [
+            {
+              url: '<?= $site->url(); ?>/podcasts/<?= $page->episode_file(); ?>',
+              mimeType: 'audio/mp3',
+              <?php if ($page->file_size()->isNotEmpty()) { ?>
+                size: <?= $page->file_size(); ?>000000,
+              <?php } ?>
+              title: 'Audio MP3'
+            }
+          ],
+        <?php } ?>
 
-        <?php $persons = explode(",", $page->cast()); ?>
+        <?php if ($page->cast()->isNotEmpty()) { ?>
         contributors: [
-
-        <?php foreach($persons as $person) { ?>
-        {
-          name: '<?= addslashes($person); ?>',
-          <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
-          <?php if ($site->find($mlink)) { ?>
-            avatar: '<?= $site->find($mlink)->image()->url(); ?>',
-          <?php } ?>
-          comment: null
-        },
+          <?php $persons = explode(",", $page->cast()); ?>
+          <?php foreach($persons as $person) { ?>
+          {
+            name: '<?= addslashes($person); ?>',
+            <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
+            <?php if ($site->find($mlink)) { ?>
+              avatar: '<?= $site->find($mlink)->image()->url(); ?>',
+            <?php } ?>
+            comment: null
+          },
+        <?php } ?>
       <?php } ?>
-      <?php /* if ($page->provider()->isNotEmpty()) { ?>
-        {
-          name: `<?= $page->provider(); ?>`,
-          group: { id: '2', slug: 'provider', title: "Content Provider" },
-          <?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $page->provider()))); ?>
-          <?php if ($site->find($mlink)) { ?>
-            avatar: '<?= $site->find($mlink)->image()->url(); ?>',
-          <?php } ?>
-          comment: null
-        }
-      <?php } */ ?>
       ],
       visibleComponents: [
         'tabInfo',
-        'tabChapters',
+        <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
+          'tabChapters',
+          'controlChapters',
+        <?php } ?>
         'tabFiles',
-        //'tabAudio',
         'tabShare',
-        //'poster',
         'showTitle',
         'episodeTitle',
-        'subtitle',
         'progressbar',
         'controlSteppers',
-        'controlChapters'
+        
       ]
     }).then(function (store) {
       store.subscribe(() => {
         const { lastAction } = store.getState()
         
-        // Do something with the last action
-        console.log({ type: lastAction.type, payload: lastAction.payload })
-        //console.log(lastAction.type);
+        //console.log({ type: lastAction.type, payload: lastAction.payload })
         if (lastAction.type == "PLAY") {
           trackEvent("listen", "play", p);
         }
@@ -123,7 +116,7 @@
       <svg viewBox="0 0 100 100">
       <path d="M65.3 57H44.2v-4.6h21l.1 4.6zm0-10H44.2v-4.6h21l.1 4.6zm0-10H44.2v-4.6h21l.1 4.6zM29.1 75.3V24.4h42.8v33.4c0 9.7-11.9 5.8-11.9 5.8s3.6 11.7-5.4 11.7H29.1zM78 58.4V18.3H23v63.1h31.7c10.4 0 23.3-13.6 23.3-23zM37.8 32c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7c-.1-1.5-1.3-2.7-2.7-2.7zm0 10.1c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7c-.1-1.5-1.3-2.7-2.7-2.7zm0 9.9c-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7s2.7-1.2 2.7-2.7c-.1-1.5-1.3-2.7-2.7-2.7z"/>
       </svg>
-      <span class="label go-right">Read <?php echo $page->provider() ?>'s document</span>
+      <span class="label go-right">Read <?= str_replace(",", " & ", $page->provider()); ?>'s document</span>
     </a>
   <?php } ?>
 </div>
