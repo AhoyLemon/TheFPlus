@@ -1,0 +1,13 @@
+Title: Stats
+
+----
+
+Text: This page contains a rundown of F Plus participant statistics, with charts built with chart.js
+
+----
+
+Bonus-code: dsadsadsakdjsaldjsadjlad
+
+----
+
+Bonus-content: The charts on this page were accomplished with [Chart.js](http://www.chartjs.org/).

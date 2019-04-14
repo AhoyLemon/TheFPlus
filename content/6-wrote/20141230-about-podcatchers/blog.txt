@@ -1,0 +1,51 @@
+Title: You Don't Have To Use iTunes
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2014-12-30
+
+----
+
+Time: 13:03
+
+----
+
+Tags: podcatcher,recommendations,opinions,software
+
+----
+
+Text: 
+
+Before we start, I recognize that it's kind of suicidal to say unkind things about iTunes. This is a website for a podcast, people listen to podcasts with iTunes. The majority of our listeners (an altogether nerdier and more tech-savvy group than most) still uses iTunes to listen to our podcast, as do a number of the ridiculists, and we take extra effort to make sure that's still a comfortable and easy process.  But it's possible that continues to be the case because people don't know other options exist. With the general podcast/iPod corollary that's easy to make, people can be forgiven for assuming that Apple invented the podcast (as, in fact, [their lawyers](http://en.wikipedia.org/wiki/Podcast#Apple_trademark_protections) believe the same thing), but though they weren't the first to the party, they were quick to dominate it, and for some time iTunes was the best product out there for listening to podcast subscriptions.
+
+Today though, it's a bloated piece of software that isn't doing anything particularly well,  and if you're on a Windows machine, it's an easy answer to "Why is my computer so slow?". (the other contender is Adobe Acrobat). I'm not keen (or qualified) to write about performance here, I just want to list out some options.
+
+####1. [PocketCasts](http://www.shiftyjelly.com/pocketcasts) [Android, iOS, web browser]  (recommended)
+PocketCasts is a relatively new piece of software, but one that does a terrific job at the one task assigned to it. There's an iOS, Android, and browser version, all of which can be synced with each other if you tend to listen to podcasts on different devices. It'll keep track of which episodes you have and haven't listened to, where you are in episodes you've partially listened to, and will display all show and episode artwork as prominently as possible.
+The one caveat to PocketCasts having three versions is that it also has three price tags. The Android version is $4, iOS version is $5, and the web version is $9. As someone who listens to podcasts on a phone as well as a web browser, that means I've purchased the app twice, which frankly does feel wrong to me, but the experience was worth it.
+(used by Lemon & Boots)
+
+####2. The F Plus Website [web browser] (you're probably familiar with it)
+We embed the audio tracks for each podcast episode inside that episode's page, so you can listen directly through the site. It's a nice thing we'll continue to support, and allows easy access to show notes and comments while you're listening. The only caveat is that if you are the kind of person who listens to episodes repeatedly, or you're someone who listens to episodes in segments, I'd really prefer you use something that downloads the file locally just so you're only hitting the server once. Bandwidth remains a concern for us.
+(used by Portaxx & Jimmyfranks)
+
+####3. [Instacast](http://vemedio.com/products) [iOS, MacOS] (simple alternative to iTunes)
+If you're a Mac & iTunes user and you're just in the market for something that's like iTunes but less shitty, that's what Instacast  was going for. It's a iOS/MacOS app, and definitely looks the part. It's free with a paid upgrade, and has native flattr support.
+(used by Jack Chick)
+
+####4. [WinAmp](http://www.winamp.com/) [MacOS, Windows] (this thing stil exists)
+WinAmp's been around for a very long time, and has had an identity crisis pretty much the entire time. It took a while for it to support podcasts, and has always had an [interface](http://en.wikipedia.org/wiki/Winamp#mediaviewer/File:Winampmain.png) best described as "a lot of shit on a black screen", but it's got a number of satisfied users. In 2014 is was bought by AOL who sold it to [Radionomy](https://www.radionomy.com/), so the future of the software is uncertain, but it's a viable choice at the moment.
+(used by Isfahan)
+
+####5. [gPodder](http://gpodder.org/) [Windows, MacOS, Linux, Android, Blackberry] (the Linuxiest thing)
+If you don't mind (or, heaven forbid, like) the [GTK+ interface](http://en.wikipedia.org/wiki/GTK%2B#mediaviewer/File:Gtk3-widget-factory-3.14.0.png), gPodder is a really straightforward system. Podcasts on the left, episodes on the right, maintains your play states, and works on everything (except iOS). They seem to have some sort of [cloud sync thing](https://gpodder.net), although looking at it now I don't see The F Plus in the directory so what the fuck?
+
+There's a whole lot more options like [Miro](http://www.getmiro.com/) and [Juice](http://juicereceiver.sourceforge.net/) and [MusicBee](http://getmusicbee.com/) and [foobar2000](http://www.foobar2000.org/) and even [VLC](http://www.videolan.org/vlc/index.html) has it's own built in method for podcast subscriptions.
+
+I've got my own preferences, but you're welcome to your own. If you're happy with iTunes, by all means continue to use it, but I thought it was worth mentioning some other options. The only thing I don't personally like right now is Stitcher. They're basically distributing content that isn't theirs, through bandwidth they don't provide, and profit off their own ads on top of it, and that doesn't seem right. But regardless, with as many options as there are, you should hopefully be able to use something you picked, rather than "this is the thing I use because this is the thing I use".
+
+Anyway, feel free to opine in the comments if there's something you particularly like or hate.

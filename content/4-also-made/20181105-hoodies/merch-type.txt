@@ -1,0 +1,322 @@
+Title: Hoodies From The Internet
+
+----
+
+Date: 2018-11-05
+
+----
+
+Time: 21:37
+
+----
+
+Cover: squidhind-2.jpg
+
+----
+
+Show-image: true
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: lemon_tall.jpg
+
+----
+
+Cast: Lemon
+
+----
+
+Text: 
+
+Rep The Internet in style and comfort with these French Terry Hoodies!
+
+We had the idea of doing hoodies for a couple years, but it didn't seem feasible until we met Jessi at Afternoon Printing who was as excited as we were to carry the idea through. These middleweight hoodies are incredibly comfortable, well suited to layering, and because of the French Terry (55% cotton / 45% poly) won't pill up like a fleecier hoodie would. Please believe me, if there's one piece of clothing I have opinions on, it's hoodies.
+
+The F+ logo was printed in soft ink using a multi-stage process over the side, with I'M FROM THE INTERNET offseting it from behind. The right side pocket contains a hidden third pocket inside, as well as a headphone pass-thru. The drawcord tips are made of nickel. Also, these things have **reinforced thumb holes**! Must I keep convincing you?
+
+**Currently available in sizes Small and Large only.**
+
+Pick which country we're shipping to and let's get started. **Priority shipping included.**
+
+<select id="SizeMaster">
+<option value="">-- Select Country--</option>
+<option value="United States">United States ($48)</option>
+<option value="Canada">Canada ($50 USD)</option>
+<option value="Everywhere Else"> Everywhere Else ($60 USD)</option>
+</select>
+
+<script  type="text/javascript">
+
+let hoodiePrice = 0;
+let hoodieSize = ""
+$('#SizeMaster').change(function() {
+  var s = $('#SizeMaster').val();
+  hoodieSize = $('#SizeMaster').val();
+  $('form select').val(s).change();
+  $('.hoodie-sizes').addClass('visible');
+  if (s == "") {
+    $('.hoodie-sizes').removeClass('visible');
+    hoodiePrice = 0;
+  } else {
+	if (s == "United States") {
+		hoodiePrice = 48
+    } else if (s == "Canada") {
+        hoodiePrice = 50
+    } else if (s == "Everywhere Else") {
+    	hoodiePrice = 60
+    }
+  }
+});
+
+</script>
+
+<style>
+#SizeMaster { font-size:1em; padding:0.5em 1.25em; display:block; margin-bottom:1em;}
+.hoodie-sizes select, .hoodie-sizes table { display:none; }
+.hoodie-sizes .size, .hoodie-sizes form  { display:inline-block; margin-right:0.25em; }
+.hoodie-sizes { opacity:0; pointer-events:none; transition:opacity 1s ease; }
+.hoodie-sizes .button { min-width:4em;  min-height:4em; vertical-align: middle; }
+.hoodie-sizes.visible { opacity:1; pointer-events:auto; }
+.hoodie-sizes .details-and-sizing { display:block; margin-top:1em; }
+.hoodie-sizes button[disabled] { background: rgba(0,0,0,0.5); box-shadow:none; border:none; color:rgba(255,255,255,0.8); cursor:default; }
+.hoodie-sizes button span { display:block; }
+.hoodie-sizes button .sold-out { font-size:70%; }
+</style>
+
+<div class="hoodie-sizes">
+
+<!-- XS -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="5TKSEJ9Z9JXJW">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="disabled button" disabled> XS <span class="sold-out">SOLD OUT</span></button>
+</form>
+</div>
+
+<!-- SMALL -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="RNH448C2J5BFS">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="submit button" type="submit" onclick="trackEvent('merch', 'Hoodie (small)', '$44', 44);">SMALL</button>
+</form>
+</div>
+
+<div class="size">
+<!-- MEDIUM -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="2RA3AEYA297EJ">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="disabled button" disabled>Medium <span class="sold-out">SOLD OUT</span></button>
+</form>
+</div>
+
+<!-- LARGE -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="L9FPS58SQAED4">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="submit button" type="submit" onclick="trackEvent('merch', 'Hoodie (large)', '$44', 44);">LARGE</button>
+</form>
+</div>
+
+<!-- XL -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="HEY853X4RGF9Y">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="disabled button" disabled>XL <span class="sold-out">SOLD OUT</span></button>
+</form>
+</div>
+
+<!-- XXL -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="ANXTQYL4WGZ7G">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="disabled button" disabled> XXL <span class="sold-out">SOLD OUT</span></button>
+</form>
+</div>
+
+<!-- XXXL -->
+<div class="size">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="UN34EXG56LHKY">
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $44.00 USD</option>
+	<option value="Canada">Canada $46.00 USD</option>
+	<option value="Everywhere Else">Everywhere Else $56.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<button class="disabled button" disabled> XXXL <span class="sold-out">SOLD OUT</span></button>
+</form>
+</div>
+
+<div class="details-and-sizing">
+More details and sizing chart <a href="https://www.independenttradingco.com/products/prm90htz-unisex?variant=68901782" target="_blank">here</a>.
+</div>
+
+</div>
+
+----
+
+Tags: merch,shirt
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: logo-on-side.jpg
+  desc: Lifting up arm to show logo on side
+  full_size: logo-on-side-big.jpg
+- 
+  series_num: ""
+  pic: thumbholes.jpg
+  desc: THUMBHOLES!
+  full_size: thumbholes-big.jpg
+- 
+  series_num: ""
+  pic: cabinet-small.jpg
+  desc: XS hoodie @ cabinet
+  full_size: ""
+- 
+  series_num: ""
+  pic: pile-o-hoodies.jpg
+  desc: a pile of F+ hoodies
+  full_size: pile-o-hoodies-big.jpg
+- 
+  series_num: ""
+  pic: bran_mirror.jpg
+  desc: reflected F+ in mirror
+  full_size: bran_mirror_big.jpg
+- 
+  series_num: ""
+  pic: computer_hoodie.jpg
+  desc: hoodie in chair
+  full_size: computer_hoodie_big.jpg
+- 
+  series_num: ""
+  pic: office_myspace.jpg
+  desc: >
+    hoodie in an office building,
+    overlooking street
+  full_size: office_myspace_big.jpg
+- 
+  series_num: ""
+  pic: mensroom_selfie.jpg
+  desc: "men's room selfie"
+  full_size: mensroom_selfie_big.jpg
+- 
+  series_num: ""
+  pic: pinup_small.jpg
+  desc: a coy pinup
+  full_size: pinup_760.jpg
+- 
+  series_num: "1"
+  pic: back-mirror.jpg
+  desc: >
+    back of the F+ hoodie as shown in a
+    mirror
+  full_size: back-mirror.jpg
+
+----
+
+Baseprice: $48
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 0
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: 

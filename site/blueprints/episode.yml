@@ -82,6 +82,8 @@ fields:
     type: markdown
     icon: code
     help: Optional, anything here will be under the Additional Content header
+
+  # COVER IMAGE CITATION
   cover_cite_toggle:
     label: Cite Cover Image?
     type: fieldtoggle
@@ -109,3 +111,41 @@ fields:
     label: Artist URL
     type: url
     width: 1/3
+
+  # CHAPTERS
+  chapters_toggle:
+    label: Do you have chapters?
+    type: fieldtoggle
+    default: "no"
+    options:
+      no: "No"
+      yes: "Yes"
+    width: 1/4
+    hide:
+      no: chapters chapter_provider
+    show:
+      yes: chapters chapter_provider
+  chapters:
+    label: Chapters
+    type: structure
+    modalsize: large
+    style: table
+    fields:
+      timestamp:
+        label: Time Stamp
+        type: text
+        placeholder: HH:MM:SS
+        icon: clock-o
+        width: 1/3
+      name:
+        label: Name
+        type: text
+        width: 2/3
+
+  chapter_provider:
+    label: Chapter info provided by
+    type: tags
+    width: 1/2
+  chapter_provider_aftergap:
+    type: info
+    width: 1/2

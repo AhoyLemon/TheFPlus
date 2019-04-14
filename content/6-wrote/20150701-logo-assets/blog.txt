@@ -1,0 +1,128 @@
+Title: F Plus Logo Assets
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2015-07-01
+
+----
+
+Time: 13:35
+
+----
+
+Tags: about the site,explanation,logo,assets,blog,branding,Illustrator,downloads
+
+----
+
+Text: 
+
+This page was updated Jan 1st, 2019.
+
+The F Plus' logo was modified on June 26th, 2015 to a simpler and derivative-friendly version of the same shapes we've used since the podcast's inception. On this page you'll find a few use cases, the color palette, some files you can download, and a longer explanation and tips.
+
+##### SAMPLE USE
+<div class="logo-examples">
+<figure class="logo-example">
+<img src="/wrote/logo-assets/standard.svg" />
+<figcaption>on light background</figcaption>
+</figure>
+<figure class="logo-example dark">
+<img src="/wrote/logo-assets/inverse.svg" />
+<figcaption>on dark background</figcaption>
+</figure>
+<figure class="logo-example">
+<img src="/wrote/logo-assets/logo-monochrome.svg" />
+<figcaption>monochrome</figcaption>
+</figure>
+<figure class="logo-example">
+<img src="/wrote/logo-assets/withtext.svg" />
+<figcaption>with text</figcaption>
+</figure>
+<figure class="logo-example dark">
+<img src="/wrote/logo-assets/withtext-inverse.svg" />
+<figcaption>with text, inverse</figcaption>
+</figure>
+</div>
+
+#####COLOR PALETTE
+<div class="color-palette">
+<figure class="swatch red">
+<figcaption>
+<span class="name">RED</span>
+<span class="hex">
+<label>HEX</label>
+<code>C0282D</code>
+</span>
+<span class="rgb">
+<label>RGB</label>
+<code>192, 40, 45</code>
+</span>
+<span class="cmyk">
+<label>CMYK</label>
+<code>17, 98, 92, 7</code>
+</span>
+</figcaption>
+</figure>
+<figure class="swatch black">
+<figcaption>
+<span class="name">BLACK</span>
+<span class="hex">
+<label>HEX</label>
+<code>212221</code>
+</span>
+<span class="rgb">
+<label>RGB</label>
+<code>33, 34, 33</code>
+</span>
+<span class="cmyk">
+<label>CMYK</label>
+<code>72, 65, 65, 73</code>
+</span>
+</figcaption>
+</figure>
+<figure class="swatch white">
+<figcaption>
+<span class="name">white</span>
+<span class="hex">
+<label>HEX</label>
+<code>c6c5d3</code>
+</span>
+<span class="rgb">
+<label>RGB</label>
+<code>198, 197, 211</code>
+</span>
+<span class="cmyk">
+<label>CMYK</label>
+<code>21, 18, 9, 0</code>
+</span>
+</figcaption>
+</figure>
+</div>
+
+<br /><br />
+
+<a href="http://thefpl.us/assets/logo-assets.zip" style="font-size:135%;">
+Download .zip file of all logo assets
+</a>
+<br />
+
+#####A BIT MORE INFO
+The F Plus logo is made out of two shapes: a simple circle, and the scripty F+ that knocks out the circle. The gap between the F+ and the circle should be transparent (not outlined). The gaps the F+ creates (behind the letter and the middle of the loop) should be left blank. 
+
+The usages and colors demoed above and in the assets zip file are all recommended use cases,  but are not rigid. If there's deviations to the logo that seem appropriate (such as the [pride logo](http://thefpl.us/assets/svg/logo-pride.svg) used after the Obergefell v Hodges  decision) are perfectly acceptable. We are just trying to provide a guideline.
+
+Any usage of the old (outlined) logo will be phased out over time. Although the logo usage in previous episode images will stay as is, for obvious reasons (in case it's not obvious enough: Nobody really wants to go back and re-do all those Photoshops), but new episode images will use the new logo.
+
+Are you using this logo somewhere?  Let us know.
+
+<style>
+.logo-examples{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:strech;-ms-flex-align:strech;-webkit-align-items:strech;align-items:strech;}.logo-examples figure{width:270px;-webkit-flex-basis:270px;-ms-flex-preferred-size:270px;flex-basis:270px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;text-align:center;border:1px solid #343434;margin-bottom:10px}.logo-examples figure img{height:160px}.logo-examples figure figcaption{border-top:1px solid #343434;font-size:16px;padding:0.2em 0.6em}.logo-examples figure.dark{background:#343434;border-color:#eee;color:#eee}.logo-examples figure.dark figcaption{border-color:#eee}.color-palette{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:strech;-ms-flex-align:strech;-webkit-align-items:strech;align-items:strech;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}.color-palette figure{width:270px;-webkit-flex-basis:270px;-ms-flex-preferred-size:270px;flex-basis:270px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;padding-top:100px;border:1px solid #343434;margin-bottom:10px}.color-palette figcaption{border-top:1px solid #343434;font-size:16px;padding:0.2em 0.6em;background-color:#eee}.color-palette figcaption span{display:block}.color-palette figcaption span.name{font-size:1.2em;text-align:center;font-weight:600}.color-palette figcaption span label{font-weight:600;padding-right:0.25em}.color-palette figcaption span label:after{content:':'}.color-palette .red{background-color:#c0282d}.color-palette .red span.name{color:#c0282d}.color-palette .black{background-color:#212221}.color-palette .black span.name{color:#212221}.color-palette .white{background-color:#c6c5d3}.color-palette .white span.name{color:#c6c5d3}.download-bar{display:-webkit-box;display:-webkit-flex;display:-moz-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:strech;-ms-flex-align:strech;-webkit-align-items:strech;align-items:strech;margin-top:1em}.download-bar a{width:88px;-webkit-flex-basis:88px;-ms-flex-preferred-size:88px;flex-basis:88px;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;height:88px;-webkit-transition:all 0.25s ease;transition:all 0.25s ease}.download-bar a svg{width:100%;height:100%}.download-bar a:hover{-webkit-transform:scale(1.2);transform:scale(1.2); border-bottom:none !important;}.download-bar summary{-webkit-flex-basis:50%;-ms-flex-preferred-size:50%;flex-basis:50%;-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1;-webkit-flex-shrink:1;-ms-flex-negative:1;flex-shrink:1;-webkit-align-self:auto;-ms-flex-item-align:auto;align-self:auto;padding-left:0.8em;padding-top:0.8em}
+</style>
+
+----
+
+Cover: alogo-illustrator.jpg

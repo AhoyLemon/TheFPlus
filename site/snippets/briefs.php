@@ -122,6 +122,14 @@
               <?php } ?>
             <?php } ?>
 
+            <?php if ($article->chapters()->isNotEmpty()) { ?>
+              <a href="<?= $article->url(); ?>#chapters" class="chapters-icon" title="This episode has chapters">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                  <path d="M0 0h26.5v27H0zM39.5 79H100v21H39.5zM39.5 0H100v27H39.5zM39.5 40H100v26H39.5zM0 79h26.5v21H0zM0 40h26.5v26H0z"/>
+                </svg>
+              </a>
+            <?php } ?>
+
           </figcaption>
 
         </div>
@@ -218,6 +226,14 @@
               </ul>
             <?php } ?>
           </div>
+        <?php } ?>
+        
+        <?php if ($article->chapters()->isNotEmpty()) { ?>
+          <a href="<?= $article->url(); ?>#chapters" class="chapters-icon" title="This episode has chapters">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <path d="M0 0h26.5v27H0zM39.5 79H100v21H39.5zM39.5 0H100v27H39.5zM39.5 40H100v26H39.5zM0 79h26.5v21H0zM0 40h26.5v26H0z"/>
+            </svg>
+          </a>
         <?php } ?>
 
 

@@ -1,0 +1,59 @@
+Title: How To Record A Remote Podcast
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2016-02-22
+
+----
+
+Time: 21:00
+
+----
+
+Text: 
+
+(image: a-remote-podcast.jpg class:cover)
+We've been asked a couple times now about how we put these episodes together, so if you're looking to set up a remote podcast, this is how we do it.
+
+**Update 11/17/2016: Some of our methods have changed since this article was originally written, edits have been made to reflect those changes.**
+
+##### How do you record?
+When recording a podcast with people in different places, the first step is to get isolated audio for each participant. In the beginning, The F Plus was recorded by having everyone in a Skype call and then just recording the results of that Skype call. We *do not* recommend that approach, at all. Get everyone to record their own audio individually and then edit the tracks togther. We've recently switched over to [Discord](https://discordapp.com), and our approach is that we each open a browser window with [time.is](http://time.is) on it, start a recording, and then everyone claps at the same exact timestamp. Then the tracks are sent over to an editor who can use the claps as a way to sync the tracks together.
+
+Before starting a recording, have each participant record (and listen to) a quick test, every time. You might think that your setups will be fine this week if they were fine the previous week, you'd be wrong about that. Pay particular attention to audio bleed (hearing someone else's voice in your own track), as that's the most cumbersome thing to edit out.
+
+##### What kind of equipment do you use?
+Equipment varies, and the preferences are pretty personal. A cheap Sennheiser headset (like [this](http://www.amazon.com/Sennheiser-PC-310-Gaming-Headset/dp/B0087ZMATE)) will serve you well, but your voice will sound a bit thin and the headset will break at some point. I do not recommend the big expensive headsets, because the sound you hear is good but the sound you output usually isn't. Boots uses a [condenser mic on an arm](http://www.amazon.ca/dp/B015898YLE/ref=pe_386430_121528420_TE_dp_2) which is nice but requires a mixing board and some finangling. Lemon got himself a [Blue Yeti](https://www.amazon.com/Blue-Yeti-USB-Microphone-Silver/dp/B002VA464S/ref=sr_1_4?ie=UTF8&qid=1479404092&sr=8-4&keywords=blue+yeti) which is useful but heavy and extremely sensitive so sitting it on your desk isn't an option if you plan on touching your keyboard ever. Frank West is using the [Blue Snowball](http://www.amazon.com/Blue-Microphones-Snowball-Condenser-Microphone/dp/B006DIA77E) which is serving him well although a lot of the same notes from the Yeti apply here as well.
+
+##### What programs do you use?
+Most of us use [Audacity](http://www.audacityteam.org/) because it is free, effective, and the new versions don't seem to crash. Jimmyfranks swears by [Adobe Audition](http://www.adobe.com/products/audition.html), I think Adam uses Garage Band or something, so there's plenty of options. If you don't have a particular favorite, I personally feel Audacity does everything I'd want to do when editing a podcast.
+
+##### How do you edit?
+The process of piecing together an F Plus episode involves the following:
+1. Laying each participant's audio into a separate track and making sure they're sync'd properly.
+2. Adjusting and removing any background noise, bleed, or other irregularities a particular track might have. 
+3. Removing uninteresting or unfunny segments, or anything in particular the editor doesn't like.
+4. Choosing and sticking on music and then (optionally) the cold open and stinger.
+
+This whole process *can* be done in a couple hours, or it can take weeks, depending on a whole lot of factors. Editing is made less painful by approaching the record as though it's live. Every time you think "we'll edit that out later", you're creating a problem for later.
+
+(image: internet-fame.jpg class:cover)
+##### And afterwards?
+* When exporting the mp3, a bitrate of `112kbps` is probably ideal. This makes an hour's worth of audio weigh in at 45-55Mb while not sounding too canned or "swooshy". You might want to experiment with this, but keep in mind that a lot of people download these things to their phone,  so you should really try to keep your file small.
+* I use Photoshop to sketch up the episode image cover. That process often takes longer than it should.
+* There's a program called [MP3Tag](http://www.mp3tag.de/en/) that I use to mark up the exported file. It took me about 3 years to finally decide on a format for that metadata.
+* And then after that, it gets uploaded to the website and released. That whole thing is a separate process entirely.
+
+So, that's our process for recording and editing episodes. I hope that helps somebody.
+
+----
+
+Tags: advice,tech,explanation,blog,recommendations
+
+----
+
+Cover: a-remote-podcast.jpg

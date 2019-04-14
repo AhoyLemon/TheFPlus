@@ -1,0 +1,143 @@
+Prevnext: 
+
+----
+
+Title: 24 Terrible Hours (Hours 19-24)
+
+----
+
+First-hour: 19
+
+----
+
+Last-hour: 24
+
+----
+
+Cover: hours19-24.jpg
+
+----
+
+Date: 2017-04-25
+
+----
+
+Time: 22:47
+
+----
+
+Featured-site: 
+
+----
+
+Text: 
+
+This is 24 Terrible Hours: a full day podcasting marathon celebrating bad writing and raising money for the Southern Poverty Law Center. It was broadcast live on March 31, 2017. It seemed like a good idea at the time.
+
+This is how it ends: First, Achilles' Heelies poisons himself before Adam Bozarth goes it alone, Montrith eats some crap and Lemon wakes upand tries to figure out what's going on, Sanguinary Novel draws a lot of penises, and goddamn motherfucking **wikiHOW!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!**. This was a great idea, let's do it again tomorrow.
+
+----
+
+Hours: 
+
+- 
+  hour: "19"
+  name: "Producer's Assistant for Real Superman Show"
+  provider: GirlKisser420
+  document_link: >
+    https://docs.google.com/document/d/1yib1QrNplrjzl1di-OHRf-Ne7ze55UHgrW-GA1iY7Rs/edit?usp=sharing
+  cast: Adam Bozarth
+  artist: Positronic
+  youtube_url: WI4GpPRCeEQ
+  text: >
+    Heelies sacrifices his body for charity,
+    Adam flies solo.
+- 
+  hour: "20"
+  name: Indigo Children
+  provider: Montrith
+  document_link: >
+    https://docs.google.com/document/d/1MEjI0y5mw3ISxPd-XgguXxsgVXwKdhA91zYSE8utL_4/edit
+  cast: >
+    Boots Raingear,J W
+    Friedman,Montrith,Lemon
+  artist: Sanguinary Novel
+  youtube_url: Ekh7Audqz0w
+  text: "The sound of Montrith eating, Lemon's return, and we dust off an extremely old doc."
+- 
+  hour: "21"
+  name: Metabods
+  provider: FattyBoBatty
+  document_link: >
+    https://docs.google.com/document/d/1kCmHyI1eH4sKoEX6vUzxt5IoG9Tm5_Vb46y9o-ChVEc/edit?usp=sharing
+  cast: "Lemon,Adam Bozarth,J W Friedman,Frank West,Achilles' Heelies,Kumquatxop"
+  artist: Sanguinary Novel
+  youtube_url: LARlXAmlWLA
+  text: Thassa lotta penises!
+- 
+  hour: "22"
+  name: Project Paranormal
+  provider: Spooks
+  document_link: >
+    https://docs.google.com/document/d/1akN0YJMUFWb7GWHxmi4tzPWNjBu34YgN3s1S3g1C-UM/edit?usp=sharing
+  cast: >
+    Lemon,Boots Raingear,Jack
+    Chick,Kumquatxop,J W Friedman,Ironicus
+  artist: Positronic
+  youtube_url: 91TGCDbqo2I
+  text: |
+    Oh hey, it's Ironicus! We explore the cryptozoological mystery that was Randy "Macho Man" Savage.
+- 
+  hour: "23"
+  name: Anime Fanon
+  provider: 'A  Meat'
+  document_link: >
+    https://docs.google.com/document/d/1HWe2BrZQDHc5rNmN3NMblhS65Xvzt2VGK481ZqEd1bo/edit?usp=sharing
+  cast: >
+    Lemon,Boots Raingear,Jack
+    Chick,Jimmyfranks,John
+    Toast,Portaxx,Ironicus
+  artist: Positronic
+  youtube_url: of9ItUk7sYg
+  text: "Ahhh, c'mon fucking guys."
+- 
+  hour: "24"
+  name: wikiHow!!!!!!!!!!!!!!!!!!
+  provider: The F Plus
+  document_link: >
+    https://docs.google.com/document/d/1DnVjFiTBmmTTemJtZDqb2Zg09cPq2Y0e7Kre5FrLePw/edit?usp=sharing
+  cast: >
+    Lemon,Boots Raingear,Frank
+    West,Jimmyfranks,John Toast,Victor
+    Laszlo
+  artist: Travis Ramsey
+  youtube_url: SrsUpU87qBc
+  text: "We don't know how to do things, but we do know how to end them."
+
+----
+
+Cast: Adam Bozarth,Positronic,Boots Raingear,J W Friedman,Montrith,Lemon,Sanguinary Novel,Frank West,Achilles' Heelies,Kumquatxop,Jack Chick,Ironicus,John Toast,Jimmyfranks,Portaxx,Travis Ramsey,Victor Laszlo
+
+----
+
+Tags: 24 terrible hours,art
+
+----
+
+Leadout: In the end, we raised **$5,420** for the Southern Poverty Law Center and weakened our collective emotional center in the process. Thanks to everyone who participated in every way they participated. It was... something. It was something, that's for sure.
+
+----
+
+Record-date-start: 2017-04-01
+
+----
+
+Record-time-start: 11:00
+
+----
+
+Record-date-end: 2017-04-01
+
+----
+
+Record-time-end: 17:00

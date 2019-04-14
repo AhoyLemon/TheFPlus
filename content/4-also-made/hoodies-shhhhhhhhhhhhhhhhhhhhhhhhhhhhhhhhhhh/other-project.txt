@@ -1,0 +1,97 @@
+Title: Hoodies 4 Ridiculists
+
+----
+
+Category: merch
+
+----
+
+Date: 
+
+----
+
+Time: 
+
+----
+
+Cover: medicore_square.jpg
+
+----
+
+Show-image: true
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Cast: 
+
+----
+
+Text: 
+
+Listen jerk, if you're here it better be because you're a ridiculist and Lemon personally gave you this URL.
+
+I'm not gonna tell you anything about the hoodies because you should learn about them [on the proper page](https://thefpl.us/also-made/hoodies) - here's what you need to know.
+
+I'm giving these to you at cost (wholesale + print fees + US shipping) because I think you're a swell person. A swell person in need of a very fucking cool hoodie. Also oops I fucked up shipping costs, turns I'm paying about $4 to give this to you.
+
+<style>
+form label { display:block; }
+form select { display:block; font-size:1em; padding:0.25em 1em; }
+form button { min-width:5em; }
+</style>
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="6P9G7Y69NCJAL">
+<table>
+<tr><td><input type="hidden" name="on0" value="Size">Size</td></tr><tr><td><select name="os0">
+	<option disabled>XS sold out</option>
+	<option value="Small">Small </option>
+	<option value="Medium">Medium </option>
+	<option value="Large">Large </option>
+	<option value="XL">Xtra Large </option>
+	<option disabled>XXL sold out</option>
+	<option disabled>XXXL sold out</option>
+</select> </td></tr>
+</table>
+<button class="submit button" type="submit">Get A Hoodie!  ($29)</button>
+</form>
+
+
+
+
+
+<br />
+One more thing to know - this form is outside the inventory system, so there's a *chance*, however slight, that your size is sold out. Probably unlikely, but I'll let you know if that happens.
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: 
+
+----
+
+Tags: 
+
+----
+
+Tweet-intent: 
+
+----
+
+Bonus-content: 
+
+----
+
+Photos: 

@@ -1,0 +1,204 @@
+Title: Garbage Day Prints!
+
+----
+
+Cover: prints-thumb.jpg
+
+----
+
+Date: 2018-04-16
+
+----
+
+Time: 12:00
+
+----
+
+Product-image-type: square
+
+----
+
+Figure-bg: 
+
+----
+
+Cast: Portaxx,Lady Frenzy
+
+----
+
+Text: 
+
+When [Garbage Day](/episode/garbage-day-1) ended, we realized we had a couple of high-res prints of the results. So, here's what we decided to do:
+
+We're doing *single prints* of some retouched drawings from the Garbage Day art stream. These will be printed on demand and shipped to the buyer, then marked sold out. Once we've taken care of printing and shipping costs, **the artists get 70%** of the prints sold here. So if you like what's shown here, please support the people who drew it.
+
+----
+
+Products: 
+
+- 
+  pic: hour1_thumb.jpg
+  fullsize: hour1_big.jpg
+  title: 'Hour 1: Braingasms'
+  series_num: "6"
+  artist: Portaxx
+  printed: "1"
+  dimensions: 20"x10"
+  material: Metallic
+  reference: garbage-day-1
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "40"
+  single_slug: LJDM7YDGF2EDJ
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: hour2_thumb.jpg
+  fullsize: hour2_big.jpg
+  title: 'HOUR 2: Statues Are Sexy'
+  series_num: "5"
+  artist: Portaxx
+  printed: "1"
+  dimensions: 20"x10"
+  material: Metallic
+  reference: garbage-day-1
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "40"
+  single_slug: THWQKXJP99776
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: hour5_thumb.jpg
+  fullsize: hour5_big.jpg
+  title: 'HOUR 5: iUniverse'
+  series_num: "4"
+  artist: Lady Frenzy
+  printed: "1"
+  dimensions: 12"x9"
+  material: Matte
+  reference: garbage-day-1
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "30"
+  single_slug: Y3FKJ8WLAUQP2
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: hour6_thumb.jpg
+  fullsize: hour6_big.jpg
+  title: 'HOUR 6: Gentle Likpas'
+  series_num: "3"
+  artist: Lady Frenzy
+  printed: "1"
+  dimensions: 12"x9"
+  material: Metallic
+  reference: garbage-day-1
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "30"
+  single_slug: BP8F5J2FBPGFG
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: hour12_thumb.jpg
+  fullsize: hour12_big.jpg
+  title: 'Hour 12: Yahoo! Answers'
+  series_num: "2"
+  artist: Lady Frenzy
+  printed: "1"
+  dimensions: 9"x12"
+  material: Silk
+  reference: garbage-day-2
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "30"
+  single_slug: U5M9KM9AF24Y2
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: hour23_thumb.jpg
+  fullsize: hour23_big.jpg
+  title: 'HOUR 23: F Plus Sings'
+  series_num: "1"
+  artist: Portaxx
+  printed: "1"
+  dimensions: 20"x10"
+  material: Matte
+  reference: garbage-day-4
+  released: 2018-04-16
+  soldout: 2018-04-16
+  buy_type: single
+  price: "40"
+  single_slug: TBQ878RW9G29W
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+
+----
+
+Photos-leadin: 
+
+----
+
+Photos: 
+
+----
+
+Share-cta: 
+
+----
+
+Tags: merch,art

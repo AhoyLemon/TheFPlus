@@ -1,0 +1,77 @@
+Title: Your Friends Do Terrible Accents
+
+----
+
+Category: website
+
+----
+
+Date: 2017-08-18
+
+----
+
+Time: 11:10
+
+----
+
+Cover: og-image.jpg
+
+----
+
+Show-image: true
+
+----
+
+Cast: Lemon
+
+----
+
+Text: 
+
+Stemming from a conversation at a bar that lasted perhaps an hour longer than it should, **badaccent.club** puts your friends' abilities to the test by assigning a player a quote and an accent, and then pressing on that player's friend to guess what just happened. Progressive web app, but probably best played on your phone. With other people, and drinks would help.
+
+# [badaccent.club](http://badaccent.club)
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: https://github.com/AhoyLemon/badaccent.club
+
+----
+
+Tags: fun with javascript,video games that aren't video games,art,f plus live
+
+----
+
+Tweet-intent: https://twitter.com/intent/tweet?url=http%3A%2F%2Fbadaccent.club&via=AhoyLemon&text=Your%20friends%20do%20terrible%20accents
+
+----
+
+Bonus-content: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Photos: 

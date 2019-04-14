@@ -1,0 +1,79 @@
+Title: Redesign: Version 2.2.0
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2019-01-01
+
+----
+
+Time: 11:50
+
+----
+
+Cover: v2.2.jpg
+
+----
+
+Text: 
+
+In December of 2014, we launched the new F Plus site. We switched the site from what was a generic Joomla install and converted all that content into  something custom built to support all the various projects we end up doing here.
+
+And in the time since, I've played with the code running the site. Many, many [many](https://github.com/AhoyLemon/TheFPlus/commits/master) times. I've set up all the episodes with [Schema Data](https://schema.org/Episode). I've written a bunch of different attempts at [service workers](https://serviceworke.rs/). I've rewritten the CSS structure with [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/), and then again with [CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/). I made a [random episode selector](https://thefpl.us/episode/random), a [tag navigator](https://thefpl.us/tags) and a [combined stats](https://thefpl.us/stats) page.
+
+**None of this was necessary**. Very little of this was something anybody ever asked me for, and none of it really changes our ability to continue to make episodes. But that isn't the point. The point is that The F Plus, broadly, is an outlet for us doing things that we enjoy, and I personally enjoy designing websites. Obviously that's a strange preoccupation to have, but I learn things in my day-to-day life about website development, and having a site with a certain amount of popularity with a lot of disparate content allows me to try out things, sometimes to my own benefit, hopefully for yours.
+
+To that end, I want to show you a couple of new things you might be interested in seeing in this new design.
+
+### Briefs Layout
+If you've seen the home page, you've seen the briefs layout. This was where I started with this redesign as it was the part of the design I was least happy with. This operates entirely using CSS Grid, and displays a row of between 1 to 5 (depending on your resolution) equally sized boxes to fill with relevant content from  that specific item. While the old layout used color to differentiate content types, this one switches the content displayed: Cover image cast and subject for F+ episodes, title summary and tag for merch, title and long summary for blog posts. 
+
+Additionally, I'm playing with this grid with a double sized brief, taking up twice the space of the other briefs and providing more info of that particular item. That's used for the most recently published thing, and then sprinkled in throughout afterwards.
+
+This layout gets used on the home page as well as search results and tag results.
+
+### Nav Sidebar
+One of the most dramatic changes here is to the global navigation. The previous design used a full height black bar (desktop) or generic hamburger top menu (mobile), neither of which I was ever in love with. I wanted to try to make that divide less harsh and embrace some of the whitespace already going on, and this is what I came up with. The actual top level links have changed (and probably will continue to change), but you'll always have home, episodes and search.
+
+The social icons were a later idea and actually randomly generated. From a database of all the possible things that can exist in that bit (iTunes, Twitter, YouTube, etc), the site will pull four and display them. Is that a good idea? I dunno, maybe?
+
+Also if you haven't seen the new sidebar navigation on your phone, please do give that a look. That was the idea I spent the most time on, and I'm happy with where it ended up.
+
+### Image Grid Layout
+Different from the briefs layout, the image grid layout (used on [episodes](https://thefpl.us/episode) and [other projects](https://thefpl.us/also-made)) was one I was still pretty happy with. Briefs already exist for other pages, so we can let the images do the work here. However, I thought both the rollover state and navigation items seemed clumsy, so those are what I paid attention to.
+
+While the grid is basically the same as before, the rollover effect gives a cleaner sumary of what the piece is about and the previous and next nav items are (to me) better looking. Although I may end up looking at those again at some point.
+
+STOG brought up an idea at one point in use here which I thought was smart. On [page 2](https://thefpl.us/episode/page:2) and later, assuming that you may be having difficulty finding what you're looking for, the site throws a box in the grid suggesting that maybe you want to try a search or tag browse instead. This put some extra light on the [episode tag index](https://thefpl.us/tags), which is a page I think very few people knew existed.
+
+The [fanart](https://thefpl.us/fanart) page also uses a version of the image grid layout, although with a tighter grid.
+
+### Content pages
+These actually haven't been changed a *whole lot*, mainly concerned with maintaining the image offset design pattern and containing text inside the white box. This page is always straightforward on mobile displays, but for desktop, the challenge has always been to try to have a box of content go wall-to-wall while still allowing it to be readable. In this particular incarnation, I'm doing this with the figure image itself. For [episode pages](https://thefpl.us/episode/169) where we can expect a square image, we lay image and content side by side, for blog posts such as this one or [the about page](https://thefpl.us/about), we keep our content box with a maximum width. For merch pages, such as [stickers](https://thefpl.us/also-made/stickers) or [passports](https://thefpl.us/also-made/passports), it's a combination of the two.
+
+### New Font
+You may have noticed this already depending on how font sensitive you are, but we've changed the font from [Source Sans Pro](https://fonts.adobe.com/fonts/source-sans) to [Noto Serif TC](https://fonts.google.com/specimen/Noto+Serif+TC). I've been wanting something with nicer serifs. This does the job and came in several different weights.
+
+### Monochrome Logo
+This is a pretty minor tweak, but on the [logo assets page](https://thefpl.us/wrote/logo-assets) I used to recommend making the F+ and circle the same color if you needed to go monochrome. Thing is, that idea scales really poorly and once you get underneath 64px the shapes blur together. Plus, I don't think that looks great. 
+
+At one point (maybe around [ep 267](https://thefpl.us/episode/267)) I started playing around with an alternate monochrome where the circle is a half outline, and I'm pretty happy with that idea, so I'm recommending that for any place you might need a monochrome logo. For the record: the Red & Black version is the standard version, everything else is an alternate.
+
+(link:https://thefpl.us/assets/logo-assets.zip text:Download Logo Assets class:button)
+
+### Thoughts?
+
+I think I covered everything here, but if you've got any thoughts or ideas about the new site, I sure wouldn't mind hearing them. You can talk about it over on [this ballp.it thread](https://ballp.it/index.php?topic=3055.0) or use [this form](https://goo.gl/forms/xYJYMrPtEZ1SVWHB2). You *can* leave a comment here about it, but one thing you might have noticed in the redesign is a depriotization of comments in general. I'm not saying I'm ignoring them, but I *am* saying that I'd prefer basically every other form of communication over that one. 
+
+**If you do find a bug** I sure would like it if you'd open an issue on our [GitHub Repo](https://github.com/ahoyLemon/TheFPlus).
+
+Seriously though, what do you think? Do you like it? I hope you like it.
+
+I like it, in any case.
+
+----
+
+Tags: about the site,blog,tech,explanation

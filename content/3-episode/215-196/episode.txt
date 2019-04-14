@@ -1,0 +1,68 @@
+Title: Made With Mechanically Separated Podcast Parts
+
+----
+
+Featured-site: kraftrecipes.com,hormel.com,walmart.com
+
+----
+
+Date: 2015-12-06
+
+----
+
+Time: 21:00
+
+----
+
+Editor: Lemon
+
+----
+
+Cast: Jack Chick,Acierocolotl,Nutshell Gulag,Lemon
+
+----
+
+Episode-file: fplus_196.mp3
+
+----
+
+Runtime: 1:03:58
+
+----
+
+File-size: 44
+
+----
+
+Document-link: https://docs.google.com/document/d/1PFP9AiF1-6ohmsdIywxigc_4XUjafbxbEZ0dM3squT0/edit?usp=sharing
+
+----
+
+Provider: Montrith
+
+----
+
+Text: 
+
+There's a lot of recipe websites out there, and a lot of websites owned by giant food conglomerates. Fortunately, the internet has a way of synergizing things and these corporations provide their very own websites which encourage people to cook with their products. Looking for a salad recommendation from SPAM? A cocktail recipe by Hormel? A filling desert that includes a large quantity of Velveeta? This is vertical integration at its finest.
+
+This week, The F Plus is cooking pad see ew with Raisin Bran.
+
+----
+
+Music-used: R. Kelly - Remix To Ignition,Hot Chip - Crap Kraft Dinner
+
+----
+
+Tags: recipes,put all that shit in a bowl,all you do is dump,lazy people,profiles of job creators,consumerism as a religion
+
+----
+
+Bonus-content: 
+
+1. [Click-o-Tron](http://clickotron.com/). Randomly generated clickbait articles written by a recurrent neural network.
+2. [An article by Lars Eidnes](http://larseidnes.com/2015/10/13/auto-generating-clickbait-with-recurrent-neural-networks/) describing the process of building Click-o-Tron. OMG WIN CUTE LOL
+
+----
+
+Cover: ep196.jpg

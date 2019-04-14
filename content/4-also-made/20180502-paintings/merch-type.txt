@@ -1,0 +1,120 @@
+Title: Fetish Paintings [SOLD]
+
+----
+
+Date: 2018-05-02
+
+----
+
+Time: 10:00
+
+----
+
+Cover: paintings-sold.jpg
+
+----
+
+Cast: Sanguinary Novel
+
+----
+
+Text: 
+
+As a donation incentive for [Garbage Day](https://thefpl.us/episode/garbage-day-1), we produced and shipped [these toys](https://twitter.com/AhoyLemon/status/991344242579689473) out to the top donators for each hour. 
+
+They were a *lot* of work to make, and as part of the process, Sanguinary Novel created two original paintings to be used on the backing cards. The paintings were made by acrylic on acid-free board, and they're big and good enough to display, so we figured we'd give you the opportunity.
+
+**70% of the money from this sale** goes to Sanguinary Novel, who will varnish your painting, then carefully box and ship your package. You'll also get a
+<span style="font-size:150%; font-family: 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif; line-height:135%;">Certificate of Authenticity</span>!
+
+----
+
+Tags: merch,fetishes,art
+
+----
+
+Product-image-type: square
+
+----
+
+Figure-bg: 
+
+----
+
+Products: 
+
+- 
+  pic: foot_square.jpg
+  fullsize: foot_large.jpg
+  title: Foot Fetish Painting
+  series_num: "1"
+  artist: Sanguinary Novel
+  printed: ""
+  dimensions: 10" x 13.5"
+  material: Acrylic on acid free board
+  reference: ""
+  released: 2018-05-02
+  soldout: 2018-05-06
+  buy_type: single
+  price: "100"
+  single_slug: RRAGB4YHPK3HW
+  single_buttontext: BUY NOW
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: car_square.jpg
+  fullsize: car_large.jpg
+  title: Car Fetish Painting
+  series_num: "2"
+  artist: Sanguinary Novel
+  printed: ""
+  dimensions: 10" x 13.5"
+  material: Acrylic on Acid Free Board
+  reference: ""
+  released: 2018-05-02
+  soldout: 2018-05-02
+  buy_type: single
+  price: "100"
+  single_slug: RR2KKKYUAFGJQ
+  single_buttontext: BUY NOW
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+
+----
+
+Photos-leadin: Closer look? Clicky click
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: foot_isolated_small.jpg
+  desc: Painting of a foot in a bikini
+  full_size: foot_isolated_large.jpg
+- 
+  series_num: "2"
+  pic: car_isolated_small.jpg
+  desc: >
+    Painting of Corey Haim appreciated a
+    sexy car
+  full_size: car_isolated_large.jpg
+
+----
+
+Share-cta: 

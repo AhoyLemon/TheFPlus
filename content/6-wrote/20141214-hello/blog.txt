@@ -1,0 +1,50 @@
+Title: Welcome To The New Site
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2014-12-14
+
+----
+
+Time: 11:16
+
+----
+
+Tags: blog,about the site,explanation
+
+----
+
+Text: 
+
+Hi there, let me show you around.
+
+As you can see, a lot of what's here is significantly different than it used to be. Personally, we think it's a whole lot better. I know change is hard, but I'm thinking once you get used to the new format, you'll like it a lot better. Let me show you a couple of things that are new.
+
+###explore the miserable world of The F Plus
+The old site had tags and search, and neither of them worked particularly well. The new site will allow you to pivot on nearly any piece of data. For example, episode [153](http://thefpl.us/episode/153) has [Adam Bozarth](http://thefpl.us/meet/adam-bozarth) in it. It was provided by [LADY FRENZY](http://thefpl.us/meet/lady-frenzy), and it has a tag of [useless tiny detail fetish](http://thefpl.us/find/tag:useless%20tiny%20detail%20fetish). From any of those links, you can get information about other episodes or projects related to that tag or person. Any reader or content provider has his or her own page, and a lot of those people have provided their own favorite episodes.
+
+###much better URLs.
+The URL for episode 130 is thefpl.us/episode/130, there's also ones like "meet/jimmyfranks", "also-made/this-lady-video", and "wrote/hello". Much easier to get around.
+
+###we do more than this podcast
+The old site was a re-appropriation of a blog layout, which made it hard for us to put up things that weren't F Plus episodes. Sometimes, there were things we just wouldn't do because there was no good way to put it up on the site. This site has been built from the ground up to cater to the things we do. That means F+ episodes, shorts, QE, side projects, blog posts, articles, open letters, or anything else we find interesting. Linked to each other, but still in their own container.
+
+###an experiment in microtransactions
+We're trying out this thing called [flattr](https://flattr.com). The general idea of flattr is that you set up an account and then create a monthly "internet budget", going about your life and flattring things as you go. At the end of the month, your budget is split among the people you've flattred. For a longer explanation and our reasons in doing this, please read [Why We're Trying Flattr](about-flattr).
+
+###comments started over
+Other than the site redesign, the biggest thing you're likely to notice is that all the old comments are gone. It was, unfortunately, a necessary casualty because the old comments were tied into the old system we were on. We're now using [Disqus](http://disqus.com) to manage our comments. This means you'll be able to upload images, favorite and follow threads, and not live under the thumb of an oppressive filter that assumed everybody was trying to spam links to Cialis (because most people were). For those concerned about privacy, and I do get the concern, we have allowed anonymous comments. It will ask for an email address, but it won't verify that address, so enter in whatever you want.
+
+###semantic social blabbity bla bla
+The site's built with semantic HTML and proper use of meta tags, which means its a much better internet citizen. Tweet any F+ episode and it'll pull in the relevant information.
+![Sample Twitter Post](hello/tweet-data.gif)
+Which I know is not the most exciting thing in the world, but now other sites are able to read our site a whole lot better, and that'll make a lot of small differences.
+
+###built for our terrible future
+Our old site architecture was beseiged by pirates, spammers, and dickheads. It was slow and unresponsive, and just about any clever piece of content on there was a hack. The old site was genuinely preventing us from doing certain things because there was just no way for the old site to support that kind of content. Now we've got control over what we're doing,  and we can build our site around our content, and not the other way around.  And that's an exciting thing to say.
+
+So please, click around, use the comments, tell us what you think.

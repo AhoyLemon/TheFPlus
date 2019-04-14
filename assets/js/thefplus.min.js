@@ -6,9 +6,9 @@ function trackEvent(c, a, l, v) {
     //ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l, eventValue:v });
     //console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l+', VALUE:'+v);
   } else if (l) {
-    _paq.push(['trackEvent', c, a, l]);
+    //_paq.push(['trackEvent', c, a, l]);
     //ga('send', 'event', { eventCategory: c, eventAction: a, eventLabel: l });
-    //console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l);
+    console.log('CATEGORY: '+c+', ACTION:'+a+', LABEL:'+l);
   } else {
     _paq.push(['trackEvent', c, a]);
     //ga('send', 'event', { eventCategory: c, eventAction: a });
@@ -91,6 +91,14 @@ $('a.social').click(function(event) {
     window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
     event.preventDefault();
   }
+});
+
+$('.download-button').click(function() {
+  alert('hit');
+});
+
+$( "#PodLovePlayer" ).bind( "click", ".download-button", function() {
+  alert( "User clicked on 'foo.'" );
 });
 
 

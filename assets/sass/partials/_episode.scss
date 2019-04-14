@@ -57,6 +57,34 @@ section.covers-only { display: grid; gap:0;
   }
 }
 
+.audio-player-wrapper { margin-bottom: 1em; }
+.document-link-holder { margin-bottom: 1em;
+  svg { height:24px; width:24px; fill:currentColor; }
+  a:hover {
+    svg { transform: scale(1.5); }
+  }
+}
+
+dl.chapters-info { margin-bottom: 1em;
+  span { display: inline-block; }
+  .icon { transition: transform 0.5s ease; }
+  svg { width:0.8em; height:0.8em; fill:$red; display: inline-block; margin-right: 12px; }
+  dt { cursor: pointer;
+    &:hover {
+      svg { transform: scale(1.5); }
+     }
+  }
+  dd { display: none; }
+  table.chapters { border-collapse: collapse; font-size:16px;
+    td { border: 1px solid rgba(0,0,0,0.25); padding: 0.25em 0.5em; }
+  }
+
+  &.expanded { 
+    .icon { transform: rotate(90deg); }
+    dd { display:block; }
+  }
+}
+
 .episode-find-options {
   font-size:24px; padding:1em;
   @media (min-width:$desktop-min) { padding-left: 0; }

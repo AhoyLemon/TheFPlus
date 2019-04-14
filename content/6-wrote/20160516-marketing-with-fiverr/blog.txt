@@ -1,0 +1,98 @@
+Title: Marketing Our Podcast With Fiverr
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2016-05-16
+
+----
+
+Time: 16:25
+
+----
+
+Text: 
+
+In the beginning of May, we published [this blog post](https://thefpl.us/wrote/a-fiverr-call-to-action) explaining our basic premise: We received a $20 [donation](/contribute/donate) with the instruction that the money should be spent on the outsource freelancing site Fiverr. The idea was a sound one, so we opened it up to the community.  People would suggest Fiverr gigs and vote up their favorites. I would buy the 3 gigs that got the most bulbs (the ballpit equivalent of upvoting), as well as purchase a fourth based on my own criteria. What follows is the result...
+
+1. [Purchasing](#purchasing)
+2. [Scream Your Name Into A Bush](#bush)
+3. [I will dace in bikini with Vladimir Putin mask](#putin)
+4. [I will make a stop motion animation for you](#animation)
+5. [I will promote your ad on Christian podcast](#xian)
+6. [Results](#results)
+
+<a name="purchasing"></a>
+#### Purchasing
+I purchased all 4 gigs on the same day, and the race was on. I tried to give as little instruction as possible, and I did not want to send revisions, but to let the creators interpret the requests as they would and post the result.
+
+The first thing I found out is that a five dollar purchase on Fiverr actually costs $5.50, as there is a  50 cent transaction fee. The transaction went through the F Plus PayPal account, which would incur a 46¢ fee so that adds up, but I'm unclear how much Fiverr takes as a cut. Please let me know if you do.
+
+I'll list the gigs in order that I received results back. All the videos are at the bottom.
+
+<a name="bush"></a>
+#### **Scream Your Name Into A Bush** by e_ressett
+Suggested by Down10 | Received **19** bulbs.
+Expected Turnaround: 3 days | Actual: 3 days
+[Gig page](https://www.fiverr.com/e_russett/scream-your-name-into-a-bush?context=advanced_search&context_type=rating&context_referrer=search_gigs&pos=2&funnel=0c36169d-79a6-41f7-b005-22f64e468869) on Fiverr
+
+Here's what I sent e_ressett:
+> The F Plus is a podcast. A number of people are aware of this, but (to my knowledge) zero bushes have been made aware of this fact. Can you please inform some bushes that The F Plus is a podcast?
+
+A couple days later, he responded with an mp4 video for me to download. I am personally quite pleased with what we got.
+
+<a name="putin"></a>
+#### **I will dace in bikini with Vladimir Putin mask** by Whosthatgal
+Suggested by Lemon (no bulbs)
+Expected Turnaround: 4 days | Actual: 4 days
+[Gig page](https://www.fiverr.com/whosthatgal/dace-in-bikini-with-vladimir-putin-mask?funnel=84e52610-fcca-4da2-ac0b-ce2df306693f) on Fiverr
+
+Before ordering, I sent a message to Whosthatgal verifying that I could request she dance to a song of my choosing. She said that would be fine, so I sent her an MP3 of [This Lady Frenzy remix of Jimmyfranks singing](https://soundcloud.com/lady-frenzy/jimmyfranks-warrior-lady-frenzy-mix) which I felt would best match the menace and terror conjured by watching a dancing half naked woman with Vladimir Putin's head. A few days later, she sent me a video, at which point I had to type this unique piece of correspondence:
+>  So, this is wonderful, except I see in the video that you are wearing underwear and a rubber chicken head mask, but I actually made the order for the Vladimir Putin mask.
+
+She apologized and shortly thereafter sent me a second video as described, but my immediate reaction was that it had the diminished energy of a second take. I thanked her for responding, but am choosing to use the chicken head video as the canonical one, as there is more twerk.
+
+<a name="animation"></a>
+#### **I will make a stop motion animation for you** by Candlehour
+Suggested by Portaxx | Received **62** bulbs
+Expected Turnaround: 8 days | Actual: 7 days
+[Gig page](https://www.fiverr.com/candlehour/make-a-stop-motion-animation-for-you) on Fiverr
+
+This one started out a bit tricky. For the audio to be used, I sent a slightly pared down edit of *The Kumuqatxop "Yeah" Megamix* from [episode 168](/episode/168). However, as that mix contains the words "semen", "menstrual blood", and "what are your sex fantasies?", the creator balked at the suggestion and immediately wanted to cancel. I asked him if I could recut the audio, and he said that would be fine. So I cleaned out the naughty bits and sent a recut piece of audio. He tried to upsell me with some extra features to the video, saying that what I would get is two unmoving characters talking without props or background. Feeling that fit the tone that was meant to be conveyed, and having an unshakeable curiosity towards "What does $5 worth of stop motion animation look like?", I said that fit my needs perfectly. Even with the intial hiccup, the video was completed ahead of time.
+
+<a name="xian"></a>
+#### **I will promote your ad on Christian podcast** by Iassist
+Suggested by moooo566 | Received **29** bulbs
+Expected Turnaround: 14 days | Actual: ???
+[Gig page](https://www.fiverr.com/iassist/play-your-ad-on-my-christian-radio-show) on Fiverr
+
+This was a trickier one to think of, because while the idea is conceptually funny, there are two basic problems in that: 
+1. A Christian Modern Living podcast with a demographic of mostly middle aged women is emphatically *not* what I see our demographic as.
+2. I didn't want the thing to come across as "I'm trolling squares", since there's ways this could be done that would read as mean spirited.
+
+The gig offers to play your 1 minute long audio ad in the first 10 minutes of the show, so I had a quick beery conversation with Bunnybread and we came up with the idea of a straightfoward ad explaining that The F Plus is a podcast and you probably shouldn't listen to it, which to be frank is good advice for a lot of people. Bunnybread cut the audio real quick and I threw in some public domain music.
+
+[Here is the MP3 we sent to her](https://goo.gl/7tkKXB).
+
+<a name="results"></a>
+#### Results
+<style>
+.fiverr-video-holder { text-align:center; }
+iframe { max-width:100% !important; }
+</style>
+<div class="fiverr-video-holder">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1chYdbuszys" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z60sWBC7p_k" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fig9PZYzIiM" frameborder="0" allowfullscreen></iframe>
+</div>
+
+----
+
+Tags: you gotta pay your rent dog,micropayments,blog,profiles of job creators
+
+----
+
+Cover: acover_fiverr.jpg

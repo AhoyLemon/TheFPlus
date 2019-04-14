@@ -13,5 +13,5 @@ stripe/
 json/
 
 
-content/
+#content/
 !site.txt

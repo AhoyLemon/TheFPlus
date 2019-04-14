@@ -1,0 +1,64 @@
+Title: A San Francisco Podcast
+
+----
+
+Featured-site: nouveauraw.com
+
+----
+
+Date: 2013-06-17
+
+----
+
+Time: 19:12
+
+----
+
+Cast: Lemon,Boots Raingear,Jack Chick,Kumquatxop,Happy Ending
+
+----
+
+Provider: Lemon
+
+----
+
+Editor: Boots Raingear
+
+----
+
+Episode-file: fplus_sf.mp3
+
+----
+
+Document-link: https://docs.google.com/document/d/1bY-UVn1n5oPTvuspKh1_lPo6CDllCmPS0RopV9lthNc/edit?usp=sharing
+
+----
+
+Text: LIVE from the home of Zynga, it's The F Plus Podcast! When Lemon and Boots visited The City By The Bay, they felt it was perfectly appropriate to sample the culinary traditions of such a vibrant and exciting city. Then, after eating some really good tacos, they made some raw food garbage based on recipes they found on the internet. Have you ever wanted to know what raw vegetable makes a perfect substitute for linguine? Or how changing the color of your salt can improve your chakra? Of course not, because you're not an idiot. This week, The F Plus plays the crunch twice for good measure.
+
+----
+
+Music-used: Ol' Dirty Bastard - Shimmy Shimmy Ya,Busta Rhymes - Everything Remains Raw,Lady - Twerk,Ween - Where'd The Cheese Go?
+
+----
+
+Tags: all you do is dump,dump dump dump,fat,put all that shit in a bowl,recipes,f plus live
+
+----
+
+Bonus-content: 
+
+<section class="fanart">
+<figure>
+<img src="/episode/sf/rawfood-big.jpg">
+<figcaption>Pictured above: Bowls of Carrot Noodles with “Peanut” Sauce and a Dorito Sandwich (For Kids).</figcaption>
+</figure>
+</section>
+
+----
+
+Runtime: 1:28:20
+
+----
+
+File-size: 84

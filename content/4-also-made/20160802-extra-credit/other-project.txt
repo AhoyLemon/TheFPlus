@@ -1,0 +1,55 @@
+Title: Extra Credit! (A Ballpit Podcast)
+
+----
+
+Category: else
+
+----
+
+Date: 2016-08-02
+
+----
+
+Time: 21:00
+
+----
+
+Cover: ec_new.jpg
+
+----
+
+Show-image: true
+
+----
+
+Cast: Amelia Blank
+
+----
+
+Text: 
+
+Extra Credit is a podcast made by listeners of The F Plus. Spearheaded by Amelia Blank, it picks up on The F Plus's lead and goes through the items that The F Plus didn't pick up on for one reason or another - because they didn't get around to it, because it's really gross, or what have you. They are the Go-Bots of podcasting - taking up the podcast's lead, but doing their own thing with it. Join them, won't you?
+
+## [thefmin.us](http://thefmin.us)
+
+Subscribe via [iTunes](https://itunes.apple.com/us/podcast/extra-credit/id1140204546?mt=2&ls=1) or [RSS](http://feeds.feedburner.com/thefminus)
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: 
+
+----
+
+Tags: our fans rule
+
+----
+
+Tweet-intent: https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.thefmin.us&via=Mills_Blank&text=Extra%20Credit%20%28An%20F%20Plus%20Fancast%29
+
+----
+
+Bonus-content: 

@@ -1,0 +1,60 @@
+Title: The Wrongest Words
+
+----
+
+Category: website
+
+----
+
+Date: 2015-04-04
+
+----
+
+Time: 15:59
+
+----
+
+Cast: Dole,Lemon
+
+----
+
+Show-image: false
+
+----
+
+Episode-file: 
+
+----
+
+Text: 
+
+<img src="/also-made/the-wrongest-words/samsung-screenshot.png" class="cover" alt="Screenshot of the game on a Samsung Galaxy" />
+Born out of a running joke on the podcast but then evolved into something far more interesting, [The Wrongest Words](http://www.wrongest.net) is a party game where you and your friends struggle to provide the very stupid statements given to you. The game is played on any device with a modern web browser, and supports 3-8 players.
+
+This project was retired on **March 20th, 2017**. Details are [here](https://ballp.it/index.php?topic=2527.0). The full repository is available [on GitHub](https://github.com/AnotherDole/wrongest) should you find it useful.
+
+
+<!--
+Instructions, additional details, and ways to contribute can be found on [The Wrongest Website](http://www.wrongest.website). Playing card suggestions and GitHub forks & issues are welcome, links on The Wrongest Website.
+
+There's a separate Twitter account for this project, so to get updates and find out which statements are trending the worst, follow [@WrongestWords](https://twitter.com/wrongestwords) -->
+
+----
+
+Tags: the wrongest words,insanity,video games,rants,our fans rule,no one on earth is gay
+
+----
+
+Bonus-content: 
+
+----
+
+Github-repo: https://github.com/AnotherDole/wrongest
+
+----
+
+Tweet-intent: 
+
+----
+
+Cover: retired-cover.jpg
