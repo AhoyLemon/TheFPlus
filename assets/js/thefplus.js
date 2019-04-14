@@ -28,7 +28,6 @@ $('nav.toggle a').click(function() {
   }
 });
 
-
 $('.logo-link').click(function() {
   $(this).toggleClass('active');
   $('.sidebar-links').toggleClass('active');
