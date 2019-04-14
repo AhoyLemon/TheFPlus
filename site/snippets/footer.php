@@ -1,5 +1,5 @@
     <footer class="footer">
-      <script src="<?php echo url::home() ?>/assets/js/thefplus.js?updated=2019-04-14"></script>
+      <script src="<?php echo url::home() ?>/assets/js/thefplus.js?updated=2019-04-14b"></script>
       <?php snippet('analytics') ?>
 
       <script type="text/javascript">
