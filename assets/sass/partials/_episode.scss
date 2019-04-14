@@ -57,8 +57,12 @@ section.covers-only { display: grid; gap:0;
   }
 }
 
+.audio-player-wrapper { margin-bottom: 1em; }
 .document-link-holder { margin-bottom: 1em;
   svg { height:24px; width:24px; fill:currentColor; }
+  a:hover {
+    svg { transform: scale(1.5); }
+  }
 }
 
 dl.chapters-info { margin-bottom: 1em;

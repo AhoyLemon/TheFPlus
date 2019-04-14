@@ -2,7 +2,7 @@
 <a name="chapters"></a>
 
 
-<div id="PodLovePlayer">
+<div id="PodLovePlayer" class="audio-player-wrapper">
   <audio preload="none" controls>
     <source src="/podcasts/<?php echo $page->episode_file() ?>" type="audio/mpeg" />
   </audio>
@@ -21,12 +21,11 @@
 } ?>
 
 <script>
+
+  var p = window.location.pathname;
+
     podlovePlayer('#PodLovePlayer', {
-        title: '<?= $page->title(); ?>',
-        /*
-        subtitle: `<?= $page->text()->xml(); ?>`,
-        summary: 'Wir haben eine wie wir finden abwechslungsreiche Sendung produziert, die wir Euch wie immer mit Freude bereitstellen. Während die Live-Hörer Freak-Show-Bingo spielen, greifen wir das Wikipedia-Thema der letzten Sendung auf und liefern auch noch weitere Aspekte des optimalen Star-Wars-Medienkonsums frei Haus. Dazu viel Nerderei rund um die Kommandozeile, eine Einschätzung der Perspektive der Apple Watch, ein Rant über die mangelhafte Security  im Internet of Things (and Buildings) und allerlei anderer Kram.  Roddi setzt dieses Mal aus, sonst Vollbesetzung.',
-        */
+        title: '<?= addslashes($page->title()); ?>',
         summary: `<?= $page->text()->kirbytext(); ?>`,
         
         theme: {
@@ -103,6 +102,18 @@
         'controlSteppers',
         'controlChapters'
       ]
+    }).then(function (store) {
+      store.subscribe(() => {
+        const { lastAction } = store.getState()
+        
+        // Do something with the last action
+        console.log({ type: lastAction.type, payload: lastAction.payload })
+        //console.log(lastAction.type);
+        if (lastAction.type == "PLAY") {
+          trackEvent("listen", "play", p);
+        }
+
+      });
     });
 </script>
 
