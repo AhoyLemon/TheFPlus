@@ -3,7 +3,7 @@
 
 <main class="main episode" role="main">
 
-  <h1>Episode Tag Index:</h1>
+  <h1 style="margin-top:0.75em;">Episode Tag Index</h1>
   <?php $tagcloud = tagcloud(page('episode')) ?>
   
   <article class="full">
