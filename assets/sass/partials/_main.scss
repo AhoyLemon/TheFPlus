@@ -53,7 +53,7 @@ article { font-weight: $light;
 }
 
 .episode-tags {
-  .label { display: block; font-size:80%; text-transform: uppercase; font-weight: $bold; }
+  .label { display: inline-block; font-size:80%; text-transform: uppercase; font-weight: $bold; margin-right:1em; }
   ul { padding-left: 0 !important; }
   a { @extend %tag; }
 }
