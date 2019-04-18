@@ -87,3 +87,76 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 0:00
+  name: Intro
+- 
+  timestamp: 1:43
+  name: A Brief Introduction to Morgan Blayde
+- 
+  timestamp: 3:38
+  name: >
+    Because Sometimes You Have to Fight Fire
+    with Hellfire
+- 
+  timestamp: 6:19
+  name: >
+    Sacramento is Kind of Like a Portal to
+    Hell
+- 
+  timestamp: 8:56
+  name: >
+    Jumping Flaming Hoops Like a Circus
+    Poodle
+- 
+  timestamp: 10:28
+  name: Death by Chocolate and Demons
+- 
+  timestamp: 12:03
+  name: Caine Deathwalker Has No Chill
+- 
+  timestamp: 17:25
+  name: >
+    A Token Human Vice Principal with
+    Attitude
+- 
+  timestamp: 20:02
+  name: >
+    The Distraction of a Passionate Grim
+    Reaper Boy
+- 
+  timestamp: 21:48
+  name: The Wild Magic in Her Blood
+- 
+  timestamp: 22:42
+  name: A Bad Boy Demon Zombie Mothman
+- 
+  timestamp: 24:30
+  name: >
+    I Was Short Compared to Most Men, but a
+    Dragon Hid Inside Me
+- 
+  timestamp: 43:19
+  name: Shots from the Peanut Gallery
+- 
+  timestamp: 45:31
+  name: Coming and Cumming are Homonyms
+- 
+  timestamp: 1:06:48
+  name: What Did We Learn from Any of This?
+- 
+  timestamp: 1:10:06
+  name: Outro
+
+----
+
+Chapter-provider: ikaribattousai

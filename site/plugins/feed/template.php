@@ -89,6 +89,14 @@
                   <?php endforeach ?>
                 </ol>
               <?php endif ?>
+
+              <?php if ($item->chapters_toggle() == "yes" && $item->chapters()->isNotEmpty()) { ?>
+                <p>
+                  <?php if ($item->chapter_provider()->isNotEmpty()) { echo 'Chapters provided by <strong>' . $item->chapter_provider() . '</strong>'; }
+                        else { echo 'This episode has chapters'; }
+                  ?>
+                </p>
+              <?php } ?>
             ]]>
           </content:encoded>
           <itunes:summary><?php echo $desc; ?></itunes:summary>

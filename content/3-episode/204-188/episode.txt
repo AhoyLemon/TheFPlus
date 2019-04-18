@@ -133,4 +133,4 @@ Chapters:
 
 ----
 
-Chapter-provider: birdie,dasdsadas
+Chapter-provider: birdie

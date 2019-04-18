@@ -50,7 +50,11 @@ Provider: Ambious,Cheapskate
 
 ----
 
-Text: People need a moral arbiter in their lives, and while that's understandable, it's an odd move to trust Reddit to do it for you.
+Text: 
+
+People need a moral arbiter in their lives, and while that's understandable, it's an odd move to trust Reddit to do it for you. And yet, r/AmITheAsshole is there, and it's handling hundreds of conflicts a day.
+
+This week, The F Plus gets disgusted by an ugly 8.
 
 ----
 

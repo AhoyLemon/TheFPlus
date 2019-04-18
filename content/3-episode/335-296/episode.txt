@@ -92,3 +92,72 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 0:00
+  name: Intro
+- 
+  timestamp: 2:22
+  name: Tactical BABYBJÖRN
+- 
+  timestamp: 4:12
+  name: A Bit About BUDK
+- 
+  timestamp: 6:42
+  name: "You'll Gain Instant Respect with Your Friends!"
+- 
+  timestamp: 12:12
+  name: Best $12 Sword in the World!
+- 
+  timestamp: 20:59
+  name: "It's Like Gambling Except You Always Win!"
+- 
+  timestamp: 26:25
+  name: Truck Nuts for Your Keychain
+- 
+  timestamp: 32:16
+  name: The Quickest End to a Tinder Date
+- 
+  timestamp: 38:31
+  name: A Guy Named Scooter Fucking Up a Pumpkin
+- 
+  timestamp: 46:02
+  name: "It's Not a Gun Until You Assemble It"
+- 
+  timestamp: 51:12
+  name: 14 Million Volts is a LOT
+- 
+  timestamp: 55:38
+  name: Bullshit, This is Totally Illegal
+- 
+  timestamp: 59:30
+  name: A Must for Any Aspiring Scientist
+- 
+  timestamp: 1:04:26
+  name: >
+    Easily Disperse Negative Energy from
+    Your Environment!
+- 
+  timestamp: 1:06:42
+  name: Multicolored Aquarium Rocks in Acryilic
+- 
+  timestamp: 1:08:22
+  name: A Grab Bag of Other Cram
+- 
+  timestamp: 1:13:38
+  name: What Have We Learned from Any of This?
+- 
+  timestamp: 1:18:05
+  name: Outro
+
+----
+
+Chapter-provider: ikaribattousai

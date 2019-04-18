@@ -515,15 +515,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: Hey Reddit, Am I The Asshole Here?
-  docurl: >
-    https://docs.google.com/document/d/1eqKBWwhPwq9cH-CYTA564YGgNlzFS63FykwgvFrD0F4/edit?usp=sharing
-  submitter: Cheapskate
-  subdate: 2017-10-02
-  recorded: "1"
-  _fieldset: submitteddoc
-  dibs: ""
-- 
   title: >
     Perfectly Normal Stories Of Perfectly
     Normal Swingers
@@ -654,15 +645,6 @@ Builder:
   _fieldset: submitteddoc
   dibs: Bunnybread
 - 
-  title: Morgan Blayde Writes Urban Fantasy
-  docurl: >
-    https://docs.google.com/document/d/1cXyt_9qcNRPeva0o_qEp7vPF4zAIVKs3AThmDjhU370/edit?usp=sharing
-  submitter: Cheapskate
-  subdate: 2018-07-19
-  recorded: "1"
-  _fieldset: submitteddoc
-  dibs: Boots,Isfahan
-- 
   title: DIY Junk Machines
   docurl: >
     https://docs.google.com/document/d/1U5PzylxurG7vWa6psyciLtY_rqYabdL9pmocLdLJ5N0/edit?usp=sharing
@@ -672,15 +654,6 @@ Builder:
   _fieldset: submitteddoc
   dibs: Portaxx,Lemon
 - 
-  title: MGTOW Recipes!?
-  docurl: >
-    https://docs.google.com/document/d/1NbajH5HDivwEY__9Y4_z0nNVNtKlNk4LI69yjLQC788
-  submitter: Thursley
-  subdate: 2018-08-18
-  recorded: "0"
-  _fieldset: submitteddoc
-  dibs: Jack Chick
-- 
   title: "Toshi wants to sell you porn. Won't you buy some porn from Toshi?"
   docurl: >
     https://docs.google.com/document/d/10OlW_ut2m71oDDQA4Qq7d_H4mCPdk31DXUoLRoOlCb4/edit?usp=sharing
@@ -688,15 +661,6 @@ Builder:
   subdate: 2018-08-20
   recorded: "0"
   _fieldset: submitteddoc
-- 
-  title: Fantasy Feeder
-  docurl: >
-    https://docs.google.com/document/d/1YOCpI40eue4QVEf8oASHYiYvSBIeXdlNRu-7rzJbHdU/edit?ts=5b7e5c98
-  submitter: Amelia Blank
-  subdate: 2018-08-23
-  recorded: "1"
-  _fieldset: submitteddoc
-  dibs: ""
 - 
   title: The 2chan saga of Denko
   docurl: >
@@ -860,8 +824,8 @@ Builder:
     https://docs.google.com/document/d/1k7Ves9IDwCbLerKdutBSzF6DjWxAdhLm74I7XGX2s6I/edit?usp=sharing
   submitter: Mr. Hunky Academia
   subdate: 2019-01-02
-  dibs: ""
-  recorded: "0"
+  dibs: John Toast
+  recorded: "1"
   _fieldset: submitteddoc
 - 
   title: "Don't Worry, It's NOT SissyKiss!"
@@ -898,15 +862,6 @@ Builder:
   subdate: 2019-02-04
   dibs: ""
   recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: "Don't Forget r/AmITheAsshole"
-  docurl: >
-    https://docs.google.com/document/d/1v0yMUJnBGw5uoFJBzn8i4BPnHuU6kQpMShZmFgAtSog/edit?usp=sharing
-  submitter: Ambious
-  subdate: 2019-02-05
-  dibs: ""
-  recorded: "1"
   _fieldset: submitteddoc
 - 
   title: "D&D But For Furry Perverts (Somehow This Is Frank West's Fault)"
@@ -954,6 +909,46 @@ Builder:
     https://docs.google.com/document/d/1yAtdrCJBiIatcVxJEIyVHU-xioiayc8YAMkZPtT4ggk/edit?usp=sharing
   submitter: cryptid
   subdate: 2019-03-15
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: A Telepathy Forum Document
+  docurl: >
+    https://docs.google.com/document/d/1HEo-gy1QekWwEbj5-MMK6yltDZtOl3xz910MeS8F67w/edit?usp=sharing
+  submitter: Amelia Blank
+  subdate: 2019-04-12
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: Yes... YOU Come From The Stars!
+  docurl: >
+    https://docs.google.com/document/d/1VnrZcbYRY5HxwyglpFS2CDYk98zcgyCIUj_UlZAcNck/edit?usp=sharing
+  submitter: Mix,Beelzeboob
+  subdate: 2019-04-12
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    iSoaker Is Your Portal To The World Of
+    Water Warfare
+  docurl: >
+    https://docs.google.com/document/d/1EOpSZoCRimAxfDNwOyITJc1QNOmejXBaw4UKkzXwDsg/edit?usp=sharing
+  submitter: Cat Examiner
+  subdate: 2019-04-12
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    The Super Scary Horror Stories of
+    r/NoSleep
+  docurl: >
+    https://docs.google.com/document/d/1_I8C0_vybTaA4ff9v8Dxxmk4OkCyQ4sqkcs1IetlNdA/edit?usp=sharing
+  submitter: The Sigh-light Zone
+  subdate: 2019-04-15
   dibs: ""
   recorded: "0"
   _fieldset: submitteddoc

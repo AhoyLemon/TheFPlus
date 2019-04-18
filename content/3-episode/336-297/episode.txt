@@ -92,3 +92,64 @@ Cover-cite-artist: Ellen Paquette
 ----
 
 Cover-cite-url: http://ellenpaquette.com/index.html
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 0:00
+  name: Intro
+- 
+  timestamp: 3:01
+  name: 'Would You Like to Talk About Aliens & Autism?'
+- 
+  timestamp: 4:44
+  name: Hopeless Autistics
+- 
+  timestamp: 7:48
+  name: NASA Video
+- 
+  timestamp: 8:22
+  name: Little Black Boxes
+- 
+  timestamp: 13:25
+  name: A Squirter for Ovum
+- 
+  timestamp: 21:23
+  name: "A Presentation about the Aliens' Plans for the Future"
+- 
+  timestamp: 25:10
+  name: >
+    Nothing Stops Alien Abductions Like A
+    MAGA Hat
+- 
+  timestamp: 34:42
+  name: >
+    Aliens are Unfamiliar with the Concept
+    of Locks
+- 
+  timestamp: 46:10
+  name: Aquavelva Repels Grays
+- 
+  timestamp: 51:46
+  name: ASTERISK!!!
+- 
+  timestamp: 58:23
+  name: >
+    The Thought Screen Helmet is Our Only
+    Defense in the Telepathic War
+- 
+  timestamp: 1:05:07
+  name: What Have We Learned from Any of This?
+- 
+  timestamp: 1:11:40
+  name: Outro
+
+----
+
+Chapter-provider: ikaribattousai

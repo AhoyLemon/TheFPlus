@@ -499,6 +499,29 @@ Stickers:
   buttonc_num: ""
   buttonc_price: ""
   buttonc_slug: ""
+- 
+  pic: s22_thumb.png
+  fullsize: s22_full.jpg
+  title: Prismatic Logo
+  artist: Lemon
+  series_num: "22"
+  dimensions: 2.5" x 2.2"
+  shape: die cut
+  vinyl: prismatic
+  printed: "100"
+  released: ""
+  soldout: ""
+  reference: ""
+  almost_gone: "0"
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
 
 ----
 

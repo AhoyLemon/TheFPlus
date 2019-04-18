@@ -16,7 +16,6 @@ Time: 21:00
 
 Text: 
 
-(image: a-remote-podcast.jpg class:cover)
 We've been asked a couple times now about how we put these episodes together, so if you're looking to set up a remote podcast, this is how we do it.
 
 **Update 11/17/2016: Some of our methods have changed since this article was originally written, edits have been made to reflect those changes.**
@@ -41,7 +40,6 @@ The process of piecing together an F Plus episode involves the following:
 
 This whole process *can* be done in a couple hours, or it can take weeks, depending on a whole lot of factors. Editing is made less painful by approaching the record as though it's live. Every time you think "we'll edit that out later", you're creating a problem for later.
 
-(image: internet-fame.jpg class:cover)
 ##### And afterwards?
 * When exporting the mp3, a bitrate of `112kbps` is probably ideal. This makes an hour's worth of audio weigh in at 45-55Mb while not sounding too canned or "swooshy". You might want to experiment with this, but keep in mind that a lot of people download these things to their phone,  so you should really try to keep your file small.
 * I use Photoshop to sketch up the episode image cover. That process often takes longer than it should.

@@ -74,3 +74,78 @@ Bonus-content:
 * [Kookie Cookies](http://www.tasteofhome.com/recipes/kookie-cookies) on Taste of Home (4.5 stars)
 * [Lou Reads The Internet For You](http://loureads.com/)
 * [Bear Force One](https://youtu.be/vSUW-Z_Cnc0?t=16s)
+
+----
+
+Cover: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'intro: what have we done?'
+- 
+  timestamp: 00:01:56
+  name: 'the early days: PoE'
+- 
+  timestamp: 00:07:09
+  name: oolong the rabbit
+- 
+  timestamp: 00:17:55
+  name: tf2 key binds and the pro zone
+- 
+  timestamp: 00:22:50
+  name: 'recording begins: the shedcast'
+- 
+  timestamp: 00:29:53
+  name: 'the first episode: well known food place'
+- 
+  timestamp: 00:36:00
+  name: cohosting and intros
+- 
+  timestamp: 00:42:27
+  name: 'birth of the f plus live: ridiculists in real life'
+- 
+  timestamp: 00:50:01
+  name: drinking our own cookie magma
+- 
+  timestamp: 00:59:24
+  name: death by f plus
+- 
+  timestamp: 01:05:36
+  name: spooky coincidences and popularity
+- 
+  timestamp: 01:07:25
+  name: the best of bunnybread
+- 
+  timestamp: 01:21:06
+  name: the f plus is leaking
+- 
+  timestamp: 01:27:20
+  name: there is no new thing under the sun
+
+----
+
+Chapter-provider: birdie

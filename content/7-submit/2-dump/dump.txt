@@ -916,3 +916,10 @@ Builder:
   submitter: Amelia Blank
   rejectdate: 2019-01-25
   _fieldset: submitteddoc
+- 
+  title: MGTOW Recipes!?
+  docurl: >
+    https://docs.google.com/document/d/1NbajH5HDivwEY__9Y4_z0nNVNtKlNk4LI69yjLQC788
+  submitter: Thursley
+  rejectdate: 2019-04-15
+  _fieldset: submitteddoc

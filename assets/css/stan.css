@@ -312,7 +312,7 @@ article.episode {
     text-decoration: none; }
     article.episode a[href]:hover {
       text-decoration: underline; }
-  article.episode p {
+  article.episode p, article.episode ol, article.episode ul {
     margin-bottom: 0.5em; }
   article.episode figure.cover {
     max-width: 320px;
@@ -321,7 +321,8 @@ article.episode {
     margin-bottom: 20px;
     transform: translateY(-20px); }
     article.episode figure.cover img {
-      transform: translateY(-20px); }
+      transform: translateY(-20px);
+      box-shadow: 0 0 4px rgba(52, 52, 52, 0.45); }
     article.episode figure.cover .download-button {
       display: block;
       text-align: center;

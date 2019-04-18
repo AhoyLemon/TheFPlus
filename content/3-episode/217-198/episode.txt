@@ -65,3 +65,68 @@ Bonus-content:
 ----
 
 Cover: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'intro: get pumped, listener!'
+- 
+  timestamp: 00:03:05
+  name: >
+    why are armbars uncomfortable on my
+    nuts?
+- 
+  timestamp: 00:06:52
+  name: >
+    the people at your gym that you don’t
+    know and never talked to
+- 
+  timestamp: 00:14:27
+  name: 'eating is hard: food for the swole'
+- 
+  timestamp: 00:25:49
+  name: >
+    sick and tired of these tuna-egg
+    smoothies
+- 
+  timestamp: 00:32:08
+  name: reddit has a nightmare
+- 
+  timestamp: 00:35:46
+  name: a few embarrassing problems
+- 
+  timestamp: 00:44:04
+  name: i said NO HOMO
+- 
+  timestamp: 00:56:46
+  name: no seriously, bodybuilding poetry
+- 
+  timestamp: 01:03:02
+  name: what did we learn?
+
+----
+
+Chapter-provider: 

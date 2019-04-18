@@ -91,3 +91,66 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 0:00
+  name: Intro
+- 
+  timestamp: 2:56
+  name: >
+    People on YouTube Make Noises Into a
+    Microphone
+- 
+  timestamp: 5:29
+  name: The Ghost of Experience Project
+- 
+  timestamp: 11:35
+  name: "Facts Don't Care About Your Shivers"
+- 
+  timestamp: 17:16
+  name: The "Science" Behind ASMR
+- 
+  timestamp: 21:41
+  name: Ginger and Serotonin
+- 
+  timestamp: 24:46
+  name: ASMR in Dangerous Places!
+- 
+  timestamp: 26:53
+  name: 'Lost: My ASMR'
+- 
+  timestamp: 32:52
+  name: The Weirdest Request Ever
+- 
+  timestamp: 34:57
+  name: The Lonliest Guy Ever
+- 
+  timestamp: 41:33
+  name: Boner List
+- 
+  timestamp: 51:00
+  name: It Attracted a Lot of Creeps
+- 
+  timestamp: 55:38
+  name: No Homo
+- 
+  timestamp: 1:10:37
+  name: "The Thing Nutshell Doesn't Want to Read"
+- 
+  timestamp: 1:16:07
+  name: What Did We Learn from Any of This?
+- 
+  timestamp: 1:20:03
+  name: Outro
+
+----
+
+Chapter-provider: ikaribattousai

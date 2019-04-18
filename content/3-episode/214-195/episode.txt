@@ -68,3 +68,83 @@ Bonus-content:
 ----
 
 Cover: ep195.jpg
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: brought to you by cyberpower pc
+- 
+  timestamp: 00:01:20
+  name: 'intro: spiritually unfulfilled'
+- 
+  timestamp: 00:03:28
+  name: how to install orbs
+- 
+  timestamp: 00:06:13
+  name: prosperity path active blessing
+- 
+  timestamp: 00:10:36
+  name: >
+    But is it legal? Is it moral? Is it
+    ethical? Is it witchcraft?
+- 
+  timestamp: 00:13:14
+  name: "it's time to talk about mojos"
+- 
+  timestamp: 00:16:42
+  name: >
+    who does the work? (peals of helpless
+    laughter)
+- 
+  timestamp: 00:26:02
+  name: what is an orb?
+- 
+  timestamp: 00:27:21
+  name: >
+    goddess: do you have any idea What She
+    Does For a Living???
+- 
+  timestamp: 00:36:21
+  name: 'pan: the roguish God of Robust Sex and Reproduction'
+- 
+  timestamp: 00:39:35
+  name: 'humiliation: the body-mind Earthian thing'
+- 
+  timestamp: 00:41:50
+  name: 'love 2.0: a new dimension'
+- 
+  timestamp: 00:47:19
+  name: 'instant fixes: the spiritual mafia sells you a shitty tan'
+- 
+  timestamp: 00:54:33
+  name: "let's get to some testimonials"
+- 
+  timestamp: 01:04:01
+  name: so did we learn anything?
+
+----
+
+Chapter-provider: birdie

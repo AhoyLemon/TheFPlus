@@ -30,11 +30,10 @@ article.episode { background:$card; box-shadow:0 0 4px rgba($black,0.2); padding
   a { color:$link; text-decoration: none;
     &[href]:hover { text-decoration: underline; }
   }
-  p { margin-bottom: 0.5em; }
+  p, ol, ul { margin-bottom: 0.5em; }
 
   figure.cover { max-width: 320px; float: right; margin-left: 20px; margin-bottom: 20px; transform: translateY(-20px);
-    img { transform: translateY(-20px); }
-
+    img { transform: translateY(-20px); box-shadow: 0 0 4px rgba($black,0.45); }
     .download-button { display: block; text-align: center; border:1px solid $link; padding:0.5em 1em; text-transform: uppercase;
       &:hover { background:$link; color:$card; text-decoration: none; }
     }

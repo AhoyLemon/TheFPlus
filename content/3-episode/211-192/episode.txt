@@ -63,3 +63,87 @@ Bonus-content: 1. [TED-RNN  — Computer Generated TED Talks](https://medium.com
 ----
 
 Cover: ep192.jpg
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: welcome... thbbbbth
+- 
+  timestamp: 00:02:22
+  name: 'introduction: a marketplace of ideas'
+- 
+  timestamp: 00:04:30
+  name: spencer the dispenser
+- 
+  timestamp: 00:08:54
+  name: SkatE Pods EAT SHIT
+- 
+  timestamp: 00:15:58
+  name: flavored charcoal
+- 
+  timestamp: 00:24:53
+  name: MY IDEA ARE INVENTION MAGIC TRASH
+- 
+  timestamp: 00:28:28
+  name: >
+    Rocks dislocation by hydrosonic
+    effect,plant
+- 
+  timestamp: 00:34:55
+  name: pocket comforter
+- 
+  timestamp: 00:39:34
+  name: add a floor
+- 
+  timestamp: 00:44:00
+  name: GPS-martass
+- 
+  timestamp: 00:49:00
+  name: 'HITC (Human Information & Tracking Chip)'
+- 
+  timestamp: 00:53:51
+  name: Underground Wind Turbine UWT.
+- 
+  timestamp: 01:00:20
+  name: creative coffins
+- 
+  timestamp: 01:05:35
+  name: NEW TV SHOW TREATMENT
+- 
+  timestamp: 01:07:56
+  name: reconstruction of the world wide web
+- 
+  timestamp: 01:14:05
+  name: >
+    international genius superstar gjorgi
+    petrov
+- 
+  timestamp: 01:15:48
+  name: what did we learn from this?
+
+----
+
+Chapter-provider: birdie

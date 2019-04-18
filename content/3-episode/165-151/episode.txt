@@ -32,7 +32,7 @@ Featured-site: SongWritingFever.com
 
 Bonus-content: 
 
-(fanart:151-fattybobatty.png by:FattyBoBatty)
+(fanart:151-beelzeboob.png by:beelzeboob) (fanart:151-fattybobatty.png by:FattyBoBatty) 
 
 <h2><b>REMIX THE F PLUS</b></h2>
 <p>As mentioned in the episode, we were looking for people to musicate our lyrics. Here's what people came up with...</p>
@@ -104,3 +104,23 @@ Runtime: 56:37
 ----
 
 File-size: 54
+
+----
+
+Cover: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
