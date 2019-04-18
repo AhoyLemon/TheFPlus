@@ -3,50 +3,38 @@ $tag-border: rgba($black,0.8);
 
 %tag { font-size:70%;
   background-color: $tag-bg;
-  //border: 1px solid $tag-border;
   display: inline-block;
   position: relative;
-  border-radius: 1em 0.4em 0.4em 1em;
-  padding: 0 0.5em 0 1.15em;
-  line-height: 225%;
+  border-radius: 0.3em;
+  padding: 0 0.7em 0 0.7em;
+  border:1px solid rgba($black,0.5);
+  line-height: 210%;
   overflow: visible;
-  color: $tag-border;
+  color: rgba($black,0.5);
   margin-right: 0.4em;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.7em;
   text-decoration: none;
   cursor: text;
   &:hover { text-decoration: none !important; }
-	&[href] { background-color:rgba($link, 0.1); color:$link; cursor: pointer;
-		&:after { color:#6d0c0c; }
+	&[href] { color:$black; cursor: pointer; color:darken($link,10%);
+		//&:after { color:#6d0c0c; }
     &:hover { background:#6d0c0c; color:$white; }
   }
 }
 
-
-/*
-ul.tagcloud { padding:0 !important; @include flex-container();
-  > li { display: inline-block; margin-bottom: $gap; }
-  a { font-size:0.7em; border:1px solid rgba($black,0.2); line-height: 200%;
-    &[href] { background:transparent; color:$copy; margin: 0;
-      &:hover { background:rgba($link,0.1); color:rgba($link,0.9); }
-    }
-  }
-}
-*/
-
 .tagcloud {
   .tag { 
-    .tag-count { line-height: 20px; font-size: 10px; }
+    .tag-count { font-size: 10px; }
     &:hover { background:$link; 
       .tag-name { color:$card; }
     }
   }
 }
 @media (min-width:$desktop-min) {
-  .tagcloud {  @include flex-container(); position: relative;  font-size:15px; margin-top:15px; margin-left:15px;
-    .tag { position:relative; @include flex-center(); padding:($padding / 2); text-align: center; border: 1px solid rgba($black,0.2); margin-right:15px; margin-bottom: 15px;
-      .tag-count { border: 1px solid rgba(52, 52, 52, 0.2); border-radius: 50%; background: #fff; color: $black; right:$gap; position:absolute; top:-10px; width: 20px; display: block; height: 20px; }
-      .tag-name { width:100%; width:100%; line-height: 120%; }
+  .tagcloud { display:grid; grid-template-columns: repeat(auto-fill,160px); grid-gap: $gap;
+    .tag { position:relative; @include flex-center(); padding: $padding ($padding / 2); text-align: center; border: 1px solid rgba($black,0.2); font-size:14px;
+      .tag-count { position:absolute; top:0; right:$gap; color:$copy; font-size:80%; }
+      .tag-name { width:100%; width:100%; line-height: 120%; color:$black; }
     }
   }
 }
