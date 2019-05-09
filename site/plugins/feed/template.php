@@ -34,7 +34,7 @@
       <link>https://thefpl.us/podcasts/promo_24th3.mp3</link>
       <guid>https://thefpl.us/podcasts/promo_24th3.mp3</guid>
       <pubDate>Thu, 09 May 2019 13:11:00 CST</pubDate>
-      <enclosure url="https://thefpl.us/podcasts/promo_24th3.mp3" length="625942" type="audio/mpeg"></enclosure>
+      <enclosure url="https://thefpl.us/podcasts/promo_24th3.mp3" length="702597" type="audio/mpeg"></enclosure>
       <description>
         Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours. On Saturday, May 18th, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center. The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us
       </description>
