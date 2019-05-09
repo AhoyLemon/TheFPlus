@@ -28,6 +28,32 @@
 
     <?php $itemCount = 0; ?>
 
+    <item>
+      <?php $itemCount++; ?>
+      <title>May 18th Is Garbage Day</title>
+      <link>https://thefpl.us/podcasts/promo_24th3.mp3</link>
+      <guid>https://thefpl.us/podcasts/promo_24th3.mp3</guid>
+      <pubDate>Thu, 09 May 2019 13:11:00 CST</pubDate>
+      <enclosure url="https://thefpl.us/podcasts/promo_24th3.mp3" length="625942" type="audio/mpeg"></enclosure>
+      <description>
+        Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours. On Saturday, May 18th, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center. The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us
+      </description>
+      <content:encoded>
+        <![CDATA[
+                          <p>Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours.</p><p>On <strong>Saturday, May 18th</strong>, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center.</p><p>The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us</p>
+          
+                      ]]>
+      </content:encoded>
+      <itunes:summary>Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours. On Saturday, May 18th, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center. The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us</itunes:summary>
+      <itunes:title>May 18th Is Garbage Day</itunes:title>
+      <itunes:episodeType>trailer</itunes:episodeType>
+      <itunes:author>The F Plus</itunes:author>
+      <itunes:subtitle>Garbage Day 2: Another Another 24 Terrible Hours</itunes:subtitle>
+      <itunes:duration>0:00:51</itunes:duration>
+      <image>https://thefpl.us/assets/24th/img/albert-square.jpg</image>
+      <itunes:image href="https://thefpl.us/assets/24th/img/albert-square.jpg" />
+    </item>
+
     <?php foreach($items as $item): ?>
       <?php 
         if (strpos($item->featured_site(),',') !== false) {

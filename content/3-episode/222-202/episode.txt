@@ -64,3 +64,84 @@ Bonus-content:
 * [Sleeping With Sirens - If You Can't Hang](https://www.youtube.com/watch?v=_UwWYtLWEZg)
 
 (fanart:202-puppytime.jpg by:Puppy Time)
+
+----
+
+Cover: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'intro: the golden age of woods porn'
+- 
+  timestamp: 00:02:56
+  name: you are eating all the goddamn plants!
+- 
+  timestamp: 00:06:07
+  name: baiting portaxx with guy’s hair
+- 
+  timestamp: 00:08:25
+  name: YOU become the bible beater
+- 
+  timestamp: 00:15:26
+  name: Fat ppl And Scooters
+- 
+  timestamp: 00:17:28
+  name: texting is dumb (hold for applause)
+- 
+  timestamp: 00:22:12
+  name: a fight in mcdonlads
+- 
+  timestamp: 00:31:17
+  name: to fart or not to fart
+- 
+  timestamp: 00:37:27
+  name: the worst thing you did
+- 
+  timestamp: 00:43:32
+  name: lemon refuses to join the badminton team
+- 
+  timestamp: 00:46:37
+  name: I hate my parents :(
+- 
+  timestamp: 00:52:53
+  name: what the fuck is with some girls?
+- 
+  timestamp: 00:55:29
+  name: isfahan wants to fuck everything
+- 
+  timestamp: 00:58:32
+  name: ha ha ha your penis is burnt!
+- 
+  timestamp: 01:00:09
+  name: how to remove a tick from your balls
+- 
+  timestamp: 01:05:57
+  name: what did we learn from any of this?
+
+----
+
+Chapter-provider: birdie

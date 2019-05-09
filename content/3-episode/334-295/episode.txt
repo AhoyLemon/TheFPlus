@@ -87,3 +87,60 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Intro
+- 
+  timestamp: 00:02:00
+  name: Like Craigslist, but with a Difference
+- 
+  timestamp: 00:04:08
+  name: 'Mighty Woman: The "Total Package"'
+- 
+  timestamp: 00:15:43
+  name: The DM I Want to See in Others
+- 
+  timestamp: 00:21:04
+  name: "And That's How Fuck Grinch Got Made"
+- 
+  timestamp: 00:25:08
+  name: I Have a Big Thing for Lenny Bruce
+- 
+  timestamp: 00:26:02
+  name: 'Brought to You by Bed, Bath & Beyond'
+- 
+  timestamp: 00:31:44
+  name: Welcome to Venus City
+- 
+  timestamp: 00:35:49
+  name: >
+    Cumming Pays the Bills, but Graphics
+    Design is my True Passion
+- 
+  timestamp: 00:41:39
+  name: A Female Greninja in Only a Swimsuite
+- 
+  timestamp: 00:56:02
+  name: Fucking the Busty Bimbo Elf
+- 
+  timestamp: 01:06:01
+  name: Pokemon Tablefuck Adventures!!!
+- 
+  timestamp: 01:13:02
+  name: What Have We Learned from Any of This?
+- 
+  timestamp: 01:17:30
+  name: Outro
+
+----
+
+Chapter-provider: ikaribattousai

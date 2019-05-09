@@ -63,3 +63,87 @@ Bonus-content:
 ----
 
 Cover: 206.jpg
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'intro: fuck you, audience'
+- 
+  timestamp: 00:02:48
+  name: >
+    I Love Overstuffing My Belly With
+    Delicious Food
+- 
+  timestamp: 00:05:52
+  name: I Support 9 11 Truth Org
+- 
+  timestamp: 00:10:16
+  name: I Like The Smell Of Vagina
+- 
+  timestamp: 00:11:16
+  name: I Love Jam Bands
+- 
+  timestamp: 00:14:04
+  name: >
+    I Love Crack And Am 47 And Why Is It So
+    Bad?
+- 
+  timestamp: 00:18:03
+  name: I (really) Love Pizza
+- 
+  timestamp: 00:18:36
+  name: I Hate Outie Bellybuttons
+- 
+  timestamp: 00:22:24
+  name: I’m Not Human
+- 
+  timestamp: 00:30:58
+  name: I Like Ass Rimming
+- 
+  timestamp: 00:34:12
+  name: I “fit in” By Not “fitting in”
+- 
+  timestamp: 00:36:33
+  name: I Am a Conservative Republican
+- 
+  timestamp: 00:42:01
+  name: I”m A Wild Animal
+- 
+  timestamp: 00:44:52
+  name: I Hate America
+- 
+  timestamp: 00:48:38
+  name: I Have a Clown Fetish
+- 
+  timestamp: 00:59:59
+  name: I Am Being Gang Stalked
+- 
+  timestamp: 01:06:50
+  name: what did we learn?
+
+----
+
+Chapter-provider: birdie
