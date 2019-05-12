@@ -1,0 +1,55 @@
+@import "globals/_variables";
+@import "globals/_mixins";
+@import "globals/_extends";
+@import "globals/_z-index";
+@import "globals/_defaults";
+
+$gdFont: 'Freckle Face', cursive;
+
+@keyframes strobeText{
+  0%  { color:#5eaef3; }
+  20% { color:#1df58a; }
+  40% { color:#99f614; }
+  60% { color: #da4938; }
+  80% { color: #f518f2; }
+  100%  { color:#5eaef3;  }
+}
+
+aside.garbage-day { @include position(fixed,null,10px,10px);
+  * { font-family: $gdFont; }
+  figure { width: 290px;
+    img {  display: block; width:100%; }
+  }
+  figcaption { font-size:62px; text-align: right; @include position(absolute,null,4%,10%); transform: rotate(15deg); line-height: 100%;
+    text-shadow: 2px 2px 0 black;
+    a { text-decoration: none; animation:strobeText 6s infinite linear;
+      &:hover { text-decoration: underline; }
+    }
+
+  }
+  .time-until { @include position(absolute,18%,26%); line-height: 35px; color:white; text-shadow: 2px 2px 0 black; text-align: center; 
+    .count {  font-size:70px;}
+    .measurement { font-family: 'Noto Serif TC', serif; }
+  }
+  .hide-albert { font-size:50px; font-weight: bold; @include position(absolute,20%,30%); font-family: 'Noto Serif TC', serif; }
+
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &.off-canvas { transform: translateY(68%); }
+
+  &:hover {transform: translateY(0); }
+
+
+  &.today { 
+    figure { width:60vh; }
+    figcaption { font-size:6vw; display: block; transform-origin: bottom right; @include position(absolute,null,17%,0); width:5em;
+      &.alone { width: 90vw; transition: all 1s ease;
+        bottom: 5vw;
+        transform: rotate(9deg);
+        font-size: 10vw;
+      }
+    }
+
+  }
+
+}

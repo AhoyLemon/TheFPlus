@@ -1,3 +1,5 @@
+    <?php snippet('garbage-day-2'); ?>
+    
     <footer class="footer">
       <script src="<?php echo url::home() ?>/assets/js/thefplus.js?updated=2019-04-14b"></script>
       <?php snippet('analytics') ?>
