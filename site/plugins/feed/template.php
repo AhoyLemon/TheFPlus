@@ -145,7 +145,8 @@
 
           <?php if ($item->cover() != "") { ?>
             <image><?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?></image>
-            <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
+            <itunes:image href="<?= $item->cover()->toFile()->resize(1400)->url(); ?>" />
+            <?php /* <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" /> */ ?>
           <?php } else if($image = $page->image()) { ?>
             <itunes:image href="<?php echo $item->url() ?>/<?php echo $image->filename() ?>" />
           <?php } ?>
