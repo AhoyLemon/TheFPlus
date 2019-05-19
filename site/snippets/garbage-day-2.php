@@ -30,6 +30,10 @@
             }
             echo '<div class="count">' . $hourCount . '</div>';
             echo '<div class="measurement">hours until</div>';
+          } else {
+            $minuteCount = $diff->format('%i');
+            echo '<div class="count">' . $minuteCount . '</div>';
+            echo '<div class="measurement">minutes until</div>';
           }
         ?>
       </div>
