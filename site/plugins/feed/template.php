@@ -28,6 +28,7 @@
 
     <?php $itemCount = 0; ?>
 
+    <?php /*
     <item>
       <?php $itemCount++; ?>
       <title>May 18th Is Garbage Day</title>
@@ -53,6 +54,7 @@
       <image>https://thefpl.us/assets/24th/img/albert-square.jpg</image>
       <itunes:image href="https://thefpl.us/assets/24th/img/albert-square.jpg" />
     </item>
+    */ ?>
 
     <?php foreach($items as $item): ?>
       <?php 
