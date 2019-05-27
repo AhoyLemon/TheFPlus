@@ -28,33 +28,30 @@
 
     <?php $itemCount = 0; ?>
 
-    <?php /*
     <item>
       <?php $itemCount++; ?>
-      <title>May 18th Is Garbage Day</title>
-      <link>https://thefpl.us/podcasts/promo_24th3.mp3</link>
-      <guid>https://thefpl.us/podcasts/promo_24th3.mp3</guid>
-      <pubDate>Thu, 09 May 2019 13:11:00 CST</pubDate>
-      <enclosure url="https://thefpl.us/podcasts/promo_24th3.mp3" length="702597" type="audio/mpeg"></enclosure>
+      <title>Garbage Day videos are online</title>
+      <link>https://thefpl.us/episode/garbage-day-2019-1</link>
+      <guid>https://thefpl.us/episode/garbage-day-2019-1</guid>
+      <pubDate>Mon, 27 May 2019 11:33:00 CST</pubDate>
+      <enclosure url="https://thefpl.us/podcasts/promo_gd2019-online.mp3" length="702597" type="audio/mpeg"></enclosure>
       <description>
-        Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours. On Saturday, May 18th, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center. The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us
+      Call your lawyers, The Garbage Day Records are online. On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds. Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all. Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.
       </description>
       <content:encoded>
         <![CDATA[
-                          <p>Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours.</p><p>On <strong>Saturday, May 18th</strong>, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center.</p><p>The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us</p>
-          
+                          <p>Call your lawyers, The Garbage Day Records are online.</p><p>On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds.</p><p>Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all.</p><p>Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.</p>          
                       ]]>
       </content:encoded>
-      <itunes:summary>Just when you thought it was safe to take out the trash, The F Plus is diving back into the dumpster for Another 24 Terrible Hours. On Saturday, May 18th, gird your loins and stock up on stimulants. It's time for Garbage Day 2019: Another 24 Terrible Hours. A benefit to raise money for the Southern Poverty Law Center. The F Plus will be blowing out our backlog of topics with all your favorite ridiculists. And artists will be creating visual representations for a unique and singular entertainment experience. This 24 Hour Extravaganza will be streamed live on twitch.tv. Get all the details at thefpl.us</itunes:summary>
-      <itunes:title>May 18th Is Garbage Day</itunes:title>
+      <itunes:summary>Call your lawyers, The Garbage Day Records are online. On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds. Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all. Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.</itunes:summary>
+      <itunes:title>Garbage Day videos are online</itunes:title>
       <itunes:episodeType>trailer</itunes:episodeType>
       <itunes:author>The F Plus</itunes:author>
       <itunes:subtitle>Garbage Day 2: Another Another 24 Terrible Hours</itunes:subtitle>
-      <itunes:duration>0:00:51</itunes:duration>
+      <itunes:duration>0:00:37</itunes:duration>
       <image>https://thefpl.us/assets/24th/img/albert-square.jpg</image>
       <itunes:image href="https://thefpl.us/assets/24th/img/albert-square.jpg" />
     </item>
-    */ ?>
 
     <?php foreach($items as $item): ?>
       <?php 
