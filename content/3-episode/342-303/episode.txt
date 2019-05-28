@@ -96,15 +96,52 @@ Cover-cite-url:
 
 ----
 
-Chapters-toggle: no
+Chapters-toggle: yes
 
 ----
 
 Chapters: 
 
+- 
+  timestamp: 00:00:00
+  name: 'intro: turkey baster yogurt cumshot'
+- 
+  timestamp: 00:04:13
+  name: I NEED A HOMEMADE SEX TOY?
+- 
+  timestamp: 00:08:30
+  name: lube up some PVC pipe
+- 
+  timestamp: 00:11:24
+  name: ladies love a beach ball
+- 
+  timestamp: 00:15:24
+  name: DIY homemade sex doll
+- 
+  timestamp: 00:23:30
+  name: a visit to the produce aisle
+- 
+  timestamp: 00:31:35
+  name: more horrible things to do with food
+- 
+  timestamp: 00:38:42
+  name: just gamer stuff
+- 
+  timestamp: 00:44:51
+  name: "the fondler"
+- 
+  timestamp: 00:53:02
+  name: create a zildo!
+- 
+  timestamp: 01:01:25
+  name: lube recipes
+- 
+  timestamp: 01:04:38
+  name: what did we learn?
+
 ----
 
-Chapter-provider: 
+Chapter-provider: birdie
 
 ----
 

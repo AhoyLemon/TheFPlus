@@ -1,0 +1,170 @@
+Prevnext: 
+
+----
+
+Title: Garbage Day 2019 (Hours 7-12)
+
+----
+
+Cover: cover-gd2019b.jpg
+
+----
+
+Record-date-start: 2019-05-18
+
+----
+
+Record-time-start: 17:00
+
+----
+
+Record-date-end: 2019-05-18
+
+----
+
+Record-time-end: 22:50
+
+----
+
+Date: 2019-05-26
+
+----
+
+Time: 13:21
+
+----
+
+Featured-site: 
+
+----
+
+Text: The second set of hours is displayed before you, and it is a varied set of hours. From the musings of one particular wackjob to the harmonic unity of several non-specific wackjobs, these six hours will bring you real-life tips on how to make the police apologize for trying to detain you, find the right haircut to keep ghosts out of your brain, and respect Chubby Checker as the original creator of basically all music ever, I guess? It seemed like a good idea at the time.
+
+----
+
+Hours: 
+
+- 
+  hour: "7"
+  name: Stephen King Murdered John Lennon
+  provider: Spooks
+  document_link: >
+    https://docs.google.com/document/d/19hNwrXO3Pm2P4yDNwC1waAChEdtQ4IB4VjHR9AwijsI
+  cast: Adam Bozarth
+  artist: King Kalamari
+  youtube_url: Qt5_NUWkXmE
+  text: |
+    This is an hour spent exploring the life and work of a man named Steve Lightfoot. Steve is a fan of The Beatles (John Lennon specifically), and has set up a tiny website at LennonMurderTruth Dot Org to expose the subject to a difficult truth.
+    
+    Meantime, the entire F Plus recording apparatus finds something else to do and leaves Adam Bozarth, alone in a room by himself, unspooling a mystery.
+- 
+  hour: "8"
+  name: Vampirism Forums
+  provider: Amelia Blank
+  document_link: >
+    https://docs.google.com/document/d/1xmPDb9BMKZGOTaoal5YRIWFvYzzKTpfINj_DEA_mm44
+  cast: >
+    Boots
+    Raingear,Bunnybread,Isfahan,Jimmyfranks,JT
+  artist: King Kalamari
+  youtube_url: O1B6vcYX7bc
+  text: |
+    Hey, who wants to hear Bunnybread put on a Dracula voice? You do? Okay, good. Does it diminish your enthusiasm if Dracula swaps Vs and Ws like Chekov on Star Trek? It doesn't!? Boy, this sure is the right hour for you.
+    
+    We talk about vampires until it gets boring, at which point we move on to the much more interesting discussion of how Chubby Checker invented dancing apart to the music. I'm just gonna assume you love that as well.
+- 
+  hour: "9"
+  name: 'Survivalists & Doomsday Preppers'
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1C0crs6TFtPBGOqBvCxOM23hph_68uptdxDk-1ucuH0M
+  cast: >
+    Lemon,Boots
+    Raingear,Bunnybread,Isfahan,Jimmyfranks,jt,J
+    W Friedman
+  artist: Sanguinary Novel
+  youtube_url: MCIr6dVNkmw
+  text: |
+    Our first ever live stream episode featuring **live Bob Ross-style painting** contains citizens who are independent, autonomous, preponderant, self-governing. One might even say, if one were so bold, that these are sovereign citizens.
+    
+    And while they have contingency plans for any SHTF situation, most of those plans involve running water, electricity, and shoving hunks of garlic into a vagina, so maybe some of these plans need tweaking.
+- 
+  hour: "10"
+  name: RapPad 2019
+  provider: 'Lemon & Boots'
+  document_link: >
+    https://docs.google.com/document/d/1FtXjYKbr_xBCuzNVlQrO0MG-8f2ULAklOZM_HYePwVk
+  cast: >
+    Bunnybread,Boots
+    Raingear,Lemon,Jimmyfranks,John
+    Toast,Adam Bozarth,J W Friedman
+  artist: Sanguinary Novel
+  youtube_url: fq3tXpUNafI
+  text: |
+    This hour starts as our very own Bob Ross impersonator stands confused for about ten minutes while Bunnybread screams out freestyles and each participants' series of nicknames. That part could have lasted thrice as long.
+    
+    But that out of the way, we get down to the business of reading RapPad out loud, or as much as we can with Bunnybread screaming out trivia questions and instructing us to shut up.
+- 
+  hour: "11"
+  name: The Spiritual Research Foundation
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/187IKBHvNpd2sMMBt5suDA3vrPngPR29D2iJTMJx_NIY
+  cast: >
+    John Toast,Lemon,bumpgrrl,Bunnybread,Lou
+    Fernandez
+  artist: Hux
+  youtube_url: f9sVxTaa9is
+  text: |
+    It's takes Boots a couple tries to remember which hour he's playing a theme song for, but once he finally gets there, it's time to discuss some m'fin *magick!!!*
+    
+    We learn about ghosts, why they are so gay and why they make us horny, but most importantly: Which haircuts leave you most vulnerable to psychic attack? White girls with dredlocks take note!
+- 
+  hour: "12"
+  name: Intentional Communities
+  provider: Sphagnum
+  document_link: >
+    https://docs.google.com/document/d/187IKBHvNpd2sMMBt5suDA3vrPngPR29D2iJTMJx_NIY
+  cast: "Lemon,Achilles' Heelies,bumpgrrl,Bunnybread,Zarla,Lou Fernandez"
+  artist: Hux
+  youtube_url: kMENPchDVCg
+  text: |
+    The Foundation For Intentional Communities is a directory of cohabitation arrangements all over the world - communities that gather around a central philosophy, be it Satanism, steampunk, or just finding a refuge from all that gang stalking in the normal world.
+    
+    But the one thing that binds all of these groups together: A complete lack of motivation and follow through to accomplish even the slightest fraction of their goals.
+
+----
+
+Cast: Adam Bozarth,Boots Raingear,Bunnybread,Isfahan,Jimmyfranks,JT,Lemon,J W Friedman,John Toast,bumpgrrl,Lou Fernandez,Frank West,Zarla,Achilles' Heelies
+
+----
+
+Provider: King Kalamari,Sanguinary Novel,Hux
+
+----
+
+Tags: 
+
+----
+
+Leadout: **You're halfway through!** Congratulations, except now [in the next section](https://thefpl.us/episode/garbage-day-2019-3) you've got the Snot Fetish episode to work through in the next hour. After that though, there's fetish wrestling, necromancy, and Jack Chick getting drunk by himself. So things are looking up.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://photos.app.goo.gl/5aHb5hb5HsFncoDz8
+  text: Stream Art
+  target_blank: "1"
+- 
+  url: >
+    https://photos.app.goo.gl/iA1mHBPrUfuYprHXA
+  text: Break Images
+  target_blank: "1"
+- 
+  url: >
+    https://www.youtube.com/playlist?list=PLbDEABAdDXRVBY_ppQdYaxXlddH3VqGpK
+  text: YouTube Playlist
+  target_blank: "1"

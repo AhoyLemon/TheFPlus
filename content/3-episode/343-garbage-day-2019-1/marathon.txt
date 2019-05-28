@@ -1,0 +1,175 @@
+Prevnext: 
+
+----
+
+Title: Garbage Day 2019 (Hours 1-6)
+
+----
+
+Cover: cover-gd2019a.jpg
+
+----
+
+Record-date-start: 2019-05-18
+
+----
+
+Record-time-start: 11:00
+
+----
+
+Record-date-end: 2019-05-18
+
+----
+
+Record-time-end: 16:50
+
+----
+
+Date: 2019-05-26
+
+----
+
+Time: 13:20
+
+----
+
+Featured-site: 
+
+----
+
+Text: On May 18th of 2019, The F Plus endeavored to record a live podcast for 24 hours straight. 24 documents read by groups of 21 different people, backed up by 12 different artists on the live stream, all to raise money for the National Network of Abortion Funds. It seemed like a good idea at the time.
+
+----
+
+Hours: 
+
+- 
+  hour: "1"
+  name: Rate Your Music
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1w36OTRUx7BOa_2onSS5CHo7egXtzYnASTff9XdmYHbo
+  cast: >
+    Boots Raingear,Lemon,Frank
+    West,Jimmyfranks,John Toast
+  artist: Travis Ramsey
+  youtube_url: IHNnWIUaZoI
+  text: >
+    The first of many theme songs and the
+    first of just as many documents! Our
+    first hour is the frustratingly
+    pretentious RateYouMusic.com, a place
+    where people rate your music tastes and,
+    quite frankly, find them wanting.
+- 
+  hour: "2"
+  name: Everybody Loves Lar
+  provider: Zekka
+  document_link: >
+    https://docs.google.com/document/d/1Y31JzHJao5KGQdAbCP0M12FvGytyn5NdTbN3FgI2Bck
+  cast: >
+    Lemon,Boots Raingear,Frank
+    West,Jimmyfranks,John Toast,Portaxx
+  artist: Travis Ramsey
+  youtube_url: 8bWHXspT3UM
+  text: |
+    Steward HK Lar Lover Dilligent (or just "Lar" for short) is a prolific Christian game developer and musician.  He insists that he *isn't* God, but he understands why you'd think so. So may others have.
+    
+    One thing we know for sure? He wants to eat a peanut butter jelly sammich.
+- 
+  hour: "3"
+  name: The Funny Music Project
+  provider: Cheapskate
+  document_link: >
+    https://docs.google.com/document/d/1awjjRzGZmMqXurSarO1nOx1h7iR0FCyb7WlHGhLMbf0
+  cast: >
+    Jimmyfranks,Lemon,Adam Bozarth,Jack
+    Chick,Nutshell Gulag,Ironicus
+  artist: Portaxx
+  youtube_url: NIKpKEvEv10
+  text: |
+    We've brought the noise, now it's time to bring the **pain**. The Funny Music Project (or FuMP) is a Dr. Demento affiliated website featuring the works of comedic luminaries like Insane Ian, Shoebox, and Garden Fresh. Also we read a Neil Cicierega piece by accident.
+    
+    Point is, this one is going to hurt you the whole way through.
+- 
+  hour: "4"
+  name: Smartmones
+  provider: A Meat
+  document_link: >
+    https://docs.google.com/document/d/1yc6iEh6QMif9b1mqJlzWBphHeWR6iff_jHBlNPXqaFs
+  cast: >
+    Boots Raingear,Adam Bozarth,Jack
+    Chick,Nutshell Gulag,Ironicus,A Meat
+  artist: Portaxx
+  youtube_url: pO20xI7IKRI
+  text: |
+    Okay, so it might have occured to you at some point that pheromones are bunk, but that's only because they're dumb. In this hour, we've got **Smartmones**! What are Smartmones you ask? Well, Boots has some audio difficulty with the first five minutes of this hour so you'll probably have to figure it out youself.  The point is, this company is now out of business, but used to sell a guaranteed product called "Instant Jerk".
+- 
+  hour: "5"
+  name: My Succubus Wife
+  provider: Montrith
+  document_link: >
+    https://docs.google.com/document/d/11YglUtS3FH2hY-VJXKQh-wXgX4As1PZEYYMD2NpjWW0
+  cast: "Jack Chick,Boots Raingear,Achilles' Heelies,bumpgrrl,Frank West,Portaxx,Nutshell Gulag"
+  artist: Spooks
+  youtube_url: MaTurhJZfZw
+  text: >
+    This document features several different
+    Wordpress websites dealing openly and
+    honestly with the real-world troubles
+    befalling men who claim to be married to
+    medieval beasts of legend. Through it
+    all, these men are spiritually and
+    sexually fulfilled, in spite of (or
+    perhaps because of) the "tampering" with
+    their sphincter and rectum.
+- 
+  hour: "6"
+  name: 'Crunchyroll Forums & e621'
+  provider: bastards
+  document_link: >
+    https://docs.google.com/document/d/1a7bczOYbGZx4pjphLBafNrXnQE0vLQlkUNiCBIBbsII
+  cast: "Portaxx,Lemon,Achilles' Heelies,bumpgrrl,Frank West,Jack Chick"
+  artist: Spooks
+  youtube_url: qYmENRAkoUI
+  text: |
+    The Garbage Day livestream audience has voted with their dollars, and they've voted for the Crunchyroll doc. **How bad is the Crunchyroll doc?** Well, the first thread is called "should the US pay reparations for slavery". So that should be a hint.
+    
+    Eventually we set another donation goal and claw around for an escape hatch. Unfortunately we quickly find out that the sunlight is blotted out by dicks that end in vaginas.
+
+----
+
+Cast: Boots Raingear,Lemon,Frank West,Jimmyfranks,John Toast,Portaxx,Adam Bozarth,Nutshell Gulag,Ironicus,A Meat,bumpgrrl,Jack Chick
+
+----
+
+Provider: Travis Ramsey,Portaxx,Spooks
+
+----
+
+Tags: 
+
+----
+
+Leadout: This is only the beginning. In [**Part 2**](https://thefpl.us/episode/garbage-day-2019-2) we've got live painting with a giant brush, garlicky vaginas, Satanists, vampire accents, and Adam Bozarth locked in a room by himself unraveling a conspiracy that's been hidden for 40 years.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://photos.app.goo.gl/5aHb5hb5HsFncoDz8
+  text: Stream Art
+  target_blank: "1"
+- 
+  url: >
+    https://photos.app.goo.gl/iA1mHBPrUfuYprHXA
+  text: Break Images
+  target_blank: "1"
+- 
+  url: >
+    https://www.youtube.com/playlist?list=PLbDEABAdDXRVBY_ppQdYaxXlddH3VqGpK
+  text: YouTube Playlist
+  target_blank: "1"
