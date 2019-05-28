@@ -107,9 +107,10 @@ $z-social-links: 46;
     .logo-link { outline: none;
       * { outline: none; }
       .grow-circle-2 { @include position(fixed,null,null,-($mobileLogoGrowSize * .5),-($mobileLogoGrowSize * .5)); width:$mobileLogoGrowSize; height:$mobileLogoGrowSize; z-index: $z-logo-notch;
-        transform:scale(0.015) translate(240%, -90%);
+        transform:scale(0.015);
         opacity: 0;
         transition: transform 1s ease 0s, opacity 0.15s linear 0.8s;
+        transform-origin: center;
         * {
           fill:#c0282d;
         }
