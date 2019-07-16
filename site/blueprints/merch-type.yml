@@ -119,6 +119,11 @@ fields:
     type: number
     step: .01
     width: 1/4
+  button_text:
+    label: Button Text
+    type: text
+    width: 1/4
+    placeholder: BUY NOW
   buy_form_extra_html:
     label: Form Extra HTML
     type: textarea

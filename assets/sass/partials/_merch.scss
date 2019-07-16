@@ -64,6 +64,11 @@ $merchBorder: lighten($black,50%);
   }
 }
 
+form.paypal-buy-form { display:block; width:12em;
+  select { display: block; font-size:1rem; padding: 0.25em; width:100%; height: 3em; font-family: $source; }
+  button { width:100%; }
+}
+
 @media (min-width:1581px) {
   .merch-grid { grid-template-columns: repeat(4,1fr);
     article { grid-column: span 4; }

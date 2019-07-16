@@ -49,23 +49,15 @@
 
       <? /* Single Product Form */ ?>
       <?php if ($page->product_type() == "single" && $page->buy_slug()->isNotEmpty()) { ?>
-        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <form action="https://www.paypal.com/cgi-bin/webscr" class="paypal-buy-form" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
           <input type="hidden" name="hosted_button_id" value="<?= $page->buy_slug(); ?>">
           <?php if ($page->buy_form_extra_html()->isNotEmpty()) { echo $page->buy_form_extra_html(); } ?>
-          <?php 
-            $d = (string)$page->buy_price();
-            $dollaz = "$" . number_format($d, 2);
-            if (strpos($dollaz, '.00') !== false) {
-              $dollaz = explode('.00', $dollaz)[0];
-            } else {
-              $dollaz = explode('.', $dollaz)[0] . '<sup>' . explode('.', $dollaz)[1] .'</sup>';
-            }
-          ?>
-          <button class="button submit" type="submit"
-            onclick="trackEvent('merch', '<?= $page->title(); ?>', '<?= $dollaz; ?>', $page->buy_price());">
-            BUY NOW! 
-            <?= $dollaz; ?>
+          <button class="button submit" type="submit" onclick="trackEvent('merch', '<?= $page->title(); ?>', '<?= $page->title(); ?>', $page->buy_price());">
+            <?php 
+              if ($page->button_text()->isNotEmpty()) { echo $page->button_text(); 
+              } else { echo 'BUY NOW'; } 
+            ?>
           </button>
         </form>
       <?php } ?>
