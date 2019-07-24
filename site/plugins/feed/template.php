@@ -28,31 +28,6 @@
 
     <?php $itemCount = 0; ?>
 
-    <item>
-      <?php $itemCount++; ?>
-      <title>Garbage Day videos are online</title>
-      <link>https://thefpl.us/episode/garbage-day-2019-1</link>
-      <guid>https://thefpl.us/episode/garbage-day-2019-1</guid>
-      <pubDate>Mon, 27 May 2019 11:33:00 CST</pubDate>
-      <enclosure url="https://thefpl.us/podcasts/promo_gd2019-online.mp3" length="702597" type="audio/mpeg"></enclosure>
-      <description>
-      Call your lawyers, The Garbage Day Records are online. On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds. Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all. Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.
-      </description>
-      <content:encoded>
-        <![CDATA[
-                          <p>Call your lawyers, The Garbage Day Records are online.</p><p>On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds.</p><p>Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all.</p><p>Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.</p>          
-                      ]]>
-      </content:encoded>
-      <itunes:summary>Call your lawyers, The Garbage Day Records are online. On May 18th of 2019, The F Plus set out to record live for 24 hours straight to raise money for the National Network of Abortion Funds. Missed the live event? We won’t judge you. Visit thefpl.us to catch up on all 24 hours. Theme songs, objectivists, conspiracy theorists, garlicky vaginas, that **** Dave who can’t even **** flip, it’s all been recorded and online, alongside 12 terrific artists trying to draw something to make sense of it all. Stream the hours at your leisure and donate to the charities directly. Because this all seemed like a good idea at the time.</itunes:summary>
-      <itunes:title>Garbage Day videos are online</itunes:title>
-      <itunes:episodeType>trailer</itunes:episodeType>
-      <itunes:author>The F Plus</itunes:author>
-      <itunes:subtitle>Garbage Day 2: Another Another 24 Terrible Hours</itunes:subtitle>
-      <itunes:duration>0:00:37</itunes:duration>
-      <image>https://thefpl.us/assets/24th/img/albert-square.jpg</image>
-      <itunes:image href="https://thefpl.us/assets/24th/img/albert-square.jpg" />
-    </item>
-
     <?php foreach($items as $item): ?>
       <?php 
         if (strpos($item->featured_site(),',') !== false) {
