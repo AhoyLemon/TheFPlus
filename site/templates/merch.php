@@ -18,9 +18,10 @@
 
       <?php foreach($page->current_merch()->toStructure()->flip() as $merch) { ?>
       
-        <a href="<?= $merch->url(); ?>" class="grid-box">
+        <a href="<?= $merch->url(); ?>" class="grid-box" itemscope itemtype="https://schema.org/Product">
+          <meta itemprop="url" content="<?= $merch->url(); ?>" />
           <figure>
-            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<? $merch->title(); ?>" />
+            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<? $merch->title(); ?>" itemprop="image" />
             
             <?php if ($merch->almost_gone == "1") { ?>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="almost-gone">
@@ -34,17 +35,22 @@
           <div class="details">
             <div class="detail name full">
               <label>Name</label>
-              <div class="text"><?= $merch->title(); ?></div>
+              <div class="text" itemprop="name"><?= $merch->title(); ?></div>
             </div>
             <div class="detail type half">
               <label>Type</label>
-              <div class="text"><?= $merch->type(); ?></div>
+              <div class="text" itemprop="category"><?= $merch->type(); ?></div>
             </div>
-            <div class="detail price half">
+            <div class="detail price half" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
               <label>Price</label>
               <div class="text"><?= $merch->price(); ?></div>
+              <meta itemprop="price" content="<?= str_replace( '$', '', $merch->price()); ?>" />
+              <meta itemprop="availability" content="InStock" />
+              <meta itemprop="priceCurrency" content="USD" />
             </div>
           </div>
+
+          <meta itemprop="brand" itemtype="https://schema.org/Organization" content="The F Plus" />
         </a>
       <?php } ?>
     </section>
@@ -56,21 +62,22 @@
       </article>
       <?php foreach($page->sold_merch()->toStructure()->sortBy('sold_date', 'desc') as $merch) { ?>
       
-        <div href="<?= $merch->url(); ?>" class="grid-box">
+        <div href="<?= $merch->url(); ?>" class="grid-box" itemscope itemtype="https://schema.org/Product">
+
           <figure>
-            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" />
+            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" itemprop="image" />
           </figure>
           <div class="details">
             <div class="detail name full">
               <label>Name</label>
               <?php if ($merch->url() != "") { ?>
                 <div class="text">
-                  <a href="<?= $merch->url(); ?>" class="title-link">
-                    <?= $merch->title(); ?>
+                  <a href="<?= $merch->url(); ?>" class="title-link" itemprop="url">
+                    <span itemprop="name"><?= $merch->title(); ?></span>
                   </a>
                 </div>
               <?php } else { ?>
-                <div class="text">
+                <div class="text" itemprop="name">
                   <?= $merch->title(); ?>
                 </div>
               <?php } ?>
@@ -79,21 +86,26 @@
             <?php if ($merch->type() != "") { ?>
               <div class="detail type half">
                 <label>Type</label>
-                <div class="text">
+                <div class="text" itemprop="category">
                   <?= $merch->type(); ?>
                 </div>
               </div>
             <?php } ?>
             <?php if ($merch->sold_date() != "") { ?>
-              <div class="detail date sold-date half">
+              <div class="detail date sold-date half" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                 <label>Sold Out</label>
                 <div class="text">
                   <?= $merch->date('m/d/y', 'sold_date'); ?>
                 </div>
+                <meta itemprop="price" content="0" />
+                <meta itemprop="availability" content="SoldOut" />
+                <meta itemprop="priceCurrency" content="USD" />
               </div>
             <?php } ?>
             
+            <meta itemprop="brand" itemtype="https://schema.org/Organization" content="The F Plus" />
           </div>
+
         </div>
       <?php } ?>
     </section>

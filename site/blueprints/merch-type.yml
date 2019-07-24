@@ -117,6 +117,7 @@ fields:
   buy_price:
     label: Price
     type: number
+    required: true
     step: .01
     width: 1/4
   button_text:

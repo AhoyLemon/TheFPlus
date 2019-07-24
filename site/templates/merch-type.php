@@ -7,25 +7,27 @@
 
 <main class="main page" role="main">
 
-    <article class="full <?php if($page->show_image() != 'true') { echo 'default'; } ?>">
+    <article class="full <?php if($page->show_image() != 'true') { echo 'default'; } ?>" itemscope itemtype="https://schema.org/Product" >
 
-    <?php if($page->show_image() == 'true'):  ?>
+      <meta itemprop="url" content="<?= $page->url(); ?>" />
+      
+      <?php if($page->show_image() == 'true'):  ?>
         <figure>
           <?php if ($page->show_different_image() == "yes" && $page->page_image()->isNotEmpty()) { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>" itemprop="image">
           <?php } else if ($page->cover() != "") { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>" itemprop="image">
           <?php } else { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>" itemprop="image">
           <?php } ?>
         </figure>
       <?php endif ?>
 
       <header>
-        <h1 style="margin-bottom:0;"><?php echo $page->title() ?></h1>
+        <h1 style="margin-bottom:0;" itemprop="name"><?php echo $page->title() ?></h1>
         
         <!-- DATE & TIME -->
-        <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
+        <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00" itemprop="releaseDate">
           
           <?php if ($page->product_type() == "series") { 
             echo '<span>Last Release: </span>'; 
@@ -43,7 +45,7 @@
         </time>
       </header>
       
-      <div class="article-text">
+      <div class="article-text" itemprop="description">
         <?php echo $page->text()->kirbytext() ?>
       </div>
 
@@ -61,6 +63,24 @@
           </button>
         </form>
       <?php } ?>
+
+
+      <?php if ($page->buy_price()->isNotEmpty()) { ?>
+        <div itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+          <meta itemprop="price" content="<?= $page->buy_price(); ?>" />
+          <meta itemprop="priceCurrency" content="USD" />
+
+          <?php if ($page->soldout() == "0") { ?>
+            <meta itemprop="availability" content="InStock" />
+          <?php } else { ?>
+            <meta itemprop="availability" content="SoldOut" />
+          <?php } ?>
+
+        </div>
+      <?php } ?>
+
+
+      <meta itemprop="brand" itemtype="https://schema.org/Organization" content="The F Plus" />
 
     </article>
       
@@ -318,11 +338,11 @@
               <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
                 <div class="photo-holder">
                   <?php if ($photo->full_size() != "") { ?>
-                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
-                        <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom"  itemprop="image">
+                      <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
                     </a>
                   <?php } else { ?>
-                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" itemprop="image" />
                   <?php } ?>
                 </div>
               <?php endforeach; ?>
@@ -330,11 +350,11 @@
               <?php foreach($page->photos()->toStructure() as $photo): ?>
                 <div class="photo-holder">
                   <?php if ($photo->full_size() != "") { ?>
-                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
+                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom" itemprop="image">
                         <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
                     </a>
                   <?php } else { ?>
-                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" itemprop="image" />
                   <?php } ?>
                 </div>
               <?php endforeach; ?>
