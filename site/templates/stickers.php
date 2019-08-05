@@ -158,8 +158,8 @@
                           <meta itemprop="priceCurrency" content="USD" />
                           <meta itemprop="price" content="<?php echo $sticker->buttona_price(); ?>" />
                           <meta itemprop="url" content="<?php echo $page->url(); ?>" />
-                          <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
-                          <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                          <meta itemprop="itemCondition" content="NewCondition" />
+                          <meta itemprop="availability" content="LimitedAvailability" />
                         </div>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -173,8 +173,8 @@
                           <meta itemprop="priceCurrency" content="USD" />
                           <meta itemprop="price" content="<?php echo $sticker->buttonb_price(); ?>" />
                           <meta itemprop="url" content="<?php echo $page->url(); ?>" />
-                          <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
-                          <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                          <meta itemprop="itemCondition" content="NewCondition" />
+                          <meta itemprop="availability" content="LimitedAvailability" />
                         </div>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -188,8 +188,8 @@
                           <meta itemprop="priceCurrency" content="USD" />
                           <meta itemprop="price" content="<?php echo $sticker->buttonc_price(); ?>" />
                           <meta itemprop="url" content="<?php echo $page->url(); ?>" />
-                          <meta itemprop="itemCondition" itemtype="http://schema.org/NewCondition" />
-                          <meta itemprop="availability" itemtype="http://schema.org/LimitedAvailability" />
+                          <meta itemprop="itemCondition" content="NewCondition" />
+                          <meta itemprop="availability" content="LimitedAvailability" />
                         </div>
                         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
                           <input type="hidden" name="cmd" value="_s-xclick"/>
@@ -205,6 +205,7 @@
                     <meta itemprop="availability" content="http://schema.org/SoldOut" />
                     <meta itemprop="priceCurrency" content="USD" />
                     <meta itemprop="price" content="3" />
+                    <meta itemprop="priceValidUntil" content="<?= $sticker->date('m/d/y', 'soldout'); ?>" />
                   </div>
                 <?php } else if ($sticker->released == "") { ?>
                   <div class="detail full no-buttons">
@@ -394,9 +395,10 @@
                 <?php } else if ($sticker->soldout() != "") { ?>
                   <div class="detail full no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <span>SOLD OUT</span>
-                    <meta itemprop="availability" content="http://schema.org/SoldOut" />
+                    <meta itemprop="availability" content="SoldOut" />
                     <meta itemprop="priceCurrency" content="USD" />
                     <meta itemprop="price" content="3" />
+                    <meta itemprop="priceValidUntil" content="<?= $sticker->date('Y-m-d', 'soldout'); ?>" />
                   </div>
                 <?php } else if ($sticker->released == "") { ?>
                   <div class="detail full no-buttons">

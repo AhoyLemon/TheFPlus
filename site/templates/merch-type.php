@@ -7,7 +7,7 @@
 
 <main class="main page" role="main">
 
-    <article class="full <?php if($page->show_image() != 'true') { echo 'default'; } ?>" itemscope itemtype="https://schema.org/Product" >
+    <article class="full <?php if($page->show_image() != 'true') { echo 'default'; } ?>" <?php if ($page->product_type() == "single") { echo ' itemscope itemtype="https://schema.org/Product" '; } ?> >
 
       <meta itemprop="url" content="<?= $page->url(); ?>" />
       
