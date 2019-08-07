@@ -51,17 +51,28 @@
 
       <? /* Single Product Form */ ?>
       <?php if ($page->product_type() == "single" && $page->buy_slug()->isNotEmpty()) { ?>
-        <form action="https://www.paypal.com/cgi-bin/webscr" class="paypal-buy-form" method="post" target="_top">
-          <input type="hidden" name="cmd" value="_s-xclick">
-          <input type="hidden" name="hosted_button_id" value="<?= $page->buy_slug(); ?>">
-          <?php if ($page->buy_form_extra_html()->isNotEmpty()) { echo $page->buy_form_extra_html(); } ?>
-          <button class="button submit" type="submit" onclick="trackEvent('merch', '<?= $page->title(); ?>', '<?= $page->title(); ?>', $page->buy_price());">
-            <?php 
-              if ($page->button_text()->isNotEmpty()) { echo $page->button_text(); 
-              } else { echo 'BUY NOW'; } 
-            ?>
-          </button>
-        </form>
+        
+
+        <?php if ($page->soldout() == "1") { ?>
+
+          <div style="font-size:300%;">SOLD OUT</div>
+
+        <?php } else { ?>
+
+          <form action="https://www.paypal.com/cgi-bin/webscr" class="paypal-buy-form" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="<?= $page->buy_slug(); ?>">
+            <?php if ($page->buy_form_extra_html()->isNotEmpty()) { echo $page->buy_form_extra_html(); } ?>
+            <button class="button submit" type="submit" onclick="trackEvent('merch', '<?= $page->title(); ?>', '<?= $page->title(); ?>', $page->buy_price());">
+              <?php 
+                if ($page->button_text()->isNotEmpty()) { echo $page->button_text(); 
+                } else { echo 'BUY NOW'; } 
+              ?>
+            </button>
+          </form>
+
+        <?php } ?>
+
       <?php } ?>
 
 
