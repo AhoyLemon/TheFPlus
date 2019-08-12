@@ -138,57 +138,6 @@
         </article>
       <?php } ?>
     </div>
-    
-    
-
-    <?php /* <div class="episode-actions">
-      
-      <!-- Contribute To The F Plus -->
-      <a class="social contribute" href="/contribute/" title="Contribute To The Podcast">
-        <svg viewBox="0 0 100 100">
-          <use class="top lid" xlink:href="#IconContributeTop"></use>
-          <use class="bottom" xlink:href="#IconContributeBottom"></use>
-        </svg>
-        <span class="label">Contribute to the Podcast</span>
-      </a>
-
-      <!-- TWEET THIS -->
-      <a class="social twitter" href="https://twitter.com/intent/tweet?text=<?php echo rawurlencode($page->title()); ?>%0A&url=<?php echo rawurlencode($page->url()); ?>&via=TheFPlus" target="_blank" title="Tweet this">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconTwitter"></use>
-        </svg>
-        <span class="label">Tweet this episode</span>
-      </a>
-      
-      <!-- FACEBOOK SHARE -->
-      <a class="social facebook" href="https://www.facebook.com/sharer.php?u=<?php echo rawurlencode ($page->url()); ?>" title="Share on Facebook">
-        <svg viewBox="0 0 100 100">
-          <use xlink:href="#IconFacebook"></use>
-        </svg>
-        <span class="label">Share on Facebook</span>
-      </a>
-      
-      
-      
-      <?php if (strpos($page->tags(), 'reddit') !== false) { ?>
-        <!-- REDDIT SHARE -->
-        <a class="social reddit" href="https://reddit.com/submit/?<?php echo rawurlencode ($page->url()); ?>" target="_blank" title="Share on Reddit">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconReddit"></use>
-          </svg>
-          <span class="label">Share on Reddit</span>
-        </a>
-      <?php } else { ?>
-        <!-- TUMBLR SHARE -->
-        <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
-          <svg viewBox="0 0 100 100">
-            <use xlink:href="#IconTumblr"></use>
-          </svg>
-          <span class="label">Post to Tumblr</span>
-        </a>
-      <?php } ?>
-      
-    </div> */ ?>
 
     <!-- ADDITIONAL FUN -->
     <?php if ($page->leadout() != "") { ?>

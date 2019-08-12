@@ -109,7 +109,9 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 .summaries { display: grid;  grid-gap: ($gap * 4); justify-content: end;
 
   @media (min-width:$desktop-min) { padding-top:($gap * 4); padding-right:($gap * 3); }
-  @media (max-width:$mobile-max)  { padding-top:($gap * 2); padding-right:($gap * 2); }
+  @media (max-width:$mobile-max)  { padding-top:($gap * 2); padding-right:($gap * 2);
+    .brief.wrote { width: calc(100% + 20px); }
+  }
 
   .brief { position:relative; color:$black; text-decoration: none;
 

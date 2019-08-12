@@ -69,7 +69,14 @@ article { font-weight: $light;
 }
 
 article.full {
-  .episode-actions { @extend %clearfix;
+  .page-actions {
+
+    display:grid; grid-gap: 10px; grid-template-columns: repeat(auto-fill, 52px); padding-bottom: 20px;
+
+    .audio-holder { grid-column: 1 / -1;
+      audio { width:100%; }
+    }
+
     a { position: relative;
       &.action {
         svg * { fill:$red; }
@@ -87,13 +94,6 @@ article.full {
         svg * { fill:$color-googleplus; }
         .label { background:$color-googleplus; }
       }
-      /*
-      &.flattr svg * { fill:$color-flattr-orange;
-        .orange { fill:$color-flattr-orange; }
-        .green { fill:$color-flattr-green; }
-        .label { background:$color-flattr-orange; }
-      }
-      */
       &.facebook { 
         svg * { fill:$color-facebook; }
         .label { background:$color-facebook; }
@@ -139,7 +139,6 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
     @media (min-width:$desktop-min) { transform: translateY(-70px); }
     @media (max-width:$mobile-max) { transform: translateY(-40px); margin-bottom:-20px; }
   }
-  //.cast, .content-provider, .edited-by { font-size:80%; }
 }
 
 
@@ -236,10 +235,6 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
           svg { max-width: 60px; }
         }
       }
-      .episode-actions { @include flex-container; padding-top: 0.25em; clear: both; float: none;
-        .audio-holder { @include flex-item(40%); padding: 0.5em 1em; }
-        audio { width:100%; }
-      }
     }
   }
 
@@ -258,10 +253,6 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   article {
     &.full { font-size:4.3vw;
       .cover { width:100%; height:auto; margin-bottom: 10px; }
-      .episode-actions { padding-top: 0.25em; clear: both; float: none; margin-bottom: 3vh;
-        .audio-holder { width:100%; padding-top: 1em; }
-        audio { width:100%; }
-      }
     }
   }
 }

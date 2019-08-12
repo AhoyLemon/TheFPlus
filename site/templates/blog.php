@@ -58,7 +58,7 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <?php snippet('episode-actions'); ?>
+    <?php snippet('page-actions'); ?>
 
     <!-- EPISODE TAGS -->
     <?php if ($page->tags() != ""): ?>

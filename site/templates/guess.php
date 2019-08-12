@@ -86,7 +86,7 @@
       <?php echo $page->parent()->subscribe()->kirbytext(); ?>
     </div>
 
-    <?php snippet('episode-actions') ?>
+    <?php snippet('page-actions') ?>
 
     <!-- SOURCES -->
     

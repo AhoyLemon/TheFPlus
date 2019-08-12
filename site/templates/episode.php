@@ -173,8 +173,6 @@
 
     <?php snippet('podlove') ?>
 
-    <?php /* snippet('episode-actions') */ ?>
-
     <!-- EPISODE TAGS -->
     <?php snippet('tags') ?>
 

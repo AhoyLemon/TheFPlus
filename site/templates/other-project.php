@@ -15,9 +15,11 @@
     } else if ($page->cast() != '') {
       $multiperson = false;
     }
+
+
   ?>
 
-  <article class="episode full" itemscope itemtype="https://schema.org/CreativeWork">
+  <article class="full <?php if ($page->show_image() == 'true') { echo ' episode '; } else { echo ' default '; } ?>" itemscope itemtype="https://schema.org/CreativeWork">
 
     <?php if( $image = $page->image()):  ?>
       <?php if($page->show_image() == 'true'):  ?>
@@ -92,7 +94,7 @@
       </summary>
     </div>
 
-    <?php snippet('episode-actions') ?>
+    <?php snippet('page-actions') ?>
       
     <?php if ($page->photos() != "") { ?>
       <div class="product-photos" style="margin-top:3em;">
