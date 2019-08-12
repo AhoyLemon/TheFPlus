@@ -32,6 +32,7 @@
 
   podlovePlayer('#PodLovePlayer', {
       title: '<?= addslashes($page->title()); ?>',
+      subtitle: "Reading: <?= str_replace(',', '   ', $page->featured_site()); ?>",
       summary: `<?= $page->text()->kirbytext(); ?>`,
       theme: {
         main: '#131313',
@@ -45,7 +46,7 @@
       <?php } ?>
       show: {
           title: '<?= $site->title(); ?>',
-          subtitle: '<?= $site->description(); ?>',
+          summary: '<?= $site->description(); ?>',
           poster: 'https://thefpl.us/assets/images/og-image.png',
           link: '<?= $site->url(); ?>'
       },
