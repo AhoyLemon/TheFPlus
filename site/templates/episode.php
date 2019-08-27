@@ -173,6 +173,8 @@
 
     <?php snippet('podlove') ?>
 
+    <?php snippet('webshare') ?>
+
     <!-- EPISODE TAGS -->
     <?php snippet('tags') ?>
 

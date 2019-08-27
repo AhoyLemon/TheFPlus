@@ -85,6 +85,15 @@ dl.chapters-info { margin-bottom: 1em;
   }
 }
 
+
+.button.share-this-page { position: relative; font-family: $sans-serif; padding-left:2.75em; margin:0 auto 2em auto;
+  svg { position: absolute; height:2.5em; width:2.5em; top:0.5em; left:.25em;
+    * { fill:currentColor; }
+  }
+  span { font-family: $sans-serif; }
+}
+
+
 .episode-find-options {
   font-size:24px; padding:1em;
   @media (min-width:$desktop-min) { padding-left: 0; }
