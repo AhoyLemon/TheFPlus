@@ -93,8 +93,6 @@
         <?php echo $page->text()->kirbytext() ?>
       </summary>
     </div>
-
-    <?php snippet('page-actions') ?>
       
     <?php if ($page->photos() != "") { ?>
       <div class="product-photos" style="margin-top:3em;">

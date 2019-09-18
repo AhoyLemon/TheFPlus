@@ -20,7 +20,7 @@ fields:
       qe: video_url 
       irregular: episode_file
       website: github_repo
-      merch: photos baseprice
+      merch: photos baseprice sale_status
       video: video_url
     hide:
       qe: photos github_repo episode_file baseprice sale_status
