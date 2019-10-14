@@ -58,9 +58,9 @@
       <?php echo $page->text()->kirbytext() ?>
     </div>
 
-    <?php snippet('page-actions'); ?>
+    <?php /* snippet('page-actions');  */ ?>
 
-    <!-- EPISODE TAGS -->
+    <!-- BLOG POST TAGS -->
     <?php if ($page->tags() != ""): ?>
       <div class="info-block blog-tags">
         <span class="label">This post is tagged:</span>
