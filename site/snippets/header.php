@@ -85,7 +85,6 @@ o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'  
 
   
   <?php endif; ?>
-
-  <?= js('assets/js/vendor/jquery-3.3.1.min.js'); ?>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
   <?php snippet('sidebar') ?>
