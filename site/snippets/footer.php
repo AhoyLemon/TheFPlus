@@ -2,6 +2,7 @@
       <script src="<?php echo url::home() ?>/assets/js/thefplus.js?updated=2019-04-14b"></script>
       <?php snippet('analytics') ?>
 
+      <?php /*
       <script type="text/javascript">
         //This is the "Offline page" service worker
 
@@ -18,6 +19,7 @@
         }
 
       </script>
+      */ ?>
 
       <script src="<?php echo url::home() ?>/assets/js/newurl.js"></script>
     </footer>
