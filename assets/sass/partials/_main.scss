@@ -180,7 +180,7 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   }
 }
 
-@media (max-width: 887px) {
+@media (max-width: 1429px) {
   .marathon-block {
     .hours-leadin, .hours-leadout { font-size:1rem; }
   }
@@ -192,7 +192,7 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   }
 }
 
-@media (min-width: 888px) {
+@media (min-width: 1430px) {
   .marathon-hour { justify-content: space-between;
     .video-holder { order:4; @include flex-item(560px,auto,0); }
     .detail-holder { padding-right: 1em; max-width: 32em; line-height: 180%; @include flex-item(calc(100% - 560px)); }
