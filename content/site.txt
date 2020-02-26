@@ -21,8 +21,8 @@ Twitter-handle: TheFPlus
 Sidebar-links: 
 
 - 
-  slug: about
-  text: about the podcast
+  slug: years
+  text: for ten years
   _fieldset: page_link
 - 
   slug: meet

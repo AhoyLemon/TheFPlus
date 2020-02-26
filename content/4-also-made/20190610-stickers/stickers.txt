@@ -441,9 +441,9 @@ Stickers:
   vinyl: Kraft Paper
   printed: "100"
   released: 2018-09-06
-  soldout: ""
+  soldout: 2019-10-14
   reference: ""
-  almost_gone: "1"
+  almost_gone: "0"
   buttona_num: "1"
   buttona_price: "3"
   buttona_slug: K6MAHJKNBKG8C
@@ -545,6 +545,52 @@ Stickers:
   buttonc_num: "10"
   buttonc_price: "10"
   buttonc_slug: 5TSRCFSTKMKC2
+- 
+  pic: s24_small.gif
+  fullsize: s24-glitter-ani.gif
+  title: Glittery Logo
+  artist: Lemon
+  series_num: "24"
+  dimensions: 2.9" x 2.5"
+  shape: die cut
+  vinyl: ✨GLITTER✨
+  printed: "190"
+  released: ""
+  soldout: ""
+  reference: ""
+  almost_gone: "0"
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: 25_hello_small.png
+  fullsize: 25_hello_big.png
+  title: YES HELLO
+  artist: Beezelboob
+  series_num: "25"
+  dimensions: 2.2" x 1.2"
+  shape: rectangle
+  vinyl: white
+  printed: "100"
+  released: ""
+  soldout: ""
+  reference: ""
+  almost_gone: "0"
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
 
 ----
 

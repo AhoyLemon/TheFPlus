@@ -79,3 +79,66 @@ Cover-cite-artist: Ben Hopper
 ----
 
 Cover-cite-url: https://therealbenhopper.com/
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'intro: a healthy fresh salad'
+- 
+  timestamp: 00:04:39
+  name: what is girl pits and how it works?
+- 
+  timestamp: 00:07:07
+  name: its the pits
+- 
+  timestamp: 00:10:58
+  name: british pit lovers?
+- 
+  timestamp: 00:16:29
+  name: question about hairy armpits and other
+- 
+  timestamp: 00:25:06
+  name: why armpit love is called fetish?
+- 
+  timestamp: 00:26:29
+  name: a question for the captain
+- 
+  timestamp: 00:33:21
+  name: CHEESECAKE ARMPIT.
+- 
+  timestamp: 00:35:53
+  name: >
+    I had massive boner (early pit
+    experiences)
+- 
+  timestamp: 00:39:30
+  name: axillary intercourse
+- 
+  timestamp: 00:44:11
+  name: I was 16, she was 33
+- 
+  timestamp: 00:50:07
+  name: epic tennis story
+- 
+  timestamp: 00:55:06
+  name: and BELLLY BUTTONS TOO!!!
+- 
+  timestamp: 01:00:47
+  name: smell and taste in sublime merge
+- 
+  timestamp: 01:03:01
+  name: underarms of holy rapture
+- 
+  timestamp: 01:08:23
+  name: what did we learn?
+
+----
+
+Chapter-provider: birdie

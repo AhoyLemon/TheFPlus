@@ -14,7 +14,7 @@ Website:
 
 ----
 
-Text: 
+Text: (all the boys would say she's mighty fine)
 
 ----
 
@@ -31,3 +31,7 @@ Favorite-episode: 61,18,128
 ----
 
 Ballpit-account: 
+
+----
+
+Cover: caroline.jpg

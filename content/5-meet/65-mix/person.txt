@@ -6,7 +6,7 @@ Role: submitter
 
 ----
 
-Cover: mix-mugshot.jpg
+Cover: mixfuck.jpg
 
 ----
 
@@ -14,7 +14,7 @@ Job: Oh No
 
 ----
 
-Text: Jailed for internet crimes.
+Text: If in doubt, blame Mix.
 
 ----
 
@@ -22,7 +22,7 @@ Twitter: gasmaskluminary
 
 ----
 
-Website: https://ledrevisionist.wordpress.com
+Website: 
 
 ----
 

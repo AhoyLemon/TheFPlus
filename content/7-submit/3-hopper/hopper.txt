@@ -13,13 +13,6 @@ Below is a complete list of of all the [submitted](/submit) content we're consid
 Builder: 
 
 - 
-  title: Male vs. Female
-  docurl: >
-    https://docs.google.com/document/d/1cpnUg6DTF68GTLLjTnoIfwoUOoEXYaM19yVcakLrH5k/edit?usp=sharing
-  submitter: Cheapskate
-  subdate: 2015-08-01
-  _fieldset: submitteddoc
-- 
   title: Indigo Society
   docurl: >
     https://docs.google.com/document/d/1ngLZJPaRLdWwRbkYyNG2FADAwsyYpWCVer9m_HwI388/edit?usp=sharing
@@ -55,39 +48,11 @@ Builder:
   subdate: 2014-12-31
   _fieldset: submitteddoc
 - 
-  title: Creepy Hollows
-  docurl: >
-    https://docs.google.com/document/d/1PcBD7GPvyZuY0xR5sQ_dBGOFi4iSeLDvdKgilu1LpNo/edit?usp=sharing
-  submitter: Montrith
-  subdate: 2014-12-16
-  _fieldset: submitteddoc
-- 
-  title: 'The Work & Musings of Brett Nortje'
-  docurl: >
-    https://drive.google.com/file/d/0B9z3zE_3eIZvZ0FWQ1VuLXRMNmc/view?usp=sharing
-  submitter: Malcontent
-  subdate: 2014-11-07
-  _fieldset: submitteddoc
-- 
   title: Objective Ministries
   docurl: >
     https://docs.google.com/document/d/1BbcQDST7GVNC0JnX8jB00rLq0I-mGABgpdMXk4havJA/edit?usp=sharing
   submitter: nezorf2
   subdate: 2014-02-11
-  _fieldset: submitteddoc
-- 
-  title: A Representative Sample of Fetlife
-  docurl: >
-    https://docs.google.com/document/d/14bktoERL5DtADmc_y3oEibovbxNiL9UeDnuQmKLh3Kw/edit?usp=sharing
-  submitter: Montrith
-  subdate: 2013-04-29
-  _fieldset: submitteddoc
-- 
-  title: My Succubus Wife
-  docurl: >
-    https://docs.google.com/document/d/11YglUtS3FH2hY-VJXKQh-wXgX4As1PZEYYMD2NpjWW0/edit?usp=sharing
-  submitter: Montrith
-  subdate: 2013-03-23
   _fieldset: submitteddoc
 - 
   title: Coven Oldenwilde
@@ -167,35 +132,11 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: The Funny Music Project
-  docurl: >
-    https://docs.google.com/document/d/1awjjRzGZmMqXurSarO1nOx1h7iR0FCyb7WlHGhLMbf0/edit?usp=sharing
-  submitter: Cheapskate
-  subdate: 2016-01-18
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Everybody Loves Lar
-  docurl: >
-    https://docs.google.com/document/d/1Y31JzHJao5KGQdAbCP0M12FvGytyn5NdTbN3FgI2Bck/edit?usp=sharing
-  submitter: Zekka
-  subdate: 2016-01-18
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: Innovations In Tin Foil Hat Technology
   docurl: >
     https://docs.google.com/document/d/1OsygFmYopuY9NJzmckARq36ruxBOeEv35FCmY1gnx04/edit?usp=sharing
   submitter: Amelia Blank
   subdate: 2016-02-19
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: The Randian Supermen
-  docurl: >
-    https://docs.google.com/document/d/1beyyYfaMhm1IGzq-8tiqMpeeNJtKIjnVu6Kqqb8l15Q/edit?usp=sharing
-  submitter: The Lesbiathan,Heavenator
-  subdate: 2016-03-19
   recorded: "0"
   _fieldset: submitteddoc
 - 
@@ -212,14 +153,6 @@ Builder:
     https://docs.google.com/document/d/18htYo7bb37oXFKGtkKdeyrAuvIA0mE3mxNafOPPtoHs/edit?usp=sharing
   submitter: Amelia Blank
   subdate: 2016-03-19
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Stephen King Murdered John Lennon
-  docurl: >
-    https://docs.google.com/document/d/19hNwrXO3Pm2P4yDNwC1waAChEdtQ4IB4VjHR9AwijsI/edit?usp=sharing
-  submitter: Spooks
-  subdate: 2016-04-14
   recorded: "0"
   _fieldset: submitteddoc
 - 
@@ -263,14 +196,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: Female Led Relationships
-  docurl: >
-    https://docs.google.com/document/d/1zpwRg8mlQLYTZpN-C7UdbJqLJ96zi7lwt7aeDBr7FXg/edit?usp=sharing
-  submitter: Kanyesutra
-  subdate: 2016-06-09
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: Weird Internet Mistresses
   docurl: >
     https://docs.google.com/document/d/1jXevt6ReFjRPm_-CUbVcvc285_eU4tAtHDALJiqo9Ro/edit?usp=sharing
@@ -311,35 +236,11 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: The Crunchyroll Forums
-  docurl: >
-    https://docs.google.com/document/d/1a7bczOYbGZx4pjphLBafNrXnQE0vLQlkUNiCBIBbsII/edit?usp=sharing
-  submitter: The Lesbiathan,Heavenator
-  subdate: 2016-10-15
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: Freegans
   docurl: >
     https://docs.google.com/document/d/1Pl-b1ZProUGLLDgAQdXoASZfbUypJsBeo41y3tFL5EM/edit?usp=sharing
   submitter: Neal
   subdate: 2016-10-21
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Freedom Radio
-  docurl: >
-    https://docs.google.com/document/d/1Z2Ll32L8V_22pqsRDwUK82qWkWzCpCKPunMfkTCFtKg/edit?usp=sharing
-  submitter: Kanyesutra
-  subdate: 2016-10-21
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Intentional Communities
-  docurl: >
-    https://docs.google.com/document/d/1fUAf8sOVEbcyw1sqoRSQKPJ-6sT3RNPk6KR8TOR3eg4/edit?usp=sharing
-  submitter: Sphagnum
-  subdate: 2016-11-05
   recorded: "0"
   _fieldset: submitteddoc
 - 
@@ -387,24 +288,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: The Spiritual Research Foundation
-  docurl: >
-    https://docs.google.com/document/d/187IKBHvNpd2sMMBt5suDA3vrPngPR29D2iJTMJx_NIY/edit?usp=sharing
-  submitter: Mix
-  subdate: 2017-01-28
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: >
-    Smartmones are like pheromones but
-    smarter?
-  docurl: >
-    https://docs.google.com/document/d/1yc6iEh6QMif9b1mqJlzWBphHeWR6iff_jHBlNPXqaFs/edit?usp=sharing
-  submitter: A Meat
-  subdate: 2017-02-25
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: /r/Critical_Shower_Thoughts
   submitter: Punchy_McKickpunch
   docurl: >
@@ -412,14 +295,6 @@ Builder:
   subdate: 2017-04-17
   recorded: "0"
   livestream_hour: ""
-  _fieldset: submitteddoc
-- 
-  title: 'Survivalists & Doomsday Preppers'
-  docurl: >
-    https://docs.google.com/document/d/1C0crs6TFtPBGOqBvCxOM23hph_68uptdxDk-1ucuH0M/edit?usp=sharing
-  submitter: Mix
-  subdate: 2017-04-27
-  recorded: "0"
   _fieldset: submitteddoc
 - 
   title: "Gah, It's A Goddamn Hetalia Doc"
@@ -460,22 +335,6 @@ Builder:
     https://docs.google.com/document/d/1o4kXQiTRNsCXAOD140A0aatBU9q6p7yJoIrorW74V5o/edit?usp=sharing
   submitter: Mix
   subdate: 2017-06-05
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: e621 is a furry image board with forums
-  docurl: >
-    https://docs.google.com/document/d/1gH3E8SPSOcye4dGng4AZmqcv60qLhxJ51p7RTpcscao/edit?usp=sharing
-  submitter: Spooks
-  subdate: 2017-06-30
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Tim Allen’s Idea Exchange
-  docurl: >
-    https://docs.google.com/document/d/1-DTNfGxutMHJo4qXc0VpeGYko0-cG20qVC6maPBK8KA/edit?usp=sharing
-  submitter: Girlkisser
-  subdate: 2017-07-10
   recorded: "0"
   _fieldset: submitteddoc
 - 
@@ -576,17 +435,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: >
-    UGH, did Montrith just submit a snot
-    fetish document? Man, fuck you Montrith!
-  docurl: >
-    https://docs.google.com/document/d/1dYt3rj8LgVmVLuZxGqqU7qVQaNiwGxMF9B5tA0hT5j4/edit?usp=sharing
-  submitter: Montrith
-  subdate: 2018-03-07
-  recorded: "0"
-  _fieldset: submitteddoc
-  dibs: Jimmyfranks
-- 
   title: Brothel Reviews
   docurl: >
     https://docs.google.com/document/d/1kWmSloNjPg-g-vQcjkrm6kU_AqvGqr_K9AwwWbH3VH0/edit?usp=sharing
@@ -600,14 +448,6 @@ Builder:
     https://docs.google.com/document/d/1WfRievA_8lHfVAUCXZwLK804c7fNJSQx7pRuuGIyLBI/edit?usp=sharing
   submitter: Lady Frenzy
   subdate: 2018-04-17
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: Hungry Little Girl
-  docurl: >
-    https://docs.google.com/document/d/1tCwAWPwML7vkW3sJrKxwvwHnVQnTO9aXBE_dTtE44nc/edit?usp=sharing
-  submitter: Mix
-  subdate: 2018-06-22
   recorded: "0"
   _fieldset: submitteddoc
 - 
@@ -645,15 +485,6 @@ Builder:
   _fieldset: submitteddoc
   dibs: Bunnybread
 - 
-  title: DIY Junk Machines
-  docurl: >
-    https://docs.google.com/document/d/1U5PzylxurG7vWa6psyciLtY_rqYabdL9pmocLdLJ5N0/edit?usp=sharing
-  submitter: Cat Examiner
-  subdate: 2018-07-27
-  recorded: "0"
-  _fieldset: submitteddoc
-  dibs: Portaxx,Lemon
-- 
   title: "Toshi wants to sell you porn. Won't you buy some porn from Toshi?"
   docurl: >
     https://docs.google.com/document/d/10OlW_ut2m71oDDQA4Qq7d_H4mCPdk31DXUoLRoOlCb4/edit?usp=sharing
@@ -666,17 +497,6 @@ Builder:
   docurl: >
     https://docs.google.com/document/d/1lTgi7eU-EA2rTjJx5FdHpt7A4-Sh_BsUoaE2k0eP8k4/edit?usp=sharing
   submitter: Zarla
-  subdate: 2018-09-01
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: >
-    r/NEET is a place to feel pride in
-    underachieving
-  docurl: >
-    https://docs.google.com/document/d/12qE3nG_87DUU3JJ8ZxXGV2EsAfz_3S-mwpB4vxsAaXE/edit?usp=sharing
-  submitter: Cheapskate
   subdate: 2018-09-01
   dibs: ""
   recorded: "0"
@@ -700,30 +520,10 @@ Builder:
   recorded: "1"
   _fieldset: submitteddoc
 - 
-  title: The Wild Wild Word Of WikiFeet
-  docurl: >
-    https://docs.google.com/document/d/11-COe147sHp1laPmzQYPekRX1CRjXj-QZwWVrZDDUvA/edit?usp=sharing
-  submitter: GirlKisser420,Seth "Slimy" Rollins
-  subdate: 2018-09-19
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: The FurAffinity Culinary Cuisine Club
   docurl: >
     https://docs.google.com/document/d/1gCEVjVB9_SYpTCcZH15mbO9n7zQ7T3Z12W6HdG7nNu4/edit?usp=sharing
   submitter: Mix,dijon du jour
-  subdate: 2018-10-12
-  dibs: STOG
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: >
-    a doc about whether food is normal or
-    not
-  docurl: >
-    https://docs.google.com/document/d/1K-QYeh8XZMBjgkTyP54dNTL06K5qwzy6sWY8sxoGSpE/edit?usp=sharing
-  submitter: Wrought
   subdate: 2018-10-12
   dibs: STOG
   recorded: "0"
@@ -777,24 +577,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: Stuck With Glue Fetish
-  docurl: >
-    https://docs.google.com/document/d/1en4qe_ayK6qXKBc75UYc0TMUDI1wiLH5UGSc_2PDX24/edit?usp=sharing
-  submitter: Mr. Hunky Academia,GirlKisser420
-  subdate: 2018-11-28
-  dibs: ""
-  recorded: "1"
-  _fieldset: submitteddoc
-- 
-  title: Dick Pumping (In The Worst Possible Way)
-  docurl: >
-    https://docs.google.com/document/d/1bLpiw2CuPO669_ujSolKeocNzQSMx9HPVwMhiWLFEW8/edit?usp=sharing
-  submitter: Cat Examiner
-  subdate: 2018-12-16
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: >
     Gnoosic is a place for people to share
     their opinions on Slipknot
@@ -813,19 +595,8 @@ Builder:
     https://docs.google.com/document/d/1IMjn8Qjnj0w7qB7ps-na1u8-tHkubbzbriDVuRA4ysI/edit?usp=sharing
   submitter: Shell Game
   subdate: 2018-12-22
-  dibs: ""
+  dibs: Frank West
   recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: >
-    The Intergalactic Ashtar Command Tribe
-    Experience
-  docurl: >
-    https://docs.google.com/document/d/1k7Ves9IDwCbLerKdutBSzF6DjWxAdhLm74I7XGX2s6I/edit?usp=sharing
-  submitter: Mr. Hunky Academia
-  subdate: 2019-01-02
-  dibs: John Toast
-  recorded: "1"
   _fieldset: submitteddoc
 - 
   title: "Don't Worry, It's NOT SissyKiss!"
@@ -837,29 +608,11 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: Welcome To The Vampirism Forum
-  docurl: >
-    https://docs.google.com/document/d/1xmPDb9BMKZGOTaoal5YRIWFvYzzKTpfINj_DEA_mm44/edit?usp=sharing
-  submitter: Amelia Blank
-  subdate: 2019-01-25
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: Look Out, The Plushies Are Back
   docurl: >
     https://docs.google.com/document/d/1Q75OyRgXjpR3eHQI8N9vL7OEpENSvjwA2EahpvUvrZs/edit?usp=sharing
   submitter: Amelia Blank
   subdate: 2019-02-01
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
-  title: "Let's Do Zombie Survivalism Using Our Myers-Briggs Score!"
-  docurl: >
-    https://docs.google.com/document/d/1Uz6U-rXexH-Uh1KnKAIXW9l1dqBLsj_7XlhoD7ZPuNg/edit?usp=sharing
-  submitter: Apathetic Zealot
-  subdate: 2019-02-04
   dibs: ""
   recorded: "0"
   _fieldset: submitteddoc
@@ -893,17 +646,6 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: >
-    Donald Marshall And the Clones who Loved
-    Him
-  docurl: >
-    https://docs.google.com/document/d/1ELXh4ggMDl3_A04sBld0UaWyq1R6N1OuiNXb2xPjVe0/edit?usp=sharing
-  submitter: Amelia Blank
-  subdate: 2019-03-01
-  dibs: ""
-  recorded: "0"
-  _fieldset: submitteddoc
-- 
   title: haunted dolls on etsy
   docurl: >
     https://docs.google.com/document/d/1yAtdrCJBiIatcVxJEIyVHU-xioiayc8YAMkZPtT4ggk/edit?usp=sharing
@@ -931,24 +673,246 @@ Builder:
   recorded: "0"
   _fieldset: submitteddoc
 - 
-  title: >
-    iSoaker Is Your Portal To The World Of
-    Water Warfare
+  title: Fart Fetishists? Oh no.
   docurl: >
-    https://docs.google.com/document/d/1EOpSZoCRimAxfDNwOyITJc1QNOmejXBaw4UKkzXwDsg/edit?usp=sharing
+    https://docs.google.com/document/d/1gtyKf3NBrzCOEf7YKjaUcDY2mKzQ0fviHnBqGuk0vY8/edit?usp=sharing
   submitter: Cat Examiner
-  subdate: 2019-04-12
+  subdate: 2019-05-15
+  dibs: "Achilles' Heelies,Lemon"
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: "Lord Weaselton Is Working On His Space Opera That He'll Finish One Day"
+  docurl: >
+    https://docs.google.com/document/d/1npzD8qhRL_pX-zcDzyizENdc92W85AVgwuRFQLsZM6Y/edit?usp=sharing
+  submitter: Cheapskate
+  subdate: 2019-05-22
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: '{a noise music doc}'
+  docurl: >
+    https://docs.google.com/document/d/1xti6AI8CAybJCkqepevWU0Hc7XvPz3pHZYAhVSTwHwI/
+  submitter: Mr. Hunky Academia
+  subdate: 2019-05-23
   dibs: ""
   recorded: "0"
   _fieldset: submitteddoc
 - 
   title: >
-    The Super Scary Horror Stories of
-    r/NoSleep
+    Hey, do you remember the "Yiff The
+    Otter" guy? Turns out he has other
+    stories.
   docurl: >
-    https://docs.google.com/document/d/1_I8C0_vybTaA4ff9v8Dxxmk4OkCyQ4sqkcs1IetlNdA/edit?usp=sharing
-  submitter: The Sigh-light Zone
-  subdate: 2019-04-15
+    https://docs.google.com/document/d/11ghT1gKcgz7Wv3IrIiR8VDjeLR3IZVD58-KXPkRoGBI/edit?usp=sharing
+  submitter: Mix
+  subdate: 2019-05-30
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: "Several Fetishes At Once, And They're All Horrifying"
+  docurl: >
+    https://docs.google.com/document/d/1qW9U9ZlbD572QN8MBuPIuR_vwxS1sUsZrLi90DASnEo/edit?usp=sharing
+  submitter: AssJ
+  subdate: 2019-07-02
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    Sylphiste Warns Tumblr About The Alien
+    Menace
+  docurl: >
+    https://docs.google.com/document/d/1KauYe0FYErLYMG6GQ-8cdAUBItayTUsnQenzUbRUo-E/edit?usp=sharing
+  submitter: Mix,Shell Game
+  subdate: 2019-07-03
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    The Monster Girl Encyclopedia Wiki is
+    somehow different than the Monster Girl
+    RPG Wiki
+  docurl: >
+    https://docs.google.com/document/d/1ZMzJTkV4NjOknacA5fJr3wnTStZs9D3PaUTHPYKGtl8/edit
+  submitter: Mix
+  subdate: 2019-07-11
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: Chris Cantelmo Started A Cult On Reddit
+  docurl: >
+    https://docs.google.com/document/d/1BLxCYHpzjR6QEm1UKqeYeAqIMVb-Ii8Q_aw5l0Y_B7k/edit?usp=sharing
+  submitter: Cheapskate
+  subdate: 2019-07-24
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    The One Guy Who Answers Every Question
+    Posted To r/batty
+  docurl: >
+    https://docs.google.com/document/d/1u5GYfAhHlZ-mapFkSfcPM7YAqsXEsmqOQ7UUqnt9EwU/
+  submitter: Zekka
+  subdate: 2019-08-05
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: reddit has opinions on sex? Oh good.
+  docurl: >
+    https://docs.google.com/document/d/1wQLAjDlwVbY0Iy23yXLB-8QwVzcGOHSXGvCk5ePRk-4/edit?usp=sharing
+  submitter: Puppy Time
+  subdate: 2019-08-12
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    Hey F Plus, would you like to learn
+    Psionics?
+  docurl: >
+    https://docs.google.com/document/d/1od45Am8JOSVJbYHz5hl28zPWuxhvBGJoI7GkUHWnsP8
+  submitter: Spooks
+  subdate: 2019-08-12
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: 'Chemtrails Are Demonic: “When They Spray, We Pray”'
+  docurl: >
+    https://docs.google.com/document/d/16wApvMGrKorHdpLW2CAzjuLZ6j2s_DBv5tO3E27ka8A/edit?usp=sharing
+  submitter: JOA
+  subdate: 2019-09-06
+  dibs: Lemon,Kumquatxop
+  recorded: "1"
+  _fieldset: submitteddoc
+- 
+  title: "Multiple Systems are postin' on Tumblr and castin' some magic spells"
+  docurl: >
+    https://docs.google.com/document/d/1-sV7i2z639GGTprFB46TVEyDbrGKVakdxkgK7_HHLtY/edit?usp=sharing
+  submitter: Mix
+  subdate: 2019-09-13
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    a hypothetical document on hypothetical
+    situations that we could read on the
+    podcast, hypothetically
+  docurl: >
+    https://docs.google.com/document/d/1ZJWE7udNk_TW2aWiO4_cdY_vp21Ged-CMiuex-lWuis/edit?usp=sharing
+  submitter: Sovereign,Wrought
+  subdate: 2019-10-06
+  dibs: Toast
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    Chaplain Ihezver of the West East
+    Fellowship Church wants to save mankind
+    from itself
+  docurl: >
+    https://docs.google.com/document/d/15aDM0y8qGttMh0XRbq7bz1beUMSc3mBRuy5HMYc4nbc/edit?usp=sharing
+  submitter: Mr. Hunky Academia
+  subdate: 2019-10-06
+  dibs: Lemon
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: "Talkin' Shit On r/roommates"
+  docurl: >
+    https://docs.google.com/document/d/1TQIw_dO89_PGRUOjCGuIaUXPWCf_0OSooBeKv9cpx9I/edit?usp=sharing
+  submitter: Mix
+  subdate: 2019-11-01
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: "An Archive of Disgusting Recipes From The 1960's"
+  docurl: >
+    https://docs.google.com/document/d/1uNbTXubMCRxDd_0uNtdIReO4XH8DmFlOt-OhGxcw930/edit?usp=sharing
+  submitter: King Kalamari
+  subdate: 2019-11-01
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    Nutrition Of Is Satan Very. Eat To Live
+    Not To Die
+  docurl: >
+    https://docs.google.com/document/d/1gWQNdbkzfiypoxaYEi67s6UP8wSWimpF5UUUq5VkFLQ/edit?usp=sharing
+  submitter: Tipsy Almond
+  subdate: 2019-11-22
+  dibs: ""
+  recorded: "1"
+  _fieldset: submitteddoc
+- 
+  title: "It's been too long since the last AllRecipes episode"
+  docurl: >
+    https://docs.google.com/document/d/1VrillY5ky8gIHXKX3VciCJxXcMg4h7PT9Np04OzJ2qo/edit?usp=sharing
+  submitter: cryptid
+  subdate: 2019-12-01
+  dibs: Stog
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: "Mix won't tell you what the theme for this clips4sale document is."
+  docurl: >
+    https://docs.google.com/document/d/1aQgItmaUcUHMu8oMA77BARgJGjiOLO5mBp00IimdOSI/edit?usp=sharing
+  submitter: Mix
+  subdate: 2019-12-13
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    The Wit, Wisdom and Witchcraft of Occult
+    Author S. Rob
+  docurl: >
+    https://docs.google.com/document/d/1ZFfGXNscREaPzBgu7Gz4jJke0Sq497OsGzaXLOJXSjg/edit?usp=sharing
+  submitter: Seashell,Chief Beef
+  subdate: 2019-12-26
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    In A Parallel Dimension, Reddit Is Still
+    Horny
+  docurl: >
+    https://docs.google.com/document/d/1mJ4PhuO2o8XeqrvHj0_5Rm8_j8ijMxEI6EGsL93-dns/edit?usp=sharing
+  submitter: Seth "Slimy" Rollins
+  subdate: 2020-01-06
+  dibs: Lemon
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    O Ninja! My Ninja! (51 Pages Of The
+    Dankest Juggalo Poetry)
+  docurl: >
+    https://docs.google.com/document/d/1f4HUMvB9zjof7W8_ocdAUejkibR5C39s2OdBBznGe1c/edit?usp=sharing
+  submitter: "Maslow's Tweeds"
+  subdate: 2020-01-06
+  dibs: ""
+  recorded: "0"
+  _fieldset: submitteddoc
+- 
+  title: >
+    These Steam reviewers have some opinions
+    about the porn games they just bought.
+  docurl: >
+    https://docs.google.com/document/d/1xrxRtL1QsI9KbWoHnL8-iWIFtBF7qUN2fLe-FArX4vc/edit?usp=sharing
+  submitter: Ambious
+  subdate: 2020-02-07
   dibs: ""
   recorded: "0"
   _fieldset: submitteddoc

@@ -923,3 +923,33 @@ Builder:
   submitter: Thursley
   rejectdate: 2019-04-15
   _fieldset: submitteddoc
+- 
+  title: Female Led Relationships
+  docurl: >
+    https://docs.google.com/document/d/1zpwRg8mlQLYTZpN-C7UdbJqLJ96zi7lwt7aeDBr7FXg/edit?usp=sharing
+  submitter: Kanyesutra
+  rejectdate: 2019-05-05
+  _fieldset: submitteddoc
+- 
+  title: >
+    Donald Marshall And the Clones who Loved
+    Him
+  docurl: >
+    https://docs.google.com/document/d/1ELXh4ggMDl3_A04sBld0UaWyq1R6N1OuiNXb2xPjVe0/edit?usp=sharing
+  submitter: Amelia Blank
+  rejectdate: 2019-09-20
+  _fieldset: submitteddoc
+- 
+  title: "Let's Do Zombie Survivalism Using Our Myers-Briggs Score!"
+  docurl: >
+    https://docs.google.com/document/d/1Uz6U-rXexH-Uh1KnKAIXW9l1dqBLsj_7XlhoD7ZPuNg/edit?usp=sharing
+  submitter: Apathetic Zealot
+  rejectdate: 2019-09-21
+  _fieldset: submitteddoc
+- 
+  title: "Let's describe some Halloween costumes on Halloween Costumes Dot Com"
+  docurl: >
+    https://docs.google.com/document/d/12ozXU4xIUXTjddQq8OPIOPJFIqrswdJfPegJYKWdScw/edit?usp=sharing
+  submitter: Puppy Time
+  rejectdate: 2019-09-27
+  _fieldset: submitteddoc
