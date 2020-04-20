@@ -130,6 +130,7 @@ fields:
               lemon: Lemon
               damndog: Damn Dog
               twitch: Twitch
+              soundcloud: Soundcloud
           url:
             label: URL
             type: url

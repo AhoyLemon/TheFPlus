@@ -83,6 +83,12 @@ fields:
     icon: code
     help: Optional, anything here will be under the Additional Content header
 
+  # BALLPIT URL
+  ballpit_url:
+    label: Ballpit thread URL
+    type: url
+    width: 1/2
+
   # COVER IMAGE CITATION
   cover_cite_toggle:
     label: Cite Cover Image?

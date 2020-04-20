@@ -1,0 +1,144 @@
+Prevnext: 
+
+----
+
+Title: wikiHow The Game Show | F Plus Live 8 | Heat 3
+
+----
+
+Featured-site: 
+
+----
+
+Date: 2020-03-01
+
+----
+
+Time: 12:04
+
+----
+
+Cover: live8c.jpg
+
+----
+
+Cast: Nutshell Gulag,Adam Bozarth,K Thor Jensen,Shell Game
+
+----
+
+Episode-file: fplus_live_8c.mp3
+
+----
+
+Runtime: 0:45:52
+
+----
+
+File-size: 32
+
+----
+
+Document-link: 
+
+----
+
+Editor: Jimmyfranks
+
+----
+
+Provider: 
+
+----
+
+Text: 
+
+* Nutshell Gulag - How to Get Rid of Demons
+* Adam Bozarth - How to Turn the Super Bowl into Super Sex!
+* K. Thor Jensen - How to Pretend to Have Ice Powers (for Girls)
+* Shell Game - How to Escape a Minefield
+
+(youtube: https://youtu.be/q7F0rki2Xss)
+<br />
+K. Thor drank his own piss.
+
+[Heat 1](https://thefpl.us/episode/live8a/) | [Heat 2](https://thefpl.us/episode/live8b/) | [Heat 4](https://thefpl.us/episode/live8d/) | [Final Heat](https://thefpl.us/episode/live8e/)
+
+----
+
+Music-used: Boots Raingear - wikiHow The Game Show Vote Music
+
+----
+
+Tags: f plus live,game show,wikihow,not actually wikihow
+
+----
+
+Bonus-content: 
+
+1. [F Plus Live photo gallery](https://photos.app.goo.gl/6p156hbnAZgqYmoT9)
+2. [YouTube playlist](https://www.youtube.com/playlist?list=PLbDEABAdDXRXKTMoaaw_KSvF9kceCVpBi)
+3. [all documents](https://drive.google.com/drive/folders/177cykw7AtntYVNIcHj3jTKQ0KdV6ls9x?usp=sharing)
+3. [motherfucking.best](http://motherfucking.best)
+4. [Monster Manual: A Coloring & Activity Book](https://thefpl.us/also-made/monster-manual-a-coloring-activity-book)
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: >
+    Lemon asks the audience if they are
+    having a good time
+- 
+  timestamp: 00:00:15
+  name: >
+    Bunnybread invites the new batch to come
+    on down
+- 
+  timestamp: 00:02:13
+  name: 'Nutshell Gulag - How to Get Rid of Demons'
+- 
+  timestamp: 00:12:01
+  name: 'Adam Bozarth - How to Turn the Super Bowl into Super Sex!'
+- 
+  timestamp: 00:22:24
+  name: 'K. Thor Jensen - How to Pretend to Have Ice Powers (for Girls)'
+- 
+  timestamp: 00:34:09
+  name: 'Shell Game - How to Escape a Minefield'
+- 
+  timestamp: 00:43:53
+  name: The Third Vote
+
+----
+
+Chapter-provider: Adam Bozarth
+
+----
+
+Chapter-provider-aftergap: 

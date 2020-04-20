@@ -36,7 +36,7 @@ fields:
       
     hide:
       single: products sizes
-      series: sizes buy_headline buy_slug buy_price buy_form_extra_html soldout
+      series: sizes buy_headline buy_slug buy_price buy_form_extra_html
       sizes: products buy_headline buy_slug buy_price buy_form_extra_html soldout
       
 
@@ -117,7 +117,6 @@ fields:
   buy_price:
     label: Price
     type: number
-    required: true
     step: .01
     width: 1/4
   button_text:
