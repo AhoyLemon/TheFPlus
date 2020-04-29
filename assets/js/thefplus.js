@@ -110,6 +110,11 @@ $('a.action.read').click(function() {
   trackEvent("read document", "document", p);
 });
 
+// Visit ballpit thread
+$('a.action.read').click(function() {
+  trackEvent("ballpit thread", "ballpit", p);
+});
+
 // Use donation form.
 $('#DonateButton').click(function() {
   var d = "$" + $('#DonationAmount').val();
