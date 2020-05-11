@@ -69,7 +69,7 @@
             </div>
             
 
-            <?/* Cast */ ?>
+            <?php /* Cast */ ?>
             <?php if ($article->cast()->isNotEmpty()) { ?>
               <div class="cast">
                 <?php if ($article->cast()->isNotEmpty()) {
@@ -85,7 +85,7 @@
               </div>
             <?php } ?>
 
-            <?/* Subject */ ?>
+            <?php /* Subject */ ?>
             <?php if ($article->featured_site()->isNotEmpty()) { ?>
               <div class="subject">
                 <?php if (strpos($article->featured_site(), ',') == false) { ?>
@@ -102,7 +102,7 @@
               </div>
             <?php } ?>
 
-            <?/* Category */ ?>
+            <?php /* Category */ ?>
             <?php if ($briefType == 'also-made') { ?>
               <div class="category">
                 <span class="category-tag">
@@ -111,7 +111,7 @@
               </div>
             <?php } ?>
 
-            <?/* Episode # */ ?>
+            <?php /* Episode # */ ?>
             <?php if ($briefType == 'episode') { ?>
               <?php if ((int)$article->uid()) { ?>
                 <div class="category">
@@ -174,7 +174,7 @@
           </figcaption>
         <?php } ?>
 
-        <?/* Category */ ?>
+        <?php /* Category */ ?>
         <?php if ($briefType == 'also-made') { ?>
           <div class="category">
             <span class="category-tag">
@@ -183,7 +183,7 @@
           </div>
         <?php } ?>
 
-        <?/* Episode # */ ?>
+        <?php /* Episode # */ ?>
         <?php if ($briefType == 'episode') { ?>
           <?php if ((int)$article->uid()) { ?>
             <div class="category">
@@ -195,7 +195,7 @@
         <?php } ?>
 
 
-        <?/* Subject */ ?>
+        <?php /* Subject */ ?>
         <?php if ($article->featured_site()->isNotEmpty()) { ?>
           <div class="subject">
             <?php if (strpos($article->featured_site(), ',') == false) { ?>
@@ -212,7 +212,7 @@
           </div>
         <?php } ?>
 
-        <?/* Cast */ ?>
+        <?php /* Cast */ ?>
         <?php if ($article->cast()->isNotEmpty()) { ?>
           <div class="cast">
             <?php if ($article->cast()->isNotEmpty()) {
