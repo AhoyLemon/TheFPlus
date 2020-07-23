@@ -56,15 +56,22 @@
       </time>
       
       <!-- FEATURED SITES -->
-      <?php if ($page->featured_site() != ""): ?>
-        <?php if ($multisite == true): ?>
+      <?php if ($page->featured_site()->isNotEmpty()): ?>
+        <?php if ($multisite == true) { ?>
         <div class="featured-site">
           Featured Sites: 
-          <?php foreach($fsites as $fsite): ?>
-          <span class="site"><?php echo trim($fsite) ?></span>
-          <?php endforeach ?>
+          <?php foreach($fsites as $key => $fsite) {
+            if (((int)$key + 1) == (int)count($fsites)) { 
+              echo '& <span class="site">'.$fsite.'</span>.';
+            } else if (((int)$key + 1) == ((int)count($fsites) - 1)) { 
+              echo '<span class="site">'.$fsite.'</span> ';
+            } else {
+              echo '<span class="site">'.$fsite.'</span>, ';
+            }
+          } ?>
         </div>
-        <?php endif ?>
+        <?php } ?>
+
         <?php if ($multisite == false): ?>
         <div class="featured-site">
           Featured Site:
