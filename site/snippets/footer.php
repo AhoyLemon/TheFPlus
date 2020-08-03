@@ -21,7 +21,13 @@
       </script>
       */ ?>
 
+      <?php /*
+
+      /// Deprecating Javascript based NewURL rerouting
       <script src="<?php echo url::home() ?>/assets/js/newurl.js"></script>
+
+      */ ?>
+      
     </footer>
 
 

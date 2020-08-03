@@ -51,6 +51,8 @@ version="2.0">
                   or
                   <a href="https://overcast.fm/itunes334184087/the-f-plus">Overcast</a>
                   or
+                  <a href="https://podchaser.com/TheFPlus">Podchaser</a>
+                  or
                   <a href="https://radiopublic.com/the-f-plus-GqnR55">Radio Public</a>
                   or
                   <a href="https://castro.fm/podcast/813f4919-6245-464d-a603-fb2b4bf0fbc1">Castro</a>
@@ -70,11 +72,24 @@ version="2.0">
 
           </header>
 
-          <!-- <img class="show-cover">
-            <xsl:attribute name="src">
-              <xsl:value-of select="./itunes:image/@href"/>
-            </xsl:attribute>
-          </img> -->
+          <div id="Javascripts">
+            <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+            <script src="https://thefpl.us/assets/js/thefplus.js"></script>
+            <script type="text/javascript">
+              var _paq = _paq || [];
+              _paq.push(["setDomains", ["*.thefpl.us"]]);
+                _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                var u="//thefpl.us/analytics/";
+                _paq.push(['setTrackerUrl', u+'pwk.php']);
+                _paq.push(['setSiteId', '1']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pwk.js'; s.parentNode.insertBefore(g,s);
+              })();
+            </script>
+            <noscript><p><img src="//thefpl.us/analytics/pwk.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+          </div>
 
           <section class="episodes">
             <xsl:apply-templates select="item"/>
@@ -82,6 +97,7 @@ version="2.0">
 
         </div>
       </div>
+
     </body>
   </xsl:template>
 
@@ -98,7 +114,7 @@ version="2.0">
             </xsl:attribute>
           </img>
           <figcaption>
-            <a class="download-button">
+            <a class="download-button action download">
               <xsl:attribute name="href">
                   <xsl:value-of select="enclosure/@url"/>?ref=download
               </xsl:attribute>

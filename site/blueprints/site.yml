@@ -95,6 +95,7 @@ fields:
               playmusic: Google Play Music
               overcast: Overcast
               radiopublic: Radio Public
+              podchaser: Podchaser
           url:
             label: URL
             type: url
@@ -127,6 +128,7 @@ fields:
               pocketcasts: Pocket Casts
               itunes: iTunes
               paypal: PayPal
+              podchaser: Podchaser
               lemon: Lemon
               damndog: Damn Dog
               twitch: Twitch
