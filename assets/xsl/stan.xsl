@@ -89,6 +89,18 @@ version="2.0">
               })();
             </script>
             <noscript><p><img src="//thefpl.us/analytics/pwk.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+
+            <script>
+              if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+                $(document).ready(function() {
+                  $('.description').each(function() {
+                    let h = $(this).text();
+                    $(this).html(h);
+                  }); 
+                })
+              }
+            </script>
+
           </div>
 
           <section class="episodes">
@@ -108,7 +120,7 @@ version="2.0">
 
       <xsl:if test="image">
         <figure class="cover">
-          <img class="cover episode-image">
+          <img class="cover episode-image" loading="lazy" width="320" height="320">
             <xsl:attribute name="src">
               <xsl:value-of select="image"/>
             </xsl:attribute>
@@ -140,7 +152,9 @@ version="2.0">
         </time>
       </xsl:if>
 
-      <xsl:value-of select="content:encoded" disable-output-escaping="yes" />
+      <div class="description">
+        <xsl:value-of select="content:encoded" disable-output-escaping="yes" />
+      </div>
       
       <!-- <p class="episode_meta">
         <a>

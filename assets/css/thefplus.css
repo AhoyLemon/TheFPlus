@@ -690,6 +690,9 @@ button.button:active {
   .sidebar .social-links a.overcast:hover {
     color: #FC7E0F;
   }
+  .sidebar .social-links a.podchaser:hover {
+    color: #293b65;
+  }
   .sidebar .social-links a svg * {
     fill: currentColor;
   }
