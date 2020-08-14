@@ -8,7 +8,7 @@
         <?php if($page->cover() != "") { ?>
           <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="headshot cover <?= $page->cover()->toFile()->extension(); ?>" alt="Allegedly, a photo of <?php echo $page->title() ?>">
         <?php } else if($image = $page->image()) { ?>
-          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="headshot cover <?= $image()->extension(); ?>" alt="Allegedly, a photo of <?php echo $page->title() ?>">
+          <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="headshot cover" alt="Allegedly, a photo of <?php echo $page->title() ?>">
         <?php } ?>
       </figure>
 
