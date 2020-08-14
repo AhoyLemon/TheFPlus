@@ -12,29 +12,26 @@
 }
 
 %fanart { background-color:$episode; display: inline-block; max-width: 480px; margin-bottom: 1em; margin-right: 0.75em; padding:0; box-shadow: $boxShadow; margin-top: 30px;
-
   &:not(.big) { padding:$padding;
     img { max-width:260px !important; transform: translateY(-40px); }
     figcaption { margin-top:-20px; }
-    &:hover {
-      img { filter:saturate(6); }
-    }
   }
 
   video { margin: 0.50rem 0.5rem 0 0.5rem; max-height:225px; }
-  //figcaption { background-color:#777; color:$white; text-align: center; }
-  &:hover { cursor: pointer; 
-    figcaption { color:$link; }
-  }
 
   &.big { max-width: 100%; padding:$padding;
-    //img { max-width:100% !important; }
     video { max-height:none; }
     img { max-height: none; }
   }
 
   transition: all 0.3s ease;
-  img { transition:all 0.3s ease; }
+  
+  img { transition:transform 0.3s ease; border:2px solid transparent; }
+
+  &:hover { cursor: pointer; 
+    img { border-color: $red; }
+    figcaption { color:$link; }
+  }
 }
 
 %textlink { text-decoration: none;

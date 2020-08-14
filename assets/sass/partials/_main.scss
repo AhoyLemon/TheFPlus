@@ -136,6 +136,7 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
   }
   .article-text { text-align: justify; letter-spacing: 180%; }
   img.cover { box-shadow: 0 0 6px rgba($black,0.45);
+    &.png { box-shadow: none; }
     @media (min-width:$desktop-min) { transform: translateY(-70px); }
     @media (max-width:$mobile-max) { transform: translateY(-40px); margin-bottom:-20px; }
   }

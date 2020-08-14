@@ -42,7 +42,7 @@
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
                   <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" loading="lazy" />
                     
                     <?php if ($sticker->almost_gone == "1") { ?>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="almost-gone">

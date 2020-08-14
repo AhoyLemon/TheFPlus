@@ -37,9 +37,9 @@
 
         <figure>
           <?php if ($article->cover() != "") { ?>
-            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" />
           <?php } else { ?>
-            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
+            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" />
           <?php } ?>
         </figure>
 
@@ -96,7 +96,7 @@
         </figcaption>
 
         <figure>
-          <img src="<?php echo $site->url() ?>/assets/images/piechart.png" class="cover no-shadow" alt="Pie Chart" />
+          <img src="<?php echo $site->url() ?>/assets/images/piechart.png" class="cover png" alt="Pie Chart" />
         </figure>
     </a>
   </section>

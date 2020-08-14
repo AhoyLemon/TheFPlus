@@ -6,7 +6,7 @@ Role: submitter
 
 ----
 
-Cover: sanguinary-novel.png
+Cover: sn.png
 
 ----
 

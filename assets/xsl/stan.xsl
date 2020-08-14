@@ -57,6 +57,8 @@ version="2.0">
                   or
                   <a href="https://castro.fm/podcast/813f4919-6245-464d-a603-fb2b4bf0fbc1">Castro</a>
                   or
+                  <a href="https://open.spotify.com/show/76COtISaGDglXLrVGyQ5cE">Spotify</a>
+                  or
                   <a href="https://www.stitcher.com/podcast/the-f-plus">Stitcher</a>.
                 </p>
                 <p>

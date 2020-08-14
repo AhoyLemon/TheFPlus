@@ -1,5 +1,7 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 a,
 abbr,
@@ -94,11 +96,13 @@ xmp {
   border: 0;
   margin: 0;
   padding: 0;
-  font-size: 100%; }
+  font-size: 100%;
+}
 
 html,
 body {
-  height: 100%; }
+  height: 100%;
+}
 
 article,
 aside,
@@ -112,63 +116,77 @@ main,
 menu,
 nav,
 section {
-  display: block; }
+  display: block;
+}
 
 b,
 strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 img {
   color: transparent;
   font-size: 0;
   vertical-align: middle;
-  -ms-interpolation-mode: bicubic; }
+  -ms-interpolation-mode: bicubic;
+}
 
 ul,
 ol {
-  list-style: none; }
+  list-style: none;
+}
 
 li {
-  display: list-item; }
+  display: list-item;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 th,
 td,
 caption {
   font-weight: normal;
   vertical-align: top;
-  text-align: left; }
+  text-align: left;
+}
 
 q {
-  quotes: none; }
+  quotes: none;
+}
 
 q:before,
 q:after {
   content: "";
-  content: none; }
+  content: none;
+}
 
 sub,
 sup,
 small {
-  font-size: 75%; }
+  font-size: 75%;
+}
 
 sub,
 sup {
   line-height: 0;
   position: relative;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 sub {
-  bottom: -0.25em; }
+  bottom: -0.25em;
+}
 
 sup {
-  top: -0.5em; }
+  top: -0.5em;
+}
 
 svg {
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 /*
 $body: #222;
@@ -178,71 +196,91 @@ $copy: $white;
 article.episode:after {
   content: "";
   display: table;
-  clear: both; }
+  clear: both;
+}
 
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   background-color: #eee;
   color: #343434;
-  font-family: "Noto Serif TC", serif; }
+  font-family: "Noto Serif TC", serif;
+}
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 a {
   cursor: pointer;
-  color: #c0282d; }
+  color: #c0282d;
+}
 
-b,
-strong {
-  font-weight: 700; }
+b, strong {
+  font-weight: 700;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Noto Serif TC", serif; }
+  font-family: "Noto Serif TC", serif;
+}
 
 h1 {
   font-size: 2.5em;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 h2 {
   font-size: 2em;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 h3 {
   font-size: 1.75em;
-  font-weight: 300; }
+  font-weight: 300;
+}
 
 h4 {
   font-size: 1.5em;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 h5 {
   font-size: 1.25em;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 h6 {
   font-size: 1em;
-  font-weight: 400; }
+  font-weight: 400;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 105%; }
+  line-height: 105%;
+}
 
 ul {
-  padding-left: 1.5em; }
-  ul li {
-    list-style-type: disc; }
+  padding-left: 1.5em;
+}
+ul li {
+  list-style-type: disc;
+}
 
 spoiler {
   background-color: currentColor;
   opacity: 0.6;
   cursor: help;
-  transition: all 0.5s ease 0.5s; }
-  spoiler:hover {
-    background-color: transparent;
-    opacity: 1; }
+  -webkit-transition: all 0.5s ease 0.5s;
+  -o-transition: all 0.5s ease 0.5s;
+  transition: all 0.5s ease 0.5s;
+}
+spoiler:hover {
+  background-color: transparent;
+  opacity: 1;
+}
 
 button.button {
   background-color: #c0282d;
@@ -251,99 +289,133 @@ button.button {
   padding: 1em 0.5em;
   font-weight: 600;
   font-size: 1rem;
-  box-shadow: 2px 2px 2px #343434; }
-  button.button:hover {
-    color: #c0282d;
-    background: white;
-    cursor: pointer; }
-  button.button:active {
-    box-shadow: none;
-    transform: translate(2px, 2px); }
+  -webkit-box-shadow: 2px 2px 2px #343434;
+          box-shadow: 2px 2px 2px #343434;
+}
+button.button:hover {
+  color: #c0282d;
+  background: white;
+  cursor: pointer;
+}
+button.button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(2px, 2px);
+      -ms-transform: translate(2px, 2px);
+          transform: translate(2px, 2px);
+}
 
 @media (min-width: 981px) {
   .mobile-only {
-    display: none; } }
-
+    display: none;
+  }
+}
 @media (max-width: 980px) {
   .desktop-only {
-    display: none; } }
-
+    display: none;
+  }
+}
 body {
   background-color: #eee;
-  color: #343434; }
+  color: #343434;
+}
 
 .show-overview {
   background: #343434;
   color: #eee;
   margin-bottom: 2em;
-  padding: 40px; }
-  .show-overview .show-overview-inner {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 1em; }
-  .show-overview h1 {
-    font-size: 300%;
-    margin-bottom: 0.5em; }
-  .show-overview a[href] {
-    color: #e8666a; }
-  .show-overview p {
-    margin-bottom: 0.5em; }
+  padding: 40px;
+}
+.show-overview .show-overview-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 1em;
+}
+.show-overview h1 {
+  font-size: 300%;
+  margin-bottom: 0.5em;
+}
+.show-overview a[href] {
+  color: #e8666a;
+}
+.show-overview p {
+  margin-bottom: 0.5em;
+}
 
 section.episodes {
   max-width: 1200px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
 
 article.episode {
   background: #fff;
-  box-shadow: 0 0 4px rgba(52, 52, 52, 0.2);
+  -webkit-box-shadow: 0 0 4px rgba(52, 52, 52, 0.2);
+          box-shadow: 0 0 4px rgba(52, 52, 52, 0.2);
   padding: 20px;
-  margin-bottom: 30px; }
-  article.episode fon .title {
-    font-size: 180%;
-    margin-bottom: 0.5em; }
-  article.episode time {
-    display: block;
-    margin-bottom: 0.5em; }
-  article.episode a {
-    color: #c0282d;
-    text-decoration: none; }
-    article.episode a[href]:hover {
-      text-decoration: underline; }
-  article.episode p, article.episode ol, article.episode ul {
-    margin-bottom: 0.5em; }
-  article.episode figure.cover {
-    max-width: 320px;
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    transform: translateY(-20px); }
-    article.episode figure.cover img {
-      transform: translateY(-20px);
-      box-shadow: 0 0 4px rgba(52, 52, 52, 0.45); }
-    article.episode figure.cover .download-button {
-      display: block;
-      text-align: center;
-      border: 1px solid #c0282d;
-      padding: 0.5em 1em;
-      text-transform: uppercase; }
-      article.episode figure.cover .download-button:hover {
-        background: #c0282d;
-        color: #fff;
-        text-decoration: none; }
-  article.episode figure.video {
-    position: relative;
-    padding-bottom: 40%;
-    max-width: 720px; }
-    article.episode figure.video iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  article.episode .episode-text p {
-    margin-bottom: 0.5em; }
-
+  margin-bottom: 30px;
+}
+article.episode fon .title {
+  font-size: 180%;
+  margin-bottom: 0.5em;
+}
+article.episode time {
+  display: block;
+  margin-bottom: 0.5em;
+}
+article.episode a {
+  color: #c0282d;
+  text-decoration: none;
+}
+article.episode a[href]:hover {
+  text-decoration: underline;
+}
+article.episode p, article.episode ol, article.episode ul {
+  margin-bottom: 0.5em;
+}
+article.episode figure.cover {
+  max-width: 320px;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+article.episode figure.cover img {
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 0 0 4px rgba(52, 52, 52, 0.45);
+          box-shadow: 0 0 4px rgba(52, 52, 52, 0.45);
+}
+article.episode figure.cover .download-button {
+  display: block;
+  text-align: center;
+  border: 1px solid #c0282d;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+article.episode figure.cover .download-button:hover {
+  background: #c0282d;
+  color: #fff;
+  text-decoration: none;
+}
+article.episode figure.video {
+  position: relative;
+  padding-bottom: 40%;
+  max-width: 720px;
+}
+article.episode figure.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+article.episode .episode-text p {
+  margin-bottom: 0.5em;
+}
 /*# sourceMappingURL=stan.css.map */

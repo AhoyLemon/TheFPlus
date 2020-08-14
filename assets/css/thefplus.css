@@ -244,19 +244,9 @@ figure.fanart:not(.big) img {
 figure.fanart:not(.big) figcaption {
   margin-top: -20px;
 }
-figure.fanart:not(.big):hover img {
-  -webkit-filter: saturate(6);
-          filter: saturate(6);
-}
 figure.fanart video {
   margin: 0.5rem 0.5rem 0 0.5rem;
   max-height: 225px;
-}
-figure.fanart:hover {
-  cursor: pointer;
-}
-figure.fanart:hover figcaption {
-  color: #c0282d;
 }
 figure.big.fanart {
   max-width: 100%;
@@ -269,9 +259,21 @@ figure.big.fanart img {
   max-height: none;
 }
 figure.fanart img {
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  border: 2px solid transparent;
+}
+figure.fanart:hover {
+  cursor: pointer;
+}
+figure.fanart:hover img {
+  border-color: #c0282d;
+}
+figure.fanart:hover figcaption {
+  color: #c0282d;
 }
 
 section.covers-only .other-options a, article.full a {
@@ -1159,6 +1161,10 @@ article.full .article-text {
 article.full img.cover {
   -webkit-box-shadow: 0 0 6px rgba(52, 52, 52, 0.45);
           box-shadow: 0 0 6px rgba(52, 52, 52, 0.45);
+}
+article.full img.cover.png {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 @media (min-width: 981px) {
   article.full img.cover {
@@ -2499,7 +2505,7 @@ dl.chapters-info.expanded dd {
   -webkit-box-shadow: 0 0 4px rgba(52, 52, 52, 0.5);
           box-shadow: 0 0 4px rgba(52, 52, 52, 0.5);
 }
-.people-grid figure img.no-shadow {
+.people-grid figure img.png {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
