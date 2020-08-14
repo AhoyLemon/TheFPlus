@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#010101;}
-	.st1{fill:#ED214F;}
-</style>
-<g>
-	<path class="st0" d="M85.6,95.5H2.6V12.4h83.1V95.5z M6.6,91.5h75.1V16.4H6.6V91.5z"/>
-</g>
-<path class="st1" d="M83.9,5.3c0.4-0.4,0.9-0.6,1.5-0.6c0.6,0,1.1,0.2,1.5,0.6L98,16.6c0.4,0.4,0.6,0.9,0.6,1.4
-	c0,0.6-0.2,1.1-0.6,1.4L45.1,72.3c-0.4,0.4-0.9,0.6-1.5,0.6h-0.1c-0.6,0-1.1-0.2-1.5-0.6L21.6,52c-0.4-0.4-0.6-0.9-0.6-1.5
-	s0.2-1.1,0.6-1.4l11.2-11.2c0.4-0.4,0.9-0.6,1.4-0.6c0.6,0,1.1,0.2,1.5,0.6l7.8,7.8L83.9,5.3z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0" y="0" version="1.1" viewBox="0 0 100 100" xml:space="preserve" style="enable-background:new 0 0 100 100"><style type="text/css">.st0{fill:#010101}.st1{fill:#ed214f}</style><g><path d="M85.6,95.5H2.6V12.4h83.1V95.5z M6.6,91.5h75.1V16.4H6.6V91.5z" class="st0"/></g><path d="M83.9,5.3c0.4-0.4,0.9-0.6,1.5-0.6c0.6,0,1.1,0.2,1.5,0.6L98,16.6c0.4,0.4,0.6,0.9,0.6,1.4	c0,0.6-0.2,1.1-0.6,1.4L45.1,72.3c-0.4,0.4-0.9,0.6-1.5,0.6h-0.1c-0.6,0-1.1-0.2-1.5-0.6L21.6,52c-0.4-0.4-0.6-0.9-0.6-1.5	s0.2-1.1,0.6-1.4l11.2-11.2c0.4-0.4,0.9-0.6,1.4-0.6c0.6,0,1.1,0.2,1.5,0.6l7.8,7.8L83.9,5.3z" class="st1"/></svg>
