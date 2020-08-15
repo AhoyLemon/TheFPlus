@@ -1,5 +1,8 @@
 // jshint -W117
 
+import './partials/_meet.js';
+
+
 function trackEvent(c, a, l, v) {
   if (v) {
     _paq.push(['trackEvent', c, a, l, v]);
@@ -16,17 +19,20 @@ function trackEvent(c, a, l, v) {
   }
 }
 
+/*
 $('nav.toggle a').click(function() {
   $(this).toggleClass('active');
   var n = $(this).attr('data-for');
+  
   if ($(this).hasClass('active')) {
     $('.summaries').children('.'+n).show(500);
-    $('.people-grid').children('.'+n).removeClass('hidden');
+    //$('.people-grid').children('.'+n).removeClass('hidden');
   } else {
     $('.summaries').children('.'+n).hide(500);
-    $('.people-grid').children('.'+n).addClass('hidden');
+    //$('.people-grid').children('.'+n).addClass('hidden');
   }
 });
+*/
 
 $('.logo-link').click(function() {
   $(this).toggleClass('active');
