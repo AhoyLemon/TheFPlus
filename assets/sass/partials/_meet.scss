@@ -26,10 +26,6 @@
     }
   }
 }
-
-nav.toggle.people { font-size:2vw;
-
-}
 .people-grid { display: grid; grid-gap: 30px;
   .person { background:$card; box-shadow: $boxShadow; text-decoration: none;
     &.hidden { display: none; }
@@ -105,6 +101,7 @@ nav.toggle.people { font-size:2vw;
 
 
 @media (min-width: $desktop-min) {
+  nav.toggle.people { font-size:2.2vw; }
   .summaries {
     .person {
       &.brief { @include flex-item(245px, stretch, 0, 0); max-width: 245px; justify-content:space-between; }
@@ -113,6 +110,9 @@ nav.toggle.people { font-size:2vw;
 }
 
 @media (max-width: $mobile-max) {
+  nav.toggle.people { font-size:26px;
+    a { display:block; margin-left: 2em; }
+  }
   .summaries {
     .person {
       summary { font-size:12px; padding: 0; }
