@@ -1,4 +1,6 @@
-if (window.location.pathname == "/meet" || window.location.pathname == "/thefplus/meet") {
+console.log(window.location.pathname);
+if (window.location.pathname == "/meet" || window.location.pathname == "/meet/" || window.location.pathname == "/thefplus/meet") {
+
   let visiblePeople = [];
 
   if (!window.location.search) {
@@ -32,9 +34,9 @@ if (window.location.pathname == "/meet" || window.location.pathname == "/thefplu
       setTimeout(function(){ $('.'+n).addClass('hidden'); }, 700);
     }
     if (visiblePeople.length > 0) {
-      history.pushState(null, null, 'meet?'+visiblePeople.toString());
+      history.replaceState(null, null, '/meet?'+visiblePeople.toString());
     } else {
-      history.pushState(null, null, 'meet');
+      history.replaceState(null, null, '/meet');
     }
     
   });
