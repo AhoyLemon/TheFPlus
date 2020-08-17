@@ -95,7 +95,6 @@
         'tabChapters',
         'controlChapters',
       <?php } ?>
-      'tabFiles',
       'tabShare',
       'showTitle',
       'episodeTitle',
