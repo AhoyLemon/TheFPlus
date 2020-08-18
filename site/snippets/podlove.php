@@ -96,6 +96,7 @@
         'controlChapters',
       <?php } ?>
       'tabShare',
+      'tabFiles',
       'showTitle',
       'episodeTitle',
       'progressbar',
