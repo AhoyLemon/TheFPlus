@@ -636,7 +636,7 @@ class Str {
    */
   public static function stripslashes($string) {
     if(is_array($string)) return $string;
-    return get_magic_quotes_gpc() ? stripslashes($string) : $string;
+    return stripslashes($string);
   }
 
   /**
