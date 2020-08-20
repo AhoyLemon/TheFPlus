@@ -144,9 +144,9 @@
           <figure>
             <a href="<?= $article->url(); ?>">
               <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" />
+                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
               <?php } else if ($article->image())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
+                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
               <?php } ?>
             </a>
           </figure>

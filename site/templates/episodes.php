@@ -30,7 +30,7 @@
     <section class="<?php echo $page->slug(); ?> covers-only">
       <?php if ($showRandom == true): ?>
         <a class="tile" href="/episode/random" title="Pick a random episode">
-          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover">
+          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover" height="400" width="400" />
           <figcaption>
             <summary>
               <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>

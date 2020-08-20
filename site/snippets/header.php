@@ -62,7 +62,7 @@
   <meta property="og:email" content="lemon@thefpl.us">
   
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Master CSS -->
   <?= css('assets/css/thefplus.css?updated=2020-08-15'); ?>
 
@@ -85,6 +85,6 @@ o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'  
 
   
   <?php endif; ?>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <?= js('assets/js/vendor/jquery-3.5.1.min.js'); ?>
 
   <?php snippet('sidebar') ?>

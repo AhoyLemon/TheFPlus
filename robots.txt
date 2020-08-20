@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /assets
 Disallow: /error
 Disallow: /find
 Disallow: /page:*
@@ -7,5 +6,6 @@ Disallow: /*?option
 Disallow: /episode/random
 Disallow: /episode/tag:*
 Disallow: /index.php/page:*
+Disallow: /panel
 
 Sitemap: https://thefpl.us/sitemap
