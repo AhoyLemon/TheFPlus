@@ -7,5 +7,6 @@ Disallow: /episode/random
 Disallow: /episode/tag:*
 Disallow: /index.php/page:*
 Disallow: /panel
+Disallow: /assets/*
 
 Sitemap: https://thefpl.us/sitemap
