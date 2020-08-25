@@ -6,12 +6,12 @@
       
       <article class="full">
         <?php echo $page->text()->kirbytext() ?>
-        <a name="available"></a>
       </article>
       
 
       <?php if ($page->current_text()->isNotEmpty()) { ?>
         <article>
+          <a name="available"></a>
           <?php echo $page->current_text()->kirbytext() ?>
         </article>
       <?php } ?>
