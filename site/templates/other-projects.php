@@ -19,7 +19,7 @@
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
         $showRandom = true;
       } else if ($page->uri() == "also-made") {
-        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(27);
+        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(28);
         $showRandom = false;
       } else {
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
@@ -32,15 +32,7 @@
     <?php endif ?>
     
     <section class="<?php echo $page->slug(); ?> covers-only">
-      <?php if ($showRandom == true): ?>
-        <a href="/episode/random" title="Pick a random episode">
-          <img src="/assets/images/random-card.png" class="cover">
-          <summary>
-            <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
-            <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
-          </summary>
-        </a>
-      <?php endif ?>
+      <?php /*
       <?php if($articles->pagination()->hasPrevPage()): ?>
         <a class="pagination-tile prev tile" href="<?php echo $articles->pagination()->prevPageURL() ?>">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"> 
@@ -49,9 +41,11 @@
           </svg>
         </a>
       <?php endif; ?>
+      */ ?>
       <?php foreach($articles as $article): ?>
         <?php snippet('coverbox',  [ 'article' => $article]); ?>
       <?php endforeach ?>
+      <?php /*
       <?php if($articles->pagination()->hasNextPage()): ?>
         <a class="pagination-tile next tile" href="<?php echo $articles->pagination()->nextPageURL() ?>">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
@@ -60,7 +54,12 @@
           </svg>
         </a>
       <?php endif ?>
+      */ ?>
     </section>
+
+    <div class="episode-pagination" style="padding:2rem;">
+      <?php snippet('pagination',  [ 'articles' => $articles]) ?>
+    </div>
 
   </main>
 <?php snippet('footer') ?>
