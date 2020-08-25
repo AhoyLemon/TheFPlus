@@ -14,7 +14,7 @@
     <?php $fsites = explode(",", $page->featured_site()); ?>
     
     <?php if ($thispage == "") {
-      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
+      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(27);
       $showRandom = true;
       $otherOptionsTile = false;
     } else if ($ftag) {
@@ -22,7 +22,7 @@
       $showRandom = false;
       $otherOptionsTile = false;
     } else {
-      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(25);
+      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
       $showRandom = false;
       $otherOptionsTile = rand(4, 20);
     } ?>
@@ -30,7 +30,7 @@
     <section class="<?php echo $page->slug(); ?> covers-only">
       <?php if ($showRandom == true): ?>
         <a class="tile" href="/episode/random" title="Pick a random episode">
-          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover" height="400" width="400" />
+          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover" loading="lazy" height="400" width="400" />
           <figcaption>
             <summary>
               <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
@@ -39,6 +39,7 @@
           </figcaption>
         </a>
       <?php endif ?>
+      <?php /*
       <?php if($articles->pagination()->hasPrevPage()): ?>
         <a class="pagination-tile prev tile" href="<?php echo $articles->pagination()->prevPageURL() ?>">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"> 
@@ -47,6 +48,7 @@
           </svg>
         </a>
       <?php endif; ?>
+      */ ?>
       <?php $i = 0; ?>
       <?php foreach($articles as $key => $article): ?>
         <?php $i++; ?>
@@ -61,6 +63,7 @@
 
         <?php snippet('coverbox',  [ 'article' => $article]); ?>
       <?php endforeach ?>
+      <?php /*
       <?php if($articles->pagination()->hasNextPage()): ?>
         <a class="pagination-tile next tile" href="<?php echo $articles->pagination()->nextPageURL() ?>">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
@@ -69,7 +72,25 @@
           </svg>
         </a>
       <?php endif ?>
+      */ ?>
+
+      <?php if ($showRandom == false): ?>
+        <a class="tile" href="/episode/random" title="Pick a random episode">
+          <img src="<?= $site->url(); ?>/assets/images/random-card.png" class="cover" height="400" width="400" />
+          <figcaption>
+            <summary>
+              <h4 class="title" style="margin-bottom:0.6em;">RANDOM EPISODE</h4>
+              <p>Feeling indecisive? How about you roll the dice and let our computer make the decision, deliver the content, and submit your personal information to the NSA for pennies on the dollar!</p>
+            </summary>
+          </figcaption>
+        </a>
+      <?php endif ?>
+
     </section>
+
+    <div class="episode-pagination" style="padding:2rem;">
+      <?php snippet('pagination',  [ 'articles' => $articles]) ?>
+    </div>
 
   </main>
 <?php snippet('footer') ?>

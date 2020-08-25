@@ -1,9 +1,9 @@
 <?php if($image = $article->image()) { ?>
   <a class="tile" href="<?php echo $article->url() ?>" title="<?php echo $article->title() ?>">
     <?php if ($article->cover() != "") { ?>
-      <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" height="400" width="400" />
+      <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" loading="lazy" height="400" width="400" />
     <?php } else { ?>
-      <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" height="400" width="400" />
+      <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" loading="lazy" height="400" width="400" />
     <?php } ?>
     
     <figcaption>
