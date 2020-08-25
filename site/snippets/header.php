@@ -86,6 +86,6 @@ o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'  
   
   <?php endif; ?>
   <?= js('assets/js/vendor/jquery-3.5.1.min.js'); ?>
-  <?= js('assets/js/vendor/thefplus.min.js'); ?>
+  <?= js('assets/js/thefplus.min.js'); ?>
 
   <?php snippet('sidebar') ?>

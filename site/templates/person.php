@@ -14,6 +14,12 @@
 
 
       <header>
+      
+      <!-- Specific syntax for Tommy -->
+      <?php if ($page->slug() == "tommy") {
+        echo '<h3 style="font-size:1.5rem;">In loving memory of</h3>';
+      } ?>
+
       <!-- NAME -->
       <h1>
         <span class="name" itemprop="name"><?php echo $page->title() ?></span>

@@ -19,27 +19,42 @@ function trackEvent(c, a, l, v) {
   }
 }
 
-/*
-$('nav.toggle a').click(function() {
-  $(this).toggleClass('active');
-  var n = $(this).attr('data-for');
-  
-  if ($(this).hasClass('active')) {
-    $('.summaries').children('.'+n).show(500);
-    //$('.people-grid').children('.'+n).removeClass('hidden');
-  } else {
-    $('.summaries').children('.'+n).hide(500);
-    //$('.people-grid').children('.'+n).addClass('hidden');
-  }
-});
-*/
+var p = window.location.pathname;
+if (p == "/episode/random") {
+  p = '/episode/'+ $('h1 .episode-number').text() + ' (RANDOM)';
+}
+var episodePlayed = false;
 
-$('.logo-link').click(function() {
-  $(this).toggleClass('active');
-  $('.sidebar-links').toggleClass('active');
-});
 
 $(document).ready(function() {
+
+
+  // Hide/Show the merch count, depending on if you've seen the merch page this session.
+  if (typeof(Storage) !== "undefined") {
+    // Code for localStorage/sessionStorage.
+    if (sessionStorage.merchVisited) {
+      // You've clicke the merch link this session.
+    } else {
+      $('.main-link .count').addClass('visible');
+    }
+    
+    $('.merch-link').click(function() {
+      sessionStorage.setItem('merchVisited', 'true');
+    });
+    
+  } else {
+    // There's no web storage
+    $('.main-link .count').addClass('visible');
+  }
+
+
+
+
+  $('.logo-link').click(function() {
+    $(this).toggleClass('active');
+    $('.sidebar-links').toggleClass('active');
+  });
+
   $('a.flapjax').click(function() {
     $('a.flapjax').toggleClass('active');
     $('.sidebar').toggleClass('visible');
@@ -65,39 +80,53 @@ $(document).ready(function() {
   $('figure.fanart').click(function() {
     $(this).toggleClass('big');
   });
+
+
+  // Handling social links (popups and corresponding analytics)
+  $('a.social').click(function(event) { 
+    if ( $(this).hasClass('contribute') ) {
+      trackEvent("Contribute", "page link", p);
+    } else if ( $(this).hasClass('twitter') ) {
+      trackEvent("share", "Twitter", p);
+      window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
+      event.preventDefault();
+    } else if ( $(this).hasClass('facebook') ) {
+      trackEvent("share", "Facebook", p);
+      window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
+      event.preventDefault();
+    } else if ( $(this).hasClass('tumblr') ) {
+      trackEvent("share", "tumblr", p);
+    } else if ( $(this).hasClass('reddit') ) {
+      trackEvent("share", "Reddit", p);
+    } else if ( $(this).hasClass('github') ) {
+      trackEvent("outside link", "GitHub", p);
+    } else if ( $(this).hasClass('googleplus') ) {
+      trackEvent("share", "Google+", p);
+      window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
+      event.preventDefault();
+    }
+  });
+
+  // Read a document
+  $('a.action.read').click(function() {
+    trackEvent("read document", "document", p);
+  });
+
+  // Visit ballpit thread
+  $('a.action.ballpit').click(function() {
+    trackEvent("ballpit thread", "ballpit", p);
+  });
+
+  // Use donation form.
+  $('#DonateButton').click(function() {
+    var d = "$" + $('#DonationAmount').val();
+    var v = $('#DonationAmount').val();
+    trackEvent("donate", "PayPal", d, v);
+  });
+
 });
 
-var p = window.location.pathname;
-if (p == "/episode/random") {
-  p = '/episode/'+ $('h1 .episode-number').text() + ' (RANDOM)';
-}
-var episodePlayed = false;
-
-// Handling social links (popups and corresponding analytics)
-$('a.social').click(function(event) { 
-  if ( $(this).hasClass('contribute') ) {
-    trackEvent("Contribute", "page link", p);
-  } else if ( $(this).hasClass('twitter') ) {
-    trackEvent("share", "Twitter", p);
-    window.open($(this).attr("href"), "popupWindow", "width=550,height=440");
-    event.preventDefault();
-  } else if ( $(this).hasClass('facebook') ) {
-    trackEvent("share", "Facebook", p);
-    window.open($(this).attr("href"), "popupWindow", "width=550,height=450");
-    event.preventDefault();
-  } else if ( $(this).hasClass('tumblr') ) {
-    trackEvent("share", "tumblr", p);
-  } else if ( $(this).hasClass('reddit') ) {
-    trackEvent("share", "Reddit", p);
-  } else if ( $(this).hasClass('github') ) {
-    trackEvent("outside link", "GitHub", p);
-  } else if ( $(this).hasClass('googleplus') ) {
-    trackEvent("share", "Google+", p);
-    window.open($(this).attr("href"), "popupWindow", "width=550,height=650");
-    event.preventDefault();
-  }
-});
-
+/*
 // Play an episode
 $('audio').on('play', function(){
   if (episodePlayed === false) {
@@ -110,39 +139,4 @@ $('audio').on('play', function(){
 $('a.action.download').click(function() {
   trackEvent("listen", "download", p);
 });
-
-// Read a document
-$('a.action.read').click(function() {
-  trackEvent("read document", "document", p);
-});
-
-// Visit ballpit thread
-$('a.action.read').click(function() {
-  trackEvent("ballpit thread", "ballpit", p);
-});
-
-// Use donation form.
-$('#DonateButton').click(function() {
-  var d = "$" + $('#DonationAmount').val();
-  var v = $('#DonationAmount').val();
-  trackEvent("donate", "PayPal", d, v);
-});
-
-
-// Hide/Show the merch count, depending on if you've seen the merch page this session.
-if (typeof(Storage) !== "undefined") {
-  // Code for localStorage/sessionStorage.
-  if (sessionStorage.merchVisited) {
-    // You've clicke the merch link this session.
-  } else {
-    $('.main-link .count').addClass('visible');
-  }
-  
-  $('.merch-link').click(function() {
-    sessionStorage.setItem('merchVisited', 'true');
-  });
-  
-} else {
-  // There's no web storage
-  $('.main-link .count').addClass('visible');
-}
+*/

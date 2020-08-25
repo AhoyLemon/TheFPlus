@@ -1,6 +1,4 @@
-console.log(window.location.pathname);
 if (window.location.pathname == "/meet" || window.location.pathname == "/meet/" || window.location.pathname == "/thefplus/meet") {
-
   let visiblePeople = [];
 
   if (!window.location.search) {
@@ -21,23 +19,27 @@ if (window.location.pathname == "/meet" || window.location.pathname == "/meet/" 
     });
   }
 
-  $('nav.toggle a').click(function() {
-    $(this).toggleClass('active');
-    var n = $(this).attr('data-for');
-    if ($(this).hasClass('active')) {
-      visiblePeople.push(n);
-      $('.'+n).removeClass('hidden hide').addClass('show');
-    } else {
-      visiblePeople = visiblePeople.filter(item => item !== n);
-      $('.'+n).removeClass('hidden show').addClass('hide');
-      //
-      setTimeout(function(){ $('.'+n).addClass('hidden'); }, 700);
-    }
-    if (visiblePeople.length > 0) {
-      history.replaceState(null, null, '/meet?'+visiblePeople.toString());
-    } else {
-      history.replaceState(null, null, '/meet');
-    }
-    
+  console.log(visiblePeople);
+  $(document).ready(function (e) {
+    $('.toggle a').click(function() {
+      console.log(visiblePeople);
+      $(this).toggleClass('active');
+      var n = $(this).attr('data-for');
+      if ($(this).hasClass('active')) {
+        visiblePeople.push(n);
+        $('.'+n).removeClass('hidden hide').addClass('show');
+      } else {
+        visiblePeople = visiblePeople.filter(item => item !== n);
+        $('.'+n).removeClass('hidden show').addClass('hide');
+        //
+        setTimeout(function(){ $('.'+n).addClass('hidden'); }, 700);
+      }
+      if (visiblePeople.length > 0) {
+        history.replaceState(null, null, '/meet?'+visiblePeople.toString());
+      } else {
+        history.replaceState(null, null, '/meet');
+      }
+    });
   });
+  
 }
