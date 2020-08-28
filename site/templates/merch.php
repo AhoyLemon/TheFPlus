@@ -65,7 +65,7 @@
         <div href="<?= $merch->url(); ?>" class="grid-box" itemscope itemtype="https://schema.org/Product">
 
           <figure>
-            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" itemprop="image" height="400" width="400" />
+            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" itemprop="image" loading="lazy" height="400" width="400" />
           </figure>
           <div class="details">
             <div class="detail name full">

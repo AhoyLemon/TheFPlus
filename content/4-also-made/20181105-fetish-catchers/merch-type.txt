@@ -36,17 +36,7 @@ With origins tracing back to the [paper fortune teller](https://en.wikipedia.org
 
 This double-sided full color print was done on 8.5x11" paper, keeping with the traditional form. On one side is the approved layout, with sexy words, sexy body parts, sexy people and then, finally sexy fetishes. If, however, that's not to your liking, the other side has a blank pattern so you can create your own - the uncoated print will pick up your ink pen easily. Print also contains folding and playing instructions. Comes trifolded via USPS in a stamped #10 envelope.
 
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline-block; margin-right:1em;">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="CWVTTHQZH6HWU">
-<button class="button" type="submit" onclick="trackEvent('merch', 'Fetish Catcher', '1 @ $2.75', 2.75);">BUY 1 @ $2<sup>75<sup></button>
-</form>
-
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="display:inline-block;">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="MX9T3ZHP2EQYG">
-<button class="button" type="submit" onclick="trackEvent('merch', 'Fetish Catcher', '2 @ $4.50', 4.5);">BUY 2 @ $4<sup>50</sup></button>
-</form>
+**No longer available.**
 
 ----
 
@@ -96,7 +86,7 @@ Product-type: single
 
 ----
 
-Soldout: 0
+Soldout: 1
 
 ----
 
@@ -129,3 +119,7 @@ Photos-leadin:
 ----
 
 Share-cta: 
+
+----
+
+Button-text: 

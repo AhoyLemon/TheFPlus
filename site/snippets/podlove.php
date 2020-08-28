@@ -1,4 +1,5 @@
-<script src="https://cdn.podlove.org/web-player/embed.js"></script>
+<?= js('assets/js/vendor/podlove.web-player.4.5.13.js'); ?>
+
 <a name="chapters"></a>
 
 
@@ -107,6 +108,8 @@
     store.subscribe(() => {
       const { lastAction } = store.getState()
       
+
+      console.log(lastAction);
       //console.log({ type: lastAction.type, payload: lastAction.payload })
       if (lastAction.type == "PLAY") {
         if (!episodeHasBeenPlayed) {

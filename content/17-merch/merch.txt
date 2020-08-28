@@ -16,48 +16,40 @@ The F Plus Brand® podcast is committed to providing you with the highest qualit
 Current-merch: 
 
 - 
-  title: A Bitch Named Linda
-  url: 'https://thefpl.us/also-made/tattoos#2'
-  pic: linda_square.jpg
-  type: Tattoo
-  price: $4
-  publish_date: 2017-10-19
-  release_date: ""
-- 
-  title: Great British Jerk Off
-  url: 'https://thefpl.us/also-made/stickers#14'
-  pic: gbjo-square.jpg
-  type: sticker
-  price: $3
-- 
-  title: Fetish Catcher
-  pic: tented_on_table.jpg
-  url: >
-    https://thefpl.us/also-made/fetish-catchers
-  type: Origami
-  price: $2.75
-  almost_gone: "0"
-- 
-  title: Internet Passports
-  pic: passport_square.jpg
-  url: https://thefpl.us/also-made/passports
-  type: Notebook
-  price: $9.5
-  almost_gone: "0"
-- 
-  title: Dave Is My Nemesis
-  pic: s23_forsale.jpg
-  url: 'https://thefpl.us/also-made/stickers#23'
-  type: sticker
-  price: $1.50
-  almost_gone: "0"
-- 
   title: Monster Manual
   pic: coloring-front-square.jpg
   url: >
     https://thefpl.us/also-made/monster-manual-a-coloring-activity-book
   type: coloring book
-  price: "9"
+  price: $9
+  almost_gone: "0"
+- 
+  title: Glittery Logo
+  pic: s24_small.gif
+  url: 'https://thefpl.us/also-made/stickers#24'
+  type: Sticker
+  price: $3
+  almost_gone: "0"
+- 
+  title: Hey, Kumquatxop?
+  pic: s25-sunrays.jpg
+  url: 'https://thefpl.us/also-made/stickers#25'
+  type: sticker
+  price: $1.50
+  almost_gone: "1"
+- 
+  title: Skunk Skunk Spray Me Now!
+  pic: sticker-skunk.jpg
+  url: 'https://thefpl.us/also-made/stickers#26'
+  type: sticker
+  price: $3
+  almost_gone: "0"
+- 
+  title: Engraved Dugouts
+  pic: dugout_square-early.jpg
+  url: https://thefpl.us/also-made/dugouts
+  type: dugout
+  price: $22
   almost_gone: "0"
 
 ----
@@ -339,6 +331,43 @@ Sold-merch:
   pic: hoodie_square.jpg
   type: hoodie
   sold_date: 2020-01-06
+- 
+  title: Great British Jerk Off
+  url: 'https://thefpl.us/also-made/stickers#14'
+  pic: s14-in-bag.jpg
+  type: sticker
+  sold_date: 2020-01-29
+- 
+  title: The Demonplane
+  url: 'https://thefpl.us/merch/portaxx-paints#1'
+  pic: demonplane-square.jpg
+  type: painting
+  sold_date: 2020-03-23
+- 
+  title: Dave Is My Nemesis
+  url: 'https://thefpl.us/also-made/stickers#23'
+  pic: davegrid.jpg
+  type: sticker
+  sold_date: 2020-07-16
+- 
+  title: Internet Passport
+  url: https://thefpl.us/also-made/passports
+  pic: passport-and-stamp.jpg
+  type: notebook
+  sold_date: 2020-07-16
+- 
+  title: A Bitch Named Linda
+  url: 'https://thefpl.us/also-made/tattoos#2'
+  pic: linda_square.jpg
+  type: tattoo
+  sold_date: 2020-08-20
+- 
+  title: Fetish Catcher
+  url: >
+    https://thefpl.us/also-made/fetish-catchers
+  pic: catcher_animation_600.gif
+  type: origami
+  sold_date: 2020-08-24
 
 ----
 

@@ -38,7 +38,7 @@ Baseprice: $14
 
 ----
 
-Soldout: 1
+Soldout: 0
 
 ----
 

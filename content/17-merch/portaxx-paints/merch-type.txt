@@ -1,0 +1,121 @@
+Title: Portaxx Paints
+
+----
+
+Text: 
+
+After a recording, Portaxx gets so haunted by what we've just read that sometimes she needs to express all her fear and confusion with paint. To that end, we are offering one-of-a-kind original Portaxx paintings, from the episode that influenced them.
+
+Your purchase here will buy the **original painting** so it no longer haunts Portaxx's dreams, until the next time Lemon forces her to record again. Profit made from the sale will go directly to Portaxx.
+
+Shipping & Handling is included in the price.
+
+----
+
+Date: 2020-03-23
+
+----
+
+Time: 13:30
+
+----
+
+Cover: demonplane1.jpg
+
+----
+
+Product-type: series
+
+----
+
+Show-image: false
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Cast: Portaxx
+
+----
+
+Baseprice: $70
+
+----
+
+Soldout: 0
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Button-text: SOLD OUT
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+- 
+  pic: demonplane1.jpg
+  fullsize: demonplane-big.jpg
+  title: The Demonplane
+  series_num: "1"
+  artist: Portaxx
+  printed: ""
+  dimensions: 6"x6"
+  material: canvas
+  reference: "320"
+  released: 2020-03-23
+  soldout: 2020-03-23
+  buy_type: single
+  price: "70"
+  single_slug: ""
+  single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Photos: 
+
+----
+
+Share-cta: 
+
+----
+
+Tags: 
