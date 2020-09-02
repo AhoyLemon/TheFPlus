@@ -44,7 +44,7 @@
         <a href="<?= $site->url() . '/' . $link->slug(); ?>">
           <?= $link->text(); ?>
         </a>
-      <?php } else if ($link->_fieldset() == "page_link") { ?>
+      <?php } else if ($link->_fieldset() == "custom_url") { ?>
         <a href="<?= $link->url(); ?>">
           <?= $link->text(); ?>
         </a>

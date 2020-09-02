@@ -6,6 +6,10 @@
     <?php 
       $ftag_pre = urldecode(param('tag'));
       $ftag = filter_var($ftag_pre,FILTER_SANITIZE_STRING);
+
+      if(strpos($ftag, "that fetish") !== false){
+        $ftag_pre = "how in the hell did you get that fetish?";
+      }
     ?>
 
     <div class="browsing-tag">

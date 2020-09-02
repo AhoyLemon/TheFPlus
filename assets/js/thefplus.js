@@ -1,6 +1,6 @@
 // jshint -W117
 
-import './partials/_meet.js';
+// @prepros-append partials/_meet.js
 
 
 function trackEvent(c, a, l, v) {
