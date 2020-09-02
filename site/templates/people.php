@@ -37,9 +37,9 @@
 
         <figure>
           <?php if ($article->cover() != "") { ?>
-            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" />
+            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
           <?php } else { ?>
-            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" />
+            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
           <?php } ?>
         </figure>
 
