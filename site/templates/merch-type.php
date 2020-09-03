@@ -55,7 +55,7 @@
 
         <?php if ($page->soldout() == "1") { ?>
 
-          <div style="font-size:300%;">SOLD OUT</div>
+          <div style="font-size:170%; margin-top:1em;">SOLD OUT</div>
 
         <?php } else { ?>
 
