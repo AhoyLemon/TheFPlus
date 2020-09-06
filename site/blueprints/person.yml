@@ -17,11 +17,11 @@ fields:
       guest: Guest Reader
       submitter: Content Provider
     default: submitter
-    help: "Recommended: 400x400"
   cover:
     label: Cover Image
     type: image
     width: 1/2
+    help: "Recommended: 400x400"
   job:
     label: Position
     type: text

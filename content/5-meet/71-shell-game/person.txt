@@ -6,7 +6,7 @@ Role: submitter
 
 ----
 
-Cover: 
+Cover: shellgame.png
 
 ----
 

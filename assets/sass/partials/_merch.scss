@@ -103,7 +103,7 @@ form.paypal-buy-form { display:block; width:12em;
 
 
 .product-photos { @include flex-container();
-  .photo-holder { margin-bottom: $gap; }
+  .photo-holder { margin-bottom: $gap; margin-right: $gap; }
   a.zoom { position: relative; display: block; background:$red; overflow: hidden; cursor: zoom-in;
     img { border:2px solid $red; }
     &:hover { border-bottom: none;

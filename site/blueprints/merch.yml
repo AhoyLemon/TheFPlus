@@ -44,6 +44,10 @@ fields:
         type: text
         width: 1/3
         placeholder: "include $"
+      pending:
+        label: Pending?
+        type: checkbox
+        text: yeah, these aren't for sale yet.
       almost_gone:
         label: Almost Gone?
         type: checkbox

@@ -51,6 +51,14 @@ Current-merch:
   type: dugout
   price: $22
   almost_gone: "0"
+- 
+  title: FART
+  pic: bitcoin_square.jpg
+  url: ""
+  type: BOOGER
+  price: $100
+  pending: "1"
+  almost_gone: "0"
 
 ----
 

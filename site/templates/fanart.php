@@ -1,36 +1,47 @@
 <?php snippet('header') ?>
 
+  <?php
+    // Which way are you sorting?
+    $sortType = "artist";
+    $fanartSort = $page->images()->sortBy('artist');
+
+
+    $thisArtist = "";
+    $thisEpisode = "";
+  ?>
+
+
   <main class="main edge-to-edge" role="main">
 
     
     
     <section class="fanart-grid">
 
-      <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
+      <h1 class="fanart-headline">by <?php echo $page->page_headline(); ?>...</h1>
         
-      <?php foreach ($page->images()->shuffle() as $fanart): ?>
-        <?php $fa = explode("-", $fanart->filename()); ?>
-        <?php 
-          if (count($fa) > 2) { 
-          $x = explode('.', $fa[2]); 
-          $slug = $x[0];
-          } else { $slug = "episode"; }
-        ?>
-        <a href="<?= $site->url() . '/' . $slug . '/' . $fa[0] . '#AdditionalFun'; ?>" class="fanart-link" title="<?= $slug; ?> <?= $fa[0]; ?>">
-          <figure>
-            <img src="<?= $fanart->crop(250, 250)->url(); ?>" />
-            <?php $fileParts = explode('.', $fanart->filename()); ?>
-            <?php /* <img src="https://thefpl.us/thumbs/fanart/<?= $fileParts[0] ?>-250x250.<?= $fileParts[1]; ?>" /> */ ?>
-          </figure>
+      <?php foreach ($fanartSort as $fanart): ?>
+
+        <?php if ($thisArtist != $fanart->artist()) {
+          $thisArtist = $fanart->artist();
+          $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $thisArtist))); ?>
+          <div class="artist-box">
+            <?php if ($site->find($mlink)) { ?>
+              <a href="<?= url::home() . '/' . $mlink; ?>">
+                <?= $thisArtist; ?>
+              </a>
+            <?php } else { ?>
+              <span><?= $thisArtist; ?></span>
+            <?php } ?>
+          </div>
+        <?php } ?>
+
+        <figure class="fanart-thumb">
+          <img src="<?=$fanart->crop(320,320)->url(); ?>" />
           <figcaption>
-            <summary>
-              <div class="artist">
-                <?php $artistName = explode('.',$fa[count($fa) - 1])[0]; ?>
-                <span class="name"><?= $artistName; ?></span>
-              </div>
-            </summary>
+            <!-- <div class="artist"><?= $fanart->artist(); ?></div>--->
+            <div class="episode"><?= $site->find('episode/'.$fanart->episode())->title(); ?></div>
           </figcaption>
-        </a>
+        </figure>
       <?php endforeach; ?>
 
       <?php if ($page->text()->isNotEmpty()) { ?>

@@ -78,10 +78,10 @@ fields:
     lowercase: true
     type: tags
   bonus_content:
-    label: Bonus Content
+    label: Additional Fun
     type: markdown
     icon: code
-    help: Optional, anything here will be under the Additional Content header
+    help: Optional, anything here will be under the **Additional Fun** header
 
   # BALLPIT URL
   ballpit_url:
