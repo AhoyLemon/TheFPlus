@@ -240,10 +240,6 @@
 </main>
 
 
-<?php snippet('image-modal'); ?>
-
-
-
 <?php if ($page->cover() != "") { ?>
   <script type="application/ld+json">
   {

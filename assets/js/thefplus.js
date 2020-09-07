@@ -96,41 +96,51 @@ $(document).ready(function() {
 
     let altText = $(this).children('img').attr('alt');
 
+    let imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    let figcaption = '<figcaption>';
 
+    // Display Artist
     if (artistPage) {
-      $('#FullFanartArtistLink').attr('href', artistPage).text(artistName);
-      $('#FullFanartArtistLink').show();
-      $('#FullFanartArtistName').hide();
+      figcaption += '<p>Artist: <a href="'+artistPage+'">'+artistName+'</a></p>';
     } else if (artistName) {
-      $('#FullFanartArtistName').text(artistName);
-      $('#FullFanartArtistLink').hide();
-      $('#FullFanartArtistName').show();
-    } else {
-      $('#FullFanartArtistLink').hide();
-      $('#FullFanartArtistName').hide();
+      figcaption += '<p>Artist: <strong>'+artistName+'</strong></p>';
     }
 
+    // Display Episode
     if (episodeURL) {
-      $('#FullFanartEpisodeLink').attr('href', episodeURL).text(episodeTitle);
-      $('#FullFanartEpisodeLink').show();
-      $('#FullFanartEpisodeName').hide();
+      figcaption += '<p>Episode: <a href="'+episodeURL+'">'+episodeTitle+'</a></p>';
     } else if (episodeTitle) {
-      $('#FullFanartEpisodeName').text(artistName);
-      $('#FullFanartEpisodeLink').hide();
-      $('#FullFanartEpisodeName').show();
-    } else {
-      $('#FullFanartEpisodeLink').hide();
-      $('#FullFanartEpisodeName').hide();
+      figcaption += '<p>Episode <strong>'+episodeTitle+'</strong></p>';
     }
+    figcaption += '</figcaption>';
 
-    $('#FullFanartImg').attr('src',src);
-    $('#FullFanartImg').attr('alt', altText);
-    $('.full-image-wrapper').addClass('visible');
+    // Generate the markup    
+    let markupOpen = `
+    <div id="ImageModal" class="image-modal">
+      <div class="image-modal-outer">
+        <div class="image-modal-dropsheet" id="ImageModalDropsheet"></div>
+        <div class="image-modal-inner">
+          <button class="close-modal" id="CloseModal">
+            <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M16 17a1 1 0 01-.707-.293l-8-8a1 1 0 111.414-1.414l8 8A1 1 0 0116 17z"/>
+              <path d="M8 17a1 1 0 01-.707-1.707l8-8a1 1 0 111.414 1.414l-8 8A1 1 0 018 17z"/>
+              <!-- <path d="M21 24H3a3 3 0 01-3-3V3a3 3 0 013-3h18a3 3 0 013 3v18a3 3 0 01-3 3zM3 2a1 1 0 00-1 1v18a1 1 0 001 1h18a1 1 0 001-1V3a1 1 0 00-1-1z"/> -->
+            </svg>
+          </button>`;
+
+    let markupClose =`
+        </div>
+      </div>
+    </div>`;
+
+    let markup = "";
     
-  });
+    markup += markupOpen;
+    markup += imgElement;
+    markup += figcaption;
+    markup += markupClose;
 
-  $('.full-image-outer, #CloseFullImage').click(function() {
-    $('.full-image-wrapper').removeClass('visible');
+    $('body').append(markup);
   });
 
 
@@ -177,6 +187,15 @@ $(document).ready(function() {
   });
 
 });
+
+
+$(document).on('click', '#CloseModal', function() {
+  $('#ImageModal').remove();
+});
+$(document).on('click', '#CloseModalDropsheet', function() {
+  $('#ImageModal').remove();
+});
+
 
 /*
 // Play an episode

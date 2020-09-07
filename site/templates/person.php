@@ -195,6 +195,4 @@
 
   </main>
 
-  <?php snippet('image-modal'); ?>
-
 <?php snippet('footer') ?>

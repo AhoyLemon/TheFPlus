@@ -1,6 +1,4 @@
-.fanart-grid { display:grid; gap:$gap; justify-content: end; 
-
-
+.fanart-grid { display:grid; gap:$gap; justify-content: end;
   .fanart-headline { grid-column:1/-1; padding:1em 0; }
   .sort-navigation { grid-column:1/-1; font-size:1.5em; 
     .switch-sort { display: inline-block; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:0.5em;
@@ -14,20 +12,14 @@
       &.active { background:$black; color:$white; }
     }
   }
-
-
   .artist-box { //font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee;
     .inner { text-align: right; position: relative; font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee; height:100%
       //&:after { content: "→"; position: absolute; right: 0; bottom: 0; font-size: 2em; transform: translate(20%,80%); }
     }
     a { text-decoration:none;
       &:hover, &:focus { text-decoration:underline; }
-    }
-    
+    } 
   }
-
-  
-
 }
 
 //Fanart grid, wherever it shows up.
@@ -35,25 +27,6 @@
 .fanart-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); padding-right: $gap;
   .fanart-thumb { @include fanart-thumbnail() }
 }
-
-
-.full-image-wrapper { display:block; @include position(fixed,0,0,0,0);  z-index: 100;
-  .full-image-outer { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; background:rgba($white,0.6); }
-  .full-image-inner { position: relative;
-    .close { position: absolute; top:20px; right:20px; font-size:2rem; font-family: $sans-serif; background:transparent; border:0.05em solid currentColor; color:$red; border-radius: 50%; width:1.5em; height:1.5em;
-      &:hover, &:focus { background:$red; color:$white; cursor: pointer; }
-    }
-  }
-  figure { background:#fff; box-shadow: 6px 6px 12px rgba(0,0,0,0.4); padding:2rem; overflow:auto; max-height: 90vh; 
-    
-    img { margin-bottom: 2rem;}
-  }
-  .info { margin-bottom: 0.5em; }
-  display:none;
-  &.visible { display:block; }
-} 
-
-
 
 
 /*
