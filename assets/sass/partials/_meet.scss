@@ -25,6 +25,12 @@
       &:last-child:after { content:''; }
     }
   }
+
+  .fanart-grid { display:grid; gap:$gap; justify-content: end;  display:grid; gap:$gap; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .fanart-thumb {
+    label { font-size:12px; }
+    .text { font-size:14px; }
+  }
 }
 .people-grid { display: grid; grid-gap: 30px;
   .person { background:$card; box-shadow: $boxShadow; text-decoration: none;

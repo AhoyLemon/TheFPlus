@@ -42,9 +42,7 @@ Music-used: Lovin' Spoonful - Do You Believe In Magic?,Black Sabbath - Wizard
 
 ----
 
-Bonus-content: (fanart: 143-forthelove.png by: For The Love)
-
-----
+Bonus-content: ----
 
 Tags: bigfoot,dragons,fantasy,harry potter,hippies,profiles of job creators
 

@@ -62,7 +62,7 @@ Music-used: Nouvelle Vague - Master & Servant,Lobsterdust - Do Ya Think Deceptib
 
 ----
 
-Tags: nerds,forums,describe yourself in six thousand words,fantasies,the perpetually lonely,that's numberwang!,video games that aren't video games
+Tags: nerds,forums,describe yourself in six thousand words,fantasies,the perpetually lonely,that's numberwang!,video games that aren't video games,roleplaying
 
 ----
 
@@ -144,3 +144,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3065.0

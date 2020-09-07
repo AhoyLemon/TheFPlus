@@ -46,9 +46,7 @@ Tags: describe yourself in six thousand words,fantasy,lazy people,teenagers,very
 
 ----
 
-Bonus-content: (fanart: 116-forthelove.png by: For The Love) (fanart:116-obfuscobble.png by:obfuscobble)
-
-----
+Bonus-content: ----
 
 Runtime: 1:08:21
 

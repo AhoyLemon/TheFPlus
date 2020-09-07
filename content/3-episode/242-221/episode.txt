@@ -62,9 +62,7 @@ Tags: gross,fetishes,things that goblins do,creepy database
 
 ----
 
-Bonus-content: 
-
-----
+Bonus-content: ----
 
 Cover-cite-toggle: no
 
@@ -134,3 +132,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: 

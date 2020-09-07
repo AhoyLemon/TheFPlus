@@ -66,9 +66,7 @@ Tags: watching too much television,no plot no problem,nerds,golgafrincham,incomp
 
 ----
 
-Bonus-content: (fanart: 280-positronic.png by:Positronic)
-
-----
+Bonus-content: ----
 
 Cover-cite-toggle: no
 
@@ -135,3 +133,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Ballpit-url: 

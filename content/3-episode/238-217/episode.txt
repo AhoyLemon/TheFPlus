@@ -62,9 +62,7 @@ Tags: reddit,tumblr,shoplifting
 
 ----
 
-Bonus-content: (fanart:217-positronic.png by:Positronic)
-
-----
+Bonus-content: ----
 
 Cover-cite-toggle: no
 
@@ -144,3 +142,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2197.0

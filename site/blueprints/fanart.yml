@@ -37,3 +37,6 @@ fields:
   artists:
     label: Artists
     type: tags
+  featured_artists:
+    label: Featured Artists
+    type: tags

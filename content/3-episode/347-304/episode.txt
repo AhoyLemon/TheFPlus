@@ -66,9 +66,7 @@ Tags: aliens,hippies,somehow not a blue öyster cult song
 
 ----
 
-Bonus-content: (fanart:304-ameliablank.jpg by:Amelia Blank)
-
-----
+Bonus-content: ----
 
 Cover-cite-toggle: no
 
@@ -103,3 +101,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3170.0

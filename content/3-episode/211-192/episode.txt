@@ -58,7 +58,9 @@ Tags: thanks montrith,please give me money for my stupid idea,profiles of job cr
 
 ----
 
-Bonus-content: 1. [TED-RNN  — Computer Generated TED Talks](https://medium.com/@samim/ted-rnn-machine-generated-ted-talks-3dd682b894c0#.lpthpl9ep) by [Samim](http://www.samim.io/)
+Bonus-content: 
+
+1. [TED-RNN  — Computer Generated TED Talks](https://medium.com/@samim/ted-rnn-machine-generated-ted-talks-3dd682b894c0#.lpthpl9ep) by [Samim](http://www.samim.io/)
 
 ----
 
@@ -147,3 +149,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: 

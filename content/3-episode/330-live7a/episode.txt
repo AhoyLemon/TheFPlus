@@ -75,16 +75,7 @@ Tags: f plus live,poetry,christians,ghosts
 
 Bonus-content: 
 
-**Note** This is the audio experience. We had two mounted GoPros at the show, which may or may not get edited into presentable videos. In the meantime, we didn't want to hold back the audio experience.
-
-<style>
-.live-photos .button { font-size:200%; border:2px solid #c0282d; display:inline-block; padding:0.5em 1.5em; }
-.live-photos .button:hover { background: #c0282d; text-decoration:none; color:#eee; }
-</style>
-
-<div class="live-photos" style="text-align:center;">
-<a href="https://photos.app.goo.gl/HnG8Sv8vw6mvddfS6" class="button">Photo Gallery</a>
-</div>
+* [Photos of the event](https://photos.app.goo.gl/HnG8Sv8vw6mvddfS6)
 
 ----
 
@@ -105,3 +96,19 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

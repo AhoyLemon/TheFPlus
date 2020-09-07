@@ -14,4 +14,8 @@ Page-headline: Some people drew these...
 
 ----
 
-Artists: For The Love,dijon du jour,Sauce,transatlanticalien,Al,sku,Max,Steve Rimjobs,Lemon,Sanguinary Novel,Andrea Streeter,LADY FRENZY,Beelzeboob,Fatty Bo Batty,Spooks,King Kalamari,Puppy Time,Positronic,suf,eldritchhat,Amelia Blank,sadman_southers,3viltiki,Missy,T. Azimuth Schwitters,Portaxx,Yavuz Sultan Selim,Hagay Giller,Sherman Tank,Shell Game,renew,Jin Wicked,zamza,dodoman,Keetah,tiny prancer,Mango Tango,my waste of talent,Vivi Vixen
+Artists: 3viltiki,Adam Bozarth,Al,Amelia Blank,Andrea Streeter,Beelzeboob,Christy,dijon du jour,DJW,dodoman,dook,eldritchhat,Fatty Bo Batty,For The Love,Hagay Giller,Jin Wicked,Keetah,King Kalamari,LADY FRENZY,Lemon,Liatai,Mango Tango,Max,Missy,Mix,my waste of talent,Portaxx,Positronic,Puppy Time,Ragnarok Boobies,renew,Sauce,sadman_southers,Sanguinary Novel,scungepot,Sham Bam Bamina,Shell Game,Sherman Tank,sku,Spooks,Steve Rimjobs,suf,T. Azimuth Schwitters,tiny prancer,transatlanticalien,Trav,Vivi Vixen,Yavuz Sultan Selim,zamza
+
+----
+
+Featured-artists: Adam Bozarth,Beelzeboob,dijon du jour,eldritchhat,Positronic,Puppy Time,Sauce,Sanguinary Novel,Spooks,Trav

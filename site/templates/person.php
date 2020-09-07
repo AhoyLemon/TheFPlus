@@ -178,10 +178,23 @@
           </ul>
         </div>
       <?php endif ?>
+
+
+      <?php if ($site->find('fanart')->images()->filterBy('artist', $page->title())->count() > 0) { ?>
+        <div class="info-block fanart-block">
+          <div class="list-leader">Fanart Made:
+          <div class="fanart-grid">
+            <?php snippet('fanart-thumbnails',  [ 'fanartArray' => $site->find('fanart')->images()->filterBy('artist', $page->title()) ]) ?>
+          </div>
+        </div>
+
+      <?php } ?>
       
       
     </article>
 
   </main>
+
+  <?php snippet('image-modal'); ?>
 
 <?php snippet('footer') ?>

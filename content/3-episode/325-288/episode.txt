@@ -62,7 +62,7 @@ Music-used: Lil' Kim ft. 50 Cent - Magic Stick,Keely Smith - It's Magic
 
 ----
 
-Tags: magick,etsy,game show,hippies,magical thinking,pagans,please give me money for my stupid idea,satanists,technologically impressive buttplugs
+Tags: magick,etsy,game show,hippies,magical thinking,pagans,please give me money for my stupid idea,satanists,technologically impressive buttplugs,the rites of price
 
 ----
 
@@ -87,3 +87,19 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

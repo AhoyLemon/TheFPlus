@@ -85,3 +85,19 @@ Cover-cite-artist: Slim Goodbody
 ----
 
 Cover-cite-url: https://en.wikipedia.org/wiki/Slim_Goodbody
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2646.0
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

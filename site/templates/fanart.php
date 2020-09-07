@@ -1,48 +1,66 @@
 <?php snippet('header') ?>
 
   <?php
+
+    $paginateCount = 50;
+
+    if (param('artist')) {
+      $fanartSort = $page->images()->filterBy('artist', param('artist'))->paginate($paginateCount);
+    }
+
     // Which way are you sorting?
-    $sortType = "artist";
-    $fanartSort = $page->images()->sortBy('artist');
-
-
-    $thisArtist = "";
-    $thisEpisode = "";
+    else if (param('sort') == "artist") {
+      $sortType = "artist";
+      $fanartSort = $page->images()->sortBy('artist')->paginate($paginateCount);
+    } else if (param('sort') == "artist-reverse") {
+      $sortType = "artist-reverse";
+      $fanartSort = $page->images()->sortBy('artist','desc')->paginate($paginateCount);
+    } else if (param('sort') == "episode") {
+      $sortType = "episode";
+      $fanartSort = $page->images()->sortBy('episode')->paginate($paginateCount);
+    } else if (param('sort') == "episode-reverse") {
+      $sortType = "episode-reverse";
+      $fanartSort = $page->images()->sortBy('episode','desc')->paginate($paginateCount);
+    } else if (param('sort') == "random") {
+      $sortType = "random";
+      $fanartSort = $page->images()->shuffle()->paginate($paginateCount);
+    } else {
+      $sortType = "random";
+      $fanartSort = $page->images()->shuffle()->paginate($paginateCount);
+    }
   ?>
 
 
   <main class="main edge-to-edge" role="main">
-
     
-    
-    <section class="fanart-grid">
+    <section class="fanart-grid" <?php if (param('sort')) { echo 'sort="'. param('sort').'"';} ?> >
 
-      <h1 class="fanart-headline">by <?php echo $page->page_headline(); ?>...</h1>
-        
-      <?php foreach ($fanartSort as $fanart): ?>
+      <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
 
-        <?php if ($thisArtist != $fanart->artist()) {
-          $thisArtist = $fanart->artist();
-          $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $thisArtist))); ?>
-          <div class="artist-box">
-            <?php if ($site->find($mlink)) { ?>
-              <a href="<?= url::home() . '/' . $mlink; ?>">
-                <?= $thisArtist; ?>
-              </a>
-            <?php } else { ?>
-              <span><?= $thisArtist; ?></span>
-            <?php } ?>
-          </div>
+
+      <div class="sort-navigation">
+        Sort by
+        <a class="switch-sort <?php if ($sortType == "artist") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort;artist">Artist↓</a>
+        <a class="switch-sort <?php if ($sortType == "artist-reverse") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort;artist-reverse">Artist↑</a>
+        <a class="switch-sort <?php if ($sortType == "episode") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort;episode">Episode↓</a>
+        <a class="switch-sort <?php if ($sortType == "episode-reverse") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort;episode-reverse">Episode↑</a>
+        <a class="switch-sort <?php if ($sortType == "random") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort;random">Random!!!</a>
+      </div>
+
+      <div class="artist-filters">
+        Featured artists:
+        <?php foreach (explode(',', $page->featured_artists()) as $fartist) { ?>
+          <a class="filter-link <?php if (param('artist') == $fartist) { echo ' active'; } ?>"
+            href="<?= $site->find('fanart')->url() . '/artist;' . $fartist; ?>"
+          >
+            <?= $fartist; ?>
+          </a>
         <?php } ?>
 
-        <figure class="fanart-thumb">
-          <img src="<?=$fanart->crop(320,320)->url(); ?>" />
-          <figcaption>
-            <!-- <div class="artist"><?= $fanart->artist(); ?></div>--->
-            <div class="episode"><?= $site->find('episode/'.$fanart->episode())->title(); ?></div>
-          </figcaption>
-        </figure>
-      <?php endforeach; ?>
+      </div>
+
+      <?php snippet('fanart-thumbnails',  [ 'fanartArray' => $fanartSort ]) ?>
+
 
       <?php if ($page->text()->isNotEmpty()) { ?>
         <div class="fanart-out">
@@ -53,7 +71,12 @@
     </section>
 
     
+    <div class="fanart-pagination" style="padding:2rem;">
+      <?php snippet('pagination',  [ 'articles' => $fanartSort]) ?>
+    </div>
     
   </main>
+
+  <?php snippet('image-modal'); ?>
 
 <?php snippet('footer') ?>

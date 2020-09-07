@@ -83,3 +83,19 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3119.0
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

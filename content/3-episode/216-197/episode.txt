@@ -58,9 +58,7 @@ Tags: yahoo,morons,the internet is a dumb oracle you shout into,very important q
 
 ----
 
-Bonus-content: 
-
-----
+Bonus-content: ----
 
 Cover: 
 
@@ -147,3 +145,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: 

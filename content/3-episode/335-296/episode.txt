@@ -161,3 +161,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3074.0
