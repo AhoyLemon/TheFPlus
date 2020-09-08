@@ -42,7 +42,9 @@ Music-used: Lovin' Spoonful - Do You Believe In Magic?,Black Sabbath - Wizard
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Tags: bigfoot,dragons,fantasy,harry potter,hippies,profiles of job creators
 

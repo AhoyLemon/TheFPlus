@@ -42,7 +42,9 @@ Music-used: Ween - Flies On My Dick,H. R. Pufnstuf theme song
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Tags: because drugs,describe yourself in six thousand words,displeased girlfriends,hippies,i need a lift to burning man,thanks montrith
 

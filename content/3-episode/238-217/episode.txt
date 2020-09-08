@@ -62,7 +62,9 @@ Tags: reddit,tumblr,shoplifting
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Cover-cite-toggle: no
 

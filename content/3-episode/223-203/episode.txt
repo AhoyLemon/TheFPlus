@@ -60,7 +60,9 @@ Tags: self-help,cigarettes,smoking,the internet isn't helping,there are better w
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Cover: 
 

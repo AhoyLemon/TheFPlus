@@ -347,27 +347,11 @@
 
             <?php if ($page->product_type() == "series") { ?>
               <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
-                <div class="photo-holder">
-                  <?php if ($photo->full_size() != "") { ?>
-                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom"  itemprop="image">
-                      <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
-                    </a>
-                  <?php } else { ?>
-                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" itemprop="image" />
-                  <?php } ?>
-                </div>
+                <?php snippet('photogrid',  [ 'photo' => $photo]) ?>
               <?php endforeach; ?>
             <?php } else { ?>
               <?php foreach($page->photos()->toStructure() as $photo): ?>
-                <div class="photo-holder">
-                  <?php if ($photo->full_size() != "") { ?>
-                    <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom" itemprop="image">
-                        <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
-                    </a>
-                  <?php } else { ?>
-                    <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" itemprop="image" />
-                  <?php } ?>
-                </div>
+                <?php snippet('photogrid',  [ 'photo' => $photo]) ?>
               <?php endforeach; ?>
             <?php } ?>
             <div class="share-your-photo">

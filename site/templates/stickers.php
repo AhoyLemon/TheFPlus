@@ -40,7 +40,7 @@
               <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
-                  <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
+                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image">
                     <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" width="320" height="320" />
                     
                     <?php if ($sticker->almost_gone == "1") { ?>
@@ -233,7 +233,7 @@
               <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
-                  <a onclick="window.open('<?php echo $sticker->fullsize()->toFile()->url(); ?>', 'popupWindow', 'width=<?php echo $sticker->fullsize()->toFile()->width(); ?>,height=<?php echo $sticker->fullsize()->toFile()->height(); ?>');" class="zoom">
+                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image">
                     <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" loading="lazy" height="320" width="320" />
                   </a>
                 <?php } else { ?>
@@ -419,13 +419,7 @@
         <h3>Some Stickers in the world...</h3>
         <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
           <div class="photo-holder">
-            <?php if ($photo->full_size() != "") { ?>
-              <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
-                  <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" loading="lazy" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
-              </a>
-            <?php } else { ?>
-              <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" loading="lazy" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
-            <?php } ?>
+            <?php snippet('photogrid',  [ 'photo' => $photo]) ?>
           </div>
         <?php endforeach; ?>
         <div class="share-your-photo">

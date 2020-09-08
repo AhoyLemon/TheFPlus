@@ -54,11 +54,15 @@ Bonus-content:
 
 ----
 
+Runtime: 1:03:45
+
+----
+
 File-size: 46
 
 ----
 
-Cover: ep106.jpg
+Cover: 
 
 ----
 
@@ -91,7 +95,3 @@ Chapters:
 ----
 
 Chapter-provider: 
-
-----
-
-Runtime: 1:03:45

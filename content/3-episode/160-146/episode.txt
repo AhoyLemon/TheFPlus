@@ -42,7 +42,9 @@ Music-used: Dire Straits - Money for Nothing,ZZ Top - Just Got Paid
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Tags: lazy people,magical thinking,objectivist wet dream,please give me money for my stupid idea,in hindsight this episode isn't very good,Patreon
 

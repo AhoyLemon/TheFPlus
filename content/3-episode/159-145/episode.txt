@@ -42,7 +42,9 @@ Music-used: Sugar - A Good Idea,Louis Armstrong - I Get Ideas
 
 ----
 
-Bonus-content: ----
+Bonus-content: 
+
+----
 
 Tags: free ideas,in the end,incomprehensible,movies,nerds,no plot no problem,please give me money for my stupid idea,video games,the tommy d commy d,pringlegate
 

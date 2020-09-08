@@ -12,8 +12,9 @@ $merchBorder: lighten($black,50%);
     .almost-gone-text { fill:$white; }
     .thumb-holder {
       img { max-height: 230px; width: auto; display: block; margin-left: auto; margin-right: auto; }
+      a.zoom-photo { cursor:zoom-in; }
     }
-    a.zoom { cursor:zoom-in !important; }
+    
     img { width: 100%; }
     .details { @include flex-container(); border-top: none; border-left: none; border-bottom: 1px solid $merchBorder; border-right: 1px solid $merchBorder;
       .detail { border-left: 1px solid $merchBorder; background:#fff;
@@ -102,16 +103,11 @@ form.paypal-buy-form { display:block; width:12em;
 
 
 
-.product-photos { @include flex-container();
-  .photo-holder { margin-bottom: $gap; margin-right: $gap; }
-  a.zoom { position: relative; display: block; background:$red; overflow: hidden; cursor: zoom-in;
-    img { border:2px solid $red; }
-    &:hover { border-bottom: none;
-      &:after { content: ' '; @include position(absolute,0,0,0,0); background:$red; opacity: 0.5; mix-blend-mode:overlay; }
-    }
-  }
-  img { max-height: 260px; }
-  h3, .share-your-photo { @include flex-item(100%); }
+.product-photos { display:grid; gap:$gap; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
+  a { cursor:zoom-in; }
+  img { border: 2px solid $black; }
+  a img { border-color:$red;  }
+  h3, .share-your-photo { grid-column:1/-1; }
   h3 { font-weight: $light; font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.15em; }
-  .share-your-photo { margin-top: 10px; }
+  .share-your-photo { margin-top: 10px;  }
 }
