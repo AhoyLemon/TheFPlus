@@ -35,7 +35,7 @@
 
   <figure class="fanart-thumb">
 
-    <a class="full-fanart-link"
+    <a name="<?= $fanart->filename(); ?>" class="full-fanart-link"
       full-size="<?=$fanartFull; ?>" 
       <?php if ($thisArtist) { echo 'artist="' . $thisArtist . '" '; } ?>
       <?php if ($artistPage) { echo 'artist-page="' . $artistPage . '" '; } ?>
