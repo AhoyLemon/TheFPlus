@@ -42,7 +42,7 @@
       <?php if ($episodeTitle) { echo 'episode-title="' . $episodeTitle . '" '; } ?>
       <?php if ($episodeURL) { echo 'episode-url="' . $episodeURL . '" '; } ?>
     >
-      <img src="<?= $fanartThumbnail; ?>" width="320" height="320" alt="<?= $altText; ?>" />
+      <img src="<?= $fanartThumbnail; ?>" loading="lazy" width="320" height="320" alt="<?= $altText; ?>" />
     </a>
     <figcaption class="details">
 
