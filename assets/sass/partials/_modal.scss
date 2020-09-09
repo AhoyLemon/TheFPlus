@@ -18,7 +18,7 @@
     }
     &:hover, &:focus { color:$red; cursor: pointer; }
   }
-  figure { overflow:auto; max-height: 82vh; }
+  figure { overflow:auto; max-height: 82vh; max-width:calc(100vw - 70px); }
   figcaption { padding-top:1em;
     p { margin-bottom:1em;
       &:last-child { margin-bottom:0; }

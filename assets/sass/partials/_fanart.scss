@@ -1,20 +1,14 @@
 .fanart-grid { display:grid; gap:$gap; justify-content: end;
   .fanart-headline { grid-column:1/-1; padding:1em 0; }
-  .sort-navigation { grid-column:1/-1; font-size:1.5em; 
-    .switch-sort { display: inline-block; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:0.5em;
+
+  .fanart-options { grid-column:1/-1; padding-top:$gap; padding-bottom: $gap;
+    a { display: inline-block; font-size:92%; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:$gap; margin-bottom:$gap;
       &:hover { background:$red; color:$white; }
       &.active { background:$black; color:$white; }
     }
   }
-  .artist-filters { grid-column:1/-1; padding:1em 0; 
-    a { display: inline-block; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:0.5em;
-      &:hover { background:$red; color:$white; }
-      &.active { background:$black; color:$white; }
-    }
-  }
-  .artist-box { //font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee;
+  .artist-box {
     .inner { text-align: right; position: relative; font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee; height:100%
-      //&:after { content: "→"; position: absolute; right: 0; bottom: 0; font-size: 2em; transform: translate(20%,80%); }
     }
     a { text-decoration:none;
       &:hover, &:focus { text-decoration:underline; }
