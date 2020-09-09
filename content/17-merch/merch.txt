@@ -23,42 +23,6 @@ Current-merch:
   type: coloring book
   price: $9
   almost_gone: "0"
-- 
-  title: Glittery Logo
-  pic: s24_small.gif
-  url: 'https://thefpl.us/also-made/stickers#24'
-  type: Sticker
-  price: $3
-  almost_gone: "0"
-- 
-  title: Hey, Kumquatxop?
-  pic: s25-sunrays.jpg
-  url: 'https://thefpl.us/also-made/stickers#25'
-  type: sticker
-  price: $1.50
-  almost_gone: "1"
-- 
-  title: Skunk Skunk Spray Me Now!
-  pic: sticker-skunk.jpg
-  url: 'https://thefpl.us/also-made/stickers#26'
-  type: sticker
-  price: $3
-  almost_gone: "0"
-- 
-  title: Engraved Dugouts
-  pic: dugout_square-early.jpg
-  url: https://thefpl.us/also-made/dugouts
-  type: dugout
-  price: $22
-  almost_gone: "0"
-- 
-  title: FART
-  pic: bitcoin_square.jpg
-  url: ""
-  type: BOOGER
-  price: $100
-  pending: "1"
-  almost_gone: "0"
 
 ----
 
@@ -376,6 +340,42 @@ Sold-merch:
   pic: catcher_animation_600.gif
   type: origami
   sold_date: 2020-08-24
+- 
+  title: Hey, Kumquatxop?
+  url: 'https://thefpl.us/also-made/stickers#25'
+  pic: s25-sunrays.jpg
+  type: sticker
+  sold_date: 2020-08-28
+- 
+  title: Engraved Dugouts
+  url: https://thefpl.us/also-made/dugouts
+  pic: dugouts-400.jpg
+  type: smoke supplies
+  sold_date: 2020-09-03
+- 
+  title: Glitter Logo
+  url: 'https://thefpl.us/also-made/stickers#24'
+  pic: glitter-soldout.jpg
+  type: sticker
+  sold_date: 2020-09-04
+- 
+  title: Samurai Dog
+  url: 'https://thefpl.us/also-made/stickers#27'
+  pic: samurai-square.jpg
+  type: sticker
+  sold_date: 2020-09-06
+- 
+  title: A Paths Duck
+  url: 'https://thepl.us/also-made/magnets#2'
+  pic: pathduck-soldout.jpg
+  type: magnet
+  sold_date: 2020-09-08
+- 
+  title: Skunk Skunk Spray Me Now!
+  url: 'https://thefpl.us/also-made/stickers#26'
+  pic: s26-glimmer.gif
+  type: sticker
+  sold_date: 2020-09-08
 
 ----
 
