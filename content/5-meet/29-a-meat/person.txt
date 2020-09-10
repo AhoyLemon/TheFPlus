@@ -31,3 +31,7 @@ Favorite-episode: 58,130,138
 ----
 
 Ballpit-account: http://ballp.it/index.php?action=profile;u=6992
+
+----
+
+Cover: ameat.png

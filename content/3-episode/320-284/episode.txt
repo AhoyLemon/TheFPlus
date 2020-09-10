@@ -68,8 +68,6 @@ Tags: video games that aren't video games,drama queens,forums,i made this site m
 
 Bonus-content: 
 
-(fanart: 284-spooks.jpg by:Spooks)
-
 1. Portaxx's Bimbo: [Bimbonimous Boobsch](https://bimbo.land/bimbo/bimbonimous-boobsch/80766)
 2. Heelies' Bimbo: [Fart Slut](https://bimbo.land/bimbo/fart-slut/80765)
 3. [Dead Like Me: Mandy Patankin refuses to make a patty melt incorrectly](https://www.youtube.com/watch?v=GYCTVlxVx0I) (YouTube)
@@ -93,3 +91,19 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2919.0
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

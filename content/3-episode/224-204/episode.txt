@@ -60,7 +60,7 @@ Tags: incomprehensible,ugly websites,insanity,focus on a single twit,magical thi
 
 ----
 
-Bonus-content: (fanart:204-puppytime.png by:Puppy Time)
+Bonus-content: 
 
 ----
 
@@ -138,3 +138,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=1969.0

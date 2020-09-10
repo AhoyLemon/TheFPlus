@@ -1,0 +1,183 @@
+Title: Magnets
+
+----
+
+Date: 2020-09-05
+
+----
+
+Time: 11:21
+
+----
+
+Cover: duck-square.png
+
+----
+
+Show-image: false
+
+----
+
+Cast: Lemon,Puppy Time
+
+----
+
+Text: 
+
+In 2016 we ordered some F Plus logo magnets. They sold out in about 20 hours. Then four years later we ordered some more. Because women is really a paths duck.
+
+These magnets are postcard size (5.5"x4.25") and fairly thick & sturdy. This'll stay attached to a car if that's where you put it.
+
+Shipping is included. Transactions are handled securely offsite by PayPal.
+
+----
+
+Tags: merch,logo,illustrator,fucking magnets,they work,a paths duck
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: $4
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: magnet2.jpg
+  desc: f plus magnet on the fridge with a fox
+  full_size: ""
+- 
+  series_num: "1"
+  pic: magnet3.jpg
+  desc: >
+    f plus logo on the fridge with several
+    other magnets
+  full_size: ""
+- 
+  series_num: "1"
+  pic: magnet_gallery.jpg
+  desc: a lot of magnets
+  full_size: ""
+- 
+  series_num: "2"
+  pic: duck-fridge-small.jpg
+  desc: >
+    Paths duck postcard magnet on a fridge
+    with a GitHub sticker
+  full_size: duck-fridge.jpg
+- 
+  series_num: "2"
+  pic: duck-sneetch-small.jpg
+  desc: >
+    Paths duck postcard magnets with a star
+    bellied sneetch doll
+  full_size: duck-sneetch.jpg
+- 
+  series_num: "2"
+  pic: duck-kia-small.jpg
+  desc: Paths duck magnet on the back of a car
+  full_size: duck-kia.jpg
+
+----
+
+Product-type: series
+
+----
+
+Soldout: 1
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+- 
+  pic: logo-square.jpg
+  fullsize: ""
+  title: 'Red & Black Logo w/ White Trim'
+  series_num: "1"
+  artist: Lemon
+  printed: "50"
+  dimensions: 3" x 2.6"
+  material: ""
+  reference: ""
+  released: 2016-07-05
+  soldout: 2016-07-05
+  buy_type: single
+  price: "4"
+  single_slug: ""
+  single_buttontext: ""
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: paths-duck-small.jpg
+  fullsize: paths-duck-big.jpg
+  title: Women is really a paths duck.
+  series_num: "2"
+  artist: Puppy Time
+  printed: "30"
+  dimensions: 5.5"x4.25"
+  material: ""
+  reference: "332"
+  released: 2020-09-05
+  soldout: 2020-09-08
+  buy_type: single
+  price: "4"
+  single_slug: AZA29ZLZKZPX8
+  single_buttontext: BUY NOW
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: Wanna share a photo of where you put your magnet? Send it to [Lemon](/meet/lemon)
+
+----
+
+Button-text: 

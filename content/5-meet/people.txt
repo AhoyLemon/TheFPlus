@@ -6,4 +6,4 @@ Text: There's a lot of people who make The F Plus possible. From the regular rea
 
 ----
 
-Undergrid: <a href="\stats" style="font-size:2.5vw; text-decoration:none;">Participant Stats</a>
+Undergrid: 

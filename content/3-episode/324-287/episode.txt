@@ -91,3 +91,19 @@ Cover-cite-artist: Jean-Paul Goude
 ----
 
 Cover-cite-url: http://www.jeanpaulgoude.com/en/
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

@@ -32,7 +32,7 @@ Cast: Sanguinary Novel
 
 Text: 
 
-Journal your travels throughout the internet with our limited edition of 100 diplomatic internet passports.
+Journal your travels throughout the internet with our limited edition of 200 diplomatic internet passports.
 
 These 4"x5½" pocket sized notebooks have 48 blank 60# pages, saddle-stitched with a 110# Pearlescent cover with the official seal of the internet (a unicorn glasshole and cockatrice with a VR headset) and the latin expression "Res Horribiles, Fanatice Lectitatae" (or "Terrible Things Read With Enthusiasm").
 
@@ -129,3 +129,7 @@ Photos-leadin: Let's see some internet citizenry...
 ----
 
 Share-cta: 
+
+----
+
+Button-text: 

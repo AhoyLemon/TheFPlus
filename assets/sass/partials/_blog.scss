@@ -32,3 +32,19 @@ section.blogs {
 		}
 	}
 }
+
+article.blog {
+	.content {
+		p { line-height:180%; }
+		ul, ol {
+			li { margin-bottom: 1em; }
+		}
+		figure { background: #343434; padding:$gap; width: auto; display: block; margin-bottom: 1em;
+			//img { display:block; width:auto; max-width:100%; }
+			//&.full { margin-top:1em; margin-bottom:2em; margin-left:auto; margin-right:auto; }
+			&.right { float: right; margin-left:1rem; margin-bottom: 1rem; }
+			&.left { float: left; margin-right:1rem; margin-bottom: 1rem; }
+			figcaption { font-size: 80%; color:#fff; padding-left: $gap; padding-right: $gap; }
+		}
+	}
+}

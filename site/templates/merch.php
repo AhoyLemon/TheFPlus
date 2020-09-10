@@ -48,7 +48,13 @@
               <meta itemprop="availability" content="InStock" />
               <meta itemprop="priceCurrency" content="USD" />
             </div>
+            <?php if ($merch->pending == "1") { ?>
+              <div class="detail no-buttons">
+                <span>PRINTING</span>
+              </div>
+            <?php } ?>
           </div>
+          
 
           <meta itemprop="brand" itemtype="https://schema.org/Organization" content="The F Plus" />
         </a>

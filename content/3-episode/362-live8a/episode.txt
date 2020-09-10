@@ -83,8 +83,6 @@ Bonus-content:
 3. [motherfucking.best](http://motherfucking.best)
 4. [Monster Manual: A Coloring & Activity Book](https://thefpl.us/also-made/monster-manual-a-coloring-activity-book)
 
-(fanart: live8a-vivivixen.jpg by:ViviVixen)
-
 ----
 
 Cover-cite-toggle: no
@@ -144,3 +142,7 @@ Chapter-provider: Adam Bozarth
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3245.0

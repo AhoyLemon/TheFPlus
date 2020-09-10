@@ -87,3 +87,19 @@ Cover-cite-artist: MOOSE
 ----
 
 Cover-cite-url: https://photos.icons8.com/
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2991.0
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

@@ -70,8 +70,6 @@ Bonus-content:
 4. [Lemon's magnet](https://ballp.it/index.php?topic=2358.msg83288#msg83288) from Kumquatxop.
 5. gen8hedgehog's Dollmaker (requires Flash) [female version](http://orig06.deviantart.net/e865/f/2007/302/f/6/female_furry_dollmaker_v1_2_by_gen8hedgehog.swf) | [male version](http://orig05.deviantart.net/4570/f/2007/302/1/6/male_furry_dollmaker_v1_1_by_gen8hedgehog.swf)
 
-(fanart:231-positronic.jpg by:Positronic) (fanart:231-missy.jpg by:Missy)
-
 ### ORIGINAL CHARACTERS DO NOT STEAL
 
 (image: oc01.jpg)(image: oc02.jpg)(image: oc03.jpg)(image: oc04.jpg)(image: oc05.jpg)(image: oc06.jpg)(image: oc07.jpg)(image: oc08.jpg)(image: oc09.jpg)(image: oc10.jpg)(image: oc11.jpg)(image: oc12.jpg)(image: oc13.jpg)(image: oc14.jpg)(image: oc15.jpg)(image: oc16.jpg)(image: oc17.jpg)(image: oc18.jpg)(image: oc19.jpg)(image: oc20.jpg)(image: oc21.jpg)(image: oc22.jpg)(image: oc23.jpg)(image: oc24.jpg)(image: oc25.jpg)(image: oc26.jpg)(image: oc27.jpg)(image: oc28.jpg)(image: oc29.jpg)(image: oc30.jpg)(image: oc31.jpg)(image: oc32.jpg)(image: oc33.jpg)(image: oc34.jpg)(image: oc36.jpg)(image: oc39.jpg)(image: oc40.jpg)(image: oc41.jpg)(image: oc38.jpg)
@@ -161,3 +159,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2390.0

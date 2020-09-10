@@ -42,7 +42,7 @@ Music-used: Sugar - A Good Idea,Louis Armstrong - I Get Ideas
 
 ----
 
-Bonus-content: (fanart: 145-forthelove.png by: For The Love) (fanart: 145-djw.jpg by: DJW)
+Bonus-content: 
 
 ----
 

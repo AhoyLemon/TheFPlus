@@ -219,6 +219,17 @@
         <?php echo $page->bonus_content()->kirbytext() ?>
       </div>
     <?php endif ?>
+
+
+    <!-- EPISODE FANART -->
+    <?php if ($site->find('fanart')->images()->filterBy('episode', $page->slug())->count() > 0) { ?>
+      <div class="info-block fanart-block">
+        <h4>Fanart for this episode:</h4>
+        <div class="fanart-grid">
+          <?php snippet('fanart-thumbnails',  [ 'fanartArray' => $site->find('fanart')->images()->filterBy('episode', $page->slug()) ]) ?>
+        </div>
+      </div>
+    <?php } ?>
     
   </article>
 
@@ -227,6 +238,7 @@
   </section>
 
 </main>
+
 
 <?php if ($page->cover() != "") { ?>
   <script type="application/ld+json">

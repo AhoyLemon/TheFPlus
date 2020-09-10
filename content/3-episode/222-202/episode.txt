@@ -63,11 +63,9 @@ Bonus-content:
 * [Lady of Rage - Afro Puffs](https://www.youtube.com/watch?v=yNqIJ3e0OJw)
 * [Sleeping With Sirens - If You Can't Hang](https://www.youtube.com/watch?v=_UwWYtLWEZg)
 
-(fanart:202-puppytime.jpg by:Puppy Time)
-
 ----
 
-Cover: 
+Cover: ep202.jpg
 
 ----
 
@@ -145,3 +143,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: 

@@ -70,8 +70,6 @@ Bonus-content:
 
 1. [Tapes!](https://thefpl.us/also-made/audio-garbage)
 
-(fanart:305-eldritchhat.jpg by:Eldritch Hat) (fanart:305-eldritchhat2.jpg by:Eldritch Hat) (fanart:305-ameliablank.jpg by:Amelia Blank)
-
 ----
 
 Cover-cite-toggle: no
@@ -107,3 +105,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3203.0

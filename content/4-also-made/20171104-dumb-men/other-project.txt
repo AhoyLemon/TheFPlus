@@ -22,7 +22,7 @@ Show-image: true
 
 ----
 
-Cast: Lemon,Travis Ramsey
+Cast: Lemon,Moxie Ramsey
 
 ----
 
@@ -32,7 +32,7 @@ I'm not sure I can tell you anything about this website that won't be immediatel
 
 ## [dumb.men](https://dumb.men)
 
-Favicon & OpenGraph image by Trav. Submit a pull request if you want to add any photos.
+Favicon & OpenGraph image by Mox. Submit a pull request if you want to add any photos.
 
 ----
 
@@ -53,3 +53,27 @@ Tweet-intent: https://twitter.com/intent/tweet?url=https%3A%2F%2Fdumb.men&via=%4
 ----
 
 Bonus-content: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Photos: 

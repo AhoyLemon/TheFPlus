@@ -71,8 +71,6 @@ Bonus-content:
 1. [buttplug.io](http://buttplug.io/)
 2. [Caveman BIOS Teaches Erotic Typing](https://curiousjp.itch.io/caveman-bios-teaches-erotic-typing)
 
-(fanart:282-spooks.jpg by:Spooks)
-
 ----
 
 Cover-cite-toggle: yes
@@ -88,3 +86,19 @@ Cover-cite-artist: 2Dark
 ----
 
 Cover-cite-url: https://2dark.deviantart.com/
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=2899.0
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

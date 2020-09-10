@@ -3,6 +3,31 @@
 // @prepros-append partials/_meet.js
 
 
+
+// This is the markup for the modal.
+// Generate the markup    
+const markupOpen = `
+<div id="ImageModal" class="image-modal">
+  <div class="image-modal-outer">
+    <div class="image-modal-dropsheet" id="ImageModalDropsheet"></div>
+    <div class="image-modal-inner">
+      <button class="close-modal" id="CloseModal">
+        <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M16 17a1 1 0 01-.707-.293l-8-8a1 1 0 111.414-1.414l8 8A1 1 0 0116 17z"/>
+          <path d="M8 17a1 1 0 01-.707-1.707l8-8a1 1 0 111.414 1.414l-8 8A1 1 0 018 17z"/>
+        </svg>
+      </button>`;
+
+const markupClose =`
+    </div>
+  </div>
+</div>`;
+
+
+
+
+
+
 function trackEvent(c, a, l, v) {
   if (v) {
     _paq.push(['trackEvent', c, a, l, v]);
@@ -76,9 +101,60 @@ $(document).ready(function() {
       e.preventDefault();
     }
   });
-  
-  $('figure.fanart').click(function() {
-    $(this).toggleClass('big');
+
+
+  // FOR THE /fanart page
+  $('.full-fanart-link').click(function() {
+    let src = $(this).attr('full-size');
+
+    let artistName = $(this).attr('artist');
+    let artistPage = $(this).attr('artist-page');
+    let episodeTitle = $(this).attr('episode-title');
+    let episodeURL = $(this).attr('episode-url');
+
+    let altText = $(this).children('img').attr('alt');
+
+    let imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    let figcaption = '<figcaption>';
+
+    // Display Artist
+    if (artistPage) {
+      figcaption += '<p>Artist: <a href="'+artistPage+'">'+artistName+'</a></p>';
+    } else if (artistName) {
+      figcaption += '<p>Artist: <strong>'+artistName+'</strong></p>';
+    }
+
+    // Display Episode
+    if (episodeURL) {
+      figcaption += '<p>Episode: <a href="'+episodeURL+'">'+episodeTitle+'</a></p>';
+    } else if (episodeTitle) {
+      figcaption += '<p>Episode <strong>'+episodeTitle+'</strong></p>';
+    }
+    figcaption += '</figcaption>';
+
+    
+
+    let markup = "";
+    
+    markup += markupOpen;
+    markup += imgElement;
+    markup += figcaption;
+    markup += markupClose;
+
+    $('body').append(markup);
+  });
+
+
+  $('.zoom-photo').click(function() {
+    let src = $(this).attr('full-size');
+    let altText =$(this).children('img').attr('alt');
+    let imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    let markup = "";
+    
+    markup += markupOpen;
+    markup += imgElement;
+    markup += markupClose;
+    $('body').append(markup);
   });
 
 
@@ -125,6 +201,15 @@ $(document).ready(function() {
   });
 
 });
+
+
+$(document).on('click', '#CloseModal', function() {
+  $('#ImageModal').remove();
+});
+$(document).on('click', '#CloseModalDropsheet', function() {
+  $('#ImageModal').remove();
+});
+
 
 /*
 // Play an episode

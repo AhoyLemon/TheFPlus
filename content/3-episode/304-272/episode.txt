@@ -62,7 +62,7 @@ Music-used: Har Mar Superstar - Restless Leg,DJ Lobsterdust - Booty Pressure
 
 ----
 
-Tags: furries,forums,furre,nerds,useless tiny detail fetish,making masturbation difficult
+Tags: furries,forums,furre,nerds,useless tiny detail fetish,making masturbation difficult,roleplaying
 
 ----
 
@@ -70,8 +70,6 @@ Bonus-content:
 
 1. [Great Sex Tips!](https://greatsex.tips)
 2. [Bad Accent Club In The Google Play Store](https://play.google.com/store/apps/details?id=club.badaccent)
-
-(fanart: 272-shellgame.jpg by:Shell Game)
 
 ----
 
@@ -88,3 +86,19 @@ Cover-cite-artist: thanshuhai
 ----
 
 Cover-cite-url: https://thanshuhai.deviantart.com/
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

@@ -62,4 +62,34 @@ Bonus-content:
 
 1. will.i.am: [World Champion of Bullshit](https://www.youtube.com/watch?v=aWyn8QS74EY) (youtube)
 
-(fanart:235-ameliablank.jpg by:Amelia Blank)
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

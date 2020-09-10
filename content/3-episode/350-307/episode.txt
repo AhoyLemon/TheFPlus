@@ -62,7 +62,7 @@ Music-used: Yelle - Je Veux Te Voir,Nouvelle Vague - Come On Eileen
 
 ----
 
-Tags: please give me money for my stupid idea
+Tags: please give me money for my stupid idea,crowdfunding
 
 ----
 
@@ -109,3 +109,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3212.0

@@ -18,7 +18,7 @@ Show-image: true
 
 ----
 
-Cast: Travis Ramsey
+Cast: Moxie Ramsey
 
 ----
 
@@ -91,3 +91,7 @@ Photos-leadin:
 ----
 
 Share-cta: 
+
+----
+
+Button-text: 

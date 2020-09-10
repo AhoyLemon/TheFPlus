@@ -1,7 +1,29 @@
 title: Fanart
 icon: paint-brush
 pages: false
-files: true
+files:
+  #sortable: true
+  fields:
+    episode:
+      label: Episode
+      type: select
+      options: query
+      query:
+        page: episode
+        fetch: children
+        text: '{{slug}} : {{title}}'
+    artist:
+      label: Artist
+      type: select
+      options: field
+      field:
+        page: fanart
+        name: artists
+        separator: ,
+    caption:
+      label: Caption
+      type: text
+      help: This will also be used as alt text
 fields:
   title:
     label: Title
@@ -12,3 +34,9 @@ fields:
   text:
     label: Text Under Pics
     type:  markdown
+  artists:
+    label: Artists
+    type: tags
+  featured_artists:
+    label: Featured Artists
+    type: tags

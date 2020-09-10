@@ -12,6 +12,3 @@ fields:
   text:
     label: Metatext
     type:  textarea
-  undergrid:
-    label: Text Under Grid
-    type: markdown

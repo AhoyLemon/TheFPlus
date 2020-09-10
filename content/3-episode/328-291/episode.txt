@@ -90,3 +90,19 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 

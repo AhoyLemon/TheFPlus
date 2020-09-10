@@ -1,68 +1,29 @@
+.fanart-grid { display:grid; gap:$gap; justify-content: end;
+  .fanart-headline { grid-column:1/-1; padding:1em 0; }
+
+  .fanart-options { grid-column:1/-1; padding-top:$gap; padding-bottom: $gap;
+    a { display: inline-block; font-size:92%; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:$gap; margin-bottom:$gap;
+      &:hover { background:$red; color:$white; }
+      &.active { background:$black; color:$white; }
+    }
+  }
+  .artist-box {
+    .inner { text-align: right; position: relative; font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee; height:100%
+    }
+    a { text-decoration:none;
+      &:hover, &:focus { text-decoration:underline; }
+    } 
+  }
+}
+
+//Fanart grid, wherever it shows up.
+
+.fanart-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); padding-right: $gap;
+  .fanart-thumb { @include fanart-thumbnail() }
+}
+
+
 /*
-
-.fanart-headline { padding: 0.25em; }
-.fanart-list { @include flex-container(); padding-left: 0 !important;
-  li { list-style-type: none;
-    figure { background-size:cover; background-position: center; background-repeat: no-repeat; width:100%; }
-    
-    @media (min-width:1350px) {
-      @include flex-item(20%,stretch,0,0);
-      figure { height:calc(20vw - 60px); }
-    }
-    
-    @media (min-width:1050px) and (max-width:1349px) {
-      @include flex-item(25%,stretch,0,0);
-      figure { height:calc(25vw - 75px); }
-    }
-    
-    @media (min-width:769px) and (max-width:1049px) {
-      @include flex-item(33.3333%,stretch,0,0);
-      figure { height:calc(33.333vw - 100px); }
-    }
-    
-    @media (min-width:540px) and (max-width:768px) {
-      @include flex-item(33.3333%,stretch,0,0);
-      figure { height:calc(33.333vw); }
-    }
-    
-    @media (max-width:539px) {
-      @include flex-item(50%,stretch,0,0);
-      figure { height:calc(50vw); }
-    }
-    
-  }
-  .fanart-link { display: block; position:relative;
-    &:after { @include position(absolute,0,0,0,0); background-color:$red; opacity: 0; transition:opacity 0.3s ease; display: block; content:' '; }
-    &:hover { border:none;
-      &:after { opacity: 0.5; }
-    }
-  }
-  .fanart-thumb { width:100%; }
-}
-*/
-
-
-
-.fanart-grid { display:grid; gap:0; justify-content: end; 
-  .fanart-headline { padding: 0.5em 0; grid-column: 1 / -1;  } 
-  a { position: relative;
-    img { width:100%; height:100%; transition:filter 0.3s linear; }
-
-    figcaption { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; padding:$padding;
-      summary { background:$card; padding:$padding; color:$copy; transform:scale(0.1); transition: all 0.3s ease; box-shadow:$boxShadow; opacity: 0; }
-    }
-
-    &:hover {
-      figcaption summary { transform: scale(1); opacity: 1; }
-      h4 { color:$link; }
-      img { filter:brightness(30%); }
-    }
-  }
-  .fanart-out { padding: 1.25em 0; grid-column: 1 / -1; font-size:180%; } 
-}
-
-figure.fanart { @extend %fanart; }
-
 
 @media (max-width:450px) {
   .fanart-grid { grid-template-columns: repeat(2, 1fr); }
@@ -95,3 +56,4 @@ figure.fanart { @extend %fanart; }
     .fanart-headline { padding-left: $padding; padding-right: $padding; }
   }
 }
+*/

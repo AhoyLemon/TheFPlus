@@ -6,7 +6,7 @@ Role: guest
 
 ----
 
-Cover: 
+Cover: img_0080.jpg
 
 ----
 
@@ -14,7 +14,7 @@ Job: Attention Grabber
 
 ----
 
-Text: Tommy has opinions on the casting choices for a Tales From the Crypt reboot
+Text: Tommy was the best at meowing during recordings, and will be missed.
 
 ----
 

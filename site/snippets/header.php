@@ -64,7 +64,7 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?updated=2020-08-15'); ?>
+  <?= css('assets/css/thefplus.css?updated=2020-09-09'); ?>
 
 </head>
 <body>
@@ -86,6 +86,6 @@ o8o        `8   `Y8bood8P'       o888bood8P'   o888o  `Y8bood8P'    `Y8bood8P'  
   
   <?php endif; ?>
   <?= js('assets/js/vendor/jquery-3.5.1.min.js'); ?>
-  <?= js('assets/js/thefplus.min.js?updated=2020-09-03'); ?>
+  <?= js('assets/js/thefplus.min.js?updated=2020-09-09'); ?>
 
   <?php snippet('sidebar') ?>

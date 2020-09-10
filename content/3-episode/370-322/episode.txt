@@ -52,7 +52,7 @@ Provider: SinBucket
 
 Text: 
 
-Sourced from all over the internet, we're singing songs of priase and worship (25 of them to be exact) and we expect you to feel our love deep inside you, except not in a sex way this time.
+Sourced from all over the internet, we're singing songs of praise and worship (25 of them to be exact) and we expect you to feel our love deep inside you, except not in a sex way this time.
 
 This week, The F Plus begins The Upward Spiral.
 
@@ -72,6 +72,7 @@ Bonus-content:
 Wanna take a crack at remixing these? Great. **[here's a zip file](https://drive.google.com/file/d/14SHsbeReusFGSCTXbuVNF5Pbjlzy9b8u/view?usp=sharing) of 6 isolated .ogg files**, plus a document listing each of those files in order. Do whatever you like with them, and then share the results with Lemon.
 
 * [The F Plus on Soundcloud](https://soundcloud.com/thefplus)
+* [Young Ones: The People's Poet](https://www.youtube.com/watch?v=VnZnnkJxoC8) (YouTube)
 
 ----
 
@@ -211,3 +212,7 @@ Chapter-provider: Lemon
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3375.0
