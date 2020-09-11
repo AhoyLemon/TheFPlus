@@ -111,10 +111,17 @@ $(document).ready(function() {
     let artistPage = $(this).attr('artist-page');
     let episodeTitle = $(this).attr('episode-title');
     let episodeURL = $(this).attr('episode-url');
+    let fullWidth = $(this).attr('full-width');
+    let fullHeight = $(this).attr('full-height');
 
     let altText = $(this).children('img').attr('alt');
 
-    let imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    let imgElement;
+    if (fullWidth && fullHeight) {
+      imgElement = `<figure><img src="${src}" alt="${altText}" width="${fullWidth}" height="${fullHeight}" /></figure>`;
+    } else {
+      imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    }
     let figcaption = '<figcaption>';
 
     // Display Artist
@@ -148,9 +155,18 @@ $(document).ready(function() {
   $('.zoom-photo').click(function() {
     let src = $(this).attr('full-size');
     let altText =$(this).children('img').attr('alt');
-    let imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
-    let markup = "";
     
+    let fullWidth = $(this).attr('full-width');
+    let fullHeight = $(this).attr('full-height');
+
+    let imgElement;
+    if (fullWidth && fullHeight) {
+      imgElement = `<figure><img src="${src}" alt="${altText}" width="${fullWidth}" height="${fullHeight}" /></figure>`;
+    } else {
+      imgElement = '<figure><img src="'+src+'" alt="'+altText+'" /></figure>';
+    }
+
+    let markup = "";
     markup += markupOpen;
     markup += imgElement;
     markup += markupClose;
@@ -206,7 +222,7 @@ $(document).ready(function() {
 $(document).on('click', '#CloseModal', function() {
   $('#ImageModal').remove();
 });
-$(document).on('click', '#CloseModalDropsheet', function() {
+$(document).on('click', '#ImageModalDropsheet', function() {
   $('#ImageModal').remove();
 });
 

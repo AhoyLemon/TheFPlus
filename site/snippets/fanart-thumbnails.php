@@ -41,6 +41,8 @@
       <?php if ($artistPage) { echo 'artist-page="' . $artistPage . '" '; } ?>
       <?php if ($episodeTitle) { echo 'episode-title="' . $episodeTitle . '" '; } ?>
       <?php if ($episodeURL) { echo 'episode-url="' . $episodeURL . '" '; } ?>
+      <?php if ($fanart->width()) { echo 'full-width="' . $fanart->width() . '"'; } ?>
+      <?php if ($fanart->height()) { echo 'full-height="' . $fanart->height() . '"'; } ?>
     >
       <img src="<?= $fanartThumbnail; ?>" loading="lazy" width="320" height="320" alt="<?= $altText; ?>" />
     </a>

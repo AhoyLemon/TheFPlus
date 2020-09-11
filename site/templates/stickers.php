@@ -40,9 +40,8 @@
               <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
-                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" width="320" height="320" />
-                    
+                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image" full-width="<?= $sticker->fullsize()->width(); ?>" full-height="<?= $sticker->fullsize()->height(); ?>">
+                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" />
                     <?php if ($sticker->almost_gone == "1") { ?>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="almost-gone">
                         <path d="M-4.3 102l108.6-50.6V102H-4.3z" fill="#333"></path>
@@ -233,8 +232,8 @@
               <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
-                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" loading="lazy" height="320" width="320" />
+                  <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image" full-width="<?= $sticker->fullsize()->toFile()->width(); ?>" full-height="<?= $sticker->fullsize()->toFile()->height(); ?>">
+                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" alt="<?= $sticker->title(); ?>" loading="lazy" height="320" width="320" />
                   </a>
                 <?php } else { ?>
                   <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" loading="lazy" height="320" width="320" />

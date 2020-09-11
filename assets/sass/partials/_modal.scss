@@ -12,11 +12,11 @@
   .image-modal-dropsheet { background:rgba(255,255,255,0.84); @include position(absolute,0,0,0,0); }
   .image-modal-inner { position: relative; background:#fff; box-shadow: 6px 6px 12px rgba(0,0,0,0.4); padding:1rem; }
   .close-modal {
-    position: absolute; top: 0px; right: 0px; color: $black; border: 3px solid currentColor; padding: 0; border-radius: 4px; height: 50px; transform: translate(15%,-15%); background: white;
+    position: absolute; top: 0px; right: 0px; color: $black; border: 3px solid currentColor; padding: 0; border-radius: 4px; height: 50px; transform: translate(15%,-15%); background: white; cursor: zoom-out;
     svg { width:42px; height:42px;
       * { fill:currentColor; }
     }
-    &:hover, &:focus { color:$red; cursor: pointer; }
+    &:hover, &:focus { color:$red; }
   }
   figure { overflow:auto; max-height: 82vh; max-width:calc(100vw - 70px); }
   figcaption { padding-top:1em;
@@ -26,5 +26,5 @@
   }
 
   .image-modal-inner { animation-name: ZoomAnimation; animation-duration: 0.41s; animation-timing-function: cubic-bezier(0.64, 0.57, 0.67, 1.23); }
-  .image-modal-dropsheet { animation-name: ModalAnimation; animation-duration: 0.23s; animation-timing-function:linear; }
+  .image-modal-dropsheet { animation-name: ModalAnimation; animation-duration: 0.23s; animation-timing-function:linear; cursor: zoom-out; }
 }
