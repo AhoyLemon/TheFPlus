@@ -1,7 +1,13 @@
-title: Guess Feed
+title: RSS Feed
 icon: rss-square
 pages: false
 files: false
+options:
+  preview: true
+  status: false
+  template: false
+  url: false
+  delete: false
 fields:
   title:
     label: Title
