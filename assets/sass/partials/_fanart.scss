@@ -14,8 +14,10 @@
       &:hover, &:focus { text-decoration:underline; }
     } 
   }
-  .fanart-out { grid-column:1/-1; padding:1em; background:#fff; box-shadow: 0 0 4px rgba(52,52,52,0.2); }
 }
+
+.fanart-cta { padding:1em; background:#fff; box-shadow: 0 0 4px rgba(52,52,52,0.2); margin-right:$gap; margin-bottom:($gap * 3); }
+
 
 //Fanart grid, wherever it shows up.
 

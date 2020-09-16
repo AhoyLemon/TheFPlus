@@ -31,7 +31,7 @@
   ?>
 
 
-  <main class="main edge-to-edge" role="main">
+  <main class="main edge-to-edge fanart" role="main">
     
     <section class="fanart-grid" <?php if (param('sort')) { echo 'sort="'. param('sort').'"';} ?> >
 
@@ -67,13 +67,6 @@
       </div>
 
       <?php snippet('fanart-thumbnails',  [ 'fanartArray' => $fanartSort ]) ?>
-
-
-      <?php if ($page->text()->isNotEmpty()) { ?>
-        <div class="fanart-out">
-          <?php echo $page->text()->kirbytext(); ?>
-        </div>
-      <?php } ?>
         
     </section>
 
@@ -81,6 +74,12 @@
     <div class="fanart-pagination" style="padding:2rem;">
       <?php snippet('pagination',  [ 'articles' => $fanartSort]) ?>
     </div>
+
+    <?php if ($page->text()->isNotEmpty()) { ?>
+      <div class="fanart-cta">
+        <?php echo $page->text()->kirbytext(); ?>
+      </div>
+    <?php } ?>
     
   </main>
 
