@@ -47,7 +47,7 @@ version="2.0">
                   or 
                   <a href="https://itunes.apple.com/us/podcast/the-f-plus/id334184087">Apple Podcasts</a>
                   or
-                  <a href="https://play.google.com/music/m/Ihlfeggusqrvudj3k22sqrvpmmu?t=The_F_Plus">Google Play Music</a>
+                  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly90aGVmcGwudXMvZXBpc29kZS9mZWVk">Google Podcasts</a>
                   or
                   <a href="https://overcast.fm/itunes334184087/the-f-plus">Overcast</a>
                   or
@@ -56,6 +56,8 @@ version="2.0">
                   <a href="https://radiopublic.com/the-f-plus-GqnR55">Radio Public</a>
                   or
                   <a href="https://castro.fm/podcast/813f4919-6245-464d-a603-fb2b4bf0fbc1">Castro</a>
+                  or
+                  <a href="https://music.amazon.com/podcasts/a973c6d8-1b4b-4e78-bbb9-0a47abb638ec/The-F-Plus">Amazon Podcasts</a>
                   or
                   <a href="https://open.spotify.com/show/76COtISaGDglXLrVGyQ5cE">Spotify</a>
                   or

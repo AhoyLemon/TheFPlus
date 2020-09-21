@@ -1,5 +1,5 @@
 <?php 
-  $date1 = new DateTime('2019-05-18T11:00:00');
+  $date1 = new DateTime('2020-10-24T11:00:00');
   $date2 = new DateTime();
   
   if ($date1 > $date2) {
@@ -16,6 +16,11 @@
 <?= css('assets/24th/css/garbageday.css?updated=2019-05-12'); ?>
 
 <?php if ($page->slug() != "garbage-day-2019-24-terrible-hours-with-the-f-plus") { ?>
+  <div>
+    <pre>
+      <?php var_dump($diff); ?>
+    </pre>
+  </div>
   <aside class="garbage-day <?php if ($IsItGarbageDay == "notYet") { echo 'off-canvas'; } else if ($IsItGarbageDay == "yes") { echo 'today'; } ?>" >
     <?php if ($IsItGarbageDay == "notYet") { ?>
       <div class="time-until">
@@ -46,7 +51,7 @@
     </figure>
     <figcaption>
       <?php if ($IsItGarbageDay == "notYet") { ?>
-        <a href="https://thefpl.us/wrote/garbage-day-2019-24-terrible-hours-with-the-f-plus">
+        <a href="https://thefpl.us/wrote/garbage-day-2020-announcement">
           Garbage Day!
         </a>
       <?php } ?>

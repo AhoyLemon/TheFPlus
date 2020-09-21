@@ -1,0 +1,71 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Garbage Day 2020: Garbage Year",
+  "startDate": "2020-10-24T12:00:00-04:00",
+  "endDate": "2020-10-24T12:00:00-04:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "duration": "24:00:00",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "inLanguage": "English",
+  "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.youtube.com/TheFPlus"
+    },
+  "image": [
+    "https://thefpl.us/wrote/garbage-day-2020-garbage-year/garbage-day-lotsatext.png",
+    "https://thefpl.us/wrote/garbage-day-2020-garbage-year/garbage-day-og-simple.png",
+    "https://thefpl.us/wrote/garbage-day-2020-garbage-year/gd-square.png"
+  ],
+  "description": "A 24 hour online marathon of The F Plus to benefit the National Network of Abortion Funds.",
+  "isAccessibleForFree": true,
+  "offers": null,
+  "performer": 
+  [
+    {
+      "@type": "Organization",
+      "name": "The F Plus",
+      "url": "https://thefpl.us"
+    },
+    {
+      "@type": "Person",
+      "name": "Lemon",
+      "url": "https://ahoylemon.xyz"
+    },
+    {
+      "@type": "Person",
+      "name": "Boots Raingear",
+      "url": "https://thefpl.us/meet/boots-raingear"
+    },
+    {
+      "@type": "Person",
+      "name": "Adam Bozarth",
+      "url": "http://www.adambozarth.com"
+    },
+    {
+      "@type": "Person",
+      "name": "Ironicus",
+      "url": "https://twitter.com/Gen_Ironicus"
+    },
+    {
+      "@type": "Person",
+      "name": "K Thor Jensen",
+      "url": "https://twitter.com/kthorjensen"
+    },
+    {
+      "@type": "Person",
+      "name": "Lou Fernandez",
+      "url": "https://twitter.com/king_lou"
+    },
+    {
+      "@type": "Person",
+      "name": "J.W. Friedman",
+      "url": "https://www.idontevenownatelevision.com"
+    }
+  ],
+  "organizer": {
+    "@type": "Organization",
+    "name": "The F Plus",
+    "url": "https://thefpl.us"
+  }
+}
