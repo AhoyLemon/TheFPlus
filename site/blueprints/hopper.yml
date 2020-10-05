@@ -37,8 +37,14 @@ fields:
             label: Date Submitted
             type: date
             default: today
-            width: 1/2
+            width: 1/4
             format: MM/DD/YY
+          gd_flag:
+            label: Garbage Day?
+            type: checkbox
+            text: flagged
+            width: 1/4
+            icon: trash
           dibs:
             label: Dibs
             type: tags

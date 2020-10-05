@@ -22,7 +22,7 @@ Show-image: true
 
 ----
 
-Episode-file: http://feedproxy.google.com/~r/TheFPlus/~5/Ciw685j9qv4/fplus_wctfm.mp3
+Episode-file: https://thefpl.us/podcasts/fplus_wctfm.mp3
 
 ----
 
@@ -47,3 +47,27 @@ Github-repo:
 ----
 
 Tweet-intent: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Photos: 

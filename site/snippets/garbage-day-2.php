@@ -16,11 +16,6 @@
 <?= css('assets/24th/css/garbageday.css?updated=2019-05-12'); ?>
 
 <?php if ($page->slug() != "garbage-day-2019-24-terrible-hours-with-the-f-plus") { ?>
-  <div>
-    <pre>
-      <?php var_dump($diff); ?>
-    </pre>
-  </div>
   <aside class="garbage-day <?php if ($IsItGarbageDay == "notYet") { echo 'off-canvas'; } else if ($IsItGarbageDay == "yes") { echo 'today'; } ?>" >
     <?php if ($IsItGarbageDay == "notYet") { ?>
       <div class="time-until">

@@ -92,6 +92,16 @@
       <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
         <?php echo $page->text()->kirbytext() ?>
       </summary>
+
+      <!-- Audio File -->
+      <?php if ($page->episode_file()->isNotEmpty()) { ?>
+        <audio style="margin-bottom:2em; width:100%;" controls src="<?= $page->episode_file(); ?>" preload="none">
+        </audio>
+
+        <div style="display:block; margin-bottom:2em;">
+        <a href="<?= $page->episode_file(); ?>" download>Download File</a>
+        </div>
+      <?php }  ?>
     </div>
       
     <?php if ($page->photos() != "") { ?>

@@ -124,12 +124,15 @@ fields:
     type: text
     width: 1/4
     placeholder: BUY NOW
+    
   buy_form_extra_html:
     label: Form Extra HTML
     type: textarea
     buttons: null
     help: like if you need a select or whatever
     width: 1/2
+  
+
 
   products:
     label: Product Series
