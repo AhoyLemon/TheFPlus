@@ -24,6 +24,18 @@ This page was updated Jan 1st, 2019.
 
 The F Plus' logo was modified on June 26th, 2015 to a simpler and derivative-friendly version of the same shapes we've used since the podcast's inception. On this page you'll find a few use cases, the color palette, some files you can download, and a longer explanation and tips.
 
+<style>
+article.blog .content .logo-example { background:#fff; }
+article.blog .content .logo-example figcaption { background:#fff; color:#212121 }
+article.blog .content .logo-example.dark { background:#212121;}
+article.blog .content .logo-example.dark figcaption { color:#ffffff; background:transparent;}
+article.blog figure.swatch {padding-top:100px; }
+article.blog figure.swatch figcaption {color:#212121; }
+article.blog figure.swatch.red {background:#c0282d; }
+article.blog figure.swatch.black {background:#212121; }
+article.blog figure.swatch.white {background:#c6c5d3; }
+</style>
+
 ##### SAMPLE USE
 <div class="logo-examples">
 <figure class="logo-example">

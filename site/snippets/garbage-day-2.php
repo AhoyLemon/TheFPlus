@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
 <?= css('assets/24th/css/garbageday.css?updated=2019-05-12'); ?>
 
-<?php if ($page->slug() != "garbage-day-2019-24-terrible-hours-with-the-f-plus") { ?>
+<?php if ($page->slug() != "garbage-day-2020-announcement") { ?>
   <aside class="garbage-day <?php if ($IsItGarbageDay == "notYet") { echo 'off-canvas'; } else if ($IsItGarbageDay == "yes") { echo 'today'; } ?>" >
     <?php if ($IsItGarbageDay == "notYet") { ?>
       <div class="time-until">
@@ -46,7 +46,7 @@
     </figure>
     <figcaption>
       <?php if ($IsItGarbageDay == "notYet") { ?>
-        <a href="https://thefpl.us/wrote/garbage-day-2020-announcement">
+        <a href="<?= $site->url(); ?>/wrote/garbage-day-2020-announcement">
           Garbage Day!
         </a>
       <?php } ?>

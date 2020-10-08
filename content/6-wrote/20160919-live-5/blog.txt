@@ -1,0 +1,172 @@
+Title: F Plus Live 5
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2016-09-19
+
+----
+
+Time: 10:30
+
+----
+
+Cover: live5_square2.jpg
+
+----
+
+Text: 
+
+** This event is over. For recordings, [go here](https://thefpl.us/episode/live5a).**
+
+It’s the scenario we've all feared. After decades of planning, Finland is finally ready to conquer the Earth. Only one things stands in their way: The participants of a niche podcast not that many people have heard of! Poised outside the building are dozens of nuclear-tipped Angry Birds prepared to launch unless they read material of Montrith’s choosing. There is only one catch: The material may drive them *INSANE!!!* 
+
+### SATURDAY, OCTOBER 1ST
+The night of the event.
+
+Nine hapless F Plus participants will each be handed a package sent directly from Montrith. Inside each package is a terrible piece of writing that they will have to read then and there in front of an audience brave enough to endure it. What sort of horrors await? The only way to know is to come find out.
+
+The show takes place at Grumpy's Downtown on Washington & 11th. The show begins at 9PM and will go long, so expect a late night. Because this is a late event in a bar, that means this is a 21+ event. There is **no cover**.
+
+[Directions on Google Maps](https://goo.gl/maps/XgrPmiotMkJ2)
+[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&dates=20161002T030000Z%2F20161002T070000Z&text=F%20Plus%20Live%205&location=Grumpy%27s%20Downtown&details=https%3A%2F%2Fthefpl.us%2Fwrote%2Flive-5)
+
+(image: live5_night2.jpg class:cover)
+### SUNDAY, OCTOBER 2ND
+And after the show it's the after-party.
+
+Assuming we all survive Finland's greatest attempt at world domination, it will be time for us to party. We've got a private room set up in a different Grumpy's location, and Boots has his custom-built karaoke software ready to go. We're gonna celebrate our newfound independence by screaming the lyrics to Bulls on Parade like a good patriot would. There will be challenges, there will be games, there will be pizza, and there will be drinking.
+
+The afterparty takes place at Grumpy's Roseville on Snelling near Rosedale. We are in the Skybox, which is the big room on the second floor above the bar. The party begins at 7PM and will shut down before midnight. After that, it's back to the hotel room to [drum fill] somebody. This event is also 21+, and again there is **no cover**. If two events with no cover makes you want to buy a Ridiculist a beer, that would be nice.
+
+
+[Directions on Google Maps](https://goo.gl/maps/9U6jUgjcUD52)
+[Add to Google Calendar](http://www.google.com/calendar/event?action=TEMPLATE&dates=20161002T120000Z%2F20161002T160000Z&text=F%20Plus%20Live%20Afterparty&location=Grumpy's%20Roseville&details=https%3A%2F%2Fthefpl.us%2Fwrote%2Flive-5)
+
+##### Posters by the wonderful [Travis Ramsey](https://thefpl.us/meet/travis-ramsey)
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "The F Plus Live 5",
+  "url": "https://thefpl.us/wrote/live-5",
+  "startDate": "2015-10-01T21:00:00-05:00",
+  "endDate": "2015-10-02T02:00:00-05:00",
+  "image": "https://thefpl.us/content/6-wrote/live-5/live5_night1.jpg",
+  "description": "It’s the scenario we all feared. After decades of planning, Finland is finally ready to conquer the Earth. Only one things stands in their way: The participants of a niche podcast not that many people have heard of! Poised outside the building are literally dozens of nuclear-tipped Angry Birds prepared to launch unless they read material of Montrith’s choosing. There is only one catch: The material may drive them INSANE!!!",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1111 S Washington Ave",
+      "addressLocality": "Minneapolis",
+      "addressRegion": "MN",
+      "postalCode": "55415"
+    },
+    "telephone": "612-340-9738",
+    "name": "Grumpy's Downtown",
+    "alternateName": "Grumpy's",
+    "sameAs": [
+      "http://www.grumpys-bar.com/downtown.html",
+      "https://twitter.com/grumpysdt",
+      "https://www.facebook.com/grumpysdt"
+    ],
+    "logo": "http://www.grumpys-bar.com/img/logo.png"
+  },
+  "performer": [
+    {
+      "@type" : "PerformingGroup",
+      "name" : "The F Plus",
+      "url": "https://thefpl.us/",
+      "sameAs": "https://twitter.com/thefplus",
+      "logo": "https://thefpl.us/schemaLogo.png",
+      "alternateName": "The F+",
+      "image": [
+        "https://lh3.googleusercontent.com/Unm-68-X78iIZuJLhIftCKBHhpGpQh2X8AgmZmJGXh9m=w1266-h949-no",
+        "https://lh3.googleusercontent.com/-hJoGqAczhwvw5wshiIiV4lxvvdIGoJO1n_7R4VLgxzV=w1266-h949-no",
+        "https://lh3.googleusercontent.com/v5ZbR_A9pyaj7ERJK7qCYrfg6aN02u4--S17-qLlX5AP=w1266-h949-no"
+      ]
+    },
+    {
+      "@type" : "PerformingGroup",
+      "name" : "I Don't Even Own A Television",
+      "url": "http://idontevenownatelevision.com/",
+      "sameAs": [
+          "https://twitter.com/IDEOTVPod",
+          "http://www.idontevenownatelevision.com/"
+          ]
+    }
+  ],
+  "offers": {
+    "@type" : "Offer",
+    "availability" : "http://schema.org/LimitedAvailability",
+    "url": "https://thefpl.us/wrote/live-5",
+    "price": "0"
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Event",
+  "name": "The F Plus Live 5: Afterparty",
+  "url": "https://thefpl.us/wrote/live-5",
+  "startDate": "2015-10-02T19:00:00-05:00",
+  "endDate": "2015-10-05T23:00:00-05:00",
+  "image": "https://thefpl.us/wrote/an-f-plus-live-invitation/5cover-temp.jpg",
+  "description": "And after the show, it's the after party. And after the party it's the hotel lobby. And round about 4 you gotta clear the lobby. Then take it to the room and [drum fill] somebody.",
+  "location": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2801 Snelling Ave",
+      "addressLocality": "Roseville",
+      "addressRegion": "MN",
+      "postalCode": "55113"
+    },
+    "telephone": "(651) 379-1180",
+    "name": "Grumpy's Roseville",
+    "alternateName": "Grumpy's",
+    "sameAs": [
+      "http://www.grumpys-bar.com/downtown.html",
+      "https://twitter.com/grumpysdt",
+      "https://www.facebook.com/grumpysdt"
+    ],
+    "logo": "http://www.grumpys-bar.com/img/logo.png"
+  },
+  "performer": [
+    {
+      "@type" : "PerformingGroup",
+      "name" : "The F Plus",
+      "url": "https://thefpl.us/",
+      "sameAs": "https://twitter.com/thefplus",
+      "logo": "https://thefpl.us/schemaLogo.png",
+      "alternateName": "The F+"
+    },
+    {
+      "@type" : "PerformingGroup",
+      "name" : "I Don't Even Own A Television",
+      "url": "http://idontevenownatelevision.com/",
+      "sameAs": [
+          "https://twitter.com/IDEOTVPod",
+          "http://www.idontevenownatelevision.com/"
+          ]
+    }
+  ],
+  "offers": {
+    "@type" : "Offer",
+    "availability" : "http://schema.org/LimitedAvailability",
+    "url": "https://thefpl.us/wrote/live-5",
+    "price": "0"
+  }
+}
+</script>
+
+----
+
+Tags: f plus live,announcement,thanks montrith

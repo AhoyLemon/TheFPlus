@@ -6,7 +6,7 @@ Role: submitter
 
 ----
 
-Cover: puppy-time.jpg
+Cover: puppytime.jpg
 
 ----
 
