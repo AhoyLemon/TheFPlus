@@ -1,0 +1,109 @@
+Title: Tattoos
+
+----
+
+Cover: linda_square.jpg
+
+----
+
+Date: 2017-10-09
+
+----
+
+Time: 16:45
+
+----
+
+Product-image-type: maxheight
+
+----
+
+Figure-bg: tattoo_skin.jpg
+
+----
+
+Cast: Sanguinary Novel
+
+----
+
+Text: This is a piece of merch we should have thought of earlier. These are limited edition temp tattoos, they'll last you about a week.
+
+----
+
+Products: 
+
+- 
+  pic: t1_thumb.png
+  fullsize: t1_full.jpg
+  title: Ball Snake
+  series_num: "1"
+  artist: Sanguinary Novel
+  printed: "50"
+  dimensions: 2.3"x3"
+  material: ""
+  reference: ""
+  released: 2017-08-26
+  soldout: 2018-05-07
+  buy_type: multiple
+  price: ""
+  single_slug: ""
+  single_buttontext: ""
+  buttona_num: "1"
+  buttona_price: "4"
+  buttona_slug: H6SBLYNK9KGY6
+  buttonb_num: "3"
+  buttonb_price: "10"
+  buttonb_slug: YP58A4AADYN5L
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: t2_thumb.png
+  fullsize: t2_full.jpg
+  title: A Bitch Named Linda
+  series_num: "2"
+  artist: Sanguinary Novel
+  printed: "50"
+  dimensions: 2.6" x 3"
+  material: ""
+  reference: "177"
+  released: 2017-10-09
+  soldout: ""
+  buy_type: multiple
+  price: ""
+  single_slug: ""
+  single_buttontext: ""
+  buttona_num: "1"
+  buttona_price: "4"
+  buttona_slug: 8QTA7KN2RB6A8
+  buttonb_num: "3"
+  buttonb_price: "10"
+  buttonb_slug: 69RHHTF2P34CN
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+
+----
+
+Photos-leadin: People with terrifying tattoos
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: s1_butt.jpg
+  desc: Achilles Heelies tramp stamp
+- 
+  series_num: "2"
+  pic: s2_lemonandkid.jpg
+  desc: lemon and kid
+
+----
+
+Share-cta: Want to show off your tattoo? Send a photo to [Lemon](/meet/lemon).
+
+----
+
+Tags: merch,illustrator,our fans rule

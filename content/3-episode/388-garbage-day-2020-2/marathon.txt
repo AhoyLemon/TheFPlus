@@ -1,0 +1,178 @@
+Prevnext: 
+
+----
+
+Title: Garbage Day 2020 (hours 7-12)
+
+----
+
+Cover: 02.jpg
+
+----
+
+Record-date-start: 2020-10-24
+
+----
+
+Record-time-start: 17:00
+
+----
+
+Record-date-end: 2020-10-24
+
+----
+
+Record-time-end: 22:50
+
+----
+
+Date: 2020-11-09
+
+----
+
+Time: 13:54
+
+----
+
+Featured-site: finewaters.com,rappad.co,wikihow.com,literotica.com,veggieboards.com,popthatzit.com
+
+----
+
+Text: This garbage year needs a Garbage Day! For our second block, Lemon's gonna take The Intern to Water School, and then we all get to experience true joy (and plenty of verbal abuse) as we Enter The Rap Pad (36 Chambers). We unveil our own home game edition of wikiHow The Game Show, and that goes so well that we lock Jack Chick alone in a room for an hour while we go do something else.  Angry vegetarians come next, and they're infinitely more likeable than the acne fetishists that come afterwards.  Don't sleep, there's nothing to dream about.
+
+----
+
+Hours: 
+
+- 
+  hour: "7"
+  name: Water School
+  provider: 'Lesbiathan, dijon du jour & The Heavenator'
+  document_link: >
+    https://docs.google.com/document/d/1-rKMhS5jx9Qh0pLdW22cia-rlY8jC9pgRxk6W5eKzFI/edit?usp=sharing
+  cast: >
+    Lemon,Boots Raingear,Nutshell Gulag,The
+    Intern,J W Friedman,K Thor Jensen
+  artist: Jimmyfranks
+  youtube_url: ucjuRyTIe0E
+  text: |
+    What are Water Sommeliers? Well, they're like normal sommeliers, but for water.
+    
+    Why are water sommeliers? Because nitwits have way too much money. We're gonna read some ad copy of different bottled water brands, read some very opinionated screeds about how restaurants should be handling ice and water glasses in restaurants get some advice on what water to pair with what foods, and finally we'll read the bios of the world's leading water experts. No wait, not experts in a way that's actually valuable to humanity - just guys with expensive water to sell you.
+- 
+  hour: "8"
+  name: Enter The Rap Pad
+  provider: 'Bunnybread ft. Lemon & Boots Raingear'
+  document_link: >
+    https://docs.google.com/document/d/1CBhapQhcIE9vP0U2Py-_tZNP9cgT0FksEWDYcvgQ_Js/edit?usp=sharing
+  cast: "Bunnybread,Boots Raingear,Achilles' Heelies,Jack Chick,Lemon,J W Friedman"
+  artist: K Thor Jensen
+  youtube_url: sPQeXWaQyXM
+  text: |
+    The longest theme song is a prelude to what may be the most joyous hour. Bunnybread's got the mic and he's not letting go of it for quite a while as he invites you all to enter the Rap Pad (36 Chambers).
+    
+    Everyone's gonna get like half a dozen nicknames and then taunted with trivia questions while tehy tentatively put toes on the stage for battle raps. Brrt brrt, car go skrrt skrrt! Did you think that battle raps and Mad Libs were somehow incompatable with each other, because you were a wrong idiot for thinking that. This next one's about my midterm exams.
+- 
+  hour: "9"
+  name: wikiHow The Home Game (Round 1)
+  provider: Adam Bozarth
+  document_link: ""
+  cast: >
+    Lemon,Boots Raingear,Adam
+    Bozarth,Bunnybread,Frank West,Lou
+    Fernandez,J W Friedman
+  artist: Sanguinary Novel
+  youtube_url: gipuxPQtpQU
+  text: |
+    Similar to F Plus Live In Portland, this is a game show with random content. One by one, six contestants come up to the stage (introduced by Bunnybread) and push the button. Then we deal with the lag, and THEN that contestants has FIVE MINUTES to do whatever they like with the material given to them.
+    
+    Once all six contestants have read, we turn the voting over to our live audience to decide, in real time, who was the best of all of them. The winner of this event will go on to play in The Championship Round later in the marathon.
+- 
+  hour: "10"
+  name: "Jack Chick's Porno Poetry Prison"
+  provider: Yavuz Sultan Selim
+  document_link: 'https://docs.google.com/document/d/1wcYkcw5T6gXB95VqVkZWfN_hcFVUYDqH9W_xRJ-iKPY/edit#heading=h.qgz7rfn514u0'
+  cast: Jack Chick
+  artist: Lou Fernandez
+  youtube_url: tuOrenv7f8Q
+  text: |
+    With all our high-energy hours, everyone is in pretty good spirits, and that means there's only one thing to do: Lock Jack Chick alone in the recording studio and force him to read pornographic "Night Before Christmas" poems, one by one, all by himself, for an hour.
+- 
+  hour: "11"
+  name: Veggie Boards
+  provider: 'Lesbiathan & The Heavenator'
+  document_link: >
+    https://docs.google.com/document/d/1V6d2BVImaAtV9AId-4iA5k5chvw0_NEpSBkGz-VVnzQ/edit?usp=sharing
+  cast: >
+    Lemon,bumpgrrl,Bunnybread,John Toast,Lou
+    Fernandez,Zarla,JT
+  artist: Adam Bozarth
+  youtube_url: kPZCTjlj90o
+  text: |
+    After a song about veganism and Mario Party, it's time for us to venture to the veggie boards. The forum posters are going to opine about their moral and intellectual superiority that comes from their diet, and then they'll share some delicious recipes. And by delcious, I mean the opposite of that.
+    
+    Then some teens are gonna talk trash.
+- 
+  hour: "12"
+  name: Acne Lovers
+  provider: eudo
+  document_link: >
+    https://docs.google.com/document/d/1AvDN36s9NBeEhVFEjiPW8OeaYeRtOPcT9EXSYu0oiH8/edit?usp=sharing
+  cast: >
+    Boots
+    Raingear,Lemon,bumpgrrl,Isfahan,John
+    Toast,Zarla,JT
+  artist: King Kalamari
+  youtube_url: p3a_hdMkZoM
+  text: |
+    Let's have another super gross hour! We're going to a site called PopThatZit, who have realized not only do they really really really like popping zits, they also insist that YOU like popping zits as well.
+    
+    Their particular interest starts out as non-sexual, but that doesn't last long as Boots really struggles to keep this one on the rails. If you're gonna skip over all the gross content, eventually you'll reach the end of the doc.
+
+----
+
+Cast: Lemon,Boots Raingear,Nutshell Gulag,The Intern,J W Friedman,K Thor Jensen,Jimmyfranks,Achilles' Heelies,Bunnybread,Jack Chick,Adam Bozarth,Frank West,Lou Fernandez,Sanguinary Novel,John Toast,bumpgrrl,Zarla
+
+----
+
+Provider: The Lesbiathan,dijon du jour,Heavenator,Bunnybread,Lemon,Boots Raingear,Adam Bozarth,Yavuz Sultan Salim,eudo
+
+----
+
+Tags: garbage day,24 terrible hours,the problems of the upper class,recipes,nerds singing into mics,musicate my lyrics bro,christmas,wikihow,game show,forums,gross
+
+----
+
+Leadout: 
+
+We're halfway through. In [part 3](/episode/garbage-day-2020-3), you're gonna get a *whole lot* of Extra Credit, and you're definitely not gonna get a Daniel Songer impression.
+
+Enjoying this music? [Get it on a slap bracelet](https://thefpl.us/merch/slap-bracelets).
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://www.youtube.com/playlist?list=PLbDEABAdDXRX5CuBGtgbeJQS9wBWEg5yR
+  text: YouTube Playlist
+  target_blank: "1"
+- 
+  url: >
+    https://photos.app.goo.gl/qzJvjDjBb8K7veVN6
+  text: Stream Images
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/ExDPPyTK1wKtXngu9
+  text: Break Images
+  target_blank: "0"
+- 
+  url: https://thefpl.us/also-made/stickers
+  text: Stickers
+  target_blank: "0"
+- 
+  url: https://thefpl.us/merch/slap-bracelets
+  text: Soundtrack Slap Bracelets
+  target_blank: "0"

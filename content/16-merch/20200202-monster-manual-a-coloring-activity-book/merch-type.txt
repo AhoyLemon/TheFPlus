@@ -1,0 +1,148 @@
+Title: Monster Manual: A Coloring & Activity Book
+
+----
+
+Date: 2020-02-02
+
+----
+
+Time: 15:15
+
+----
+
+Cover: book-square.jpg
+
+----
+
+Show-image: false
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Cast: Sauce,Spooks,Adam Bozarth,King Kalamari,Lemon
+
+----
+
+Baseprice: 9
+
+----
+
+Text: 
+
+A couple months ago I had the idea of producing a coloring & activity book as an item of merch, but I had no idea it would turn out as great as this.
+
+With art provided by **Sauce**, **Spooks**, **Adam Bozarth**, **King Kalamari**, **Lemon** and **Portaxx**, The Monster Manual is 28 pages of 9"x6" colorable delights, like The Warning Of The Fetish Mimic, the many creatures of Terra Incognito Tab (including Ice Chewer, Glove Collector, and Cuddlebugs) Juggalo James Joyce's Poetry Workshop, a smoking game *and* a drinking game, a butt plug maze, real Reptilian feet, and so so much more. This book is an absolute delight.
+
+28 thick matte pages have been tested with crayon, colored pencil, Sharpie and Rollerball, and these books were happy to absorb all of it. The outside is a glossy cover with full color designs by Sauce and Spooks respectively.
+
+Base price of each book is $9 with your price adjusted for postage. Books will be shipped first class mail in a white 9x6 envelope. If you want a bulk discount contact Lemon directly.
+
+----
+
+Tags: merch
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: covers-mock-small.jpg
+  desc: mock up of the front and back covers
+  full_size: covers-mock.jpg
+- 
+  series_num: ""
+  pic: covers-small.jpg
+  desc: >
+    photo of front and back covers of the F
+    Plus Monster Manual
+  full_size: covers.jpg
+- 
+  series_num: ""
+  pic: in1-small.jpg
+  desc: 'pages 2 & 3'
+  full_size: in1.jpg
+- 
+  series_num: ""
+  pic: in2-small.jpg
+  desc: 'pages 6 & 7'
+  full_size: in2.jpg
+- 
+  series_num: ""
+  pic: in3-small.jpg
+  desc: 'pages 8 & 9'
+  full_size: in3.jpg
+- 
+  series_num: ""
+  pic: in4-small.jpg
+  desc: 'pages 16 & 17'
+  full_size: in4.jpg
+- 
+  series_num: ""
+  pic: in5-small.jpg
+  desc: 'pages 26 & 27'
+  full_size: in5.jpg
+- 
+  series_num: ""
+  pic: sauce-adramalech-small.jpg
+  desc: page 3, colored by Sauce
+  full_size: sauce-adramalech-big.jpg
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 0
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: C8PDQ7KXB23GY
+
+----
+
+Buy-price: 9
+
+----
+
+Button-text: 
+
+----
+
+Buy-form-extra-html: 
+
+<table>
+<tr><td><input type="hidden" name="on0" value="Ship To">Ship To</td></tr><tr><td><select name="os0">
+	<option value="United States">United States $11.00 USD</option>
+<!--	<option value="Canada">Canada $13.00 USD</option> -->
+	<option value="Anywhere Else">Anywhere Else $15.00 USD</option>
+</select> </td></tr>
+</table>
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: Here's some photos of monsters
+
+----
+
+Share-cta: After making your own creations with this coloring book, do please share them in [the ball pit thread](https://ballp.it/index.php?topic=3326.0).

@@ -1,0 +1,96 @@
+Title: Limited Edition Buttons
+
+----
+
+Date: 2018-01-09
+
+----
+
+Time: 16:14
+
+----
+
+Cover: 27-soldout.jpg
+
+----
+
+Cast: Rachelle Skinner
+
+----
+
+Text: These limited edition buttons are a 2.25" circle, have a weather resistant plastic front and a durable steel pinback. Comes shipped in a small, bubble-padded envelope. Shipping included. Now buy some.
+
+----
+
+Tags: merch
+
+----
+
+Products: 
+
+- 
+  pic: button-small.jpg
+  fullsize: button-big.jpg
+  title: Love Yourself
+  series_num: "1"
+  artist: Rachelle Skinner
+  printed: "100"
+  dimensions: 2.25"
+  released: 2018-01-09
+  soldout: 2018-12-06
+  buy_type: multiple
+  price: ""
+  single_slug: ""
+  single_buttontext: ""
+  buttona_num: "1"
+  buttona_price: "5"
+  buttona_slug: WCNX4UME2X75C
+  buttonb_num: "2"
+  buttonb_price: "7"
+  buttonb_slug: JHE6BAH82PQGY
+  buttonc_num: "5"
+  buttonc_price: "10"
+  buttonc_slug: 89H4ZWM8ADPF8
+  material: ""
+  reference: "264"
+
+----
+
+Photos-leadin: Photos of buttons in the world
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: s1-on-bag.png
+  desc: button on messenger bag
+- 
+  series_num: "1"
+  pic: s1-on-hoodie.jpg
+  desc: button on hoodie
+- 
+  series_num: "1"
+  pic: s1-bag-of.jpg
+  desc: bag of buttons
+- 
+  series_num: "1"
+  pic: s1_targetrack.jpg
+  desc: on a target birthday card rack
+- 
+  series_num: "1"
+  pic: z_anotherhoodie.jpg
+  desc: on another hoodie
+
+----
+
+Share-cta: Have your own photo share? Send it to [Lemon](/meet/lemon).
+
+----
+
+Product-image-type: square
+
+----
+
+Figure-bg: 

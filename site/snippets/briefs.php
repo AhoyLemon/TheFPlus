@@ -16,7 +16,7 @@
           $altText = "Bonus Episode: " . $article->title();
         }
         
-      } else if ($briefType == "also-made") {
+      } else if ($briefType == "also-made" || $briefType == "merch") {
         if ($article->template() == "stickers" || $article->template() == "merch-type") {
           $category = "merch";
         } else {
@@ -162,13 +162,13 @@
           </h2>
         </div>
 
-        <?php if ($briefType == "wrote" || $briefType == "also-made") { ?>
+        <?php if ($briefType == "wrote" || $briefType == "also-made" || $briefType == "merch") { ?>
           <figcaption>
             <div class="description">
               <?php if ($briefType == "wrote") {
                 echo excerpt($article->text(), 420);
-              } else if ($briefType == "also-made") {
-                echo excerpt($article->text(), 220);
+              } else {
+                echo excerpt($article->text(), 265);
               } ?>
             </div>
           </figcaption>

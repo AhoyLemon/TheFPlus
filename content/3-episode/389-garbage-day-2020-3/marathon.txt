@@ -1,0 +1,166 @@
+Prevnext: 
+
+----
+
+Title: Garbage Day 2020 (Hours 13-18)
+
+----
+
+Featured-site: etsy.com,freezeraypoetry.com,venicerp.com,tumblr.com,fandom.com
+
+----
+
+Date: 2020-11-09
+
+----
+
+Time: 13:58
+
+----
+
+Cover: 03.jpg
+
+----
+
+Cast: Achilles' Heelies,Boots Raingear,Adam Bozarth,bumpgrrl,John Toast,Isfahan,Zarla,King Kalamari,Kumquatxop,Hux,Shell Game,Lesbiatahn,Positive Stress,Ganymede,Dijon Du Jour,Turtle,Sanguinary Novel,Malt,Portaxx
+
+----
+
+Provider: Secret Gaygent 69,Mix,dijon du jour,Shell Game,Adam Bozarth,cryptid
+
+----
+
+Text: We're in the night shift! We'll start things off spooky with haunted dolls and questionable stand up comedy, before handing the microphones over to Extra Credit for their four hour block.
+
+----
+
+Tags: garbage day,24 terrible hours,for boys and ghouls,etsy,hey guys,poetry,nerds,historical inaccuracies,oh you must be a killer,pokemon
+
+----
+
+Record-date-start: 2020-10-24
+
+----
+
+Record-time-start: 23:00
+
+----
+
+Record-date-end: 2020-10-25
+
+----
+
+Record-time-end: 04:05
+
+----
+
+Hours: 
+
+- 
+  hour: "13"
+  name: Haunted Dolls on Etsy
+  provider: cryptid
+  document_link: ""
+  cast: "Achilles' Heelies,Boots Raingear,Adam Bozarth,bumpgrrl,John Toast,Isfahan,Zarla"
+  artist: King Kalamari
+  youtube_url: 2v81sb0ppBY
+  text: |
+    Let's get spooky! A-chill-ees Hell-ees takes us down a road of stupid terror as we learn about purchasable dolls with an actual, real human soul locked inside. What a gem! These dolls all have considerable backstory, and no refunds.
+    
+    There's also a little bit of haunted jewelry
+- 
+  hour: "14"
+  name: The Daniel Songer Comedy Hour
+  provider: Adam Bozarth
+  document_link: >
+    https://docs.google.com/document/d/1t3PigKGI80yqnf_Gcf4a9m-vSKPjROHy0JLdkVtpwtE/edit?usp=sharing
+  cast: "Adam Bozarth,Boots Raingear,Achilles' Heelies,Isfahan,Kumquatxop,Zarla"
+  artist: Hux
+  youtube_url: lm0A9GAdJ_Q
+  text: |
+    We've been anticipating it for months, and this is the Daniel Songer Comedy Hour. If you don't know who Daniel Songer is, this hour might be the best introduction. He's a comedian with a number of routines, but more than that - he's a comedian with a certain performance style.
+    
+    Adam Bozarth has collected the text of some of these routines, and his only rule: No doing a Daniel Songer impression.
+- 
+  hour: "15"
+  name: FreezeRay Poetry
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/13qtxu4lfRhEp5bQOUQdM1DlIBvWPIPMLpkh8dkpRt70/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Positive
+    Stress,Ganymede,dijon du jour,Turtle
+  artist: Hux
+  youtube_url: m_aCA_WsPsI
+  text: |
+    The Extra Credit hours begin here. We're on a Weebly site called FreezeRay Poetry, which describes itself as "words for nerds by nerds", so that means you're going to get terse, almost religious poetry about Game of Thrones, Iron Chef, Harry Potter, Mindy Kaling and the McElroy brothers.
+- 
+  hour: "16"
+  name: Historical Erotic Roleplay
+  provider: 'dijon du jour & Shell Game'
+  document_link: >
+    https://docs.google.com/document/d/1k7jyf2BmfQM8GJ8tXelrAO9UpKhVmOjwcejLfqUkVM0/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Positive
+    Stress,Ganymede,dijon du jour,Turtle
+  artist: Sanguinary Novel
+  youtube_url: TfcAsHOAI7E
+  text: "Our second Extra Credit hour begins here, and the EC folks return to a website I forget the name of in older to read the most erotic stores of Ye Olde Tymes. Although, between you and me, it's *mostly* Hamilton."
+- 
+  hour: "17"
+  name: Cardiophiles
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1LZjMAYwIISJ7Vt-5hn5I8NKbfH71M0S4ETID-6w9e68/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Mix,The
+    Heavenator,Malt,Sanguinary Novel
+  artist: Dijon Du Jour
+  youtube_url: juY2nfaoNmo
+  text: >
+    Our third Extra Credit hour brings us to
+    the terrible world of heart fetishists.
+- 
+  hour: "18"
+  name: Elizabeth Storybook
+  provider: Secret Gaygent 69
+  document_link: >
+    https://docs.google.com/document/d/1oVrv4VpJHkjczJsJC0J6yrhZDV5VTnBBGbhajUrmB0U/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Mix,The
+    Heavenator,Malt,Sanguinary Novel,Portaxx
+  artist: Dijon Du Jour
+  youtube_url: iuRIcMw16AU
+  text: "This is our final Extra Credit hour, so let's get to the Pokemon fanon."
+
+----
+
+Leadout: We've been on quite an adventure, haven't we? Well, let's close this out with [the last block](https://thefpl.us/episode/garbage-day-2020-4) of hours, where we've got recipes, magick, champions, and people sucking their own dicks.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://www.youtube.com/playlist?list=PLbDEABAdDXRX5CuBGtgbeJQS9wBWEg5yR
+  text: YouTube Playlist
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/qzJvjDjBb8K7veVN6
+  text: Stream Images
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/ExDPPyTK1wKtXngu9
+  text: Break Images
+  target_blank: "0"
+- 
+  url: https://thefpl.us/also-made/stickers
+  text: Stickers
+  target_blank: "0"
+- 
+  url: https://thefpl.us/merch/slap-bracelets
+  text: Soundtrack Slap Bracelets
+  target_blank: "0"

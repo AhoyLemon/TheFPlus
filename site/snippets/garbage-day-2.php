@@ -8,7 +8,7 @@
   } else {
     $IsItGarbageDay = "yes";
   }
-
+  $IsItGarbageDay = "yes";
 ?>
 
 

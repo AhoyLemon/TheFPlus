@@ -1,0 +1,177 @@
+Prevnext: 
+
+----
+
+Title: Garbage Day 2020 (Hours 19-24)
+
+----
+
+Cover: 04.jpg
+
+----
+
+Record-date-start: 2020-10-25
+
+----
+
+Record-time-start: 05:00
+
+----
+
+Record-date-end: 2020-10-25
+
+----
+
+Record-time-end: 11:00
+
+----
+
+Date: 2020-11-09
+
+----
+
+Time: 
+
+----
+
+Featured-site: instructables.com,usenet,solosuck.com,beliefnet.com,wikihow.com,bad-dragon.com
+
+----
+
+Text: The final block of hours lies ahead of us. We've got inedible recipes from Instructables, exaggerated hate over Barney the Dinosaur, people sucking their own dicks, magickal nonsense, the champions round of wikiHow the Home Game, and then it's our final hour.
+
+----
+
+Hours: 
+
+- 
+  hour: "19"
+  name: Recipes From Instructables
+  provider: A Meat
+  document_link: >
+    https://docs.google.com/document/d/16l3bST0witMvAVmK_I3jtv5_ne2ZEJ6J2ZbOhNVVxyo/edit?usp=sharing
+  cast: >
+    Nutshell Gulag,Lemon,Jack Chick,John
+    Toast,Portaxx,Sanguinary Novel
+  artist: Moxie Ramsey
+  youtube_url: JyAINodZr4o
+  text: |
+    The F Plus crew is back! And Nutshell Gulag just rolled out her best Julia Child impression to bring us some instructables unfit for human consumption. There's a whole bunch of recipes in this hour, and all of them have pictures, and all of those pictures are a bummer.
+    
+    Beep beep! Here comes Guy Ferrari!
+- 
+  hour: "20"
+  name: "Let's Kill Barney"
+  provider: Darkly
+  document_link: >
+    https://docs.google.com/document/d/1Whlv2a3WfSSsJCzw_-_HP1Tf6e5i97jdCKJNALioEqQ/edit?usp=sharing
+  cast: >
+    John Toast,Lemon,Frank West,Jack
+    Chick,Portaxx,Sanguinary Novel,Nutshell
+    Gulag
+  artist: Moxie Ramsey
+  youtube_url: iD-YCmykRrQ
+  text: |
+    Just in case you thought the internet ever wasn't stupid, John Toast has some counterevidence for you. We're looking at some ridiculously old content from usenet where people constructed increasingly elaborate murder fantasies involving the cast of the early 90's children's television show Barney & Friends.
+    
+    It is the 90s, and there is time for killing Barney.
+- 
+  hour: "21"
+  name: Autofellatio
+  provider: Ray Thompson
+  document_link: >
+    https://docs.google.com/document/d/1rMx84TSyk4xDuB63oymGdp-2_UHdI3jS3SEAMVHnLLE/edit
+  cast: >
+    Boots Raingear,Frank West,Jack
+    Chick,Kumquatxop,Nutshell
+    Gulag,Portaxx,Montrith
+  artist: Sauce
+  youtube_url: d_TBoxVDW08
+  text: "We're getting close to the end, and your host for the hour Boots Raingear realizes he's going to be spending an hour with the autofellatio-focused website SelfSuck, and so does his very best to do everything in his power to distract his readers from reading content from the autofellatio-focused website SelfSuck."
+- 
+  hour: "22"
+  name: A Spiritual Journey
+  provider: Digital Walnut
+  document_link: >
+    https://docs.google.com/document/d/1HKimaHs2pqD76xNl3e2zPFCFZmHLLIKZN9OincD2gTU/edit?usp=sharing
+  cast: >
+    Portaxx,Boots Raingear,Bunnybread,Frank
+    West,Isfahan,Kumquatxop,Montrith,Shell
+    Game
+  artist: Sauce
+  youtube_url: Xa5gZ9OoLME
+  text: "Do you feel that? There's a powerful spirit in this hour, and it goes by the name of Portaxx. We're taking a spiritual journey through BeliefNet, Mystic Board, and the Spiritual Forums to get some confusing questions and really unhelpful answers."
+- 
+  hour: "23"
+  name: >
+    wikiHow The Home Game (Championship
+    Edition)
+  provider: 'Adam Bozarth & Lemon'
+  document_link: ""
+  cast: "Lemon,Achilles' Heelies,Jimmyfranks,Kumquatxop,K Thor Jensen,Shell Game,J W Friedman"
+  artist: Portaxx
+  youtube_url: fijBnIeh5wI
+  text: |
+    Nearly the final hour, and we're back to wikiHow The Game Show, and Lemon kind of sort of figured out how to adjust for the lag in the game show board software. But anyway! We've got six more contestants who one by one are gonna get 5 minutes apiece to do whatever they can with the content provided to them.
+    
+    Our returning champion (from Hour 9) JW Friedman defends his title against the Portland winners and SOMEBDOY is gonna read some Type O Negative lyrics.
+- 
+  hour: "24"
+  name: The Final Hour
+  provider: 3viltiki
+  document_link: >
+    https://docs.google.com/document/d/1bI67OgoMfyF8GSsTsQWAGSvAhQMZm9hw99lScvUiheA/edit?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Adam
+    Bozarth,Bunnybread,Jimmyfranks,John
+    Toast,Kumquatxop
+  artist: Portaxx
+  youtube_url: WTrHdSKTnsA
+  text: |
+    We're genuinely all pretty giddy at this point, so our final is maybe 10 minutes of amazement over how stoked people are about the offer of rocks. But that's all okay, because once that all wears off, we're going to be reading about monster dicks. Descriptions of monster dicks, fanfiction stories about dragon dicks, and proposals for future dragon dicks.
+    
+    Enjoy your rocks.
+
+----
+
+Cast: Nutshell Gulag,Lemon,Jack Chick,John Toast,Portaxx,Sanguinary Novel,Moxie Ramsey,Frank West,Boots Raingear,Montrith,Sauce,Shell Game,Achilles' Heelies,Jimmyfranks,Kumquatxop,K Thor Jensen,J W Friedman
+
+----
+
+Provider: 3viltiki,Adam Bozarth,Lemon,Digital Walnut,Ray Thompson,Darkly,A Meat
+
+----
+
+Tags: garbage day,24 terrible hours,recipes,it likpates,watching too much television,magick,wikihow,game show,dragons
+
+----
+
+Leadout: You made it to the end? Or you just scrolled all the way to the bottom of this page. Either way, congratulations. Treat yourself to [a slap bracelet](https://thefpl.us/merch/slap-bracelets) and [a sticker](https://thefpl.us/also-made/stickers).
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://www.youtube.com/playlist?list=PLbDEABAdDXRX5CuBGtgbeJQS9wBWEg5yR
+  text: YouTube Playlist
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/qzJvjDjBb8K7veVN6
+  text: Stream Images
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/ExDPPyTK1wKtXngu9
+  text: Break Images
+  target_blank: "0"
+- 
+  url: https://thefpl.us/also-made/stickers
+  text: Stickers
+  target_blank: "0"
+- 
+  url: https://thefpl.us/merch/slap-bracelets
+  text: Soundtrack Slap Bracelets
+  target_blank: "0"

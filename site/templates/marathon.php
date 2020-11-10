@@ -65,32 +65,15 @@
 
             <header>
               <h2 class="block-title">HOUR <?php echo $hour->hour(); ?>: <?php echo $hour->name(); ?></h2>
-              <?php /*
-              <h5>
-                <?php if ($hour->document_link()) { ?>
-                  <a href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
-                    <span>Document</span>
-                  </a>
-                <?php } ?>
-                provided by 
-                <?php echo $hour->provider(); ?>
-              </h5>
-              */ ?>
             </header> 
+
             <div class="video-holder">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $hour->youtube_url(); ?>?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/<?php echo $hour->youtube_url(); ?>?rel=0&controls=1&modestbranding=1&showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
 
             <div class="detail-holder">
-              <h5>
-                <?php if ($hour->document_link()) { ?>
-                  <a href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
-                    <span>Document</span>
-                  </a>
-                <?php } ?>
-                provided by 
-                <?php echo $hour->provider(); ?>
-              </h5>
               <ul class="cast authors ridiculists info-block">
                 <?php 
                   $readers = explode(",", $hour->cast());
@@ -114,26 +97,34 @@
                   <?php if ($site->find($alink)) { ?>
                     <a href="<?php echo $site->url(); ?>/<?php echo $alink; ?>">
                       <span>
-                        <?php echo $hour->artist(); ?>
+                        <?php echo $hour->artist() . '.' ; ?>
                       </span>
                     </a>
                   <?php } else { ?>
                     <span>
-                      <?php echo $hour->artist(); ?>
+                      <?php echo $hour->artist() . "."; ?>
                     </span>
                   <?php } ?>
                 </div>
               <?php } ?>
+
               <summary>
-                <?php /* if ($hour->provider() != "" && $hour->document_link() != "") { ?>
-                  <a class="action read" href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
-                    <svg viewBox="0 0 100 100">
-                      <use xlink:href="#IconDocument"></use>
-                    </svg>
-                  </a>
-                <?php } */ ?>
                 <?php echo $hour->text()->kirbytext(); ?>
               </summary>
+
+              <?php if ($hour->provider()->isNotEmpty()) { ?>
+                <p>
+                  <?php if ($hour->document_link()->isNotEmpty()) { ?>
+                    <a href="<?php echo $hour->document_link() ?>" title="Read <?php echo $hour->provider() ?>'s document"  target="_blank">
+                      <span>Document</span>
+                    </a>
+                  <?php } else { ?>
+                    <span>Document</span>
+                  <?php }?>
+                  provided by <?php echo $hour->provider() . '.'; ?>
+                </p>
+              <?php } ?>
+
             </div>
         </article>
       <?php } ?>

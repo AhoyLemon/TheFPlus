@@ -1,0 +1,102 @@
+Title: Wood Relief Internet Prints
+
+----
+
+Date: 2018-09-14
+
+----
+
+Time: 21:40
+
+----
+
+Cover: square_sold_out.jpg
+
+----
+
+Show-image: true
+
+----
+
+Cast: Sanguinary Novel
+
+----
+
+Text: 
+
+Excavated from the back of Sanguinary Novel’s studio, these oddly-shaped 4 color linoleum and wood relief prints measure 11⅝”x19” and present the Choose Your Own Adventure story of The Internet, made real with Juggalo Wizards, Reddit vaping enthusiasts, and Roy Orbison completely wrapped up in cling film. There is only a *very* limited set of 23 of these made, and they are now available for purchase for the somewhat reasonable price of $40, **postage included**.
+
+The relief prints vary slightly in registration, making them an imperfect edition, but a great addition to your living room or FPlus shrine. All posters will be placed in tubes and blind shipped, so the exact nature and number of your poster will be entirely random.
+
+## Sold out.
+
+----
+
+Tags: merch,poster
+
+----
+
+Photos: 
+
+- 
+  series_num: "1"
+  pic: fplus-wood-relief-square.jpg
+  desc: Full pic of F Plus Wood Relief
+  full_size: relief-full-large.jpg
+- 
+  series_num: "1"
+  pic: relief-detail-small.jpg
+  desc: detail zoom of F Plus wood relif
+  full_size: relief-detail-large.jpg
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: tall-for-page.jpg
+
+----
+
+Baseprice: $40
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 1
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: 

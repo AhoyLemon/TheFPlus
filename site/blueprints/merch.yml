@@ -1,6 +1,11 @@
 title: Merch
 icon: dollar
-pages: true
+pages:
+  template:
+    - other-project
+    - merch-type
+  sort: flip
+  num: date
 files: true
 fields:
   title:

@@ -1,0 +1,91 @@
+Title: Logo Mural Shirts
+
+----
+
+Date: 2017-08-28
+
+----
+
+Time: 15:57
+
+----
+
+Cover: square_soldout.jpg
+
+----
+
+Show-image: true
+
+----
+
+Cast: Positronic
+
+----
+
+Text: 
+
+The shirts for F Plus Live 6 are even more majestic than ever before. With an illustration by Positronic, these ring spun Gildan Softstyle shirts are 100% cotton and 100% comfortable. I know we say this every year, but it's important: These shirts feel good. As for the design itself, it features the F Plus logo and a mural of characters you probably already love, like Patrick82, Joan Ocean, a vampire drinking tampon tea, and many, many more. There's a reference gif below.
+
+## Sold out.
+
+(image: tshirt_cheat.gif)
+
+----
+
+Tags: merch,shirt,our fans rule,f plus live
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Photos: 
+
+----
+
+Baseprice: 
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 1
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: 

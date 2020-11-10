@@ -31,6 +31,30 @@ Current-merch:
   price: $3
   pending: "0"
   almost_gone: "0"
+- 
+  title: Albert
+  pic: albert-square.jpg
+  url: 'https://thefpl.us/also-made/stickers#29'
+  type: sticker
+  price: $3
+  pending: "0"
+  almost_gone: "0"
+- 
+  title: 'RIP, POONER & THE SNIZZ'
+  pic: snizz-square.jpg
+  url: 'https://thefpl.us/also-made/stickers#30'
+  type: sticker
+  price: $3
+  pending: "0"
+  almost_gone: "0"
+- 
+  title: USB Slap Bracelets
+  pic: slap-square-4.jpg
+  url: https://thefpl.us/merch/slap-bracelets
+  type: fashion!
+  price: $16
+  pending: "0"
+  almost_gone: "0"
 
 ----
 
