@@ -39,7 +39,7 @@
   <!-- RSS FEED -->
   <link rel="alternate" type="application/rss+xml" title="The F Plus Episodes" href="https://thefpl.us/episode/feed" />
   
-  <main class="main" role="main" cloudflare="yes">
+  <main class="main" role="main">
     <?php if (param('flush') == "everything"): ?>
       <?php cache::flush(); ?>
       <h2>Cache flushed</h2>

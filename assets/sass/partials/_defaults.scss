@@ -1,7 +1,10 @@
 * { box-sizing: border-box; }
 //html { font-size:$font-size; }
+html { scroll-behavior: smooth;
+  @media (prefers-reduced-motion) { scroll-behavior: initial; }
+}
 body { background-color:$body; color:$copy;
-  font-family:$sans-serif;
+  font-family:$sans-serif; 
 }
 img { max-width: 100%; height: auto; }
 a { cursor: pointer; color:$link; }
@@ -16,9 +19,6 @@ h6 { font-size:1em; font-weight: $normal; }
 h1, h2, h3, h4, h5, h6 { line-height: 105%; }
 ul { padding-left: 1.5em; 
   li { list-style-type: disc; }
-}
-spoiler { background-color: currentColor; opacity: 0.6; cursor: help; transition:all 0.5s ease 0.5s;
-  &:hover { background-color: transparent; opacity: 1; }
 }
 
 button.button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;

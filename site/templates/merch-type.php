@@ -113,7 +113,7 @@
               ?>
               <figure class="thumb-holder" <?= $figStyle; ?>>
                 <?php if ($product->fullsize() != "") { ?>
-                  <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
+                  <a class="zoom-photo" full-size="<?= $product->fullsize()->toFile()->url() ?>" full-width="<?= $product->fullsize()->toFile()->width() ?>" full-height="<?= $product->fullsize()->toFile()->height() ?>" itemprop="image">
                     <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $product->pic()->filename() ?>" class="thumb" />
                   </a>
                 <?php } else { ?>
@@ -123,7 +123,7 @@
             <?php } else { ?>
               <figure>
                 <?php if ($product->fullsize() != "") { ?>
-                  <a onclick="window.open('<?= $product->fullsize()->toFile()->url() ?>', 'popupWindow', 'width=<?php echo $product->fullsize()->toFile()->width(); ?>,height=<?php echo $product->fullsize()->toFile()->height(); ?>');" class="zoom">
+                  <a class="zoom-photo" full-size="<?= $product->fullsize()->toFile()->url() ?>" full-width="<?= $product->fullsize()->toFile()->width() ?>" full-height="<?= $product->fullsize()->toFile()->height() ?>" itemprop="image">
                     <img itemprop="image" src="<?php echo $product->pic()->toFile()->url(); ?>" class="thumb" />
                   </a>
                 <?php } else { ?>

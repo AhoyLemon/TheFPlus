@@ -8,7 +8,7 @@ article { font-weight: $light;
     .centered { display: block; margin-left: auto; margin-right: auto; }
     .full-width, .centered { margin-bottom: 1rem; }
     p { margin-bottom: 1em; }
-    
+    li { margin-bottom: 1em; }
     .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
       .label { padding-right: 0.5em;}
       time { font-weight: $bold; }

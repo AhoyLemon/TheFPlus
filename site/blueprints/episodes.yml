@@ -5,6 +5,7 @@ pages:
     - episode
     - marathon
   sort: flip
+  num: date
 files: false
 fields:
   title:

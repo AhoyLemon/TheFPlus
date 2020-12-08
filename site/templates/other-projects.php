@@ -19,7 +19,7 @@
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
         $showRandom = true;
       } else if ($page->uri() == "also-made") {
-        $articles = $site->find('also-made','guess','merch')->children()->visible()->sortBy('date', 'desc')->paginate(28);
+        $articles = $site->find('also-made','guess')->children()->visible()->sortBy('date', 'desc')->paginate(28);
         $showRandom = false;
       } else {
         $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);

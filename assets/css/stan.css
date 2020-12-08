@@ -204,6 +204,15 @@ article.episode:after {
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion) {
+  html {
+    scroll-behavior: initial;
+  }
+}
+
 body {
   background-color: #eee;
   color: #343434;
@@ -267,19 +276,6 @@ ul {
 }
 ul li {
   list-style-type: disc;
-}
-
-spoiler {
-  background-color: currentColor;
-  opacity: 0.6;
-  cursor: help;
-  -webkit-transition: all 0.5s ease 0.5s;
-  -o-transition: all 0.5s ease 0.5s;
-  transition: all 0.5s ease 0.5s;
-}
-spoiler:hover {
-  background-color: transparent;
-  opacity: 1;
 }
 
 button.button {
