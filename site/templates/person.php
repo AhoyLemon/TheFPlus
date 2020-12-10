@@ -133,7 +133,7 @@
       <?php endif ?>
       
       <!-- CONTRIBUTED TO PROJECTS -->
-      <?php $articles = $site->find('also-made', 'guess')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
+      <?php $articles = $site->find('also-made', 'guess', 'merch')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc') ?>
       <?php if ($articles->count() > 0): ?>
         <div class="info-block appears-in">
           <span class="list-leader"><?php echo $findme; ?> Contributed To:</span>
