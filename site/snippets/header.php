@@ -64,7 +64,7 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?updated=2020-12-07'); ?>
+  <?= css('assets/css/thefplus.css?updated=2020-12-21'); ?>
 
 </head>
 <body>

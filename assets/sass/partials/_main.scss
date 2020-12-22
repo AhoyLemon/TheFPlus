@@ -143,6 +143,11 @@ article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); marg
 }
 
 
+// EPISODE PAGE STYLES
+article.full.episode {
+  li { margin-bottom: 0.25em; }
+}
+
 
 
 // MARATHON SPECIFIC BITS
