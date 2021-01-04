@@ -30,7 +30,7 @@
 
     <generator><?php echo c::get('feed.generator', 'Kirby') ?></generator>
 
-    <?php foreach($page->siblings()->visible() as $item): ?>
+    <?php foreach($page->siblings()->listed() as $item): ?>
       <?php 
         $persons = explode(",", $item->cast());
         $desc = strip_tags($item->text()->kirbytext());

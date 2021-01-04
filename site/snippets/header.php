@@ -8,7 +8,7 @@
   <?php } else { ?>
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <?php } ?>
-  <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
+  <meta name="description" content="<?php echo $page->text()->excerpt($chars = 150, $strip = true, $rep = ' …')->xml() ?>">
   <!-- Favicons -->  
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
@@ -35,7 +35,7 @@
   <meta name="twitter:site" content="@TheFPlus" />
   <meta name="twitter:creator" content="@AhoyLemon">
   <meta name="twitter:title" content="<?php echo $page->title(); ?>" />
-  <meta name="twitter:description" content="<?php echo excerpt($page->text()->xml(), 180) ?>" />
+  <meta name="twitter:description" content="<?php echo $page->text()->excerpt($chars = 180, $strip = true, $rep = ' …')->xml() ?>" />
   <?php if ($page->cover() != "") { ?>
     <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
   <?php } else if($image = $page->image()) { ?>
@@ -58,7 +58,7 @@
   <?php } else { ?>
     <meta property="og:image" content="https://thefpl.us/assets/images/og-image.png" />
 	<?php } ?>
-  <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
+  <meta property="og:description" content="<?php echo $page->text()->excerpt($chars = 200, $strip = true, $rep = ' …')->xml() ?>">
   <meta property="og:email" content="lemon@thefpl.us">
   
   <!-- Font -->

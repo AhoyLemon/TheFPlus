@@ -12,7 +12,7 @@
         <?php if (is_numeric($article->uid())) { echo $article->uid() . ": "; } ?>
         <span><?php echo $article->title() ?></span>
       </h4>
-        <p><?php echo excerpt($article->text(), 185) ?></p>
+        <p><?= $article->text()->excerpt(195)?></p>
       </summary>
     </figcaption>
     </summary>

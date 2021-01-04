@@ -6,8 +6,8 @@
   <!-- SET UP VARIABLES -->
   <?php 
     $persons = explode(",", $page->cast()); 
-    $pubdate = date('l, F jS Y', $page->date());
-    $pubtime = date("g:ia", strtotime($page->time()));
+    $pubdate = $page->date()->toDate('l, F jS Y');
+    $pubtime = $page->time()->toDate('g:ia');
     if (strpos($page->featured_site(),',') !== false) {
       $multisite = true;
       $fsites = explode(",", $page->featured_site()); 

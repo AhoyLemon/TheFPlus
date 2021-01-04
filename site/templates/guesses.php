@@ -30,7 +30,7 @@
   
   <section class="guess-episodes">
     <header>Episodes</header>
-    <?php foreach($page->children()->visible()->sortBy('date', 'desc') as $guess) { ?>
+    <?php foreach($page->children()->listed()->sortBy('date', 'desc') as $guess) { ?>
     <article class="guess-summary">
       <h3>
         <a href="<?php echo $guess->url(); ?>"><?php echo $guess->slug(); ?>: <?php echo $guess->title(); ?></a>

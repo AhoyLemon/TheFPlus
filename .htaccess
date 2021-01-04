@@ -1,72 +1,57 @@
 # Kirby .htaccess
+# revision 2020-06-15
 
 # rewrite rules
 <IfModule mod_rewrite.c>
 
-  # enable awesome urls. i.e.:
-  # http://yourdomain.com/about-us/team
-  RewriteEngine on
+# enable awesome urls. i.e.:
+# http://yourdomain.com/about-us/team
+RewriteEngine on
 
-  # make sure to set the RewriteBase correctly
-  # if you are running the site in a subfolder.
-  # Otherwise links or the entire site will break.
-  #
-  # If your homepage is http://yourdomain.com/mysite
-  # Set the RewriteBase to:
-  #
-  RewriteBase /thefplus
+# make sure to set the RewriteBase correctly
+# if you are running the site in a subfolder;
+# otherwise links or the entire site will break.
+#
+# If your homepage is http://yourdomain.com/mysite,
+# set the RewriteBase to:
+#
+RewriteBase /thefplus
 
-  # block text files in the content folder from being accessed directly
-  RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
+# In some environments it's necessary to
+# set the RewriteBase to:
+#
+# RewriteBase /
 
-  # block all files in the site folder from being accessed directly
-  RewriteRule ^site/(.*) index.php [L]
+# block files and folders beginning with a dot, such as .git
+# except for the .well-known folder, which is used for Let's Encrypt and security.txt
+RewriteRule (^|/)\.(?!well-known\/) index.php [L]
 
-  # block all files in the kirby folder from being accessed directly
-  RewriteRule ^kirby/(.*) index.php [L]
+# block all files in the content folder from being accessed directly
+RewriteRule ^content/(.*) index.php [L]
 
-  # make panel links work
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^panel/(.*) panel/index.php [L]
+# block all files in the site folder from being accessed directly
+RewriteRule ^site/(.*) index.php [L]
 
-  # make site links work
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*) index.php [L]
-  
-  #force https for panel
-  #RewriteCond %{HTTPS} !=on
-  #RewriteRule ^panel/(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R]
-  
-  
+# block direct access to Kirby and the Panel sources
+RewriteRule ^kirby/(.*) index.php [L]
+
+# make site links work
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*) index.php [L]
 
 </IfModule>
 
-# BEGIN GZIP
-<ifmodule mod_deflate.c>
-  AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
-</ifmodule>
-# END GZIP
+# pass the Authorization header to PHP
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
 
-# Additional recommended values
-# Remove comments for those you want to use.
-#
-# AddDefaultCharset UTF-8
-#
-# php_flag short_open_tag on
-
-# BEGIN EXPIRES
-#<IfModule mod_expires.c>
-#  ExpiresActive On
-#  ExpiresDefault "access plus 10 days"
-#  ExpiresByType text/css "access plus 1 week"
-#  ExpiresByType text/plain "access plus 1 month"
-#  ExpiresByType image/gif "access plus 1 month"
-#  ExpiresByType image/png "access plus 1 month"
-#  ExpiresByType image/jpeg "access plus 1 month"
-#  ExpiresByType application/x-javascript "access plus 1 month"
-#  ExpiresByType application/javascript "access plus 1 week"
-#  ExpiresByType application/x-icon "access plus 1 year"
-#</IfModule>
-# END EXPIRES
+# compress text file responses
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>

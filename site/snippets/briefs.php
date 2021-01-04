@@ -52,7 +52,7 @@
 
           <figcaption>
 
-            <time><?= date('l F jS, Y', $article->date()); ?></time>
+            <time><?= $article->date()->toDate('l F jS, Y'); ?></time>
 
             <h2 class="title">
               <a href="<?= $article->url(); ?>">
@@ -62,9 +62,9 @@
 
             <div class="description">
               <?php if ($briefType == "wrote") {
-                echo excerpt($article->text(), 700);
+                echo $article->text()->excerpt(700);
               } else {
-                echo excerpt($article->text(), 460);
+                echo $article->text()->excerpt(460);
               } ?>
             </div>
             
@@ -166,9 +166,9 @@
           <figcaption>
             <div class="description">
               <?php if ($briefType == "wrote") {
-                echo excerpt($article->text(), 420);
+                echo $article->text()->excerpt(420);
               } else {
-                echo excerpt($article->text(), 265);
+                echo $article->text()->excerpt(265);
               } ?>
             </div>
           </figcaption>
@@ -241,9 +241,9 @@
 
       </div>
       <time class="timebox">
-        <span class="day"><?= date('d', $article->date()); ?></span>
-        <span class="month"><?= date('M', $article->date()); ?></span>
-        <span class="year"><?= date('Y', $article->date()); ?></span>
+        <span class="day"><?= $article->date()->toDate('d'); ?></span>
+        <span class="month"><?= $article->date()->toDate('M'); ?></span>
+        <span class="year"><?= $article->date()->toDate('Y'); ?></span>
       </time>
   
     </div>

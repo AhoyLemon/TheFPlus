@@ -28,7 +28,7 @@
   </nav>
   
   <section class="people people-grid">
-    <?php foreach($page->children()->visible()->sortBy('title', 'asc') as $article): ?>
+    <?php foreach($page->children()->listed()->sortBy('title', 'asc') as $article): ?>
       <a class="person brief <?php echo $article->role() ?> <?php if ($article->role() != "regular") { echo 'hidden'; } ?>" href="<?= $article->url(); ?>">
 
         <figcaption>
@@ -42,51 +42,6 @@
             <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
           <?php } ?>
         </figure>
-
-
-        <?php
-          /*
-          $findme = $article->title();
-          $allEpisodes = $site->find('episode')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc');
-          $episodeCount = 0;
-          foreach ($allEpisodes as $foo) { $episodeCount++; }
-          echo '<h1>' . $episodeCount . '</h1>';
-          */
-        ?>
-
-        <?php /*
-        <header>
-          <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-            <?php echo $article->title(); ?>
-          </a>
-        </header>
-        <?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
-            
-            <?php if ($article->cover() != "") { ?>
-              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
-            <?php } else { ?>
-              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
-            <?php } ?>
-            
-            <div class="hover-cover">
-              <?php if ($article->text() != ""): ?>
-                <div class="content">
-                  <?php echo excerpt($article->text(), 222) ?>
-                </div>
-              <?php endif; ?>
-            </div>
-          </a>
-        <?php endif ?>
-        <?php if(!$image = $article->image()): ?>
-          <summary>
-            <div class="content">
-              <p><?php echo excerpt($article->text(), 222) ?></p>
-            </div>
-          </summary>
-        <?php endif ?>
-
-        */ ?>
       </a>
     <?php endforeach ?>
 

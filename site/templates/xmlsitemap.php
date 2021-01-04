@@ -16,7 +16,7 @@ echo '<?xml-stylesheet type="text/xsl" href="' . $site->url() . '/assets/xsl/ped
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <?php foreach($pages->index()->visible() as $p): ?>
+  <?php foreach($pages->index()->listed() as $p): ?>
     <?php if(in_array($p->uri(), $ignore)) continue ?>
     <url>
       <loc><?php echo html($p->url()) ?></loc>

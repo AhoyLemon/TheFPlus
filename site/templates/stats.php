@@ -3,7 +3,7 @@
   
   <main class="main page" role="main">
     <?= css('assets/css/stats.css'); ?>
-    <?php $episodes = $site->find('episode')->children()->visible(); ?>
+    <?php $episodes = $site->find('episode')->children()->listed(); ?>
     
     <?php $ridiculists = array(); $total_days = 0; $total_hours = 0; $total_minutes = 0; $total_seconds = 0; ?>
     
