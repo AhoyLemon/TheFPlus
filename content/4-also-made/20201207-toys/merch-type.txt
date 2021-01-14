@@ -44,7 +44,7 @@ Soldout: 1
 
 Text: 
 
-As donation incentives for the last three [Garbage Day](https://thefpl.us/find/tag:garbage%20day), our own [Jimmyfranks](https://thefpl.us/meet/jimmyfranks) took it upon himself to create *extremely* limited edition toys as donation incentives, and they've been as lovely as they have been unexpected.
+As donation incentives for the last three [Garbage Days](https://thefpl.us/find/tag:garbage%20day), our own [Jimmyfranks](https://thefpl.us/meet/jimmyfranks) took it upon himself to create *extremely* limited edition toys as donation incentives, and they've been as lovely as they have been unexpected.
 
 * For 2018, it was announced that the top donator would receive an "action fetish", with no more information. We went through the donation roster later, and Jimmyfranks sent out 12 [feet](#1) and 12 [cars](#2).
 * In 2019, nearing the end of the marathon, Jimmyfranks announced that he would be giving something special to anyone who donated $150 or more. Some time later, they received their very own [Roy Orbison wrapped in Clingfilm](#3). Jimmyfranks also had some [extras](#4) that he gave to Lemon, who gave them out willy nilly.
@@ -89,7 +89,7 @@ Products:
   material: ""
   reference: "138"
   released: 2020-10-24
-  soldout: 2020-12-24
+  soldout: 2020-10-24
   buy_type: single
   price: ""
   single_slug: ""
@@ -241,6 +241,16 @@ Photos:
   pic: all-five-toys-big.jpg
   desc: all five F Plus toys as of 2020
   full_size: all-five-toys-big.jpg
+- 
+  series_num: "5"
+  pic: patrock-pricetags.jpg
+  desc: $100 price tags for Pat-Rock 82 toys
+  full_size: patrock-pricetags.jpg
+- 
+  series_num: "1"
+  pic: foot_ceiling.jpg
+  desc: an F Plus foot toy in the ceiling
+  full_size: foot_ceiling.jpg
 
 ----
 

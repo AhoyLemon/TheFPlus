@@ -54,4 +54,4 @@ Sources:
 
 ----
 
-Bonus-content: (fanart:1-ameliablank-guess.jpg by:Amelia Blank)
+Bonus-content: 

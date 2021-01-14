@@ -2,7 +2,7 @@ Title: Lyrical Guesstimation: Lady ft. Fella - I Need
 
 ----
 
-Category: else
+Category: video
 
 ----
 
@@ -22,11 +22,11 @@ Episode-file:
 
 ----
 
-Text: (youtube:https://www.youtube.com/watch?v=7b-7vSoN2y8)
+Text: 
 
 ----
 
-Tags: annoying,consumerism as a religion,misogyny,profiles of job creators,put the dick in a pissbag
+Tags: annoying,misogyny,profiles of job creators,put the dick in a pissbag,video
 
 ----
 
@@ -43,3 +43,31 @@ Github-repo:
 ----
 
 Tweet-intent: 
+
+----
+
+Cover: ladyfella-ineeed.jpg
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: https://youtu.be/7b-7vSoN2y8
+
+----
+
+Photos: 

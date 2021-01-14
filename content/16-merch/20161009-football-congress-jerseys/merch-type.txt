@@ -1,4 +1,4 @@
-Title: Football Congress Jerseys (SOLD OUT)
+Title: Football Congress Jerseys
 
 ----
 
@@ -24,11 +24,6 @@ Guess what, nerds? It's Football Congress!	These 60/40 Cotton/Polyester blend Li
 
 ## These have all been purchased.
 
-<figure style="text-align:center; margin-bottom:1rem;">
-<img src="/also-made/football-congress-jerseys/cover_front.jpg" style="width:49%; max-width:380px;"  />
-<img src="/also-made/football-congress-jerseys/shirt_back_smaller.jpg" style="width:49%;  max-width:380px;" />
-</figure>
-
 ----
 
 Tags: merch,shirt,football congress
@@ -47,11 +42,56 @@ Page-image:
 
 ----
 
-Baseprice: 
+Baseprice: $20
 
 ----
 
 Photos: 
+
+- 
+  series_num: ""
+  pic: cover_front.jpg
+  desc: "Lemon is wearing a football congress jersey and he's gonna punch you"
+  full_size: ""
+- 
+  series_num: ""
+  pic: congress_back.jpg
+  desc: >
+    a strong person in a football congress
+    jersey
+  full_size: ""
+- 
+  series_num: ""
+  pic: bathroom_iphone.jpg
+  desc: football congress bro
+  full_size: ""
+- 
+  series_num: ""
+  pic: bag_airhead.jpg
+  desc: a bag with a jersey and some candy
+  full_size: ""
+- 
+  series_num: ""
+  pic: flex_bed.jpg
+  desc: flexing in a football congress jersey
+  full_size: ""
+- 
+  series_num: ""
+  pic: horns.jpg
+  desc: >
+    stog in a football congress jersey,
+    flashing horns
+  full_size: ""
+- 
+  series_num: ""
+  pic: krabbie_pattie.jpg
+  desc: football congress jersey and candy
+  full_size: ""
+- 
+  series_num: ""
+  pic: logo_notext.png
+  desc: the logo with no text
+  full_size: logo_notext.png
 
 ----
 
@@ -87,8 +127,12 @@ Sizes:
 
 ----
 
-Photos-leadin: 
+Photos-leadin: Congress is in session, nerd.
 
 ----
 
 Share-cta: 
+
+----
+
+Button-text: 

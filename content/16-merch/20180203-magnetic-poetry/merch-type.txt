@@ -1,0 +1,181 @@
+Title: Magnetic Poetry Kit
+
+----
+
+Date: 2018-02-03
+
+----
+
+Time: 15:45
+
+----
+
+Cover: square_poem.jpg
+
+----
+
+Show-image: true
+
+----
+
+Cast: Sanguinary Novel,Lemon
+
+----
+
+Text: 
+
+Sure, you like listening to terrible poetry on The F Plus, but isn't it about time you create your own? That's a problem with a solution, friend. 
+
+These magnet sheets are 4"x5.625" in size, are 20mm thick, and contain over 90 F Plus-related tiles, scored for easy removal so you can quickly turn *your* refrigerator into the cultural epicentre and/or showcase of horror we've always believed it to be.
+
+### Sold out.
+
+----
+
+Tags: 
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: coalbus_recipe.jpg
+  desc: magick vape juice recipe
+  full_size: coalbus_recipe.jpg
+- 
+  series_num: ""
+  pic: collie.jpg
+  desc: HEY YES HELLO LINDA
+  full_size: collie.jpg
+- 
+  series_num: ""
+  pic: curly2.jpg
+  desc: wrap my waifu in clingfilm
+  full_size: curly2.jpg
+- 
+  series_num: ""
+  pic: flirtin_on_tinder.jpg
+  desc: flirtin on tinder
+  full_size: flirtin_on_tinder.jpg
+- 
+  series_num: ""
+  pic: ironicus.jpg
+  desc: make my vape mother yiff
+  full_size: ironicus.jpg
+- 
+  series_num: ""
+  pic: j_hey.jpg
+  desc: I drink vape juice.
+  full_size: j_hey.jpg
+- 
+  series_num: ""
+  pic: lattner.jpg
+  desc: clingfilm around feet
+  full_size: lattner.jpg
+- 
+  series_num: ""
+  pic: mag_shell.jpg
+  desc: shell game poetry
+  full_size: mag_shell.jpg
+- 
+  series_num: ""
+  pic: nudna.jpg
+  desc: nudna
+  full_size: nudna.jpg
+- 
+  series_num: ""
+  pic: poem_heelies.jpg
+  desc: I cursed LINDA
+  full_size: poem_heelies.jpg
+- 
+  series_num: ""
+  pic: poem_stog.jpg
+  desc: a feeting of lady mayo
+  full_size: poem_stog.jpg
+- 
+  series_num: ""
+  pic: poetry_saponaceous.jpg
+  desc: wikiHow to make juggalo juice
+  full_size: poetry_saponaceous.jpg
+- 
+  series_num: ""
+  pic: poetry_venmalakim.jpg
+  desc: not gay but
+  full_size: poetry_venmalakim.jpg
+- 
+  series_num: ""
+  pic: rekt_curly.jpg
+  desc: a cowboy goth and LINDA
+  full_size: rekt_curly.jpg
+- 
+  series_num: ""
+  pic: rhys_recipe.jpg
+  desc: dragon butt juice recipe
+  full_size: rhys_recipe.jpg
+- 
+  series_num: ""
+  pic: skeep1.jpg
+  desc: his cowboy passion
+  full_size: skeep1.jpg
+- 
+  series_num: ""
+  pic: slarty2.jpg
+  desc: how of a juggalo
+  full_size: slarty2.jpg
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: big_magnet_sheet.jpg
+
+----
+
+Baseprice: 
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 0
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Button-text: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: Here are some excellent poems
+
+----
+
+Share-cta: 

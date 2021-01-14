@@ -1,0 +1,61 @@
+Title: Garbage Day 2020 Schedule
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2020-10-20
+
+----
+
+Time: 11:00
+
+----
+
+Cover: 
+
+----
+
+Text: 
+
+|  | TOPIC | HOST | ARTIST |
+| ---------| | ---------| --------| ----------------|
+| 1 | E Zine Articles | Lemon | Spooks |
+| 2 | r/relationships | Boots | Spooks |
+| 3 | Fart Fetish | Kumquatxop | Shell Game |
+| 4 | Psychic Bitch | Adam Bozarth | Shell Game |
+| 5 | Pooner & The Snizz | Bunnybread & Jimmyfranks | Positronic |
+| 6 | Monster Girl Encyclopedia | Boots Raingear | Positronic |
+| 7 | water sommelier licenses | Lemon | Jimmyfranks |
+| 8 | Enter The Rap Pad (36 Chambers) | Bunnybread | K Thor Jensen |
+| 9 | wikiHow: The Home Game, Round 1 | Lemon | Sanguinary Novel |
+| 10 | Jack Chick's Personal Prison | Jack Chick | Lou Fernandez |
+| 11 | Veggie Boards | Lemon | Adam Bozarth |
+| 12 | Acne Lovers | Boots Raingear | King Kalamari |
+| 13 | Haunted Dolls On Etsy | Achilles' Heelies | King Kalamari |
+| 14 | The Daniel Songer Comedy Hour | Adam Bozarth | Hux |
+| 15 | Freeze Ray Poetry | Extra Credit | Hux |
+| 16 | Historical Erotic Roleplay | Extra Credit | Sanguinary Novel |
+| 17 | Cardiophiles | Extra Credit | dijon du jour |
+| 18 | Elizabeth Storybook | Extra Credit | dijon du jour |
+| 19 | Recipes From Instructables | Nutshell Gulag | Moxie |
+| 20 | Let's Kill Barney | John Toast | Moxie |
+| 21 | Autofellatio | Boots Raingear | Sauce |
+| 22 | A Spiritual Journey | Portaxx | Sauce |
+| 23 | wikiHow: The Home Game, Championship Round | Lemon | Portaxx |
+| 24 | The Final Hour | Boots Raingear | Portaxx |
+
+<style>
+table { width:100%;  font-size:18px; margin-top:2em; margin-bottom:2em; } 
+th { font-size:85%;  padding:0 14px; }
+td { padding: 14px;  }
+tr:nth-child(even)  td { background:rgba(0,0,0,0.05); }
+td:nth-child(1), td:nth-child(3), td:nth-child(4) { font-size:85%; }
+td:nth-child(1) { text-align:right;  }
+</style>
+
+----
+
+Tags: garbage day,schedule

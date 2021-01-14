@@ -953,3 +953,51 @@ Builder:
   submitter: Puppy Time
   rejectdate: 2019-09-27
   _fieldset: submitteddoc
+- 
+  title: Welcome To Salt Lick, Kentucky
+  docurl: >
+    https://docs.google.com/document/d/100y4cvc_uQWbq5ixogBzuL84skZg31gMxe0GlePTTyA/edit?usp=sharing
+  submitter: BomberJacket
+  rejectdate: 2020-07-24
+  _fieldset: submitteddoc
+- 
+  title: Freegans
+  docurl: >
+    https://docs.google.com/document/d/1Pl-b1ZProUGLLDgAQdXoASZfbUypJsBeo41y3tFL5EM/edit?usp=sharing
+  submitter: Neal
+  rejectdate: 2020-07-24
+  _fieldset: submitteddoc
+- 
+  title: >
+    Harry Potter and the Horny Magick Tulpas
+    of Jesus
+  docurl: >
+    https://docs.google.com/document/d/1wTGhXPIY1L0vgtVFc4uQR4LjJ-ir5DndzDSmQ0T7R7g/edit?usp=sharing
+  submitter: Secret Gaygent 69
+  rejectdate: 2020-08-29
+  _fieldset: submitteddoc
+- 
+  title: 'We the People: Your Voice in the White House'
+  docurl: >
+    https://docs.google.com/document/d/14x8LwiZvDFmi050ALqrDqtzXRjmlN6KGx4IQMqzJdus/edit?usp=sharing
+  submitter: Marie
+  rejectdate: 2020-09-11
+  _fieldset: submitteddoc
+- 
+  title: >
+    Totally True Stories From Above Top
+    Secret
+  docurl: >
+    https://docs.google.com/document/d/1bPHuHXXb5GZEFug3QRsV1p_8C-4J7pgsCcRUskUeBVE/edit?usp=sharing
+  submitter: Secret Gaygent 69
+  rejectdate: 2021-01-01
+  _fieldset: submitteddoc
+- 
+  title: >
+    Okay, so what happens when we search
+    reddit for the word "help"?
+  docurl: >
+    https://docs.google.com/document/d/1NrnPNCSXfS8T4hkPeqBcUOtg_kShRooQr2Z2X9aTr6g/edit?usp=sharing
+  submitter: Sin Bucket
+  rejectdate: 2021-01-01
+  _fieldset: submitteddoc

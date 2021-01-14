@@ -16,8 +16,6 @@ Website: http://voicefromhale.com
 
 Text: 
 
-![Bread](http://thefpl.us/content/5-meet/bunnybread/bunnybreadrolls.jpg)
-
 Original recipe makes 1 loaf bunnybread
 2 (1 pound) loaves frozen bread dough, thawed
 2 raisins
@@ -62,3 +60,7 @@ Favorite-episode: 58,67,91
 ----
 
 Ballpit-account: http://ballp.it/index.php?action=profile;u=11
+
+----
+
+Cover: abunnybread-cropped.jpg

@@ -30,7 +30,7 @@ Text:
 
 Stemming from a conversation at a bar that lasted perhaps an hour longer than it should, **badaccent.club** puts your friends' abilities to the test by assigning a player a quote and an accent, and then pressing on that player's friend to guess what just happened. Progressive web app, but probably best played on your phone. With other people, and drinks would help.
 
-# [badaccent.club](http://badaccent.club)
+# [play now](https://ahoylemon.github.io/badaccent.club/)
 
 ----
 

@@ -89,7 +89,7 @@ Product-type: single
 
 ----
 
-Soldout: 0
+Soldout: 1
 
 ----
 

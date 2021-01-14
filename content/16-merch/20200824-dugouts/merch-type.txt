@@ -10,7 +10,7 @@ Time: 14:00
 
 ----
 
-Cover: bothsides-ongrey-tilt.jpg
+Cover: square-soldout.jpg
 
 ----
 
@@ -18,11 +18,11 @@ Show-image: true
 
 ----
 
-Show-different-image: no
+Show-different-image: yes
 
 ----
 
-Page-image: 
+Page-image: bothsides-ongrey-tilt.jpg
 
 ----
 
@@ -79,7 +79,7 @@ Product-type: single
 
 ----
 
-Soldout: 0
+Soldout: 1
 
 ----
 

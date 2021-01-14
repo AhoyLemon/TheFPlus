@@ -32,7 +32,7 @@ Pretend World presents you with a simple premise: You are at a party of celebrit
 
 This website actually launched a month ago, but I forgot to write about it until now.
 
-# [pretend.world](https://pretend.world)
+# [visit website](https://ahoylemon.github.io/pretend.world/)
 
 ----
 
@@ -57,3 +57,23 @@ Bonus-content:
 ----
 
 Photos: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 

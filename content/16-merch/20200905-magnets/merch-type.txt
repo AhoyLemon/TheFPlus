@@ -86,6 +86,13 @@ Photos:
   pic: duck-kia-small.jpg
   desc: Paths duck magnet on the back of a car
   full_size: duck-kia.jpg
+- 
+  series_num: "2"
+  pic: magnet-fridge.jpg
+  desc: >
+    a paths duck magnet on a fridge,
+    alongside other ones
+  full_size: magnet-fridge.jpg
 
 ----
 

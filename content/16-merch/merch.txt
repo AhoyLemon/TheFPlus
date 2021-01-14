@@ -22,7 +22,7 @@ Current-merch:
     https://thefpl.us/merch/monster-manual-a-coloring-activity-book
   type: coloring book
   price: $9
-  almost_gone: "0"
+  almost_gone: "1"
   pending: "0"
 - 
   title: Sexybread
@@ -33,27 +33,11 @@ Current-merch:
   pending: "0"
   almost_gone: "0"
 - 
-  title: Albert
-  pic: albert-square.jpg
-  url: 'https://thefpl.us/merch/stickers#29'
-  type: sticker
-  price: $3
-  pending: "0"
-  almost_gone: "0"
-- 
-  title: 'RIP, POONER & THE SNIZZ'
+  title: 'Pooner & The Snizz Funeral Services'
   pic: snizz-square.jpg
   url: 'https://thefpl.us/merch/stickers#30'
   type: sticker
   price: $3
-  pending: "0"
-  almost_gone: "0"
-- 
-  title: USB Slap Bracelets
-  pic: slap-square-4.jpg
-  url: https://thefpl.us/merch/slap-bracelets
-  type: fashion!
-  price: $16
   pending: "0"
   almost_gone: "0"
 
@@ -317,8 +301,7 @@ Sold-merch:
   sold_date: 2019-07-22
 - 
   title: Audio Garbage
-  url: >
-    https://thefpl.us/merch/audio-garbage
+  url: https://thefpl.us/merch/audio-garbage
   pic: tape-square.jpg
   type: cassette
   sold_date: 2019-08-07
@@ -360,8 +343,7 @@ Sold-merch:
   sold_date: 2020-08-20
 - 
   title: Fetish Catcher
-  url: >
-    https://thefpl.us/merch/fetish-catchers
+  url: https://thefpl.us/merch/fetish-catchers
   pic: catcher_animation_600.gif
   type: origami
   sold_date: 2020-08-24
@@ -413,6 +395,18 @@ Sold-merch:
   pic: shel400.jpg
   type: sticker
   sold_date: 2020-10-05
+- 
+  title: Albert
+  url: 'https://thefpl.us/merch/stickers#29'
+  pic: albert-square.jpg
+  type: Sticker
+  sold_date: 2020-11-20
+- 
+  title: USB Slap Bracelet
+  url: https://thefpl.us/merch/slap-bracelets
+  pic: slap-square-4.jpg
+  type: fashion!
+  sold_date: 2020-12-23
 
 ----
 

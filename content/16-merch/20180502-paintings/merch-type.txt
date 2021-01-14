@@ -1,4 +1,4 @@
-Title: Fetish Paintings [SOLD]
+Title: Fetish Paintings
 
 ----
 
@@ -118,3 +118,47 @@ Photos:
 ----
 
 Share-cta: 
+
+----
+
+Product-type: single
+
+----
+
+Show-image: false
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: $100
+
+----
+
+Soldout: 0
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Button-text: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Sizes: 

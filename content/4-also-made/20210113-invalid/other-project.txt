@@ -1,0 +1,93 @@
+Title: Invalid!
+
+----
+
+Category: website
+
+----
+
+Date: 2021-01-13
+
+----
+
+Time: 22:00
+
+----
+
+Cover: invalid_square.jpg
+
+----
+
+Show-image: true
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: invalid-wider.png
+
+----
+
+Cast: Lemon,Sanguinary Novel
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Text: 
+
+Put some text in here, Lemon.
+
+# [invalidgame.herokuapp.com](http://invalidgame.herokuapp.com/)
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: https://github.com/AhoyLemon/invalid
+
+----
+
+Tags: fun with javascript,video games,video games that aren't video games
+
+----
+
+Tweet-intent: 
+
+----
+
+Bonus-content: 
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: 1.jpg
+  desc: Pregame Screenshot
+  full_size: 1.jpg
+- 
+  series_num: ""
+  pic: 2.jpg
+  desc: SysAdmin Screenshot
+  full_size: 2.jpg
+- 
+  series_num: ""
+  pic: 3.jpg
+  desc: Employee Screenshot
+  full_size: 3.jpg

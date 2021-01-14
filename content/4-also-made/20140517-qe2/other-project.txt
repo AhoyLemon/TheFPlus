@@ -30,7 +30,7 @@ Tags: qe,quite exasperating,game show
 
 ----
 
-Bonus-content: (fanart:qe2-obfuscobble.png by:obfuscobble)
+Bonus-content: 
 
 ----
 
@@ -51,3 +51,23 @@ Tweet-intent:
 ----
 
 Photos: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 

@@ -2,7 +2,7 @@ Title: Limited Edition Stickers
 
 ----
 
-Cover: square-30_29_28.png
+Cover: square-28_30.png
 
 ----
 
@@ -696,7 +696,7 @@ Stickers:
   vinyl: clear
   printed: "50"
   released: 2020-11-09
-  soldout: ""
+  soldout: 2020-11-20
   reference: garbage-day-2019-1
   almost_gone: "0"
   buttona_num: "1"
@@ -711,7 +711,7 @@ Stickers:
 - 
   pic: pooner_snizz_small.png
   fullsize: pooner_snizz_big.jpg
-  title: 'RIP, Pooner & The Snizz'
+  title: 'Pooner & The Snizz Funeral Services'
   artist: Sanguinary Novel
   series_num: "30"
   dimensions: 2.6" x 2.8"

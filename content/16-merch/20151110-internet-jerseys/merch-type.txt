@@ -1,0 +1,121 @@
+Title: Team Internet Jerseys
+
+----
+
+Date: 2015-11-10
+
+----
+
+Time: 19:20
+
+----
+
+Cast: Lemon
+
+----
+
+Show-image: true
+
+----
+
+Text: 
+
+**Join Team Internet**. These jerseys are printed on Champion Baseball raglan, 3/4 sleeves, 100% cotton and tagless. <a href="http://www.customink.com/items/sizing/99000_lineup/standard.htm" target="_blank">Click here for sizing guidelines.</a>
+
+Shipping is included. Transactions are handled securely offsite by PayPal.
+
+#### SOLD OUT.
+
+----
+
+Tags: merch,shirt,f plus live
+
+----
+
+Cover: a-soldout.jpg
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: $20
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: shot1.jpg
+  desc: Lemon wearing his Team Internet jersey
+  full_size: ""
+- 
+  series_num: ""
+  pic: shot2.jpg
+  desc: somebody wearing a Team Internet jersey
+  full_size: ""
+- 
+  series_num: ""
+  pic: shot3.jpg
+  desc: Heelies wearing his Team Internet jersey
+  full_size: ""
+- 
+  series_num: ""
+  pic: shot4.jpg
+  desc: "STOG's got a jersey"
+  full_size: ""
+- 
+  series_num: ""
+  pic: shot5.jpg
+  desc: a jersey and a moose
+  full_size: ""
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 1
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Button-text: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: 
+
+----
+
+Share-cta: 

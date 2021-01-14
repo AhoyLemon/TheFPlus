@@ -1,0 +1,149 @@
+Prevnext: 
+
+----
+
+Title: Everyone Here Is On Ayahuasca
+
+----
+
+Featured-site: ayahuasca.com
+
+----
+
+Date: 2020-12-31
+
+----
+
+Time: 14:01
+
+----
+
+Cover: ep340.jpg
+
+----
+
+Cast: Boots Raingear,Bunnybread,Jack Chick,Victor Laszlo,Lemon
+
+----
+
+Episode-file: fplus_340.mp3
+
+----
+
+Runtime: 1:11:28
+
+----
+
+File-size: 67
+
+----
+
+Document-link: https://docs.google.com/document/d/1qeH_Jz07O7xKTEQboVQefDGGmb8PrMJfds_ciUJZMeE/edit?usp=sharing
+
+----
+
+Editor: Bunnybread
+
+----
+
+Provider: Secret Gaygent 69
+
+----
+
+Text: 
+
+The website **ayahuasca.com** has a forum, and its 21,000 members are (as you might guess) fans of the psychoactive drug ayahuasca. Their conversations are quite profound as they understand both gravity *and* Antarctica.
+
+This week, The F Plus gets namasty.
+
+----
+
+Music-used: Emergency Broadcast Network - Psychoactive Drugs,1200 Micrograms - Acid for Nothing
+
+----
+
+Tags: because drugs,forums,galileo was an idiot,namasty,satanists,poetry,new age
+
+----
+
+Bonus-content: * [a picture of Anton LaVey](/episode/340/anton-lavey.jpg) in a terrycloth bathrobe with devil horns
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3520.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Brasil
+
+----
+
+Cover-cite-artist: Stéfano Girardelli
+
+----
+
+Cover-cite-url: https://unsplash.com/photos/oxzxkDjUbyI
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "Bunnybread's introduction"
+- 
+  timestamp: 00:01:09
+  name: reader intros
+- 
+  timestamp: 00:02:56
+  name: Welcome to Aya Forums! Enjoy your purge!
+- 
+  timestamp: 00:13:15
+  name: Wizards n Shit
+- 
+  timestamp: 00:19:25
+  name: Gazal, Vampires and the Flat Earth
+- 
+  timestamp: 00:26:39
+  name: Naythree and our friend, the Devil
+- 
+  timestamp: 00:36:12
+  name: I.B.E.s and Healing
+- 
+  timestamp: 00:47:27
+  name: Time for Insectoid and love-yawn Poetry
+- 
+  timestamp: 00:53:35
+  name: "Victor's non-oedipal complex"
+- 
+  timestamp: 00:56:05
+  name: Poetry Squat
+- 
+  timestamp: 00:58:41
+  name: Nagu Al and some Toxic Masculinity
+- 
+  timestamp: 01:01:03
+  name: EnTheeoyendol (sp)
+- 
+  timestamp: 01:04:27
+  name: Learned anything?
+
+----
+
+Chapter-provider: Bunnybread
+
+----
+
+Chapter-provider-aftergap: 

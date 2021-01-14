@@ -10,7 +10,7 @@ Time: 14:14
 
 ----
 
-Cover: red-blank.jpg
+Cover: slap-square-4.jpg
 
 ----
 
@@ -26,11 +26,11 @@ Show-different-image: no
 
 ----
 
-Page-image: 
+Page-image: red-blank.jpg
 
 ----
 
-Cast: Lemon
+Cast: Boots Raingear,Lemon,J W Friedman
 
 ----
 
@@ -38,7 +38,7 @@ Baseprice: $16
 
 ----
 
-Soldout: 0
+Soldout: 1
 
 ----
 
@@ -48,15 +48,18 @@ We spent some time trying to figure out the exact perfect medium to contain all 
 
 These genuine working slap bracelets contain an 8Gb USB 2.0 flash drive, some of which will be taken up by audio files.
 
-All 24 tracks, composed and recorded by Boots Raingear to start every hour are stored on these bracelets as well as a **Bonus Song by J W Friedman**. You've never cried harder at the way I work it (no diggity). Like all F Plus merch, this is available in a limited run. In this case, I'm putting these up early (they're still being made) and so I don't have actual prouduct photos to show you just yet. However, once they actually show up, I'll be taking photos and shipping out any that have been ordered. The design is below.
+All 24 tracks, composed and recorded by Boots Raingear to start every hour are stored on these bracelets as well as a **Bonus Song by J W Friedman**, and some custom-built useless software by Lemon. Like all F Plus merch, this is available in a limited run, and these things are going *fast*, just FYI.
 
-(image: slap-mock.jpg)
+(image: slap-design-wide-3.jpg)
+
+
 
 The bracelets are 230mm x 22m, and are 4mm thick. They weigh about 20 grams. They'll come to you in a biodegradable translucent bag, shipped USPS.
 
-Expecting them to arrive on or before November 17th, at which point all preorders will be shipped.
-
 Cost is $16, shipping included.
+ 
+> Well, that's useless, isn't it?
+>                           —<cite>a <a href="https://twitter.com/lesbiathan/status/1331636632953507841">customer</a>'s fiancé</cite>
 
 ----
 
@@ -93,6 +96,49 @@ Photos-leadin:
 ----
 
 Photos: 
+
+- 
+  series_num: ""
+  pic: envelopes_thumbup.jpg
+  desc: >
+    slap bracelets in an envelope, lemon
+    gives a thumbs up
+  full_size: envelopes_thumbup.jpg
+- 
+  series_num: ""
+  pic: bracelet-on-table.jpg
+  desc: a slap bracelet on a black table
+  full_size: bracelet-on-table.jpg
+- 
+  series_num: ""
+  pic: bracelet-in-computer.jpg
+  desc: "a slap bracelet in the computer's USB socket"
+  full_size: bracelet-in-computer.jpg
+- 
+  series_num: "1"
+  pic: activisionary_flat.jpg
+  desc: a slap bracelet, laid flat
+  full_size: activisionary_flat.jpg
+- 
+  series_num: "1"
+  pic: paradigm_wrist.jpg
+  desc: "a slap bracelet around paradigm's wrist"
+  full_size: paradigm_wrist.jpg
+- 
+  series_num: "1"
+  pic: bracelet_computer.jpg
+  desc: slap bracelet sticking out of computer
+  full_size: bracelet_computer.jpg
+- 
+  series_num: "1"
+  pic: whofriend_wrist.jpg
+  desc: a slap bracelet around another wrist
+  full_size: whofriend_wrist.jpg
+- 
+  series_num: "1"
+  pic: bracelet_laptop.jpg
+  desc: a bracelet inside a laptop
+  full_size: bracelet_laptop.jpg
 
 ----
 

@@ -1,0 +1,124 @@
+Title: Hooded Aaron Tank Shirts
+
+----
+
+Date: 2014-10-08
+
+----
+
+Time: 18:53
+
+----
+
+Cast: Lemon,Portaxx
+
+----
+
+Show-image: true
+
+----
+
+Text: 
+
+These hooded Next Level Tri Blend long sleeve shirts are 50% polyester, 25% cotton, 25% rayon, and 100% terrific. It's a complicated world out there, let it know that you're eight years old and like fried chicken. These shirts are comfortable as fuck and just what you need in the coming months, but they do tend to run a little small, so please consider that when you're buying.
+$25 gets you an F Plus shirt, shipped to you by Priority Mail, so it should arrive in a couple days. Shipping has been factored into the price, depending on your location. Order up, cause when this batch is gone, that's it.
+
+...and that's it.
+
+----
+
+Tags: our fans rule,f plus live,shirt,merch
+
+----
+
+Cover: aaasoldout.png
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: $20
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: lobstertank.jpg
+  desc: >
+    how can I eat fried chicken with these
+    lobster hands?
+  full_size: ""
+- 
+  series_num: ""
+  pic: pussytank.jpg
+  desc: a cat and a tank
+  full_size: ""
+- 
+  series_num: ""
+  pic: shirtmagick.jpg
+  desc: >
+    an Aaron tank shirt, a gun, and magic
+    cards
+  full_size: ""
+- 
+  series_num: ""
+  pic: stairtank.jpg
+  desc: Lemon in his Aaron Tank shirt
+  full_size: ""
+- 
+  series_num: ""
+  pic: tankcreed.jpg
+  desc: "Assassin's Aaron Tank Creed"
+  full_size: ""
+
+----
+
+Product-type: single
+
+----
+
+Soldout: 1
+
+----
+
+Buy-headline: 
+
+----
+
+Buy-slug: 
+
+----
+
+Buy-price: 
+
+----
+
+Button-text: 
+
+----
+
+Buy-form-extra-html: 
+
+----
+
+Products: 
+
+----
+
+Sizes: 
+
+----
+
+Photos-leadin: some 8 year olds...
+
+----
+
+Share-cta: 

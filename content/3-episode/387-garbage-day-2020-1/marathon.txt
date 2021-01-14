@@ -137,7 +137,7 @@ Leadout:
 
 We're only a quarter of the way through! Head on over to [part 2](/episode/garbage-day-2020-2) for wikiHow the home game, Jack Chick's poetry prison, and Bunnybread's own Rap Pad!
 <br />
-**Also**, we have stickers memorilizing our own Pooner & The Snizz. You should probably [get one](https://thefpl.us/also-made/stickers#30) while you can.
+**Also**, if we have stickers for Pooner & The Snizz's newest venture. You should probably [get one](https://thefpl.us/also-made/stickers#30) while you can.
 
 ----
 
@@ -165,4 +165,8 @@ Buttons:
 - 
   url: https://thefpl.us/merch/slap-bracelets
   text: Soundtrack Slap Bracelets
+  target_blank: "0"
+- 
+  url: https://thefpl.us/also-made/toys
+  text: Toys
   target_blank: "0"

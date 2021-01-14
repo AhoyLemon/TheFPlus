@@ -42,7 +42,7 @@ Music-used: Lynyrd Skynyrd-That Smell,J. Geils Band - Love Stinks
 
 ----
 
-Bonus-content: 
+Bonus-content: * [Foot Toys](https://thefpl.us/also-made/toys#1)
 
 ----
 
@@ -58,7 +58,7 @@ File-size: 48
 
 ----
 
-Cover: 
+Cover: ep150.jpg
 
 ----
 

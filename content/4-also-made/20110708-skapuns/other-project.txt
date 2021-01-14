@@ -30,7 +30,7 @@ Text: (youtube:https://www.youtube.com/watch?v=_iId_65cywM)
 
 ----
 
-Tags: f plus live
+Tags: f plus live,video
 
 ----
 
@@ -47,3 +47,27 @@ Github-repo:
 ----
 
 Tweet-intent: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Photos: 

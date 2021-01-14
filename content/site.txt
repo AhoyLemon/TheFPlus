@@ -85,6 +85,16 @@ Social-links:
   url: https://www.twitch.tv/TheFPlus
   text: TheFPlus on Twitch
   _fieldset: page_link
+- 
+  icon: soundcloud
+  url: https://soundcloud.com/thefplus
+  text: The F Plus on SoundCloud
+  _fieldset: page_link
+- 
+  icon: podchaser
+  url: https://podchaser.com/TheFPlus
+  text: The F Plus on Podchaser
+  _fieldset: page_link
 
 ----
 
