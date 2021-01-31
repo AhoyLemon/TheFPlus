@@ -116,7 +116,7 @@
 
     </div>
       
-    <?php if ($page->photos() != "") { ?>
+    <?php if ($page->photos()->isNotEmpty()) { ?>
       <div class="product-photos" style="margin-top:3em;">
         <?php if ($page->photos_leadin() != "") { ?>
           <h3><?= $page->photos_leadin(); ?></h3>
@@ -124,11 +124,11 @@
         <?php foreach($page->photos()->toStructure()->sortBy('series_num', 'desc') as $photo): ?>
           <div class="photo-holder">
             <?php if ($photo->full_size() != "") { ?>
-              <a onclick="window.open('<?= $photo->full_size()->toFile()->url() ?>', '_blank', 'width=<?php echo $photo->full_size()->toFile()->width(); ?>,height=<?php echo $photo->full_size()->toFile()->height(); ?>');" class="zoom">
-                <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+              <a class="zoom-photo" full-size="<?= $photo->full_size()->toFile()->url() ?>" full-width="<?= $photo->full_size()->toFile()->width(); ?>" full-height="<?= $photo->full_size()->toFile()->height(); ?>" itemprop="image">
+                <img src="<?php echo $photo->pic()->toFile()->crop(320)->url(); ?>" data-series="<?php echo $photo->series_num(); ?>" loading="lazy" alt="<?php echo $photo->desc(); ?>" width="320" height="320" alt="<?= $photo->alt(); ?>" />
               </a>
             <?php } else { ?>
-              <img src="<?php echo $page->url() ?>/<?php echo $photo->pic()->filename() ?>" data-series="<?php echo $photo->series_num(); ?>" alt="<?php echo $photo->desc(); ?>" />
+              <img src="<?php echo $photo->pic()->toFile()->crop(320)->url(); ?>" data-series="<?php echo $photo->series_num(); ?>" loading="lazy" alt="<?php echo $photo->desc(); ?>" width="320" height="320" alt="<?= $photo->alt(); ?>" />
             <?php } ?>
           </div>
         <?php endforeach; ?>
