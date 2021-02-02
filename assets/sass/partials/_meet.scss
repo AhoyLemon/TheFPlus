@@ -129,7 +129,7 @@
   .person.full {
     .headshot { width:100%; height:auto; margin-bottom: 10px; }
     .info-block ol, .info-block ul, .personal-links {
-      li { display: list-item; font-size:16px; padding-top: 0.5em; padding-bottom: 0.5em;
+      li { display: list-item; font-size:16px; padding-top: 0.5em; padding-bottom: 0.5em; margin-left: 1em;
         &:after { content:''; }
       }
     }
