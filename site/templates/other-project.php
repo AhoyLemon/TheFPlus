@@ -25,11 +25,11 @@
       <?php if($page->show_image() == 'true'):  ?>
         <figure>
           <?php if ($page->show_different_image() == "yes" && $page->page_image()->isNotEmpty()) { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->page_image()->filename() ?>" class="cover <?= $page->page_image()->toFile()->extension(); ?>" alt="<?php echo $page->title() ?>">
           <?php } else if ($page->cover() != "") { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover <?= $page->cover()->toFile()->extension(); ?>" alt="<?php echo $page->title() ?>">
           <?php } else { ?>
-            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $page->title() ?>">
+            <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover <?= $page->cover()->toFile()->extension(); ?>" alt="<?php echo $page->title() ?>">
           <?php } ?>
         </figure>
       <?php endif ?>

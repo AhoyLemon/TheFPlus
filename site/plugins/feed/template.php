@@ -8,10 +8,11 @@
     <description><?php echo $site->description() ?></description>
   
     <image>
-      <url>https://thefpl.us/podcasts/feedburner_144.png</url>
+      <url>https://thefpl.us/podcasts/logo_144.png</url>
       <title>The F Plus</title>
       <link>https://thefpl.us</link>
     </image>
+
     <itunes:subtitle>Terrible things read with enthusiasm.</itunes:subtitle>	
     <itunes:author>The F Plus</itunes:author>
     <itunes:summary><?php echo $site->description() ?></itunes:summary>
@@ -22,7 +23,7 @@
     </itunes:owner>
     <itunes:category text="Comedy"></itunes:category>
     <itunes:explicit>yes</itunes:explicit>
-    <itunes:image href="https://thefpl.us/podcasts/logo4.png" />
+    <itunes:image href="https://thefpl.us/podcasts/logo5.png" />
 
     <generator><?php echo c::get('feed.generator', 'Kirby') ?></generator>
 
