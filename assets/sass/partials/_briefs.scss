@@ -193,9 +193,12 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     ul { @include grammarArray(); }
     .source { font-weight: $bold; }
   }
+
   .category { order: 6; padding-left:$padding; padding-right: $padding; text-align: right; color:rgba($black,0.8); }
 
+  .role { order:3; padding-left:$padding; padding-right:$padding; font-weight: $bold; margin-top:$padding; }
 
+  .job { order:2; padding-left: $padding; padding-right: $padding; }
 
   &.double-size { grid-column: span 2; 
     //.inner { display: grid; grid-template-columns:1fr 1fr; }

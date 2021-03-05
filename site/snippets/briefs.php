@@ -51,8 +51,10 @@
           </figure>
 
           <figcaption>
-
-            <time><?= date('l F jS, Y', $article->date()); ?></time>
+            
+            <?php if ($article->date()) { ?>
+              <time><?= date('l F jS, Y', $article->date()); ?></time>
+            <?php } ?>
 
             <h2 class="title">
               <a href="<?= $article->url(); ?>">
@@ -237,14 +239,36 @@
           </a>
         <?php } ?>
 
+        <?php if ($article->role()->isNotEmpty()) { ?>
+          <div class="job">
+            <?= $article->job(); ?>
+          </div>
+        <?php } ?>
+
+        <?php if ($article->role()->isNotEmpty()) { ?>
+          <div class="role">
+            <?php if ($article->role() == "regular") {
+              echo "Regular Cast";
+            } else if ($article->role() == "guest") {
+              echo "Guest Reader";
+            } else if ($article->role() == "guest") {
+              echo "Content Provider";
+            } ?>
+          </div>
+        <?php } ?>
+
+        
 
 
       </div>
-      <time class="timebox">
-        <span class="day"><?= date('d', $article->date()); ?></span>
-        <span class="month"><?= date('M', $article->date()); ?></span>
-        <span class="year"><?= date('Y', $article->date()); ?></span>
-      </time>
+
+      <?php if ($article->date()) { ?>
+        <time class="timebox">
+          <span class="day"><?= date('d', $article->date()); ?></span>
+          <span class="month"><?= date('M', $article->date()); ?></span>
+          <span class="year"><?= date('Y', $article->date()); ?></span>
+        </time>
+      <?php } ?>
   
     </div>
     
