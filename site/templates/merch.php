@@ -21,7 +21,7 @@
         <a href="<?= $merch->url(); ?>" class="grid-box" itemscope itemtype="https://schema.org/Product">
           <meta itemprop="url" content="<?= $merch->url(); ?>" />
           <figure>
-            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<? $merch->title(); ?>" itemprop="image" height="400" width="400" />
+            <img src="<?= $merch->pic()->toFile()->url(); ?>" alt="<?= $merch->title(); ?>" itemprop="image" height="400" width="400" />
             
             <?php if ($merch->almost_gone == "1") { ?>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="almost-gone">

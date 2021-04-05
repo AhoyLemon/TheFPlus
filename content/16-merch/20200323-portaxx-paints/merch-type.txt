@@ -1,4 +1,4 @@
-Title: Portaxx Paints
+Title: Portaxx Paintings
 
 ----
 
@@ -81,8 +81,8 @@ Products:
   series_num: "1"
   artist: Portaxx
   printed: ""
-  dimensions: 6"x6"
-  material: canvas
+  dimensions: 6" x 6"
+  material: acrylic on canvas
   reference: "320"
   released: 2020-03-23
   soldout: 2020-03-23
@@ -90,6 +90,31 @@ Products:
   price: "70"
   single_slug: ""
   single_buttontext: BUY IT
+  buttona_num: ""
+  buttona_price: ""
+  buttona_slug: ""
+  buttonb_num: ""
+  buttonb_price: ""
+  buttonb_slug: ""
+  buttonc_num: ""
+  buttonc_price: ""
+  buttonc_slug: ""
+- 
+  pic: devilking.jpg
+  fullsize: devilking-big.jpg
+  title: Ü
+  series_num: "2"
+  artist: Portaxx
+  printed: ""
+  dimensions: 6" x 6"
+  material: acrylic on canvas
+  reference: "348"
+  released: 2021-03-03
+  soldout: 2021-03-03
+  buy_type: single
+  price: "70"
+  single_slug: LNVBQHMGUTNMS
+  single_buttontext: BÜY NÖW
   buttona_num: ""
   buttona_price: ""
   buttona_slug: ""
@@ -118,4 +143,4 @@ Share-cta:
 
 ----
 
-Tags: 
+Tags: chemtrails,art

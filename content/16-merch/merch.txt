@@ -25,18 +25,27 @@ Current-merch:
   almost_gone: "1"
   pending: "0"
 - 
-  title: Sexybread
-  pic: bunnysquare.jpg
-  url: 'https://thefpl.us/merch/stickers#28'
+  title: Peeing On Your Fetish
+  pic: gitd_calvin.gif
+  url: 'https://thefpl.us/merch/stickers#31'
   type: sticker
-  price: $3
+  price: $2.50
   pending: "0"
   almost_gone: "0"
 - 
-  title: 'Pooner & The Snizz Funeral Services'
-  pic: snizz-square.jpg
-  url: 'https://thefpl.us/merch/stickers#30'
-  type: sticker
+  title: Nerd Thighs End Lives
+  pic: nerdthighs400.jpg
+  url: >
+    https://www.teepublic.com/tank-top/20135068-nerd-thighs-end-lives?ref_id=14142
+  type: tank top
+  price: $14
+  pending: "0"
+  almost_gone: "0"
+- 
+  title: Ask Rob
+  pic: rob-animated.gif
+  url: 'https://thefpl.us/merch/stickers#32'
+  type: Sticker
   price: $3
   pending: "0"
   almost_gone: "0"
@@ -407,6 +416,24 @@ Sold-merch:
   pic: slap-square-4.jpg
   type: fashion!
   sold_date: 2020-12-23
+- 
+  title: Sexybread
+  url: 'https://thefpl.us/merch/stickers#28'
+  pic: bunnysquare.jpg
+  type: sticker
+  sold_date: 2021-02-15
+- 
+  title: Ü
+  url: 'https://thefpl.us/merch/portaxx-paints#2'
+  pic: devilking.jpg
+  type: painting
+  sold_date: 2021-03-03
+- 
+  title: 'Pooner & The Snizz Memorial Services'
+  url: 'https://thefpl.us/merch/stickers#30'
+  pic: snizz-square.jpg
+  type: sticker
+  sold_date: 2021-03-11
 
 ----
 
