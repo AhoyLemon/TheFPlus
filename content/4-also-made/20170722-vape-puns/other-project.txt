@@ -1,0 +1,73 @@
+Title: A Thank You To Our Sponsors
+
+----
+
+Category: video
+
+----
+
+Date: 2017-07-22
+
+----
+
+Time: 15:30
+
+----
+
+Cover: sponsors_square.jpg
+
+----
+
+Show-image: false
+
+----
+
+Cast: Jimmyfranks,Bunnybread
+
+----
+
+Text: This was a community effort, but Jimmyfranks did the video and Bunnybread wrote about a hundred names. The full list is over *six pages* long, and available [here](https://docs.google.com/document/d/1DjZQpRGz2GchT036w6l-BIV48QNieFbaRFl6aDFaMmM/edit?usp=sharing).
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: 
+
+----
+
+Tags: f plus live,endless list,profiles of job creators
+
+----
+
+Tweet-intent: 
+
+----
+
+Bonus-content: 
+
+----
+
+Show-different-image: no
+
+----
+
+Page-image: 
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: https://youtu.be/Q-JKYAnHRao
+
+----
+
+Photos: 

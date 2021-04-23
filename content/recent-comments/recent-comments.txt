@@ -1,0 +1,14 @@
+Title: Recent Comments
+
+----
+
+Text: 
+
+<ul id="CommentsPage"></ul>
+<noscript>
+This page loads the 20 most recent comments made to the website, using Disqus. This will require javascript.
+</noscript>
+
+----
+
+Bonus-code: 

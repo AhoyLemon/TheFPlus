@@ -1,0 +1,97 @@
+Title: Invalid
+
+----
+
+Category: website
+
+----
+
+Date: 2021-01-31
+
+----
+
+Time: 11:30
+
+----
+
+Cover: invalid_square.jpg
+
+----
+
+Show-image: true
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: invalid-wider.png
+
+----
+
+Cast: Lemon,Sanguinary Novel
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Text: 
+
+**Invalid** is a multiplayer multibrowser game that launched the kinda.fun platform.
+
+The premise is fairly simple: Each round, there is one SysAdmin and everyone else is an employee. The employees want to create a password. The SysAdmin wants to make that as difficult as possible.
+
+There's a [wiki](https://github.com/AhoyLemon/kinda.fun/wiki/Invalid) and an [explainer video](https://www.youtube.com/watch?v=uhA83jtHmzM) you could watch, but the best way to get started is just to round up some friends and start playing.
+
+# [kinda.fun](https://kinda.fun/invalid)
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: https://github.com/AhoyLemon/kinda.fun
+
+----
+
+Tags: fun with javascript,video games,video games that aren't video games
+
+----
+
+Tweet-intent: 
+
+----
+
+Bonus-content: 
+
+----
+
+Photos: 
+
+- 
+  series_num: ""
+  pic: 1.jpg
+  desc: Pregame Screenshot
+  full_size: 1.jpg
+- 
+  series_num: ""
+  pic: 2.jpg
+  desc: SysAdmin Screenshot
+  full_size: 2.jpg
+- 
+  series_num: ""
+  pic: 3.jpg
+  desc: Employee Screenshot
+  full_size: 3.jpg

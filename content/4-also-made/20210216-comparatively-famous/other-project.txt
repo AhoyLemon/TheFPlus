@@ -1,0 +1,117 @@
+Title: Comparatively Famous: The Game of Celebrity Value
+
+----
+
+Category: website
+
+----
+
+Date: 2021-02-16
+
+----
+
+Time: 13:00
+
+----
+
+Cover: famous-square.jpg
+
+----
+
+Show-image: true
+
+----
+
+Show-different-image: yes
+
+----
+
+Page-image: famous-trans.png
+
+----
+
+Cast: Lemon
+
+----
+
+Baseprice: 
+
+----
+
+Sale-status: 
+
+----
+
+Video-url: 
+
+----
+
+Text: 
+
+A couple weeks ago, we finished recording an episode and then (and I don't remember why), we just started looking at different celebrity prices on Cameo. As the conversation progressed, we started to talk about certain values in relation to other values, and then what this whole thing would look like as a game. The next day, I started making it a game.
+
+It took about a week and a half.
+
+This is a single player game about guessing different celebrity prices on Cameo.
+
+# [Play now.](https://kinda.fun/cameo)
+
+----
+
+Episode-file: 
+
+----
+
+Github-repo: https://github.com/AhoyLemon/kinda.fun
+
+----
+
+Tags: fun with javascript,video games,video games that aren't video games,profiles of job creators
+
+----
+
+Tweet-intent: 
+
+----
+
+Bonus-content: 
+
+----
+
+Photos: 
+
+- 
+  series_num: "5"
+  pic: title-screen.jpg
+  desc: >
+    The title screen for Comparatively
+    Famous
+  full_size: title-screen.jpg
+- 
+  series_num: "4"
+  pic: sort-three.jpg
+  desc: >
+    A screenshot of gameplay in
+    Comparatively Famous
+  full_size: sort-three.jpg
+- 
+  series_num: "3"
+  pic: sort-midway.jpg
+  desc: >
+    a screenshot of gameplay in
+    Comparatively Famous
+  full_size: sort-midway.jpg
+- 
+  series_num: "2"
+  pic: valuate.jpg
+  desc: >
+    a screenshot of gameplay for
+    Comparatively Famous
+  full_size: valuate.jpg
+- 
+  series_num: "1"
+  pic: final-round.jpg
+  desc: >
+    screenshot of the final round in
+    Comparatively Famous
+  full_size: final-round.jpg

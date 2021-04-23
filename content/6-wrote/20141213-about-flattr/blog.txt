@@ -1,0 +1,47 @@
+Title: Why We're Trying Flattr
+
+----
+
+Author: Lemon
+
+----
+
+Date: 2014-12-13
+
+----
+
+Time: 23:51
+
+----
+
+Tags: blog,tech,micropayments,flattr,explanation,please give me money for my stupid idea,you gotta pay your rent dog
+
+----
+
+Text: 
+
+**UPDATE:** While a lot of the information in this blog post is still valid, we've abandoned this experience. For more on this, please read [Why We're No Longer Trying Flattr](/wrote/about-flattr-again).
+
+The internet is free, except for all the parts that matter.
+
+When I first started making stuff for the internet (in the late 90's), any time you built a website that was for information or entertainment, you put it together like you would a magazine. Collect together a variety of different content and then put it out in one regular scheduled release. And then to pay for the thing? Put some ads in there. Ads are all over the internet, and since anyone in the world can access most websites in the world, a couple (or a couple dozen) ads sprinkled all over your site has always been the way to get paid for content that people can access freely.
+
+###We're not an ad agency.
+The F Plus (the old website, the new website, ballp.it, and the podcast itself) has never attempted any sort of advertising and almost certainly would never do so.  We can pretend that this decision has something to do with integrity if we feel like lying to ourselves, but the larger point is that it just wouldn't ever be worth it.  Nearly every podcast that has in-audio advertisement (Audible, SquareSpace, Adam & Eve, etc) is doing so on commission, and that's  a sucker's gambit. You're cutting an ad for free and only getting paid a piece of a commission if somebody buys a dildo using your coupon code. We're not in the business of selling dildos, we're more interested in making fun of people who buy dragon dildos. The on-site ads are even worse, paying out a negligible fraction of a penny per thousand impressions, and that's only if the person sees the ad in the first place. And chances are, if you're young and smart, you aren't.
+
+###You're blocking ads (and so am I).
+The ad-based system wasn't particularly good from the start, and it's only become worse. Advertising rates have only gotten cheaper. About a quarter of internet users (and about half of millennials) are using ad blocking software, and for good reason. As the payout has decreased, the ads have become more intrusive and appalling. I started blocking ads when the ad-supported websites became increasingly desperate, and even respectable websites were hosting big flashing ads with some audio telling me that I just won a free iPod. That isn't acceptable, and because the offending sites weren't predictable, I had to shut it down for everyone.
+
+But I still recognize the scales aren't balanced. I visit a whole lot of websites in a day, and I recognize there's time and cost involved in the things I'm reading, and those costs are supposed to be offset by ads I'm blocking. NPR histrionics compare this kind of thing to "stealing", but that's more of a guilt tactic to solicit donations. Still though, you do have to recognize that things aren't working as they should.
+
+###Okay, what else is there?
+I was listening to an episode of  [The Web Ahead](http://5by5.tv/webahead) with Jen Simmons and they had an episode about the future of payments on the web. The conversation drifted to [flattr](https://flattr.com) and the premise seemed interesting. You put money into your monthly "internet budget" and then continue to live your life. When you see something that's good, in the same way that you'd like or favorite something, you have the action of "flattr", which basically amounts to "this is worth a small amount of money". At the end of the month, your budget is divvied up among the people you've flattred and people are paid out accordingly.
+
+This fills a need. Lots of times in my life I come across a helpful open source jQuery library or a piece of scientific research or an article I think is funny, and I want to do the equivalent of saying "Hey man, thanks." before I close the tab. Clicking some sort of "favorite" button seems impotent, writing an email to the author gives me anxiety. Maybe they have a PayPal donate button in the top, but then it's "Well wait a minute, is that really worth 5 bucks? Shit, I spent twice that to get a guy write this [F Plus jingle](http://www.horriblejingles.com/the-f-plus/) which sounds... well, nevermind, maybe that's a bad example of frugality" But instead of that, if there's something  that's close to hitting the like button, but that has some more real-world implications, that seems to be a better solution.
+
+###So this is the answer?
+Honestly, I don't know if this is the answer or not. I will say that for all the promise, Flattr's [catalog of supported content](https://flattr.com/catalog/everything) isn't nearly as robust as it should be. I'd love for stuff like [moment.js](http://momentjs.com/) or [Chicks with Buscemi Eyes](http://chickswithstevebuscemeyes.tumblr.com/) to open themselves up for flattry, but I'm resisting coming to the conclusion of "Not enough people use this thing therefore I'm not going to use this thing". I also don't know that the monthly budget concept is inherently more sensible than just having some money in my account and being able to tip somebody 25¢ on a whim, but nobody's got a tip jar system that works great either.
+
+So, for now, we're trying this. We'll try it for a while and we'll examine if it works and if it doesn't we'll try something else because that's how you do things. Way down at the bottom of every post, there's a flattr icon (it looks like this ![flattr icon red](about-flattr/tinyflattr.png)). If you click that, you can try out this experiment with us. If you use [Instacast](http://vemedio.com/instacast-mac) or [Podkicker](https://play.google.com/store/apps/details?id=com.podkicker&hl=en) (or some of [these other apps](https://flattr.com/apps)) you can set the app to flattr automatically when you finish an episode. Or you can ignore that button completely and I won't even know about it. 
+
+But I hope you have some other plan for something else that works.
