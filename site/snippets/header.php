@@ -8,64 +8,11 @@
   <?php } else { ?>
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <?php } ?>
-  <meta name="description" content="<?php echo excerpt($page->text()->xml(), 150) ?>">
-  <!-- Favicons -->  
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="<?= $site->url(); ?>/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c0282d">
-  <meta name="apple-mobile-web-app-title" content="The F Plus">
-  <meta name="application-name" content="The F Plus">
-  <meta name="msapplication-TileColor" content="#c0282d">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#c0282d">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@TheFPlus" />
-  <meta name="twitter:creator" content="@AhoyLemon">
-  <meta name="twitter:title" content="<?php echo $page->title(); ?>" />
-  <meta name="twitter:description" content="<?php echo excerpt($page->text()->xml(), 180) ?>" />
-  <?php if ($page->cover() != "") { ?>
-    <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
-  <?php } else if($image = $page->image()) { ?>
-    <meta name="twitter:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
-  <?php } else { ?>
-    <meta name="twitter:image" content="https://thefpl.us/assets/images/og-image.png" />
-	<?php } ?>
-  <meta name="twitter:url" content="<?php echo $page->url() ;?>" />
-  <!-- OpenGraph  -->
-  <meta property="og:site_name" content="<?php echo $site->title(); ?>" />
-  <meta property="og:title" content="<?php echo $page->title(); ?>">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php echo $page->url() ;?>">
-  <?php if ($page->cover() != "") { ?>
-    <meta property="og:image" content="<?php echo $page->url(); ?>/<?php echo $page->cover()->filename(); ?>" />
-    <meta property="og:image:width" content="<?php echo $page->cover()->toFile()->width(); ?>" />
-    <meta property="og:image:height" content="<?php echo $page->cover()->toFile()->height(); ?>" />
-  <?php } else if($image = $page->image()) { ?>
-    <meta property="og:image" content="<?php echo $page->url(); ?>/<?php echo $image->filename(); ?>" />
-  <?php } else { ?>
-    <meta property="og:image" content="https://thefpl.us/assets/images/og-image.png" />
-	<?php } ?>
-  <meta property="og:description" content="<?php echo excerpt($page->text()->xml(), 200) ?>">
-  <meta property="og:email" content="lemon@thefpl.us">
-  
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Master CSS -->
   <?= css('assets/css/thefplus.css?updated=2020-03-03'); ?>
-
+  <?php snippet('meta') ?>
 </head>
 <body>
   <?php if($page->isHomePage()) { ?>

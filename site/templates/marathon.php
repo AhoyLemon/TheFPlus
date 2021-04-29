@@ -2,8 +2,6 @@
 
 
 <main class="main page" role="main">
-
-  <meta http-equiv="last-modified" content="<?php echo $page->modified('Y-m-d@H:i:s'); ?>" />
   
   <div class="full marathon-block">
 

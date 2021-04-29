@@ -6,8 +6,8 @@
   RewriteEngine on
 
   # BASE DIRECTORY
-  RewriteBase /thefplus
-  # RewriteBase /
+  #RewriteBase /thefplus
+  RewriteBase /
 
   # block text files in the content folder from being accessed directly
   RewriteRule ^content/(.*)\.(txt|md|mdown)$ index.php [L]
@@ -29,8 +29,8 @@
   RewriteRule ^(.*) index.php [L]
   
   # HTTP => HTTPS
-  RewriteCond %{HTTPS} on
-  RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+  RewriteCond %{HTTPS} != on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 </IfModule>
 
