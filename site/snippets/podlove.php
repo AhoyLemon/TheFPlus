@@ -33,8 +33,8 @@
 
   podlovePlayer('#PodLovePlayer', {
       title: '<?= addslashes($page->title()); ?>',
-      subtitle: "Reading: <?= str_replace(',', '   ', $page->featured_site()); ?>",
-      summary: `<?= $page->text()->kirbytext(); ?>`,
+      subtitle: 'Reading: <?= str_replace(',', '   ', $page->featured_site()); ?>',
+      summary: '<?= preg_replace( "/\r|\n/", "", $page->text()->kirbytext() ); ?>',
       theme: {
         main: '#131313',
         highlight: '#c0282d'
@@ -58,7 +58,7 @@
       <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>
         chapters: [
           <?php foreach ($chapters as $chapter) { ?>
-            { start:"<?= $chapter['timestamp']; ?>", title: '<?= addslashes($chapter['name']); ?>'},
+            { start:'<?= $chapter['timestamp']; ?>', title: '<?= addslashes($chapter['name']); ?>'},
           <?php } ?>
         ],
       <?php } ?>
