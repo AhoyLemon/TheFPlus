@@ -34,7 +34,7 @@
   podlovePlayer('#PodLovePlayer', {
       title: '<?= addslashes($page->title()); ?>',
       subtitle: 'Reading: <?= str_replace(',', '   ', $page->featured_site()); ?>',
-      summary: '<?= preg_replace( "/\r|\n/", "", $page->text()->kirbytext() ); ?>',
+      summary: `<?= preg_replace( "/\r|\n/", "", $page->text()->kirbytext() ); ?>`,
       theme: {
         main: '#131313',
         highlight: '#c0282d'
