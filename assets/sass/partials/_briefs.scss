@@ -7,42 +7,6 @@
 
 $briefWidth: 330px;
 
-
-/*
-.summaries {
-  .brief {
-    header { padding:0 1em .25em 1em; } 
-    .cover { width: 100%; margin: auto; display: block; }
-    summary { padding: 1em 1em 2.5em 1em; display: block; }
-    &.person summary { padding-bottom: 0; }
-    .content { text-align: justify; }
-    &.brief { position: relative;
-      .image-holder { position:relative; display: block; overflow: hidden;
-        img { @include transition(all, 1s); }
-        .hover-cover { position: absolute; right:0; bottom:0; left:0; @include translateY(105%); @include transition();
-          svg { display: none; }
-        }
-        &:hover {
-          .hover-cover { @include translateY(0); }
-        }
-      }
-      .author-block { margin-bottom: 1em; font-size: 0.85em; }
-      .tags { padding:1em; text-align: right;
-        li { font-size:0.8em; }
-      }
-      .published { font-size: 0.85em; }
-      .episode-number { font-size:1.5em; color:lighten($black,35%); 
-        &:before { content:'#'; }
-      }
-      .time-estimate { position: absolute; bottom:0.2em; left:0.5em; font-size:2em; color:lighten($black,40%);
-        &:after { content:' min read'; font-size:0.5em; }
-      }
-    }
-  }
-  .fa { color:lighten($black,20%); }
-}
-*/
-
 .pagination { display: grid; justify-content: end; grid-column: 1/-1;
 
   .prev { grid-column: 1; }
@@ -244,15 +208,15 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   .summaries  { grid-template-columns:repeat(2,1fr);  }
 }
 
-@media (min-width:1280px) and (max-width:1660px) {
+@media (min-width:1280px) and (max-width:1689px) {
   .summaries  { grid-template-columns:repeat(3,1fr);  }
 }
 
-@media (min-width:1661px) and (max-width:1900px) {
+@media (min-width:1690px) and (max-width:1959px) {
   .summaries  { grid-template-columns:repeat(4,1fr);  }
 }
 
-@media (min-width:1901px) {
+@media (min-width:1960px) {
   .summaries  { grid-template-columns:repeat(5,1fr);  }
 }
 
