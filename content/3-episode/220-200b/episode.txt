@@ -62,7 +62,7 @@ Bonus-content:
 
 * [Cake Wrecks](http://www.cakewrecks.com/)
 * [STOG's birthday cake](http://ballp.it/index.php?topic=1289.msg33451#msg33451)
-* [The Earwolf Challenge](http://www.earwolf.com/show/earwolf-challenge/)
+* [The Earwolf Challenge](https://podcastdb.fandom.com/wiki/The_Earwolf_Challenge)
 * [This Is Lady](http://www.thisislady.com/)
 * [F Plus Fanart](/fanart)
 * [Horrible Jingles](http://www.horriblejingles.com/)
@@ -171,3 +171,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Ballpit-url: 

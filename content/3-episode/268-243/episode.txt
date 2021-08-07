@@ -78,4 +78,20 @@ Cover-cite-artist: D.C. Stuelpner
 
 ----
 
-Cover-cite-url: http://sketchysituation.blogspot.com/
+Cover-cite-url: http://sketchysituation.blogspot.com
+
+----
+
+Ballpit-url: 
+
+----
+
+Chapters-toggle: no
+
+----
+
+Chapters: 
+
+----
+
+Chapter-provider: 
