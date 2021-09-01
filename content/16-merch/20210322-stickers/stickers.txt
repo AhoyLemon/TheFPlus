@@ -765,7 +765,7 @@ Stickers:
   vinyl: holographic
   printed: "50"
   released: 2021-03-22
-  soldout: ""
+  soldout: 2021-08-01
   reference: "79"
   almost_gone: "0"
   buttona_num: "1"

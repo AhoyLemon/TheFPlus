@@ -41,14 +41,6 @@ Current-merch:
   price: $14
   pending: "0"
   almost_gone: "0"
-- 
-  title: Ask Rob
-  pic: rob-animated.gif
-  url: 'https://thefpl.us/merch/stickers#32'
-  type: Sticker
-  price: $3
-  pending: "0"
-  almost_gone: "0"
 
 ----
 
