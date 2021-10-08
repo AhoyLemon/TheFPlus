@@ -27,6 +27,10 @@
   $ogImageWidth = "";
   $ogImageHeight = "";
   if ($page->og_image()->isNotEmpty() && $page->og_image()->toFile()) {
+    $ogImageURL = $page->url() . '/' . $page->og_image()->filename();
+    $ogImageWidth = $page->og_image()->toFile()->width();
+    $ogImageHeight = $page->og_image()->toFile()->height();
+  } else if ($page->cover()->isNotEmpty() && $page->cover()->toFile()) {
     $ogImageURL = $page->url() . '/' . $page->cover()->filename();
     $ogImageWidth = $page->cover()->toFile()->width();
     $ogImageHeight = $page->cover()->toFile()->height();
