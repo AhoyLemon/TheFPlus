@@ -15,8 +15,6 @@
         </div>
       </div>
 
-      <!-- <img src="" class="cover" loading="lazy" height="400" width="400" /> -->
-
       <?php if ($article->cover() != "") { ?>
         <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" loading="lazy" height="400" width="400" />
       <?php } else { ?>

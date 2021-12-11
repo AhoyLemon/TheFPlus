@@ -25,9 +25,9 @@ section.covers-only { display: grid; gap:0;
         animation: loadingskeleton 1.2s infinite;
       }
 
-      .episode-summary { color:$copy; }
-      .episode-number  { font-size:120%; }
-      .episode-title   { font-size:200%; line-height: 160%; }
+      .episode-summary { color:rgba($copy,0.35); }
+      .episode-number  { font-size:110%; }
+      .episode-title   { font-size:175%; line-height: 160%; }
     }
     img { transition:filter 0.3s linear; width:100%; height: auto; position: relative; z-index: 3; }
     figcaption { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; padding:$padding;
