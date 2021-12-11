@@ -1,11 +1,39 @@
 $episodeItemMarginBottom: 2em;
 
+@keyframes loadingskeleton {
+  0% {
+    transform: skewX(-10deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-10deg) translateX(200%);
+  }
+}
+
+
+
 section.covers-only { display: grid; gap:0;
   .tile { position: relative;
-    img { transition:filter 0.3s linear; width:100%; height: auto; }
-    figcaption { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; padding:$padding;
-      summary { background:$card; padding:$padding; color:$copy; transform:scale(0.1); transition: all 0.3s ease; box-shadow:$boxShadow; opacity: 0;; }
+    .cover-loading { background-color: rgba(0,0,0,0.05); /*background:orange; */ @include position(absolute,0,0,0,0); padding:($padding * 2); overflow: hidden;
+
+      &:before { content:" "; display: block; @include position(absolute,0,0,0,0);
+        background-image: linear-gradient(
+          90deg,
+          rgba(#fff, 0),
+          rgba(#fff, 0.35),
+          rgba(#fff, 0)
+        );
+        animation: loadingskeleton 1.2s infinite;
+      }
+
+      .episode-summary { color:$copy; }
+      .episode-number  { font-size:120%; }
+      .episode-title   { font-size:200%; line-height: 160%; }
     }
+    img { transition:filter 0.3s linear; width:100%; height: auto; position: relative; z-index: 3; }
+    figcaption { @include position(absolute,0,0,0,0); display:flex; align-items: center; justify-content: center; padding:$padding;
+      summary { background:$card; padding:$padding; color:$copy; transform:scale(0.1); transition: all 0.3s ease; box-shadow:$boxShadow; opacity: 0; z-index: 4; }
+    }
+
 
 
     &:hover {
@@ -104,15 +132,11 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
   }
 }
 
-@media (min-width:1601px) {
+@media (min-width:1401px) {
   section.covers-only { grid-template-columns: repeat(4,1fr); }
 }
 
-@media (min-width:1201px) and (max-width:1600px) {
-  section.covers-only { grid-template-columns: repeat(3,1fr); }
-}
-
-@media (max-width:1201px) {
+@media (max-width:1400px) {
   section.covers-only { grid-template-columns: repeat(2,1fr); }
 }
 
@@ -124,5 +148,9 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
       }
     }
   }
+}
+
+@media (max-width:420px) {
+  section.covers-only { grid-template-columns: 1fr; }
 }
 

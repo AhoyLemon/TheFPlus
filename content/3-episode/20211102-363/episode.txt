@@ -1,0 +1,171 @@
+Prevnext: 
+
+----
+
+Title: Here Come Da Advicinators
+
+----
+
+Featured-site: advicinators.com
+
+----
+
+Date: 2021-11-02
+
+----
+
+Time: 17:00
+
+----
+
+Cover: ep363.jpg
+
+----
+
+Cast: Boots Raingear,Achilles' Heelies,Bunnybread,Zarla,Lemon
+
+----
+
+Episode-file: fplus_363.mp3
+
+----
+
+Runtime: 1:14:27
+
+----
+
+File-size: 77
+
+----
+
+Document-link: https://docs.google.com/document/d/1kTiTEYdmZ1-5nMVJRm5hocsu7Ure4i0lqhFXPEtSa3w/edit?usp=sharing
+
+----
+
+Editor: Achilles' Heelies
+
+----
+
+Provider: Kanyesutra
+
+----
+
+Text: 
+
+Predating some of the more well-known question and answer sites, the website **Advicinators** dates back all the way to 2003, and it hasn't changed a whole lot in the decades since. Teenagers will ask a question, typically about sexual health, and "columnists" will offer advice, typically unhelpful. And then at the end, we'll play a game about what site we're on.
+
+This week, The F Plus gets a real nice Fing Ring.
+
+----
+
+Music-used: Girls Aloud - No Good Advice,Weird Al Yankovic - Dare to be Stupid
+
+----
+
+Tags: teenagers,advice,the internet isn't helping
+
+----
+
+Bonus-content: * [am-i-fat.com](http://am-i-fat.com)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3659.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Girl in Green Shirt Sitting on Black Metal Railings
+
+----
+
+Cover-cite-artist: cottonbro
+
+----
+
+Cover-cite-url: https://www.pexels.com/@cottonbro
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: No Good Advice?
+- 
+  timestamp: 00:00:53
+  name: Reader Intros
+- 
+  timestamp: 00:02:40
+  name: Hey F Plus
+- 
+  timestamp: 00:05:23
+  name: Advicenators Frequently Asked Questions
+- 
+  timestamp: 00:11:10
+  name: how to pop
+- 
+  timestamp: 00:12:55
+  name: Banana eating
+- 
+  timestamp: 00:15:20
+  name: >
+    i am 20 years old and recently had
+    incontince
+- 
+  timestamp: 00:17:05
+  name: Brushing my teeth makes me poop.
+- 
+  timestamp: 00:20:45
+  name: >
+    Sounds ridiculous but... tissue stuck in
+    balls
+- 
+  timestamp: 00:27:30
+  name: possible dat I may be pregnant
+- 
+  timestamp: 00:30:50
+  name: JERKING MY DICK
+- 
+  timestamp: 00:39:20
+  name: Heterosexual viewing gay porn
+- 
+  timestamp: 00:45:00
+  name: Why do I hate anything Un-American
+- 
+  timestamp: 00:48:10
+  name: how to ban criticism
+- 
+  timestamp: 00:52:15
+  name: "Parents don't want me listening to wizard rock"
+- 
+  timestamp: 00:58:20
+  name: 'THE GAME: Advicenators, Question.com or Yahoo Answers?'
+- 
+  timestamp: 01:06:40
+  name: Stupid, unhelpful, asinine titles
+- 
+  timestamp: 01:09:50
+  name: What did we learn?
+- 
+  timestamp: 01:14:45
+  name: How do you give a handjob?
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

@@ -1,0 +1,189 @@
+Prevnext: 
+
+----
+
+Title: All My Starchildren
+
+----
+
+Featured-site: hybridchildrencommunity.com
+
+----
+
+Date: 2021-09-30
+
+----
+
+Time: 15:15
+
+----
+
+Cover: ep360.jpg
+
+----
+
+Cast: Boots Raingear,Nutshell Gulag,Dijon Du Jour,Lemon
+
+----
+
+Episode-file: fplus_360.mp3
+
+----
+
+Runtime: 1:26:26
+
+----
+
+File-size: 72
+
+----
+
+Document-link: https://docs.google.com/document/d/1OyP7T2EfPvmT2Hi3Vw8K7UwUd83J3FTgkQ4xsQDtr_8/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Smallest Sasquatch
+
+----
+
+Text: 
+
+Do *you* have alien-human hybrid children you've never met? Well it turns out that simply reading this means that *you do*. We know, we were surprised too. We're visiting the **Hybrid Children Community** - a group of people of similar class and ethnic makeup who want to tell you about their imaginary children. And then they want to share recipes.
+
+This week, The F Plus is screaming with a huge smile.
+
+----
+
+Music-used: Pink Turns Blue - Walking On Both Sides,Ugly Duckling - A Little Samba
+
+----
+
+Tags: aliens,hippies,i need a lift to burning man,where do i sign up?,art,take a look at my navel,recipes,no future
+
+----
+
+Bonus-content: 
+
+* You owe it to yourself to see [all the drawings](http://www.hybridchildrencommunity.com/the-children) of these children
+*  and further, there's a [Galactic Family Photo Gallery](http://www.hybridchildrencommunity.com/galactic-family-et-artwork)
+* While you're at it, [Bashar](https://www.bashar.org/)'s site is also fantastic.
+* "The Spinda Voice" was a reference to Portaxx's [Pokemon OK](https://thefpl.us/also-made/pokemon-ok) cartoon (YouTube)
+* [kinda.fun](https://kinda.fun) keeps getting updated. [Sisyphus Clicker](https://kinda.fun/sisyphus) was recently added to the games.
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3648.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Emma – Shakani Hybrid
+
+----
+
+Cover-cite-artist: Maxime Valentin
+
+----
+
+Cover-cite-url: http://www.hybridchildrencommunity.com/emma-shakani-hybrid/
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Walking On Both Sides
+- 
+  timestamp: 00:00:24
+  name: Reader Intros
+- 
+  timestamp: 00:01:37
+  name: Hey, F Plus!
+- 
+  timestamp: 00:03:18
+  name: >
+    We Are Family, Tribe, and Community of
+    Like Hearted People
+- 
+  timestamp: 00:06:15
+  name: Who Are the hybrid children?
+- 
+  timestamp: 00:17:00
+  name: Our Hybrid Galactic Family
+- 
+  timestamp: 00:22:50
+  name: Mapper ~ Framework and Maze Generator
+- 
+  timestamp: 00:24:18
+  name: 'Lobster ~ “The [Hybrid] Screamer”'
+- 
+  timestamp: 00:28:58
+  name: >
+    NestOr, The Intergalactic Hybrid
+    Sun-Unifier
+- 
+  timestamp: 00:31:00
+  name: Phin, The Cetacean Hybrid Ambassador
+- 
+  timestamp: 00:34:03
+  name: >
+    REP the Ref~ Game Playa of
+    Quasi-Physicality
+- 
+  timestamp: 00:40:42
+  name: Gorwen, Balancer of Polarities
+- 
+  timestamp: 00:45:12
+  name: Starry Eyed “Seven”
+- 
+  timestamp: 00:48:12
+  name: BRIDGET NIELSEN ~Sedona, AZ~
+- 
+  timestamp: 00:51:02
+  name: KIRK NIELSEN ~Utah~
+- 
+  timestamp: 00:54:04
+  name: DANIEL SCRANTON ~Ojai, CA~
+- 
+  timestamp: 00:56:25
+  name: HYBRID CHILD ONLINE COURSE
+- 
+  timestamp: 01:00:40
+  name: >
+    Quinoa Crust Pizza with Raw Cultured
+    Pesto Sauce (Vegan/Gluten-Free)
+- 
+  timestamp: 01:13:23
+  name: >
+    Raw Chocolate Easter Eggs with Coconut
+    Filling
+- 
+  timestamp: 01:20:50
+  name: What did we learn?
+- 
+  timestamp: 01:25:20
+  name: A Little Samba
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

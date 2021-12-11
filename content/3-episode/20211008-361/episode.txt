@@ -1,0 +1,193 @@
+Prevnext: 
+
+----
+
+Title: Night of the Blood Sorceress
+
+----
+
+Featured-site: cagliastrotheironring.com
+
+----
+
+Date: 2021-10-08
+
+----
+
+Time: 18:00
+
+----
+
+Cover: ep361.jpg
+
+----
+
+Cast: Lemon,Achilles' Heelies,Ironicus,Shell Game,Boots Raingear
+
+----
+
+Episode-file: fplus_361.mp3
+
+----
+
+Runtime: 1:24:03
+
+----
+
+File-size: 59
+
+----
+
+Document-link: https://docs.google.com/document/d/1OekwoljYgVu2tUlYrtcCY5OPD4B9oZj4v5BlmneL4hQ/edit?usp=sharing
+
+----
+
+Editor: Boots Raingear
+
+----
+
+Provider: A Meat
+
+----
+
+Text: 
+
+The **Sorceress Cagliastro** is an author, a teacher, a necromancer, a bloodwitch, a haunted doll maker, a 3D printmaker, and a relentless huckster. To that end, she has a whole lot of crap you can buy and classes you can take, as long as you promise you won't ever share anything you've learned with anyone else. It's a blood oath, I suppose.
+
+This week, The F Plus is filling your head with graveyard dirt.
+
+----
+
+Music-used: Killing Joke - Love Like Blood,Lou Rawls - Season of the Witch
+
+----
+
+Tags: magic,sex,blood,focus on a single twit,amazon,your apartment is irrelevant,cardiac hole
+
+----
+
+Bonus-content: * [Sorceress Cagliastro wants to mummify your pets.](https://www.youtube.com/watch?v=XnoxPRKd6pU) (YouTube)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3650.0
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Love Like Blood
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:42
+  name: Hey F Plus
+- 
+  timestamp: 00:03:50
+  name: >
+    BLOOD SORCERESS, NECROMANCER IN THE
+    HANDS OF 9
+- 
+  timestamp: 00:07:30
+  name: THE ART OF MUMMIFICATION
+- 
+  timestamp: 00:09:08
+  name: THE COST OF MUMMIFICATION
+- 
+  timestamp: 00:11:50
+  name: >
+    BEGINNER AND CORE (ADVANCED) CLASSES
+    ETC....
+- 
+  timestamp: 00:14:50
+  name: BEGINNER CLASS
+- 
+  timestamp: 00:20:00
+  name: THE BOXES
+- 
+  timestamp: 00:21:45
+  name: BURNING THE FIELDS SEDATION
+- 
+  timestamp: 00:23:50
+  name: A SAMPLING OF CLASS SUBJECTS
+- 
+  timestamp: 00:28:50
+  name: WEALTH
+- 
+  timestamp: 00:34:30
+  name: >
+    THE SCIENCE OF SORCERY AND SEX AND
+    MASTURBATION
+- 
+  timestamp: 00:38:30
+  name: 'Protection Class: Proactive Protection'
+- 
+  timestamp: 00:45:10
+  name: COLLETTE MANDOLINO Began to Cry
+- 
+  timestamp: 00:52:30
+  name: >
+    MENSTRUAL BLOOD AND SEMEN, A Sorcery
+    Manual
+- 
+  timestamp: 00:56:00
+  name: HAUNTED DOLL WATCH
+- 
+  timestamp: 00:57:40
+  name: 'A84 - HEARTLESS- SORCERY DOLL'
+- 
+  timestamp: 01:00:30
+  name: A47 IRON EYES
+- 
+  timestamp: 01:04:15
+  name: 'M22 - IRON SHE - FOR PUSHING AWAY AGING'
+- 
+  timestamp: 01:05:45
+  name: 3D SIGILS
+- 
+  timestamp: 01:08:10
+  name: 'A104MSL - NECROMANCY DOLL'
+- 
+  timestamp: 01:16:35
+  name: A12 -THE GATEKEEPER
+- 
+  timestamp: 01:18:00
+  name: What did we learn?
+- 
+  timestamp: 01:22:50
+  name: Season of the Witch
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
