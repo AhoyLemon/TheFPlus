@@ -35,58 +35,16 @@
           <?php echo $article->title(); ?>
         </figcaption>
 
-        <figure>
-          <?php if ($article->cover() != "") { ?>
+        <?php if ($article->cover() != "") { ?>
+          <figure class="<?= $article->cover()->toFile()->extension(); ?>">
             <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
-          <?php } else { ?>
+          </figure>
+        <?php } else { ?>
+          <figure class="<?= $article->image()->extension(); ?>">
             <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
-          <?php } ?>
-        </figure>
+          </figure>
+        <?php } ?>
 
-
-        <?php
-          /*
-          $findme = $article->title();
-          $allEpisodes = $site->find('episode')->children()->visible()->filterBy('cast', $findme, ',')->sortBy('date', 'desc');
-          $episodeCount = 0;
-          foreach ($allEpisodes as $foo) { $episodeCount++; }
-          echo '<h1>' . $episodeCount . '</h1>';
-          */
-        ?>
-
-        <?php /*
-        <header>
-          <a href="<?php echo $article->url() ?>" title="<?php echo html($article->title()) ?>">
-            <?php echo $article->title(); ?>
-          </a>
-        </header>
-        <?php if($image = $article->image()): ?>
-          <a class="image-holder" href="<?php echo $article->url() ?>" alt="<?php echo html($article->title()) ?>">
-            
-            <?php if ($article->cover() != "") { ?>
-              <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
-            <?php } else { ?>
-              <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="<?php echo $article->title(); ?>" />
-            <?php } ?>
-            
-            <div class="hover-cover">
-              <?php if ($article->text() != ""): ?>
-                <div class="content">
-                  <?php echo excerpt($article->text(), 222) ?>
-                </div>
-              <?php endif; ?>
-            </div>
-          </a>
-        <?php endif ?>
-        <?php if(!$image = $article->image()): ?>
-          <summary>
-            <div class="content">
-              <p><?php echo excerpt($article->text(), 222) ?></p>
-            </div>
-          </summary>
-        <?php endif ?>
-
-        */ ?>
       </a>
     <?php endforeach ?>
 
@@ -95,18 +53,12 @@
           statistics
         </figcaption>
 
-        <figure>
+        <figure class="png">
           <img src="<?php echo $site->url() ?>/assets/images/piechart.png" class="cover png" alt="Pie Chart" />
         </figure>
     </a>
   </section>
   
-
-  <?php /* if ($page->undergrid() != "") { ?>
-    <div class="undergrid" style="margin-top:1em; margin-bottom:1em;">
-      <?php echo $page->undergrid()->kirbytext(); ?>
-    </div>
-  <?php } */ ?>
   
 </main>
 

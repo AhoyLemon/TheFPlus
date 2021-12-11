@@ -72,3 +72,14 @@ $body: #222;
 $card: #000;
 $copy: $white;
 */
+
+
+// ANIMATIONS //////////////////////////////////////////////////////////////////////////////////////
+@keyframes skeleton {
+  0% {
+    transform: skewX(-10deg) translateX(-100%);
+  }
+  100% {
+    transform: skewX(-10deg) translateX(200%);
+  }
+}

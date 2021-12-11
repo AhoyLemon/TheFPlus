@@ -1,30 +1,9 @@
 $episodeItemMarginBottom: 2em;
 
-@keyframes loadingskeleton {
-  0% {
-    transform: skewX(-10deg) translateX(-100%);
-  }
-  100% {
-    transform: skewX(-10deg) translateX(200%);
-  }
-}
-
-
-
 section.covers-only { display: grid; gap:0;
   .tile { position: relative;
-    .cover-loading { background-color: rgba(0,0,0,0.05); /*background:orange; */ @include position(absolute,0,0,0,0); padding:($padding * 2); overflow: hidden;
-
-      &:before { content:" "; display: block; @include position(absolute,0,0,0,0);
-        background-image: linear-gradient(
-          90deg,
-          rgba(#fff, 0),
-          rgba(#fff, 0.35),
-          rgba(#fff, 0)
-        );
-        animation: loadingskeleton 1.2s infinite;
-      }
-
+    .cover-loading { background-color: rgba(0,0,0,0.05); @include position(absolute,0,0,0,0); padding:($padding * 2); overflow: hidden;
+      @include skeletonBox;
       .episode-summary { color:rgba($copy,0.35); }
       .episode-number  { font-size:110%; }
       .episode-title   { font-size:175%; line-height: 160%; }
