@@ -1,0 +1,215 @@
+Prevnext: 
+
+----
+
+Title: Goodbye! Yahoo! Answers!
+
+----
+
+Featured-site: answers.yahoo.com
+
+----
+
+Date: 2022-01-30
+
+----
+
+Time: 15:10
+
+----
+
+Cover: ep367.jpg
+
+----
+
+Cast: Boots Raingear,Victor Laszlo,Adam Bozarth,Achilles' Heelies,Jack Chick,Lemon
+
+----
+
+Episode-file: fplus_367.mp3
+
+----
+
+Runtime: 1:08:11
+
+----
+
+File-size: 62
+
+----
+
+Document-link: https://docs.google.com/document/d/1xu_8YCHcB-XwbOBUxl6RIaBORrJigRDFfAl_cTLuh54/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Mz. Saturn
+
+----
+
+Text: 
+
+After over 15 years of cultivating some of the dumbest questions The Internet has ever pondered, a series of truly horrific business decisions forced **Yahoo Answers** to shut down permanently on May 4th of 2021. Our memorial episode may not be timely, it may not be well thought out, and it may not be informative - but in all those ways, this episode is representative of Yahoo Answers itself.
+
+This week, The  F Plus is burning all our documents (but unrelated to that, Jeff had a fantastic orange)
+
+----
+
+Music-used: Mission of Burma - Academy Fight Song,Lush - Ciao!
+
+----
+
+Tags: yahoo,burn all documents,morons,the internet is a dumb oracle you shout into,questionable problem-solving,the internet isn't helping,that's great jeff
+
+----
+
+Bonus-content: 
+
+* Wanna draw some "woah, it's a dog on a skateboard" merch? Contact [Lemon](/meet/lemon).
+* Ditto above, but for **BURN ALL DOCUMENTS**.
+* Also, Lemon just wants you to know [he was right about the hard drive thing](https://www.sciencefocus.com/future-technology/does-a-usb-drive-get-heavier-as-you-store-more-files-on-it/)
+
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "Woah! It's a dog on a skateboard!"
+- 
+  timestamp: 00:00:16
+  name: Reader Intros
+- 
+  timestamp: 00:01:45
+  name: Hey F Plus! (Lie to me.)
+- 
+  timestamp: 00:04:52
+  name: >
+    my girlfriend is supose to manstrate on
+    the 6th of next months and we had sex
+    last night can she still get pre
+- 
+  timestamp: 00:06:10
+  name: "Let's get down to brass tax: What will it cost to have my urethral opening surgically rerouted to the tip of my left index finger?"
+- 
+  timestamp: 00:07:00
+  name: >
+    Could I sue the government and win for
+    liposuction and a tummy tuck? ?
+- 
+  timestamp: 00:14:10
+  name: chinese crested dog is it nice to you?
+- 
+  timestamp: 00:14:53
+  name: >
+    Who is the moron that thinks that pi tb
+    ull is 2 words?
+- 
+  timestamp: 00:15:55
+  name: Should I get another Chihuahua?
+- 
+  timestamp: 00:17:40
+  name: Goku vs Batman?
+- 
+  timestamp: 00:20:25
+  name: >
+    Please, PLEASE read! Interpret the dream
+    I had last night
+- 
+  timestamp: 00:25:10
+  name: What did my dad just say to me?
+- 
+  timestamp: 00:25:40
+  name: >
+    Will my laptop get heavier if I put more
+    files on it?
+- 
+  timestamp: 00:26:20
+  name: Does spider have pusspuss?
+- 
+  timestamp: 00:27:15
+  name: >
+    to get rid of all a bats in my arttic
+    should i buy 100 snakes and put them in
+    my attic?
+- 
+  timestamp: 00:28:30
+  name: >
+    Where can I buy a frog? (Not for sexual
+    reasons)?
+- 
+  timestamp: 00:29:30
+  name: thog dont c aare
+- 
+  timestamp: 00:30:10
+  name: >
+    Why does nintendo make bad pokemon like
+    pidgey or ratata instead if making cool
+    good pokemon like mewtwo only?
+- 
+  timestamp: 00:32:20
+  name: is he being a dick or am I wrong?
+- 
+  timestamp: 00:34:00
+  name: What is the hottest Undertale Character?
+- 
+  timestamp: 00:35:30
+  name: >
+    Do women get knocked out more easily
+    than men?
+- 
+  timestamp: 00:37:50
+  name: AND NOW, A LIST OF TITLES
+- 
+  timestamp: 00:44:45
+  name: AND NOW, AN ADDITIONAL LIST OF TITLES
+- 
+  timestamp: 01:01:40
+  name: >
+    some alternative sites to Yahoo
+    answers...
+- 
+  timestamp: 01:06:30
+  name: Ciao!
+- 
+  timestamp: 01:07:00
+  name: "Woah! It's a dog on a skateboard!"
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

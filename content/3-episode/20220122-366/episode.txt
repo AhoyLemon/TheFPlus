@@ -1,0 +1,222 @@
+Prevnext: 
+
+----
+
+Title: Let's Do The Time Loaf Again
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2022-01-22
+
+----
+
+Time: 14:00
+
+----
+
+Cover: ep366.jpg
+
+----
+
+Cast: Boots Raingear,Frank West,Victor Laszlo,K Thor Jensen,Lemon
+
+----
+
+Episode-file: fplus_366.mp3
+
+----
+
+Runtime: 1:23:25
+
+----
+
+File-size: 57
+
+----
+
+Document-link: https://docs.google.com/document/d/1DD8kubwHjt9Ecu1a21JZX8p12pJsaGkkoZURRZFuwto/edit?usp=sharing
+
+----
+
+Editor: Boots Raingear
+
+----
+
+Provider: Semantic Weeb
+
+----
+
+Text: 
+
+Hang on, didn't the F Plus do a Mandela Effect episode before?  Well, this reality has us going to the **r/MandelaEffect** subreddit, before realizing that **r/Retconned** is even stupider and spending all our time there instead.
+
+This week, The F Plus is gonna drink Goldschläger until the loaf shifts.
+
+----
+
+Music-used: Archers of Loaf - Wrong,Rob Base & DJ E-Z Rock & Lemon - It Takes Two
+
+----
+
+Tags: reddit,what a wonderful loaf,i couldn't be wrong,magical thinking,new age,guys this totally happened,as an intellectual...,conspiracy theorists,quantum?,time travel
+
+----
+
+Bonus-content: 
+
+* [How to with John Wilson - Mandela Effect Conference](https://www.youtube.com/watch?v=dcAE8SMcNVo) (YouTube clip - please watch the whole show though)
+* [ahoylemon.xyz](https://ahoylemon.xyz)
+* [Boots' Bandcamp page](https://bootsraingear.bandcamp.com)
+* [T Shirts by K Thor Jensen](https://www.teepublic.com/user/kthorjensen)
+* [Fred Flintstone says "Baba Booey"](https://youtu.be/thdjQSJlybk) (YouTube)
+
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "Apparently Boots can't read?"
+- 
+  timestamp: 00:00:30
+  name: Reader Intros
+- 
+  timestamp: 00:02:10
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:45
+  name: Possible Cause of the Mandela Effect
+- 
+  timestamp: 00:07:35
+  name: 'Mandela Effect: White Instead of Yellow Sun logical explanation for Biological Changes in us'
+- 
+  timestamp: 00:12:45
+  name: >
+    Is the Mandela Effect a sign of an
+    impending nuclear holocaust?
+- 
+  timestamp: 00:17:00
+  name: The rules of r/retconned
+- 
+  timestamp: 00:18:05
+  name: "I've died, seen the afterlife and can maybe explain the Mandela effect."
+- 
+  timestamp: 00:25:25
+  name: >
+    I have an all powerful earth controlling
+    weapon.
+- 
+  timestamp: 00:32:05
+  name: "Apparently eggs aren't dairy anymore"
+- 
+  timestamp: 00:33:50
+  name: Penis Fish??? WTF
+- 
+  timestamp: 00:35:45
+  name: "Fred Flinstone's Catchphrase"
+- 
+  timestamp: 00:36:45
+  name: Mars?!?
+- 
+  timestamp: 00:38:25
+  name: Inconsistent Sunset Times
+- 
+  timestamp: 00:40:45
+  name: What is baby corn?
+- 
+  timestamp: 00:42:00
+  name: >
+    I believe dogs used to sit more
+    elegantly
+- 
+  timestamp: 00:44:30
+  name: Remember ovals?
+- 
+  timestamp: 00:46:10
+  name: Hop Topic Sexy Corner
+- 
+  timestamp: 00:49:25
+  name: >
+    And now, a message from the Medwedian
+    President...
+- 
+  timestamp: 00:51:30
+  name: "Okay, let's all learn a few things about Medwedia."
+- 
+  timestamp: 00:54:55
+  name: >
+    I swear woolly mammoth burgers were a
+    thing
+- 
+  timestamp: 00:57:05
+  name: >
+    Is it me, or is water much wetter than
+    it used to be?
+- 
+  timestamp: 00:59:25
+  name: >
+    no one really drunk alcohol because it
+    didn’t have any kind of effect
+- 
+  timestamp: 01:25:25
+  name: "I'm just a bro asking questions"
+- 
+  timestamp: 01:03:30
+  name: >
+    Do you look people into the eyes when
+    you talk to them?
+- 
+  timestamp: 01:05:50
+  name: The realm with no Vovols really sucked!
+- 
+  timestamp: 01:11:30
+  name: AND NOW, A LIST OF TITLES
+- 
+  timestamp: 01:16:45
+  name: What did we learn?
+- 
+  timestamp: 01:22:10
+  name: "It Takes Two (That's What Reality Is Made Up Of)"
+- 
+  timestamp: 01:22:35
+  name: 'Everything Boots learned about sex*'
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
