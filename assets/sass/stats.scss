@@ -4,33 +4,55 @@
 @import "partials/_extends";
 @import "partials/_z-index";
 
-.table-flexes { @include flex-container();
-  .table-holder { @include flex-item(300px); padding-top: 2em; }
-}
-
-.chart-holder { @include position(fixed,null,0,0,0); mix-blend-mode: overlay; z-index: 9; @include flex-container();
-  canvas { margin-left: auto; margin-right: auto; display: block; }
-  .chart-square { @include flex-item(33.33333%,0);
-    //canvas { max-width: 100%; }
+.vgt-wrap {
+  th { font-size:0.8rem; text-transform: uppercase; text-align: left;
+    &.sortable {
+      button { cursor: pointer; }
+      &:hover span { color: #409eff; }
+    }
+  }
+  .count { font-size:1.3rem; line-height: 80%; vertical-align: middle; }
+  .name { font-size:1.4rem; line-height: 80%; vertical-align: middle; }
+  .name, .name-th { width:60% !important; }
+  .count, .count-th { width:15% !important; }
+  .vgt-fixed-header { width:100%;
+    @media (pointer: fine) { padding-right: 1rem; }
   }
 }
 
-.top-chart { 
-  canvas { margin-left: auto; margin-right: auto; display: block; }
+.data-points { display:grid; gap:30px;
+  
+}
+.runtime-holder {
+  .label { font-size:2.25vw; font-weight: bold; margin-bottom: 2rem; }
+  .measure { line-height: 1.35em; margin-bottom: 2rem;
+    .num { font-size:180%; }
+    &.days { font-size:5.35vw; }
+    &.hours { font-size:4.25vw; }
+    &.minutes { font-size:2.75vw; }
+    &.seconds { font-size:1.85vw; }
+  }
 }
 
-table.stats { margin-left: auto; margin-right: auto; position: relative;
-  th { font-weight:$light; text-transform: uppercase; line-height: 80%; padding-left: 0.5em; font-size:1.35em; white-space: nowrap;
-    &:nth-child(2) { max-width: 2rem; transform: rotate(90deg); transform-origin: bottom right; @include position(absolute,1.5rem,-0.5rem); }
-  }
-  td { padding:0.25rem 1rem; border: 1px solid $black; vertical-align: middle; }
-  td:last-child { font-weight: $bold; font-size:1.25em; }
-  tr:nth-child(even) td { background:rgba($black,0.2); }
-  a { 
-    &:hover, &:focus { text-decoration: underline; }
-    &:active { font-weight: $bold; }
+@media (min-width:1330px) {
+  .data-points { grid-template-columns: 2fr 1fr;
+    .bonus-holder { order: 3; grid-column: span 2; }
+    .runtime-holder { order: 2; }
+    .table-holder { order: 1; }
   }
 }
+@media (max-width:1329px) {
+  .table-holder { max-width: calc(100% - 1rem); }
+  .runtime-holder {
+    .measure {
+      &.days { font-size:14vw; }
+      &.hours { font-size:10vw; }
+      &.minutes { font-size:6.5vw; }
+      &.seconds { font-size:4vw; }
+    }
+  }
+}
+
 
 @media (min-width: $desktop-min) {
   .chart-holder { padding-left: 320px; }

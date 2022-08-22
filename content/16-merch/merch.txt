@@ -16,15 +16,6 @@ The F Plus Brand® podcast is committed to providing you with the highest qualit
 Current-merch: 
 
 - 
-  title: Monster Manual
-  pic: coloring-front-square.jpg
-  url: >
-    https://thefpl.us/merch/monster-manual-a-coloring-activity-book
-  type: coloring book
-  price: $9
-  almost_gone: "1"
-  pending: "0"
-- 
   title: Peeing On Your Fetish
   pic: gitd_calvin.gif
   url: 'https://thefpl.us/merch/stickers#31'
@@ -33,11 +24,11 @@ Current-merch:
   pending: "0"
   almost_gone: "0"
 - 
-  title: Nerd Thighs End Lives
-  pic: nerdthighs400.jpg
+  title: "WOAH! It's A Dog On A Skateboard"
+  pic: woah_shirt.jpg
   url: >
-    https://www.teepublic.com/tank-top/20135068-nerd-thighs-end-lives?ref_id=14142
-  type: tank top
+    https://www.teepublic.com/t-shirt/34306236-woah-its-a-dog-on-a-skateboard
+  type: shirt
   price: $14
   pending: "0"
   almost_gone: "0"
@@ -426,6 +417,20 @@ Sold-merch:
   pic: snizz-square.jpg
   type: sticker
   sold_date: 2021-03-11
+- 
+  title: Nerd Thighs End Lives
+  url: >
+    https://www.teepublic.com/tank-top/20135068-nerd-thighs-end-lives?ref_id=14142
+  pic: nerdthighs400.jpg
+  type: tank top
+  sold_date: 2021-09-29
+- 
+  title: Monster Manual
+  url: >
+    https://thefpl.us/merch/monster-manual-a-coloring-activity-book
+  pic: coloring-front-square.jpg
+  type: Coloring Book
+  sold_date: 2022-02-13
 
 ----
 

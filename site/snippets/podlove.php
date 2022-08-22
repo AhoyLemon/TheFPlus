@@ -88,8 +88,8 @@
           comment: null
         },
       <?php } ?>
+      ],
     <?php } ?>
-    ],
     visibleComponents: [
       'tabInfo',
       <?php if ($page->chapters_toggle() == "yes" && $page->chapters()->isNotEmpty()) { ?>

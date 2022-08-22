@@ -1,0 +1,199 @@
+Prevnext: 
+
+----
+
+Title: Hopscotch Goblin
+
+----
+
+Featured-site: cryptidz.fandom.com
+
+----
+
+Date: 2022-06-23
+
+----
+
+Time: 11:30
+
+----
+
+Cover: ep371.jpg
+
+----
+
+Cast: Boots Raingear,Victor Laszlo,Nutshell Gulag,Adam Bozarth,Achilles' Heelies,Lemon
+
+----
+
+Episode-file: fplus_371.mp3
+
+----
+
+Runtime: 1:31:57
+
+----
+
+File-size: 84
+
+----
+
+Document-link: https://docs.google.com/document/d/1f4qgpGQllxu9uy4Z131BrJJ8k8Xb9Vgawho8Uk4L1ig/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Secret Gaygent 69
+
+----
+
+Text: 
+
+Rather than describe what's happening on **The Crytpidz Wiki**, I'll let the site describe itself: 
+> Cryptids are monsters... except that cryptids could actually exist! When talking about Bigfoot or the Loch Ness Monster you're talking about something that could live right on this Earth right now! On Cryptid Wiki, we document all of the possible information you can get about cryptids and determine if they're real or not.
+
+This week, The F Plus likes Utah, and that's pretty dang interesting!
+
+----
+
+Music-used: David Bowie - Scary Monsters (Live in 1983),!!! - Even When The Water's Cold
+
+----
+
+Tags: wiki,wikia,fandom,fantasy,bigfoot,guys this totally happened,very important questions
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Hiatus Over
+- 
+  timestamp: 00:00:06
+  name: Scary Monsters (Live, 1983)
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:30
+  name: Hey, F Plus!
+- 
+  timestamp: 00:03:45
+  name: What are cryptids?
+- 
+  timestamp: 00:05:35
+  name: Bloop
+- 
+  timestamp: 00:08:55
+  name: Dingbat
+- 
+  timestamp: 00:12:25
+  name: Kapre
+- 
+  timestamp: 00:22:15
+  name: Batsquatch
+- 
+  timestamp: 00:29:45
+  name: Octo-squatch
+- 
+  timestamp: 00:34:50
+  name: Indrid Cold
+- 
+  timestamp: 00:41:00
+  name: Yeti found on Google Maps
+- 
+  timestamp: 00:43:35
+  name: My youtube account was terminated
+- 
+  timestamp: 00:46:00
+  name: Ridiculous Reports of Santa
+- 
+  timestamp: 00:53:20
+  name: 10 theories of the Dogman
+- 
+  timestamp: 00:56:36
+  name: Some more posts by Terminatorruin
+- 
+  timestamp: 00:58:15
+  name: "Terminatorruin's 7 theories about spirits"
+- 
+  timestamp: 00:59:55
+  name: >
+    Have you ever had a scary encounter with
+    an unidentified creature, and even
+    possibly have a picture to go with it?
+    Tell us about it!
+- 
+  timestamp: 01:01:05
+  name: An unspellable horror
+- 
+  timestamp: 01:05:25
+  name: Shadow people
+- 
+  timestamp: 01:07:15
+  name: "I've seen Bigfoot, I believe."
+- 
+  timestamp: 01:12:50
+  name: Hopskotchville Goblin
+- 
+  timestamp: 01:18:40
+  name: A PBS viewer’s cryptid
+- 
+  timestamp: 01:20:15
+  name: AND NOW, A LIST OF DUMB CRYPTID NAMES
+- 
+  timestamp: 01:29:05
+  name: What did we learn?
+- 
+  timestamp: 01:30:49
+  name: 🤷‍♀️
+- 
+  timestamp: 01:31:05
+  name: "Even When The Water's Cold"
+- 
+  timestamp: 01:31:50
+  name: 🤷‍♂️
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

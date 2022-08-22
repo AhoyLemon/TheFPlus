@@ -11,7 +11,7 @@
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?updated=2022-06-23'); ?>
+  <?= css('assets/css/thefplus.css?updated=2022-08-04'); ?>
   <?php snippet('meta') ?>
 </head>
 <body>
