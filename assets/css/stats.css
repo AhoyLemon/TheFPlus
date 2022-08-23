@@ -44,6 +44,12 @@ $copy: $white;
   line-height: 80%;
   vertical-align: middle;
 }
+.vgt-wrap .name a {
+  text-decoration: none;
+}
+.vgt-wrap .name a:hover, .vgt-wrap .name a:focus, .vgt-wrap .name a:active {
+  text-decoration: underline;
+}
 .vgt-wrap .name, .vgt-wrap .name-th {
   width: 60% !important;
 }

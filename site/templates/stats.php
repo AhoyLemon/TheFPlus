@@ -25,6 +25,15 @@
           }
         }
         if ($m == false) {
+
+          $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $editor)));
+
+          if ($site->find('meet/'.$slug)) {
+            $e['meet'] = $site->url() . '/meet/' . $slug;
+          } else {
+            $e['meet'] = null;
+          }
+
           $e['name'] = $editor;
           $e['edits'] = 1;
           $e['appeared'] = 0;
@@ -49,6 +58,15 @@
           }
         }
         if ($m == false) {
+
+          $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $person)));
+
+          if ($site->find('meet/'.$slug)) {
+            $e['meet'] = $site->url() . '/meet/' . $slug;
+          } else {
+            $e['meet'] = null;
+          }
+
           $e['name'] = $person;
           $e['edits'] = 0;
           $e['appeared'] = 1;
@@ -73,6 +91,16 @@
             }
           }
           if ($m == false) {
+
+
+            $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $provider)));
+
+            if ($site->find('meet/'.$slug)) {
+              $e['meet'] = $site->url() . '/meet/' . $slug;
+            } else {
+              $e['meet'] = null;
+            }
+
             $e['name'] = $provider;
             $e['edits'] = 0;
             $e['appeared'] = 0;
@@ -95,6 +123,16 @@
             }
           }
           if ($m == false) {
+
+            $slug = strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $provider)));
+
+            if ($site->find('meet/'.$slug)) {
+              $e['meet'] = $site->url() . '/meet/' . $slug;
+            } else {
+              $e['meet'] = null;
+            }
+
+            
             $e['name'] = $provider;
             $e['edits'] = 0;
             $e['appeared'] = 0;
@@ -147,7 +185,7 @@
 
   ?>
 
-  <?= css('assets/css/stats.css?lastUpdated=2022-08-22'); ?>
+  <?= css('assets/css/stats.css?lastUpdated=2022-08-22b'); ?>
   <script src="https://unpkg.com/vue@2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-good-table@2.21.11/dist/vue-good-table.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-good-table@2.21.11/dist/vue-good-table.css" />
@@ -192,6 +230,7 @@
           <?php foreach ($ridiculists as $ridiculist) { ?>
             {
               name: `<?= $ridiculist['name']; ?>`,
+              meet: `<?= $ridiculist['meet']; ?>`,
               appeared: <?= $ridiculist['appeared']; ?>,
               edits: <?= $ridiculist['edits']; ?>,
               provided: <?= $ridiculist['provided']; ?>,
@@ -247,8 +286,17 @@
         }"
         :sort-options="{
           enabled: true,
-          initialSortBy: {field: 'appeared', type: 'desc'}
+          initialSortBy: [
+            {field: 'appeared', type: 'desc'}
+          ]
         }">
+        <template slot="table-row" slot-scope="props">
+          <template v-if="props.column.field == 'name' && props.row.meet">
+            <a :href="props.row.meet">
+              <span>{{props.row.name}}</span> 
+            </a>
+          </template>
+        </template>
       </vue-good-table>
 
     </div>

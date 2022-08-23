@@ -12,7 +12,11 @@
     }
   }
   .count { font-size:1.3rem; line-height: 80%; vertical-align: middle; }
-  .name { font-size:1.4rem; line-height: 80%; vertical-align: middle; }
+  .name { font-size:1.4rem; line-height: 80%; vertical-align: middle;
+    a { text-decoration: none;
+      &:hover, &:focus, &:active { text-decoration: underline; }
+    }
+  }
   .name, .name-th { width:60% !important; }
   .count, .count-th { width:15% !important; }
   .vgt-fixed-header { width:100%;
