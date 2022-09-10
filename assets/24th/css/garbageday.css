@@ -1,142 +1,224 @@
 * {
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 html {
-  font-size: 18px; }
+  font-size: 18px;
+}
 
 body {
   background-color: #f0f1f2;
-  color: #313131; }
+  color: #313131;
+}
 
 img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 b, strong {
-  font-weight: 700; }
+  font-weight: 700;
+}
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.5em;
+}
 
 h2 {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 1.75em;
+}
 
 h4 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 h5 {
-  font-size: 1.25em; }
+  font-size: 1.25em;
+}
 
 h6 {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 105%; }
+  line-height: 105%;
+}
 
 p {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 ul {
-  padding-left: 1.5em; }
-  ul li {
-    list-style-type: disc; }
+  padding-left: 1.5em;
+}
+ul li {
+  list-style-type: disc;
+}
 
 abbr[title] {
-  cursor: help; }
+  cursor: help;
+}
 
 @media (min-width: 1024px) {
   .mobile-only {
-    display: none; } }
-
+    display: none;
+  }
+}
 @media (max-width: 1023px) {
   .desktop-only {
-    display: none; } }
-
+    display: none;
+  }
+}
 .hidden {
-  display: none !important; }
+  display: none !important;
+}
 
 .transparent {
-  opacity: 0; }
+  opacity: 0;
+}
+
+@-webkit-keyframes strobeText {
+  0% {
+    color: #5eaef3;
+  }
+  20% {
+    color: #1df58a;
+  }
+  40% {
+    color: #99f614;
+  }
+  60% {
+    color: #da4938;
+  }
+  80% {
+    color: #f518f2;
+  }
+  100% {
+    color: #5eaef3;
+  }
+}
 
 @keyframes strobeText {
   0% {
-    color: #5eaef3; }
+    color: #5eaef3;
+  }
   20% {
-    color: #1df58a; }
+    color: #1df58a;
+  }
   40% {
-    color: #99f614; }
+    color: #99f614;
+  }
   60% {
-    color: #da4938; }
+    color: #da4938;
+  }
   80% {
-    color: #f518f2; }
+    color: #f518f2;
+  }
   100% {
-    color: #5eaef3; } }
-
+    color: #5eaef3;
+  }
+}
 aside.garbage-day {
   position: fixed;
   right: 10px;
   bottom: 10px;
-  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-  aside.garbage-day * {
-    font-family: "Freckle Face", cursive; }
-  aside.garbage-day figure {
-    width: 290px; }
-    aside.garbage-day figure img {
-      display: block;
-      width: 100%; }
-  aside.garbage-day figcaption {
-    font-size: 62px;
-    text-align: right;
-    position: absolute;
-    right: 4%;
-    bottom: 10%;
-    transform: rotate(15deg);
-    line-height: 100%;
-    text-shadow: 2px 2px 0 black; }
-    aside.garbage-day figcaption a {
-      text-decoration: none;
-      animation: strobeText 6s infinite linear; }
-      aside.garbage-day figcaption a:hover {
-        text-decoration: underline; }
-  aside.garbage-day .time-until {
-    position: absolute;
-    top: 18%;
-    right: 26%;
-    line-height: 35px;
-    color: white;
-    text-shadow: 2px 2px 0 black;
-    text-align: center; }
-    aside.garbage-day .time-until .count {
-      font-size: 70px; }
-    aside.garbage-day .time-until .measurement {
-      font-family: 'Noto Serif TC', serif; }
-  aside.garbage-day .hide-albert {
-    font-size: 50px;
-    font-weight: bold;
-    position: absolute;
-    top: 20%;
-    right: 30%;
-    font-family: 'Noto Serif TC', serif; }
-  aside.garbage-day.off-canvas {
-    transform: translateY(68%); }
-  aside.garbage-day:hover {
-    transform: translateY(0); }
-  aside.garbage-day.today figure {
-    width: 60vh; }
-  aside.garbage-day.today figcaption {
-    font-size: 6vw;
-    display: block;
-    transform-origin: bottom right;
-    position: absolute;
-    right: 17%;
-    bottom: 0;
-    width: 5em; }
-    aside.garbage-day.today figcaption.alone {
-      width: 90vw;
-      transition: all 1s ease;
-      bottom: 5vw;
-      transform: rotate(9deg);
-      font-size: 10vw; }
+  z-index: 99;
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -o-transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275), -webkit-transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+aside.garbage-day * {
+  font-family: "Freckle Face", cursive;
+}
+aside.garbage-day figure {
+  width: 290px;
+}
+aside.garbage-day figure img {
+  display: block;
+  width: 100%;
+}
+aside.garbage-day figcaption {
+  font-size: 62px;
+  text-align: right;
+  position: absolute;
+  right: 4%;
+  bottom: 10%;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+  line-height: 100%;
+  text-shadow: 2px 2px 0 black;
+}
+aside.garbage-day figcaption a {
+  text-decoration: none;
+  -webkit-animation: strobeText 6s infinite linear;
+          animation: strobeText 6s infinite linear;
+}
+aside.garbage-day figcaption a:hover {
+  text-decoration: underline;
+}
+aside.garbage-day .time-until {
+  position: absolute;
+  top: 18%;
+  right: 26%;
+  line-height: 35px;
+  color: white;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}
+aside.garbage-day .time-until .count {
+  font-size: 70px;
+}
+aside.garbage-day .time-until .measurement {
+  font-family: "Noto Serif TC", serif;
+}
+aside.garbage-day .hide-albert {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  font-family: "Noto Serif TC", serif;
+}
+aside.garbage-day.off-canvas {
+  -webkit-transform: translateY(68%);
+      -ms-transform: translateY(68%);
+          transform: translateY(68%);
+}
+aside.garbage-day:hover {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+aside.garbage-day.today figure {
+  width: 60vh;
+}
+aside.garbage-day.today figcaption {
+  font-size: 6vw;
+  display: block;
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  position: absolute;
+  right: 17%;
+  bottom: 0;
+  width: 5em;
+}
+aside.garbage-day.today figcaption.alone {
+  width: 90vw;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  bottom: 5vw;
+  -webkit-transform: rotate(9deg);
+      -ms-transform: rotate(9deg);
+          transform: rotate(9deg);
+  font-size: 10vw;
+}

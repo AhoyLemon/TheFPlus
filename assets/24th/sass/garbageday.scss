@@ -15,7 +15,7 @@ $gdFont: 'Freckle Face', cursive;
   100%  { color:#5eaef3;  }
 }
 
-aside.garbage-day { @include position(fixed,null,10px,10px);
+aside.garbage-day { @include position(fixed,null,10px,10px); z-index: 99; 
   * { font-family: $gdFont; }
   figure { width: 290px;
     img {  display: block; width:100%; }
