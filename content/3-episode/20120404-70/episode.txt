@@ -14,7 +14,7 @@ Time: 18:29
 
 ----
 
-Cast: Kumquatxop,isfahan,STOG,Portaxx,Boots Raingear,Lemon
+Cast: Isfahan,STOG,Portaxx,Boots Raingear,Lemon
 
 ----
 
@@ -58,7 +58,7 @@ File-size: 49
 
 ----
 
-Cover: 
+Cover: ep70-1.jpg
 
 ----
 
