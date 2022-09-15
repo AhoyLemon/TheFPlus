@@ -33,7 +33,8 @@ section.blogs {
 	}
 }
 
-article.blog {
+article.blog, article.default {
+	> h1 { margin-bottom:1.5em; font-weight: 600; }
 	.content {
 		p { line-height:180%; }
 		ul, ol {

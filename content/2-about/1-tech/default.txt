@@ -4,13 +4,13 @@ Title: Technology Colophon
 
 Text: 
 
-* This website was made with [kirby](https://getkirby.com)
+* This website was made with [Kirby](https://getkirby.com)
 * Sass & Javascript concatonation with [Prepros](https://prepros.io/)
 * Code editor of choice: [VS Code](https://code.visualstudio.com/)
 * Comment system by [Disqus](http://disqus.com)
-* This site uses some [jQuery](http://jquery.com/)
+* This site uses [jQuery](http://jquery.com/) and a small amount of vanilla js.
 * Site tracking with [Matomo](https://matomo.org/)
-* Pie Charts (on the [stats](/stats) page) made with [Chart.js](http://www.chartjs.org/)
+* Interactive table (on the [stats](/stats) page) made with [Vue Good Table](https://xaksis.github.io/vue-good-table/)
 
 GitHub Repo [here](https://github.com/ahoylemon/thefplus).
 

@@ -4,23 +4,74 @@ Title: About The F Plus
 
 Text: 
 
-This is The F Plus: Terrible Things Read With Enthusiasm.
+##  What is this show?
 
-The Internet is truly an amazing thing. With scarcely any effort at all, a person can find all sorts of really useful information out there. A staggering amount of information, years of university-level knowledge in any field imagined, can be accessed with little more than a few clicks and keystrokes. The sum total of human endeavour is available to anybody, if they can simply find the right way to search for it.
+Put simply: The F Plus is **terrible things, read with enthusiasm.**
 
-We at The F Plus are not really interested in any of this, though.
+Put less simply: This is a show about insanity on The Internet, and how The Internet makes people insane. Against our better judgement, we’ve been reading the writings of kooks for well over a decade:  Conspiracy theorists, alternative healing witches, lonely obsessives, self-absorbed poets, opportunistic hucksters, bored teenagers, angry bloviating opinion-havers, and lots and lots and *lots of perverts.* 
 
-The Internet is also a way for people to express themselves. Never before has it been so easy for anybody to reach an audience of thousands, if not millions. Fame can be easily had where not so long ago it would have been inaccessible. Never before has it been so easy for people with similar interests to collect together to share their views in whatever drew them together.
+It’s a rich and interesting tapestry out there, and we’re as infatuated by the variety as we are horrified by the effects. We want to explore, and we want to learn, but more than anything we want to laugh. Because that’s at the heart of the show - to delight in the absurdity of it all.
 
-Most of the time, this is good. We at The F Plus are not really interested in that, either.
+So each episode, we’ll have some sort of topic. We’ll be all reading off the same document (usually provided by one of our listeners), taking different roles as we go and providing our own running commentary and jokes. If that sounds fun to you, great! We have some suggested “first time” episodes listed below. Give it a shot, and if you like it, you can know we’ve made *plenty* more. Just be aware that the content *will* be gross on occasion, and we do our best to make it as fun as possible. Also we have **no ads** and we never will, so you don’t need ask.
 
-Twenty years ago, people with truly bizarre interests or hobbies or thoughts might have just kept quiet about it and lead normal lives. Now that they can find people worldwide with similar interests, they freely discuss it in public. We've become accustomed to simply glossing things over we might read, but having it read aloud can really bring to light just how bizarre some of these hobbies, or thoughts, or interests might be.
+If this isn’t to your taste, *that’s okay!* Maybe you’ll find something else you like instead.
 
-That's what we do at The F Plus, we are a bastion of light and clarity--or we just like to read the weird things people post on the Internet and have a bit of a laugh while we're at it.
+****
 
--Acierocolotl
+## Who makes this show?
 
-[technology used on this site](about/tech)
+In any given episode, you’ll be hearing maybe six people from our rotating roster of a [couple dozen different readers](https://thefpl.us/meet?regular,guest) - most episodes will have [Lemon](https://thefpl.us/meet/lemon) and [Boots Raingear](https://thefpl.us/meet/boots-raingear) in them, who serve as the show’s producers.
+
+Most (but not all) of the participants of the show participate under some pseudonym, and some prefer not to share photos of themselves. That shouldn’t be weird for you. The Internet is a place where people can use whatever pseudonym they like, and we will choose to respect whatever identity they would prefer to have.
+
+****
+
+## What episode should I start with?
+
+This question comes up a whole lot, and part of this comes back to “Well, what do you like?”
+
+What you **should not do** is try to go to the beginning and listen starting from episode 1. Look, we learned a lot along the way, and those early episodes just aren’t very good. Continuity doesn’t matter a lot here. Just find one that seems promising and go from there. We have a [tags](https://thefpl.us/tags) section for different topics, and [profiles](https://thefpl.us/meet?regular,guest,submitter) if you’ve found somebody you’d like to hear more of, as well as a pretty robust [search](https://thefpl.us/search) in case you want something more specific. Most of our readers have their favorite episodes listed on their [pages](https://thefpl.us/meet/lemon), so you could go with their recommendations, but to get more granular, I’ll give you some recommendations based on the Three Basic Types of episodes we end up making:
+
+### Silly Episodes
+
+- [You Get Wet](https://thefpl.us/episode/305)
+- [The Rites of Price](https://thefpl.us/episode/288)
+- [How To Listen To A Podcast You Hate](https://thefpl.us/episode/177)
+
+### Pervy Episodes
+
+- [Boobs In Raingear](https://thefpl.us/episode/353)
+- [Erotic Stories of Mind Control](https://thefpl.us/episode/349)
+- [Doing The Robot](https://thefpl.us/episode/334)
+
+### Crazy Episodes
+
+- [Hail Britannica](https://thefpl.us/episode/351)
+- [BBB BBB BBB Bind](https://thefpl.us/episode/320)
+- [Coldmouth Strikes Again](https://thefpl.us/episode/133)
+
+****
+
+## Running Jokes
+
+You make the same comedy podcast with the same group of folks for well over a decade, and eventually running jokes will develop. And I know I said you shouldn’t start at the beginning (and you shouldn’t), but here’s a couple bulletpoints in case it’s helpful…
+
+- No Diggity is just an *excellent* song. You’ve got to bag it up.
+- Magic is pronounced “**maj**-ik”. Magick is pronounced “muh-**gick**”
+- Sometimes, people censor the word “fuck” with “****”. Therefore, we can safely assume that any use of asterisks is meant to be pronounced as “fuck”.
+- Very early on in the show’s run, we were reading about a person who was having a serious problem which was affecting their capacity for joy. The next person responded with “I don’t have that problem, good bye!” This is the very soul of Reddit.
+- Also pretty early on in the show’s run, a fella asked The Internet how often he should have buttsex with his girlfriend. And we *still* don’t know.
+- The very premise of a poorly delivered joke being met with the sound of crickets has been a comedy staple for about a hundred years. As such, we keep having to find new ways to edit crickets into episodes.
+- Frank West has been working on this character named “Lemmy”. It’s coming along okay I guess.
+
+****
+
+## Additional Links
+- [10 Years Of The F Plus](https://youtu.be/_Xr2NzgHc2Q): A YouTube Supercut by Wrought
+- [Ridiculist Statistics](https://thefpl.us/stats)
+- [How To Submit A Document](https://thefpl.us/submit)
+- [The F Plus logo & brand guidelines](https://thefpl.us/wrote/logo-assets)
+- [Technology Colophon](https://thefpl.us/about/tech)
 
 ----
 

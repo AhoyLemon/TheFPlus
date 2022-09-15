@@ -258,22 +258,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5em;
-  font-weight: 300;
+  font-size: clamp(2.5rem, 4vw, 3.3rem);
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: clamp(2.15rem, 3.5vw, 2.8rem);
   font-weight: 300;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
   font-weight: 300;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: clamp(1.25rem, 3.25vw, 2.25rem);
   font-weight: 400;
 }
 

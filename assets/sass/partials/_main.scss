@@ -129,11 +129,14 @@ article.full {
 
 
 
-article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:40px;
+article.full { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:40px; margin-bottom: 40px;
   header { margin-bottom: 0.5em;
     h1 { font-size:150%; font-weight:600; margin-bottom:0.3em; line-height: 150%; }
   }
-  .article-text { text-align: justify; letter-spacing: 180%; }
+  .article-text { 
+    h2, h3, h4 { margin-bottom: 1em; }
+    hr { display:block; height:0.3rem; background:currentColor; max-width:27ch; margin-top:2rem; margin-bottom: 2rem; }
+  }
   img.cover { box-shadow: 0 0 6px rgba($black,0.45);
     &.png { box-shadow: none; }
     @media (min-width:$desktop-min) { transform: translateY(-70px); }
@@ -259,7 +262,7 @@ article.full.episode {
     &.edge-to-edge { padding:0; }
   }
   article {
-    &.full { font-size:4.3vw;
+    &.full {
       .cover { width:100%; height:auto; margin-bottom: 10px; }
     }
   }
