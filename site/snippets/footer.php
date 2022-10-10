@@ -1,5 +1,4 @@
     <footer class="footer">
-      <?php snippet('garbage-day-2022') ?>
       <?php snippet('analytics') ?>
 
       <?php /*

@@ -159,7 +159,7 @@ article.full.episode {
   .released { margin-bottom: 1em; }
   @media (min-width: $desktop-min) { 
     img.cover { float: right; max-width: 320px; transform: translateY(-40px); box-shadow: 0 0 6px rgba($black,0.45); margin-left: 40px; }
-    p { font-size:130%; }
+    p { font-size:130%; line-height: 160%; }
   }
   @media (max-width:$mobile-max) {
     figure { display: none; }
@@ -180,7 +180,7 @@ article.full.episode {
     }
   }
 }
-.hours-leadout { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); font-size:130%; margin-bottom: 1em; }
+.hours-leadout { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); font-size:130%; margin-bottom: 1em; line-height: 160%; }
 
 .marathon-gallery {text-align: center; padding: 1em;
   .button { display: inline-block; border: 2px solid currentColor; padding: 0.5em 1em; font-size: 125%; margin-right: 0.3em; text-decoration: none; border-radius: 0.5em;

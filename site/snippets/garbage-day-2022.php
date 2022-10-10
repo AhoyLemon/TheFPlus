@@ -15,12 +15,17 @@
 
 <?php if ($page->slug() != "escape-from-garbage-day") { ?>
   <aside class="garbage-day <?php if ($IsItGarbageDay == "notYet") { echo 'off-canvas'; } else if ($IsItGarbageDay == "yes") { echo 'today'; } ?>" >
+
+    <!-- <pre>
+      <?php var_dump($diff); ?>
+    </pre> -->
+
     <?php if ($IsItGarbageDay == "notYet") { ?>
       <div class="time-until">
         <?php if ($diff->format('%d') > 1) {
             echo '<div class="count">' . ( (int)$diff->format('%d') + 1)  . '</div>';
             echo '<div class="measurement">days until</div>';
-          } else if ($diff->format('%h') > 0) {
+          } else if (($diff->format('%h') > 0) && $diff->format('%d') < 2) {
             if ($diff->format('%d') == 1) {
               $hourCount = (24 + $diff->format('%h'));
             } else {

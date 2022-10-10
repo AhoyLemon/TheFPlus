@@ -29,33 +29,6 @@
 
     <?php $itemCount = 0; ?>
 
-    <item>
-      <title>Escape From Garbage Day</title>
-      <link>https://thefpl.us/wrote/escape-from-garbage-day</link>
-      <guid>https://thefpl.us/wrote/escape-from-garbage-day</guid>
-      <pubDate>Thu, 08 Aug 2022 16:30:00 CST</pubDate>
-      <enclosure url="https://thefpl.us/podcasts/escape_from_garbage_day_promo.mp3" length="3584000" type="audio/mpeg"></enclosure>
-      <description>
-        September 17th @ 12:00 EST. The internet is filled with lunatics, perverts and conspiracy nuts. Reading their words is harmful. Doing it for 24 hours is insane.
-      </description>
-      <content:encoded>
-        <![CDATA[
-          <h3>September 17th @ 12:00 EST.</h3>
-          <p>The internet is filled with lunatics, perverts and conspiracy nuts.</p>
-          <p>Reading their words is harmful.</p>
-          <p>Doing it for 24 hours is insane.</p>
-        ]]>
-      </content:encoded>
-      <itunes:summary>September 17th @ 12:00 EST. The internet is filled with lunatics, perverts and conspiracy nuts. Reading their words is harmful. Doing it for 24 hours is insane.</itunes:summary>
-      <itunes:title>Escape From Garbage Day</itunes:title>
-      <itunes:episodeType>trailer</itunes:episodeType>          
-      <itunes:author>The F Plus</itunes:author>
-      <itunes:subtitle>The future is garbage.</itunes:subtitle>
-      <itunes:duration>0:01:29</itunes:duration>
-      <image>https://thefpl.us/content/6-wrote/20220804-escape-from-garbage-day/garbage_day_square.jpg</image>
-      <itunes:image href="https://thefpl.us/content/6-wrote/20220804-escape-from-garbage-day/garbage_day_square.jpg" />
-    </item>
-
     <?php foreach($items as $item): ?>
       <?php 
         if (strpos($item->featured_site(),',') !== false) {
