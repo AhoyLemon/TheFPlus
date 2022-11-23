@@ -1,7 +1,8 @@
-- var font = 'Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;'
-- var baseURL = "https://thefpl.us/email/img/"
-- var textColor = "#333"
-- var maxWidth = 600
+- const font = 'Palatino,"Palatino Linotype","Palatino LT STD","Book Antiqua",Georgia,serif;'
+//- const baseURL = "img/"
+- const baseURL = "https://thefpl.us/email/img/"
+- const textColor = "#333"
+- const maxWidth = 600
 block variables
 
 mixin footerLink(url, name, file, last)
@@ -136,7 +137,7 @@ html
                       table(cellpadding='0', cellspacing='0', border='0', width='100%')
                         block content
     // FOOTER
-    //-table(border='0', cellpadding='0', cellspacing='0', width='100%', style='table-layout: fixed;')
+    table(border='0', cellpadding='0', cellspacing='0', width='100%', style='table-layout: fixed;')
       tr
         td(bgcolor='#ffffff', align='center', style='padding: 25px 15px 25px 15px;')
           table.responsive-table(border='0', cellpadding='0', cellspacing='0', width='600')
@@ -146,11 +147,10 @@ html
               td(bgcolor='#ffffff', align='center')
                 table(border='0', cellpadding='0', cellspacing='0')
                   tr
-                    //-+footerLink("https://ballp.it", "ballp.it", "ballpit24.png")
                     +footerLink("https://ballp.it", "ballp.it", "ballpit24.png")
                     +footerLink("https://twitter.com/TheFPlus", "Twitter", "twitter24.png")
                     +footerLink("https://www.youtube.com/TheFPlus", "YouTube", "youtube24.png")
                     +footerLink("https://www.paypal.me/TheFPlus", "PayPal", "paypal24.png")
-                    +footerLink("https://github.com/AhoyLemon/ballpit", "GitHub", "github24.png")
-                    //+footerLink("http://damn.dog", "damn.dog", "damndog24.png")
-                    +footerLink("http://ahoylemon.xyz", "ahoylemon.xyz", "ahoylemon24.png")
+                    +footerLink("https://github.com/AhoyLemon/TheFPlus", "GitHub", "github24.png")
+                    //-+footerLink("https://damn.dog", "damn.dog", "damndog24.png")
+                    +footerLink("https://ahoylemon.xyz", "ahoylemon.xyz", "ahoylemon24.png")

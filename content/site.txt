@@ -95,6 +95,11 @@ Social-links:
   url: https://podchaser.com/TheFPlus
   text: The F Plus on Podchaser
   _fieldset: page_link
+- 
+  icon: mastodon
+  url: https://mastodon.world/@TheFPlus
+  text: @TheFPlus on Mastodon
+  _fieldset: page_link
 
 ----
 

@@ -7,7 +7,7 @@ article { font-weight: $light;
     .full-width { width:100%; }
     .centered { display: block; margin-left: auto; margin-right: auto; }
     .full-width, .centered { margin-bottom: 1rem; }
-    p { margin-bottom: 1em; }
+    p { margin-bottom: 1em; line-height: 160%; }
     li { margin-bottom: 1em; }
     .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
       .label { padding-right: 0.5em;}

@@ -31,25 +31,29 @@ fields:
     label: Bio
     type: markdown
   twitter:
-    label: twitter
+    label: Twitter
     type: text
     icon: twitter
     placeholder: without @
     width: 1/3
-  website:
-    label: website
+  mastodon:
+    label: Mastodon
     type: url
+    icon: commenting
     width: 1/3
   email:
     label: email
     type: email
     width: 1/3
+  website:
+    label: website
+    type: url
+    width: 1/2
+  ballpit_account:
+    label: Ballpit Profile URL
+    type: url
+    width: 1/2
   favorite_episode:
     label: Favorite Episode(s)
     type: tags
     icon: star
-    width: 1/2
-  ballpit_account:
-    label: ballp.it account
-    type: url
-    width: 1/2

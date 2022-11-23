@@ -44,7 +44,7 @@
   }
 
   figcaption { padding-left: $padding; padding-right: $padding; color:$black; text-decoration: none;
-    font-size:125%; padding-top:($padding / 2); border:none;
+    font-size:125%; padding-top:math.div($padding, 2); border:none;
   }
   
   figure { margin-right:20px; transform: translate(-20px,20px);

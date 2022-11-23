@@ -56,7 +56,7 @@ $sidebar: 320px;
 $mobile-top:56px;
 //$radius:6px;
 $gap: 10px;
-$halfGap: ($gap / 2);
+$halfGap: math.div($gap, 2);
 $doubleGap: ($gap * 2);
 $padding: 20px;
 $mobile-max: 980px;
