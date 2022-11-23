@@ -7,7 +7,7 @@ $merchBorder: lighten($black,50%);
     h3 { letter-spacing: .25em; font-weight: $bold; }
   }
   .grid-box { grid-column: span 1; color:$black; text-decoration: none; box-shadow: $boxShadow;
-    figure {/*  border:1px solid $merchBorder; */ position: relative; overflow: hidden; background:$card; }
+    figure { position: relative; overflow: hidden; background:$card; }
     .almost-gone { @include position(absolute,null,0,0); width:10em; }
     .almost-gone-text { fill:$white; }
     .thumb-holder {
@@ -55,10 +55,8 @@ $merchBorder: lighten($black,50%);
     .name { color:$red; }
   }
   a.grid-box:hover {
-    //figure img { opacity: 0.5; }
     .details { color: $red; }
     .name .text { text-decoration: underline; }
-    //.name .title { text-decoration: underline; }
     .almost-gone-text { fill:$red; }
 
     

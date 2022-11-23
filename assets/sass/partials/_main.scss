@@ -7,7 +7,7 @@ article { font-weight: $light;
     .full-width { width:100%; }
     .centered { display: block; margin-left: auto; margin-right: auto; }
     .full-width, .centered { margin-bottom: 1rem; }
-    p { margin-bottom: 1em; }
+    p { margin-bottom: 1em; line-height: 160%; }
     li { margin-bottom: 1em; }
     .date-wrapper { @include flex-container(); font-size: 80%; margin-bottom: 0.5em;
       .label { padding-right: 0.5em;}
@@ -69,9 +69,7 @@ article { font-weight: $light;
 
 article.full {
   .page-actions {
-
     display:grid; grid-gap: 10px; grid-template-columns: repeat(auto-fill, 52px); padding-bottom: 20px;
-
     .audio-holder { grid-column: 1 / -1;
       audio { width:100%; }
     }
@@ -151,9 +149,7 @@ article.full.episode {
 }
 
 
-
 // MARATHON SPECIFIC BITS
-
 .marathon-overview { background:#fff; box-shadow: $boxShadow; padding:($gap * 2); margin-top:20px; @extend %clearfix;
   h1 { margin-bottom: 0.5em; }
   .released { margin-bottom: 1em; }

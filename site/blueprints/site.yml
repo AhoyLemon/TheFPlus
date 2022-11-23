@@ -133,6 +133,7 @@ fields:
               damndog: Damn Dog
               twitch: Twitch
               soundcloud: Soundcloud
+              mastodon: Mastodon
           url:
             label: URL
             type: url

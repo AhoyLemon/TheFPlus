@@ -56,7 +56,7 @@ $logoLinkHeight: 150px;
 
     .social-links {  @include position(fixed,null,null,($logoLinkHeight * 1),30px); width:($sidebar * 0.6); display:grid; grid-template-columns: repeat(4,1fr); gap:3px;
       svg { transform:scale(1); transition: transform 0.1s linear; }
-      a { color:rgba($copy,0.6); width:42px; height: 42px;
+      a { color:rgba($copy,0.6); width:36px; height: 36px;
         &:hover svg { transform: scale(1.35); }
         &.twitter:hover     { color:$color-twitter; }
         &.ballpit:hover     { color:$color-ballpit; }
@@ -72,6 +72,7 @@ $logoLinkHeight: 150px;
         &.playmusic:hover   { color:#F1471D; }
         &.overcast:hover    { color:#FC7E0F; }
         &.podchaser:hover   { color:#293b65; }
+        &.mastodon:hover    { color:#6364FF; }
         svg * { fill:currentColor; }
       }
     }

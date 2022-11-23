@@ -47,20 +47,12 @@
 
 
 @mixin flex-container($direction:row, $wrap:wrap, $align:stretch) {
-  // display: -ms-flexbox; display: -webkit-box;
-  display: -webkit-flex; display: -moz-flex; display: flex;
+  display: flex;
   flex-direction: $direction;
-  -webkit-flex-wrap:$wrap; -moz-flex-wrap:$wrap; 
   flex-wrap: $wrap;
-  @if $align == flex-start { 
-    -webkit-box-align: start; -ms-flex-align: start;
-  } @else if $align == flex-end { 
-    -webkit-box-align: end; -ms-flex-align: end;
-  } @else { 
-    -webkit-box-align: $align; -ms-flex-align: $align;
-  }
   align-items: $align;
 }
+
 @mixin flex-item($basis, $align:auto, $grow:1, $shrink:1) {
   @if $grow == 0 {
     width:$basis;

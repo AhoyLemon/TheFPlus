@@ -17,7 +17,6 @@ $tag-border: rgba($black,0.8);
   cursor: text;
   &:hover { text-decoration: none !important; }
 	&[href] { color:$black; cursor: pointer; color:darken($link,10%);
-		//&:after { color:#6d0c0c; }
     &:hover { background:#6d0c0c; color:$white; }
   }
 }
@@ -32,7 +31,7 @@ $tag-border: rgba($black,0.8);
 }
 @media (min-width:$desktop-min) {
   .tagcloud { display:grid; grid-template-columns: repeat(auto-fill,160px); grid-gap: $gap;
-    .tag { position:relative; @include flex-center(); padding: $padding ($padding / 2); text-align: center; border: 1px solid rgba($black,0.2); font-size:14px;
+    .tag { position:relative; @include flex-center(); padding: $padding math.div($padding, 2); text-align: center; border: 1px solid rgba($black,0.2); font-size:14px;
       .tag-count { position:absolute; top:0; right:$gap; color:$copy; font-size:80%; }
       .tag-name { width:100%; width:100%; line-height: 120%; color:$black; }
     }
