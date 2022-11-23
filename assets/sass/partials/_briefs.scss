@@ -1,11 +1,6 @@
 .tags.filtered { text-align: right; padding:0 1em 0.5em 0;
-  li { font-size:1.2em;
-    label { }
-  }
+  li { font-size:1.2em; }
 }
-
-
-$briefWidth: 330px;
 
 .pagination { display: grid; justify-content: end; grid-column: 1/-1;
 
@@ -78,12 +73,8 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   }
 
   .brief { position:relative; color:$black; text-decoration: none;
-
     .inner { display:grid; grid-template-columns: repeat(2,1fr); grid-gap:0; }
-
     figcaption { font-size:0.95rem; padding:0 ($gap * 2); }
-
-    //header  { @include position(absolute,0,0,null,0); border-bottom:1px solid rgba($black,0.1); }
     &.also-made {
       .image-holder { box-shadow:none; }
     }
@@ -98,22 +89,17 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 }
 
 @mixin summary360() {
-
-  background-color: $card; color:$copy; // border-color: darken($episode,35%);
-
+  background-color: $card; color:$copy;
   box-shadow:0 0 4px rgba($black,0.2);
-
   .inner, .grid { grid-template-columns: 1fr; padding-bottom:$padding; }
-
   &.episode {
     header { display: none; }
   }
-  
-  figure { order:1; // transition:transform 0.2s ease;
+  figure { order:1;
     img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); width:100%;
       &.no-shadow { box-shadow:none; }
     }
-    a { transform: scale(1); display:block; // transition: transform 0.15s linear;
+    a { transform: scale(1); display:block;
       &:hover { transform: scale(1.015); }
     }
   }
@@ -165,7 +151,6 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
   .job { order:2; padding-left: $padding; padding-right: $padding; }
 
   &.double-size { grid-column: span 2; 
-    //.inner { display: grid; grid-template-columns:1fr 1fr; }
     .inner { display: block; }
     time { display: block; font-size:125%; font-weight: $bold; }
     .title { font-size:220%; }
@@ -227,50 +212,3 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
 @media (min-width:1960px) {
   .summaries  { grid-template-columns:repeat(5,1fr);  }
 }
-
-
-/*
-
-@media (max-width: 460px) {
-  .summaries { display: block; 
-    article.brief { display: block; }
-  }
-  nav.toggle {
-    a { display: block; }
-  }
-  .pagination {
-    svg { width:38vw; }
-  }
-
-}
-@media (min-width: 461px) {
-  .summaries { @include flex-container(); justify-content: space-between; }
-}
-@media (min-width: 461px) and (max-width:1000px) {
-  .summaries {
-    article.brief { @include flex-item(calc(50% - 5px), auto, 0, 0); max-width:calc(50% - 5px); }
-  }
-  .pagination {
-    .prev, .next, .blank { width:50%; }
-  }
-}
-
-@media (min-width: 1001px) and (max-width:1600px) {
-  .summaries {
-    article.brief { @include flex-item(calc(33.3333% - 5px), auto, 0, 0); max-width:calc(33.3333% - 5px); }
-  }
-  .pagination {
-    .prev, .next, .blank { width:33.3333%; }
-  }
-}
-
-@media (min-width: 1601px) {
-  .summaries { 
-    article.brief { @include flex-item(calc(25% - 5px), auto, 0, 0); max-width: calc(25% - 5px); }
-  }
-  .pagination {
-    .prev, .next, .blank { width:25%; }
-  }
-}
-
-*/

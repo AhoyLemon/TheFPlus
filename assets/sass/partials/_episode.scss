@@ -81,7 +81,7 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
   dt { cursor: pointer;
     &:hover {
       svg { transform: scale(1.5); }
-     }
+    }
   }
   dd { display: none; }
   table.chapters { border-collapse: collapse; font-size:16px;

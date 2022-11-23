@@ -54,24 +54,16 @@ $sans-serif: $noto;
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
 $sidebar: 320px;
 $mobile-top:56px;
-//$radius:6px;
 $gap: 10px;
 $halfGap: math.div($gap, 2);
 $doubleGap: ($gap * 2);
 $padding: 20px;
 $mobile-max: 980px;
 $desktop-min: 981px;
+$briefWidth: 330px;
 
 // ZAZZLE!!!!!!
 $boxShadow: 0 0 4px rgba($black,0.2);
-
-
-
-/*
-$body: #222;
-$card: #000;
-$copy: $white;
-*/
 
 
 // ANIMATIONS //////////////////////////////////////////////////////////////////////////////////////
