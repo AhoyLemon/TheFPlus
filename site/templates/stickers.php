@@ -51,7 +51,7 @@
                     
                   </a>
                 <?php } else { ?>
-                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" />
+                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" loading="lazy" />
                 <?php } ?>
               </figure>
               <div class="details">
