@@ -15,7 +15,7 @@
     g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pwk.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript><p><img src="//thefpl.us/analytics/pwk.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<noscript><p><img src="//thefpl.us/analytics/pwk.php?idsite=1" style="border:0;" alt="Matomo Noscript" /></p></noscript>
 <!-- End Piwik Code -->
 
 <!-- trackJS -->
