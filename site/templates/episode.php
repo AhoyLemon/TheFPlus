@@ -224,6 +224,7 @@
     <!-- EPISODE FANART -->
     <?php if ($site->find('fanart')->images()->filterBy('episode', $page->slug())->count() > 0) { ?>
       <div class="info-block fanart-block">
+        <a name="fanart"></a>
         <h4>Fanart for this episode:</h4>
         <div class="fanart-grid">
           <?php snippet('fanart-thumbnails',  [ 'fanartArray' => $site->find('fanart')->images()->filterBy('episode', $page->slug()) ]) ?>
