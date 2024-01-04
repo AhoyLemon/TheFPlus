@@ -1,0 +1,145 @@
+Prevnext: 
+
+----
+
+Title: The Worst Creepypastas
+
+----
+
+Featured-site: creepypasta.com
+
+----
+
+Date: 2022-10-22
+
+----
+
+Time: 15:15
+
+----
+
+Cover: ep378.jpg
+
+----
+
+Cast: Boots Raingear,Jimmyfranks,Isfahan,Zarla,Lemon
+
+----
+
+Episode-file: fplus_378.mp3
+
+----
+
+Runtime: 1:27:07
+
+----
+
+File-size: 60
+
+----
+
+Document-link: https://docs.google.com/document/d/12HVytJia7uts8j0XeSQRv_7h2AGdbDOt_bAikcP4Maw/edit?usp=sharing_eil_m&ts=62636536
+
+----
+
+Editor: Jimmyfranks
+
+----
+
+Provider: Doctor Interrogative
+
+----
+
+Text: 
+
+Okay, so for this episode the plan was for us to read the worst-rated stories on **Creepypasta.com**, but we spent like half that time on some dude's insistence that his boner for the Venom symbiote is the cure for liberalism.
+
+This week, The F Plus vows to never turn left again.
+
+----
+
+Music-used: Orgy of the Dead soundtrack - I Am Criswell/Let's Turn Back (Jaime Mendoza-Nava),Frank Zappa - Letter From Jeepers
+
+----
+
+Tags: fiction,scary stories,scriptwriters can write!,nerds,watching too much television,no plot no problem,not a fetish?
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: "jesus christ becomes the venom symbiote"
+
+----
+
+Cover-cite-artist: Lemon x DALL-E
+
+----
+
+Cover-cite-url: https://labs.openai.com/s/OM01D4a1TtANGL1zNxGifnJ9
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 🎃
+- 
+  timestamp: 00:00:27
+  name: Reader Intros
+- 
+  timestamp: 00:01:42
+  name: Hey F Plus
+- 
+  timestamp: 00:05:08
+  name: “Eat Your Greens”
+- 
+  timestamp: 00:09:30
+  name: “Beyond Truth”
+- 
+  timestamp: 00:12:40
+  name: “The World of Winona”
+- 
+  timestamp: 00:32:00
+  name: “The Blue Meteor”
+- 
+  timestamp: 01:09:15
+  name: “The Town of Blanche”
+- 
+  timestamp: 01:13:14
+  name: “Horrors of the Commonwealth”
+- 
+  timestamp: 01:20:50
+  name: What did we learn?
+- 
+  timestamp: 01:25:15
+  name: >
+    The F Plus’ “Greensleeves” lyric
+    writing challenge hour
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

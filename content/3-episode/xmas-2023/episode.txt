@@ -1,0 +1,163 @@
+Prevnext: 
+
+----
+
+Title: Jack Chickmas 2023
+
+----
+
+Featured-site: moneysavingexpert.com,writingforums.com,psychlinks.ca,reddit.com,fandom.com,lushstories.com,fetlife.com
+
+----
+
+Date: 2023-12-24
+
+----
+
+Time: 17:00
+
+----
+
+Cover: xmas2023.jpg
+
+----
+
+Cast: Jack Chick,Raven,Monty
+
+----
+
+Episode-file: xmas-2023.mp3
+
+----
+
+Runtime: 0:57:02
+
+----
+
+File-size: 39
+
+----
+
+Document-link: https://docs.google.com/document/d/1xROozxGF5jG4wO0D16j5Ep8PL04a4FftaKC620KL4pw/edit#heading=h.76sx9zig7uu
+
+----
+
+Editor: Jack Chick
+
+----
+
+Provider: thelizzerd
+
+----
+
+Text: 
+
+Christmas can be a tough time of year for many people. Sometimes spending time with family is the challenge, and sometimes just not spending time with anybody can be the challenge. In those dark, difficult times, mankind has historically turned to songs and literature and poetry to find a beacon of light, guiding us through the darkness and into the light. Unfortunately for Jack Chick, this is The F Plus and so instead we're making him read some more godawful Christmas poetry so you can find glee in his misfortune.
+
+This week, oh god no its happening again!
+
+----
+
+Music-used: boney M - i'll be home for christmas,alexander zlatkovski - Silent Night
+
+----
+
+Tags: nerds,nerds singing into mics,christmas
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3876.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Excellent Graphic Design Principles
+
+----
+
+Cover-cite-artist: Jack Chick
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Intro Music
+- 
+  timestamp: 00:00:35
+  name: Intro / reader intros
+- 
+  timestamp: 00:02:07
+  name: really really rude christmas poem
+- 
+  timestamp: 00:03:54
+  name: Nice Night before christmas
+- 
+  timestamp: 00:08:53
+  name: "Puppy's Christmas"
+- 
+  timestamp: 00:11:11
+  name: Happy Rib Day
+- 
+  timestamp: 00:19:03
+  name: A Cmas poem to enjoy with a little weed
+- 
+  timestamp: 00:22:43
+  name: Twas the night before MURDER
+- 
+  timestamp: 00:26:05
+  name: Twas the night before xxxmas
+- 
+  timestamp: 00:29:41
+  name: The night before
+- 
+  timestamp: 00:31:00
+  name: Sorry for spoiling xmas
+- 
+  timestamp: 00:34:42
+  name: The night before DICKSMAS
+- 
+  timestamp: 00:38:44
+  name: >
+    The Night Before ... Leave Out Milk and
+    Cookies That Just Might Help
+- 
+  timestamp: 00:41:16
+  name: The Naughty Night Before Christmas
+- 
+  timestamp: 00:43:16
+  name: A Christmas Tail
+- 
+  timestamp: 00:50:31
+  name: "[M4F] 'Twas the Night Before Christmas (or: A Poem on How Playing Santa Got Me Laid at the Family Get-Together)"
+- 
+  timestamp: 00:56:02
+  name: What did we learn?
+
+----
+
+Chapter-provider: Jack Chick
+
+----
+
+Chapter-provider-aftergap: 

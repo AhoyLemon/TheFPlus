@@ -1,0 +1,183 @@
+Prevnext: 
+
+----
+
+Title: Escape From Garbage Day | Part 4
+
+----
+
+Cover: part04_square.jpg
+
+----
+
+Record-date-start: 2022-09-18
+
+----
+
+Record-time-start: 06:00
+
+----
+
+Record-date-end: 2022-09-18
+
+----
+
+Record-time-end: 11:30
+
+----
+
+Date: 2022-10-14
+
+----
+
+Time: 17:25
+
+----
+
+Featured-site: foodsofengland.com,littlespaceonline.com,deviantart.com,reddit.com,isitnormal.com,wikihow.com
+
+----
+
+Text: The final six are here! We'll begin with Nutshell and her English accent, then a group of people _really_ suffering thru a repulsive caregiver document, a document about the sexiest Digimon, some more Mandela Effect, and finally we've got Is It Normal, wikiHow, and a *whole lot* of MMMBop.
+
+----
+
+Hours: 
+
+- 
+  hour: "19"
+  name: >
+    This is what happens when you let
+    English people cook.
+  provider: A Meat
+  document_link: >
+    https://docs.google.com/document/d/1kGwQlb9UnJ9nh1ISi1LAqLiMBW7Mncvm9zD41GzYwpc/edit?usp=sharing
+  cast: >
+    Nutshell Gulag,Boots Raingear,Jack
+    Chick,Acierocolotl,Kendrick
+    Lobstar,Montrith,Zarla
+  artist: Sauce
+  youtube_url: 0iX3G57151Y
+  text: "So who likes hearing terible fake English accents? I hope *you* do, because there's a whole lot of those in here."
+- 
+  hour: "20"
+  name: >
+    The word “Caregiver” will gross you
+    out forever now.
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/11gVZBBXl11Wgvo2l9kOIGu3zmvBfv-Sq0vmui41TUhA/edit?usp=sharing
+  cast: >
+    Boots Raingear,Isfahan,John
+    Toast,Kumquatxop,Kendrick
+    Lobstar,Montrith,Zarla
+  artist: Sauce
+  youtube_url: isv_M_LHeG8
+  text: |
+    Oh no. Oh no no no no. No.
+    
+    Oh no. No.... No. No no no no. No no no no no no no no no no no.
+    
+    Oh no, no no no no no no. No, oh no. No. Ohhhhhhhh no. Oh no. Oh no.
+- 
+  hour: "21"
+  name: "Renamon is The Internet's Furry Goddess."
+  provider: Doctor Interrogative
+  document_link: >
+    https://docs.google.com/document/d/15Z5K2P6KEVWymB-2HeE6eke9OpSSZ_dnFzY5Fvrr1rQ/edit?usp=sharing
+  cast: >
+    Portaxx,Lemon,Isfahan,John
+    Toast,Nutshell Gulag,J W Friedman
+  artist: Frank West
+  youtube_url: bh5g2SjI97Q
+  text: |
+    Sexy Digimon, Sexy Digimon, Sexy Digimon, Sexy Digimon.
+    
+    As we're about to learn (and teach) , Renamon is the *sexiest* Digimon, and we'll find out why while Frank West plays a Game Boy Digimon racing video game.
+- 
+  hour: "22"
+  name: Even More Mandela Effect
+  provider: Seth "Slimy" Rollins
+  document_link: >
+    https://docs.google.com/document/d/1mJ4PhuO2o8XeqrvHj0_5Rm8_j8ijMxEI6EGsL93-dns/edit?usp=sharing
+  cast: >
+    John Toast,Zarla,Bunnybread,J W
+    Friedman,K Thor Jensen,Nutshell Gulag
+  artist: Positronic
+  youtube_url: 20SJTA-8hcQ
+  text: >
+    I thought I remembered this being hour
+    11...
+- 
+  hour: "23"
+  name: Is It Normal?
+  provider: Secret Gaygent 69
+  document_link: >
+    https://docs.google.com/document/d/1CDAZmEhAXd33qtzmYIoMOKQgIu2v4UJ7cgOepLQZm60/edit?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Frank
+    West,Jimmyfranks,K Thor Jensen,Montrith
+  artist: Shell Game
+  youtube_url: loRlWnapKmk
+  text: Boots owes Frank twenty bucks.
+- 
+  hour: "24"
+  name: wikiHow
+  provider: The F Plus
+  document_link: >
+    https://docs.google.com/document/d/1dpc9Aq8fdG9hfKq3hHnRB_1G5rypDynxw97Ul4tFtvE/edit?usp=sharing
+  cast: "Lemon,Boots Raingear,Achilles' Heelies,Jack Chick,Jimmyfranks,Nutshell Gulag"
+  artist: Portaxx
+  youtube_url: QoCs_j_MspA
+  text: "We've got a whole lot of wikHow to read, but let's be frank - this is the last hour, so you'll mostly hearing the song “MMMBop”."
+
+----
+
+Cast: Nutshell Gulag,Boots Raingear,Jack Chick,Acierocolotl,Kendrick Lobstar,Montrith,Zarla,Sauce,Isfahan,John Toast,Kumquatxop,Portaxx,Lemon,J W Friedman,Frank West,K Thor Jensen,Positronic,Jimmyfranks
+
+----
+
+Provider: A Meat,Mix,Doctor Interrogative,Seth "Slimy" Rollins,Secret Gaygent 69
+
+----
+
+Tags: garbage day,24 terrible hours,wikihow,video games,furries,mandela effect,recipes,gross
+
+----
+
+Leadout: Let's do it again.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-1
+  text: Part 1
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-2
+  text: Part 2
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-3
+  text: Part 3
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/eCuXmvdNUaeyMqwS9
+  text: Stream Art
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/FPNRZuejFUhaM5QdA
+  text: Break Art
+  target_blank: "0"
+- 
+  url: >
+    https://bootsraingear.bandcamp.com/album/garbage-music-for-garbage-people
+  text: The Garbage Day Soundtrack
+  target_blank: "0"

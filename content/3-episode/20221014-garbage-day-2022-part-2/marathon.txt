@@ -1,0 +1,168 @@
+Prevnext: 
+
+----
+
+Title: Escape From Garbage Day | Part 2
+
+----
+
+Cover: part02_square.jpg
+
+----
+
+Record-date-start: 2022-09-17
+
+----
+
+Record-time-start: 18:00
+
+----
+
+Record-date-end: 2022-09-18
+
+----
+
+Record-time-end: 00:00
+
+----
+
+Date: 2022-10-14
+
+----
+
+Time: 17:21
+
+----
+
+Featured-site: reddit.com,gnoosic.com,rappad.com,deviantart.com
+
+----
+
+Text: The next six hours of Escape From Garbage Day bring us to some very strange places; we'll start out by checking in on Pooner & The Snizz trying (and failing) to take calls from the public, some very real stories of swingers, a bunch of stupid musical opinions, people tugging on their dicks, a lot of crummy juggalo rap lyrics, and a whole lot of DeviantArt drama. The Future is Garbage™.
+
+----
+
+Hours: 
+
+- 
+  hour: "7"
+  name: 'Pooner & The Snizz on KUNT 105.5FM'
+  provider: ""
+  document_link: ""
+  cast: >
+    Bunnybread,Jimmyfranks,Frank
+    West,Isfahan,Portaxx,Lou Fernandez
+  artist: Moxie Ramsey
+  youtube_url: HwyRzQFpYVI
+  text: "It's finally time to reconnect with our favorite consitently fired morning radio DJs... it's Pooner & The Snizz! They've just found a new home at 105.5 KUNT (your destination for Kickin' Country) and they'd like to take some calls from the audience... Hopefully this'll go better than last time."
+- 
+  hour: "8"
+  name: >
+    Perfectly Normal Stories of Perfectly
+    Normal Swingers
+  provider: Curly Hooligan
+  document_link: >
+    https://docs.google.com/document/d/1UkNyMGfEkQaXEXBIzrRImmSVWhhl3OLIUnnx3yTTuD8/edit?usp=sharing
+  cast: "Lemon,Achilles' Heelies,bumpgrrl,Kumquatxop,J W Friedman,JT"
+  artist: Lou Fernandez
+  youtube_url: QKNeMqf9kyM
+  text: "We're up to 8 hours so let's get moving,  because we have a number of boobs to lick and there's a line forming. This hour has us bouncing around Reddit hearing swingers share their stories before we realize that the second half of the document has a lot of content we do not want to read under any circumstances, so we make the best of it."
+- 
+  hour: "9"
+  name: The Music Opinions of Gnoosic
+  provider: Cat Examiner
+  document_link: >
+    https://docs.google.com/document/d/1eQ2uRRpZkfmECJY-IGUSEDzdQFAQSfNdnb77LwqsOSk/edit?usp=sharing
+  cast: "Achilles' Heelies,Adam Bozarth,bumpgrrl,Bunnybread,Jack Chick,Shell Game"
+  artist: King Kalamari
+  youtube_url: ThDSdd9te9o
+  text: "There's a product out there called **Gnod**, which is some sort of AI software that does music discovery, but we could give a damn about that. We're interested in Gnoosic, particularly the forums, where intelligent folks are sharing opinions on Kid Rock, Ted Nugent and Korn (Before They Sold Out)."
+- 
+  hour: "10"
+  name: Teach Me How To Jelq
+  provider: Cat Examiner
+  document_link: >
+    https://docs.google.com/document/d/1v1N-ofECbmaUl14Wl2srTfVwJBa_eB8sQO1WkEBtbQw/edit?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Adam Bozarth,John
+    Toast,Jack Chick
+  artist: Sauce
+  youtube_url: fx1DGf12ZOk
+  text: |
+    We've asked The Internet what they want, and they've come back to us - the people of The Internet are stretchin' out their dicks, and the viewers want to hear about it. So this is The Jelquing Hour. We'll start with a description of "The Baseball Bat Effect", and it'll only go downhill from there.
+- 
+  hour: "11"
+  name: 'The Bunnybread Rapstravaganza: Juggalo Edition'
+  provider: Bunnybread
+  document_link: ""
+  cast: >
+    Bunnybread,Boots Raingear,Lemon,Nutshell
+    Gulag,Victor Laszlo,J W Friedman
+  artist: Portaxx
+  youtube_url: M_cfcl8g7pg
+  text: "There's really no adequate way to set your expectations for this hour, other than to simply say: Bunnybread is charge for this one."
+- 
+  hour: "12"
+  name: There’s Some Drama On DeviantArt
+  provider: Doctor Interrogative
+  document_link: >
+    https://docs.google.com/document/d/1_nDlzLYO86J1hi-ZWKpiXv5XN5cv8hn-DHqMsFzU1qc/edit?usp=sharing
+  cast: "Victor Laszlo,Achilles' Heelies,Isfahan,Acierocolotl,Zarla"
+  artist: King Kalamari
+  youtube_url: zYCVhxvIAl0
+  text: "For the first time ever, Victor is taking over hosting duties while King Kalamari goes back to his mural.  We've got all sorts of DeviantArt slap fights we have to get thru, and we've got a splat noise as well."
+
+----
+
+Cast: Bunnybread,Jimmyfranks,Frank West,Isfahan,Portaxx,Lou Fernandez,Moxie Ramsey,Lemon,Achilles' Heelies,bumpgrrl,Kumquatxop,J W Friedman,JT,Adam Bozarth,Jack Chick,Shell Game,King Kalamari,John Toast,Sauce,Victor Laszlo,Nutshell Gulag,Acierocolotl,Zarla
+
+----
+
+Provider: Doctor Interrogative,Bunnybread,Cat Examiner,Curly Hooligan
+
+----
+
+Tags: garbage day,24 terrible hours
+
+----
+
+Leadout: 
+
+Great news! You're halfway thru. Bad news! The next hour is Lou Reads.
+
+Well, anyway, [how about you dig into part 3](https://thefpl.us/episode/garbage-day-2022-part-2) and see what horrors awit.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-1
+  text: Part 1
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/eCuXmvdNUaeyMqwS9
+  text: Stream Art
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/FPNRZuejFUhaM5QdA
+  text: Break Art
+  target_blank: "0"
+- 
+  url: >
+    https://bootsraingear.bandcamp.com/album/garbage-music-for-garbage-people
+  text: The Garbage Day Soundtrack
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-3
+  text: Part 3
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-4
+  text: Part 4
+  target_blank: "0"

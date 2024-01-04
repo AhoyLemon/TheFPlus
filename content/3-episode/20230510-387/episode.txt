@@ -1,0 +1,274 @@
+Prevnext: 
+
+----
+
+Title: MedBed: The Bed That Treats
+
+----
+
+Featured-site: teslabiohealing.com,medbed.com
+
+----
+
+Date: 2023-05-10
+
+----
+
+Time: 20:10
+
+----
+
+Cover: ep387.jpg
+
+----
+
+Cast: Boots Raingear,Victor Laszlo,Kumquatxop,Dijon Du Jour,Lemon
+
+----
+
+Episode-file: fplus_387.mp3
+
+----
+
+Runtime: 1:22:42
+
+----
+
+File-size: 80
+
+----
+
+Document-link: https://docs.google.com/document/d/1YDq8hZ7AVMCDcrbSPA65-tszDgS-VCP_CRv4RBv7Hlg/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: A Meat
+
+----
+
+Text: 
+
+This episode is all about **medbeds**. So what is a medbed? Well, first of all it isn't a bed, so let's just get that out of the way right now. It's possibly an MLM scheme, or maybe it's a bucket, but sometimes it's a mobile phone app that takes a picture of your bed, which may or may not prevent and cure all diseases.  Do you have any questions? Great, so do we. In fact, this episode is mostly us asking questions.
+
+This week, The F Plus learns the true meaning of Technotronic's Pump Up The Jam.
+
+----
+
+Music-used: Brad Sucks - Better Than Nothing,Hard-Fi - Cash Machine
+
+----
+
+Tags: questionable problem-solving,fun with javascript,sleeeeeep!,please give me money for my stupid idea,where do i sign up?,very important questions,quantum?,quantum,quantum!,ask dr laszlo,we have several dozen questions
+
+----
+
+Bonus-content: 
+
+- [The Truth About Medbeds](https://www.bbc.com/news/blogs-trending-64070190) (BBC News Article)
+- [Patton Oswalt: Death Bed](https://www.youtube.com/watch?v=3jYyYl3RdjI) (stand-up audio on YouTube)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3820
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: futuristic bed with magic medical powers
+
+----
+
+Cover-cite-artist: Lemon x DALL-E
+
+----
+
+Cover-cite-url: https://labs.openai.com/s/cqQ2Fr0SmGE5cQtZfbjNmQvc
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Worth the MSRP
+- 
+  timestamp: 00:00:10
+  name: Better Than Nothing
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:40
+  name: Hey, F Plus
+- 
+  timestamp: 00:03:25
+  name: Tesla Biohealing
+- 
+  timestamp: 00:03:48
+  name: How does this work?
+- 
+  timestamp: 00:09:40
+  name: What is biophoton?
+- 
+  timestamp: 00:17:10
+  name: Quantum Frequency Medicine
+- 
+  timestamp: 00:17:42
+  name: A COMPLETELY NEW TECHNOLOGY
+- 
+  timestamp: 00:20:50
+  name: >
+    The Top Services That Will Charge Your
+    Life
+- 
+  timestamp: 00:22:58
+  name: "Hey, what's your shipping policy?"
+- 
+  timestamp: 00:23:45
+  name: 'Terms & Conditions (consult the German version)'
+- 
+  timestamp: 00:24:35
+  name: '[a scientific explanation of Quantum Entanglement]'
+- 
+  timestamp: 00:26:38
+  name: No seriously though, how does this work?
+- 
+  timestamp: 00:28:12
+  name: Why the left hand?
+- 
+  timestamp: 00:29:55
+  name: >
+    How can I energize my water glass for
+    free?
+- 
+  timestamp: 00:34:54
+  name: Can I get rich from all this?
+- 
+  timestamp: 00:37:04
+  name: >
+    Why should I quantum physically treat
+    mobile radio antennae?
+- 
+  timestamp: 00:38:30
+  name: DISCLAIMERS...
+- 
+  timestamp: 00:41:05
+  name: Oops, we lost your login details
+- 
+  timestamp: 00:42:20
+  name: How can I entangle a bed?
+- 
+  timestamp: 00:49:20
+  name: Can I listen to music?
+- 
+  timestamp: 00:50:40
+  name: >
+    Can I activate medbed on a bed I do not
+    use alone?
+- 
+  timestamp: 00:52:30
+  name: >
+    On how many objects can the mobile
+    medbed be installed?
+- 
+  timestamp: 00:53:15
+  name: >
+    Can the medbed be installed on a
+    waterbed?
+- 
+  timestamp: 00:54:58
+  name: >
+    Can 2 people upload the same photo at
+    the same time?
+- 
+  timestamp: 00:55:40
+  name: Do I have to turn on my phone?
+- 
+  timestamp: 00:56:30
+  name: Do I need to buy another medbed?
+- 
+  timestamp: 00:57:25
+  name: Can the medbed cure diseases?
+- 
+  timestamp: 00:57:56
+  name: Can the AI manipulate me?
+- 
+  timestamp: 00:58:30
+  name: >
+    Can I activate the medbed for another
+    person?
+- 
+  timestamp: 00:59:30
+  name: >
+    Will other objects also be quantum
+    entangled?
+- 
+  timestamp: 01:01:20
+  name: Can we share our free hours?
+- 
+  timestamp: 01:02:05
+  name: Am I doing anything wrong?
+- 
+  timestamp: 01:05:55
+  name: >
+    an the medbed business be combined with
+    other technology?
+- 
+  timestamp: 01:07:45
+  name: How much should I charge?
+- 
+  timestamp: 01:08:30
+  name: >
+    Do I have to lie in the middle of the
+    bed?
+- 
+  timestamp: 01:09:20
+  name: Why is a new registration required?
+- 
+  timestamp: 01:11:05
+  name: Can I change the photo?
+- 
+  timestamp: 01:12:05
+  name: Can I have another free test?
+- 
+  timestamp: 01:14:10
+  name: >
+    Can I install the medbed on a mobile
+    treatment table?
+- 
+  timestamp: 01:15:50
+  name: Who gets to see the scan results?
+- 
+  timestamp: 01:16:40
+  name: What did we learn?
+- 
+  timestamp: 01:21:15
+  name: Cash Machine
+- 
+  timestamp: 01:21:55
+  name: >
+    "Victor, a vibrator teleported into my
+    butt."
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

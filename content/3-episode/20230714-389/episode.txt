@@ -1,0 +1,229 @@
+Prevnext: 
+
+----
+
+Title: Creepy Encounters With Total Idiots
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2023-07-14
+
+----
+
+Time: 09:00
+
+----
+
+Cover: ep389.jpg
+
+----
+
+Cast: Boots Raingear,Frank West,Achilles' Heelies,Dijon Du Jour,Lemon
+
+----
+
+Episode-file: fplus_389.mp3
+
+----
+
+Runtime: 1:30:07
+
+----
+
+File-size: 83
+
+----
+
+Document-link: https://docs.google.com/document/d/1MGTcFcg60W9Dx39VHE8QiVfPUuFS0SKxVVCrDGFrmiw/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Semantic Weeb
+
+----
+
+Text: 
+
+The subreddit of **r/CreepyEncounters** is a place where redditors post true stories of lived experiences that are disurbing, strange, paranormal, or somehow otherworldly. I mean, ostensibly. In our experience, the stories are dubious, meandering tangents of fictional self-inserts that frequently fail to meet the definition of "story". But if you were looking for a preamble of what an allyway is, you're in the right place.
+
+This week, The F Plus wanted mythological beats, but Socretes is just a man.
+
+----
+
+Music-used: The Limousines - Haunted,El P - Deep Space 9mm
+
+----
+
+Tags: guys this totally happened,incomprehensible,reddit,ghosts,because drugs,imagine dragonrocks,socretes is just a man,big boys,whica-macalote
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3836.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Person Holding Tree Trunk
+
+----
+
+Cover-cite-artist: Asaph Guedes
+
+----
+
+Cover-cite-url: https://www.pexels.com/@asaphfotografia/
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: 'The Limousines - Haunted'
+- 
+  timestamp: 00:00:23
+  name: Reader Intros
+- 
+  timestamp: 00:01:48
+  name: Hey F Plus (how are your encounters?)
+- 
+  timestamp: 00:04:30
+  name: >
+    Chased by freaks at the water park after
+    tooting too many times (boy)
+- 
+  timestamp: 00:08:32
+  name: Some more posts from ImagineDragonRocks
+- 
+  timestamp: 00:09:50
+  name: "TheTeaDrinkers' creepy friend John is into Mythological Beats"
+- 
+  timestamp: 00:14:40
+  name: HALLOWEEN OF HELL
+- 
+  timestamp: 00:16:45
+  name: The cult of the clown
+- 
+  timestamp: 00:20:50
+  name: >
+    unknown man in my allyway sings to my
+    musci
+- 
+  timestamp: 00:26:45
+  name: >
+    I’m getting messages in my meditation
+    that these Ufo (at least the ones that
+    look like orbs of light in the sky) are
+    actually native to earth.
+- 
+  timestamp: 00:31:00
+  name: ive MET a creature
+- 
+  timestamp: 00:31:38
+  name: Wyatt has terrible opinions
+- 
+  timestamp: 00:32:48
+  name: "My x girlfriend and i do a lot of fentanyl but it's okay because i have magic powers"
+- 
+  timestamp: 00:48:55
+  name: Abandoned hospitla
+- 
+  timestamp: 00:52:12
+  name: >
+    I either mind control or Drugged by a
+    Couple
+- 
+  timestamp: 00:54:55
+  name: Me a d friend...
+- 
+  timestamp: 00:55:50
+  name: Some stoner was smokin a blunt
+- 
+  timestamp: 00:58:40
+  name: >
+    Hustler_Player_Pimp could sense his
+    friend would be murdered in gang
+    violence
+- 
+  timestamp: 01:05:00
+  name: A strange man in line
+- 
+  timestamp: 01:05:40
+  name: DQ restaurant creep
+- 
+  timestamp: 01:06:10
+  name: There are someone in my house
+- 
+  timestamp: 01:07:25
+  name: The Boy
+- 
+  timestamp: 01:08:00
+  name: This was Terrific for Me
+- 
+  timestamp: 01:09:10
+  name: >
+    I had a creepy encounter where my math
+    teacher
+- 
+  timestamp: 01:10:05
+  name: The Halloween
+- 
+  timestamp: 01:12:55
+  name: "I was sitting on my couch home alone, Playing the classic 80's game Mike Tyson's Punch-Out!!"
+- 
+  timestamp: 01:14:30
+  name: >
+    Boots will pay Frank West $21 for a
+    Electricity Whica-Macalote
+- 
+  timestamp: 01:16:12
+  name: Skeletons in the living room
+- 
+  timestamp: 01:17:35
+  name: My dad? 🤷
+- 
+  timestamp: 01:19:50
+  name: AND NOW, A LIST OF TITLES
+- 
+  timestamp: 01:23:07
+  name: What did we learn?
+- 
+  timestamp: 01:28:15
+  name: Please draw more things.
+- 
+  timestamp: 01:29:05
+  name: 'El P - Deep Space 9mm'
+- 
+  timestamp: 01:29:40
+  name: IA IA GARFIELD FTAGN
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

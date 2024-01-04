@@ -1,0 +1,179 @@
+Prevnext: 
+
+----
+
+Title: The Gospel of Digimon
+
+----
+
+Featured-site: digimonbelievers.forumotion.com
+
+----
+
+Date: 2022-12-18
+
+----
+
+Time: 14:50
+
+----
+
+Cover: ep380.jpg
+
+----
+
+Cast: Boots Raingear,Kumquatxop,Bunnybread,Nutshell Gulag,Lemon
+
+----
+
+Episode-file: fplus_380.mp3
+
+----
+
+Runtime: 1:08:28
+
+----
+
+File-size: 63
+
+----
+
+Document-link: https://docs.google.com/document/d/1EgvrXa8CLOAVVNNJnx_KDdxReDiQzvx9qICN4WpL1bg/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Doctor Interrogative
+
+----
+
+Text: 
+
+**Project DigiClipse** may or may not be a cult founded upon the spiritual belief in the childrens' cartoon Digimon. And it's time for us to learn more. We're starting at Facebook, but moving into several forums thru the ages to listen to brothers and sisters of the faith testify.
+
+This week, The F Plus get head from Gurlemurglemon.
+
+----
+
+Music-used: 16 Horsepower - Black Soul Choir,16 Horsepower - For Heaven’s Sake (Live)
+
+----
+
+Tags: digimon,guys this totally happened,sleeeeeep!,consumerism as a religion,where do i sign up?
+
+----
+
+Bonus-content: - Jeb! - [Please Clap](https://www.youtube.com/watch?v=OUXvrWeQU0g) (YouTube clip)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3782
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: imagine The Digimon Pope
+
+----
+
+Cover-cite-artist: Lemon x Midjourney
+
+----
+
+Cover-cite-url: https://www.midjourney.com/home/?callbackUrl=%2Fapp%2F
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "Lemon's got 2 episodes"
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:46
+  name: Hey, F Plus
+- 
+  timestamp: 00:04:45
+  name: Just what is it about?
+- 
+  timestamp: 00:11:00
+  name: Let’s Get in the RDB Headspace
+- 
+  timestamp: 00:12:00
+  name: Most people consider Ashleigh insane
+- 
+  timestamp: 00:13:05
+  name: SeveredWings is new here
+- 
+  timestamp: 00:16:00
+  name: chiliwolf is a tamer
+- 
+  timestamp: 00:19:45
+  name: Your Digimon Experience
+- 
+  timestamp: 00:24:30
+  name: >
+    Do you have a Parter? How did you meet
+    him/her?
+- 
+  timestamp: 00:30:30
+  name: >
+    I really want to know how to see my
+    digimon
+- 
+  timestamp: 00:33:40
+  name: >
+    Have anyone of you ever been to the
+    digiworld? how you went there? how is
+    it?
+- 
+  timestamp: 00:39:05
+  name: What Is the Digital Association?
+- 
+  timestamp: 00:50:10
+  name: Totally Real, Actual Digimon Encounters
+- 
+  timestamp: 00:55:20
+  name: Is the Military Involved with Digimon?
+- 
+  timestamp: 00:58:30
+  name: Explosion and Solar Storms
+- 
+  timestamp: 00:59:50
+  name: >
+    I know who always has been my partner
+    without me realizing!
+- 
+  timestamp: 01:02:45
+  name: What did we learn?
+- 
+  timestamp: 01:06:25
+  name: This outro was recorded 337 days later.
+- 
+  timestamp: 01:07:35
+  name: "For Heaven's Sake (Live)"
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

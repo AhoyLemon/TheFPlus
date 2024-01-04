@@ -1,0 +1,187 @@
+Prevnext: 
+
+----
+
+Title: What Is The Meaning of Song?
+
+----
+
+Featured-site: songmeanings.com
+
+----
+
+Date: 2023-02-05
+
+----
+
+Time: 11:00
+
+----
+
+Cover: ep383.jpg
+
+----
+
+Cast: Boots Raingear,Frank West,Bunnybread,Victor Laszlo,K Thor Jensen,Lemon
+
+----
+
+Episode-file: fplus_383.mp3
+
+----
+
+Runtime: 1:20:35
+
+----
+
+File-size: 74
+
+----
+
+Document-link: https://docs.google.com/document/d/1IRyGKyfY0uu0R7IrK8HuIPrZOtPbRHznki3Gf9kONH0/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Smallest Sasquatch
+
+----
+
+Text: 
+
+Song lyrics are an indelible part of our collective cultural confidence, but can often be a puzzle. For all of these popular songs, what do the lyrics actually *mean?* Well, we're visiting **SongMeanings.com** to hear a bunch of bad theories explained amongst infighting and sex bragging.
+
+This week, The F Plus is with the bear, and the bear is with the bear, and the bear is with the boat (you nimno).
+
+----
+
+Music-used: Fever Ray - Kandy,Aphex Twin - Windowlicker (Funbox Karaoke),Got A Girl - La La La
+
+----
+
+Tags: musicate my lyrics bro,because drugs,poetry
+
+----
+
+Bonus-content: [2 Live Crew perform "The Fuck Shop" on Donahue in 1989, to the displeasure of the entire audience](https://www.youtube.com/watch?v=iViMrXn5IIs) (YouTube Video)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3796.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: woman & red rose
+
+----
+
+Cover-cite-artist: cottonbro
+
+----
+
+Cover-cite-url: https://www.pexels.com/photo/light-love-people-woman-7182070/
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Mark Cuban is the Al Gore of web3
+- 
+  timestamp: 00:00:15
+  name: Kandy
+- 
+  timestamp: 00:00:33
+  name: Reader Intros
+- 
+  timestamp: 00:02:30
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:00
+  name: "We're not just another lyric site."
+- 
+  timestamp: 00:08:30
+  name: 'The Beatles - I Am The Walrus'
+- 
+  timestamp: 00:12:00
+  name: 'Kings of Leon - Sex on Fire'
+- 
+  timestamp: 00:15:07
+  name: '2 Live Crew - Me So Horny'
+- 
+  timestamp: 00:16:00
+  name: 'Metallica - Enter Sandman'
+- 
+  timestamp: 00:18:50
+  name: 'Muse - Uprising'
+- 
+  timestamp: 00:23:50
+  name: 'Kid Rock - Bawitdaba'
+- 
+  timestamp: 00:25:50
+  name: 'CAKE - The Distance'
+- 
+  timestamp: 00:29:50
+  name: 'Lil Nas X - Old Town Road'
+- 
+  timestamp: 00:33:40
+  name: 'Red Hot Chili Peppers - Give It Away'
+- 
+  timestamp: 00:35:20
+  name: 'Tool - Stinkfist'
+- 
+  timestamp: 00:40:35
+  name: 'Marilyn Manson - Antichrist Superstar'
+- 
+  timestamp: 00:41:40
+  name: >
+    (an aside about the lyrics of G. G.
+    Allin in general)
+- 
+  timestamp: 00:44:00
+  name: 'Aphex Twin - Windowlicker'
+- 
+  timestamp: 00:47:30
+  name: 'The Pixies - Monkey Gone To Heaven'
+- 
+  timestamp: 00:55:10
+  name: 'Peaches - Fuck The Pain Away'
+- 
+  timestamp: 01:04:22
+  name: 'Insane Clown Posse - Fuck The World'
+- 
+  timestamp: 01:13:35
+  name: What did we learn?
+- 
+  timestamp: 01:18:30
+  name: La La La
+- 
+  timestamp: 01:19:20
+  name: >
+    2 Live Crew performs "The Fuck Shop" on
+    Donohue in 1988, and the entire audience
+    hates it.
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

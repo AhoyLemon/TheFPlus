@@ -1,0 +1,222 @@
+Prevnext: 
+
+----
+
+Title: These Spells Don't Work
+
+----
+
+Featured-site: spellsofmagic.com
+
+----
+
+Date: 2023-10-29
+
+----
+
+Time: 13:00
+
+----
+
+Cover: ep394b.jpg
+
+----
+
+Cast: Boots Raingear,John Toast,Portaxx,Kumquatxop,Zarla,Lemon
+
+----
+
+Episode-file: fplus_394.mp3
+
+----
+
+Runtime: 1:33:27
+
+----
+
+File-size: 90
+
+----
+
+Document-link: https://docs.google.com/document/d/1WVIVXF0MYbBgs-PuBsi9zgvhZvxocr_vCvqhmOI50os/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Zarla,John Toast,Portaxx
+
+----
+
+Text: 
+
+The promise of the website **Spells of Magic** is very compelling: Over 16,000 spells to help you do things like turn into a dragon, make friends with a dragon, look like a dragon, or be a mermaid (who is also a dragon). And while that all sounds great, Tadashi and Nekoshema are in the comments and... well, they've got bad news for you.
+
+This week, The F Plus buys tickets to see Dub Mumbledoor.
+
+----
+
+Music-used: My Gold Mask - Some Secrets,Britney Spears - Toxic,Aakash Gandhi - Waterfall,Shellac - Prayer to God
+
+----
+
+Tags: recipes,magic,magick,dragons,dragonball z,new age,demons,harry potter,no homo,furries,so mote it be
+
+----
+
+Bonus-content: - [Boots Raingear's fursona](https://thefpl.us/episode/394/boots-mel-blanc.jpg) (original hi-res)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3864.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Boots Raingear's Fursona is Mel Blanc
+
+----
+
+Cover-cite-artist: Portaxx
+
+----
+
+Cover-cite-url: https://thefpl.us/meet/portaxx
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "(I'm skipping the Undertale one)"
+- 
+  timestamp: 00:00:07
+  name: Some Secrets
+- 
+  timestamp: 00:00:30
+  name: Reader Intros
+- 
+  timestamp: 00:01:30
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:30
+  name: >
+    Tiger Spell!!!!! (I got this spell from
+    YouTube)
+- 
+  timestamp: 00:08:58
+  name: How to Make a Spell (by ToxxicKira)
+- 
+  timestamp: 00:13:30
+  name: How to Get Magic (by Butterspell)
+- 
+  timestamp: 00:15:30
+  name: Court Case Spell (by jorgeperez)
+- 
+  timestamp: 00:17:05
+  name: "Open a Hell Gate (doesn't summon demons)"
+- 
+  timestamp: 00:21:25
+  name: Lightening Attack ("shock them through")
+- 
+  timestamp: 00:22:50
+  name: Awesome Clone (wand optional)
+- 
+  timestamp: 00:24:45
+  name: 'Summon Zhongli  (by uhh)'
+- 
+  timestamp: 00:27:30
+  name: >
+    SEX PARTNER APPEARS OUT OF THIN AIR
+    (this is only for hetero)
+- 
+  timestamp: 00:30:20
+  name: To Make a Lot of Rain (duh ne nuh)
+- 
+  timestamp: 00:33:20
+  name: Friends With Devil (very dangerous)
+- 
+  timestamp: 00:35:00
+  name: (nekoshema explains how unicorns work)
+- 
+  timestamp: 00:38:20
+  name: Werewolf Alpha (contains side effects)
+- 
+  timestamp: 00:44:30
+  name: "Hey, what's happening in the comments on the Half Angel/Half Demon spell?"
+- 
+  timestamp: 00:48:40
+  name: Curse Against Enemies (requires enemies)
+- 
+  timestamp: 00:50:58
+  name: 'Hold breath for 1 hour (category: mermaid)'
+- 
+  timestamp: 00:52:50
+  name: >
+    STOP PEOPLE FROM NOT LETTING YOU JOG
+    (great for like models)
+- 
+  timestamp: 00:54:35
+  name: Destroy the World (works on any world)
+- 
+  timestamp: 00:57:55
+  name: Hell Meassage (could be dangerous)
+- 
+  timestamp: 01:00:30
+  name: "Gluten potion (there is chant but it's not important)"
+- 
+  timestamp: 01:03:30
+  name: >
+    Half Night Fury (featuring Dub
+    Mumbledoor)
+- 
+  timestamp: 01:08:05
+  name: "Super shenron (this is fake and doesn't work)"
+- 
+  timestamp: 01:08:55
+  name: Dragon Cash Spell (this does nothing)
+- 
+  timestamp: 01:10:30
+  name: dino summon (you can spawn up to 10)
+- 
+  timestamp: 01:13:35
+  name: >
+    Ultimate Anthropomorphic Animal
+    Transformation
+- 
+  timestamp: 01:16:00
+  name: '[Boots Raingear transforms into Mel Blac]'
+- 
+  timestamp: 01:23:02
+  name: "(there's some comments on that transformation spell)"
+- 
+  timestamp: 01:25:30
+  name: "THE CIRCLE'S DRAGON SPELL (SHOULD WORK!!!)"
+- 
+  timestamp: 01:27:30
+  name: What did we learn?
+- 
+  timestamp: 01:32:55
+  name: Prayer to God
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

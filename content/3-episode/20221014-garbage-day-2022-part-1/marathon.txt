@@ -1,0 +1,175 @@
+Prevnext: 
+
+----
+
+Title: Escape From Garbage Day | Part 1
+
+----
+
+Cover: part01_square.jpg
+
+----
+
+Record-date-start: 2022-09-17
+
+----
+
+Record-time-start: 11:00
+
+----
+
+Record-date-end: 2022-09-17
+
+----
+
+Record-time-end: 17:00
+
+----
+
+Date: 2022-10-14
+
+----
+
+Time: 17:20
+
+----
+
+Featured-site: complaintsboard.com,itch.io,tumblr.com,harrypotterforseekers.com
+
+----
+
+Text: In Spetember of 2022, The F Plus convened to make the same mistake they've made four times over: They will convene in the same Twitch stream for 24 hours straight and read 24 different documents' worth of _terrible_ content, all while rasing money for the **National Network of Abortion Funds**. Along the way, prizes will be offered, laughs will be shared, and suffering will occur. The Future is Garbage™.
+
+----
+
+Hours: 
+
+- 
+  hour: "1"
+  name: Complaints Board
+  provider: Amelia Blank
+  document_link: >
+    https://docs.google.com/document/d/1CYGkcP14nGaFrUbJFUE1tkFn38kdSDzrZpl_BitCNaA/edit?usp=sharing
+  cast: >
+    Lemon,Boots Raingear,Frank
+    West,Isfahan,Jimmyfranks,John Toast
+  artist: Portaxx
+  youtube_url: QJdI67X1kxo
+  text: "Okay, we're starting things off with $4.20 in the donation pool, about 3 minutes of technical diffculties,  and a real desire to get reading the content of **Complaints Board**.  As Portaxx jumps on the pens, some lady gets her donuts thrown in the trash. We're just getting started with **24 straight hours** of terrible content, and now we've gotta find a ribs place that serves warm water and lemon."
+- 
+  hour: "2"
+  name: "Gettin' Horny on itch.io"
+  provider: A Meat
+  document_link: >
+    https://docs.google.com/document/d/1eopCPfaHNVCIPmo2ZlX0jKQJVpFgY6vjH7fz1-t9nwU/edit?usp=sharing
+  cast: >
+    Lemon,Boots
+    Raingear,Isfahan,Jimmyfranks,Portaxx,Acierocolotl
+  artist: Dijon Du Jour
+  youtube_url: FMv5BP-kDWs
+  text: "The people have spoken, and the people want **horny video games**. So okay, let's get to it: We're going to start out in Pussy Paradise, move onto Pussy Licking As A Job, and just get grosser from there. We'll also be sharing what screenshots are possibly even slightly appropriate for this."
+- 
+  hour: "3"
+  name: "Multiples Castin' Spells"
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1-sV7i2z639GGTprFB46TVEyDbrGKVakdxkgK7_HHLtY/edit?usp=sharing
+  cast: >
+    The Intern,John
+    Toast,Kumquatxop,Portaxx,J W
+    Friedman,Shell Game
+  artist: Puppy Time
+  youtube_url: 2Y6ns3V_dpg
+  text: "It's Portaxx's turn as showrunner now, so as Boots' list of actual D&D spell names winds down, Portaxx digs into the Frequently Asked Questions with no answers. J offers to write songs about your cat and Kumquatxop gets technical with other-space and other-folks."
+- 
+  hour: "4"
+  name: Confessions of Tumblr
+  provider: thelizzerd
+  document_link: >
+    https://docs.google.com/document/d/10ENnyQnjIGDY79rb5hwqgdq8a4HvMKE_ZsiRigOg3PE/edit?usp=sharing
+  cast: >
+    Boots Raingear,The
+    Intern,Bunnybread,Jack
+    Chick,Jimmyfranks,dijon du jour
+  artist: Shell Game
+  youtube_url: njLNtjyTaQo
+  text: "We start things out with Boots' questionable Joey Ramone impression after which The Intern introduces the real “Jonathan Banks” for special cameos. Meanwhile, something happened to Jack Chick and we're trying to figure out."
+- 
+  hour: "5"
+  name: Harry “Jesus Christ” Potter
+  provider: surrey
+  document_link: >
+    https://docs.google.com/document/d/116co7dq0N8w94-r-mKVuc1ocioP2V7mvW7lOi92yEIE/edit?usp=sharing
+  cast: >
+    Boots Raingear,Lemon,Adam Bozarth,Jack
+    Chick,Kumquatxop,dijon du jour
+  artist: K Thor Jensen
+  youtube_url: J5Cg1A-zL-Y
+  text: "Is Harry Potter Jesus? Well, there's no certain way of knowing. What we *do know* is that we're spenting this entire hour comparing the text of Harry Potter to texts of the Biblical record. Meanwhile K Thor draws iconic characters such as Dumble Dorbert, Vol Dé Mart, and Neil Big Ass."
+- 
+  hour: "6"
+  name: >
+    Short, Erotic Statements About Political
+    Figures
+  provider: Napoleon Blownapart
+  document_link: >
+    https://docs.google.com/document/d/1CuD7V26qY96WmKxsIeIw90cK0wWhABStpTuCgcgkuf4/edit?usp=sharing
+  cast: "Lemon,Achilles' Heelies,Adam Bozarth,Kumquatxop,K Thor Jensen,JT"
+  artist: Puppy Time
+  youtube_url: bn8AOG9V7YE
+  text: "We've asked the audience, and they've decided that while there is *some* interest in hearing us read about having sex with The Coronavirus, the real interest is in having us read short erotic statements about political figures, and we have a lot of them to read."
+
+----
+
+Cast: Boots Raingear,Lemon,Frank West,Isfahan,Jimmyfranks,John Toast,Portaxx,Dijon Du Jour,The Intern,Kumquatxop,Jack Chick,Shell Game,Adam Bozarth,K Thor Jensen,JT,Achilles' Heelies,Puppy Time
+
+----
+
+Provider: Amelia Blank,A Meat,Mix,thelizzerd,surrey
+
+----
+
+Tags: garbage day,24 terrible hours,tumblr
+
+----
+
+Leadout: 
+
+Well, you've gotten this far, so that bodes well, but there's a lot of very stupid things in the next six hours: We've got **Pooner & The Snizz** as well as Bunnybread's very hour rap hour, some very stupid musical opinions, a whole hour of people stretching their penises, and lots and lots of drama.
+
+[Part 2 is here](https://thefpl.us/episode/garbage-day-2022-part-2).
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://photos.app.goo.gl/eCuXmvdNUaeyMqwS9
+  text: Stream Art
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/FPNRZuejFUhaM5QdA
+  text: Break Art
+  target_blank: "0"
+- 
+  url: >
+    https://bootsraingear.bandcamp.com/album/garbage-music-for-garbage-people
+  text: The Garbage Day Soundtrack
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-2
+  text: Part 2
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-3
+  text: Part 3
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-4
+  text: Part 4
+  target_blank: "0"

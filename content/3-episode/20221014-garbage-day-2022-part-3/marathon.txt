@@ -1,0 +1,173 @@
+Prevnext: 
+
+----
+
+Title: Escape From Garbage Day | Part 3
+
+----
+
+Cover: part03_square.jpg
+
+----
+
+Record-date-start: 2022-09-18
+
+----
+
+Record-time-start: 00:00
+
+----
+
+Record-date-end: 2022-09-18
+
+----
+
+Record-time-end: 05:50
+
+----
+
+Date: 2022-10-14
+
+----
+
+Time: 17:22
+
+----
+
+Featured-site: zity.biz,indigosociety.com,github.io,neocities.org,blogspot.com,allpoetry.com
+
+----
+
+Text: We're halfway through our Escape From Garbage Day and things are looking... complicated. First we've got Lou (and Lou alone) reading possibly the grossest thing we've ever covered, and then Lemon wants to introduce you to his Indigo Children, after that, Shell Game grabs the controls for four straight hours of **Extra Credit**. It's a real doozy.
+
+----
+
+Hours: 
+
+- 
+  hour: "13"
+  name: "Lou Reads zity.biz (and it's really gross)"
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1MFT5MkLjQ1zEDiH5oIZfq3YQCa58IvVrgXXnNNjmZjA/edit?usp=sharing
+  cast: Lou Fernandez
+  artist: Adam Bozarth
+  youtube_url: g4Lmp2uFYoA
+  text: This one is real fucking gross.
+- 
+  hour: "14"
+  name: The Indigo Society
+  provider: Cheapskate
+  document_link: >
+    https://docs.google.com/document/d/1ngLZJPaRLdWwRbkYyNG2FADAwsyYpWCVer9m_HwI388/edit?usp=sharing
+  cast: >
+    Lemon,Frank West,Victor Laszlo,Kendrick
+    Lobstar,Montrith,Zarla
+  artist: Moxie Ramsey
+  youtube_url: 0CHHwA-ItVQ
+  text: "Let's bring on The Indigo Children! Lemon starts things off by offering child labor and then it's straight to magickal hippie woo. And yes, of course the INTJs show up, thanks for asking."
+- 
+  hour: "15"
+  name: Vore MBTI
+  provider: Mix
+  document_link: >
+    https://docs.google.com/document/d/1euId43-o0U7utGoZdDBc0liqDiq1WiZ3LpX7RwbGzk0/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Dr.
+    Activisionary,Positronic,dijon du
+    jour,Positive Stress
+  artist: Moxie Ramsey
+  youtube_url: 4yWOdtEFfJM
+  text: '**Extra Credit Begins!** Shell Game has a posse and that posse wants to start reading about the Myers Briggs Type Indicator and how it applies to your vore fetish.'
+- 
+  hour: "16"
+  name: The Nerd Thigh Guy(s)
+  provider: Secret Gaygent 69
+  document_link: >
+    https://docs.google.com/document/d/1TBkMGRvjgQx3_pqXUuX3R8VuTFkdNuu1ADikwPW0d3A/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Dr.
+    Activisionary,Chai Tea Latte,dijon du
+    jour,Turtle
+  artist: Secret Gaygent 69
+  youtube_url: WEMknobKKEk
+  text: "Can you believe there's more Extra Credit? Can you believe there's more nerd thigh strangulation? Listen buddy, this is the internet, you're going to have to get used to suprises."
+- 
+  hour: "17"
+  name: 'The Tao of Dungeons & Dragons'
+  provider: Cheapskate
+  document_link: >
+    https://docs.google.com/document/d/12-Dqb94-2sOnMy6VCX_lyIU_nRP4Y2R4G2tAEix-n0k/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Ganymede,Mix,The
+    Heavenator,Turtle
+  artist: Dijon Du Jour
+  youtube_url: oEd3nncTO00
+  text: "Extra Credit is still on the air! This hour, we're exploring the Tao of D&D blog - a repository of hectoring and joyless screeds about why this game with magical elves should be taken seriously."
+- 
+  hour: "18"
+  name: Video Game Poetry
+  provider: Shell Game
+  document_link: >
+    https://docs.google.com/document/d/1MBhkUu3aWm9snL3Cz6XL8Es4oKnTTVGvlJJO7GvjnUo/edit?usp=sharing
+  cast: >
+    Shell Game,Lesbiathan,Ganymede,Mix,The
+    Heavenator,Turtle
+  artist: Dijon Du Jour
+  youtube_url: xSPKvVLqfOQ
+  text: "It's the final **Extra Credit** hour, and they've got video game poetry! What other context would you possibly need?"
+
+----
+
+Cast: Lou Fernandez,Adam Bozarth,Lemon,Frank West,Victor Laszlo,Kendrick Lobstar,Montrith,Zarla,Moxie Ramsey,Shell Game,Dr. Activisonary,Positronic,Dijon Du Jour,Positive Stress,Chai Tea Latte,Turtle,Ganymede,Lesbiathan,The Heavenator
+
+----
+
+Provider: Mix,Cheapskate,Secret Gaygent 69
+
+----
+
+Tags: poetry,video games,garbage day,24 terrible hours,nerd thighs
+
+----
+
+Leadout: The end is in sight.
+
+----
+
+Buttons: 
+
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-1
+  text: Part 1
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-2
+  text: Part 2
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/eCuXmvdNUaeyMqwS9
+  text: Stream Art
+  target_blank: "0"
+- 
+  url: >
+    https://photos.app.goo.gl/FPNRZuejFUhaM5QdA
+  text: Break Art
+  target_blank: "0"
+- 
+  url: >
+    https://bootsraingear.bandcamp.com/album/garbage-music-for-garbage-people
+  text: The Garbage Day Soundtrack
+  target_blank: "0"
+- 
+  url: 'https://thefpl.us/merch/tattoos#3'
+  text: A Respectful Tattoo of the Queen
+  target_blank: "0"
+- 
+  url: >
+    https://thefpl.us/episode/garbage-day-2022-part-4
+  text: Part 4
+  target_blank: "0"

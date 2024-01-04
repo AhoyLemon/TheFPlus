@@ -1,0 +1,211 @@
+Prevnext: 
+
+----
+
+Title: Unpopular Opinions? On Reddit!?
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2022-10-28
+
+----
+
+Time: 17:55
+
+----
+
+Cover: ep379.jpg
+
+----
+
+Cast: Boots Raingear,Jimmyfranks,Jack Chick,Frank West,Shell Game,Lemon
+
+----
+
+Episode-file: fplus_379.mp3
+
+----
+
+Runtime: 1:16:38
+
+----
+
+File-size: 70
+
+----
+
+Document-link: https://docs.google.com/document/d/15XFrQJuDgCo44-GRrZ0C1kObn06OLqwGQ0s1rOjcLDI/edit?usp=sharing
+
+----
+
+Editor: Jimmyfranks
+
+----
+
+Provider: Doctor Interrogative
+
+----
+
+Text: 
+
+I know, we were surprised as well. But here we are, visiting **r/UnpopularOpinion** and it turns out there's some bad opinions in here. We weren't gonna watch what happens, but it says "watch next".
+
+This week, The F Plus stands still and moves the goalposts around.
+
+----
+
+Music-used: FEAR - New York's Alright If You Like Saxophones,Type O Negative - We Hate Everyone
+
+----
+
+Tags: reddit,500 words that say i don't care,hot takes on hitler,the internet is a dumb oracle you shout into,very popular websites,politics,as an intellectual...,watch next,why is a podcast?
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: 
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Shocked Man
+
+----
+
+Cover-cite-artist: Gustavo Fring
+
+----
+
+Cover-cite-url: https://www.pexels.com/@gustavo-fring/
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "You're not making me a better person."
+- 
+  timestamp: 00:00:10
+  name: "New York's Alright (if you like saxophones)"
+- 
+  timestamp: 00:00:30
+  name: Reader Intros
+- 
+  timestamp: 00:01:56
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:55
+  name: >
+    Multiplayer is killing video games and
+    sucking the joy out of them.
+- 
+  timestamp: 00:10:16
+  name: Podcasts are boring!
+- 
+  timestamp: 00:16:05
+  name: >
+    Marvel/DC heros and villains are
+    massively over rated.
+- 
+  timestamp: 00:19:28
+  name: >
+    You should never be banned for using
+    slurs in a videogame.
+- 
+  timestamp: 00:23:50
+  name: >
+    I think men should be able to touch any
+    female colleague at any time without any
+    consequences.
+- 
+  timestamp: 00:26:00
+  name: >
+    Stopping in traffic for a funeral to
+    pass through is ridiculous.
+- 
+  timestamp: 00:30:45
+  name: Background checks should not exist.
+- 
+  timestamp: 00:33:15
+  name: >
+    Being bad at video games is proof that
+    you are a not intelligent human.
+- 
+  timestamp: 00:38:40
+  name: >
+    Society has become too focused on
+    rights.
+- 
+  timestamp: 00:43:30
+  name: '{an absurdly convoluted title for another Libertarian screed}'
+- 
+  timestamp: 00:49:00
+  name: >
+    Spelling and grammatical errors should
+    never happen.
+- 
+  timestamp: 00:50:00
+  name: Nuclear bombs are a positive thing.
+- 
+  timestamp: 00:54:30.000
+  name: and now, a reply from AbortDatFetus
+- 
+  timestamp: 00:55:50
+  name: '{some more titles from this section}'
+- 
+  timestamp: 00:59:30
+  name: Women in full armor are more attractive.
+- 
+  timestamp: 01:01:05
+  name: 'Getting **** on by a bird is initially satisfying.'
+- 
+  timestamp: 01:03:25
+  name: >
+    Feet are the most disgusting body part
+    out of all of them.
+- 
+  timestamp: 01:08:22
+  name: >
+    The backsplash of water that hits your
+    butthole is satisfying.
+- 
+  timestamp: 01:09:45
+  name: >
+    That feeling when you swab a Q-Tip is as
+    good as an orgasm.
+- 
+  timestamp: 01:10:50
+  name: What did we learn?
+- 
+  timestamp: 01:15:20
+  name: We Hate Everyone
+- 
+  timestamp: 01:16:30
+  name: "What's the appeal of a podcast?"
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

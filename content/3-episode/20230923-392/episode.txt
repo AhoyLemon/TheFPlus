@@ -1,0 +1,169 @@
+Prevnext: 
+
+----
+
+Title: Fantasy Writers on Reddit
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2023-09-23
+
+----
+
+Time: 18:00
+
+----
+
+Cover: ep392.jpg
+
+----
+
+Cast: Boots Raingear,Achilles' Heelies,Victor Laszlo,Shell Game,Lemon
+
+----
+
+Episode-file: fplus_392.mp3
+
+----
+
+Runtime: 1:08:07
+
+----
+
+File-size: 63
+
+----
+
+Document-link: https://docs.google.com/document/d/15DRxmMCJGVYRKGW58kbIldjltdWV5ll-EBzdNxd_ZPc/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Cheapskate
+
+----
+
+Text: 
+
+When looking for writing advice, who better to ask than the helpful Redditors at **r/fantasywriting**? That is a rhetorical question, don't bother answering it.
+
+This 👏 week 👏 The 👏 F 👏 Plus 👏 doesn't 👏 use 👏 commas 👏👏👏
+
+----
+
+Music-used: KRS One - Never Give Up,Depeche Mode - Everything Counts
+
+----
+
+Tags: reddit,scriptwriters can write!,i'm a writer,fiction,the internet isn't helping,nerds,fantasy,free ideas
+
+----
+
+Bonus-content: This space reserved for drawings of that sword.
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3856.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Steve Huffman is a Wizard
+
+----
+
+Cover-cite-artist: Lemon x DALL-E
+
+----
+
+Cover-cite-url: https://labs.openai.com/s/ZsOhXVEv0fCf5WmoXxxMlgRR
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Never Give Up
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:40
+  name: Hey, F Plus!
+- 
+  timestamp: 00:03:15
+  name: "Let's look at r/fantasywriters"
+- 
+  timestamp: 00:04:45
+  name: "How do I defeat a person with sound wave manipulation? his powers don't have a limit."
+- 
+  timestamp: 00:08:40
+  name: >
+    Does this sound like from a children’s
+    book?💀💀
+- 
+  timestamp: 00:10:25
+  name: >
+    I want to write music into my
+    fantastical fights
+- 
+  timestamp: 00:14:45
+  name: 'Is it dangerous to wait until the world is at least 90% built to start writing?'
+- 
+  timestamp: 00:21:00
+  name: Please review my character
+- 
+  timestamp: 00:23:15
+  name: >
+    AITA for being selfish and staying with
+    the man who kidnapped me?
+- 
+  timestamp: 00:27:15
+  name: Can this Sword Exist?
+- 
+  timestamp: 00:33:20
+  name: "I'm thinking a kind of post-apocalyptic super hero kind of thing"
+- 
+  timestamp: 00:35:45
+  name: >
+    Depraved Immortal Supernormal Artists
+    (DISA)
+- 
+  timestamp: 00:43:42
+  name: 'Short story - The Queen & Cleo 🌹.'
+- 
+  timestamp: 00:52:15
+  name: War Empress
+- 
+  timestamp: 01:04:15
+  name: What did we learn?
+- 
+  timestamp: 01:07:15
+  name: Everything Counts (In Large Amounts)
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
