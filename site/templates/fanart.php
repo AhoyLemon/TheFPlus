@@ -5,11 +5,9 @@
     $paginateCount = 50;
 
     if (param('artist')) {
+      $sortType = "artist";
       $fanartSort = $page->images()->filterBy('artist', param('artist'))->paginate($paginateCount);
-    }
-
-    // Which way are you sorting?
-    else if (param('sort') == "artist") {
+    } else if (param('sort') == "artist") {
       $sortType = "artist";
       $fanartSort = $page->images()->sortBy('artist')->paginate($paginateCount);
     } else if (param('sort') == "artist-reverse") {
