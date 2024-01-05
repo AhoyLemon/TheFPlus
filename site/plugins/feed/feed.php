@@ -50,7 +50,7 @@ Pages::$methods['feed'] = function($pages, $params = array()) {
   if($options['snippet']) {
     $html .= snippet($options['snippet'], $options, true);
   } else {
-    $html .= tpl::load(__DIR__ . DS . 'template.php', $options);
+    $html .= tpl::load(__DIR__ . DS . 'template-reformatted.php', $options);
   }
 
   return $html;

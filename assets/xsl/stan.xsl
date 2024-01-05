@@ -16,7 +16,7 @@ version="2.0">
           (RSS Feed)
         </title>
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC:300,400,700" rel="stylesheet" />
-        <link rel="stylesheet" href="https://thefpl.us/assets/css/stan.css" type="text/css" />
+        <link rel="stylesheet" href="https://thefpl.us/assets/css/stan.css?lastUpdated=2024-01-04" type="text/css" />
       </head>
     
       <xsl:apply-templates select="rss/channel"/>
@@ -47,8 +47,6 @@ version="2.0">
                   or 
                   <a href="https://itunes.apple.com/us/podcast/the-f-plus/id334184087">Apple Podcasts</a>
                   or
-                  <a href="https://podcasts.google.com/feed/aHR0cHM6Ly90aGVmcGwudXMvZXBpc29kZS9mZWVk">Google Podcasts</a>
-                  or
                   <a href="https://overcast.fm/itunes334184087/the-f-plus">Overcast</a>
                   or
                   <a href="https://podchaser.com/TheFPlus">Podchaser</a>
@@ -57,23 +55,22 @@ version="2.0">
                   or
                   <a href="https://castro.fm/podcast/813f4919-6245-464d-a603-fb2b4bf0fbc1">Castro</a>
                   or
+                  <a href="https://podcastaddict.com/podcast/the-f-plus/2136099">Podcast Addict</a>
+                  or
                   <a href="https://music.amazon.com/podcasts/a973c6d8-1b4b-4e78-bbb9-0a47abb638ec/The-F-Plus">Amazon Podcasts</a>
                   or
                   <a href="https://open.spotify.com/show/76COtISaGDglXLrVGyQ5cE">Spotify</a>
                   or
-                  <a href="https://www.stitcher.com/podcast/the-f-plus">Stitcher</a>.
+                  <a href="https://www.deezer.com/us/show/15985">Deezer</a>
+                  .
                 </p>
                 <p>
                   Or copy 
                   <code>https://thefpl.us/episode/feed</code>
                   into your app of choice.
                 </p>
-
-
               </div>
-
             </div>
-
           </header>
 
           <div id="Javascripts">
@@ -141,35 +138,28 @@ version="2.0">
         </figure>
       </xsl:if>
 
-      <h2 class="title">
-        <a>
-          <xsl:attribute name="href">
-              <xsl:value-of select="link"/>
-          </xsl:attribute>
-          <xsl:value-of select="title"/>
-        </a>
-      </h2>
+      <div class="content">
+        <h2 class="title">
+          <a>
+            <xsl:attribute name="href">
+                <xsl:value-of select="link"/>
+            </xsl:attribute>
+            <xsl:value-of select="title"/>
+          </a>
+        </h2>
 
-      <xsl:if test="pubDate">
-        <time>
-          <xsl:value-of select="pubDate" />
-        </time>
-      </xsl:if>
+        <xsl:if test="pubDate">
+          <time>
+            <xsl:value-of select="pubDate" />
+          </time>
+        </xsl:if>
 
-      <div class="description">
-        <xsl:value-of select="content:encoded" disable-output-escaping="yes" />
+        <div class="description">
+          <xsl:value-of select="content:encoded" disable-output-escaping="yes" />
+        </div>
       </div>
       
-      <!-- <p class="episode_meta">
-        <a>
-            <xsl:attribute name="href">
-                <xsl:value-of select="enclosure/@url"/>?ref=download
-            </xsl:attribute>
-            Download episode
-        </a> |
-        File size: <xsl:value-of select='format-number(number(enclosure/@length div "1024000"),"0.0")'/>MB
-      </p> -->
-      </article>
+    </article>
   </xsl:template>
 
 

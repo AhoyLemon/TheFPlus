@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*
-$body: #222;
-$card: #000;
-$copy: $white;
-*/
 @-webkit-keyframes skeleton {
   0% {
     -webkit-transform: skewX(-10deg) translateX(-100%);

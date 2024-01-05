@@ -1,8 +1,3 @@
-/*
-$body: #222;
-$card: #000;
-$copy: $white;
-*/
 @-webkit-keyframes skeleton {
   0% {
     -webkit-transform: skewX(-10deg) translateX(-100%);
@@ -24,7 +19,6 @@ $copy: $white;
   }
 }
 .logo-examples {
-  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,8 +29,8 @@ $copy: $white;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -74,7 +68,6 @@ $copy: $white;
 }
 
 .color-palette {
-  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,8 +78,8 @@ $copy: $white;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -147,7 +140,6 @@ $copy: $white;
 }
 
 .download-bar {
-  display: -moz-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,8 +150,8 @@ $copy: $white;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin-top: 1em;
 }
 .download-bar a {
@@ -176,7 +168,6 @@ $copy: $white;
       align-self: auto;
   height: 88px;
   -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 .download-bar a svg {

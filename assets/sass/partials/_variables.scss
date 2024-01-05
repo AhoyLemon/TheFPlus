@@ -55,7 +55,7 @@ $sans-serif: $noto;
 $sidebar: 320px;
 $mobile-top:56px;
 $gap: 10px;
-$halfGap: math.div($gap, 2);
+$halfGap: 5px;
 $doubleGap: ($gap * 2);
 $padding: 20px;
 $mobile-max: 980px;
