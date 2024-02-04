@@ -1,0 +1,187 @@
+Prevnext: 
+
+----
+
+Title: No Poo For My Real Friends
+
+----
+
+Featured-site: reddit.com,nopoo.net
+
+----
+
+Date: 2024-01-13
+
+----
+
+Time: 20:45
+
+----
+
+Cover: ep396.jpg
+
+----
+
+Cast: Boots Raingear,Jack Chick,Kendrick Lobstar,Bunnybread,Lemon
+
+----
+
+Episode-file: fplus_396.mp3
+
+----
+
+Runtime: 1:13:53
+
+----
+
+File-size: 68
+
+----
+
+Document-link: https://docs.google.com/document/d/1ReVc7SoKoZLg62YcOptM-aDHSKh0o_kcPvU2Tb37j6g
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: thelizzerd
+
+----
+
+Text: 
+
+While their name might confuse you, the **NoPoo** community is actually dedicated to abstinance from the use of shampoo. They have all realized that by not using _any_ cleaning product in their hair, they will all end up with hair that is healthy, luxuriant, and beautiful. So their only question: Why is my hair thinning, waxy and smelly?
+
+This week, The F Plus is tried for warcrimes at the Showerhaig.
+
+----
+
+Music-used: Gnome - Wenceslas,DEADLETTER - Degenerate Inanimate
+
+----
+
+Tags: reddit,shampoo,advice,apple cider vinegar,recipes,questionable problem solving,science,put all that shit in a bowl
+
+----
+
+Bonus-content: - [Is This Nicki Minaj?](https://isthisnickiminaj.com)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3881.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: generate a person [...]
+
+----
+
+Cover-cite-artist: Jimmyfranks X Bing AI
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Wenceslas
+- 
+  timestamp: 00:00:30
+  name: Reader Intros
+- 
+  timestamp: 00:01:40
+  name: Hey, F Plus
+- 
+  timestamp: 00:03:35
+  name: Some Basic Tips On Going No Poo
+- 
+  timestamp: 00:06:25
+  name: >
+    Is shampoo leaching to your blood stream
+    until it reaches your brain ?
+- 
+  timestamp: 00:09:15
+  name: My no poo journey
+- 
+  timestamp: 00:11:32
+  name: Funky smell at nape of neck
+- 
+  timestamp: 00:16:00
+  name: >
+    Baking Sode leaves hair greasy, what to
+    do?
+- 
+  timestamp: 00:21:00
+  name: "Somebody tries to use dog shampoo, but that's in a Reddit post we aren't going to read."
+- 
+  timestamp: 00:22:10
+  name: Coffee rinses/Coffee ground scalp scrubs
+- 
+  timestamp: 00:25:50
+  name: Still trying to find my groove
+- 
+  timestamp: 00:31:45
+  name: "I've Been 'Pooed: A Salon Horror Story"
+- 
+  timestamp: 00:38:40
+  name: Partner dumping me over hair odor
+- 
+  timestamp: 00:41:40
+  name: >
+    7 years without shampoo, some
+    experiences and questions
+- 
+  timestamp: 00:50:35
+  name: ---RECIPES---
+- 
+  timestamp: 00:51:10
+  name: >
+    Water wash is icky but I tried this
+    recipe with good results
+- 
+  timestamp: 00:54:04
+  name: Rye Flour Recipe
+- 
+  timestamp: 00:59:05
+  name: Moisturizing Aloe Honey No Poo Recipe
+- 
+  timestamp: 01:04:05
+  name: Tea Rinse Tips
+- 
+  timestamp: 01:08:15
+  name: What did we learn?
+- 
+  timestamp: 01:12:05
+  name: IsThisNickiMinaj.com
+- 
+  timestamp: 01:12:58
+  name: Degenerate Inanimate
+- 
+  timestamp: 01:13:30
+  name: Michael McKean on AC/DC
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

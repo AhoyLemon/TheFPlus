@@ -3,12 +3,12 @@
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "PerformingGroup",
       "name": "The F Plus",
       "url": "https://thefpl.us",
       "email": "lemon@thefpl.us",
       "foundingDate": "2009",
-      "logo": "https://thefpl.us/schemaLogo.png",
+      "logo": "https://thefpl.us/favicon.svg",
       "description": "Terrible things, read with enthusiasm.",
       "alternateName": "The F+",
       "sameAs" : [ 
