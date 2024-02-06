@@ -40,7 +40,7 @@ $merchBorder: lighten($black,50%);
 
 // FONTS
 $source: 'Source Sans Pro', sans-serif;
-$noto: 'Noto Serif TC', serif;
+$noto: "Noto Serif", serif;
 $font-size: 18px;
 $light:300;
 $normal:400;
@@ -48,7 +48,6 @@ $bold:700;
 $heavy:600;
 
 // FONT UTILITIES
-$sans-serif: $source;
 $sans-serif: $noto;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////

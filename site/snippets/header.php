@@ -9,9 +9,11 @@
     <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <?php } ?>
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <!-- Master CSS -->
-  <?= css('assets/css/thefplus.css?updated=2022-11-22'); ?>
+  <?= css('assets/css/thefplus.css?updated=2024-02-05T18:30'); ?>
   <?php snippet('meta') ?>
 </head>
 <body>

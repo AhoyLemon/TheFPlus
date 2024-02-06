@@ -16,7 +16,7 @@
       </div>
 
       <?php if ($article->cover() != "") { ?>
-        <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" loading="lazy" height="400" width="400" />
+        <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover" loading="lazy" height="400" width="400" alt="<?= 'episode ' . $article->slug() . ' : ' . $article->title(); ?>" />
       <?php } else { ?>
         <img src="<?php echo $article->url() ?>/<?php echo $image->filename() ?>" class="cover" loading="lazy" height="400" width="400" />
       <?php } ?>

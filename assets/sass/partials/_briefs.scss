@@ -93,7 +93,7 @@ nav.toggle { padding-top: 1em; padding-bottom: 1.5em; font-size: 1.25rem;
     header { display: none; }
   }
   figure { order:1;
-    img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); width:100%; display:block;
+    img { position: relative; transform: translate(20px,-20px); box-shadow: 0 0 6px rgba($black,0.45); width:100%; display:block; aspect-ratio: 1/1;
       &.no-shadow { box-shadow:none; }
     }
     a { transform: scale(1); display:block;

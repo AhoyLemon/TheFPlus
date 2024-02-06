@@ -1,6 +1,5 @@
 @use 'sass:math';
 
-
 //NORMALIZE, GET DEFAULTS
 @import "partials/_reset";
 @import "partials/_variables";
@@ -11,7 +10,6 @@
 
 //STUFF
 @import "partials/_sidebar";
-//@import "partials/_mobile-menu";
 @import "partials/_main";
 @import "partials/_briefs";
 @import "partials/_tags";
