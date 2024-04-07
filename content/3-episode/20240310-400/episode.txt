@@ -1,0 +1,196 @@
+Prevnext: 
+
+----
+
+Title: The Inspirational Stories of Not Always Right
+
+----
+
+Featured-site: notalwaysright.com
+
+----
+
+Date: 2024-03-10
+
+----
+
+Time: 15:15
+
+----
+
+Cover: ep400b.jpg
+
+----
+
+Cast: Lemon,Boots Raingear,Adam Bozarth,Nutshell Gulag,John Toast,Achilles' Heelies,Frank West,Shell Game,Positive Stress
+
+----
+
+Episode-file: fplus_400.mp3
+
+----
+
+Runtime: 1:10:11
+
+----
+
+File-size: 64
+
+----
+
+Document-link: https://docs.google.com/document/d/1lnwUbKSIqOM2i4iiH0yz0kohjSmpxtZx
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Lucky Numbers
+
+----
+
+Text: 
+
+One night, Lemon and four ridiculists read a document made entirely from stories from **Not Always Right** which were tagged as "inspirational". Then (six months later), Lemon and four other ridiculists read the exact same document. This episode is the result of those two recordings.
+
+This week, The F Plus is releasing our 400th episode which means we have to show up two hours early and get thrown right into the mix with no time to sit down and make a cup.
+
+----
+
+Music-used: Savages - You're My Chocolate,Girl Next Door - Wifiseyedress
+
+----
+
+Tags: nerds,video games,consumer culture,fantasies,guys this totally happened,retail,edit point,editing!
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3893.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: inspired retail employee
+
+----
+
+Cover-cite-artist: Lemon X Bing Copilot
+
+----
+
+Cover-cite-url: https://www.bing.com/images/create/drawing-of-a-retail-employee-wearing-tie-and-namet/1-65edff3cc5f040c781564903e63e1bb9?id=afB9L5FH6kJELRJpvCT9fg%3d%3d&view=detailv2&idpp=genimg&thId=OIG1.Ygu7NQOl.pI5EXyNb5mg&FORM=GCRIDP&mode=overlay
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "Lemon's Intro (Why Did This Happen?)"
+- 
+  timestamp: 00:04:01
+  name: The Compliments Are Complimentary
+- 
+  timestamp: 00:05:15
+  name: 'INTRO: The Best Part of This Story Is What Doesn’t Happen'
+- 
+  timestamp: 00:05:48
+  name: >
+    The Best Part of This Story Is What
+    Doesn’t Happen
+- 
+  timestamp: 00:10:05
+  name: 'INTRO: a Mocha-Cappa-Frappa-Happy Ending'
+- 
+  timestamp: 00:10:47
+  name: a Mocha-Cappa-Frappa-Happy Ending
+- 
+  timestamp: 00:17:50
+  name: 'INTRO: The Gobblin’ Goblin'
+- 
+  timestamp: 00:18:00
+  name: The Gobblin’ Goblin
+- 
+  timestamp: 00:25:32
+  name: 'INTRO: Nobody Makes a Monkey Out of Mum'
+- 
+  timestamp: 00:25:55
+  name: 'EXCERPT: Nobody Makes a Monkey Out of Mum'
+- 
+  timestamp: 00:26:22
+  name: 'INTRO: A Tale of Two Sitters'
+- 
+  timestamp: 00:26:50
+  name: A Tale of Two Sitters
+- 
+  timestamp: 00:32:13
+  name: 'INTRO: That’s One Wholesome Coping Mechanism'
+- 
+  timestamp: 00:32:28
+  name: That’s One Wholesome Coping Mechanism
+- 
+  timestamp: 00:41:50
+  name: 'INTRO: It Wasn’t Just The Power Meter You Fixed That Night'
+- 
+  timestamp: 00:42:35
+  name: >
+    It Wasn’t Just The Power Meter You
+    Fixed That Night
+- 
+  timestamp: 00:48:12
+  name: >
+    GOTH CHRISTMAS! GOTH CHRISTMAS! GOTH
+    CRISTMAS!
+- 
+  timestamp: 00:48:28
+  name: >
+    Christmas Cheer Doesn’t Have To Be
+    Conventional
+- 
+  timestamp: 00:53:40
+  name: 'INTRO: Santa Goes Psycho'
+- 
+  timestamp: 00:53:53
+  name: Santa Goes Psycho
+- 
+  timestamp: 00:55:52
+  name: "INTRO: Listener's Choice"
+- 
+  timestamp: 00:56:32
+  name: tlhIngan Hol Dajatlh’a’? qamuSHa’!
+- 
+  timestamp: 00:59:20
+  name: 'INTRO: Higher, Further, Faster Baby'
+- 
+  timestamp: 00:59:48
+  name: Higher, Further, Faster Baby
+- 
+  timestamp: 01:05:11
+  name: "Lemon's Closing (some stats & facts)"
+- 
+  timestamp: 01:08:58
+  name: 'EXCERPT: Nutshell remembers that strawberry lemonade'
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

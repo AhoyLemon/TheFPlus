@@ -180,6 +180,10 @@
 
     <?php snippet('podlove') ?>
 
+    <div class="share-episode">
+      <?php snippet('webshare') ?>
+    </div>
+
     <div class="document-link-holder">
       <?php if ($page->document_link()->isNotEmpty()) { ?>
         <a itemprop="citation" class="action read" href="<?php echo $page->document_link() ?>" title="Read <?php echo $page->provider() ?>'s document"  target="_blank">
@@ -190,6 +194,7 @@
         </a>
       <?php } ?>
     </div>
+
 
     <div class="ballpit-link-holder">
       <?php if ($page->ballpit_url()->isNotEmpty()) { ?>

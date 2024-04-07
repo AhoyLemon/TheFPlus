@@ -1,0 +1,178 @@
+Prevnext: 
+
+----
+
+Title: I Am The Light In The Dork
+
+----
+
+Featured-site: lonewolf.com,georgelizos.com,classcentral.com,robinhallett.com,reddit.com,tumblr.com,solunabeautyinc.com
+
+----
+
+Date: 2024-02-17
+
+----
+
+Time: 14:18
+
+----
+
+Cover: ep398.png
+
+----
+
+Cast: Boots Raingear,Nutshell Gulag,Zarla,Lou Fernandez,Lemon
+
+----
+
+Episode-file: fplus_398_fixed.mp3
+
+----
+
+Runtime: 1:11:21
+
+----
+
+File-size: 65
+
+----
+
+Document-link: https://docs.google.com/document/d/1m4DanFbSRSVBnNjqKlgPVCLA5gmHMs_j0sa6lKylDm0/edit?usp=sharing
+
+----
+
+Editor: Lou Fernandez
+
+----
+
+Provider: thelizzerd
+
+----
+
+Text: 
+
+The term "Lightworker" describes a person who.... uhhhhhhhhhhhhh...... so uh, let's see, there's energy? And there's injustices in the world? Okay, it's not really clear, but the thing we've learned is that there's a community of people who call themselves lightworkers whose have no purpose other than to give a purpose to other lightworkers who have no purpose. Is that clear?
+
+This week, The F Plus bought tickets to see Horny n' Sleepy.
+
+----
+
+Music-used: Manfred Mann's Earth Band - Blinded By The Light
+
+----
+
+Tags: reddit,tumblr,magical thinking,magic,angels,new age,profiles of job creators,so mote it be,horny n sleepy,i love content,teachers,indigo children,crystals
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3890.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: bulb head sorceress
+
+----
+
+Cover-cite-artist: Lemon x Bing
+
+----
+
+Cover-cite-url: https://www.bing.com/images/create/psychedelic-image-in-the-style-of-a-black-light-po/1-65cfffd6ab8c44f6aea29aad3de4652b?id=Pt%2Fnh3HWzhN0N48YzyYkpg%3D%3D&view=detailv2&idpp=genimg&thId=OIG1.fZ8MQxjsu_kTHUD5sddA&FORM=GCRIDP&mode=overlay
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Shut Up
+- 
+  timestamp: 00:00:20
+  name: Reader Intros
+- 
+  timestamp: 00:01:55
+  name: Hey, F Plus!
+- 
+  timestamp: 00:03:00
+  name: >
+    21 Signs You’re a Lightworker on This
+    Planet (Preamble)
+- 
+  timestamp: 00:04:50
+  name: >
+    21 Signs You’re a Lightworker on This
+    Planet (The Test)
+- 
+  timestamp: 00:11:45
+  name: Jimin
+- 
+  timestamp: 00:14:45
+  name: '*****Stop sitting on your knowledge: You mean more to this evolutionary process 👁🙏🏾*******'
+- 
+  timestamp: 00:16:45
+  name: Time to Rage
+- 
+  timestamp: 00:22:10
+  name: Disk of light above my head?
+- 
+  timestamp: 00:24:10
+  name: MESSAGE FROM ARCTUARIANS
+- 
+  timestamp: 00:27:10
+  name: >
+    How do you plan to escape the
+    reincarnation trap what is your plan to
+    escape the reincarnation trap thanks
+- 
+  timestamp: 00:30:25
+  name: it fuxking sucks being a lightworker
+- 
+  timestamp: 00:34:45
+  name: >
+    Box with crystals dropped in the middle
+    of the night help
+- 
+  timestamp: 00:37:48
+  name: I AM THE CREATOR OF THIS UNIVERSE
+- 
+  timestamp: 00:41:35
+  name: 'Lightworkers Blend Essential Oil Blend- Grounding'
+- 
+  timestamp: 00:45:00
+  name: Manifestation for Lightworkers
+- 
+  timestamp: 00:49:40
+  name: Lightwork love self paced course
+- 
+  timestamp: 00:57:15
+  name: >
+    Who Are you? Galactic Starseed Origins
+    Reading 1:1 Professional Video Session
+- 
+  timestamp: 01:07:20
+  name: What did we learn?
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

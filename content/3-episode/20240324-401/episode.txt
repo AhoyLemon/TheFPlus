@@ -1,0 +1,185 @@
+Prevnext: 
+
+----
+
+Title: Travel Morons
+
+----
+
+Featured-site: tripadvisor.com,fodors.com,familytravelforums.com
+
+----
+
+Date: 2024-03-24
+
+----
+
+Time: 21:30
+
+----
+
+Cover: ep401b.jpg
+
+----
+
+Cast: Boots Raingear,Kumquatxop,Nutshell Gulag,Zarla,Lemon
+
+----
+
+Episode-file: fplus_401.mp3
+
+----
+
+Runtime: 00:55:45
+
+----
+
+File-size: 54
+
+----
+
+Document-link: https://docs.google.com/document/d/10V7Xc0omDMDTVda-HW6aNo5FDiSU5J0D6Kuz10kYFrI/edit?usp=sharing
+
+----
+
+Editor: Lou Fernandez
+
+----
+
+Provider: Sinestro,Lewdvig Tittgenstein
+
+----
+
+Text: 
+
+While the internet has made us more interconnected, the world remains a massive place. And travel is a way to build a greater understanding of The Human Condition: To live among others in unfamiliar settings and experiences, you can learn more about yourself, and grow to be a more compassionate and empathetic person. Like, hypothetically. **Or** you could just go on Trip Advisor and write a poem about getting drunk in Cabo San Lucas. Your call.
+
+This week, The F Plus is all DIRTNASTY.
+
+----
+
+Music-used: Murray Head - One Night In Bangkok
+
+----
+
+Tags: reviews,customer service purgatory,dirtnasty,poetry,poor use of simile,forums
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3898.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: unhappy flight
+
+----
+
+Cover-cite-artist: Jimmyfranks X Bing Copilot
+
+----
+
+Cover-cite-url: https://www.bing.com/images/create/photo-of-children27s-toy-playset-of-airplane-interi/1-6600a167f3224db0876515d6e640e1da?id=s9rZZwOgxK4p4xlK8mpziw%3D%3D&view=detailv2&idpp=genimg&thId=OIG4.1rc4Gpos8jZJVjuGWUmO&FORM=GCRIDP&mode=overlay
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: You dress so sexy, slutty but nice.
+- 
+  timestamp: 00:00:12
+  name: 'NOW BOARDING: Reader Intros'
+- 
+  timestamp: 00:01:30
+  name: One Night in Bangkok
+- 
+  timestamp: 00:01:45
+  name: Hey, F Plus!
+- 
+  timestamp: 00:02:46
+  name: Traveling the world is expensive
+- 
+  timestamp: 00:03:58
+  name: advantage car rental
+- 
+  timestamp: 00:08:33
+  name: CANCUN QUESTIONS ?????
+- 
+  timestamp: 00:09:15
+  name: valium in drug stores?
+- 
+  timestamp: 00:15:05
+  name: what do you make of the English
+- 
+  timestamp: 00:17:45
+  name: >
+    WHY IS PIZZA WEST OF THE MISSISSIPPI SO
+    AWFUL?!
+- 
+  timestamp: 00:21:40
+  name: Sex in italy
+- 
+  timestamp: 00:23:37
+  name: DISNEY SUCKS
+- 
+  timestamp: 00:24:50
+  name: DISNEY DOES NOT SUCKS
+- 
+  timestamp: 00:26:38
+  name: DISNEY SUCKS CANAL WATER !!!
+- 
+  timestamp: 00:28:20
+  name: "DISNEY DOSEN'T SUCK, EISNER SUCKS"
+- 
+  timestamp: 00:29:15
+  name: DISNEY SUCKS THE REALLY REALLY BIG ONE
+- 
+  timestamp: 00:34:46
+  name: >
+    TRAVELCOMM /ORLANDO/DAYTONA-SURFSIDE
+    RESORT
+- 
+  timestamp: 00:37:05
+  name: CASA MOMBO NIGHTMARE
+- 
+  timestamp: 00:40:30
+  name: >
+    A Christmas Poem (Tripadvisor Style)
+    from PJ to all
+- 
+  timestamp: 00:45:40
+  name: Cabo poem
+- 
+  timestamp: 00:48:50
+  name: 'Re: Cabo poem'
+- 
+  timestamp: 00:49:35
+  name: A poem by me! by Minneapolis…
+- 
+  timestamp: 00:51:25
+  name: What did we learn?
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

@@ -1,0 +1,187 @@
+Prevnext: 
+
+----
+
+Title: Magickal Preambles & Dumb Dork Recipes
+
+----
+
+Featured-site: plentifulearth.com,tumblr.com,kitchenoverlord.com
+
+----
+
+Date: 2024-04-06
+
+----
+
+Time: 14:15
+
+----
+
+Cover: ep402.jpg
+
+----
+
+Cast: Lou Fernandez,Jack Chick,Kendrick Lobstar,Dijon Du Jour,Lemon
+
+----
+
+Episode-file: fplus_402.mp3
+
+----
+
+Runtime: 1:15:57
+
+----
+
+File-size: 73
+
+----
+
+Document-link: https://docs.google.com/document/d/1NDUQ0ihFPcY4XfZVA_ULuQ1JO7l2C17lvDkdEU5mdXI/edit?usp=sharing
+
+----
+
+Editor: Lou Fernandez
+
+----
+
+Provider: Neal,Smallest Sasquatch
+
+----
+
+Text: 
+
+Okay, so here's the premise: Neal sent us a document of **Magicakal Recipes** from Plentiful Earth, and Smallest Sasquatch sent us a document **annoying nerd reference recipes** from various blogs. And while each of those selections are irritating on their own right, we decided to see what would happen if we did both of them at once.
+
+This week, the F Plus  needs to apologize to Turkey.
+
+----
+
+Music-used: Danial Ryan - Gimmie Pizza Slow (ft. The Olson Twins)
+
+----
+
+Tags: recipes,nerds,magick,put all that shit in a bowl,magical thinking,watching too much television,tumblr
+
+----
+
+Bonus-content: - [Danial Ryan - When does a dream become a nightmare?](https://www.youtube.com/watch?v=FsJhfwbfMvU&t=0s) (YouTube)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3901.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: dork cauldron
+
+----
+
+Cover-cite-artist: Jimmyfranks x Bing AI
+
+----
+
+Cover-cite-url: https://www.bing.com/images/create/fantasy-painting-of-medieval-cauldron2c-bubbling2c-m/1-6604c7c777134446a8765d615e06a88f?id=98hLPXJd%2f3l4AIgcmMR3qA%3d%3d&view=detailv2&idpp=genimg&thId=OIG1.Vnc5sTh6De9d8dLr0vs2&FORM=GCRIDP&ajaxhist=0&ajaxserp=0
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: >
+    Jack Chick introduces a great new
+    character
+- 
+  timestamp: 00:00:22
+  name: Gimmie Pizza, P-I-Z-Z-A
+- 
+  timestamp: 00:00:40
+  name: Reader Intros
+- 
+  timestamp: 00:02:05
+  name: Hey, F Plus!
+- 
+  timestamp: 00:04:35
+  name: >
+    Instant Pot Bone Broth Recipe for
+    Grounding, Healing, and Vitality
+- 
+  timestamp: 00:08:35
+  name: 'Chang’s Frito Fritters: An Orange is the New Black Inspired Recipe'
+- 
+  timestamp: 00:13:23
+  name: 'Money Maker: Spiced Mint Iced Tea Potion Recipe'
+- 
+  timestamp: 00:14:58
+  name: Romulan Ale
+- 
+  timestamp: 00:18:15
+  name: >
+    Vegetarian Pot Pie for Beauty,
+    Grounding, and Protection
+- 
+  timestamp: 00:22:20
+  name: 'Sweet Smoked Bacon & Green Bean Casserole'
+- 
+  timestamp: 00:24:50
+  name: 'Deadpool’s Sweet n’ Salty Chorizo Chimichangas & Dirty Ring Pop Martini'
+- 
+  timestamp: 00:31:10
+  name: 'Lammas Bread Recipe: White Sandwich Bread for Bread Machine'
+- 
+  timestamp: 00:34:05
+  name: R’leh Easy Cthulhu Pot Pies
+- 
+  timestamp: 00:39:10
+  name: >
+    Magickal Correspondences of Butter |
+    Butter Materia Magicka
+- 
+  timestamp: 00:42:12
+  name: Chocolate Onigiri
+- 
+  timestamp: 00:46:02
+  name: Luscious Full Moon Golden Milk Recipe
+- 
+  timestamp: 00:50:02
+  name: Captain America Apple and Dorito Pie
+- 
+  timestamp: 00:54:15
+  name: Magickal Correspondences of Turkey
+- 
+  timestamp: 01:00:00
+  name: Unicorn Milkshakes
+- 
+  timestamp: 01:05:00
+  name: Do Not Season Beelzebub
+- 
+  timestamp: 01:09:10
+  name: SUMMON THE SAMHAIN GUARDIAN!
+- 
+  timestamp: 01:12:25
+  name: What did we learn?
+- 
+  timestamp: 01:15:30
+  name: P-I-Z-Z-A
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
