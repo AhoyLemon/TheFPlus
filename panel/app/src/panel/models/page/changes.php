@@ -70,12 +70,10 @@ class Changes {
 
       $object = $this->model->{$field}();
 
-      if(!method_exists($object, '__toString')) {
-        continue;
-      }
-
-      if((string)$object !== $value) {
-        $changes = true;
+      if(is_object($object) && method_exists($object, '__toString')) {
+        if((string)$object !== $value) {
+          $changes = true;
+        }
       }
     
     }

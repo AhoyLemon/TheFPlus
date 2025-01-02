@@ -1,5 +1,10 @@
 <?xml-stylesheet type="text/xsl" href="<?= $site->url(); ?>/assets/xsl/stan.xsl"?>
-<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss 
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:podcast="https://podcastindex.org/namespace/1.0"
+	version="2.0">
 <channel>
 <title>The F Plus</title>
 <link>https://thefpl.us</link>
@@ -22,8 +27,10 @@
 <itunes:email>lemon@thefpl.us</itunes:email>
 </itunes:owner>
 <itunes:category text="Comedy"></itunes:category>
-<itunes:explicit>yes</itunes:explicit>
+<itunes:explicit>true</itunes:explicit>
 <itunes:image href="https://thefpl.us/podcasts/logo5.png" />
+<podcast:funding url="https://thefpl.us/contribute/donate">Donate via PayPal</podcast:funding>
+<podcast:license>CC-BY-NC-4.0</podcast:license>
 
 <generator><?php echo c::get('feed.generator', 'Kirby') ?></generator>
 <?php $itemCount = 0; ?>
@@ -51,6 +58,22 @@
 			<description>
 				<?php echo $desc; ?>
 			</description>
+<?php if ($item->cast()->isNotEmpty()) { ?>
+	<?php $persons = explode(",", $item->cast()); ?>
+	<?php foreach($persons as $person): ?>
+		<?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
+		<?php if ($site->find($mlink)) { ?>
+			
+			<podcast:person href="<?= $site->find($mlink)->url() ?>" avatar="<?= $site->find($mlink)->image()->url() ?>" role="<?= $person == 'Lemon' ? 'Host' : 'Guest' ?>"><?= $person ?></podcast:person>
+		<?php } else { ?>
+			<podcast:person role="Guest"><?= $person ?></podcast:person>
+		<?php } ?>
+	<?php endforeach ?>
+<?php } ?>
+<?php if ($item->transcript()->isNotEmpty()) { ?>
+			<podcast:transcript url="https://thefpl.us/podcasts/transcripts/<?= $item->transcript() ?>" type="text/vtt" language="en" rel="captions" />
+<?php } ?>
+
 			<content:encoded>
 <?php 
 	echo '<![CDATA[

@@ -16,13 +16,13 @@ Job:
 
 Text: 
 
-Sauce spends the majority of his time either hunched over a jewellery bench in a converted toilet, hunched over a graphics tablet, or honing his craft as South East England's chubbiest runfluencer. He has been known to describe himself as a dilettante, but please don't hold it against him.
+Sauce spends most of their free time pretending to be more interesting people, and most of their non-free time pretending to be a less interesting person. These people are generally still British though, so it seems like something of a pointless exercise.
 
-He's taken, ladies (sorry).
+They were raised in the traditional British fashion on a diet of boiled meats, potatoes, theoretically edible savory items referred to as “puddings”, and conspiracy theories about the royal family. They first tasted proper tea and real biscuits on a visit to the southern US in 2022 and vowed never to return. They still have the accent though.
 
 ----
 
-Twitter: dunntweetin
+Twitter: 
 
 ----
 
@@ -39,3 +39,7 @@ Favorite-episode: 229,284,211
 ----
 
 Ballpit-account: https://ballp.it/index.php?action=profile;u=8443
+
+----
+
+Mastodon: 

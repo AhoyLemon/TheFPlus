@@ -18,11 +18,11 @@ Text: This reader uses his wings to catch updrafts and soar across the sky in a 
 
 ----
 
-Twitter: dijon_dujour
+Twitter: 
 
 ----
 
-Website: 
+Website: https://cohost.org/dijondujour
 
 ----
 
@@ -35,3 +35,7 @@ Favorite-episode: 150,231,135
 ----
 
 Ballpit-account: 
+
+----
+
+Mastodon: 

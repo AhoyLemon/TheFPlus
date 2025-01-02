@@ -10,7 +10,7 @@ Job:
 
 ----
 
-Website: 
+Website: https://cohost.org/achillesheelies
 
 ----
 
@@ -26,7 +26,7 @@ Email:
 
 ----
 
-Favorite-episode: 43,130,151
+Favorite-episode: 43,345,318
 
 ----
 
@@ -34,4 +34,8 @@ Ballpit-account: http://ballp.it/index.php?action=profile;u=7631
 
 ----
 
-Cover: 
+Cover: heelies.jpg
+
+----
+
+Mastodon: 

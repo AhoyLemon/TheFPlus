@@ -1,0 +1,170 @@
+Prevnext: 
+
+----
+
+Title: The Short Stories of Shortstory1
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2024-08-25
+
+----
+
+Time: 16:30
+
+----
+
+Cover: ep408.jpg
+
+----
+
+Cast: Boots Raingear,Jack Chick,Achilles' Heelies,Portaxx,Kendrick Lobstar,Lemon
+
+----
+
+Episode-file: fplus_408.mp3
+
+----
+
+Runtime: 1:28:11
+
+----
+
+File-size: 65
+
+----
+
+Document-link: https://docs.google.com/document/d/1CSwv98cuzxBmnAFtJp2G2RLT3vI3bfpkrzM1wfMGGnI/edit?usp=sharing
+
+----
+
+Editor: Boots Raingear
+
+----
+
+Provider: vampiresoftware
+
+----
+
+Text: 
+
+Shortstory1 is an extremely prolific author of (appropriately enough) short stories, mainly horror one-shots or absurdist premise pieces. Are the stories well written? Absolutely not. Are the stories good? Depends on your definition of good. Are the stories entertaining? Extremely so.
+
+This episode, The F Plus thinks you're beautiful... in your own way.
+
+----
+
+Music-used: Magnetic Fields - Long-Forgotten Fairytale,Nomeansno - This Story Must Be Told
+
+----
+
+Tags: fiction,short,reddit,scary stories,focus on a single twit,watching too much television,oh you must be a killer,scriptwriters can write!
+
+----
+
+Bonus-content: - Rachel Bloom - [The Cake Farts Song](https://www.youtube.com/watch?v=Ax8tEEgAxUM)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3926.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Portaxx's Sock Puppets
+
+----
+
+Cover-cite-artist: Portaxx
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Forgotten Fairytale
+- 
+  timestamp: 00:00:10
+  name: Reader Intros
+- 
+  timestamp: 00:01:40
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:00
+  name: Hugs
+- 
+  timestamp: 00:08:02
+  name: "My co worker was obsessed with the measurements of people's necks"
+- 
+  timestamp: 00:10:50
+  name: >
+    Nate always seemed to love kids during a
+    shoot out
+- 
+  timestamp: 00:13:58
+  name: "I don't need to Google it because I Steven it"
+- 
+  timestamp: 00:19:25
+  name: My addiction to oxygen is really bad
+- 
+  timestamp: 00:25:30
+  name: Patrick only eats attractive people
+- 
+  timestamp: 00:32:50
+  name: The sorry man likes to say sorry
+- 
+  timestamp: 00:37:29
+  name: "For over 20 years they are still holding guns to each other's head inside the mall"
+- 
+  timestamp: 00:47:55
+  name: "I taught a useless degree for 30 years and now I can't go into mc Donald's"
+- 
+  timestamp: 00:52:35
+  name: >
+    My 300 year old grandma is still
+    entertaining on stage and its disgusting
+- 
+  timestamp: 01:00:10
+  name: >
+    I have to create 10 000 babies by the
+    end of the month!
+- 
+  timestamp: 01:04:35
+  name: Jenny you really need to fart right now
+- 
+  timestamp: 01:13:35
+  name: AND NOW, A LIST OF TITLES
+- 
+  timestamp: 01:20:45
+  name: What did we learn?
+- 
+  timestamp: 01:27:40
+  name: Nomeansno
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

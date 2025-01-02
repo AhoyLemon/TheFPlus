@@ -1,0 +1,206 @@
+Prevnext: 
+
+----
+
+Title: Winnie-the-Pooh Meets The F Plus
+
+----
+
+Featured-site: poohadventures.fandom.com
+
+----
+
+Date: 2025-01-01
+
+----
+
+Time: 16:00
+
+----
+
+Cover: ep411.jpg
+
+----
+
+Cast: Boots Raingear,Jack Chick,Achilles' Heelies,Shell Game,Lemon
+
+----
+
+Episode-file: fplus_411.mp3
+
+----
+
+Runtime: 1:15:31
+
+----
+
+File-size: 73
+
+----
+
+Document-link: https://docs.google.com/document/d/1P0zWVRZNVlUO0gbPxUhfg7_48rpMjMu2XLO-E6NVdWs/edit?usp=sharing
+
+----
+
+Editor: Shell Game
+
+----
+
+Provider: Doctor Interrogative
+
+----
+
+Text: 
+
+You probably don't know what **The Pooh's Adventures Wiki** is, but as of this episode, it has over 80,000 pages. Comprised mostly of fanon crossovers with other popular media franchises and embarassing self-inserts, this is a wiki where eventually all of popular culture can exist parallel to Tigger.
+
+This week, The F Plus enters the Ryaniverse.
+
+----
+
+Music-used: St. Vincent - Digital Witness,aexzhouWinnie the Pooh (Trap Remix)
+
+----
+
+Tags: nerds,wiki,wikia,fandom,fiction,the perpetually lonely,drama queens,guys this totally happened,watching too much television,useless tiny detail fetish,scriptwriters can write!,i am sorry about john procter
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3946.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Winnie-the-Pooh Meets The King
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: sorry, no.
+- 
+  timestamp: 00:00:23
+  name: Digital Wellness
+- 
+  timestamp: 00:00:45
+  name: Reader Intros
+- 
+  timestamp: 00:03:12
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:25
+  name: >
+    My discovery of this website came about
+    quite by accident
+- 
+  timestamp: 00:07:20
+  name: What is Pooh’s Adventures?
+- 
+  timestamp: 00:07:45
+  name: The Rules
+- 
+  timestamp: 00:13:15
+  name: Elsa (Frozen)
+- 
+  timestamp: 00:19:30
+  name: Darla Dimple
+- 
+  timestamp: 00:26:10
+  name: Ryan Freestar
+- 
+  timestamp: 00:30:15
+  name: List of nicknames for Ryan
+- 
+  timestamp: 00:34:50
+  name: >
+    A Timeline of Winnie-the-Pooh Crossover
+    Films
+- 
+  timestamp: 00:43:08
+  name: >
+    I will give this painting to Mickey
+    Mouse and Bob Iger.
+- 
+  timestamp: 00:44:22
+  name: The Peacekeeper Bears
+- 
+  timestamp: 00:46:15
+  name: "Pooh's Adventures of Who Let the Dogs out?"
+- 
+  timestamp: 00:48:40
+  name: "I've a bit of a problem. A cyberbully problem"
+- 
+  timestamp: 00:52:20
+  name: My B-Day
+- 
+  timestamp: 00:54:20
+  name: some more on Baldwin17
+- 
+  timestamp: 00:56:40
+  name: "The Sad Ending of Pooh's Adventures of The Crucible"
+- 
+  timestamp: 01:00:22
+  name: >
+    A Curated List of Pooh’s Adventures
+    Titles
+- 
+  timestamp: 01:03:25
+  name: >
+    A Curated List of Pooh’s Adventures
+    Titles, Part 2
+- 
+  timestamp: 01:07:18
+  name: >
+    A Curated List of Pooh’s Adventures
+    Titles, Part 3
+- 
+  timestamp: 01:08:20
+  name: What did we learn?
+- 
+  timestamp: 01:12:38
+  name: >
+    Winnie-the-Pooh Witnesses The Slow,
+    Gruesome Death of Ernest Cline
+- 
+  timestamp: 01:13:55
+  name: 'aexzhou - Winnie the Pooh (Trap Remix)'
+- 
+  timestamp: 01:14:12
+  name: "Ryan's enemy"
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
+
+----
+
+Transcript: fplus_411.vtt

@@ -10,7 +10,7 @@ Job: Tight End
 
 ----
 
-Website: 
+Website: https://bootsraingear.bandcamp.com
 
 ----
 
@@ -26,8 +26,16 @@ Email: boots@thefpl.us
 
 ----
 
-Favorite-episode: 76,91,138
+Favorite-episode: 307,76,284
 
 ----
 
-Ballpit-account: http://ballp.it/index.php?action=profile;u=6
+Ballpit-account: https://ballp.it/index.php?action=profile;u=6
+
+----
+
+Cover: boots.jpg
+
+----
+
+Mastodon: 

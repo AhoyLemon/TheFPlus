@@ -10,15 +10,15 @@ Role: regular
 
 ----
 
-Text: Lemon easily does piggybacks, over the shoulder, cradles and front straddles all with a big smile on his face. He also performs calf raises, squats and even hosts a podcast!
+Text: Lemon makes websites and he hosts this podcast. He could tell you more about himself, and maybe he will, but let's talk about you for a minute. **How are you?** Are you comfortable? Do you need something to drink?
 
 ----
 
-Website: http://ahoylemon.xyz
+Website: https://ahoylemon.xyz
 
 ----
 
-Twitter: AhoyLemon
+Twitter: 
 
 ----
 
@@ -26,7 +26,7 @@ Email: lemon@thefpl.us
 
 ----
 
-Favorite-episode: 215,138,163
+Favorite-episode: 349,249,215
 
 ----
 
@@ -38,4 +38,4 @@ Cover: lemonsquare.jpg
 
 ----
 
-Mastodon: https://mastodon.social/@ahoylemon
+Mastodon: https://mastodon.social/@AhoyLemon

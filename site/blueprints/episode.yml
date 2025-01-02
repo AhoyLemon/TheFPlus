@@ -37,7 +37,15 @@ fields:
     type: text
     icon: volume-up
     placeholder: (ex fplus_055.mp3)
-    width: 1/2
+    required: true
+    width: 1/4
+    help: ~/podcasts/
+  transcript:
+    label: Transcript VTT
+    type: text
+    placeholder: (ex fplus_055.vtt)
+    width: 1/4
+    help: ~/podcasts/transcripts/
   runtime:
     label: Runtime
     type: text
