@@ -23,10 +23,10 @@
 <itunes:summary><?php echo $site->description() ?></itunes:summary>
 <itunes:type>episodic</itunes:type>
 <itunes:owner>
-<itunes:name>Lemon</itunes:name>		
-<itunes:email>lemon@thefpl.us</itunes:email>
+	<itunes:name>Lemon</itunes:name>		
+	<itunes:email>lemon@thefpl.us</itunes:email>
 </itunes:owner>
-<itunes:category text="Comedy"></itunes:category>
+<itunes:category>Comedy</itunes:category>
 <itunes:explicit>true</itunes:explicit>
 <itunes:image href="https://thefpl.us/podcasts/logo5.png" />
 <podcast:funding url="https://thefpl.us/contribute/donate">Donate via PayPal</podcast:funding>
