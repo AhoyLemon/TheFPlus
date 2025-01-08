@@ -11,6 +11,7 @@
 <language>en-us</language>
 <copyright>2009 - <?php echo date("Y") ?> Creative Commons CC BY-SA</copyright>
 <description><?php echo $site->description() ?></description>
+<lastBuildDate><?php echo $items->first()->modified('D, d M Y H:i:s O'); ?></lastBuildDate>
 
 <image>
 	<url>https://thefpl.us/podcasts/logo_144.png</url>
@@ -63,15 +64,17 @@
 	<?php foreach($persons as $person): ?>
 		<?php $mlink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace("'", "", $person))); ?>
 		<?php if ($site->find($mlink)) { ?>
-			
 			<podcast:person href="<?= $site->find($mlink)->url() ?>" avatar="<?= $site->find($mlink)->image()->url() ?>" role="<?= $person == 'Lemon' ? 'Host' : 'Guest' ?>"><?= $person ?></podcast:person>
 		<?php } else { ?>
 			<podcast:person role="Guest"><?= $person ?></podcast:person>
 		<?php } ?>
 	<?php endforeach ?>
 <?php } ?>
+<?php if ($item->chapters_json()->isNotEmpty()) { ?>
+	<podcast:chapters url="https://thefpl.us/podcasts/transcripts/<?= $item->chapters_json() ?>" type="application/json+chapters" />
+<?php } ?>
 <?php if ($item->transcript()->isNotEmpty()) { ?>
-			<podcast:transcript url="https://thefpl.us/podcasts/transcripts/<?= $item->transcript() ?>" type="text/vtt" language="en" rel="captions" />
+	<podcast:transcript url="https://thefpl.us/podcasts/transcripts/<?= $item->transcript() ?>" type="text/vtt" language="en" rel="captions" />
 <?php } ?>
 
 			<content:encoded>

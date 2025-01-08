@@ -136,9 +136,17 @@ fields:
       yes: "Yes"
     width: 1/4
     hide:
-      no: chapters chapter_provider
+      no: chapters chapters_json chapter_provider
     show:
-      yes: chapters chapter_provider
+      yes: chapters chapters_json chapter_provider
+
+  chapters_json:
+    label: Chapters JSON
+    type: text
+    placeholder: (ex fplus_055.chapters.json)
+    width: 1/2
+    help: ~/podcasts/chapters/
+
   chapters:
     label: Chapters
     type: structure

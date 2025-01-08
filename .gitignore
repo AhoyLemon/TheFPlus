@@ -3,7 +3,6 @@ assets/avatars
 #panel/
 #kirby/
 crap/
-podcasts/
 backup/
 site/accounts
 site/cache
@@ -15,3 +14,14 @@ json/
 
 #content/
 !site.txt
+
+# Ignore all files in the podcasts directory
+podcasts/*
+
+# Except for specific files
+!podcasts/logo5.png
+!podcasts/logo_144.png
+
+# Except for the chapters directory and its contents
+!podcasts/chapters/
+!podcasts/chapters/*
