@@ -52,7 +52,9 @@
         <?php $merchPage = $site->find('merch'); ?>
         <a class="main-link merch-link" href="<?= $merchPage->url(); ?>">
           <?= $link->text(); ?>
-          <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
+          <?php if ($merchPage->current_merch()->isNotEmpty() and $merchPage->current_merch()->toStructure()->count() > 0) { ?>
+            <span class="count"><?= $merchPage->current_merch()->toStructure()->count(); ?></span>
+          <?php } ?>
         </a>
       <?php } else if ($link->_fieldset() == "search_form") { ?>
         

@@ -1,17 +1,11 @@
 # Define the list of files to process
 $files = @(
-    "fplus_360",
-    "fplus_364",
-    "fplus_368",
-    "fplus_369",
-    "fplus_370",
-    "fplus_371",
-    "fplus_374",
-    "fplus_376"
+    "fplus_412",
+    "fplus_413"
 )
 
 # Define the input and output paths
-$inputPath = "I:/Sites/TheFPlus/podcasts/chapters"
+$inputPath = "I:/Sites/TheFPlus/podcasts/chapters/txt"
 $outputPath = "I:/Sites/TheFPlus/podcasts/chapters"
 
 # Define the function to convert time format to seconds

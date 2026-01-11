@@ -13,8 +13,6 @@ section.covers-only { display: grid; gap:0;
       summary { background:$card; padding:$padding; color:$copy; transform:scale(0.1); transition: all 0.3s ease; box-shadow:$boxShadow; opacity: 0; z-index: 4; }
     }
 
-
-
     &:hover {
       figcaption summary { transform: scale(1); opacity: 1; }
       h4 { color:$link; }
@@ -67,12 +65,6 @@ section.covers-only { display: grid; gap:0;
 }
 
 .audio-player-wrapper { margin-bottom: $episodeItemMarginBottom; }
-.document-link-holder, .ballpit-link-holder { margin-bottom: $episodeItemMarginBottom;
-  svg { height:38px; width:38px; fill:currentColor; }
-  a:hover {
-    svg { transform: scale(1.5); }
-  }
-}
 
 dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
   span { display: inline-block; width:38px; text-align: center; }
@@ -106,7 +98,6 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
         // span { texx}
       }
     }
-
   }
 }
 
@@ -116,6 +107,20 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
   }
   span { font-family: $sans-serif; }
 }
+
+.subscribe-episode { margin-bottom: $episodeItemMarginBottom; }
+.icon-link-button  {
+  display:inline-flex; gap:1em; color:$red; align-items: anchor-center;
+  svg { flex-basis: 2.25rem; flex-shrink: 0;
+    * { fill:currentColor; }
+  }
+  span { flex-grow: 1; white-space: nowrap; }
+  &:hover, &:focus-visible {
+    svg { transform: scale(1.25); }
+
+  }
+}
+.document-link-holder, .ballpit-link-holder { margin-bottom: $episodeItemMarginBottom; }
 
 
 .episode-find-options {

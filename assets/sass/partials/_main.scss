@@ -73,55 +73,6 @@ article.full {
     .audio-holder { grid-column: 1 / -1;
       audio { width:100%; }
     }
-
-    a { position: relative;
-      &.action {
-        svg * { fill:$red; }
-        .label { background:$red; }
-      }
-      &.twitter {
-        svg * { fill:$color-twitter; }
-        .label { background:$color-twitter; }
-      }
-      &.github {
-        svg * { fill:$color-github; }
-        .label { background:$color-github; }
-      }
-      &.googleplus {
-        svg * { fill:$color-googleplus; }
-        .label { background:$color-googleplus; }
-      }
-      &.facebook { 
-        svg * { fill:$color-facebook; }
-        .label { background:$color-facebook; }
-      }
-      &.tumblr {
-        svg * { fill:$color-tumblr; }
-        .label { background: $color-tumblr; }
-      }
-      &.reddit {
-        svg * { fill:$color-reddit; }
-        .label { background: $color-reddit; }
-      }
-      &.pocket {
-        svg * { fill:$color-pocket; }
-        .label { background: $color-pocket; }
-      }
-      &.contribute {
-        svg * { fill:$link; }
-        .label { background:$link; }
-      }
-      &.action, &.social { transform-origin: center; transition:all 0.3s cubic-bezier(.65,.05,.36,1);
-        &:hover { transform:scale(1.3); }
-      }
-      .label { position: absolute; white-space: nowrap; line-height: 1.2em; font-size:0.5em; padding: 0.5em; transition:all 0.3s cubic-bezier(.65,.05,.36,1); opacity:0; top:-1.5rem; transform:translateY(100%); color:$white; pointer-events: none;
-        &:not(.go-right) { right:0.7rem; }
-        &.go-right { background:$link; left:0.7rem; }
-      }
-      &:hover { border:none;
-        .label { transform:translateY(0); opacity: 1; }
-      }
-    }
   }
 }
 
@@ -227,15 +178,6 @@ article.full.episode {
     &.full { padding:($padding * 2); display:flow-root;
       .cover { float: right; max-width: 40%; margin-left: ($padding * 2); position: relative; z-index: 1;
         &.left { float: left; margin-right: ($padding * 2); margin-left: 0; }
-      }
-
-      a {
-        &.action { @include flex-item(70px,auto,0,0); 
-          svg { max-width: 70px; }
-        }
-        &.social { @include flex-item(60px,auto,0,0);
-          svg { max-width: 60px; }
-        }
       }
     }
   }
