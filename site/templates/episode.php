@@ -20,7 +20,7 @@
       $submitters = explode(",", $page->provider());
       $multisubmitter = true;
     } else if ($page->provider() != "") {
-      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!'), "", $page->provider())));
+      $plink = 'meet/'.strtolower(preg_replace('/\s+/', '-', str_replace(array("'", '!', '_'), array('', '', '-'), $page->provider())));
       $multisubmitter = false;
     }
   ?>

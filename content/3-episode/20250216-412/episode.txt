@@ -1,0 +1,215 @@
+Prevnext: 
+
+----
+
+Title: Dr. Keshe and the Plasmaniacs
+
+----
+
+Featured-site: keshefoundation.org,kfwiki.org,etsy.com,facebook.com,keshescam.wordpress.com
+
+----
+
+Date: 2025-02-16
+
+----
+
+Time: 14:30
+
+----
+
+Cover: ep412.jpg
+
+----
+
+Cast: Boots Raingear,Frank West,Shell Game,K Thor Jensen,Lemon
+
+----
+
+Episode-file: fplus_412.mp3
+
+----
+
+Transcript: fplus_412.vtt
+
+----
+
+Runtime: 1:40:03
+
+----
+
+File-size: 92
+
+----
+
+Document-link: https://docs.google.com/document/d/1rWb0u1PSeZaCogGJkurGfhLQGDhqYX5L8nysan0iDJw/edit?tab=t.0#heading=h.fhha3cqlexf6
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: vampiresoftware
+
+----
+
+Text: 
+
+Named after its founder, **The Keshe Foundation** speaks of something called “Plasma”, which has absolutely nothing to do with any definition of the word you've ever heard previously.  There's also something called GANS, which is entirely new state of matter which has been named using a heretofore unprecedented method for writing an acronym. So what do “Plasma” and GANS do? Well, they cost money. But apparently they cure Coronavirus? So that's nice.
+
+This week, everyone in The F Plus needs a way to distinguish their cummycups.
+
+----
+
+Music-used: Wendy O' Williams & The Plasmatics - Sex Junkie,Ke$ha - C'mon
+
+----
+
+Tags: science fiction is now science fact,plasma,new age,where do i sign up?,incomprehensible,vaccines,questionable problem-solving,magical thinking,cummycup,please give me money for my stupid idea,quantum?,profiles of job creators,focus on a single twit
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3951.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Keshe's Pain Pen
+
+----
+
+Cover-cite-artist: K Thor Jensen
+
+----
+
+Cover-cite-url: https://www.teepublic.com/user/kthorjensen
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters-json: fplus_412.chapters.json
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: '[Plasma] Junkie'
+- 
+  timestamp: 00:00:12
+  name: Reader Intros
+- 
+  timestamp: 00:01:40
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:02
+  name: Introduction to Plasma Science
+- 
+  timestamp: 00:12:23
+  name: 'Emotions & Soul'
+- 
+  timestamp: 00:15:35
+  name: GANS
+- 
+  timestamp: 00:20:08
+  name: Nano-Coating (BANNED CONTENT)
+- 
+  timestamp: 00:24:35
+  name: GANS Water Dispenser
+- 
+  timestamp: 00:27:25
+  name: GANS Plasma Breathing Unit
+- 
+  timestamp: 00:32:55
+  name: GANS Paint Enhancement
+- 
+  timestamp: 00:36:50
+  name: GANS Household Reactor
+- 
+  timestamp: 00:39:10
+  name: >
+    Keshe Type GANS Super GANS Starter Kit
+    Water System And GANS Pads
+- 
+  timestamp: 00:43:50
+  name: Pain Pen Enhanced Version 2021
+- 
+  timestamp: 00:45:30
+  name: Cosmic Ray Plasma Communication Unit
+- 
+  timestamp: 00:48:05
+  name: GANS One Cup One Life
+- 
+  timestamp: 00:52:50
+  name: Magrav Power Car System
+- 
+  timestamp: 00:54:20
+  name: >
+    GANS Plasma Bearer And CO2 Total
+    Ascension
+- 
+  timestamp: 00:57:30
+  name: How To Use GANS To Treat COVID
+- 
+  timestamp: 01:04:50
+  name: ✒️ WORLD PEACE TREATY
+- 
+  timestamp: 01:07:50
+  name: Horizontal Enhancement Spaceship Unit
+- 
+  timestamp: 01:10:20
+  name: Universal Enhancement Spaceship Unit
+- 
+  timestamp: 01:15:10
+  name: 'Testimonial: Bente from Denmark'
+- 
+  timestamp: 01:18:50
+  name: 'Testimonial: Sebastian From Slovenia'
+- 
+  timestamp: 01:19:40
+  name: 'Testimonial: Sebastian From Slovenia (again)'
+- 
+  timestamp: 01:21:58
+  name: 'Testimonial: Sebastian From Slovenia (again again)'
+- 
+  timestamp: 01:24:52
+  name: 'Testimonial: Marc from Germany'
+- 
+  timestamp: 01:26:30
+  name: 'Testimonial: Mrs and Mrs Schmaltz from Montana'
+- 
+  timestamp: 01:28:30
+  name: Keshe Scam Dot Wordpress Dot Com
+- 
+  timestamp: 01:32:15
+  name: What did we learn?
+- 
+  timestamp: 01:39:08
+  name: "C'mon"
+- 
+  timestamp: 01:39:40
+  name: A Zoom meeting with God
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 

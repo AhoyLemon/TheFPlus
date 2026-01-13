@@ -1,0 +1,197 @@
+Prevnext: 
+
+----
+
+Title: Episode Royale (Without Cheese)
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2025-08-19
+
+----
+
+Time: 11:00
+
+----
+
+Cover: fplus_413.jpg
+
+----
+
+Cast: Boots Raingear,Portaxx,John Toast,Chai Tea Latte,Lemon
+
+----
+
+Episode-file: fplus_413.mp3
+
+----
+
+Transcript: fplus_413.vtt
+
+----
+
+Runtime: 1:23:56
+
+----
+
+File-size: 80
+
+----
+
+Document-link: https://docs.google.com/document/d/1SvgWykTOwwviGfGVGP342Ze1UVMiN4UDlmXSnVpzQ1o/edit?usp=sharing
+
+----
+
+Editor: Adam Bozarth
+
+----
+
+Provider: thelizzerd
+
+----
+
+Text: 
+
+So, pretty much every chain restaurant has its own subreddit, and we''re gonna look at at least half a dozen in this episode. From annoying customer complaints to terrible menu ideas to lots of poop problems to conspiracy theories, and even time for poetry at the end, this is really the Rax Salad Bar of F Plus episodes.
+
+This week, The F Plus is a purely transactional podcast.
+
+----
+
+Music-used: Fast Food Rockers - Fast Food Song,The Village People - Big Mac
+
+----
+
+Tags: reddit,internet whining,annoying,lazy people,drama queens,rants,consumer culture,morons,the internet is a dumb oracle you shout into,first world problems,poetry,plumbing issues,chektup,filler vegetables,i prefer it on the sweet side
+
+----
+
+Bonus-content: 
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3972.0
+
+----
+
+Cover-cite-toggle: yes
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: Episode Cover
+
+----
+
+Cover-cite-artist: Dyna Moe
+
+----
+
+Cover-cite-url: http://nobodyssweetheart.com
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters-json: fplus_413.chapters.json
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: Drive-thru Intro
+- 
+  timestamp: 00:02:28
+  name: Hey, F Plus!
+- 
+  timestamp: 00:04:01
+  name: >
+    Dunkin’ employee said “Damn that’s
+    a lot of cream!” To my order
+- 
+  timestamp: 00:08:46
+  name: >
+    Are the Refreshers SAFE from giving you
+    toilet problems? Asking for a friend…
+- 
+  timestamp: 00:12:17
+  name: iHop all you can eat pancakes (scam)
+- 
+  timestamp: 00:15:47
+  name: MY POTATO SOUP
+- 
+  timestamp: 00:16:31
+  name: 'date: yes or no'
+- 
+  timestamp: 00:20:52
+  name: I just loooooove Waffle House!
+- 
+  timestamp: 00:25:38
+  name: 'new idea for a sandwich: THE CHICKEN MCNUGGET SANDWICH'
+- 
+  timestamp: 00:27:53
+  name: "Best McD's Ever Might Be Due to Aliens"
+- 
+  timestamp: 00:37:09
+  name: >
+    Your employees made my feelers hurt.
+    😕
+- 
+  timestamp: 00:44:34
+  name: >
+    The Post r/burgers doesn’t want you to
+    see! Thoughts on the Whopper.
+- 
+  timestamp: 00:52:20
+  name: >
+    My local Chipotle is becoming too
+    friendly and I want our "relationship"
+    to be purely transactional.
+- 
+  timestamp: 00:57:14
+  name: PANDA! I LOVE YOU, BUT....
+- 
+  timestamp: 01:01:58
+  name: "I had an issue at Chili's involving the Original Chicken Crispers."
+- 
+  timestamp: 01:06:30
+  name: Can Hooters girls show their feet?
+- 
+  timestamp: 01:10:52
+  name: "It's time for poetry!"
+- 
+  timestamp: 01:11:21
+  name: >
+    A brutally honest free verse poem about
+    arbys
+- 
+  timestamp: 01:13:16
+  name: A poem… (from r/tacobell)
+- 
+  timestamp: 01:15:23
+  name: 'Waffle House: the Perfect Toast (from r/wafflehouse)'
+- 
+  timestamp: 01:18:01
+  name: What did we learn form any of this?
+- 
+  timestamp: 01:22:40
+  name: Goodbye!
+
+----
+
+Chapter-provider: Adam Bozarth
+
+----
+
+Chapter-provider-aftergap: 

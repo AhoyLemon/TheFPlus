@@ -1,0 +1,197 @@
+Prevnext: 
+
+----
+
+Title: Songs On The Bzock Chain
+
+----
+
+Featured-site: rappad.co
+
+----
+
+Date: 2026-01-09
+
+----
+
+Time: 15:00
+
+----
+
+Cover: ep414.jpg
+
+----
+
+Cast: Frank West,Zarla,Bunnybread,Lou Fernandez,Lemon
+
+----
+
+Episode-file: fplus_414.mp3
+
+----
+
+Transcript: 
+
+----
+
+Runtime: 1:14:57
+
+----
+
+File-size: 69
+
+----
+
+Document-link: https://docs.google.com/document/d/1xJ2QK3FS_SgVe9UxdnDO6fKuMwcahviqTxFoBigjkks/edit?usp=sharing
+
+----
+
+Editor: Adam Bozarth
+
+----
+
+Provider: Sauce
+
+----
+
+Text: 
+
+It's the first episode of 2026! What better was to celebrate the new year than an episode that won't mention 2025 at all. This episode of cryptocurrency songs was recorded in September 2024, and is now ready to be released to your podcast wallet. The only criteria for inclusion in the document is that the songwriter mentions Bitcoin at least once, so there are pro-Bitcoin raps, anti-Bitcoin protest songs, and some steampunk bullshit found its way in there, too.
+
+This time, the F Plus asks why won’t you let me play my gaaaaaaaaames?
+
+----
+
+Music-used: Dirty Money - Antibalas,Bitcoin - Muzic King
+
+----
+
+Tags: bitcoin,musicate my lyrics bro,bad music,rants,morons,no refunds,excellent usernames
+
+----
+
+Bonus-content: (image: muzikking.jpg)
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3990.0
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters-json: 
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: So this qualifies.
+- 
+  timestamp: 00:00:15
+  name: Reader Intros
+- 
+  timestamp: 00:02:02
+  name: Hey F Plus!
+- 
+  timestamp: 00:04:40
+  name: >
+    Bunnybread sings "Crypto King" by
+    IanCognitoMusic
+- 
+  timestamp: 00:11:45
+  name: >
+    Frank West sings "Drop The Beat Good
+    Sir" by Trusc
+- 
+  timestamp: 00:20:21
+  name: |
+    Zarla sings "I'm Doing Fine" by Skeletal
+- 
+  timestamp: 00:22:41
+  name: >
+    Bunnybread sings "BITCHSLAPPA" by
+    HOTBOYGLIZZY3
+- 
+  timestamp: 00:25:39
+  name: >
+    Lemon sings "All Dancers Born To Fate"
+    by Paul John Fletcher
+- 
+  timestamp: 00:32:46
+  name: "Lou sings “'JUST THE OTHER DAY'” by Barry H"
+- 
+  timestamp: 00:38:19
+  name: >
+    Time for a choice (featuring MC Skat
+    Kat)
+- 
+  timestamp: 00:39:53
+  name: >
+    Frank West sings "Dang, Dang" by Plasma
+    Baby
+- 
+  timestamp: 00:45:24
+  name: Lemon sings "Bitcoin" by Muzic King
+- 
+  timestamp: 00:51:24
+  name: 'Lou sings "Fuck Bitcoin" by Vikas Kumar & Vijay Pemmaraju'
+- 
+  timestamp: 00:55:34
+  name: >
+    Zarla sings "Livin On The Blockchain" by
+    Brothers of Alien Rock
+- 
+  timestamp: 00:58:50
+  name: >
+    Bunnybread sings "Blockchain" by Garry
+    With Two R’s
+- 
+  timestamp: 01:05:09
+  name: "Lemon explores Garry With Two R's' catalog"
+- 
+  timestamp: 01:05:39
+  name: >
+    Frank West sings "Bitcoin Pizza Day (Get
+    Onboard The Blockchain)" by The Original
+    Coin
+- 
+  timestamp: 01:10:54
+  name: What did we learn from any of this?
+- 
+  timestamp: 01:14:01
+  name: >
+    Lemon never explained why he asked Lou
+    to read this
+
+----
+
+Chapter-provider: Adam Bozarth
+
+----
+
+Chapter-provider-aftergap: 
