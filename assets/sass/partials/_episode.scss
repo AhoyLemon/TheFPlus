@@ -86,20 +86,18 @@ dl.chapters-info { margin-bottom: $episodeItemMarginBottom;
   }
 }
 
-.share-episode {
-  .share-networks { display: flex; gap:40px; flex-wrap: wrap; margin-bottom: 3rem; max-width: 860px;;
+.share-networks { display: flex; column-gap:40px; row-gap:18px; flex-wrap: wrap; margin-bottom: 3rem; max-width: 860px;
     a { display: inline-flex; gap:5px;
-      svg { width:36px; height:36px;
+      svg { width:36px; height:36px; 
         * { fill:currentColor; }
       }
       span { font-size:0.875em; align-self: center; }
       &:hover, &:focus { text-decoration-thickness: 5px;
         svg { transform: scale(1.1); }
-        // span { texx}
       }
     }
   }
-}
+
 
 .button.share-this-page { position: relative; font-family: $sans-serif; padding-left:2.75em; margin-bottom: 2rem;
   svg { position: absolute; height:2.5em; width:2.5em; top:0.5em; left:.25em;

@@ -1,0 +1,234 @@
+Prevnext: 
+
+----
+
+Title: Prison Planet Sausage Party
+
+----
+
+Featured-site: reddit.com
+
+----
+
+Date: 2026-01-16
+
+----
+
+Time: 23:37
+
+----
+
+Cover: ep415.jpg
+
+----
+
+Cast: Boots Raingear,Dijon Du Jour,Positive Stress,Lemon
+
+----
+
+Episode-file: fplus_415.mp3
+
+----
+
+Transcript: fplus_416.vtt
+
+----
+
+Runtime: 1:24:28
+
+----
+
+File-size: 107
+
+----
+
+Document-link: https://docs.google.com/document/d/1f_hkqYDal6CNOA08s-S0msGWZir7_LB2fjUdH-dKE-Q/edit?usp=sharing
+
+----
+
+Editor: Lemon
+
+----
+
+Provider: Carrion_Live
+
+----
+
+Text: 
+
+The people over at **r/EscapingPrisonPlanet** are obsessed with the concept of something called "Loosh". So what it loosh? Well, we read about it for about 45 minutes and we're not sure. What we do know is that they consider themselves vaguely gnostic and haven't really read a book before, but they have seen the extremely ugly Seth Rogan movie Sausage Party, and that's given them all the religious text they need.
+
+This week, The F Plus learns the penis fits, but should it?
+
+----
+
+Music-used: Tom Waits - God's Away On Business,SPRINTS - Little Fix
+
+----
+
+Tags: reddit,watching too much television,finding jesus through fanfiction,i couldn't be wrong,nofap,questionable problem-solving,making masturbation difficult,support groups
+
+----
+
+Bonus-content: 
+
+**Final Note from Lemon**
+
+Hey there,
+
+Lemon again, just a few pieces of housekeeping to finish up the episode here.
+
+First of all, just a quick word on the lull in releases we had in 2025. Simple fact of the matter is that we've all agreed that our only goal in doing this show is to have fun. Literally the only reason we do The F Plus is that we enjoy doing it. And you know, sometimes that means stepping away for a while. But, this is our second episode of 2026, we've got some other episodes in the pipeline. I'm not saying there won't be any more lulls in the future, but we're making episodes. So if you want to make a document for us, please do that. (link: https://thefpl.us/submit/ text: thefpl.us/submit) and give us a doc. Maybe, if you can, look for places other than Reddit. We get a lot of Reddit.
+
+Secondly, I made a new game recently. it's called (link: https://kinda.fun/megachurch text: Megachurch Tycoon). It's a management sim, and the premise is you wake up in the morning with a crippling drug addiction and no money, and the way you decide to solve those problems is by yelling about religion at random cities in America. The story progresses from there. I think it's a good concept, I'm happy with it, and I'd work on it some more, but I'd like more people to play it and give me feedback.
+
+So, go to kinda.fun and play a couple games of Megachurch Tycoo). If you want to talk to me about it, great. Bluesky or mastodon, or preferrably (email: lemon@ahoylemon.xyz text: lemon@ahoylemon.xyz) - If you're technologically inclined, the codebase is all up on GitHub. You could put in an issue or PR there. Anyway, (link: https://kinda.fun text: kinda.fun) play a couple games, tell me what you think, I'd like that. And like all kinda.fun games, it's free to play. No ads or anything, it's just free.
+
+And thirdly, just something else I can't not address. As some of you know, I live in Minneapolis, and as I'm reading this, my city is occupied by ICE agents. They murdered Renee Good, and they're kidnapping people every day, with no respect for human rights or the law. It's not the first crisis like this the city has experienced, but the one thing it's reminded me of is the motivation of good people to do good things in opposition. From the (link: https://defend612.com text: people who are volunteering) to follow ICE vehicles around to document their activities to the people who are delivering groceries to Minneapolis residents afraid to leave their house, to people providing legal and financial support to the detainees... there's (link: https://monarcamn.org text: good people) out there. A lot of them.
+
+This isn't the part where I tell you what to do. You live your own life, and I'm just a guy with a microphone talking to you right now. I don't know your situation and frankly I'd respect you less if you let me dictate what you should be doing. All I'm saying is good people exist, and you can donate to a lot of places to help them out, or you can volunteer to be one of them for a while. You know, if you want to.
+
+So, that's it. Submit a document, go to kinda.fun and give me feedback, and be a good person. 
+
+Oh! And if you need something to watch, season 3 episode 4 of (link: https://www.hbomax.com/shows/how-to-with-john-wilson/s3/2a73975c-0315-4741-888f-d9779fb3adb5 text: How To With John Wilson) has a long segment on the vacuum cleaner enthusiasts we covered in (link: https://thefpl.us/episode/337 text: episode 337). You actually get to watch their competition. Highly recommend.
+
+Alright, that's it for real. Until next time, *KEEP DREAMING, LESBIAN LOSERS!*
+
+----
+
+Ballpit-url: https://ballp.it/index.php?topic=3993.0
+
+----
+
+Cover-cite-toggle: no
+
+----
+
+Cover-cite-blank: 
+
+----
+
+Cover-cite-title: 
+
+----
+
+Cover-cite-artist: 
+
+----
+
+Cover-cite-url: 
+
+----
+
+Chapters-toggle: yes
+
+----
+
+Chapters-json: fplus_415.chapters.json
+
+----
+
+Chapters: 
+
+- 
+  timestamp: 00:00:00
+  name: "God's Away On Business"
+- 
+  timestamp: 00:00:29
+  name: Reader Intros
+- 
+  timestamp: 00:02:10
+  name: Hey, F Plus!
+- 
+  timestamp: 00:05:35
+  name: So, what is “Prison Planet”?
+- 
+  timestamp: 00:15:35
+  name: Humans were meant to be nocturnal
+- 
+  timestamp: 00:21:30
+  name: 'P*rn consumption is the number one loosh battery source nowadays'
+- 
+  timestamp: 00:26:30
+  name: >
+    Retain your seed. This potent source of
+    energy is a massive source of loosh for
+    the archons.
+- 
+  timestamp: 00:29:05
+  name: "Women's loosh is never depleted."
+- 
+  timestamp: 00:31:30
+  name: The penis fits, but should it?
+- 
+  timestamp: 00:35:35
+  name: 'How to bring the loosh farm nightmare to an end: Take back your energy from them'
+- 
+  timestamp: 00:43:35
+  name: >
+    They Put The Truth In The Movies And
+    Fake In Real Life
+- 
+  timestamp: 00:45:02
+  name: Lit!
+- 
+  timestamp: 00:45:45
+  name: >
+    Another movie possibly pointing to the
+    upcoming April 8th eclipse (Sonic The
+    Hedgehog 2)
+- 
+  timestamp: 00:51:10
+  name: 'Truth in fiction - Sausage Party'
+- 
+  timestamp: 00:54:20
+  name: "What's Gnu Pussycat?"
+- 
+  timestamp: 00:55:20
+  name: >
+    What if Sausage Party movie was
+    LITERALLY true!???
+- 
+  timestamp: 00:57:48
+  name: >
+    Sooo...who here has actually seen
+    Sausage Party fully?
+- 
+  timestamp: 01:02:48
+  name: >
+    Has anyone seen the symbolism in the new
+    Mario movie??
+- 
+  timestamp: 01:04:30
+  name: >
+    Super Mario is actually about January
+    6th
+- 
+  timestamp: 01:07:03
+  name: Ok so this maybe sounds dumb and, it is
+- 
+  timestamp: 01:08:40
+  name: And now, a list of titles...
+- 
+  timestamp: 01:09:45
+  name: 'ASIDE: Some more words about fuckjutsu'
+- 
+  timestamp: 01:11:11
+  name: Okay, back to the list of titles
+- 
+  timestamp: 01:17:15
+  name: What did we learn?
+- 
+  timestamp: 01:21:22
+  name: Little Fix
+- 
+  timestamp: 01:22:18
+  name: Some final words from Lemon
+
+----
+
+Chapter-provider: Lemon
+
+----
+
+Chapter-provider-aftergap: 
