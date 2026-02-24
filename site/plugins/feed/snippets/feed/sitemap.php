@@ -2,8 +2,7 @@
     echo PHP_EOL.'<?xml-stylesheet type="text/xsl" href="/assets/xsl/pedro.xsl" ?>';
 } ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        <?php if ($images) { ?>xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"<?php } ?>
-        <?php if ($videos) { ?>xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"<?php } ?>
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
 >
   <?php
   // Calculate priorities for all items
