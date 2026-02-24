@@ -6,11 +6,12 @@ crap/
 backup/
 site/accounts
 site/cache
-site/config/config.php
+!site/config/config.php
 thumbs/
 stripe/
 json/
 content_old/
+site/sessions
 
 # Ignore all files in the podcasts directory
 podcasts/*
