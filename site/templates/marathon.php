@@ -23,15 +23,15 @@
             <time>
               Recorded: 
               <span class="date">
-                <?php echo date('l, F jS Y', strtotime($page->record_date_start())); ?>
+                <?=$page->record_date_start()->toDate('l, F jS Y'); ?>
               </span>
               @
               <span class="time">
-                <?php echo date("g:ia", strtotime($page->record_time_start())); ?>
+                <?=$page->record_time_start()->toDate('g:ia'); ?>
               </span>
               - 
               <span class="time">
-                <?php echo date("g:ia", strtotime($page->record_time_end())); ?>
+                <?=$page->record_time_end()->toDate('g:ia'); ?>
               </span>
               CST
             </time>
@@ -41,11 +41,11 @@
             <time>
               Released: 
               <span class="date">
-                <?php echo date('l, F jS Y', $page->date()); ?>
+                <?=$page->release_date()->toDate('l, F jS Y'); ?>
               </span>
               @
               <span class="time">
-                <?php echo date("g:ia", strtotime($page->time())); ?>
+                <?=$page->release_time()->toDate('g:ia'); ?>
               </span>
               CST
             </time>

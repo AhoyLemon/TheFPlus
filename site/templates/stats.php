@@ -4,7 +4,7 @@
 <main class="main page" role="main">
   <?php 
   
-    $episodes = $site->find('episode')->children()->visible();
+    $episodes = $site->find('episode')->children()->listed();
 
     $ridiculists = array();
     $total_days = 0;

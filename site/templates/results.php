@@ -17,7 +17,7 @@
       <span class="tag selected"><?= $ftag; ?></span>
     </div>
     
-    <?php $articles = $site->grandChildren()->visible()->filterBy('tags', $ftag_pre, ',')->sortBy('date', 'desc')->paginate(15) ?>
+    <?php $articles = $site->grandChildren()->listed()->filterBy('tags', $ftag_pre, ',')->sortBy('date', 'desc')->paginate(15) ?>
     <?php snippet('briefs',  [ 'articles' => $articles]) ?>
 
   </main>
