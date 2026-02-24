@@ -1,10 +1,5 @@
 title: Submission Hopper
-icon: 🦹🏼‍♀️
-
-status:
-  draft: Locked
-  unlisted: Locked
-  listed: Locked
+icon: 🗄️
 
 options:
   title: false
@@ -16,21 +11,19 @@ options:
 # sections:
 fields:
   text:
-    label: dsajkdsa
-    label: Text
-    type:  textarea
-  builder:
+    label: Above Table
+    type: markdown
+  documents:
     label: Submitted Document
     type: structure
     modalsize: large
     style: table
-    columns: 
-      title:
-        width: 1/2
-      docurl:
-        width: 1/4
-      submitter:
-        width: 1/4
+    sortBy: subdate
+    columns:
+      title: true
+      submitter: true
+      subdate: true
+      recorded: true
     fields:
       title:
         label: Title
@@ -49,8 +42,8 @@ fields:
         label: Date Submitted
         type: date
         default: today
+        required: true
         width: 1/4
-        format: MM/DD/YY
       gd_flag:
         label: Garbage Day?
         type: toggle

@@ -1,5 +1,5 @@
-title: Submission Hopper
-icon: 🦹🏼‍♀️
+title: Rejected Submissions
+icon: 🚮
 
 status:
   draft: Locked
@@ -16,24 +16,17 @@ options:
 # sections:
 fields:
   text:
-    label: dsajkdsa
-    label: Text
-    type:  markdown
-  builder:
-    label: Submitted Document
+    label: Above Table
+    type: markdown
+  rejected_documents:
+    label: Rejected Documents
     type: structure
-    modalsize: large
     style: table
     sortBy: rejectdate desc
-    columns: 
-      title:
-        width: 1/4
-      docurl:
-        width: 1/4
-      submitter:
-        width: 1/4
-      rejectdate:
-        width: 1/4
+    columns:
+      title: true
+      submitter: true
+      rejectdate: true
     fields:
       title:
         label: Title
@@ -53,7 +46,6 @@ fields:
         type: date
         width: 1/2
         default: today
-        format: MM/DD/YY
       gd_flag:
         label: Garbage Day?
         type: toggle

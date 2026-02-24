@@ -1,5 +1,13 @@
 redirects:
   -
+    from: episode/wctfm
+    to: 'page://acajntiwrkpyw8tn'
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: null
+  -
     from: episode/200
     to: /episode/200a
     status: 301
