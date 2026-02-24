@@ -16,7 +16,7 @@
   <?php 
     $shareURL = $page->url();
     $shareTitle = urlencode($page->title());
-    $shareText = "The F Plus, Episode " . $page->slug() . " | " . excerpt($page->text()->xml(), 120);
+    $shareText = "The F Plus, Episode " . $page->slug() . " | " . $page->text()->excerpt(120)->xml();
   ?>
   <h4>Share this via...</h4>
   <div class="share-networks">
@@ -86,7 +86,7 @@
         navigator.share({
           title: '<?= $page->title(); ?>',
           url: '<?= $page->url(); ?>',          
-          text: `The F Plus, Episode <?= $page->slug(); ?> | <?= excerpt($page->text(), 124) ?>`,
+          text: `The F Plus, Episode <?= $page->slug(); ?> | <?= $page->text()->excerpt(124) ?>`,
         }).then(() => {
           console.log('Thanks for sharing!');
         });

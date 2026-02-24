@@ -82,14 +82,22 @@
                   <?php } ?>
                 </span>
               <?php } ?>
-              <?php if ($section->subdate() != "") { ?>
-                <time class="submitted-date">
-                  <?php $docdate = strtotime($section->subdate()); ?>
-                  <?php echo date('F jS, Y', $docdate); ?>
-                </time>
-              <?php } else { ?>
-                <span class="submitted-date blank"></span>
-              <?php } ?>
+              <?php
+                $subdateRaw = $section->subdate()->value();
+                if ($subdateRaw) {
+                  if (is_numeric($subdateRaw)) {
+                    // Assume Unix timestamp
+                    echo '<time class="submitted-date">' . date('M j, Y', (int)$subdateRaw) . '</time>';
+                  } elseif (strtotime($subdateRaw)) {
+                    // Assume date string
+                    echo '<time class="submitted-date">' . date('M j, Y', strtotime($subdateRaw)) . '</time>';
+                  } else {
+                    echo '<span class="submitted-date blank"></span>';
+                  }
+                } else {
+                  echo '<span class="submitted-date blank"></span>';
+                }
+              ?>
             </li>
           <?php endforeach ?>
         </ul>

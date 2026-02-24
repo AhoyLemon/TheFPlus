@@ -1,0 +1,174 @@
+title: Page
+pages: true
+files: true
+
+columns:
+
+  main:
+    width: 2/3
+    fields:
+      date:
+        label: Last Release Date
+        type: date
+        format: MM/DD/YYYY
+        width: 1/4
+      time:
+        label: Last Release Time
+        type: time
+        interval: 1
+        width: 1/4
+      splc_total:
+        label: SPLC Donation Total
+        type: number
+        width: 1/4
+      splc_asof:
+        label: SPLC Last Donation
+        type: date
+        width: 1/4
+      text:
+        label: Page Text
+        type: markdown
+      cast:
+        label: Artists
+        type: tags
+        icon: users
+      stickers:
+        label: Stickers
+        type: structure
+        sortBy: series_num desc
+        columns:
+          series_num: true
+          pic: true
+          title: true
+          artist: true
+        fields:
+          pic:
+            label: Thumb
+            extends: fields/image
+          fullsize:
+            label: Full Size
+            extends: fields/image
+          title:
+            label: Title
+            type: text
+            required: true
+          artist:
+            label: Artist
+            type: text
+            width: 2/3
+          series_num:
+            label: Series Number
+            type: number
+            required: true
+            width: 1/3
+          dimensions:
+            label: Dimensions
+            type: text
+            width: 1/3
+          shape:
+            label: Shape
+            type: text
+            width: 1/3
+          vinyl:
+            label: Vinyl
+            type: text
+            width: 1/3
+          printed:
+            label: Number Printed
+            type: number
+            width: 1/3
+          released:
+            label: Date Released
+            type: date
+            width: 1/3
+          soldout:
+            label: Date Sold Out
+            type: date
+            width: 1/3
+          reference:
+            label: Episode Slug
+            type: text
+            width: 2/3
+          almost_gone:
+            label: Almost Gone?
+            type: checkbox
+            text: yeah
+            width: 1/3
+          buttons_headline:
+            label: BUY NOW BUTTONS
+            type: headline
+          buttona_num:
+            label: Count
+            type: number
+            width: 1/4
+          buttona_price:
+            label: Price
+            type: number
+            width: 1/4
+          buttona_slug:
+            label: Slug
+            type: text
+            width: 1/2
+          buttonb_num:
+            label: Count
+            type: number
+            width: 1/4
+          buttonb_price:
+            label: Price
+            type: number
+            width: 1/4
+          buttonb_slug:
+            label: Slug
+            type: text
+            width: 1/2
+          buttonc_num:
+            label: Count
+            type: number
+            width: 1/4
+          buttonc_price:
+            label: Price
+            type: number
+            width: 1/4
+          buttonc_slug:
+            label: Slug
+            type: text
+            width: 1/2
+      share_cta:
+        label: Share CTA
+        type: markdown
+      tags:
+        label: Project Tags
+        lowercase: true
+        type: tags
+      splc_desc:
+        label: SPLC Description
+        type: markdown
+
+  sidebar:
+    width: 1/3
+    fields:
+      
+      photos:
+        label: Photos
+        type: structure
+        sortBy: series_num desc
+        columns:
+          series_num: true
+          pic: true
+        fields:
+          series_num:
+            label: Series
+            type: number
+            width: 1/2
+          pic:
+            label: Image
+            extends: fields/image
+            help: "260px in height"
+          full_size:
+            label: Full Size Image
+            extends: fields/image
+            required: false
+          desc:
+            label: Description
+            type: text
+            required: true

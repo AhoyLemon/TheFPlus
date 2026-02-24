@@ -1,8 +1,6 @@
 title: Fanart
-icon: paint-brush
 pages: false
 files:
-  #sortable: true
   fields:
     episode:
       label: Episode

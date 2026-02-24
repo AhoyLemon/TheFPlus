@@ -1,0 +1,23 @@
+title: Blog Posts
+pages: true
+
+columns:
+
+  main:
+    width: 2/3
+    fields:
+      text:
+        label: Page Text
+        type: markdown
+  
+  # Blog Pages
+  projectPages:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+        headline: Projects
+        parent: site.find("wrote")
+        layout: table
+        sortBy: date desc
+        sortable: false

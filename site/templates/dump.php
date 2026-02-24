@@ -54,10 +54,22 @@
                 <?php } ?>
               </span>
               <?php if ($section->rejectdate() != "") { ?>
-                <time class="rejected-date">
-                  <?php $docdate = strtotime($section->rejectdate()); ?>
-                  <?php echo date('F jS, Y', $docdate); ?>
-                </time>
+                <?php
+                  $subdateRaw = $section->rejectdate()->value();
+                  if ($subdateRaw) {
+                    if (is_numeric($subdateRaw)) {
+                      // Assume Unix timestamp
+                      echo '<time class="submitted-date">' . date('M j, Y', (int)$subdateRaw) . '</time>';
+                    } elseif (strtotime($subdateRaw)) {
+                      // Assume date string
+                      echo '<time class="submitted-date">' . date('M j, Y', strtotime($subdateRaw)) . '</time>';
+                    } else {
+                      echo '<span class="submitted-date blank"></span>';
+                    }
+                  } else {
+                    echo '<span class="submitted-date blank"></span>';
+                  }
+                ?>
               <?php } else { ?>
                 <span class="submitted-date blank"></span>
               <?php } ?>

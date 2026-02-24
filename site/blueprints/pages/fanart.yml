@@ -1,0 +1,32 @@
+title: Fanart
+files: true
+
+columns:
+  main:
+    width: 1/2
+    fields:
+      page_headline:
+        label: Page Headline
+        type: text
+      text:
+        label: Text Under Pics
+        type:  markdown
+      featured_artists:
+        label: Featured Artists
+        type: tags
+  
+  sidebar:
+    width: 1/2
+    fields:
+      artists:
+        label: Artists
+        type: tags
+  
+  fanart_images:
+    width: 1/1
+    sections:
+      gallery:
+        label: Fanart Images
+        type: files
+        layout: cardlets
+        template: fanimage

@@ -1,0 +1,41 @@
+title: Blog Post
+pages: true
+
+columns:
+
+  main:
+    width: 2/3
+    fields:
+      author:
+        label: Author
+        type: tags
+        icon: user
+        width: 1/2
+      date:
+        label: Publish Date
+        type: date
+        format: MM/DD/YYYY
+        width: 1/4
+      time:
+        label: Publish Time
+        type: time
+        width: 1/4
+      text:
+        label: Page Text
+        type: markdown
+      text:
+        label: Start writing, fucko!
+        type: markdown
+      tags:
+        label: Tags
+        lowercase: true
+        type: tags
+
+  sidebar:
+    width: 1/3
+    fields:
+      cover:
+        label: Cover Image
+        type: files
+        extends: fields/image
+        layout: cards

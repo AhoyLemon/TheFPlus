@@ -10,10 +10,7 @@ site/config/config.php
 thumbs/
 stripe/
 json/
-
-
-#content/
-!site.txt
+content_old/
 
 # Ignore all files in the podcasts directory
 podcasts/*
@@ -25,3 +22,9 @@ podcasts/*
 # Except for the chapters directory and its contents
 !podcasts/chapters/
 !podcasts/chapters/*
+.htaccess
+
+
+## Kirby 2 -> 5 migration
+content_old/
+kirby_old/

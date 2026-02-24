@@ -1,0 +1,73 @@
+title: Submission Hopper
+icon: 🦹🏼‍♀️
+
+status:
+  draft: Locked
+  unlisted: Locked
+  listed: Locked
+
+options:
+  title: false
+  status: false
+  duplicate: false
+  url: false
+  delete: false
+
+# sections:
+fields:
+  text:
+    label: dsajkdsa
+    label: Text
+    type:  markdown
+  builder:
+    label: Submitted Document
+    type: structure
+    modalsize: large
+    style: table
+    sortBy: rejectdate desc
+    columns: 
+      title:
+        width: 1/4
+      docurl:
+        width: 1/4
+      submitter:
+        width: 1/4
+      rejectdate:
+        width: 1/4
+    fields:
+      title:
+        label: Title
+        type: text
+        icon: file-text-o
+      docurl:
+        label: URL
+        type: url
+        icon: link
+      submitter:
+        label: Submitter
+        type: tags
+        icon: gift
+        width: 1/2
+      rejectdate:
+        label: Date Rejected
+        type: date
+        width: 1/2
+        default: today
+        format: MM/DD/YY
+      gd_flag:
+        label: Garbage Day?
+        type: toggle
+        text: flagged
+        width: 1/4
+        icon: trash
+      dibs:
+        label: Dibs
+        type: tags
+        icon: flag
+        width: 3/4
+      recorded:
+        label: Recorded?
+        type: toggle
+        text: yup
+        width: 1/4
+        icon: play-circle

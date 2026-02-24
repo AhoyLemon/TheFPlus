@@ -1,0 +1,13 @@
+type: pages
+headline: Episodes
+parent: site.find("episode")
+layout: cardlets
+size: small
+template: episode
+empty: No episodes!? That ain't right.
+sortBy: date desc
+sortable: false
+info: "#<strong>{{ page.slug }}</strong>, <time>{{page.date.toDate(m d y)}}"
+image:
+  ratio: 1/1
+  cover: true

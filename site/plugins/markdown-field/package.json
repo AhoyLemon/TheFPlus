@@ -1,0 +1,43 @@
+{
+  "name": "kirby-markdown-field",
+  "description": "Enhanced markdown editor for Kirby 3",
+  "main": "index.js",
+  "author": "Kirby Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sylvainjule/kirby-markdown-field.git"
+  },
+  "scripts": {
+    "dev": "kirbyup panel/index.ts --watch",
+    "build": "kirbyup panel/index.ts",
+    "lint": "eslint \"panel/**/*.{ts,vue}\"",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier --write \"panel/**/*.{ts,vue}\""
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/underscore": "^1.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
+    "eslint-plugin-vue": "^10.7.0",
+    "kirby-types": "^1.4.7",
+    "kirbyup": "^3.4.1",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.54.0"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.10.1",
+    "@codemirror/lang-markdown": "^6.5.0",
+    "@codemirror/language": "^6.12.1",
+    "@codemirror/search": "^6.6.0",
+    "@codemirror/state": "^6.5.4",
+    "@codemirror/view": "^6.39.12",
+    "@lezer/highlight": "^1.2.3",
+    "underscore": "^1.13.7"
+  }
+}

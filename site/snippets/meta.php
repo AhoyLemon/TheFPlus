@@ -12,9 +12,9 @@
 
   $lastUpdated = "";
   if ($page->template() == "home") { 
-    $lastUpdated = $site->grandChildren()->visible()->sortBy('date', 'desc')->first()->date('Y-m-d');
+    $lastUpdated = $site->grandChildren()->listed()->sortBy('date', 'desc')->first()->date('Y-m-d');
   } else if ( in_array($page->template(), ['episodes', 'blogs', 'other-projects', 'guesses'] )) {
-    $lastUpdated = $page->children()->visible()->sortBy('date', 'desc')->first()->date('Y-m-d');
+    $lastUpdated = $page->children()->listed()->sortBy('date', 'desc')->first()->date('Y-m-d');
   } else if ( in_array($page->template(), ['hopper', 'dump'] )) {
     $lastUpdated = $page->builder()->toStructure()->sortBy('subdate', 'desc')->first()->subdate();
   } else if ($page->template() == "stickers") { 

@@ -1,0 +1,17 @@
+Episode: 36
+
+----
+
+Artist: Adam Bozarth
+
+----
+
+Caption: Detective Cartoon
+
+----
+
+Uuid: q1g5qrzwokcj0gov
+
+----
+
+Template: fanimage

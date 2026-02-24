@@ -1,0 +1,102 @@
+title: Merch
+icon: dollar
+pages:
+  template:
+    - other-project
+    - merch-type
+  sort: flip
+  num: date
+files: true
+columns:
+
+  main:
+    width: 2/3
+    fields:
+      text:
+        label: Intro Text
+        type: markdown
+      current_text:
+        label: Current Merch Lead In
+        type: markdown
+      current_merch:
+        label: Current Merch
+        type: structure
+        style: table
+        entry:
+          - title
+          - type
+          - url
+        fields:
+          title:
+            label: Title
+            type: text
+            required: true
+            width: 1/2
+          pic:
+            label: Pic
+            type: image
+            help: 300x300
+            required: true
+            width: 1/2
+          url:
+            label: URL
+            type: url
+          type:
+            label: Type
+            type: text
+            width: 2/3
+          price:
+            label: Price
+            type: text
+            width: 1/3
+            placeholder: "include $"
+          pending:
+            label: Pending?
+            type: checkbox
+            text: yeah, these aren't for sale yet.
+          almost_gone:
+            label: Almost Gone?
+            type: checkbox
+            text: yeah, these are almost gone.
+          
+      sold_text:
+        label: Sold Out Lead In
+        type: markdown
+      sold_merch:
+        label: Sold Out Merch
+        type: structure
+        style: table
+        entry:
+          - title
+          - type
+          - sold_date
+        fields:
+          title:
+            label: Title
+            type: text
+            required: true
+          url:
+            label: URL
+            type: url
+            required: false
+          pic:
+            label: Pic
+            type: image
+            help: 300x300
+            required: true
+          type:
+            label: Type
+            type: text
+          sold_date:
+            label: Sold Out Date
+            type: date
+            required: true
+            format: MM/DD/YYYY
+
+  # Project Pages
+  merchPages:
+    width: 1/3
+    sections:
+      pages:
+        extends: sections/childPages
+        parent: site.find("merch")

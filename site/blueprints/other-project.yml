@@ -106,12 +106,7 @@ fields:
   text:
     label: Item Summary
     type: markdown
-  episode_file:
-    label: Episode File
-    type: url
-    placeholder: (if applicable)
-    icon: volume-up
-    width: 1/2
+  
   github_repo:
     label: GitHub Repo URL
     type: url

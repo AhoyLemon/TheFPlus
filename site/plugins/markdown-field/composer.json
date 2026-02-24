@@ -1,0 +1,51 @@
+{
+  "name": "fabianmichael/kirby-markdown-field",
+  "description": "Super-sophisticated markdown editor for Kirby 4",
+  "homepage": "https://github.com/fabianmichael/kirby-markdown-field",
+  "type": "kirby-plugin",
+  "version": "4.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sylvain Julé",
+      "email": "contact@sylvain-jule.fr"
+    },
+    {
+      "name": "Fabian Michael",
+      "email": "hallo@fabianmichael.de"
+    }
+  ],
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.13",
+		"phpunit/phpunit": "^9",
+		"phpmd/phpmd" : "@stable",
+		"vimeo/psalm": "^5.1"
+  },
+  "require": {
+    "php": ">=8.3.0",
+    "getkirby/composer-installer": "^1.2"
+  },
+  "extra": {
+    "kirby-cms-path": false,
+    "installer-name": "markdown-field"
+  },
+  "minimum-stability": "RC",
+  "scripts": {
+		"linter": "vendor/bin/php-cs-fixer fix --dry-run --diff",
+    "linter:fix": "vendor/bin/php-cs-fixer fix --diff",
+		"test": "phpunit --stderr",
+		"analyze": [
+			"@analyze:composer",
+			"@analyze:psalm",
+			"@analyze:phpmd"
+		],
+		"analyze:composer": "composer validate --strict --no-check-version --no-check-all",
+		"analyze:psalm": "psalm",
+		"analyze:phpmd": "phpmd . ansi phpmd.xml.dist --exclude 'tests/*,vendor/*'"
+	},
+  "config": {
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  }
+}

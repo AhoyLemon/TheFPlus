@@ -1,0 +1,17 @@
+Episode: 36
+
+----
+
+Artist: dijon du jour
+
+----
+
+Caption: Steamboat Simpsons
+
+----
+
+Uuid: arkbvwga7lssxxsh
+
+----
+
+Template: fanimage

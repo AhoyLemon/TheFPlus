@@ -1,0 +1,6 @@
+type: pages
+parent: page.children
+layout: table
+size: small
+sortBy: date desc
+sortable: false

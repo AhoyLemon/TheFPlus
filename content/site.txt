@@ -58,7 +58,7 @@ Social-links:
 - 
   icon: twitter
   url: https://twitter.com/TheFPlus
-  text: @TheFPlus on Twitter
+  text: "@TheFPlus on Twitter"
   _fieldset: page_link
 - 
   icon: paypal
@@ -98,7 +98,7 @@ Social-links:
 - 
   icon: mastodon
   url: https://mastodon.world/@TheFPlus
-  text: @TheFPlus on Mastodon
+  text: "@TheFPlus on Mastodon"
   _fieldset: page_link
 
 ----

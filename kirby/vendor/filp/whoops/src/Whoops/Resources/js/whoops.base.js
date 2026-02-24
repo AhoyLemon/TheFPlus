@@ -25,20 +25,8 @@ Zepto(function($) {
    * highlight the current line
    */
   var renderCurrentCodeblock = function(id) {
-
-    // remove previous codeblocks so we only render the active one
-    $('.code-block').removeClass('prettyprint');
-
-    // pass the id in when we can for speed
-    if (typeof(id) === 'undefined' || typeof(id) === 'object') {
-      var id = /frame\-line\-([\d]*)/.exec($activeLine.attr('id'))[1];
-    }
-
-    $('#frame-code-linenums-' + id).addClass('prettyprint');
-    $('#frame-code-args-' + id).addClass('prettyprint');
-
-    prettyPrint(highlightCurrentLine);
-
+    Prism.highlightAllUnder(document.querySelector('.frame-code-container .frame-code.active'));
+    highlightCurrentLine();
   }
 
   /*
@@ -47,10 +35,6 @@ Zepto(function($) {
    */
 
   var highlightCurrentLine = function() {
-    var activeLineNumber = +($activeLine.find('.frame-line').text());
-    var $lines           = $activeFrame.find('.linenums li');
-    var firstLine        = +($lines.first().val());
-
     // We show more code than needed, purely for proper syntax highlighting
     // Let’s hide a big chunk of that code and then scroll the remaining block
     $activeFrame.find('.code-block').first().css({
@@ -58,17 +42,14 @@ Zepto(function($) {
       overflow: 'hidden',
     });
 
-    var $offset = $($lines[activeLineNumber - firstLine - 10]);
-    if ($offset.length > 0) {
-      $offset[0].scrollIntoView();
+    var line = $activeFrame.find('.code-block .line-highlight').first()[0];
+    // [internal] frames might not contain a code-block
+    if (line) {
+      line.scrollIntoView();
+      line.parentElement.scrollTop -= 180;
     }
 
-    $($lines[activeLineNumber - firstLine - 1]).addClass('current');
-    $($lines[activeLineNumber - firstLine]).addClass('current active');
-    $($lines[activeLineNumber - firstLine + 1]).addClass('current');
-
     $container.scrollTop(0);
-
   }
 
   /*
@@ -98,9 +79,9 @@ Zepto(function($) {
 
   });
 
-  var clipboard = new Clipboard('.clipboard');
+  var clipboard = new ClipboardJS('.clipboard');
   var showTooltip = function(elem, msg) {
-    elem.setAttribute('class', 'clipboard tooltipped tooltipped-s');
+    elem.classList.add('tooltipped', 'tooltipped-s');
     elem.setAttribute('aria-label', msg);
   };
 
@@ -117,7 +98,7 @@ Zepto(function($) {
   var btn = document.querySelector('.clipboard');
 
   btn.addEventListener('mouseleave', function(e) {
-    e.currentTarget.setAttribute('class', 'clipboard');
+    e.currentTarget.classList.remove('tooltipped', 'tooltipped-s');
     e.currentTarget.removeAttribute('aria-label');
   });
 
@@ -175,9 +156,6 @@ Zepto(function($) {
     }
   });
 
-  // Render late enough for highlightCurrentLine to be ready
-  renderCurrentCodeblock();
-
   // Avoid to quit the page with some protocol (e.g. IntelliJ Platform REST API)
   $ajaxEditors.on('click', function(e){
     e.preventDefault();
@@ -207,4 +185,31 @@ Zepto(function($) {
     e.preventDefault();
     setActiveFramesTab($(this));
   });
+
+    // Open editor from code block rows number
+  $(document).delegate('.line-numbers-rows > span', 'click', function(e) {
+    var linkTag = $(this).closest('.frame-code').find('.editor-link');
+    if (!linkTag) return;
+    var editorUrl = linkTag.attr('href');
+    var requiresAjax = linkTag.data('ajax');
+
+    var lineOffset = $(this).closest('[data-line-offset]').data('line-offset');
+    var lineNumber = lineOffset + $(this).index();
+
+    var realLine = $(this).closest('[data-line]').data('line');
+    if (!realLine) return;
+    var fileUrl = editorUrl.replace(
+      new RegExp('([:=])' + realLine),
+      '$1' + lineNumber
+    );
+
+    if (requiresAjax) {
+      $.get(fileUrl);
+    } else {
+      $('<a>').attr('href', fileUrl).trigger('click');
+    }
+  });
+
+  // Render late enough for highlightCurrentLine to be ready
+  renderCurrentCodeblock();
 });
