@@ -11,7 +11,7 @@
  * as a normal Kirby page.
  */
 
-Kirby::plugin('thefplus/tags', [
+Kirby::plugin('ahoylemon/tags', [
 
     // No custom routes needed.
     // Tag filtering uses a plain query string — e.g. /tags?tag=paranoia —

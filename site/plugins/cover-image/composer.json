@@ -1,9 +1,9 @@
 {
-  "name": "ahoylemon/cover-image",
+  "name": "ahoylemon/kirby-coverimage",
   "type": "kirby-plugin",
-  "version": "0.1",
-  "description": "Generate a Atom/JSON/RSS-Feed and XML-Sitemap from Pages-Collections",
-  "homepage": "https://github.com/ahoylemon/cover-image",
+  "version": "0.2",
+  "description": "A Kirby 5 plugin that adds a coverImage() page method returning a stable, human-readable URL for any page's primary image file.",
+  "homepage": "https://github.com/ahoylemon/kirby-coverimage",
   "license": "CC-BY",
   "authors": [
     {
