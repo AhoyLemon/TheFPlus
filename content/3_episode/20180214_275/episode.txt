@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Plane Crazy
 
 ----
 
-Title: Plane Crazy
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mix
 
 ----
 
-Text: 
+Text:
 
 Our world was made a lot smaller with the proliferation of airplanes. Costing hundreds of millions of dollars apiece, an airplane can provide safe and efficient travel over the Atlantic in mere hours. Planes are great! Who *wouldn't* want to fuck one? 
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ldjpaownqabp1oxz

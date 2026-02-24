@@ -46,7 +46,7 @@ Provider: Achilles' Heelies
 
 ----
 
-Text: 
+Text:
 
 NoFap is a community, fortified by Reddit, where men (and hypothetically women, but always men) can discuss how they've reached their full physical and intellectual potential since they've stopped masturbating.  And the results are self-evident when you read the one act plays where parts of their brain argue with their penis. It's a community of tense individuals, and we're gonna figure out why.
 
@@ -62,9 +62,7 @@ Tags: reddit,questionable problem-solving,increase your panic size,the internet 
 
 ----
 
-Bonus-content: 
-
-* [Here is an additional No Fap doc](https://drive.google.com/file/d/0B219Lf3M8OjuMWctcmRyUVNCM0E/view?usp=sharing) provided by [Old Zircon](https://thefpl.us/meet/old-zircon)
+Bonus-content: * [Here is an additional No Fap doc](https://drive.google.com/file/d/0B219Lf3M8OjuMWctcmRyUVNCM0E/view?usp=sharing) provided by [Old Zircon](https://thefpl.us/meet/old-zircon)
 
 ----
 
@@ -88,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -132,3 +130,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: pkwmvb9clozm8fes

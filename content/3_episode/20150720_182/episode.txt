@@ -42,7 +42,7 @@ Provider: Peace
 
 ----
 
-Text: 
+Text:
 
 The human mind is a very confusing and (in some cases) profoundly stupid thing. And for the merchants and community of WarpMyMind.com, that can only mean one thing: *opportunity!*
 
@@ -60,7 +60,11 @@ Tags: hypnotism,sleeeeeep!,a whole new way to be gay,fetishes,profiles of job cr
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 It turns out the group is called "The Disposable Heroes of Hiphoprisy", but here's the recording of Spare Ass Annie alluded to:
 (youtube: https://www.youtube.com/watch?v=smhbMzV570A)
+
+----
+
+Uuid: f7s1nscxuml4xtp8

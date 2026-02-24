@@ -46,7 +46,7 @@ Provider: Positronic
 
 ----
 
-Text: 
+Text:
 
 There's a lot of justifiable reasons for a modern human to be angry, but the mostly anonymous users of PissedConsumer.com haven't stumbled on any of them. Instead, this is a site about screaming into an aching void of your own customer service indignities, real or imaginary.
 
@@ -95,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: tz2hm2rjcnr2m2l9

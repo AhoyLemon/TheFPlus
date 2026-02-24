@@ -1,8 +1,8 @@
-Prevnext: 
+Title: F Plus Live 7 | Seattle, I Guess | Part 2
 
 ----
 
-Title: F Plus Live 7 | Seattle, I Guess | Part 2
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Montrith,Adam Bozarth
 
 ----
 
-Text: 
+Text:
 
 As is tradition, we return from the break drunker than we were when we started, which becomes really obvious in Lemon's failed introductions. But we've got more crap to read, and we're going to read it! In the end, the room shares what they've learned before being visited by a special guest who has an especially smelly message of peace. But first: *more poetry!*
 
@@ -72,7 +72,7 @@ Tags: f plus live,christians,poetry,because drugs
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [F Plus Live: A Study In Waveforms](https://twitter.com/TheFPlus/status/1063619966782590976) (Tweet)
 2. Literary Devices: [Scansion](https://literarydevices.net/scansion)
@@ -104,3 +104,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: tw0e65ya5rzq6y9m

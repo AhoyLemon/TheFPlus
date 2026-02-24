@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Escape From Garbage Day | Part 3
 
 ----
 
-Title: Escape From Garbage Day | Part 3
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: We're halfway through our Escape From Garbage Day and things are looking..
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "13"
@@ -135,7 +135,7 @@ Leadout: The end is in sight.
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -171,3 +171,7 @@ Buttons:
     https://thefpl.us/episode/garbage-day-2022-part-4
   text: Part 4
   target_blank: "0"
+
+----
+
+Uuid: gsh6t5qeptiv1pih

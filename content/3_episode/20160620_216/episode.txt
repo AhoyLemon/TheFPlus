@@ -46,7 +46,7 @@ Provider: The Lesbiathan,Heavenator,The Moon Man
 
 ----
 
-Text: 
+Text:
 
 Victor is feeling a little under the weather, and it just so happens that **Quantum Man** offers "The World's First Downloadable Medicine". In keeping with the spirit of alternative medecine served over the internet, Quantum Man is a gaudy site that promises to cure influenza, malaria, meth addiction, constipation, food allergies, insomnia, erectile dysfunction, and not having your prostate stimulated. And in addition to all that, the product can perform the ever-popular "cleansing your body of toxins", all for the cost of many installments of another cost.
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -134,3 +134,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: 2p51a4v7gnqje8v9

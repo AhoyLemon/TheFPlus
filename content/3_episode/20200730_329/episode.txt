@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Mid Riff Movies
 
 ----
 
-Title: Mid Riff Movies
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Alqemizzy
 
 ----
 
-Text: 
+Text:
 
 The forums may be gone, but the stupidity still abounds on the Internet Movie Database. Good reviews of garbage movies, bad reviews of good movies, and generally creepy undertones to everything. There's more blood, boobs, and beasts than a document from National Geography.
 
@@ -66,7 +66,7 @@ Tags: very popular websites,essays,morons,rants,annoying,movies,hypnotism,visibl
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [NotPoutine, FYI](https://notpoutine.fyi)
 * [Bubbletopia Edmonton](https://www.bubbletopiaedmonton.com/#about)
@@ -101,7 +101,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -156,3 +156,7 @@ Chapter-provider: Adam Bozarth
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: uwargjupppfmvpb2

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Smashed Words
 
 ----
 
-Title: Smashed Words
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Kanyesutra,Kumquatxop
 
 ----
 
-Text: 
+Text:
 
 With half a million works in their catalog, the marketplace at the strangely named **Smashwords** describes itself as “your ebook. your way”. And, as long as “your ebook” is a christian cyberpunk business-minded erotic novalla and “your way” is with rambling paragraphs and keyword-stuffed sentences almost nearly as difficult to follow as this episode description, then you, my friend are in luck. It's all descriptions of ebooks this time around, folks. Settle in.
 
@@ -87,3 +87,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: j8lvojqmbeaoszlw

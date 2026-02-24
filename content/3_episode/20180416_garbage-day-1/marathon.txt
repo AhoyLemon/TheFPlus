@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day (Hours 1 - 6)
 
 ----
 
-Title: Garbage Day (Hours 1 - 6)
+Prevnext: 
 
 ----
 
@@ -38,7 +38,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is Garbage Day! Another 24 Terrible Hours with The F Plus to celebrate bad writing and raise money for the Southern Poverty Law Center. You'd think we'd have learned our lesson.
 
@@ -48,7 +48,7 @@ Portaxx starts us out on the pens as we cast spells, have a braingasm, and do mo
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "1"
@@ -160,7 +160,7 @@ Button-text:
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -176,3 +176,7 @@ Buttons:
 ----
 
 Provider: Draco,Heavenator,The Lesbiathan,Cheapskate,LADY FRENZY,Sham bam bamina!
+
+----
+
+Uuid: u42ojj5hcout2y5r

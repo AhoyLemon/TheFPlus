@@ -1,8 +1,8 @@
-Prevnext: 
+Title: I'll Show You The Life Of The Mind
 
 ----
 
-Title: I'll Show You The Life Of The Mind
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Achilles' Heelies,Cheapskate
 
 ----
 
-Text: 
+Text:
 
 The premise of the Millenial-focused superblog **Thought Catalog** can be neatly summarized in its slogan *All thinking is relevant*. This is infuriating by itself, and not helped by the dozen or so incredibly prolific bloggers who pose the challenge "All thinking is relevant, even... this!?"
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: chwydx82mhuxa6j8

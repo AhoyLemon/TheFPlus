@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Politics of Bimboland
 
 ----
 
-Title: The Politics of Bimboland
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Girlkisser
 
 ----
 
-Text: 
+Text:
 
 Bimboland (or BimboLand or Bimbo Land, depending) is a browser game where where players create an avatar and then level up their stats, try on clothes, and date other bimbos. Much more crucially, the Nation of Bimboland has a state called Atheistia, recognizes Christopher Hitchens' birthday as a national holiday, and has a hotly debated election coming up soon.
 
@@ -66,7 +66,7 @@ Tags: video games that aren't video games,drama queens,forums,i made this site m
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Portaxx's Bimbo: [Bimbonimous Boobsch](https://bimbo.land/bimbo/bimbonimous-boobsch/80766)
 2. Heelies' Bimbo: [Fart Slut](https://bimbo.land/bimbo/fart-slut/80765)
@@ -107,3 +107,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ymkugrccjsk7lyjf

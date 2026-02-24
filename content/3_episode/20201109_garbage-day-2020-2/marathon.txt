@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2020 (hours 7-12)
 
 ----
 
-Title: Garbage Day 2020 (hours 7-12)
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: This garbage year needs a Garbage Day! For our second block, Lemon's gonna
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "7"
@@ -143,7 +143,7 @@ Tags: garbage day,24 terrible hours,the problems of the upper class,recipes,nerd
 
 ----
 
-Leadout: 
+Leadout:
 
 We're halfway through. In [part 3](/episode/garbage-day-2020-3), you're gonna get a *whole lot* of Extra Credit, and you're definitely not gonna get a Daniel Songer impression.
 
@@ -151,7 +151,7 @@ Enjoying this music? [Get it on a slap bracelet](https://thefpl.us/merch/slap-br
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -176,3 +176,7 @@ Buttons:
   url: https://thefpl.us/merch/slap-bracelets
   text: Soundtrack Slap Bracelets
   target_blank: "0"
+
+----
+
+Uuid: ncofzdfngcng9zvu

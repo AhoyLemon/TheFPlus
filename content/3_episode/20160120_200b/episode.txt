@@ -42,7 +42,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 For the second half of our restrospective, we've got a lot of topics we need to cover, including how Victor Laszlo deals with depression and what STOG does in an elevator. Those important matters discussed, we touch on the visibility of women on the internet, how The F Plus met Left Handed Radio, and jokes so bad that they need to be augmented with crickets. The ridiculists then share a few stories about dealing with exhibits in real life, some favorite (and regrettable) moments from the podcast, and a bit of our plans for the future.
 
@@ -58,7 +58,7 @@ Tags: atrocity tourism,nerds,nostalgia,take a look at my navel,describe yourself
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [Cake Wrecks](http://www.cakewrecks.com/)
 * [STOG's birthday cake](http://ballp.it/index.php?topic=1289.msg33451#msg33451)
@@ -102,7 +102,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -175,3 +175,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: 
+
+----
+
+Uuid: zvtsvcnk2dgg5hc9

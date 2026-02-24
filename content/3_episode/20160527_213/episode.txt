@@ -46,7 +46,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 A self-published author has a difficult job to do when it comes to promotion. They've got to follow sales, trends, promotions, press, design, and beyond all that, they go on Good Reads and yell at people who didn't like their book. Well, maybe they *shouldn't* do that last part, but the subjects of today's episode do that anyway.
 
@@ -65,3 +65,7 @@ Tags: nerds,describe yourself in six thousand words,questionable problem-solving
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: ltgarqg4n4ydfbpt

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Steve Bannon Ruined Your Sex Robot Conference
 
 ----
 
-Title: Steve Bannon Ruined Your Sex Robot Conference
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Lemon
 
 ----
 
-Text: 
+Text:
 
 Since 2004, the International Conference on Advances in Computer Entertainment Technology (or ACE, confusingly) has tried to explore the forefront of the intersection between humans and computers. But some changes in the steering committee and a surprise keynote speaker set forth a chain of events we simply must explore.
 
@@ -66,7 +66,7 @@ Tags: please give me money for my stupid idea,force majeure,no refunds,conservat
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. David Levy: [Sex With Robots: Yes!](https://www.youtube.com/watch?v=Yx5L2LAJUSE&feature=youtu.be) (YouTube)
 2. [Many terrifying images of The Telenoid](http://www.geminoid.jp/projects/kibans/res/Telenoid-resources.html)
@@ -112,3 +112,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: 76asch4qlhe0w5x4

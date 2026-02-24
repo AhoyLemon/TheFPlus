@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2020 (Hours 1-6)
 
 ----
 
-Title: Garbage Day 2020 (Hours 1-6)
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: This garbage year needs a Garbage Day! And so The F Plus took it upon them
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "1"
@@ -133,7 +133,7 @@ Tags: chi hua hua,pooner and the snizz,psychics,reddit,old people,garbage day,24
 
 ----
 
-Leadout: 
+Leadout:
 
 We're only a quarter of the way through! Head on over to [part 2](/episode/garbage-day-2020-2) for wikiHow the home game, Jack Chick's poetry prison, and Bunnybread's own Rap Pad!
 <br />
@@ -141,7 +141,7 @@ We're only a quarter of the way through! Head on over to [part 2](/episode/garba
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -170,3 +170,7 @@ Buttons:
   url: https://thefpl.us/also-made/toys
   text: Toys
   target_blank: "0"
+
+----
+
+Uuid: rwdivodyehqubxgw

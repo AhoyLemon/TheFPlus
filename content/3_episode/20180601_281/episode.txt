@@ -1,8 +1,8 @@
-Prevnext: 
+Title: I Want That Inside Me
 
 ----
 
-Title: I Want That Inside Me
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: The Lesbiathan,Heavenator
 
 ----
 
-Text: 
+Text:
 
 Biohack.me is a place for "grinders". That's a word with many definitions, but to the forum community at biohack.me, a grinder is someone who cuts themsleves in order to stick something in the wound, like a magnet or a USB stick. As you might imagine, this episode is a bit *intense*, and I think we came close to making one our readers pass out. So just know that going in.
 
@@ -83,3 +83,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: rcl1hwmppepdjf8z

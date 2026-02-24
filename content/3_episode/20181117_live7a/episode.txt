@@ -1,8 +1,8 @@
-Prevnext: 
+Title: F Plus Live 7 | Seattle, I Guess | Part 1
 
 ----
 
-Title: F Plus Live 7 | Seattle, I Guess | Part 1
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Montrith,Adam Bozarth
 
 ----
 
-Text: 
+Text:
 
 It took us until our seventh F Plus Live to figure out that we could do it somewhere other than Minneapolis, and that we could do it in a theatre! We're so excited about the idea that we start things off with a musical number, before moving right in to reading crap!
 
@@ -73,9 +73,7 @@ Tags: f plus live,poetry,christians,ghosts
 
 ----
 
-Bonus-content: 
-
-* [Photos of the event](https://photos.app.goo.gl/HnG8Sv8vw6mvddfS6)
+Bonus-content: * [Photos of the event](https://photos.app.goo.gl/HnG8Sv8vw6mvddfS6)
 
 ----
 
@@ -112,3 +110,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: 34runct6dwsdhknb

@@ -46,7 +46,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 The *explosive finale*! Montrith turns the screws on the audience, but they prove resiliant.
 
@@ -72,7 +72,7 @@ Tags: f plus live,thanks montrith,furries,juggalos,nerds
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Lemon: [Fuck The Moon](https://gifs.com/gif/f-plus-live-5-lemon-gets-a-brick-thrown-at-him-pgXQM1) (GIF)
 2. Achilles Heelies: [Status Update](https://gifs.com/gif/f-plus-live-5-achilles-heelies-has-a-purse-full-of-optimism-DRPOKK)
@@ -81,3 +81,7 @@ Bonus-content:
 <figure class="fanart"> <video src="https://j.gifs.com/pgXQM1.mp4" autoplay muted loop></video> </figure>
 <figure class="fanart"> <video src="https://j.gifs.com/DRPOKK.mp4" autoplay muted loop></video> </figure>
 <figure class="fanart"> <video src="https://j.gifs.com/GZQnw8.mp4" autoplay muted loop></video> </figure>
+
+----
+
+Uuid: tjlu4fuyxzr6csbm

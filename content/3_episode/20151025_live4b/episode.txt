@@ -42,7 +42,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 Part two goes to different places as we invite the lads from I Don't Even Own A Television to read what they've found. Also, while Adam Bozarth and Nutshell Gulag couldn't make it to the live show, they were kind enough to put together video packages in their stead. Lastly, there's a scene for a detective show (?) and STOG plays a dog.
 
@@ -73,3 +73,7 @@ Bonus-content:
 ----
 
 Cover: live4b.jpg
+
+----
+
+Uuid: w0mvfmzw3f4yand2

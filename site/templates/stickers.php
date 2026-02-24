@@ -1,8 +1,10 @@
 <?php snippet('header') ?>
 
 <?php
-  $pubdate = date('l, F jS Y', $page->date());
-  $pubtime = date("g:ia", strtotime($page->time()));
+  $pubdate = $page->date()->toDate('l, F jS Y');
+  $pubtime = $page->time()->toDate("g:ia");
+  // $pubdate = date('l, F jS Y', $page->date());
+  // $pubtime = date("g:ia", strtotime($page->time()));
 ?>
 
 <main class="main page" role="main">
@@ -15,11 +17,11 @@
         <time class="released" content="<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00">
           <span>Last Release: </span>
           <strong class="date">
-            <?php echo date('l, F jS Y', $page->date()); ?>
+            <?= $pubdate; ?>
           </strong>
           @
           <strong class="time">
-            <?php echo date("g:ia", strtotime($page->time())); ?>
+            <?= $pubtime; ?>
           </strong>
         </time>
       </header>
@@ -41,8 +43,8 @@
               <figure class="thumb-holder">
                 <?php if ($sticker->fullsize() != "") { ?>
                   <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image" full-width="<?= $sticker->fullsize()->toFile()->width(); ?>" full-height="<?= $sticker->fullsize()->toFile()->height(); ?>">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" loading="lazy" />
-                    <?php if ($sticker->almost_gone == "1") { ?>
+                    <img itemprop="image" src="<?= $sticker->pic()->toFile()->url() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" loading="lazy" />
+                    <?php if ($sticker->almost_gone() == "1") { ?>
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="almost-gone">
                         <path d="M-4.3 102l108.6-50.6V102H-4.3z" fill="#333"></path>
                         <path class="almost-gone-text" d="M47.5 90.2c-.5-1.1.2-2 2.3-3.2-.3-.7-.9-1.4-1.8-1-.6.3-1.1.9-1.3 1.3l-.3-.3c.2-.4.7-1.1 1.5-1.4 1.1-.5 1.9.1 2.4 1.2l1.4 3.1-.4.2-.3-.6c-.3.6-.7 1.2-1.4 1.5-.8.2-1.6.1-2.1-.8zm3.2-1.3l-.7-1.6c-1.9 1.1-2.3 1.9-2 2.7.3.7.9.7 1.5.5.5-.3.9-.8 1.2-1.6zm2.4-.6l-3-6.6.4-.2 3 6.6c.1.2.2.3.4.2 0 0 .1 0 .2-.1l.2.3c-.1.1-.1.1-.3.2-.4.3-.7.2-.9-.4zm.4-5.2l.4-.2.4.7c.2-.7.6-1.3 1.1-1.6.8-.4 1.3-.1 1.8.4.3-.8.6-1.5 1.2-1.7 1-.4 1.7-.1 2.3 1.2l1.4 3.1-.4.2-1.4-3c-.5-1-1-1.3-1.8-1-.5.2-.8.7-1 1.6l1.7 3.6-.4.2-1.4-3c-.5-1-1-1.3-1.8-1-.4.2-.8.7-1 1.6l1.7 3.6-.4.2-2.4-4.9zm8.9-1.1c-.7-1.6-.2-3 1-3.5s2.6-.1 3.3 1.5c.7 1.6.1 3-1 3.5-1.2.5-2.6.1-3.3-1.5zm3.8-1.8c-.6-1.3-1.7-1.8-2.7-1.4-1 .4-1.3 1.6-.7 2.9s1.7 1.8 2.7 1.4c.9-.4 1.3-1.6.7-2.9zm2.2 1.3l.1-.4c.6.2 1.1.2 1.8-.1.8-.3.9-1 .7-1.5-.3-.6-1-.6-1.7-.5-.8.1-1.8.1-2.2-.7-.3-.7 0-1.5 1-2 .5-.2 1.1-.3 1.6-.1l-.1.4c-.4-.1-.9-.1-1.3.1-.8.3-.9.9-.7 1.4.3.5.9.5 1.6.5.9-.1 1.8-.2 2.2.7.3.7 0 1.6-1 2.1-.7.3-1.5.3-2 .1zm4.4-3l-1.4-3.1-.8.3-.2-.3.7-.4-.6-1.4.4-.2.6 1.4 1.4-.6.2.4-1.4.6 1.4 3.1c.3.6.6 1 1.3.7.2-.1.4-.3.5-.4l.3.3c-.2.2-.5.4-.7.5-.8.5-1.3 0-1.7-.9zM74.5 90.4c-.2-.4-.1-1 .2-1.5-.3 0-.6-.2-.8-.6-.2-.4 0-.9.1-1.1-.4-.1-.9-.5-1.2-1-.5-1 0-2 .9-2.5.3-.1.5-.2.7-.2l1.6-.7.2.4-1.1.5c.4.1.8.5 1.1 1 .4 1 0 2-.9 2.5-.3.1-.6.2-.9.2-.1.3-.2.6-.1.9.2.3.5.5 1.2.2l1-.5c1.1-.5 1.7-.4 2.1.4s-.1 2-1.5 2.7c-1.2.3-2.2.1-2.6-.7zm1.2-5.7c-.4-.8-1.2-1.1-1.8-.8-.7.3-1 1.1-.6 1.9s1.2 1.1 1.9.8c.5-.3.9-1.1.5-1.9zm2.5 3.7c-.2-.5-.7-.6-1.4-.2l-1 .5c-.1 0-.4.1-.6.2-.3.5-.3 1-.2 1.3.3.6 1 .8 2.1.3.9-.6 1.3-1.5 1.1-2.1zm-.4-3.6c-.7-1.6-.2-3 1-3.5s2.6-.1 3.3 1.5c.7 1.6.1 3-1 3.5s-2.6.1-3.3-1.5zm3.9-1.8c-.6-1.3-1.7-1.8-2.7-1.4s-1.3 1.6-.7 2.9c.6 1.3 1.7 1.8 2.7 1.4s1.2-1.6.7-2.9zm.8-3.3l.4-.2.4.7c.3-.7.6-1.3 1.3-1.6 1-.5 1.7-.1 2.3 1.2l1.4 3.1-.4.2-1.4-3c-.5-1-1-1.4-1.8-1-.6.3-.8.8-1.2 1.6l1.7 3.6-.4.2-2.3-4.8zm6 .2c-.7-1.6-.1-3 .9-3.5 1.1-.5 2.2 0 2.9 1.4.1.1.1.2.1.4L89 79.8c.6 1.2 1.7 1.7 2.8 1.3.5-.2.9-.6 1.1-1l.3.3c-.3.4-.6.8-1.3 1.2-1.3.4-2.7-.1-3.4-1.7zm3.4-1.9c-.6-1.2-1.4-1.6-2.3-1.2-.8.4-1.2 1.4-.8 2.6l3.1-1.4z"></path>
@@ -51,7 +53,7 @@
                     
                   </a>
                 <?php } else { ?>
-                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" loading="lazy" />
+                  <img itemprop="image" src="<?= $sticker->pic()->toFile()->url() ?>" alt="<?= $sticker->title(); ?>" class="thumb" width="320" height="320" loading="lazy" />
                 <?php } ?>
               </figure>
               <div class="details">
@@ -129,7 +131,7 @@
                 <div class="detail third released">
                   <label>Released</label>
                   <div class="text">
-                    <?php if ($sticker->released == "") { ?>
+                    <?php if ($sticker->released() == "") { ?>
                       pending
                     <?php } else { ?>
                       <?php echo $sticker->date('m/d/y', 'released'); ?>
@@ -197,7 +199,7 @@
                       <?php endif; ?>
                     </div>
                   </div>
-                <?php } else if ($sticker->soldout() != "") { ?>
+                <?php } else if ($sticker->soldout()->isNotEmpty()) { ?>
                   <div class="detail full no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <span>SOLD OUT</span>
                     <meta itemprop="availability" content="http://schema.org/SoldOut" />
@@ -205,7 +207,7 @@
                     <meta itemprop="price" content="3" />
                     <meta itemprop="priceValidUntil" content="<?= $sticker->date('m/d/y', 'soldout'); ?>" />
                   </div>
-                <?php } else if ($sticker->released == "") { ?>
+                <?php } else if ($sticker->released() == "") { ?>
                   <div class="detail full no-buttons">
                     <span>PRINTING</span>
                   </div>
@@ -231,12 +233,12 @@
               <meta itemprop="url" content="<?php echo $page->url() . '#'. $sticker->series_num(); ?>" />
               <meta itemprop="description" content="<?php echo strip_tags($page->text()->kirbytext());; ?>" />
               <figure class="thumb-holder">
-                <?php if ($sticker->fullsize() != "") { ?>
+                <?php if ($sticker->fullsize()->isNotEmpty()) { ?>
                   <a class="zoom-photo" full-size="<?= $sticker->fullsize()->toFile()->url() ?>" itemprop="image" full-width="<?= $sticker->fullsize()->toFile()->width(); ?>" full-height="<?= $sticker->fullsize()->toFile()->height(); ?>">
-                    <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" alt="<?= $sticker->title(); ?>" loading="lazy" height="320" width="320" />
+                    <img itemprop="image" src="<?= $sticker->pic()->toFile()->url() ?>" class="thumb" alt="<?= $sticker->title(); ?>" loading="lazy" height="320" width="320" />
                   </a>
                 <?php } else { ?>
-                  <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $sticker->pic()->filename() ?>" class="thumb" loading="lazy" height="320" width="320" />
+                  <img itemprop="image" src="<?= $sticker->pic()->toFile()->url() ?>" class="thumb" loading="lazy" height="320" width="320" />
                 <?php } ?>
               </figure>
               <div class="details">
@@ -314,7 +316,7 @@
                 <div class="detail third released">
                   <label>Released</label>
                   <div class="text">
-                    <?php if ($sticker->released == "") { ?>
+                    <?php if ($sticker->released()->isEmpty()) { ?>
                       pending
                     <?php } else { ?>
                       <?php echo $sticker->date('m/d/y', 'released'); ?>
@@ -322,7 +324,7 @@
                     <?php } ?>
                   </div>
                 </div>
-                <?php if ($sticker->soldout() != ""): ?>
+                <?php if ($sticker->soldout()->isNotEmpty()): ?>
                   <div class="detail third sold-out">
                     <label>Sold Out</label>
                     <div class="text">
@@ -331,7 +333,7 @@
                   </div>
                 <?php endif; ?>
 
-                <?php if ($sticker->soldout() == "" && $sticker->buttona_slug() != ""  && $sticker->released() != "") { ?>
+                <?php if ($sticker->soldout()->isEmpty() && $sticker->buttona_slug() != ""  && $sticker->released()->isNotEmpty()) { ?>
                   <div class="detail full buy-buttons">
                     <label>Buy Now</label>
                     <div class="buttons">
@@ -382,7 +384,7 @@
                       <?php endif; ?>
                     </div>
                   </div>
-                <?php } else if ($sticker->soldout() != "") { ?>
+                <?php } else if ($sticker->soldout()->isNotEmpty()) { ?>
                   <div class="detail full no-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                     <span>SOLD OUT</span>
                     <meta itemprop="availability" content="SoldOut" />
@@ -390,7 +392,7 @@
                     <meta itemprop="price" content="3" />
                     <meta itemprop="priceValidUntil" content="<?= $sticker->date('Y-m-d', 'soldout'); ?>" />
                   </div>
-                <?php } else if ($sticker->released == "") { ?>
+                <?php } else if ($sticker->released()->isEmpty()) { ?>
                   <div class="detail full no-buttons">
                     <span>PRINTING</span>
                   </div>

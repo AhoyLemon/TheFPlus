@@ -34,7 +34,7 @@ Document-link:
 
 ----
 
-Text: 
+Text:
 
 This is the internet, and there are nerdy teenagers on it. As such, there are a lot of people writing a lot of fanfiction about their favorite television shows. Having a podcast with an interest in such things means you have to be discerning, and seek out the fanfiction authors with a certain je ne sais quoi, a mixture of verve and enthusiasm for the written word that causes you to rethink everything you've been taught. Or maybe it's just terrible prose.
 
@@ -90,7 +90,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -153,3 +153,7 @@ Chapters:
 ----
 
 Chapter-provider: Joy Killer
+
+----
+
+Uuid: 0oluhc4euph9ymjr

@@ -46,7 +46,7 @@ Provider: BARK RANGER
 
 ----
 
-Text: 
+Text:
 
 This year, IMDb made the decision to dismantle its own message boards, saying that they didn't provide enough value to the site. This of course piqued our interest and we went to see what kind of conversations could be found there. As it turns out: It was exactly the kind of conversations we'd expect to find there.
 
@@ -95,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: vnfxuj0s6a2wvebz

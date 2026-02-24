@@ -1,8 +1,8 @@
-Prevnext: 
+Title: D'Deer In The Head'dlights
 
 ----
 
-Title: D'Deer In The Head'dlights
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Boots Raingear
 
 ----
 
-Text: 
+Text:
 
 Ulele is a crowdfunding site for self-described makers to get money for projects they may or may not actually follow through with. How does this differ from the several dozen other websites who are doing that exact same thing? Well, first of all Ulule is French. Secondly, shut up.  We've got a $300 VPN box and a jockstrap for your straw boater.
 
@@ -66,7 +66,7 @@ Tags: please give me money for my stupid idea,crowdfunding
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [IDKYBILY is running for president](https://ballp.it/index.php?topic=3164.msg131424#msg131424) (a ballp.it thread)
 2. [anime.js](https://animejs.com/)
@@ -113,3 +113,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3212.0
+
+----
+
+Uuid: 77zw9gdsfoogts5r

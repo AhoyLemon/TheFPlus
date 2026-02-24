@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Don't Forget (I'm) The A-Hole
 
 ----
 
-Title: Don't Forget (I'm) The A-Hole
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Ambious,Cheapskate
 
 ----
 
-Text: 
+Text:
 
 People need a moral arbiter in their lives, and while that's understandable, it's an odd move to trust Reddit to do it for you. And yet, r/AmITheAsshole is there, and it's handling hundreds of conflicts a day.
 
@@ -66,7 +66,7 @@ Tags: reddit
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Letterkenny: [Jonesy & Reilly's Powerpoint presentation](https://www.youtube.com/watch?v=XkP4GTen2Gw) (YouTube)
 2. [Don't Forget The Asshole Stickers](https://thefpl.us/also-made/stickers#10) (sold out)
@@ -97,7 +97,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -153,3 +153,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3141.0
+
+----
+
+Uuid: q2fc9nw4aw49gzn5

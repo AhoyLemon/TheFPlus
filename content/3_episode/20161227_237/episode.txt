@@ -46,7 +46,7 @@ Provider: Nikaer Drekin
 
 ----
 
-Text: 
+Text:
 
 While Grindr may have revolutionized the way people have anonymous gay sex, Craigslist is still a useful repository for people looking for gross furniture, seedy "modeling" jobs and unpaid gigs for exposure. But in addition to all that, they apparently have forums for some reason.
 
@@ -97,3 +97,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: mk5n7zgnyll0resi

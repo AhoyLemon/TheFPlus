@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The F Plus Praises!
 
 ----
 
-Title: The F Plus Praises!
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: SinBucket
 
 ----
 
-Text: 
+Text:
 
 Sourced from all over the internet, we're singing songs of praise and worship (25 of them to be exact) and we expect you to feel our love deep inside you, except not in a sex way this time.
 
@@ -66,7 +66,7 @@ Tags: musicate my lyrics bro,nerds singing into mics,christians,poetry,yahoo
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 ### **REMIX THE F PLUS**
 Wanna take a crack at remixing these? Great. **[here's a zip file](https://drive.google.com/file/d/14SHsbeReusFGSCTXbuVNF5Pbjlzy9b8u/view?usp=sharing) of 6 isolated .ogg files**, plus a document listing each of those files in order. Do whatever you like with them, and then share the results with Lemon.
@@ -100,7 +100,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -216,3 +216,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3375.0
+
+----
+
+Uuid: ildhym4i14zslx7r

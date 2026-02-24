@@ -46,7 +46,7 @@ Provider: Old Zircon
 
 ----
 
-Text: 
+Text:
 
 Do you understand homeopathy? We don't. So we brought The Internet's own K. Thor Jensen along as we took a good long browse through the forums of ABC Homeopathy. We still don't understand homeopathy, but now we know that a lot of the men who are into it have small, thin penises which don't work very well.
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -153,3 +153,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=2277.0
+
+----
+
+Uuid: mpaee7favul2nsgf

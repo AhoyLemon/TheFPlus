@@ -34,7 +34,7 @@ Document-link:
 
 ----
 
-Text: 
+Text:
 
 In our second live show, **The F Plus Improves Your Life** with the following readings...
 
@@ -69,3 +69,7 @@ File-size: 60
 ----
 
 Cover: live2a.jpg
+
+----
+
+Uuid: s7vb74iujea0u7ia

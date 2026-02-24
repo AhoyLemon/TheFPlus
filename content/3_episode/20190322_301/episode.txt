@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Stuffed Full Of Fantasy
 
 ----
 
-Title: Stuffed Full Of Fantasy
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Amelia Blank
 
 ----
 
-Text: 
+Text:
 
 A previous subject from nearly a decade ago, the website of **Fantasy Feeder** is still committed to its cause: Encouraging people to overeat to an absurd degree so that other people can get boners. 
 
@@ -94,7 +94,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -153,3 +153,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3121.0
+
+----
+
+Uuid: yhja6mk6obvrtoli

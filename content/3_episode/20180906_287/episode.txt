@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Shorn To Secrecy
 
 ----
 
-Title: Shorn To Secrecy
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Shell Game,dijon du jour
 
 ----
 
-Text: 
+Text:
 
 We've [previously](https://thefpl.us/episode/278) taught you that being into women's hair is a thing, but it turns out that the cutting of hair is a thing as well. There's a surprising number of sites documenting this fact, and we're looking at several of them, from forums to niche porn to... well, that's really it.
 
@@ -66,7 +66,7 @@ Tags: hair,how in the hell did you get that fetish?,forums
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [PRETEND 🌐 WORLD](https://pretend.world)
 2. [AhoyLemon.xyz](https://ahoylemon.xyz)
@@ -107,3 +107,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: stpeu89agaxapfuz

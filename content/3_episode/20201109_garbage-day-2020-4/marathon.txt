@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2020 (Hours 19-24)
 
 ----
 
-Title: Garbage Day 2020 (Hours 19-24)
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: The final block of hours lies ahead of us. We've got inedible recipes from
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "19"
@@ -150,7 +150,7 @@ Leadout: You made it to the end? Or you just scrolled all the way to the bottom 
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -175,3 +175,7 @@ Buttons:
   url: https://thefpl.us/merch/slap-bracelets
   text: Soundtrack Slap Bracelets
   target_blank: "0"
+
+----
+
+Uuid: y5fzkawzxbtrgbdc

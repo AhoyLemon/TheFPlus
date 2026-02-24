@@ -1,8 +1,8 @@
-Prevnext: 
+Title: So, I Guess I'll Just Keep Holding Out For A Hero
 
 ----
 
-Title: So, I Guess I'll Just Keep Holding Out For A Hero
+Prevnext: 
 
 ----
 
@@ -62,9 +62,7 @@ Tags: describe yourself in six thousand words,a whole new way to be gay,watching
 
 ----
 
-Bonus-content: 
-
-1. [Seattle Supervillian Rex Velvet Calls Out Phoenix Jones](https://www.youtube.com/watch?v=Ivkzosgyx-U) (YouTube)
+Bonus-content: 1. [Seattle Supervillian Rex Velvet Calls Out Phoenix Jones](https://www.youtube.com/watch?v=Ivkzosgyx-U) (YouTube)
 
 ----
 
@@ -97,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: mbbdgsn54h4wsdad

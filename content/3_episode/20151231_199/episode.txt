@@ -42,7 +42,7 @@ Provider: Amelia Blank
 
 ----
 
-Text: 
+Text:
 
 This episode comes to you from 600 episodes in the *future!* In that time, there are people who go to a poorly designed forum and say completely improbable things about themselves and how they got here, and these improbable things go completely unchallenged by the other posters on the forum. More importantly, they share schematics of how *you* can build your very own time machine.
 
@@ -58,7 +58,7 @@ Tags: time travel,paranoia,forums,terrible drawings,science fiction is now scien
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * Seb Pearce's [New Age Bullshit Generator](http://sebpearce.com/bullshit/)
 * A picture of Catherine's Time Machine:
@@ -90,7 +90,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -135,3 +135,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: 9dvtdlviewwknhgv

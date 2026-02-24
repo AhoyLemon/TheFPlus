@@ -1,8 +1,8 @@
-Prevnext: 
+Title: DIY Junk Machines
 
 ----
 
-Title: DIY Junk Machines
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cat Examiner
 
 ----
 
-Text: 
+Text:
 
 For well over a decade, John James has been committed to a single mission: Disrupting the economics of the global sex industry by innovationg solutions of upcycled aftermarket parts. By that, I mean that John James makes things for him to put his dick inside of and then recommends that you do the same. It's a very squishy episode, and also there's drawings.
 
@@ -66,7 +66,7 @@ Tags: fuck machines,great britain's greatest perverts,yahoo,do-it-yourself thera
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 **All these links are gonna be NSFW**. Please know that going in.
 1. [The Soap Hole](https://web.archive.org/web/20080702114806/http://www.homemade-sex-toys.com:80/soap-holing.html) (drawings, wayback machine)
@@ -100,7 +100,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -150,3 +150,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3157.0
+
+----
+
+Uuid: mb3tcrxui8rud61u

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: 凸(◎益◎)凸
 
 ----
 
-Title: 凸(◎益◎)凸
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 If you visit RantRampage.com, you'll find that the middle 390 pixels are filled with thousands of grievances filed by anonymous people  on every available subject. That's followed by dozens of comments by more anonymous people who are wholly disinterested in having a productive conversation, but they sure do have a lot of things they hate.
 
@@ -67,3 +67,7 @@ Tags: thanks montrith,lazy people,rants,teenagers
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: xtlox69apszlfhe6

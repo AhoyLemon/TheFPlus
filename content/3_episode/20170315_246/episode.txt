@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Compose With Joystick Controllers
 
 ----
 
-Title: Compose With Joystick Controllers
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Achilles' Heelies
 
 ----
 
-Text: 
+Text:
 
 Cartridge Lit invites visitors to share video-game inspired poetry and prose, and a number of people have taken them up on that invitation, bringing their credentials with them. And so, what we have in this episode is a straight hour of reading meticulously written video game literature, and if it hurts you half as much as it hurt us, you're gonna need some Percocet before you hit play.
 
@@ -66,7 +66,8 @@ Tags: video games,poetry,mfa candidates,nerds,incomprehensible,tag!
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [24 Terrible Hours Promo](/podcasts/24th.mp3) by itself
 
-1. [24 Terrible Hours Promo](/podcasts/24th.mp3) by itself
+----
 
+Uuid: 5fvhmqimkvba6kmq

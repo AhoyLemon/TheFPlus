@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Failure Is The Only Option
 
 ----
 
-Title: Failure Is The Only Option
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 The Redditors on **r/NEET** self describe as "**N**ot in **E**ducation, **E**mployment or **T**raining", and yes that may be a very clumsy acronym, but what they're trying to tell is that they don't work, or go to school, or even do anything like chores. This makes some of them feel special and some of them feel sad, but if they feel sad it's just the fault of women.
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3250.0
+
+----
+
+Uuid: y78fouahmcr60nqr

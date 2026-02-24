@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Our First And Only Vore Episode
 
 ----
 
-Title: Our First And Only Vore Episode
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Spooks
 
 ----
 
-Text: 
+Text:
 
 It's kind of weird that a podcast that's existed for as long as ours has, that covers the sort of material that we do, has yet to do a full-on vore episode. Just a primer in case you need it: Vore is the (predominantly furry) preoccupation with one party eating the other. It's separate from cannibalism because there's a size differential and complete disregard for physical reality which tends to make it less gross. That is, until the ambulance shows up. Once the ambulance shows up, it's a whole different thing.
 
@@ -87,3 +87,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: rjctmze6sa11tjdq

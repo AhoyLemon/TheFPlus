@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Not Always On Topic
 
 ----
 
-Title: Not Always On Topic
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Dawnswalker
 
 ----
 
-Text: 
+Text:
 
 Previous subject notalwaysright.com (which titles itself as "Not Always Right - Funny & True Stores") has sections other than the one where cashiers totally own customers and then everyone applauds afterwards. In this episode, we look at **Not Always Romantic**, allegedly true and allgedly funny stories about couples being really adorable together. It is absolutely dreadful, so we talk about other things instead.
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: bip0t3mmblfxrl9g

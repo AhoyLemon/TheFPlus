@@ -46,7 +46,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 According to the Washington Post, roughly 2 million people a year take the Myers-Briggs Type Indicator. And according to A Number I Just Made Up, 66% of those were administered by people who work in corporate HR departments, habitually doing the voice of the boss from Office Space, like she's making fun of that mentality, except she's actually saying the thing she's pretending she's mocking and it's not funny, Linda.
 
@@ -64,11 +64,10 @@ Tags: reddit,do-it-yourself therapy,the internet isn't helping,a cosmo quiz that
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 <figure class="fanart"> <img src="/episode/232/potter-grid.jpg"> <figcaption>a helpful chart</figcaption></figure>
 <figure class="fanart"> <img src="/episode/232/meme-portaxx-1.jpg"> <figcaption>Boo, Portaxx</figcaption></figure>
-
 
 ----
 
@@ -101,3 +100,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: jo2n6tzquklddezh

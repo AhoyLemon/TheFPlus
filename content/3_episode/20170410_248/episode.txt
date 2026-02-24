@@ -1,8 +1,8 @@
-Prevnext: 
+Title: All World Keyboard Wrestling And Roughhouse feDeration
 
 ----
 
-Title: All World Keyboard Wrestling And Roughhouse feDeration
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 There's a lot of enthusiastic wrestling fans in the world, and some of them dream of one day becoming professional wrestlers in their own right. In the real world that would take a lot of diligence, luck, and willingness to adopt a lifelong addiction to painkillers - but this is the internet: a place for dreamers.
 
@@ -68,7 +68,7 @@ Tags: rasslin,nerds,wiki,fanfiction,thanks montrith,it's real to me damn it,desc
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [The Vimeo Profile](https://vimeo.com/user53623106) for Maffew, creator of the Botchamania series
 * Chikara: [Low Ceiling](https://youtu.be/2EhmWwX5n0I?t=10s) (YouTube Video)
@@ -104,3 +104,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ki4mhrkesac0awt4

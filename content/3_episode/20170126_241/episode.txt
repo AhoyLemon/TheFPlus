@@ -46,7 +46,7 @@ Provider: Megacrex Inepta,Boots Raingear
 
 ----
 
-Text: 
+Text:
 
 Drugs Forum is (and this may surprise you) a forum where people talk about using drugs. That is, hundreds of thousands of people, over millions of threads, gathering to discuss the drugs they're doing, have recently done, or wish to do in the very near future. It's a vibrant community which, after many years, finally figured out the best way to go rollerblading.
 
@@ -62,7 +62,7 @@ Tags: thanks montrith,edit point,forums,poetry,very popular websites,because dru
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Stickers!](https://thefpl.us/also-made/stickers) 
 2. [@ErowidRecruiter](https://twitter.com/erowidrecruiter)
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: b6ltpvvgryvo5wkh

@@ -42,7 +42,7 @@ Provider: BomberJacket
 
 ----
 
-Text: 
+Text:
 
 Have you ever been out in the middle of nowhere, probably camping or playing golf, and then realizing you really, really need to pee? Have you ever entertained the idea of being the secret MacGuyver of peeing, using a machine to discreetly empty your bladder while chatting with company? No? Okay, well, have you ever spent late nights on the Internet, looking for synthetic pee to go with your 'peeing robot' costume for Halloween? Not that either? Um... okay. Well, congratulations! Here's an episode about urine and urine accessories.
 
@@ -63,3 +63,7 @@ Bonus-content:
 ----
 
 Cover: ep191.jpg
+
+----
+
+Uuid: 5jwsmfrfd5nxqdgj

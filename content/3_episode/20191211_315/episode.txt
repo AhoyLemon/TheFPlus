@@ -1,8 +1,8 @@
-Prevnext: 
+Title: A Representative Sample Of Fetlife
 
 ----
 
-Title: A Representative Sample Of Fetlife
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 Over six years ago, Montrith gave us a Fetlife document. So thanks, Montrith.
 
@@ -66,7 +66,7 @@ Tags: fetishes,bondage,thanks montrith
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Portaxx's drawing](https://thefpl.us/episode/315/chimera-01.png) of  of JingOtouna42 the goat/shark/crow/tiger/snake/aye-eye chimera (SFW, but profoundly erotic)
 2. [World Chase Tag Compilation](https://www.youtube.com/watch?v=A3_Ieginod4) (YouTube)
@@ -111,3 +111,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3297.0
+
+----
+
+Uuid: giwrqof5yxsfqt0i

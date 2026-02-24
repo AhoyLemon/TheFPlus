@@ -46,7 +46,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 Finland's plot is *unleashed!* In the fifth F Plus Live show (The Finnish Incident), each reader will approach the stage to be met by Montrith's courier, who will give them material they have never seen before and must read right then and there. The results are dramatic.
 
@@ -72,7 +72,7 @@ Tags: f plus live,thanks montrith
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Visit [the ball snuff club](http://ballsnuff.club) for all the plastic ball destruction you could ever hope for (site by Boots).
 2. STOG: [This is garbage](https://gifs.com/gif/f-plus-live-5-stog-gets-the-first-package-pgXwV6) (GIF)
@@ -82,3 +82,7 @@ Bonus-content:
 <figure class="fanart"> <video src="https://j.gifs.com/pgXwV6.mp4" autoplay muted loop></video> </figure>
 <figure class="fanart"> <video src="https://j.gifs.com/0gXqM7.mp4" autoplay muted loop></video> </figure>
 <figure class="fanart"> <video src="https://j.gifs.com/Y6l6Nn.mp4" autoplay muted loop></video> </figure>
+
+----
+
+Uuid: yuise65xvmheihcd

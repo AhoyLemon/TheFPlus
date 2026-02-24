@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Carne Idiota
 
 ----
 
-Title: Carne Idiota
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: R.S. Benedict
 
 ----
 
-Text: 
+Text:
 
 The redditors at r/ZeroCarb have a particular diet they want to share with you, and here it is: **Meat**. Meat at the exclusion of literally everything else. Every other comestible on the planet contains toxins, so they've found perfect health. Also they're all getting hives and incontinence and a myriad of sexual, respiratory and sleep problems, but that's probably entirely unrelated. 
 
@@ -107,3 +107,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: 4qesrh5x4uyrianb

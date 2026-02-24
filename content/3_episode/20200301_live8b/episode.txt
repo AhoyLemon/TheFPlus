@@ -1,8 +1,8 @@
-Prevnext: 
+Title: wikiHow The Game Show | F Plus Live 8 | Heat 2
 
 ----
 
-Title: wikiHow The Game Show | F Plus Live 8 | Heat 2
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 * King Lou Fernandez - How to Survive a Freestyle Rap Battle
 * Jack Chick - How to Become Pope
@@ -73,7 +73,7 @@ Tags: f plus live,game show,wikihow,advice,dapper rapper,incomprehensible,things
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [F Plus Live photo gallery](https://photos.app.goo.gl/6p156hbnAZgqYmoT9)
 2. [YouTube playlist](https://www.youtube.com/playlist?list=PLbDEABAdDXRXKTMoaaw_KSvF9kceCVpBi)
@@ -107,7 +107,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -146,3 +146,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3245.0
+
+----
+
+Uuid: eolgwqworfbijpg6

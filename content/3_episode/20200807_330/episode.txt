@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Rites of Price: Amazon Edition
 
 ----
 
-Title: The Rites of Price: Amazon Edition
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Secret Gaygent 69
 
 ----
 
-Text: 
+Text:
 
 User reviews on Amazon drive a lot of purchasing decisions, so let's have another look at the two most important categories: Cosplay accessories and erotic gay shapeshifter novels. And then when that's done, we're playing The Rites of Price.
 
@@ -66,7 +66,7 @@ Tags: game show,amazon,the rites of price,kindleporn,dick plumpin,new age
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [view all work by JP Graphics Designs](https://www.amazon.com/s?i=digital-text&rh=p_27%3AJP+Graphics+Designs&s=relevancerank&text=JP+Graphics+Designs&ref=dp_byline_sr_ebooks_3) (Amazon)
 * Pyramid hats were previously mentioned in [Episode  126: Acquire the Spiritual Energy of a Tiny Dead Pharoah](https://thefpl.us/episode/126)
@@ -101,7 +101,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -190,3 +190,7 @@ Chapter-provider: Lemon
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: f3klmuhc5gvyebrp

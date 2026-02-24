@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Screenplays of ComicsNix
 
 ----
 
-Title: The Screenplays of ComicsNix
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Eider Duck
 
 ----
 
-Text: 
+Text:
 
 ComicsNix is a somewhat prolific fan fiction author who became a brief point of internet interest after writing a story where Severus Snape has sex with all the Teletubbies. But that's passé now, so we're off to explore his other, more intellectual works — like the one where Batman has sex with Robocop in order to stimulate amnesia, or the complications that arose after Bella Swan summoned Satan to be her personal bodyguard.
 
@@ -66,7 +66,11 @@ Tags: fanfiction,scriptwriters can write!,how in the hell did you get that fetis
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [greatsex.tips](https://greatsex.tips)
 2. [trumps.pw](http://trumps.pw)
+
+----
+
+Uuid: bm5t9lxoz53iuisx

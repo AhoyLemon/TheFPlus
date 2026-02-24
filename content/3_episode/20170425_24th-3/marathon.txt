@@ -1,8 +1,8 @@
-Prevnext: 
+Title: 24 Terrible Hours (Hours 13-18)
 
 ----
 
-Title: 24 Terrible Hours (Hours 13-18)
+Prevnext: 
 
 ----
 
@@ -30,7 +30,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is 24 Terrible Hours: a full day podcasting marathon celebrating bad writing and raising money for the Southern Poverty Law Center. It was broadcast live on March 31, 2017. It seemed like a good idea at the time.
 
@@ -38,7 +38,7 @@ Time gets the best of Lemon and the surviving Ridiculists seek comfort while spe
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "13"
@@ -139,3 +139,7 @@ Record-date-end: 2017-04-01
 ----
 
 Record-time-end: 11:00
+
+----
+
+Uuid: el8wq0oobadwbg8a

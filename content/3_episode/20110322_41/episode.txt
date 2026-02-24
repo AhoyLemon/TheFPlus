@@ -34,7 +34,7 @@ Document-link:
 
 ----
 
-Text: 
+Text:
 
 The multiple award winning screenwriter Billy Wilder once said "Don't be too clever for an audience. Make it obvious. Make the subtitles obvious also." To that end, I think Mr. Wilder would applaud the fanfiction writers who we've profiled for this episode. We have Resident Evil and CSI screenplays featuring characters who actually speak their own stage direction along with the dialogue. And after that? A Star Wars crossover you probably weren't expecting. 
 
@@ -63,3 +63,7 @@ File-size: 45
 ----
 
 Cover: ep041.jpg
+
+----
+
+Uuid: ftjevdzfylltxlbq

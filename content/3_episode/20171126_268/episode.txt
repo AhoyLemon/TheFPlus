@@ -1,8 +1,8 @@
-Prevnext: 
+Title: How To Win At ASCII Art
 
 ----
 
-Title: How To Win At ASCII Art
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Girlkisser,Shell Game,Yavuz Sultan Salim
 
 ----
 
-Text: 
+Text:
 
 Since 1995, GameFAQs has served as a hub for video game walkthroughs and strategies. While this is of little concern to our podcast, the fact that this website *also* contains a forum where video game enthusiasts can share their thoughts concerns us. Having now read the thoughts they feel are worth sharing, we're simply concerned.
 
@@ -66,7 +66,8 @@ Tags: very popular websites,video games,forums,no homo,fetishes,the mysteries of
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [Ten Unpleasant Porno Games](http://www.seanbaby.com/nes/nes/naughty.htm) (Seanbaby.com)
 
-1. [Ten Unpleasant Porno Games](http://www.seanbaby.com/nes/nes/naughty.htm) (Seanbaby.com)
+----
 
+Uuid: n6ji5fhhhglqirae

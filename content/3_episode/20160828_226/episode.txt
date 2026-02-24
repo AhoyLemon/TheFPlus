@@ -46,7 +46,7 @@ Provider: Spooks
 
 ----
 
-Text: 
+Text:
 
 Launched in 1999, eHow is a content farm built to give advice on how to perform crucial tasks and it is, crucially, not wikiHow. It's still very much F Plus worthy though, as you can see from articles like "How to Give a Milk Enema", "How To Text A Girl Without Being Creepy", and "How To Kick A Cocaine Habit At Home By Yourself".
 
@@ -62,6 +62,8 @@ Tags: wikihow,not actually wikihow,misguided diy,your bachelorette party sucks c
 
 ----
 
-Bonus-content: 
+Bonus-content: (youtube:https://www.youtube.com/watch?v=4dKwHOfd2dk)
 
-(youtube:https://www.youtube.com/watch?v=4dKwHOfd2dk)
+----
+
+Uuid: o7b16tifwuhfkgic

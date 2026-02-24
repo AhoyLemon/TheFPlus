@@ -46,7 +46,7 @@ Provider: Stinky Pete
 
 ----
 
-Text: 
+Text:
 
 The Sonic the Hedgehog franchise has a fanbase that frequently creates their own "original characters" with all of the care, originality and effort that went into the characters they're emulating (which is a compliment to nobody). At the Sonic Fan Character wiki, we're going to read about them, because the world needs to know about Sonic the Hedgehog's cousin, Jack.
 
@@ -62,7 +62,7 @@ Tags: teenagers,sonic the hedgehog,fanfiction,video games that aren't video game
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Isfahano's Venetian Temptations](https://ballp.it/index.php?topic=2127.msg71249#msg71249), by Zekka
 2. [Browse Images](http://sonicfanchara.wikia.com/wiki/Special:Images) on the Sonic Fan Wiki
@@ -96,7 +96,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -163,3 +163,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=2390.0
+
+----
+
+Uuid: sxnrdlkvvziwg4hz

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day (Hours 13 - 18)
 
 ----
 
-Title: Garbage Day (Hours 13 - 18)
+Prevnext: 
 
 ----
 
@@ -26,7 +26,7 @@ Cast: Frank West,Boots Raingear,Lemon,John Toast,Portaxx,Lou Fernandez,Zarla,She
 
 ----
 
-Text: 
+Text:
 
 This is Garbage Day! Another 24 Terrible Hours with The F Plus to celebrate bad writing and raise money for the Southern Poverty Law Center. You'd think we'd have learned our lesson.
 
@@ -54,7 +54,7 @@ Record-time-end: 04:55
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "13"
@@ -147,7 +147,7 @@ Hours:
 
 ----
 
-Leadout: 
+Leadout:
 
 We're almost there, folks! The [final 6 hours](https://thefpl.us/episode/garbage-day-4) will contain Juggalo Poetry, Jerk off Instructions and WIKIHOW! Keep going, you're not done yet.
 
@@ -155,7 +155,7 @@ We're almost there, folks! The [final 6 hours](https://thefpl.us/episode/garbage
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -180,3 +180,7 @@ Buttons:
 ----
 
 Provider: krytton,Heavenator,The Lesbiathan,Nikaer Drekin,Cheapskate,LINDA,Girlkisser
+
+----
+
+Uuid: orfbqvvw1pyblsba

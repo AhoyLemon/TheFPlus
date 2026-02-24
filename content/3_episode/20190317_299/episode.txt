@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Lavender Scissors Overlord
 
 ----
 
-Title: Lavender Scissors Overlord
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 With a couple dozen books in the Kindle store at about 300 pages apiece, Morgan Blayde's contributions to the urban fantasy genre could best be described as "relentless". His protagonist has a magical tattoo that helps him straight up murder a hundred guys in hand to hand combat, and I don't need to tell you that the female characters in his books like that very much indeed.
 
@@ -94,7 +94,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -160,3 +160,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Uuid: siookdcvn57s9j0r

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day (Hours 7 - 12)
 
 ----
 
-Title: Garbage Day (Hours 7 - 12)
+Prevnext: 
 
 ----
 
@@ -38,7 +38,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is Garbage Day! Another 24 Terrible Hours with The F Plus to celebrate bad writing and raise money for the Southern Poverty Law Center. You'd think we'd have learned our lesson.
 
@@ -46,7 +46,7 @@ We had a strong start, so let's dig in deep to the next six hours of Garbage Day
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "7"
@@ -158,7 +158,7 @@ Button-text:
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: 'https://thefpl.us/also-made/stickers#17'
@@ -187,3 +187,7 @@ Buttons:
 ----
 
 Provider: Heavenator,The Lesbiathan,Mix,Shell Game,Lemon,Boots Raingear,Cheapskate,Zekka
+
+----
+
+Uuid: vngzwyigf3f7igp0

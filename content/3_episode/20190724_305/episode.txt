@@ -1,8 +1,8 @@
-Prevnext: 
+Title: You Get Wet
 
 ----
 
-Title: You Get Wet
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cat Examiner
 
 ----
 
-Text: 
+Text:
 
 There aren't a whole lot of people who visit the iSoaker family of websites, but you can't deny the passion they have in their hobby. This is an episode of meticulously documenting all the squirt guns to have ever existed, of the life-changing obsession of being super into squirt guns, and about the super cool bad ass things these full grown adults do when they're holding a squirt gun and dressed in a ninja outfit.
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3203.0
+
+----
+
+Uuid: 8k71485a60zzrghq

@@ -18,7 +18,7 @@ Show-image: true
 
 ----
 
-Text: 
+Text:
 
 These hooded Next Level Tri Blend long sleeve shirts are 50% polyester, 25% cotton, 25% rayon, and 100% terrific. It's a complicated world out there, let it know that you're eight years old and like fried chicken. These shirts are comfortable as fuck and just what you need in the coming months, but they do tend to run a little small, so please consider that when you're buying.
 $25 gets you an F Plus shirt, shipped to you by Priority Mail, so it should arrive in a couple days. Shipping has been factored into the price, depending on your location. Order up, cause when this batch is gone, that's it.
@@ -47,7 +47,7 @@ Baseprice: $20
 
 ----
 
-Photos: 
+Photos:
 
 - 
   series_num: ""
@@ -122,3 +122,7 @@ Photos-leadin: some 8 year olds...
 ----
 
 Share-cta: 
+
+----
+
+Uuid: new1enkyomk04bfh

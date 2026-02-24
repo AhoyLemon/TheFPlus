@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Butter Business Bureau
 
 ----
 
-Title: Butter Business Bureau
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: A Meat
 
 ----
 
-Text: 
+Text:
 
 The folks over at **Bulletproof** tried selling coffee with butter in it. And not only did that plan work, but their customers were willing to pay a premium for the experience. So with that lesson learned they expanded the product line: Protein bars, tinctures, vibrating platforms, books, computers with pre-installed software. These are products designed to* reverse the aging process*. And if that sales pitch sounds compelling to you, please give me your credit card information.
 
@@ -107,3 +107,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: eoxbnmqhzf0wxbai

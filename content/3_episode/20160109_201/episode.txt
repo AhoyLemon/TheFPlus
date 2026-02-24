@@ -42,7 +42,7 @@ Provider: Nikaer Drekin
 
 ----
 
-Text: 
+Text:
 
 For a number of years, and across several different forms of media, Alex Jones has been preaching his own brand of “The Truth” and has built a following doing so. Jones has an agenda to push, but more than that, Jones also has a whole bunch of crap to sell you. That's what we're focusing on here; a whole episode dedicated only to the products sold through InfoWars, including DVDs, shirts and nutritional supplements. 
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -134,3 +134,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: 
+
+----
+
+Uuid: sv5qb2t50ktyjk3a

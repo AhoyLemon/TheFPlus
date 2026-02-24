@@ -1,8 +1,8 @@
-Prevnext: 
+Title: 24 Terrible Hours (Hours 7-12)
 
 ----
 
-Title: 24 Terrible Hours (Hours 7-12)
+Prevnext: 
 
 ----
 
@@ -30,7 +30,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is 24 Terrible Hours: a full day podcasting marathon celebrating bad writing and raising money for the Southern Poverty Law Center. It was broadcast live on March 31, 2017. It seemed like a good idea at the time.
 
@@ -38,7 +38,7 @@ As the donations continue to roll in, the listeners make us read a horrible thin
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "7"
@@ -156,3 +156,7 @@ Provider:
 ----
 
 Buttons: 
+
+----
+
+Uuid: c2fq7eq9dppst9bw

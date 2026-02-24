@@ -42,7 +42,7 @@ Provider: A Meat
 
 ----
 
-Text: 
+Text:
 
 What a wonderful time it must be if you're the owner of a crowd funding website! Presenting one such example, GoFundMe is a crowdfunding site where people can raise money for a cause without being hampered by constraints like minimums or timelines.  Is this a good model for persons deserving of help and/or charity? *Emphatically yes.*  However, as you might expect, none of the people covered in this episode are terrific examples of this.
 
@@ -95,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: oahnuq5bvibtgbtk

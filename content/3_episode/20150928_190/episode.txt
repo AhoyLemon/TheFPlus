@@ -42,7 +42,7 @@ Provider: Captain Laser Pants
 
 ----
 
-Text: 
+Text:
 
 Life is a scary and emotionally draining thing. So it's understandable that we deal with stress, loneliness and fear by using various coping mechanisms. We drink, we smoke, we have casual sex, and sometimes, we suck our thumbs. Nothing about this is terribly weird or shocking, right? Well,  how about you spend an hour listening to internet spew about thumbsucking and see how you feel afterwards?
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -140,3 +140,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: laqfxuswoib3a3vd

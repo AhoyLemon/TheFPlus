@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Thermodynamic Martinets & Jar Jar Breasts
 
 ----
 
-Title: Thermodynamic Martinets & Jar Jar Breasts
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 There's a fella on the internet by the name of saganfan1983 who has a lot of opinions to share about the issues that affect us all, like what breasts should look like or if it's okay to eat that one fish from The Phantom Menace. Oh! Also he built a spaceship. It totally works.
 
@@ -67,3 +67,7 @@ Tags: focus on a single twit,somehow not a dozerfleet episode,watching too much 
 ----
 
 Bonus-content: * [F Plus Live 6](https://thefpl.us/wrote/f-plus-live-6)
+
+----
+
+Uuid: lfehfwxsz8jndhwy

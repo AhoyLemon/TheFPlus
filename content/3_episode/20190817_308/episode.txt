@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Is It Edible?
 
 ----
 
-Title: Is It Edible?
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Wrought
 
 ----
 
-Text: 
+Text:
 
 Originally launched in 2005, **Is It Normal?** is a website where people can describe their own peculiarities, and the rest of the internet can weigh in on if that is "normal" or not. For our second trip to the site, we're looking specifically at the food-related questions that people have asked the site, and learning very little in the process.
 
@@ -66,7 +66,7 @@ Tags: support groups,teenagers,the internet isn't helping
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Is It OK To?](https://www.isitokto.com/) (IsItNormal's sister site)
 2. [Quizno's Vermin Commercial](https://www.youtube.com/watch?v=ZuPTZWhz46M) (YouTube)
@@ -110,3 +110,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3219.0
+
+----
+
+Uuid: ywnigpye5uee1hqa

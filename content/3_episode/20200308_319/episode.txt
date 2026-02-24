@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Alkaline Trip
 
 ----
 
-Title: The Alkaline Trip
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Tipsy Almond
 
 ----
 
-Text: 
+Text:
 
 Alfredo Bowman (aka Dr. Sebi) made an interesting discovery about germ theory: Namely, that there is only one germ, which causes a disease called "disease", which causes mucus, which in turn causes disease. And germs. Also beets cause perpetual motion. It's all very sensible, so please buy this £40 tea.
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3351.0
+
+----
+
+Uuid: 2okadfdcikjmh5nv

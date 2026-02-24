@@ -18,7 +18,7 @@ Cast: LADY FRENZY,Lemon
 
 ----
 
-Text: 
+Text:
 
 Guess what, nerds? It's Football Congress!	These 60/40 Cotton/Polyester blend Live and Tell Apparel shirts are the perfect thing to wear when drinking a Michelob Golden, punchin' a nerd, or ratifying a treaty on swirlies. With the Congressional Seal on the front and your player number on the back, rest assured they'll see you coming and they'll recognize your status right away. The fiber blend means that one wash will make this nice and comfortable, after two washes it's pyjama-ready. <a href="http://www.customink.com/items/sizing/286800_lineup/standard.htm" target="_blank">Click here for sizing</a>
 
@@ -46,7 +46,7 @@ Baseprice: $20
 
 ----
 
-Photos: 
+Photos:
 
 - 
   series_num: ""
@@ -136,3 +136,7 @@ Share-cta:
 ----
 
 Button-text: 
+
+----
+
+Uuid: 4jhb0cvozxs5u5v8

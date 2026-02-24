@@ -1,8 +1,8 @@
-Prevnext: 
+Title: A Glove Fetish Is Like A Watch Fetish But With Gloves
 
 ----
 
-Title: A Glove Fetish Is Like A Watch Fetish But With Gloves
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Ray Thompson
 
 ----
 
-Text: 
+Text:
 
 The World Wide Glove Fetish Association (or WWGFA, for those in the know) is a surprisingly popular forum where the predominantly British members discuss the intricacies of their fetish for gloves while a dedicated group of niche pornographers try to exploit them.
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: c6v3wv9k55ch0u9s

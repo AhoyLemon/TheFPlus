@@ -1,8 +1,8 @@
-Prevnext: 
+Title: wikiHow The Game Show | F Plus Live 8 | Heat 1
 
 ----
 
-Title: wikiHow The Game Show | F Plus Live 8 | Heat 1
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 On January 18th of 2020, The F Plus came to Portland in order to do something very stupid indeed. Sixteen players would come up to the stage, one by one, and read randomly selected content they have never seen before, in order to prove who is the motherfucking best.
 
@@ -75,7 +75,7 @@ Tags: f plus live,game show,wikihow,advice,i'm sorry dad
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [F Plus Live photo gallery](https://photos.app.goo.gl/6p156hbnAZgqYmoT9)
 2. [YouTube playlist](https://www.youtube.com/playlist?list=PLbDEABAdDXRXKTMoaaw_KSvF9kceCVpBi)
@@ -109,7 +109,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:08
@@ -146,3 +146,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3245.0
+
+----
+
+Uuid: txrbp1ha5cumubdg

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Do The Dishes, Charles
 
 ----
 
-Title: Do The Dishes, Charles
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mix
 
 ----
 
-Text: 
+Text:
 
 The Redditors on **r/BadRoommates** are frustrated by their roommates. Why? Well, they'd like to tell you, but that would require a familiarization with the English language far greater than any of them are capable. But the roommates have been warned!
 
@@ -107,3 +107,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: zaw0rtmfgyhmlvbq

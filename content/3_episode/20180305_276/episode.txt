@@ -1,8 +1,8 @@
-Prevnext: 
+Title: im•`prüv yər lek•sə•`kän
 
 ----
 
-Title: im•`prüv yər lek•sə•`kän
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Ragnarok Boobies
 
 ----
 
-Text: 
+Text:
 
 For nearly 20 years, the website Urban Dictionary has been providing definitions for words and terms not covered by the Merriam-Webster dictionary.  And that statement is true, so you needn't concern yourself with the cromulence of these definitions, or exactly *how many* fictitious sex acts need to be defined. Because this time **we have a game show to play** and it doesn't go smoothly.
 
@@ -66,7 +66,7 @@ Tags: i saw u2 live twice,i made this site my blog,the internet isn't helping,ju
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Listing for](https://urbandictionary.store/products/mug?defid=4298776) a mug that says "Craig Butler" ($25 + shipping)
 2. [Lil Yachty Freestyles](https://youtu.be/C2IUdWkWR-4?t=3m45s) (YouTube Link)
@@ -86,3 +86,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: 4t9dlbh9r5w6gsx0

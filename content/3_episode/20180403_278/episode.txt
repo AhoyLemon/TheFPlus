@@ -1,8 +1,8 @@
-Prevnext: 
+Title: It's Trichy!
 
 ----
 
-Title: It's Trichy!
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Morgan
 
 ----
 
-Text: 
+Text:
 
 You might expect that the people over at KinkyForums are dilettantes with their sexual proclivities, but that would be a mistake. They have found what is, for them, the one perfect fetish: hair. They may disagree on hair length, hair texture, and the most desirable haircuts, but they *really* like hair. And, as you're about to learn, their love of hair comes at a disservice to you, personally.
 
@@ -67,3 +67,7 @@ Tags: how in the hell did you get that fetish?,fetishes,gross,oh you must be a k
 ----
 
 Bonus-content: 1. (file: pubic_wigs.jpg text:Download this NSFW image of pubic wigs).
+
+----
+
+Uuid: uldg0wslpbpxgqdx

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Ridiculist Passions
 
 ----
 
-Title: Ridiculist Passions
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Kanyesutra
 
 ----
 
-Text: 
+Text:
 
 The Passions Network presents a unique value proposition: What if, instead of making one dating website, we create literally hundreds of unique (in name, but largely identical) websites, in the hopes of luring in customers with a whole bunch of super-specific niches? What would happen if we did that? The answer, it turns out, is an F Plus episode.
 
@@ -66,7 +66,8 @@ Tags: the perpetually lonely,internet dating,all the vampires ever,indifferentis
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [Grover Norquist's Rememberances of Burning Man](https://www.theguardian.com/commentisfree/2014/sep/02/my-first-burning-man-grover-norquist) (The Guardian)
 
-1. [Grover Norquist's Rememberances of Burning Man](https://www.theguardian.com/commentisfree/2014/sep/02/my-first-burning-man-grover-norquist) (The Guardian)
+----
 
+Uuid: bilfmsc0zmjkwwer

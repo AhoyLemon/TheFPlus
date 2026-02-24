@@ -46,7 +46,7 @@ Provider: The Lesbiathan,Heavenator
 
 ----
 
-Text: 
+Text:
 
 As vaporizers became more popular in recent years, the internet did what it does:  turn an uninteresting pastime into a cultural signifier with its own jargon and infighting. And so were born "Cloud Chasers"; the men who risk friendships, wages, and their own personal safety in a never ending quest to exhale glycerine vapor in a cloud larger than someone else's. Actually, when you type it out it makes a whole lot of sense.
 
@@ -62,7 +62,7 @@ Tags: toodlepuffers,modwompers,somehow not a reddit episode,wikihow,clips4sale,s
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [How to Make a Vaporizer from Household Supplies](http://www.wikihow.com/Make-a-Vaporizer-from-Household-Supplies) (Wikihow)
 2. [A Thank You To Our Sponsors](https://thefpl.us/also-made/vape-puns)
@@ -98,3 +98,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: r6pgewlwiqyvoj0j

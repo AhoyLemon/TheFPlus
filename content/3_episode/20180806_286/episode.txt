@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Topix Not Worth Discussing
 
 ----
 
-Title: Topix Not Worth Discussing
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: T Azimuth Schwitters
 
 ----
 
-Text: 
+Text:
 
 The website Topix has been around since 2004 and in all that time has yet to figure out a good reason to exist. It's a news aggregator website with specific regional subsections, and that's the part we're focusing on in this episode. Who called the cops on drug dealers in Indiana? Who is fat and talking trash in Western Kentucky? Who cares about any of this nonsense? 2 of those 3 questions will be answered!
 
@@ -103,3 +103,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ez3qnonflljbaqh5

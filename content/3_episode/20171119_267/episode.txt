@@ -1,8 +1,8 @@
-Prevnext: 
+Title: We Resentfully Attend
 
 ----
 
-Title: We Resentfully Attend
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 As the previous episode on this subject ([#129](https://thefpl.us/episode/129)) can attest to, the people who blog about their weddings on Offbeat Bride are really into nerdy things. And it's okay if you don't believe me on this, because they'll be more than happy to provide evidence. Much more evidence than you could ever possibly need! Do you like it when people reference other things? These people do!
 
@@ -66,7 +66,7 @@ Tags: nerds,consumerism as a religion,i need a lift to burning man,video games
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Wow Owen](https://wowowen.com) (autoplay video)
 2. [⚙STEAMPUNK'D⚙](https://ballp.it/index.php?topic=2373.msg83953) (requires ballp.it account)
@@ -103,3 +103,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ini9o2ekycth72iv

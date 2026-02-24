@@ -42,7 +42,7 @@ Provider: Caroline
 
 ----
 
-Text: 
+Text:
 
 We've focused on a lot of people with varying mental disorders, so it's time to talk a little bit about mental health. Andy Kadir-Buxton is an unlicensed medical practioner who, in addition to a number of other profound and confusing accomplishments, has invented a cure for "a wide variety of mental health problems".
 
@@ -88,7 +88,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -142,3 +142,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=1969.0
+
+----
+
+Uuid: 9esvvhexqcl2gobx

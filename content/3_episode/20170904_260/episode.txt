@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Eroticism of Barney Gumble
 
 ----
 
-Title: The Eroticism of Barney Gumble
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Detective TV Tropes
 
 ----
 
-Text: 
+Text:
 
 The members of The Burp Fetish Forums share one particular prediliction which is (and this may surprise you) they all have a burp fetish. How does this fetish manifest itself, you ask? Do they like women burping or men burping? Burping in public places or burping in private areas? Slow romantic burping or torrid non-con burping? The answer to all of this is yes. They really like burping!
 
@@ -66,7 +66,8 @@ Tags: how in the hell did you get that fetish?,fetishes,metalocalypse is a hard 
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [@rickross_daily](https://twitter.com/rickross_daily)
 
-1. [@rickross_daily](https://twitter.com/rickross_daily)
+----
 
+Uuid: bovsxb90cox0vz8s

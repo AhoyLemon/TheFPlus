@@ -42,7 +42,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 There's a lot of recipe websites out there, and a lot of websites owned by giant food conglomerates. Fortunately, the internet has a way of synergizing things and these corporations provide their very own websites which encourage people to cook with their products. Looking for a salad recommendation from SPAM? A cocktail recipe by Hormel? A filling desert that includes a large quantity of Velveeta? This is vertical integration at its finest.
 
@@ -58,7 +58,7 @@ Tags: recipes,put all that shit in a bowl,all you do is dump,lazy people,profile
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Click-o-Tron](http://clickotron.com/). Randomly generated clickbait articles written by a recurrent neural network.
 2. [An article by Lars Eidnes](http://larseidnes.com/2015/10/13/auto-generating-clickbait-with-recurrent-neural-networks/) describing the process of building Click-o-Tron. OMG WIN CUTE LOL
@@ -89,7 +89,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -140,3 +140,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: viwzq77djowukgbt

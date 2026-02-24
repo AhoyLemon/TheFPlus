@@ -46,7 +46,7 @@ Provider: Heavenator,The Lesbiathan
 
 ----
 
-Text: 
+Text:
 
 The Satanic International Network (or SIN, hyuk hyuk) bills itself as "the most popular social networking site for Satanists". While I'm not really sure how many sites they beat out for that title, what we have here is a site where various flavors of Satanist can share their feelings on religion, magick, trans rights and the New World Order and none of it will be elucidating.
 
@@ -62,7 +62,7 @@ Tags: satan's sluts,satanists,forums,conservatives,magick,poetry
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [The Australian National Anthem](https://www.dpmc.gov.au/sites/default/files/files/pmc/Honours/anthem_words.pdf) (PDF)
 * [the moment we discovered Johnny Rad's Pizzeria Tavern](https://twitter.com/TheFPlus/status/817598404947746816) (tweet)
@@ -98,3 +98,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ronghnqutfaiysbb

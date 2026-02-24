@@ -42,7 +42,7 @@ Provider: Cheapskate
 
 ----
 
-Text: 
+Text:
 
 Working in retail can be a stressful and thankless experience, but as in all things, the internet is there to help. NotAlwaysRight is a place where visitors can share their stories of totally pwning the customers they had to deal with and how impressed everyone was with that experience.
 
@@ -88,7 +88,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -136,3 +136,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: dfv3zbtc7v3pn7yb

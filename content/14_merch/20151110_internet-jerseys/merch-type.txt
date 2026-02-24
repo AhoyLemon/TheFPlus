@@ -18,7 +18,7 @@ Show-image: true
 
 ----
 
-Text: 
+Text:
 
 **Join Team Internet**. These jerseys are printed on Champion Baseball raglan, 3/4 sleeves, 100% cotton and tagless. <a href="http://www.customink.com/items/sizing/99000_lineup/standard.htm" target="_blank">Click here for sizing guidelines.</a>
 
@@ -48,7 +48,7 @@ Baseprice: $20
 
 ----
 
-Photos: 
+Photos:
 
 - 
   series_num: ""
@@ -119,3 +119,7 @@ Photos-leadin:
 ----
 
 Share-cta: 
+
+----
+
+Uuid: 5mmjmuxgbe3qvfan

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Computer Wrote These
 
 ----
 
-Title: The Computer Wrote These
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 In a complete departure from our usual approach, we spend this episode composing and reading text using Botnik's predictive text generators: the system used to write [Harry Potter and the Portrait of What Looked Like a Large Pile of Ash](http://botnik.org/content/harry-potter.html). We give that a once over, and then play around with our own, including a Nicki Minaj song, Seinfeld beat poetry, and some crossover fic.
 
@@ -67,3 +67,7 @@ Tags: harry potter,a bit of knickers,scriptwriters can write!
 ----
 
 Bonus-content: 1. [Botnik's predictive keyboards](http://botnik.org/apps/)
+
+----
+
+Uuid: pevnvtzjiegvfbjb

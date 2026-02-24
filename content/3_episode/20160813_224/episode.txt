@@ -46,7 +46,7 @@ Provider: Thursley,PleaseAndThanks
 
 ----
 
-Text: 
+Text:
 
 It's been too long since our last musical episode, but this one is worth the wait. We gathered together some of The F Plus' greatest hip-hop enthusiasts (and also Boots) to browse the internet's finest sources for hip hop lyrics; I'm talking about DeviantArt, WikiHow, Yahoo Answers, and some site from Colombia. The result will make you kill a rainbow.
 
@@ -62,7 +62,7 @@ Tags: nerds singing into mics,musicate my lyrics bro
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 ### **REMIX THE F PLUS**
 
@@ -74,3 +74,7 @@ As mentioned, we'd like people to play with the raw audio files and see what the
 ### **HERE'S SOME REMIXES**
 
 There's 20 of them in [this Soundcloud playlist](https://soundcloud.com/thefplus/sets/ugh-f-plus-remixes).
+
+----
+
+Uuid: r3ck8eo9metfkhuz

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Clips 4 Bake Sale
 
 ----
 
-Title: Clips 4 Bake Sale
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mix
 
 ----
 
-Text: 
+Text:
 
 **Hey, this is a gross one! ** We started reading a Clips 4 Sale document, and then very quickly realized was all about food. We've got recipes, we've got cooking tips, we've got women upside down with their head in a laundry basket, really - all your staples. It's *very* disgusting,  but also fun. And Jimmyfranks bought a whistle.
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3374.0
+
+----
+
+Uuid: yg1psy7267cttqln

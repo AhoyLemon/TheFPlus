@@ -18,7 +18,7 @@ Cast: Lemon
 
 ----
 
-Text: 
+Text:
 
 Turn *any* piece of clothing into a reminder of internet atrocities with our custom created emroidered patches. We ordered 100 of these pliable backless patches, measuring 2.6"x3" so that you can sew them onto your shirt, backpack, hat, thong or least favorite pet. It's a world of possibilities!
 
@@ -30,7 +30,7 @@ Tags: merch,logo
 
 ----
 
-Products: 
+Products:
 
 - 
   pic: s1-shirt.jpg
@@ -64,7 +64,7 @@ Photos-leadin: Here's some patches
 
 ----
 
-Photos: 
+Photos:
 
 - 
   series_num: "1"
@@ -110,3 +110,7 @@ Product-image-type: square
 ----
 
 Figure-bg: 
+
+----
+
+Uuid: mz6xnflvmm6hpknv

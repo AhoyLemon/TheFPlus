@@ -46,7 +46,7 @@ Provider: Sphagnum
 
 ----
 
-Text: 
+Text:
 
 Real Super Powers is a site for the documentation of real, actual, legitimate, bona fide, undeniable, serious, authentic, honest, indubitable, factional, non-fictional, unaffected, veritable, perceptible, irrefutable, sincere, honest, no really I promise super powers in human beings.  From there, I mean... the episode pretty much writes itself.
 
@@ -95,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: sr5rmjfbqxyhrp7b

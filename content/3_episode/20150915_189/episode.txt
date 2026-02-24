@@ -42,7 +42,7 @@ Provider: Mitzy Rae And Brojack
 
 ----
 
-Text: 
+Text:
 
 It's time for some spooky ghost stories! The website my-paranormal-experience.com is one man's mission to document other people's experiences with ghosts, psychics and other paranormal hullabaloo. This is all presented as fact, because why wouldn't it be? Learn about supernatural experiences that are completely unexplainable by any scientific rationale, like Netflix getting turned off or someone being angry.
 
@@ -88,7 +88,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -143,3 +143,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: zamcsqbvacngpsgp

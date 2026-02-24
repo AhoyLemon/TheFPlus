@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2019 (Hours 1-6)
 
 ----
 
-Title: Garbage Day 2019 (Hours 1-6)
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: On May 18th of 2019, The F Plus endeavored to record a live podcast for 24
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "1"
@@ -156,7 +156,7 @@ Leadout: This is only the beginning. In [**Part 2**](https://thefpl.us/episode/g
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -173,3 +173,7 @@ Buttons:
     https://www.youtube.com/playlist?list=PLbDEABAdDXRVBY_ppQdYaxXlddH3VqGpK
   text: YouTube Playlist
   target_blank: "1"
+
+----
+
+Uuid: 6fcnyah6nj6dforc

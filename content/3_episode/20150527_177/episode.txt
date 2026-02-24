@@ -54,7 +54,7 @@ Tags: our fans rule,do-it-yourself therapy,teachers,morons,wikihow,lazy people
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 <figure class="fanart" style="max-width:none;"> <iframe width="560" height="315" src="https://www.youtube.com/embed/icm22Ig0Quc" frameborder="0" allowfullscreen></iframe><figcaption>by Nikaer Drekin</figcaption></figure>
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: kwgvb9pmtmrrow5a

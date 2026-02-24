@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Wyt & Wyttycysm & Wytchcraft
 
 ----
 
-Title: Wyt & Wyttycysm & Wytchcraft
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Seashell,Chief Beef
 
 ----
 
-Text: 
+Text:
 
 Occultist author S Rob is an incredibly prolific... typist. His work spans the mediums of advice books, spellbooks, instructional videos, essays, general self-aggrandizement and, of course, poetry. We can't cover everything he's written in a single episode, but we can just cover the general tone. Including reading his bio twice.
 
@@ -111,3 +111,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: kxwjfvastopb0pzw

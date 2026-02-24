@@ -1,8 +1,8 @@
-Prevnext: 
+Title: r/eally_sorry_about_that
 
 ----
 
-Title: r/eally_sorry_about_that
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Puppy Time
 
 ----
 
-Text: 
+Text:
 
 Personal relationships can be difficult to manage, and there are times when people look for advice from the people closest to them. This is all well and good, but what happens when your closest friends are the anonymous chowderheads on Reddit? Well, in that case things get complicated.
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: xcoeyrj9aisfdr8u

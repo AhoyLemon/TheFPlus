@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day (Hours 19 - 24)
 
 ----
 
-Title: Garbage Day (Hours 19 - 24)
+Prevnext: 
 
 ----
 
@@ -38,7 +38,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is Garbage Day! Another 24 Terrible Hours with The F Plus to celebrate bad writing and raise money for the Southern Poverty Law Center. You'd think we'd have learned our lesson.
 
@@ -46,7 +46,7 @@ We'recoming into the end here and you better believe we're gonna stick the landi
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "19"
@@ -138,7 +138,7 @@ Leadout: And that's *all* 24 hours. I'm tired just thinking about it.
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: https://thefpl.us/merch/prints
@@ -163,3 +163,7 @@ Buttons:
 ----
 
 Provider: Sherman Tank,Eldrich Hat,Montrith,Mix,Boots Raingear,Lemon,Sham bam bamina!
+
+----
+
+Uuid: eqb16mjvqasvqqun

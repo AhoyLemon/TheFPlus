@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Big Gay, Little Gay
 
 ----
 
-Title: Big Gay, Little Gay
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Girlkisser,The Smoking Dad
 
 ----
 
-Text: 
+Text:
 
 The people who frequent the unpleasantly named **Coiled Fist** are gay men with a specific predilection; Either they want much bigger men to be sexually rude to them, or they want to be sexually rude to much smaller men. Oh, also they *hate* shaving their balls. It's so time consuming!
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3237.0
+
+----
+
+Uuid: kgyxcajreba7byei

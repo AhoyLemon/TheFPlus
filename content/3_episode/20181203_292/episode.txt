@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Stumped!
 
 ----
 
-Title: Stumped!
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Positronic
 
 ----
 
-Text: 
+Text:
 
 DeviantArt is a strange place with many strange people, chief among them are the titular deviants, who use the site to share and explore their own peculiar sexual predilections. And that prediliction for tonight?  **Amputee fetishists**, and the various ways they attempt to justify their specific interest which totally isn't gross you guys I promise. There's lore!
 
@@ -103,3 +103,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: tbd9theivgxvgd6l

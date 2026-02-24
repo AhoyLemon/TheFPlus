@@ -33,6 +33,22 @@ return [
 			}
 		],
 
+		// RANDOM EPISODE
+		[
+			'pattern' => 'episode/random',
+			'method'  => 'GET',
+			'action'  => function () {
+				$episodes = site()->find('episode')->children()->listed();
+				if ($episodes->count() === 0) {
+					return null;
+				}
+				$random = $episodes->shuffle()->first();
+				// render the selected episode but keep the original URL in the
+				// browser so refreshing will pick a new one
+				return new Kirby\Cms\Response($random->render(), 'text/html');
+			}
+		],
+
 		// EPISODE FEED
 		[
 			'pattern' => 'episode/feed',

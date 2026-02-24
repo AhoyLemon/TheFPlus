@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Ask Reddit And You Shall Receive Reddit
 
 ----
 
-Title: Ask Reddit And You Shall Receive Reddit
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Captain Laser Pants
 
 ----
 
-Text: 
+Text:
 
 With a subscribed userbase of 18 million, r/AskReddit works with a simple premise: One person asks a question, other people answer it. And that open-ended concept means means Reddit can do what it's best at: Dim your view of human worth. It is a series of threads posted in by idiots, full of sound and fury, signifying nothing.
 
@@ -66,6 +66,8 @@ Tags: reddit,incurable porn disease,guys this totally happened,great britain's g
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [Cyriak's YouTube Channel](https://www.youtube.com/user/cyriak)
 
-1. [Cyriak's YouTube Channel](https://www.youtube.com/user/cyriak)
+----
+
+Uuid: 9gvhjxsnjlijnryf

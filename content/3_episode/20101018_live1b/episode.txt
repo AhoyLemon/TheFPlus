@@ -34,7 +34,7 @@ Document-link:
 
 ----
 
-Text: 
+Text:
 
 The live shenanigans continue, louder and drunker than before!
 
@@ -67,3 +67,7 @@ File-size: 35
 ----
 
 Cover: rooney.jpg
+
+----
+
+Uuid: m3lvxthvz8548o62

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Everything But The Sex Stories
 
 ----
 
-Title: Everything But The Sex Stories
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Seth "Slimy" Rollins
 
 ----
 
-Text: 
+Text:
 
 Since 2000, **Sex Stories Dot Com** has been trying to serve its titular goal: Providing the people willing to look at the website with stories of sexual activity. However, that's not all the site has. There's also essays, product reviews, self-help guides, jokes, and poetry. And *that's* the stuff we'll be looking at.
 
@@ -66,7 +66,7 @@ Tags: poetry,essays,incurable porn disease,christians,displeased girlfriends,por
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * This episode has [an interactive machine-generated transcript](https://codepen.io/ahoylemon/full/PoNzWoe). It's useless!
 * Here are [some archive.org snapshots](https://web.archive.org/web/2019*/eroticchristian.com) of EroticChristian.com. Good luck.
@@ -102,7 +102,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:10
@@ -164,3 +164,7 @@ Chapter-provider-aftergap:
 ----
 
 Transcript-json: 
+
+----
+
+Uuid: ttvxyz6zqn12shue

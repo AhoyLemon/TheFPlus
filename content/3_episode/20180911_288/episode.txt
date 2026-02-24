@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Rites of Price
 
 ----
 
-Title: The Rites of Price
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Seth "Slimy" Rollins
 
 ----
 
-Text: 
+Text:
 
 Let's not complicate matters: There are magickal items for sale on Etsy. This episode involves us reading about those items. We square? Great. Now, enjoy our new game show.
 
@@ -103,3 +103,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: n52hbbshj1pw0kzh

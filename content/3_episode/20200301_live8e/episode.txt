@@ -1,8 +1,8 @@
-Prevnext: 
+Title: wikiHow The Game Show | F Plus Live 8 | Final Heat
 
 ----
 
-Title: wikiHow The Game Show | F Plus Live 8 | Final Heat
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 * Achilles Heelies - Daniel Songer's Comedy Act #191
 * Kumquatxop - How to Win a Swordfight
@@ -72,7 +72,7 @@ Tags: f plus live,game show,wikihow
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [F Plus Live photo gallery](https://photos.app.goo.gl/6p156hbnAZgqYmoT9)
 2. [YouTube playlist](https://www.youtube.com/playlist?list=PLbDEABAdDXRXKTMoaaw_KSvF9kceCVpBi)
@@ -106,7 +106,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:28
@@ -151,3 +151,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: 
+
+----
+
+Uuid: ljzpvmv7wthkvmfs

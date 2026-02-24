@@ -46,7 +46,7 @@ Provider: Kanyesutra
 
 ----
 
-Text: 
+Text:
 
 With over 28 million members and 13 years of history, Gaia Online could accurately be called one of the most popular forums on the internet. It's central feature is a gamification effort where members can dress up their paper-doll avatars with bits and baubles while they discuss their favorite animes or (in the case of this episode) the troubles with feminism and the right way to sell your panties online.
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -140,3 +140,7 @@ Chapters:
 ----
 
 Chapter-provider: birdie
+
+----
+
+Uuid: o5m76gawajpevneh

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: SWORDS!!!
 
 ----
 
-Title: SWORDS!!!
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cat Examiner
 
 ----
 
-Text: 
+Text:
 
 The world can be a scary place, and that's why the folks at BUDK Worldwide are there, day after day, to use that fear as a tool to sell cheap worthless crap to rubes with self esteem problems. We're here for the swords, but there's a *lot* of categories on offer here and it's easy to get distracted.
 
@@ -66,7 +66,7 @@ Tags: nerds,please give me money for my stupid idea,anime,consumer culture,my fe
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. I know we've brought it up before, but [bbillyk will absolutely *destroy* these plastic bottles](https://www.youtube.com/watch?v=4dKwHOfd2dk) (YouTube)
 2. [Kenny Powers' trike](/episode/296/powers-trike.jpg) (image)
@@ -99,7 +99,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -165,3 +165,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3074.0
+
+----
+
+Uuid: alsivjy2qcsy56l5

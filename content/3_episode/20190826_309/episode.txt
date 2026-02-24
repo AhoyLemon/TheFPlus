@@ -1,8 +1,8 @@
-Prevnext: 
+Title: !sleep
 
 ----
 
-Title: !sleep
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Seth "Slimy" Rollins
 
 ----
 
-Text: 
+Text:
 
 r/nosleep describes itself as "a subreddit for realistic horror stories." Well, realism is a hard thing to define, and while the stories that live here are mostly poorly spelled rambling essays that strain credulity, they also cause Boots Raingear's internet to drop out for a while! 😱
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3222.0
+
+----
+
+Uuid: yabefbrhp4zxr5mk

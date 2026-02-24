@@ -42,7 +42,7 @@ Provider: Spooks
 
 ----
 
-Text: 
+Text:
 
 The Transformation Story Archive is a *very* old website where participants share stories about turning into different things: bears, statues, the other sex, and concepts too horrible to read out loud. As a result, this episode is shorter than most. But if you've been looking forward to an episode in which Bunnybread says "crotch" then you are in luck.
 
@@ -63,3 +63,7 @@ Bonus-content:
 ----
 
 Cover: ep205.jpg
+
+----
+
+Uuid: wrn1cckehtzvi4yd

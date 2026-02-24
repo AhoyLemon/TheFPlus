@@ -58,9 +58,7 @@ Tags: questionable problem-solving,the internet is a dumb oracle you shout into,
 
 ----
 
-Bonus-content: 
-
-1. will.i.am: [World Champion of Bullshit](https://www.youtube.com/watch?v=aWyn8QS74EY) (youtube)
+Bonus-content: 1. will.i.am: [World Champion of Bullshit](https://www.youtube.com/watch?v=aWyn8QS74EY) (youtube)
 
 ----
 
@@ -93,3 +91,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: kzk6j2opps2ouhrj

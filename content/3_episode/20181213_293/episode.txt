@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Problematic Sex Toys
 
 ----
 
-Title: Problematic Sex Toys
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: LADY FRENZY
 
 ----
 
-Text: 
+Text:
 
 Some years ago, we [covered](https://thefpl.us/episode/47) some of the sex toys on offer at Bad Dragon. But now *this* is an entirely different thing. We're taking a tour of different places on the internet, all of which want to you to have sex with truly horrifying objects.
 
@@ -94,7 +94,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -150,3 +150,7 @@ Chapters:
 ----
 
 Chapter-provider: ikaribattousai
+
+----
+
+Uuid: wi6yoxlykol3rp6c

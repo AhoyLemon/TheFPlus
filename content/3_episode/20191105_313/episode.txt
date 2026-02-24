@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Suicide Banquet
 
 ----
 
-Title: The Suicide Banquet
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Neal
 
 ----
 
-Text: 
+Text:
 
 At The F Plus' Suicide Banquet, we're serving the following...
 1. Adam Bozarth: Roasted Lettuce, Radicchio, and Endive
@@ -113,7 +113,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:01:13
@@ -163,3 +163,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3276.0
+
+----
+
+Uuid: jpctg0q9et2kwq5m

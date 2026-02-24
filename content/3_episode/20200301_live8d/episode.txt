@@ -1,8 +1,8 @@
-Prevnext: 
+Title: wikiHow The Game Show | F Plus Live 8 | Heat 4
 
 ----
 
-Title: wikiHow The Game Show | F Plus Live 8 | Heat 4
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 * bumpgrrl - r/creepybossta
 * Jimmyfranks - How to Fake Your Own Death
@@ -73,7 +73,7 @@ Tags: f plus live,game show,wikihow
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [F Plus Live photo gallery](https://photos.app.goo.gl/6p156hbnAZgqYmoT9)
 2. [YouTube playlist](https://www.youtube.com/playlist?list=PLbDEABAdDXRXKTMoaaw_KSvF9kceCVpBi)
@@ -107,7 +107,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -144,3 +144,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: 
+
+----
+
+Uuid: s8xsviidrfnywbvo

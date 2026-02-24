@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Wookiee Ookiee Ookiee
 
 ----
 
-Title: Wookiee Ookiee Ookiee
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: King Kalamari
 
 ----
 
-Text: 
+Text:
 
 The volunteer researchers over at **The Wookieepedia** have quite a job in front of them: They must catalog absolutely everything that has ever existed in the Star Wars Universe, including (but not limited to) the things that Disney has labeled as canon.
 
@@ -66,7 +66,7 @@ Tags: watching too much television,nerds,wiki,useless tiny detail fetish,consume
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [The Biscuit Baron](https://starwars.fandom.com/wiki/Biscuit_Baron)
 3. [Cleopatra 2525 intro](https://www.youtube.com/watch?v=e2ZRSwul7cE) (YouTube video)
@@ -110,3 +110,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3328.0
+
+----
+
+Uuid: vgiwd5uotvwmw5fv

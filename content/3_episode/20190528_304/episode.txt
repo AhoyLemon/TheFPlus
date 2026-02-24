@@ -1,8 +1,8 @@
-Prevnext: 
+Title: The Waste From The Mothership
 
 ----
 
-Title: The Waste From The Mothership
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mr. Hunky Academia
 
 ----
 
-Text: 
+Text:
 
 The Ashtar Command Crew is a global organization on a mission of.... peace, maybe? It's difficult to say. We're not even sure who's on the crew. Okay, we know three things: Ashtar is love, The Paa-Tal are old, and the tall greys are taller than the short greys. Beyond that, it's open to interpretation, which is difficult when some of these beings are in the twelfth dimension.
 
@@ -107,3 +107,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3170.0
+
+----
+
+Uuid: jrwrnxc4scghw2ei

@@ -1,8 +1,8 @@
-Prevnext: 
+Title: F Plus Live 6 | Conjuring Satan | Part 1
 
 ----
 
-Title: F Plus Live 6 | Conjuring Satan | Part 1
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Cheapskate,Montrith,Caroline,A Meat,Heavenator,The Lesbiathan
 
 ----
 
-Text: 
+Text:
 
 The F Plus Live 6 is the *biggest* and most *dangerous* F Plus Live in history. After explaining the premise of the show, Lemon starts out handing out documents (or "spells"), and the audience quickly learns there's going to be a lot to wrap your head around.
 
@@ -74,7 +74,11 @@ Tags: f plus live,poetry,magick
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 <figure class="fanart">(image: empty_stage.jpg)</figure><figure class="fanart">(image: fingers_up.jpg)</figure><figure class="fanart">(image: foreheads.jpg)</figure>
 1. [Photos of F Plus Live Weekend](https://photos.app.goo.gl/SzcBGGrZlOrfQocL2) (Google Photos Album)
+
+----
+
+Uuid: z1454knz5vp2vmtz

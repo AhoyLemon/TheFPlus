@@ -42,7 +42,7 @@ Provider: Comixologist
 
 ----
 
-Text: 
+Text:
 
 Does any modern society appreciate poetry more than the creative types over at Tumblr? Yes, of course.  But would any other modern society be so quick to ape the creative output of Sylvia Plath in order to eke out some undeserved attention? Maybe, but for the purposes of this episode summary let's just pretend the answer is no.
 
@@ -59,3 +59,7 @@ Tags: tumblr,poetry,teenagers,very popular websites,annoying,yuu
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: 4scdv7odqg2g5pko

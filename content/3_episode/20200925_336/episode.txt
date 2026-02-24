@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Hungry Like The Sasquatch
 
 ----
 
-Title: Hungry Like The Sasquatch
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Secret Gaygent 69
 
 ----
 
-Text: 
+Text:
 
 The website **Bigfoot Eruption** has a whole lot of things to say about Bigfoot. Now, Few of those things make a lot of sense, and fewer still seem to be internally consistent, but the important thing is that Cain and/or Adam and/or Satan is involved, it's a conspiracy, and it's not a bear. Pay attention to your dog.
 
@@ -107,3 +107,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: kiyqxfwzk8qsx93o

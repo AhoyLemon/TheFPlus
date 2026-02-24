@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Why Don't The Females Understand Bitcoin?
 
 ----
 
-Title: Why Don't The Females Understand Bitcoin?
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Shame Boi
 
 ----
 
-Text: 
+Text:
 
 Here's a simple concept: All of the material in this episode was sourced by searching BitcoinTalk for the word "female".
 
@@ -66,7 +66,7 @@ Tags: bitcoin,nerds,forums,morons,fucking on a pile of junk,to satisfy the woman
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * [Paths Duck magnets](https://thefpl.us/also-made/magnets)
 
@@ -102,7 +102,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -167,3 +167,7 @@ Chapter-provider: Adam Bozarth
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: eeyofj8crwohqzri

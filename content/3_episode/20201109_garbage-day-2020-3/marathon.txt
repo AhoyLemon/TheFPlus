@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2020 (Hours 13-18)
 
 ----
 
-Title: Garbage Day 2020 (Hours 13-18)
+Prevnext: 
 
 ----
 
@@ -54,7 +54,7 @@ Record-time-end: 04:05
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "13"
@@ -139,7 +139,7 @@ Leadout: We've been on quite an adventure, haven't we? Well, let's close this ou
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -164,3 +164,7 @@ Buttons:
   url: https://thefpl.us/merch/slap-bracelets
   text: Soundtrack Slap Bracelets
   target_blank: "0"
+
+----
+
+Uuid: ilrkjbewayxradug

@@ -54,9 +54,7 @@ Tags: thanks montrith,drama queens,paranoia,insanity,beware of crime,describe yo
 
 ----
 
-Bonus-content: 
-
-<span style="font-size:1.25em;">Download <a href="http://goo.gl/6IvOJp">The Yeah Megamix</a>, by itself.</span>
+Bonus-content: <span style="font-size:1.25em;">Download <a href="http://goo.gl/6IvOJp">The Yeah Megamix</a>, by itself.</span>
 
 ----
 
@@ -93,3 +91,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: 1z760fdqbikhskyf

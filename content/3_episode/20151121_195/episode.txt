@@ -42,7 +42,7 @@ Provider: Heavenator
 
 ----
 
-Text: 
+Text:
 
 Urth looks and plays like the world's shittiest video game. The creators insist that Urth is not a game (which is why they call it Urth the Game), but a path to prosperity, a tool for resurrecting the dead, a meditation conduit to alleviate your fears, and a method for winning the lottery - not for the money, just, you know, to prove you can. But video game or not, you're still moving a man in a labyrinth to min-max your Spirituality.
 
@@ -60,7 +60,7 @@ Tags: video games,video games that aren't video games,please give me money for m
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 ##### Our ad for CyberPower, starring [Bunnybread](/meet/bunnybread)
 <audio src="/podcasts/cyberpower.mp3" preload="none" controls style="width:100%;"></audio>
@@ -91,7 +91,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -152,3 +152,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=1826.0
+
+----
+
+Uuid: kbzd4yzehv2lg356

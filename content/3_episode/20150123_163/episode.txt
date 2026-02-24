@@ -42,7 +42,7 @@ Provider: Slayer of Yaks
 
 ----
 
-Text: 
+Text:
 
 Drugs are expensive. Plus they're dangerous and illegal besides,  so it should come as no surprise that there are swaths of people who are looking for alternative ways to get their collective swerve on. And with the sometimes predatory nature of internet marketing, it should also come as no surprise that there is a substantial number of people who try to convince themselves that listening to bleeps and boops in their headphones will totally give them the best trip of their lives.
 
@@ -58,7 +58,11 @@ Tags: teenagers,because drugs,trip reports,i need a lift to burning man,the inte
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 (youtube: http://youtu.be/t5xLQvTUrOA?t=3m)
 <figcaption> (skip to 3 minutes in)</figcaption>
+
+----
+
+Uuid: rzgsbqoflcrmappn

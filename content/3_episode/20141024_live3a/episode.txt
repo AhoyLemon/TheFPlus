@@ -34,7 +34,7 @@ Document-link:
 
 ----
 
-Text: 
+Text:
 
 From the raucous Grumpy's Bar in Downtown Minneapolis, The F Plus Live is back! This time with an overarching concept of Weird Romance, you'll be hearing pieces many different books, all written by authors with different mental problems. 
 
@@ -71,3 +71,7 @@ File-size: 56
 ----
 
 Cover: live3a.jpg
+
+----
+
+Uuid: 7ocztsnjgepwsb8n

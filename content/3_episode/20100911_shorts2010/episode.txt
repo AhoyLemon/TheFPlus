@@ -42,7 +42,7 @@ Provider:
 
 ----
 
-Text: 
+Text:
 
 Back in 2010, we had a bunch of  shorts up in the feed, all of which were accompanied with a plug for the first F Plus Live. Then when we switched the site over, those files were taken out of the feed.
 
@@ -75,3 +75,7 @@ Bonus-content:
 ----
 
 Cover: shorts2010.jpg
+
+----
+
+Uuid: ej9dbmlso5l7jr2s

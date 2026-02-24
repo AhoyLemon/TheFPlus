@@ -1,8 +1,8 @@
-Prevnext: 
+Title: It Is Always Cold In Chili's
 
 ----
 
-Title: It Is Always Cold In Chili's
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Puppy Time
 
 ----
 
-Text: 
+Text:
 
 The stated mission statement of Corporate Office & Headquarters is to provide visitors with customer service contact information for a variety of different corporations. However, the site allows comments, so the *actual* mission is that.
 
@@ -66,9 +66,7 @@ Tags: customer service purgatory,internet whining,those weird android games,free
 
 ----
 
-Bonus-content: 
-
-* Google Play Searches: ["frozen pregnant"](https://play.google.com/store/apps/collection/search_results_cluster_apps?clp=ggERCg9mcm96ZW4gcHJlZ25hbnQ%3D%3AS%3AANO1ljIuZ-k&hl=en), ["princess surgery"](https://play.google.com/store/search?q=princess%20surgery&c=apps&hl=en), ["real dentist"](https://play.google.com/store/search?q=real%20dentist&c=apps&hl=en)
+Bonus-content: * Google Play Searches: ["frozen pregnant"](https://play.google.com/store/apps/collection/search_results_cluster_apps?clp=ggERCg9mcm96ZW4gcHJlZ25hbnQ%3D%3AS%3AANO1ljIuZ-k&hl=en), ["princess surgery"](https://play.google.com/store/search?q=princess%20surgery&c=apps&hl=en), ["real dentist"](https://play.google.com/store/search?q=real%20dentist&c=apps&hl=en)
 
 ----
 
@@ -101,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: mn6zfwkoxvlutwl4

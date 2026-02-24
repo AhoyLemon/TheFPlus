@@ -46,7 +46,7 @@ Provider: Sham bam bamina!
 
 ----
 
-Text: 
+Text:
 
 Our modern internet affords lots of opportunities for self-expression. However, these things remain ephemeral, and some authors long for the physicality of the written word. Fortunately for them, there's America Star Books (formerly PublishAmerica), a self-publishing book company that's innovated the publishing world by removing all those annoying standards of quality. We're looking at a number of descriptions of these books, in the authors' own words (when those words aren't "description coming soon").
 
@@ -62,7 +62,7 @@ Tags: fiction,poetry,a law firm of werewolves,no plot no problem,kumquatxop's im
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. "17 Red Trucks" is a refrence to the [Jackson Hole Town Square](http://www.avclub.com/article/people-cant-tear-themselves-away-livestream-wyomin-242485)
 2. The [Wikipedia entry](https://en.wikipedia.org/wiki/Atlanta_Nights) on Atlanta Nights (an experiment in PublishAmerica's printing standards)
@@ -84,3 +84,7 @@ Cover-cite-artist:
 ----
 
 Cover-cite-url: 
+
+----
+
+Uuid: xigxz34ljfqxkc8q

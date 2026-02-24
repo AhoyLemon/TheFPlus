@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Doing The Robot
 
 ----
 
-Title: Doing The Robot
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Secret Gaygent 69
 
 ----
 
-Text: 
+Text:
 
 The forum posters over at Fembot Central are (as you might have guessed) aroused by the idea of robotic humanoid women. And they're all too happy to explore the many facets of their specific fembot obsession, despite how often or how loudly you try to protest.
 
@@ -98,7 +98,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -183,3 +183,7 @@ Chapter-provider: Lemon
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: tq5gd005kp1fvgza

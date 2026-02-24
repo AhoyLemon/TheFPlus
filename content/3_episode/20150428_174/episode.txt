@@ -42,7 +42,7 @@ Provider: King Kalamari
 
 ----
 
-Text: 
+Text:
 
 So many video games are all about violence, where's the games with the sex in them? Well, it shouldn't surprise you to learn that they're *here*, and that's because they've been imported from Japan. Oh, and there's also a whole lot of violence involved, as well as massive amounts of misogyny and borderline beastiality. So... this is a gross one, if you haven't sussed that out yet.
 
@@ -59,3 +59,7 @@ Tags: fetishes,nerds,wiki,misogyny,gangbanging ladies,everyone is out to get you
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: 6zgjgtyhwjuy4uzq

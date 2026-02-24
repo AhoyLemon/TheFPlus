@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Giving You Tingles
 
 ----
 
-Title: Giving You Tingles
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: LINDA
 
 ----
 
-Text: 
+Text:
 
 The topic of ASMR first caught a number of peoples' attention as a very strange looking and suddenly popular YouTube goldrush. The idea of whispering, crinkling, and providing a number of close wet sounds is very much tied into the happiness of a certain demographic who we're honestly a little concerned about.
 
@@ -66,7 +66,7 @@ Tags: asmr,reddit,do-it-yourself therapy,edit point,fetishes,the internet isn't 
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Apparently [this scene from Hook](https://www.youtube.com/watch?v=wt-O1ReOPOQ) is ASMR. (YouTube)
 2. Comedian and Entertainer [Daniel Songer](https://ballp.it/index.php?topic=3045.msg124407#msg124407) (ballp.it)
@@ -98,7 +98,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -158,3 +158,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3100.0
+
+----
+
+Uuid: sbtdleehk1cz3jti

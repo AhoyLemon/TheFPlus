@@ -1,8 +1,8 @@
-Prevnext: 
+Title: 24 Terrible Hours (Hours 19-24)
 
 ----
 
-Title: 24 Terrible Hours (Hours 19-24)
+Prevnext: 
 
 ----
 
@@ -30,7 +30,7 @@ Featured-site:
 
 ----
 
-Text: 
+Text:
 
 This is 24 Terrible Hours: a full day podcasting marathon celebrating bad writing and raising money for the Southern Poverty Law Center. It was broadcast live on March 31, 2017. It seemed like a good idea at the time.
 
@@ -38,7 +38,7 @@ This is how it ends: First, Achilles' Heelies poisons himself before Adam Bozart
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "19"
@@ -149,3 +149,7 @@ Provider:
 ----
 
 Buttons: 
+
+----
+
+Uuid: kcacwodlaziqp9ns

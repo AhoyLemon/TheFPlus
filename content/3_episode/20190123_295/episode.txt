@@ -1,8 +1,8 @@
-Prevnext: 
+Title: A Role In The Sack
 
 ----
 
-Title: A Role In The Sack
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Shell Game,Girlkisser
 
 ----
 
-Text: 
+Text:
 
 Sex! Sure, it's a thing that people *pretend* to enjoy, but when it comes down to it, it turns out very few people seem to like the actual physical act. As in all things, it's up to The Internet to this into a fulfilling experience, and the community over at **Blue Moon Roleplaying Forums** is really trying their best in this regard.
 
@@ -94,7 +94,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -148,3 +148,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3065.0
+
+----
+
+Uuid: magpjpiclzjhwal1

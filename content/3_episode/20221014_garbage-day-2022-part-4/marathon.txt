@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Escape From Garbage Day | Part 4
 
 ----
 
-Title: Escape From Garbage Day | Part 4
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: The final six are here! We'll begin with Nutshell and her English accent, 
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "19"
@@ -149,7 +149,7 @@ Leadout: Let's do it again.
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -181,3 +181,7 @@ Buttons:
     https://bootsraingear.bandcamp.com/album/garbage-music-for-garbage-people
   text: The Garbage Day Soundtrack
   target_blank: "0"
+
+----
+
+Uuid: unhfcjsmdprb0tuu

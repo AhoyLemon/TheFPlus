@@ -46,7 +46,7 @@ Provider: PleaseAndThanks
 
 ----
 
-Text: 
+Text:
 
 Nation States is a game where players can create their own idealized version of a country, ally with other nations in the game, pass resolutions, and vie for supremacy. Separate from that, the *forums* of Nation States is a place where people post in character as emissaries from their fictitious countries to brag about their totalitarian regime and brag about which memes are the dankest. The results are infurating.
 
@@ -62,7 +62,8 @@ Tags: watching too much television,the very dankest memes,conservatives,white pr
 
 ----
 
-Bonus-content: 
+Bonus-content: 1. [How To Get Lemon Interested In Your Document, Lesson 1](https://twitter.com/TheFPlus/status/775379793244147712)
 
+----
 
-1. [How To Get Lemon Interested In Your Document, Lesson 1](https://twitter.com/TheFPlus/status/775379793244147712)
+Uuid: hyi7zhi65iqwozdv

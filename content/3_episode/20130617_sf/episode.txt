@@ -46,9 +46,7 @@ Tags: all you do is dump,dump dump dump,fat,put all that shit in a bowl,recipes,
 
 ----
 
-Bonus-content: 
-
-<figure class="fanart"><img src="/episode/sf/rawfood-big.jpg"><figcaption style="font-size:12px;">Pictured above: Bowls of Carrot Noodles with “Peanut” Sauce and a Dorito Sandwich (For Kids).</figcaption></figure>
+Bonus-content: <figure class="fanart"><img src="/episode/sf/rawfood-big.jpg"><figcaption style="font-size:12px;">Pictured above: Bowls of Carrot Noodles with “Peanut” Sauce and a Dorito Sandwich (For Kids).</figcaption></figure>
 
 ----
 
@@ -93,3 +91,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: qbkhp4awaf3jabic

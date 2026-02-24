@@ -46,7 +46,7 @@ Provider: Heavenator,The Lesbiathan
 
 ----
 
-Text: 
+Text:
 
 If you are a regular listener to the podcast, you are probably aware of communities who self-identify as superhuman or supernatural creatures. You are also probably aware that these communities often have inconsistent and arbitrary criteria to support their claims. This is more of that, but with draculas. 
 
@@ -65,3 +65,7 @@ Tags: all the vampires ever,we're all goth now,without lemon
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: kle6nujbuwsxbl7u

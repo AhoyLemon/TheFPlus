@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Heal Yourself With Crystals
 
 ----
 
-Title: Heal Yourself With Crystals
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Heavenator,The Lesbiathan
 
 ----
 
-Text: 
+Text:
 
 The proprietors of online crystal shop **EnergyMuse.com** inform us that “almost ever [sic] ancient civilization has utilized Earth energy—in the form of crystals and gems—in some way.” And if you think that statement is suspect, let me ask you - do you *really* understand what that means? I'm pretty sure nobody does.
 
@@ -66,10 +66,7 @@ Tags: without lemon,hippies,do-it-yourself therapy,questionable problem-solving,
 
 ----
 
-Bonus-content: 
-
-
-1. [Goop: Jade Eggs For Your Yoni](http://goop.com/better-sex-jade-eggs-for-your-yoni/) (somewhat NSFW)
+Bonus-content: 1. [Goop: Jade Eggs For Your Yoni](http://goop.com/better-sex-jade-eggs-for-your-yoni/) (somewhat NSFW)
 
 ----
 
@@ -98,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ysspvwfem5cnyflj

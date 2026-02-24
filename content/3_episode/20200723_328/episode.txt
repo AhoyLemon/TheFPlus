@@ -1,8 +1,8 @@
-Prevnext: 
+Title: You Are Likely To Be Yiffed By A Grue
 
 ----
 
-Title: You Are Likely To Be Yiffed By A Grue
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: The Lesbiathan,Heavenator
 
 ----
 
-Text: 
+Text:
 
 Fapp is a furry erotic tabletop roleplaying game. Now, credit where it's due, they own the domain **balls dot horse**, which is a fantastic name. However, as you're about to find out, everything they enjoy is profoundly disgusting.
 
@@ -66,7 +66,7 @@ Tags: furries,nerds,making masturbation difficult,roleplaying,a whole new way to
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 * Jiz and the Mammograms - [Break Like A Hymen](https://youtu.be/zNt1rn7_Yqk) (YouTube)
 * Jiz and the Mammograms - [Kimber Is A Dirty Lezzie](https://youtu.be/8X-gwN1TGOU) (YouTube)
@@ -111,3 +111,7 @@ Chapter-provider:
 ----
 
 Chapter-provider-aftergap: 
+
+----
+
+Uuid: rcdklifj04wycmua

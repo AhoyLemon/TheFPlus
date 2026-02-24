@@ -1,8 +1,8 @@
-Prevnext: 
+Title: BBB BBB BBB Bind.
 
 ----
 
-Title: BBB BBB BBB Bind.
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: JOA
 
 ----
 
-Text: 
+Text:
 
 The uncredited former owner of ChemtrailsAreDemonic.org has a very straightforward message to explain to you, but if you think the URL will explain it all, you're going to be surprised on pretty much every turn here.
 
@@ -109,3 +109,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3364.0
+
+----
+
+Uuid: 24awfcoordph3cfm

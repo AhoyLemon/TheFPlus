@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Masters of Bating
 
 ----
 
-Title: Masters of Bating
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Napoleon Blownapart
 
 ----
 
-Text: 
+Text:
 
 If you're looking for a place where old men are chattin' about jackin', you could do a lot worse than JackinChat dot com. These are men who have transcended masturbation as you might know it and recognize it as the only pure form of human expression; an expression best conveyed with sexually explicit emoticons.
 
@@ -99,3 +99,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: 5gnbvz0f75rtvrqi

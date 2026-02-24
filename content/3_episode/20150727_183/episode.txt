@@ -42,7 +42,7 @@ Provider: cyberventurer
 
 ----
 
-Text: 
+Text:
 
 This time it's *all poetry all episode!* Specifically, erotic poetry. More specifically, "erotic" "poetry", because the things we're reading largely fail to meet the definitions of either of those words.
 
@@ -97,3 +97,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: 3mrvo3tj2bbcsnlm

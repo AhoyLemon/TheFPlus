@@ -46,7 +46,7 @@ Provider: Kanyesutra
 
 ----
 
-Text: 
+Text:
 
 The internet is frequently a place where people brag about their talents in a particular skill, and if that skill is stealing things from stores, well that's just fine. We're looking at the people who steal, proudly, and they have things to say. Some of those things are coherant.
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -148,3 +148,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=2197.0
+
+----
+
+Uuid: y8vdvqmfk9vj5jz0

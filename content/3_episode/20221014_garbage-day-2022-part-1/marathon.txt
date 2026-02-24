@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Escape From Garbage Day | Part 1
 
 ----
 
-Title: Escape From Garbage Day | Part 1
+Prevnext: 
 
 ----
 
@@ -42,7 +42,7 @@ Text: In Spetember of 2022, The F Plus convened to make the same mistake they've
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "1"
@@ -133,7 +133,7 @@ Tags: garbage day,24 terrible hours,tumblr
 
 ----
 
-Leadout: 
+Leadout:
 
 Well, you've gotten this far, so that bodes well, but there's a lot of very stupid things in the next six hours: We've got **Pooner & The Snizz** as well as Bunnybread's very hour rap hour, some very stupid musical opinions, a whole hour of people stretching their penises, and lots and lots of drama.
 
@@ -141,7 +141,7 @@ Well, you've gotten this far, so that bodes well, but there's a lot of very stup
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -173,3 +173,7 @@ Buttons:
     https://thefpl.us/episode/garbage-day-2022-part-4
   text: Part 4
   target_blank: "0"
+
+----
+
+Uuid: ul56sgixqz9qfmal

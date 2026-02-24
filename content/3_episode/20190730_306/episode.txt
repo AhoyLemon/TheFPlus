@@ -1,8 +1,8 @@
-Prevnext: 
+Title: We ❤️ Hearts
 
 ----
 
-Title: We ❤️ Hearts
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mix
 
 ----
 
-Text: 
+Text:
 
 Cardiophiles are motivated by two things: An intense fetish for the functions of the human heart, and the desire to tell the entire internet that they have a fetish for the functions of the human heart.
 
@@ -66,7 +66,7 @@ Tags: tumblr,oh you must be a killer,clips4sale,english as a second language,fet
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. Extra Credit's [Heart Fetish Episode](https://thefmin.us/in-japan-this-episode-is-called-doki-doki-panic/)
 2. Audio Garbage [Tapes!](https://thefpl.us/merch/audio-garbage)
@@ -110,3 +110,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3208.0
+
+----
+
+Uuid: k6kitolvzrczcvu9

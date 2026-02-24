@@ -46,7 +46,7 @@ Provider: R.S. Benedict,Nikaer Drekin
 
 ----
 
-Text: 
+Text:
 
 California rich guy and man who has opinions Rob Rhinehart invented Soylent as an open source replacement to the unbearable agony of preparing and eating food. And since its inception in 2013, Soylent has given the gift of uncontrollable butt problems to an audience of Reddit-posting free thinkers.
 
@@ -97,3 +97,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: ukeooqd7b6n69wrd

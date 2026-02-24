@@ -1,8 +1,8 @@
-Prevnext: 
+Title: For A Better Slearth
 
 ----
 
-Title: For A Better Slearth
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Zekka
 
 ----
 
-Text: 
+Text:
 
 Of the many Stack Exchange communities out there, the brave souls at the Worldbuilding Stack Exchange are the ones working tirelessly to solve the very dumbest of problems. Got a problem with your fictional alternate reality universe? Logistics you want to work through? Poorly drawn metaphors you want to hammer home with Hard Science? Let's waste our time together.
 
@@ -90,7 +90,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 0:00
@@ -139,3 +139,7 @@ Chapter-provider: ikaribattousai
 ----
 
 Ballpit-url: 
+
+----
+
+Uuid: inn7ygfljw8dspkg

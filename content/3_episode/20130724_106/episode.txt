@@ -34,7 +34,7 @@ Document-link: https://docs.google.com/document/d/11ABDIqh_z97_AOQmXOgA_XwdAZkgG
 
 ----
 
-Text: 
+Text:
 
 Love is a curious thing. The thing that drives two people together into a passionate embrace is as complicated as it is powerful. But the thing that drives one person to claim that they're married to a Norse god? That's called "being a crazy person". We're taking a look at Lokiwives and godspouses: People who claim to be in a polygamous relationship with one or more gods, and report that the sex is terrific. This week, wherever you go, whatever you do, these people still won't make any sense.
 
@@ -95,3 +95,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: a4oenbikrcu0n2fo

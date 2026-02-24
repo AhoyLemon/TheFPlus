@@ -46,7 +46,7 @@ Provider: BomberJacket
 
 ----
 
-Text: 
+Text:
 
 Our brand new intern is in the mix while Lemon forgets which setting his microphone is supposed to be on and we explore the science behind *The Concave Earth Theory*! Popularized by Steven Christ, The Concave Earth theory states that [onomatopoeia where you stick your pointer finger between your lips and move it up and down while going "bwee bwee bwee bwee"], *and* it's got forums, so we're set.
 
@@ -63,3 +63,7 @@ Tags: insanity,forums,bodybuilding,rants
 ----
 
 Bonus-content: 1. [Cosmologic Circus](http://www.missteribabylonestar.com/wpimages/wp3bf5eb0d_06.png)
+
+----
+
+Uuid: wr98rlmfj0yrn2f1

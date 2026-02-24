@@ -42,7 +42,7 @@ Provider: Montrith
 
 ----
 
-Text: 
+Text:
 
 There's a number of websites out there that can try to teach you some certain type of magic spell, or some certain type of mind control technique, but the superpredators over at Xtreme Mind take a shotgun approach to their methods, selling Neurolinguistic programming, mind power machines, magical wish fulfillment, orgone boxes, and pretty much anything else that they think will get clicked on.
 
@@ -86,7 +86,7 @@ Chapters-toggle: yes
 
 ----
 
-Chapters: 
+Chapters:
 
 - 
   timestamp: 00:00:00
@@ -131,3 +131,7 @@ Chapter-provider: birdie
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=2035.0
+
+----
+
+Uuid: oyrspgnbbd8grsip

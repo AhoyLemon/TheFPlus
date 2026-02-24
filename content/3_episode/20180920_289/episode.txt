@@ -1,8 +1,8 @@
-Prevnext: 
+Title: May I Propose Prepuce?
 
 ----
 
-Title: May I Propose Prepuce?
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Curlicue
 
 ----
 
-Text: 
+Text:
 
 When the users over at Adult Fanfiction Dot Org aren't writing porn, they're thinking of ways to critque the ways that you, personally, write your porn. Fortunately, the site has a forum to service this need.
 
@@ -103,3 +103,7 @@ Chapters:
 ----
 
 Chapter-provider: 
+
+----
+
+Uuid: rzppiypsr3nnbxcp

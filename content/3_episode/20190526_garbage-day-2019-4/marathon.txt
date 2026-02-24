@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Garbage Day 2019 (Hours 19-24)
 
 ----
 
-Title: Garbage Day 2019 (Hours 19-24)
+Prevnext: 
 
 ----
 
@@ -54,7 +54,7 @@ Record-time-end: 11:30
 
 ----
 
-Hours: 
+Hours:
 
 - 
   hour: "19"
@@ -151,7 +151,7 @@ Leadout: That was great, let's do it all again.
 
 ----
 
-Buttons: 
+Buttons:
 
 - 
   url: >
@@ -168,3 +168,7 @@ Buttons:
     https://www.youtube.com/playlist?list=PLbDEABAdDXRVBY_ppQdYaxXlddH3VqGpK
   text: YouTube Playlist
   target_blank: "1"
+
+----
+
+Uuid: gluc6zhxlokfmqop

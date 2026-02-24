@@ -1,8 +1,8 @@
-Prevnext: 
+Title: Sticky! Icky! Icky!
 
 ----
 
-Title: Sticky! Icky! Icky!
+Prevnext: 
 
 ----
 
@@ -50,7 +50,7 @@ Provider: Mr. Hunky Academia,Girlkisser
 
 ----
 
-Text: 
+Text:
 
 The **Wiki Sticky Site** may no longer be with us, but the fetish it catalogued remains with us on the internet. The people who describe themselves as "Stuck In Glue Fetishists" have a specific turn-on that you might have guessed, but it is *crucially important* that they describe what specific kind of glue is being used in all cases, because this is not a place for fantasy.
 
@@ -66,7 +66,7 @@ Tags: how in the hell did you get that fetish?,useless tiny detail fetish,acting
 
 ----
 
-Bonus-content: 
+Bonus-content:
 
 1. [Superhero Grout Mask](https://www.aliexpress.com/item/32840979597.html?spm=a2g0o.detail.1000060.2.577a435c6TszkX) (AliExpress)
 2. [Mavel Thanos Mask](https://www.aliexpress.com/item/33031983810.html?spm=a2g0o.productlist.0.0.49f61097BV61O0) (AliExpress)
@@ -112,3 +112,7 @@ Chapter-provider-aftergap:
 ----
 
 Ballpit-url: https://ballp.it/index.php?topic=3304.0
+
+----
+
+Uuid: tsnv7rb2xwwm5rsv

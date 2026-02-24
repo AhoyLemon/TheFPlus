@@ -46,7 +46,7 @@ Provider: A Meat
 
 ----
 
-Text: 
+Text:
 
 The internet is an exciting global landscape under constant dynamic upheaval. I have no idea what any of that means, but we're talking about tech startups here, so it doesn't really matter. We're looking at a site called IdeasWatch where people can pitch their ideas for an interesting app or innovation and *then*... well, nothing. It's ignored forever.
 
@@ -63,3 +63,7 @@ Tags: please give me money for my stupid idea
 ----
 
 Bonus-content: 1. [White Men Wearing Google Glass](http://whitemenwearinggoogleglass.tumblr.com)
+
+----
+
+Uuid: vdf1dghyktwcu5a4

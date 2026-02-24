@@ -42,7 +42,7 @@ Provider: LADY FRENZY
 
 ----
 
-Text: 
+Text:
 
 "Why not?" is the kind of question that carries with it a lot of connotations of poor thought processes, but in the case of this episode (recorded a while ago),  "Why Not?" is the name of an idea dumpsite started by two Yale professors until they found something else to spend time on. The format should be somewhat familiar: People present unworkable solutions to problems nobody has, and then other people... do nothing at all. 
 
@@ -59,3 +59,7 @@ Tags: free ideas,lazy people,questionable problem-solving,please give me money f
 ----
 
 Bonus-content: 
+
+----
+
+Uuid: wcn6gectbomuevjf
