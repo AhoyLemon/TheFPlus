@@ -13,6 +13,7 @@ json/
 content_old/
 site/sessions
 media/pages/*
+site/logs/*
 
 # Node / Bun
 node_modules/
