@@ -1,34 +1,105 @@
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth;
-  @media (prefers-reduced-motion) { scroll-behavior: initial; }
+@use "shared" as *;
+
+* {
+  box-sizing: border-box;
 }
-body { background-color:$body; color:$copy;
-  font-family:$sans-serif; 
+html {
+  scroll-behavior: smooth;
+  @media (prefers-reduced-motion) {
+    scroll-behavior: initial;
+  }
 }
-img { max-width: 100%; height: auto; }
-a { cursor: pointer; color:$link; }
-b, strong { font-weight: $bold; }
-h1, h2, h3, h4, h5, h6 { font-family: $sans-serif; }
-h1 { font-size:clamp(2.5rem,4vw,3.3rem); font-weight: $bold; }
-h2 { font-size:clamp(2.15rem,3.5vw,2.8rem); font-weight: $light; }
-h3 { font-size:clamp(1.5rem,3vw,2.25rem); font-weight: $light; }
-h4 { font-size:clamp(1.25rem,3.25vw,2.25rem); font-weight: $normal; }
-h5 { font-size:1.25em; font-weight: $normal; }
-h6 { font-size:1em; font-weight: $normal; }
-h1, h2, h3, h4, h5, h6 { line-height: 105%; }
-ul { padding-left: 1.5em; 
-  li { list-style-type: disc; }
+body {
+  background-color: $body;
+  color: $copy;
+  font-family: $sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  cursor: pointer;
+  color: $link;
+}
+b,
+strong {
+  font-weight: $bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $sans-serif;
+}
+h1 {
+  font-size: clamp(2.5rem, 4vw, 3.3rem);
+  font-weight: $bold;
+}
+h2 {
+  font-size: clamp(2.15rem, 3.5vw, 2.8rem);
+  font-weight: $light;
+}
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: $light;
+}
+h4 {
+  font-size: clamp(1.25rem, 3.25vw, 2.25rem);
+  font-weight: $normal;
+}
+h5 {
+  font-size: 1.25em;
+  font-weight: $normal;
+}
+h6 {
+  font-size: 1em;
+  font-weight: $normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 105%;
+}
+ul {
+  padding-left: 1.5em;
+  li {
+    list-style-type: disc;
+  }
 }
 
-button.button { background-color:$red; color:white; border:1px solid $red; padding: 1em 0.5em; font-weight: $heavy; font-size:1rem; box-shadow: 2px 2px 2px $black;
-  &:hover { color:$red; background:white; cursor: pointer; }
-  &:active { box-shadow: none; transform:translate(2px,2px); }
+button.button {
+  background-color: $red;
+  color: white;
+  border: 1px solid $red;
+  padding: 1em 0.5em;
+  font-weight: $heavy;
+  font-size: 1rem;
+  box-shadow: 2px 2px 2px $black;
+  &:hover {
+    color: $red;
+    background: white;
+    cursor: pointer;
+  }
+  &:active {
+    box-shadow: none;
+    transform: translate(2px, 2px);
+  }
 }
 
 @media (min-width: $desktop-min) {
-  .mobile-only { display: none; }
+  .mobile-only {
+    display: none;
+  }
 }
 
 @media (max-width: $mobile-max) {
-  .desktop-only { display: none; }
+  .desktop-only {
+    display: none;
+  }
 }

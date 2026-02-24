@@ -1,111 +1,263 @@
+@use "shared" as *;
 
-
-$merchBorder: lighten($black,50%);
-
-.merch-grid { display: grid; grid-gap:$gap; margin-bottom: 20px; align-items: start;
+.merch-grid {
+  display: grid;
+  grid-gap: $gap;
+  margin-bottom: 20px;
+  align-items: start;
   article {
-    h3 { letter-spacing: .25em; font-weight: $bold; }
-  }
-  .grid-box { grid-column: span 1; color:$black; text-decoration: none; box-shadow: $boxShadow;
-    figure { position: relative; overflow: hidden; background:$card; }
-    .almost-gone { @include position(absolute,null,0,0); width:10em; }
-    .almost-gone-text { fill:$white; }
-    .thumb-holder {
-      img { max-height: 230px; width: auto; display: block; margin-left: auto; margin-right: auto; }
-      a.zoom-photo { cursor:zoom-in; }
+    h3 {
+      letter-spacing: 0.25em;
+      font-weight: $bold;
     }
-    
-    img { width: 100%; }
-    .details { @include flex-container(); border-top: none; border-left: none; border-bottom: 1px solid $merchBorder; border-right: 1px solid $merchBorder;
-      .detail { border-left: 1px solid $merchBorder; background:#fff;
-        a { text-decoration: none;
-          &:hover { text-decoration: underline; }
+  }
+  .grid-box {
+    grid-column: span 1;
+    color: $black;
+    text-decoration: none;
+    box-shadow: $boxShadow;
+    figure {
+      position: relative;
+      overflow: hidden;
+      background: $card;
+    }
+    .almost-gone {
+      @include position(absolute, null, 0, 0);
+      width: 10em;
+    }
+    .almost-gone-text {
+      fill: $white;
+    }
+    .thumb-holder {
+      img {
+        max-height: 230px;
+        width: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      a.zoom-photo {
+        cursor: zoom-in;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+    .details {
+      @include flex-container();
+      border-top: none;
+      border-left: none;
+      border-bottom: 1px solid $merchBorder;
+      border-right: 1px solid $merchBorder;
+      .detail {
+        border-left: 1px solid $merchBorder;
+        background: #fff;
+        a {
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
-      label { display: block; background:$merchBorder; color:$black; font-size:80%; padding: 2px 10px; text-transform:lowercase; font-weight: $bold; }
-      .text { display: block; padding: 4px 10px; text-transform: uppercase; @extend %truncate; max-width: 320px; }
+      label {
+        display: block;
+        background: $merchBorder;
+        color: $black;
+        font-size: 80%;
+        padding: 2px 10px;
+        text-transform: lowercase;
+        font-weight: $bold;
+      }
+      .text {
+        display: block;
+        padding: 4px 10px;
+        text-transform: uppercase;
+        @extend %truncate;
+        max-width: 320px;
+      }
       .name {
-        .text { font-size:120%; }
+        .text {
+          font-size: 120%;
+        }
       }
       .dimensions {
-        .text { text-transform: lowercase; }
-      }
-      
-      .full { @include flex-item(100%); max-width: 100%; }
-      .two-thirds { @include flex-item(66.666%); }
-      .half { @include flex-item(50%); }
-      .third { @include flex-item(33.333%); }
-      
-      .buy-buttons { @include flex-item(100%); border-top:1px solid $merchBorder;
-        .buttons { @include flex-container(); padding: 10px; }
-        form { @include flex-item(33.333%); text-align: center; }
-        button, .button { background-color: $red; color: white; border: 1px solid $red; padding: 1em 0.5em; font-weight: 600; font-size: 1rem; box-shadow: 2px 2px 2px $black; cursor: pointer; 
-          &:hover { background-color:white; color:$red; }
-          &:active { background-color:$black; color:white; }
-          &.single-button { display: block; width:100%; }
+        .text {
+          text-transform: lowercase;
         }
       }
-      .no-buttons { @include flex-item(100%); border-top:1px solid $black; padding: 0.75rem 0.25rem; text-align: center; background-color:$black; color:$white;
-        span { font-size:115%; font-weight: 300; }
+
+      .full {
+        @include flex-item(100%);
+        max-width: 100%;
+      }
+      .two-thirds {
+        @include flex-item(66.666%);
+      }
+      .half {
+        @include flex-item(50%);
+      }
+      .third {
+        @include flex-item(33.333%);
+      }
+
+      .buy-buttons {
+        @include flex-item(100%);
+        border-top: 1px solid $merchBorder;
+        .buttons {
+          @include flex-container();
+          padding: 10px;
+        }
+        form {
+          @include flex-item(33.333%);
+          text-align: center;
+        }
+        button,
+        .button {
+          background-color: $red;
+          color: white;
+          border: 1px solid $red;
+          padding: 1em 0.5em;
+          font-weight: 600;
+          font-size: 1rem;
+          box-shadow: 2px 2px 2px $black;
+          cursor: pointer;
+          &:hover {
+            background-color: white;
+            color: $red;
+          }
+          &:active {
+            background-color: $black;
+            color: white;
+          }
+          &.single-button {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+      .no-buttons {
+        @include flex-item(100%);
+        border-top: 1px solid $black;
+        padding: 0.75rem 0.25rem;
+        text-align: center;
+        background-color: $black;
+        color: $white;
+        span {
+          font-size: 115%;
+          font-weight: 300;
+        }
       }
     }
   }
   a {
-    figure { background:$red; }
-    .name { color:$red; }
+    figure {
+      background: $red;
+    }
+    .name {
+      color: $red;
+    }
   }
   a.grid-box:hover {
-    .details { color: $red; }
-    .name .text { text-decoration: underline; }
-    .almost-gone-text { fill:$red; }
-
-    
+    .details {
+      color: $red;
+    }
+    .name .text {
+      text-decoration: underline;
+    }
+    .almost-gone-text {
+      fill: $red;
+    }
   }
 }
 
-form.paypal-buy-form { display:block; width:12em;
-  select { display: block; font-size:1rem; padding: 0.25em; width:100%; height: 3em; font-family: $source; }
-  button { width:100%; }
-}
-
-@media (min-width:1581px) {
-  .merch-grid { grid-template-columns: repeat(4,1fr);
-    article { grid-column: span 4; }
+form.paypal-buy-form {
+  display: block;
+  width: 12em;
+  select {
+    display: block;
+    font-size: 1rem;
+    padding: 0.25em;
+    width: 100%;
+    height: 3em;
+    font-family: $source;
   }
-}
-@media (min-width:1271px) and (max-width:1580px) {
-  .merch-grid { grid-template-columns: repeat(3,1fr);
-    article { grid-column: span 3; }
-  }
-}
-
-@media (min-width:971px) and (max-width:1270px) {
-  .merch-grid { grid-template-columns: repeat(2,1fr);
-    article { grid-column: span 2; }
+  button {
+    width: 100%;
   }
 }
 
-@media (min-width:766px) and (max-width:970px) {
-  .merch-grid { grid-template-columns: 1fr; }
+@media (min-width: 1581px) {
+  .merch-grid {
+    grid-template-columns: repeat(4, 1fr);
+    article {
+      grid-column: span 4;
+    }
+  }
 }
-
-@media (min-width:583px) and (max-width:765px) {
-  .merch-grid { grid-template-columns: repeat(2,1fr);
-    article { grid-column: span 2; }
+@media (min-width: 1271px) and (max-width: 1580px) {
+  .merch-grid {
+    grid-template-columns: repeat(3, 1fr);
+    article {
+      grid-column: span 3;
+    }
   }
 }
 
-@media (max-width:582px) {
-  .merch-grid { grid-template-columns: 1fr; }
+@media (min-width: 971px) and (max-width: 1270px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr);
+    article {
+      grid-column: span 2;
+    }
+  }
 }
 
+@media (min-width: 766px) and (max-width: 970px) {
+  .merch-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
+@media (min-width: 583px) and (max-width: 765px) {
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr);
+    article {
+      grid-column: span 2;
+    }
+  }
+}
 
-.product-photos { display:grid; gap:$gap; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
-  a { cursor:zoom-in; }
-  img { border: 2px solid $black; }
-  a img { border-color:$red;  }
-  h3, .share-your-photo { grid-column:1/-1; }
-  h3 { font-weight: $light; font-size: 1.25em; text-transform: uppercase; letter-spacing: 0.15em; }
-  .share-your-photo { margin-top: 10px;  }
+@media (max-width: 582px) {
+  .merch-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-photos {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  a {
+    cursor: zoom-in;
+  }
+  img {
+    border: 2px solid $black;
+  }
+  a img {
+    border-color: $red;
+  }
+  h3,
+  .share-your-photo {
+    grid-column: 1/-1;
+  }
+  h3 {
+    font-weight: $light;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .share-your-photo {
+    margin-top: 10px;
+  }
 }

@@ -1,26 +1,75 @@
-.disqus-comment-count { position: absolute; bottom: 2px; right: 2px; width:3em; height:2em; background-image: url(../svg/empty_comment.svg); background-repeat: no-repeat; background-position: top center; background-size: contain; text-decoration: none; font-weight: 600; text-align:center; color:#fff; @include transition();
-  &:hover { @include translateY(-25%); }
+@use "shared" as *;
+
+.disqus-comment-count {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 3em;
+  height: 2em;
+  background-image: url(../svg/empty_comment.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  @include transition();
+  &:hover {
+    @include translateY(-25%);
+  }
 }
 
-#CommentsPage { font-size:16px; padding-left: 0;
-  li { list-style-type: none; margin-bottom: 1em; }
-  h5 { margin: 0; padding: 0.1em 0.7em 0.3em 0.7em;
-    a { font-weight: 100; text-transform: uppercase;
-      &:hover { text-decoration: none; border-bottom: 0.05em solid $red; }
-    }
+#CommentsPage {
+  font-size: 16px;
+  padding-left: 0;
+  li {
+    list-style-type: none;
+    margin-bottom: 1em;
   }
-  blockquote { margin: 0;
-    .score { position: absolute; bottom:5px; right:5px; font-weight: $normal; font-size:1.25em;
-      &.positive { color:$green;
-        &:before { content:'+'; }
+  h5 {
+    margin: 0;
+    padding: 0.1em 0.7em 0.3em 0.7em;
+    a {
+      font-weight: 100;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 0.05em solid $red;
       }
-      &.negative { color:$red; }
     }
   }
-  cite { display: block; font-size: 0.85em; text-align: right; }
-  .thumbnail { max-width: 120px; }
+  blockquote {
+    margin: 0;
+    .score {
+      position: absolute;
+      bottom: 5px;
+      right: 5px;
+      font-weight: $normal;
+      font-size: 1.25em;
+      &.positive {
+        color: $green;
+        &:before {
+          content: "+";
+        }
+      }
+      &.negative {
+        color: $red;
+      }
+    }
+  }
+  cite {
+    display: block;
+    font-size: 0.85em;
+    text-align: right;
+  }
+  .thumbnail {
+    max-width: 120px;
+  }
 }
 
-@media (min-width:1200px) {
-  #CommentsPage { font-size:1.5vw; }
+@media (min-width: 1200px) {
+  #CommentsPage {
+    font-size: 1.5vw;
+  }
 }

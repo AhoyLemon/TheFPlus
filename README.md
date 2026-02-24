@@ -7,11 +7,10 @@
 
 This repository contains all files powering [thefpl.us](https://thefpl.us), a website built on [Kirby CMS](https://github.com/getkirby/kirby/). The site content and architecture are versioned here for transparency and development.
 
-
 ## Requisites
 
 - **[PHP 8.2+](https://www.php.net/)** (required)
-	- Several Required Extensions [see requirements](https://getkirby.com/docs/reference/system/requirements#php-extensions)
+  - Several Required Extensions [see requirements](https://getkirby.com/docs/reference/system/requirements#php-extensions)
 - **[Apache or Nginx](https://httpd.apache.org/)** (for production)
 - **[Laragon](https://laragon.org/)** (recommended for local development)
 
@@ -20,28 +19,62 @@ This repository contains all files powering [thefpl.us](https://thefpl.us), a we
 [![Kirby CMS](https://img.shields.io/badge/Kirby_5.2+-000?style=for-the-badge&logo=kirby&logoColor=fff&labelColor=000&color=222)](https://getkirby.com/)
 [![PHP](https://img.shields.io/badge/PHP_8.2+-000?style=for-the-badge&logo=php&logoColor=000&labelColor=777BB4&color=222&logoSize=auto)](https://www.php.net/)
 [![YAML](https://img.shields.io/badge/YAML-000?style=for-the-badge&logo=yaml&logoColor=fff&labelColor=CB171E&color=222)](https://yaml.org/)
-[![Sass](https://img.shields.io/badge/Sass-000?style=for-the-badge&labelColor=CC6699&logo=sass&logoColor=000&color=222)](https://sass-lang.com/)
+[![Sass](https://img.shields.io/badge/Sass-000?style=for-the-badge&labelColor=CC6699&logo=sass&logoColor=fff&color=222)](https://sass-lang.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-000?style=for-the-badge&logo=typescript&logoColor=fff&labelColor=3178C6&color=222)](https://www.typescriptlang.org/)
 [![RSS](https://img.shields.io/badge/RSS-000?style=for-the-badge&logo=rss&logoColor=fff&labelColor=FFA500&color=222)](https://www.rssboard.org/rss-specification)
 [![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=fff&labelColor=F05032&color=222)](https://git-scm.com/)
 [![Apache](https://img.shields.io/badge/Apache-000?style=for-the-badge&logo=apache&logoColor=fff&labelColor=D22128&color=222)](https://httpd.apache.org/)
 [![Matomo](https://img.shields.io/badge/Matomo-000?style=for-the-badge&labelColor=3152A0&logo=matomo&logoColor=fff&color=222&logoSize=auto)](https://matomo.org/)
 [![Disqus](https://img.shields.io/badge/Disqus-000?style=for-the-badge&labelColor=2E9FFF&logo=disqus&logoColor=fff&color=222&logoSize=auto)](https://disqus.com/)
 [![Laragon](https://img.shields.io/badge/Laragon-000?style=for-the-badge&labelColor=0E83CD&logo=laragon&logoColor=fff&color=222)](https://laragon.org/)
-
-
+[![Bun](https://img.shields.io/badge/Bun-000?style=for-the-badge&logo=bun&logoColor=fff&labelColor=000000&color=222&logoSize=auto)](https://bun.sh/)
 
 ## Local Development
 
 1. Clone the repository:
-	```sh
-	git clone https://github.com/AhoyLemon/TheFPlus.git
-	```
-3. (Recommended) Install Laragon and point it at your folder
-2. Make sure you have PHP 8.2+ and Apache running in your local environment.
+   ```sh
+   git clone https://github.com/AhoyLemon/TheFPlus.git
+   ```
+2. (Recommended) Install [Laragon](https://laragon.org) and point it at your folder — the local dev URL is `http://thefplus.test`.
+3. Make sure you have PHP 8.2+ and Apache running in your local environment.
 4. Start your local server (Laragon, XAMPP, or similar).
 5. Visit [thefplus.test](http://thefplus.test) in your browser.
 
+## Frontend Assets
+
+Sass and TypeScript are compiled via [Bun](https://bun.sh). Install it from [bun.sh](https://bun.sh) if you haven't already.
+
+**Install dependencies:**
+
+```sh
+bun install
+```
+
+**Watch mode** (compiles Sass + TypeScript on save, browse at http://thefplus.test — refresh to see changes):
+
+```sh
+bun run dev
+```
+
+**Production build** (compressed CSS, minified JS):
+
+```sh
+bun run build
+```
+
+### Asset Structure
+
+| Source                      | Output                      |
+| --------------------------- | --------------------------- |
+| `assets/sass/thefplus.scss` | `assets/css/thefplus.css`   |
+| `assets/js/src/thefplus.ts` | `assets/js/thefplus.min.js` |
+
+Sass partials live in `assets/sass/partials/`. The `_shared.scss` partial forwards variables, mixins, extends, and z-index values to every partial that needs them via `@use 'shared' as *;`.
+
+TypeScript source lives in `assets/js/src/`. Vendor scripts (e.g., Podlove player, Chartist) remain in `assets/js/vendor/` and are left untouched.
+
 ## Deployment
+
 **Status: TBD**
 
 > **Note:** Currently, deployment is handled via FTP. We're working to integrate this with the Git repository workflow, allowing you to push locally and pull on the remote server for automated deployment.
@@ -53,6 +86,7 @@ This repository contains all files powering [thefpl.us](https://thefpl.us), a we
 If you have suggestions or improvements, please [submit an issue](https://github.com/AhoyLemon/TheFPlus/issues) or contact Lemon before submitting a pull request.
 
 ## Stats
+
 [![Open Issues](https://img.shields.io/github/issues/AhoyLemon/TheFPlus?label=Issues&style=for-the-badge&color=orange)](https://github.com/AhoyLemon/TheFPlus/issues)
 [![Closed Issues](https://img.shields.io/github/issues-closed/AhoyLemon/TheFPlus?label=&style=for-the-badge&color=222)](https://github.com/AhoyLemon/TheFPlus/issues?q=is%3Aissue+is%3Aclosed)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

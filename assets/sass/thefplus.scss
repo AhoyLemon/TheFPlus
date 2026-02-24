@@ -1,36 +1,30 @@
-@use 'sass:math';
-
 //NORMALIZE, GET DEFAULTS
-@import "partials/_reset";
-@import "partials/_variables";
-@import "partials/_mixins";
-@import "partials/_extends";
-@import "partials/_z-index";
-@import "partials/_defaults";
+@use "partials/reset";
+@use "partials/defaults";
 
 //STUFF
-@import "partials/_sidebar";
-@import "partials/_main";
-@import "partials/_briefs";
-@import "partials/_tags";
-@import "partials/_episode";
-@import "partials/_meet";
-@import "partials/_blog";
-@import "partials/_guess";
+@use "partials/sidebar";
+@use "partials/main";
+@use "partials/briefs";
+@use "partials/tags";
+@use "partials/episode";
+@use "partials/meet";
+@use "partials/blog";
+@use "partials/guess";
 
-//A COUPLE UTILITIES 
-@import "partials/_disqus";
-@import "partials/_search";
-@import "partials/_youtube";
-@import "partials/_modal";
+//A COUPLE UTILITIES
+@use "partials/disqus";
+@use "partials/search";
+@use "partials/youtube";
+@use "partials/modal";
 
 //SPECIFIC PAGES
-@import "partials/_merch";
-@import "partials/_donate";
-@import "partials/_hopper"; 
+@use "partials/merch";
+@use "partials/donate";
+@use "partials/hopper";
 
-//@import "partials/_stickers";  
-@import "partials/_fanart"; 
+//@use "partials/stickers";
+@use "partials/fanart";
 
 //MARATHON CTA (remove after 24th)
-// @import "partials/_24th";
+// @use "partials/24th";

@@ -1,0 +1,10 @@
+// Shared foundation — @forward this to expose variables, mixins, extends,
+// and z-index values to any partial that needs them.
+//
+// Usage in a partial:
+//   @use 'shared' as *;
+
+@forward "variables";
+@forward "mixins";
+@forward "extends";
+@forward "z-index";

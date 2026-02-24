@@ -28,5 +28,10 @@ columns:
       gallery:
         label: Fanart Images
         type: files
-        layout: cardlets
+        layout: cards
+        size: small
+        sortable: false
         template: fanimage
+        limit: 40
+        image:
+          cover: true

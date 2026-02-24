@@ -1,33 +1,87 @@
-ul.submitted-content { counter-reset: docNumber -1; display: table; width:100%; padding: 0 !important;
-  b { font-weight: $heavy; }
-  li { counter-increment: docNumber; display: table-row; font-size:16px;
-    > span, > a, > time { display: table-cell; padding: 0.2em 0.5em; vertical-align: middle; }
-    &:nth-child(even) { background-color:rgba($black, 0.1); }
+@use "shared" as *;
+
+ul.submitted-content {
+  counter-reset: docNumber -1;
+  display: table;
+  width: 100%;
+  padding: 0 !important;
+  b {
+    font-weight: $heavy;
   }
-  .thead {
-    .th { text-transform: uppercase; font-weight: $normal;
-      &:first-child { padding-left: 0.5em; }
+  li {
+    counter-increment: docNumber;
+    display: table-row;
+    font-size: 16px;
+    > span,
+    > a,
+    > time {
+      display: table-cell;
+      padding: 0.2em 0.5em;
+      vertical-align: middle;
+    }
+    &:nth-child(even) {
+      background-color: rgba($black, 0.1);
     }
   }
-  .number-cell { width:1.5em; text-align: right; font-weight: $bold; font-size: 0.9em;
-    &:before { content:counter(docNumber); }
+  .thead {
+    .th {
+      text-transform: uppercase;
+      font-weight: $normal;
+      &:first-child {
+        padding-left: 0.5em;
+      }
+    }
   }
-  time { font-size:0.8em; }
-  a { text-decoration: none;
-    &:hover { text-decoration: underline; }
+  .number-cell {
+    width: 1.5em;
+    text-align: right;
+    font-weight: $bold;
+    font-size: 0.9em;
+    &:before {
+      content: counter(docNumber);
+    }
+  }
+  time {
+    font-size: 0.8em;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   .multiple-items {
     > .item {
-      &:after { content:'& '; }
-      &:last-child:after { content:''; }
+      &:after {
+        content: "& ";
+      }
+      &:last-child:after {
+        content: "";
+      }
     }
   }
-  .dibs-icon { display: inline-block; background: $black; font-size: 50%; color: $white; width: 1.8em; text-align: center; line-height: 180%; border-radius: 50%; height: 1.8em; transform: translateY(-35%); }
-  .dibs-list { font-size:75%;
-    strong { font-weight: 600; }
+  .dibs-icon {
+    display: inline-block;
+    background: $black;
+    font-size: 50%;
+    color: $white;
+    width: 1.8em;
+    text-align: center;
+    line-height: 180%;
+    border-radius: 50%;
+    height: 1.8em;
+    transform: translateY(-35%);
+  }
+  .dibs-list {
+    font-size: 75%;
+    strong {
+      font-weight: 600;
+    }
   }
 }
 
-@media (max-width:$mobile-max) {
-  .hopper-wrapper { overflow-x: scroll; }
+@media (max-width: $mobile-max) {
+  .hopper-wrapper {
+    overflow-x: scroll;
+  }
 }

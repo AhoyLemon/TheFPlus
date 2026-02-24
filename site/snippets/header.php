@@ -31,7 +31,6 @@
 
 <![endif]-->
   <?php } ?>
-  <?= js('assets/js/vendor/jquery-3.5.1.min.js'); ?>
-  <?= js('assets/js/thefplus.min.js?updated=2020-09-11b'); ?>
+  <?= js('assets/js/thefplus.min.js'); ?>
 
   <?php snippet('sidebar') ?>

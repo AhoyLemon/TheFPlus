@@ -1,21 +1,9 @@
-@-webkit-keyframes skeleton {
-  0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
-  }
-  100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
-  }
-}
 @keyframes skeleton {
   0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
+    transform: skewX(-10deg) translateX(-100%);
   }
   100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
+    transform: skewX(-10deg) translateX(200%);
   }
 }
 .location-selector {
@@ -38,18 +26,10 @@
 }
 
 ul.size-array {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
   width: 100%;
   padding: 0 !important;
 }
@@ -83,21 +63,15 @@ ul.size-array button {
   cursor: pointer;
 }
 ul.size-array button:hover {
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 ul.size-array button:active {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 ul.size-array button[disabled] {
   background-color: rgba(52, 52, 52, 0.5);
   color: #343434;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 ul.size-array button[disabled]:after {
   content: "sold out";
@@ -114,3 +88,5 @@ ul.size-array button[disabled]:after {
     font-size: 3vw;
   }
 }
+
+/*# sourceMappingURL=shirt.css.map */

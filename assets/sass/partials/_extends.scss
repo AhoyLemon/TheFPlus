@@ -1,43 +1,99 @@
+@use "variables" as *;
+
 %clearfix {
-  &:after { content: ""; display: table;clear: both; }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
 
-%truncate { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+%truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 %commalist {
-  li { display: inline;
-    &:after { content:','; }
-    &:last-child:after { content:''; }
+  li {
+    display: inline;
+    &:after {
+      content: ",";
+    }
+    &:last-child:after {
+      content: "";
+    }
   }
 }
 
-%fanart { background-color:$episode; display: inline-block; max-width: 480px; margin-bottom: 1em; margin-right: 0.75em; padding:0; box-shadow: $boxShadow; margin-top: 30px;
-  &:not(.big) { padding:$padding;
-    img { max-width:260px !important; transform: translateY(-40px); }
-    figcaption { margin-top:-20px; }
+%fanart {
+  background-color: $episode;
+  display: inline-block;
+  max-width: 480px;
+  margin-bottom: 1em;
+  margin-right: 0.75em;
+  padding: 0;
+  box-shadow: $boxShadow;
+  margin-top: 30px;
+  &:not(.big) {
+    padding: $padding;
+    img {
+      max-width: 260px !important;
+      transform: translateY(-40px);
+    }
+    figcaption {
+      margin-top: -20px;
+    }
   }
 
-  video { margin: 0.50rem 0.5rem 0 0.5rem; max-height:225px; }
+  video {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    max-height: 225px;
+  }
 
-  &.big { max-width: 100%; padding:$padding;
-    video { max-height:none; }
-    img { max-height: none; }
+  &.big {
+    max-width: 100%;
+    padding: $padding;
+    video {
+      max-height: none;
+    }
+    img {
+      max-height: none;
+    }
   }
 
   transition: all 0.3s ease;
-  
-  img { transition:transform 0.3s ease; border:2px solid transparent; }
 
-  &:hover { cursor: pointer; 
-    img { border-color: $red; }
-    figcaption { color:$link; }
+  img {
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+  }
+
+  &:hover {
+    cursor: pointer;
+    img {
+      border-color: $red;
+    }
+    figcaption {
+      color: $link;
+    }
   }
 }
 
-%textlink { text-decoration:none;
-  &:hover { text-decoration:underline; text-decoration-thickness: 0.18em; }
+%textlink {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.18em;
+  }
 }
 
 %center-child {
-  align-self: stretch; flex-grow: 1; flex-shrink: 1; flex-basis: auto; display: flex; flex-direction: column; justify-content: center;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -48,10 +48,6 @@ tabs:
             label: Sidebar Links
             type: structure
             fields:
-              # slug:
-              #   label: Page
-              #   type: url
-              #   width: 1/2
               text:
                 label: Text
                 type: text
@@ -197,7 +193,6 @@ tabs:
             sortBy: date desc
             sortable: false
             image:
-              # ratio: 1/1
               cover: true
       - width: 1/2
         sections:
