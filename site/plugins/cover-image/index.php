@@ -38,12 +38,12 @@ Kirby::plugin('thefplus/cover-image', [
 
             // 1. Prefer an explicit cover field (stores a filename reference)
             if ($this->cover()->isNotEmpty() && ($f = $this->cover()->toFile())) {
-                return $this->url() . '/' . $f->filename();
+                return url('coverimage/' . $this->uri() . '/' . $f->filename());
             }
 
             // 2. Fall back to the first image attached to the page
             if ($img = $this->images()->first()) {
-                return $this->url() . '/' . $img->filename();
+                return url('coverimage/' . $this->uri() . '/' . $img->filename());
             }
 
             // 3. Nothing found

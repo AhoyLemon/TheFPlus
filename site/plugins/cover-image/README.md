@@ -11,13 +11,15 @@ Kirby 5's built-in media URLs contain rotating content tokens, e.g.:
 /media/pages/episode/415/b8ecb85894-1768600774/ep415.jpg
 ```
 
-This plugin replaces those with clean, permanent URLs that mirror the page hierarchy:
+This plugin replaces those with clean, permanent URLs under a dedicated `/coverimage/` namespace:
 
 ```
-/episode/415/ep415.jpg
-/meet/stocking/stocking.jpg
-/also-made/some-project/thumb.png
+/coverimage/episode/415/ep415.jpg
+/coverimage/meet/stocking/stocking.jpg
+/coverimage/also-made/some-project/thumb.png
 ```
+
+The `/coverimage/` prefix keeps the route completely isolated — it cannot interfere with normal page routing, query strings, or any other Kirby functionality.
 
 ---
 
@@ -33,20 +35,19 @@ This plugin replaces those with clean, permanent URLs that mirror the page hiera
            └── README.md
    ```
 
-2. **Add the file-serving route** to `site/config/config.php`. The route intercepts any URL whose final path segment looks like a filename and streams the content-folder file directly — bypassing Kirby's media-token system.
+2. **Add the file-serving route** to `site/config/config.php`. It uses a dedicated `coverimage/(:all)` pattern so it is completely safe and cannot shadow any normal page routes.
 
    ```php
    'routes' => [
+       // COVER-IMAGE FILE SERVING
        [
-           'pattern' => '(:all)',
+           'pattern' => 'coverimage/(:all)',
            'action'  => function (string $path) {
                $lastSlash = strrpos($path, '/');
                if ($lastSlash === false) return null;
 
                $filename = substr($path, $lastSlash + 1);
                $pagePath = substr($path, 0, $lastSlash);
-
-               if (strpos($filename, '.') === false) return null;
 
                $parentPage = page($pagePath);
                if (!$parentPage) return null;
@@ -68,7 +69,7 @@ This plugin replaces those with clean, permanent URLs that mirror the page hiera
    ],
    ```
 
-   > **Route placement:** the `(:all)` route must appear **before** any other `(:all)` catch-all routes. More specific patterns like `episode/feed` can be in any order.
+   > **Route placement:** `coverimage/(:all)` is a specific pattern and can be placed anywhere in the routes array without affecting other routes.
 
 ---
 

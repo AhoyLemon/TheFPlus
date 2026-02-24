@@ -74,33 +74,22 @@ return [
 			}
 		],
 
-		// COVER-IMAGE FILE SERVING – clean, stable asset URLs
-		// The coverImage() page method generates URLs like /episode/415/ep415.jpg.
-		// This route intercepts those requests, finds the file via the Kirby page
-		// tree, and streams it directly – bypassing the media-token system so the
-		// URL is permanent regardless of content edits.
-		//
-		// Pattern: any path whose final segment contains a dot (i.e. has an extension).
-		// Requests that don't resolve to a known page file fall through to Kirby's
-		// normal routing (returning null continues route matching).
+		// COVER-IMAGE FILE SERVING
+		// Serves content-folder images at stable, token-free URLs:
+		//   /coverimage/episode/415/ep415.jpg
+		// Safe: only matches paths that start with "coverimage/" – no
+		// risk of interfering with normal page or panel routing.
 		[
-			'pattern' => '(:all)',
+			'pattern' => 'coverimage/(:all)',
 			'action'  => function (string $path) {
-				// Split off the last path component as the candidate filename.
 				$lastSlash = strrpos($path, '/');
 				if ($lastSlash === false) {
-					return null; // top-level slug, not a file
+					return null;
 				}
 
 				$filename = substr($path, $lastSlash + 1);
 				$pagePath = substr($path, 0, $lastSlash);
 
-				// Only act on paths that look like files (have an extension).
-				if (strpos($filename, '.') === false) {
-					return null;
-				}
-
-				// Find the parent page and the file within it.
 				$parentPage = page($pagePath);
 				if (!$parentPage) {
 					return null;
@@ -116,7 +105,7 @@ return [
 					exit;
 				}
 
-				return null; // file not found – fall through to 404
+				return null;
 			}
 		],
 		

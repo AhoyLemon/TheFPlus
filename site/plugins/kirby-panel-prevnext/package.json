@@ -1,8 +1,0 @@
-{
-  "name": "kirby-panel-prevnext",
-  "description": "Panel siblings navigation",
-  "author": "Jens Törnell <jens.tornell@gmail.com>",
-  "version": "0.1",
-  "type": "kirby-plugin",
-  "license": "MIT"
-}
