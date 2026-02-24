@@ -1,0 +1,4 @@
+fields:
+  first_name:
+    label: First Name
+    type: text

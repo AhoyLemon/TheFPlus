@@ -1,0 +1,6 @@
+title: Page
+icon: home
+fields:
+  text:
+    label: Page Text
+    type: markdown

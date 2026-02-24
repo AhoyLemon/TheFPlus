@@ -33,6 +33,139 @@ tabs:
             parent: site.find("submit")
             layout: cardlets  
   
+  # Site Sidebar
+  sidebarTab:
+    label: Sidebar
+    columns:
+      - width: 1/2
+        fields:
+          sidebar_links:
+            label: Sidebar Links
+            type: structure
+            fields:
+              # slug:
+              #   label: Page
+              #   type: url
+              #   width: 1/2
+              text:
+                label: Text
+                type: text
+                width: 1/2
+              link_type:
+                label: Link type:
+                type: select
+                width: 1/2
+                required: true
+                options:
+                  url: URL
+                  slug: Page
+                  search: search
+              page_slug:
+                label: Page
+                type: pages
+                multiple: false
+                when:
+                  link_type: slug
+              page_url:
+                label: URL
+                type: url
+                when:
+                  link_type: url
+            columns:
+              text: true
+      - width: 1/2
+        fields:
+          subscribe_options:
+            label: Sidebar Links
+            type: structure
+            fields:
+              icon:
+                label: Icon
+                type: select
+                width: 1/3
+                required: true
+                options:
+                  rss: RSS
+                  pocketcasts: Pocket Casts
+                  itunes: Apple Podcasts
+                  playmusic: Google Play Music
+                  overcast: Overcast
+                  radiopublic: Radio Public
+                  podchaser: Podchaser
+              url:
+                label: URL
+                type: url
+                width: 2/3
+                required: true
+              text:
+                label: Text
+                type: text
+                required: true
+          social_links:
+            label: Social Links
+            type: structure
+            fields:
+              icon:
+                label: Icon
+                type: select
+                width: 1/3
+                required: true
+                options:
+                  ballpit: Ball Pit
+                  twitter: Twitter
+                  github: GitHub
+                  youtube: YouTube
+                  rss: RSS
+                  pocketcasts: Pocket Casts
+                  itunes: iTunes
+                  paypal: PayPal
+                  podchaser: Podchaser
+                  lemon: Lemon
+                  damndog: Damn Dog
+                  twitch: Twitch
+                  soundcloud: Soundcloud
+                  mastodon: Mastodon
+              url:
+                label: URL
+                type: url
+                width: 2/3
+                required: true
+              text:
+                label: Text
+                type: text
+                required: true
+
+  # Site Meta
+  siteMetaTab:
+    label: Site MetaInfo
+    # columns:
+    #   - width: 1/1
+    fields:
+      email:
+        label: Site Admin Email
+        type: email
+        required: true
+        width: 1/2
+      twitter_handle:
+        label: Twitter Handle (no @)
+        type: text
+        placeholder: (no @)
+        icon: twitter
+        width: 1/2
+        required: false
+      schema_sameas:
+        label: Schema SameAs
+        type: structure
+        fields:
+          url:
+            label: URL
+            type: url
+      description:
+        extends: fields/simpletext
+      copyright:
+        label: Copyright
+        type:  text
+
   # Episode Pages
   episodeTab:
     label: F+ Episodes
@@ -41,8 +174,8 @@ tabs:
         extends: sections/episodePages
         status: listed
         layout: cards
-        size: small
-        limit: 49
+        size: medium
+        limit: 48
 
   # Projects & Merch
   projectTab:
