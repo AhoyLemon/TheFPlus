@@ -16,7 +16,7 @@ const markupOpen = `
           <path d="M16 17a1 1 0 01-.707-.293l-8-8a1 1 0 111.414-1.414l8 8A1 1 0 0116 17z"/>
           <path d="M8 17a1 1 0 01-.707-1.707l8-8a1 1 0 111.414 1.414l-8 8A1 1 0 018 17z"/>
         </svg>
-      </button>`;
+      </button>`; 
 
 const markupClose =`
     </div>
@@ -86,17 +86,11 @@ $(document).ready(function() {
     $('main').toggleClass('noscroll');
   });
   
-  $('#SidebarSearchForm').submit(function() {
-    var s = $('#SidebarSearch').val();
-    var url = "https://thefpl.us/search?q="+s;
-    window.location = url;
-    preventDefault();
-  });
-  
   $('#SidebarSearch').keydown(function(e) {
     if (e.keyCode == 13) {
       var s = $('#SidebarSearch').val();
-      var url = "https://thefpl.us/search?q="+s;
+      var url = "http://thefplus.test/search?q="+s;
+      alert(url)
       window.location = url;
       e.preventDefault();
     }
@@ -225,19 +219,3 @@ $(document).on('click', '#CloseModal', function() {
 $(document).on('click', '#ImageModalDropsheet', function() {
   $('#ImageModal').remove();
 });
-
-
-/*
-// Play an episode
-$('audio').on('play', function(){
-  if (episodePlayed === false) {
-    trackEvent("listen", "play", p);
-    episodePlayed = true;
-  }
-});
-
-// Download an episode
-$('a.action.download').click(function() {
-  trackEvent("listen", "download", p);
-});
-*/
