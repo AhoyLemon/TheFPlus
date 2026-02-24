@@ -1,8 +1,0 @@
-title: Guess Feed
-icon: rss-square
-pages: false
-files: false
-fields:
-  title:
-    label: Title
-    type:  text
