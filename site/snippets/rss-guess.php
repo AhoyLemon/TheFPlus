@@ -5,7 +5,6 @@ if (!headers_sent()) {
   header('Content-Type: text/xml; charset=utf-8');
 }
 echo '<?xml version="1.0" encoding="utf-8"?>';
-// echo '<?xml-stylesheet type="text/xsl" href="/assets/xsl/stan.xsl"?>';
 ?>
 <rss 
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -21,23 +20,23 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
     <description><?= $feedDescription ?></description>
     <?php foreach ($episodes as $item): ?>
       <item>
-        <title><?php echo $item->slug() ?>: <?php echo xml($item->title()) ?></title>
+        <title><?= $item->slug() ?>: <?= $item->title()->xml(); ?></title>
         <link><?=  $item->url(); ?></link>
         <guid><?= $item->url();  ?></guid>
-        <pubDate><?php echo $item->date('D, d M Y') ?> <?php echo $item->time('H:i') ?>:00 CST</pubDate>
+        <pubDate><?= $item->date('D, d M Y') ?> <?= $item->time('H:i') ?>:00 CST</pubDate>
         <description>
-          <?php echo $desc; ?>
+          <?= $item->text()->xml(); ?>
         </description>
         <enclosure url="https://thefpl.us/podcasts/<?php echo $item->episode_file() ?>" length="<?php echo $item->file_size(); ?>000000" type="audio/mpeg"></enclosure>
         <content:encoded>
           <![CDATA[
-            <?php echo $item->text()->kirbytext(); ?>
+            <?= $item->text()->kirbytext(); ?>
           ]]>
         </content:encoded>
         <itunes:author>The F Plus</itunes:author>
-        <itunes:subtitle>with <?php echo xml($item->cast()) ?></itunes:subtitle>
-        <itunes:duration><?php echo $item->runtime(); ?></itunes:duration>
-        <itunes:summary><?php echo xml($desc); ?></itunes:summary>
+        <itunes:subtitle>with <?= $item->cast()->xml() ?></itunes:subtitle>
+        <itunes:duration><?= $item->runtime()->xml() ?></itunes:duration>
+        <itunes:summary><?= $item->text()->truncate(140,"...")->xml() ?></itunes:summary>
         
         <?php if ($item->cover() != "") { ?>
           <itunes:image href="<?php echo $item->url() ?>/<?php echo $item->cover()->filename() ?>" />
