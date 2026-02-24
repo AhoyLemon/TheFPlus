@@ -1920,6 +1920,16 @@ dl.chapters-info.expanded dd {
   transform: scale(1.1);
 }
 
+.github-repo-link-holder {
+  margin-bottom: 2rem;
+}
+.github-repo-link-holder .action {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 40px 1fr;
+  gap: 10px;
+}
+
 .button.share-this-page {
   position: relative;
   font-family: "Noto Serif", serif;

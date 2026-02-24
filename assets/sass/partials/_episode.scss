@@ -229,6 +229,15 @@ dl.chapters-info {
     }
   }
 }
+.github-repo-link-holder {
+  margin-bottom: 2rem;
+  .action {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 1fr;
+    gap: 10px;
+  }
+}
 
 .button.share-this-page {
   position: relative;
