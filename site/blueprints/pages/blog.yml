@@ -2,7 +2,6 @@ title: Blog Post
 pages: true
 
 columns:
-
   main:
     width: 3/4
     fields:
@@ -14,7 +13,6 @@ columns:
       date:
         label: Publish Date
         type: date
-        format: MM/DD/YYYY
         width: 1/4
       time:
         label: Publish Time

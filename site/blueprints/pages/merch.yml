@@ -8,7 +8,6 @@ pages:
   num: date
 files: true
 columns:
-
   main:
     width: 2/3
     fields:
@@ -58,7 +57,7 @@ columns:
             label: Almost Gone?
             type: checkbox
             text: yeah, these are almost gone.
-          
+
       sold_text:
         label: Sold Out Lead In
         type: markdown
@@ -91,7 +90,6 @@ columns:
             label: Sold Out Date
             type: date
             required: true
-            format: MM/DD/YYYY
 
   # Project Pages
   merchPages:

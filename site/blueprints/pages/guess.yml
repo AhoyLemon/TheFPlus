@@ -5,7 +5,6 @@ fields:
   date:
     label: Release Date
     type: date
-    format: MM/DD/YYYY
     width: 1/4
   time:
     label: Release Time
@@ -19,7 +18,7 @@ fields:
   cast:
     label: Cast
     type: tags
-    icon: users  
+    icon: users
   episode_file:
     label: Episode File
     type: text
@@ -30,7 +29,7 @@ fields:
     label: Runtime
     type: text
     placeholder: H:MM:SS
-    icon: road 
+    icon: road
     width: 1/4
   file_size:
     label: File Size (in Mb)
