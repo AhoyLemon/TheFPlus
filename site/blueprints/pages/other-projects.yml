@@ -25,7 +25,7 @@ columns:
         size: small
         sortBy: date desc
         sortable: false
-        # info: "#<strong>{{ page.slug }}</strong>, <time>{{page.date.toDate(m d y)}}"
+        info: "<strong>{{ page.category }}</strong>"
         image:
           ratio: 16/9
           cover: true

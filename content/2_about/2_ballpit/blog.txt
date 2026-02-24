@@ -18,7 +18,7 @@ Tags: ballpit,forum,about
 
 ----
 
-Text: 
+Text:
 
 (link:http://ballp.it text:ballp.it) is the community forum for The F Plus.
 
@@ -31,3 +31,7 @@ The one-time $10 registration fee serves two purposes: It's there as a barrier t
 Also, having a great forum. That's the other goal.
 
 So poke around on (link:http://ballp.it text:ballp.it). If you like it, kick ten bucks in and start posting.
+
+----
+
+Uuid: rxj2qlnwiikxlrsx

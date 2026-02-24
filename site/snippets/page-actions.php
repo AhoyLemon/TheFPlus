@@ -64,7 +64,7 @@
   </a>
 
   <!-- TUMBLR SHARE -->
-  <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?php echo excerpt($page->text()->xml(), 180) ?>">
+  <a class="social tumblr" href="http://www.tumblr.com/share/link?url=<?php echo rawurlencode ($page->url()); ?>&amp;name=<?php echo rawurlencode ($page->title()); ?>&amp;description=<?= $page->text()->excerpt(180,'...')->xml(); ?>">
     <svg viewBox="0 0 100 100">
       <path d="M57.3 81.4c6.5 0 13-2.3 15.1-5.1l.4-.6-4-12c0-.1-.1-.2-.3-.2h-9c-.1 0-.2-.1-.3-.2-.1-.4-.2-.9-.2-1.5V47.2c0-.2.1-.3.3-.3H70c.2 0 .3-.1.3-.3v-15c0-.2-.1-.3-.3-.3H59.4c-.2 0-.3-.1-.3-.3V16.5c0-.2-.1-.3-.3-.3H40.2c-1.3 0-2.9 1-3.1 2.8-.9 7.5-4.4 12.1-10.9 14.2l-.7.2c-.1 0-.2.1-.2.3v12.9c0 .2.1.3.3.3H32.3v15.9c0 12.7 8.8 18.6 25 18.6zm12.4-6.1c-2 2-6.2 3.4-10.2 3.5h-.4c-13.2 0-16.7-10.1-16.7-16V44.6c0-.2-.1-.3-.3-.3h-6.4c-.2 0-.3-.1-.3-.3v-8.3c0-.1.1-.2.2-.3 6.8-2.6 10.6-7.9 11.6-16.1.1-.5.4-.5.4-.5h8.5c.2 0 .3.1.3.3v14.6c0 .2.1.3.3.3h10.6c.2 0 .3.1.3.3V44c0 .2-.1.3-.3.3H56.7c-.2 0-.3.1-.3.3v17.3c.1 3.9 2 5.9 5.6 5.9 1.5 0 3.2-.3 4.7-.9.1-.1.3 0 .4.2l2.7 8s0 .1-.1.2z" />
     </svg>

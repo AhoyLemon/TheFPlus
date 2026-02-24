@@ -5,8 +5,8 @@
 
   <!-- SET UP VARIABLES -->
   <?php 
-    $pubdate = date('l, F jS Y', $page->date());
-    $pubtime = date("g:ia", strtotime($page->time()));
+    $pubdate = $page->date()->toDate('l, F jS Y');
+    $pubtime = $page->time()->toDate("g:ia");
     if ($page->cast() == "") {
       $multiperson = false;
     } else if (strpos($page->cast(),',') !== false) {
@@ -89,7 +89,7 @@
 
     <!-- SUMMARY TEXT -->
     <div class="article-text" style="margin-top:1em;">
-      <summary class="info-block" itemprop="description" content="<?php echo excerpt($page->text(), 222) ?>">
+      <summary class="info-block" itemprop="description" content="<?= $page->text()->excerpt(222,"...") ?>">
         <?php echo $page->text()->kirbytext() ?>
       </summary>
 

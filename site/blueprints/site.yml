@@ -29,9 +29,14 @@ tabs:
         sections:
           hopper:
             type: pages
-            headline: Submissions
+            headline: About Pages
+            parent: site.find("about")
+            layout: table
+          aboutPages:
+            type: pages
+            headline: Submit Pages
             parent: site.find("submit")
-            layout: cardlets  
+            layout: table
   
   # Site Sidebar
   sidebarTab:

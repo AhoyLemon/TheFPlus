@@ -4,7 +4,7 @@
 
     
     <?php
-      $ftag_pre = urldecode(param('tag'));
+      $ftag_pre = urldecode(param('tag') ?? '');
       // FILTER_SANITIZE_STRING was removed in PHP 8.1; strip tags manually
       $ftag = trim(strip_tags($ftag_pre));
 

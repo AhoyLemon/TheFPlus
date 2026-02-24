@@ -43,11 +43,6 @@ fields:
     label: Teaser Image
     type: image
     width: 1/2
-  #show_image:
-    #label: Show image on page?
-    #type: toggle
-    #text: yes/no
-    #width: 1/4
 
   show_image:
     label: Show image on page
