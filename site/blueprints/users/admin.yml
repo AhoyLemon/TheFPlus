@@ -1,4 +1,7 @@
 fields:
-  first_name:
-    label: First Name
-    type: text
+  meet:
+    label: Meet Page
+    type: pages
+    query: site.find('meet')
+    multiple: false
+    layout: cards

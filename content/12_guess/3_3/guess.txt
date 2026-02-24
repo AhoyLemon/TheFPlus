@@ -34,7 +34,7 @@ Editor: Lemon
 
 ----
 
-Text: 
+Text:
 
 **This episode's questions**
 1. Why is it called a ten gallon hat?
@@ -48,7 +48,7 @@ Text:
 
 ----
 
-Sources: 
+Sources:
 
 - 
   name: |
@@ -70,3 +70,7 @@ Sources:
 ----
 
 Bonus-content: * [A wild banana](http://didyouknow.doubleblindlabs.com/wp-content/uploads/2013/07/wild-banana.jpg)
+
+----
+
+Uuid: f852uywydv74rgft
