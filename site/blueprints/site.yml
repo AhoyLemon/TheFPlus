@@ -8,9 +8,7 @@ options:
   url: false
   delete: false
 
-
 tabs:
-  
   # Top Level Pages
   pageTab:
     label: Pages
@@ -37,7 +35,7 @@ tabs:
             headline: Submit Pages
             parent: site.find("submit")
             layout: table
-  
+
   # Site Sidebar
   sidebarTab:
     label: Sidebar
@@ -56,7 +54,7 @@ tabs:
                 label: Link type:
                 type: select
                 width: 1/2
-                required: true
+                # required: true
                 options:
                   url: URL
                   slug: Page
@@ -152,6 +150,16 @@ tabs:
         icon: twitter
         width: 1/2
         required: false
+      og_image:
+        label: OpenGraph Image
+        help: Will be used if a page-specific OG image cannot be found.
+        extends: fields/image
+        query: site.find('/').image
+        width: 1/2
+      description:
+        extends: fields/simpletext
+        width: 1/2
+        help: Will be used if a page-specific OG image cannot be found.
       schema_sameas:
         label: Schema SameAs
         type: structure
@@ -159,11 +167,10 @@ tabs:
           url:
             label: URL
             type: url
-      description:
-        extends: fields/simpletext
+
       copyright:
         label: Copyright
-        type:  text
+        type: text
 
   # Episode Pages
   episodeTab:
@@ -225,7 +232,7 @@ tabs:
             sortable: false
             info: '<strong style="text-transform:capitalize">{{page.role}}</strong><br />{{page.job}}'
             limit: 40
-  
+
   # People
   fanartTab:
     label: Fanart

@@ -2,11 +2,121 @@ Title: The F Plus
 
 ----
 
-Description: Terrible things, read with enthusiasm.
+Sidebar-links:
+
+-
+  text: 'for ten years'
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: years
+  _fieldset: page_link
+-
+  text: 'meet the ridiculists'
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: meet
+  _fieldset: page_link
+-
+  text: 'browse episodes'
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: episode
+  _fieldset: page_link
+-
+  text: 'other projects'
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: also-made
+  _fieldset: page_link
+-
+  text: contribute
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: contribute
+  _fieldset: page_link
+-
+  text: 'buy some merch'
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  _fieldset: merch_page
+-
+  text: fanart
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  slug: fanart
+  _fieldset: page_link
+-
+  text: Search...
+  link_type: ''
+  page_slug: []
+  page_url: ''
+  _fieldset: search_form
 
 ----
 
-Copyright: © 2009-(date: Year) Creative Commons CC BY-SA
+Subscribe-options:
+
+-
+  icon: rss
+  url: 'https://thefpl.us/episode/feed'
+  text: 'RSS FEED'
+
+----
+
+Social-links:
+
+-
+  icon: twitter
+  url: 'https://twitter.com/TheFPlus'
+  text: '@TheFPlus on Twitter'
+  _fieldset: page_link
+-
+  icon: paypal
+  url: 'https://www.paypal.me/TheFPlus'
+  text: 'PayPal to The F Plus'
+  _fieldset: page_link
+-
+  icon: youtube
+  url: 'http://youtube.com/thefplus'
+  text: 'TheFPlus on YouTube'
+  _fieldset: page_link
+-
+  icon: github
+  url: 'https://github.com/AhoyLemon/TheFPlus/'
+  text: 'GitHub repo for AhoyLemon/TheFPlus'
+  _fieldset: page_link
+-
+  icon: lemon
+  url: 'http://ahoylemon.xyz'
+  text: ahoylemon🍋xyz
+  _fieldset: page_link
+-
+  icon: twitch
+  url: 'https://www.twitch.tv/TheFPlus'
+  text: 'TheFPlus on Twitch'
+  _fieldset: page_link
+-
+  icon: soundcloud
+  url: 'https://soundcloud.com/thefplus'
+  text: 'The F Plus on SoundCloud'
+  _fieldset: page_link
+-
+  icon: podchaser
+  url: 'https://podchaser.com/TheFPlus'
+  text: 'The F Plus on Podchaser'
+  _fieldset: page_link
+-
+  icon: mastodon
+  url: 'https://mastodon.world/@TheFPlus'
+  text: '@TheFPlus on Mastodon'
+  _fieldset: page_link
 
 ----
 
@@ -18,92 +128,36 @@ Twitter-handle: TheFPlus
 
 ----
 
-Sidebar-links: 
-
-- 
-  slug: years
-  text: for ten years
-  _fieldset: page_link
-- 
-  slug: meet
-  text: meet the ridiculists
-  _fieldset: page_link
-- 
-  slug: episode
-  text: browse episodes
-  _fieldset: page_link
-- 
-  slug: also-made
-  text: other projects
-  _fieldset: page_link
-- 
-  slug: contribute
-  text: contribute
-  _fieldset: page_link
-- 
-  text: buy some merch
-  _fieldset: merch_page
-- 
-  slug: fanart
-  text: fanart
-  _fieldset: page_link
-- 
-  text: Search...
-  _fieldset: search_form
+Og-image: - 'file://lfvaihsdo481jnkc'
 
 ----
 
-Social-links: 
-
-- 
-  icon: twitter
-  url: https://twitter.com/TheFPlus
-  text: "@TheFPlus on Twitter"
-  _fieldset: page_link
-- 
-  icon: paypal
-  url: https://www.paypal.me/TheFPlus
-  text: PayPal to The F Plus
-  _fieldset: page_link
-- 
-  icon: youtube
-  url: http://youtube.com/thefplus
-  text: TheFPlus on YouTube
-  _fieldset: page_link
-- 
-  icon: github
-  url: https://github.com/AhoyLemon/TheFPlus/
-  text: GitHub repo for AhoyLemon/TheFPlus
-  _fieldset: page_link
-- 
-  icon: lemon
-  url: http://ahoylemon.xyz
-  text: ahoylemon🍋xyz
-  _fieldset: page_link
-- 
-  icon: twitch
-  url: https://www.twitch.tv/TheFPlus
-  text: TheFPlus on Twitch
-  _fieldset: page_link
-- 
-  icon: soundcloud
-  url: https://soundcloud.com/thefplus
-  text: The F Plus on SoundCloud
-  _fieldset: page_link
-- 
-  icon: podchaser
-  url: https://podchaser.com/TheFPlus
-  text: The F Plus on Podchaser
-  _fieldset: page_link
-- 
-  icon: mastodon
-  url: https://mastodon.world/@TheFPlus
-  text: "@TheFPlus on Mastodon"
-  _fieldset: page_link
+Description: Terrible things, read with enthusiasm,
 
 ----
 
-Sidebar-subscribe: 
+Schema-sameas:
+
+-
+  url: 'https://twitter.com/TheFPlus'
+-
+  url: 'https://plus.google.com/+TheFPlus'
+-
+  url: 'https://github.com/AhoyLemon/TheFPlus'
+-
+  url: 'https://www.twitch.tv/thefplus'
+-
+  url: 'https://www.paypal.me/TheFPlus'
+-
+  url: 'http://youtube.com/thefplus'
+
+----
+
+Copyright: © 2009-(date: Year) Creative Commons CC BY-SA
+
+----
+
+Sidebar-subscribe:
 
 - 
   icon: rss
@@ -139,20 +193,3 @@ Sidebar-subscribe:
     https://radiopublic.com/the-f-plus-GqnR55
   text: Subscribe in Radio Public
   _fieldset: subscribe_option
-
-----
-
-Schema-sameas: 
-
-- 
-  url: https://twitter.com/TheFPlus
-- 
-  url: https://plus.google.com/+TheFPlus
-- 
-  url: https://github.com/AhoyLemon/TheFPlus
-- 
-  url: https://www.twitch.tv/thefplus
-- 
-  url: https://www.paypal.me/TheFPlus
-- 
-  url: http://youtube.com/thefplus
