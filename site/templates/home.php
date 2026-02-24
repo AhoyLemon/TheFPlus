@@ -47,6 +47,7 @@
       <h2>Cache flushed</h2>
     <?php endif ?>
 
+    <?php snippet('briefs',  [ 'articles' => $site->grandChildren()->listed()->sortBy('date', 'desc')->paginate(15)]) ?>
     
   </main>
 <?php snippet('footer') ?>
