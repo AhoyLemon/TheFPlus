@@ -11,3 +11,7 @@ Caption: Contra Princess
 ----
 
 Template: fanimage
+
+----
+
+Uuid: 3981otnmsnam1id3

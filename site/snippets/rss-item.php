@@ -4,12 +4,7 @@
   $fsites = str::split($item->featured_site(), ',');
   $songs = str::split($item->music_used(), ',');
   $multisite = false;
-  $episodeCover = null;
-  if ($item->cover()->isNotEmpty() && $item->cover()->toFile()) {
-    $episodeCover = $item->cover()->toFile()->url();
-  } else if ($img = $item->images()->first()) {
-    $episodeCover = $img->url();
-  }
+  $episodeCover = $item->coverImage();
 
   $multisite = false;
   if (count($fsites) > 1) {

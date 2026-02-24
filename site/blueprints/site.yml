@@ -138,8 +138,6 @@ tabs:
   # Site Meta
   siteMetaTab:
     label: Site MetaInfo
-    # columns:
-    #   - width: 1/1
     fields:
       email:
         label: Site Admin Email
@@ -188,10 +186,14 @@ tabs:
             parent: site.find("also-made")
             template:
               - other-project
+            info: "{{ page.category }}"
             layout: cardlets
             size: small
             sortBy: date desc
             sortable: false
+            image:
+              # ratio: 1/1
+              cover: true
       - width: 1/2
         sections:
           merchItems:
@@ -200,10 +202,13 @@ tabs:
             template:
               - merch-type
               - stickers
-            layout: cardlets
+            layout: cards
             size: small
             sortBy: date desc
             sortable: false
+            image:
+              ratio: 1/1
+              cover: true
 
   # People
   peopleTab:
@@ -231,5 +236,10 @@ tabs:
             parent: site.find('fanart')
             label: Fanart Images
             type: files
-            layout: cardlets
+            layout: cards
             template: fanimage
+            sortable: false
+            image:
+              ratio: 1/1
+              cover: true
+            limit: 24

@@ -40,11 +40,9 @@
         highlight: '#c0282d'
       },
       publicationDate: '<?php echo $page->date('Y-m-d'); ?>T<?php echo $page->time(); ?>+06:00',
-      <?php if ($page->cover()->isNotEmpty()) { ?>
-        poster: '<?= $page->cover()->toFile()->url(); ?>',
-      <?php } else if ($page->image()) { ?>
-        poster: '<?= $page->image()->url(); ?>',
-      <?php } ?>
+      <?php if ($url = $page->coverImage()): ?>
+        poster: '<?= $url ?>',
+      <?php endif ?>
       show: {
           title: '<?= $site->title(); ?>',
           summary: '<?= $site->description(); ?>',

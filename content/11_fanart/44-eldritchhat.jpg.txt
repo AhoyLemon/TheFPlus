@@ -11,3 +11,7 @@ Caption: LEGO Wizard
 ----
 
 Template: fanimage
+
+----
+
+Uuid: ren5pkz8tc3mevay

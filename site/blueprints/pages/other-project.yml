@@ -21,9 +21,9 @@ columns:
       show_image:
         label: Show image on page
         type: toggle
-        options:
-          false: "No"
-          true: "Yes"
+        text:
+          - "No!"
+          - "Sure."
         width: 1/4
       
       show_different_image:
@@ -32,9 +32,9 @@ columns:
         width: 1/4
         when:
           show_image: true
-        options:
-          no:  "No"
-          yes: "Yes"
+        text:
+          - "No!"
+          - "Sure."
         show:
           yes: page_image
         hide:

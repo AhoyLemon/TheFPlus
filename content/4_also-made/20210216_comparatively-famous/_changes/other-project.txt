@@ -14,7 +14,7 @@ This is a single player game about guessing different celebrity prices on Cameo.
 
 ----
 
-Category: video
+Category: website
 
 ----
 
@@ -72,47 +72,42 @@ Bonus-content:
 
 Photos:
 
-- 
-  series_num: 5
+-
+  series_num: 5.0
   pic:
-    - file://aj7luzc9cxbmjokm
-  desc: >
-    The title screen for Comparatively
-    Famous
+    - 'file://aj7luzc9cxbmjokm'
+  desc: |
+    The title screen for Comparatively Famous
   full_size:
-    - file://gjbawwhk1ablbcfd
-- 
-  series_num: 4
-  pic: [ ]
-  desc: >
-    A screenshot of gameplay in
-    Comparatively Famous
-  full_size: [ ]
-- 
-  series_num: 3
-  pic: [ ]
-  desc: >
-    a screenshot of gameplay in
-    Comparatively Famous
-  full_size: [ ]
-- 
-  series_num: 2
-  pic: [ ]
-  desc: >
-    a screenshot of gameplay for
-    Comparatively Famous
-  full_size: [ ]
-- 
-  series_num: 1
-  pic: [ ]
-  desc: >
-    screenshot of the final round in
-    Comparatively Famous
-  full_size: [ ]
+    - 'file://gjbawwhk1ablbcfd'
+-
+  series_num: 4.0
+  pic: []
+  desc: |
+    A screenshot of gameplay in Comparatively Famous
+  full_size: []
+-
+  series_num: 3.0
+  pic: []
+  desc: |
+    a screenshot of gameplay in Comparatively Famous
+  full_size: []
+-
+  series_num: 2.0
+  pic: []
+  desc: |
+    a screenshot of gameplay for Comparatively Famous
+  full_size: []
+-
+  series_num: 1.0
+  pic: []
+  desc: |
+    screenshot of the final round in Comparatively Famous
+  full_size: []
 
 ----
 
-Cover: - file://akregkmcqmtobr4h
+Cover: - 'file://akregkmcqmtobr4h'
 
 ----
 
@@ -124,4 +119,4 @@ Lock: RB6d4kpc
 
 ----
 
-Page-image: 
+Page-image: []

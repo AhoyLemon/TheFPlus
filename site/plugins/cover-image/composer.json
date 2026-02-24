@@ -1,0 +1,22 @@
+{
+  "name": "ahoylemon/cover-image",
+  "type": "kirby-plugin",
+  "version": "0.1",
+  "description": "Generate a Atom/JSON/RSS-Feed and XML-Sitemap from Pages-Collections",
+  "homepage": "https://github.com/ahoylemon/cover-image",
+  "license": "CC-BY",
+  "authors": [
+    {
+      "name": "Lemon",
+      "email": "lemon@thefpl.us"
+    }
+  ],
+  "keywords": [
+    "kirby",
+    "kirby-cms",
+    "kirby-plugin",
+    "pathing",
+    "images",
+    "cover-images"
+  ]
+}

@@ -41,11 +41,9 @@
           <?php /* Brief Image */ ?>
           <figure>
             <a href="<?= $article->url(); ?>" >
-              <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" width="<?= $article->cover()->toFile()->width(); ?>" height="<?= $article->cover()->toFile()->height(); ?>" />
-              <?php } else if ($article->image())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" width="<?= $article->image()->toFile()->width(); ?>" height="<?= $article->image()->toFile()->width(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
-              <?php } ?>
+              <?php if ($coverFile = ($article->cover()->isNotEmpty() ? $article->cover()->toFile() : $article->images()->first())): ?>
+                <img src="<?= $article->coverImage() ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($coverFile->extension() == 'png') { echo ' no-shadow'; } ?>" width="<?= $coverFile->width(); ?>" height="<?= $coverFile->height(); ?>" />
+              <?php endif ?>
             </a>
           </figure>
 
@@ -144,11 +142,9 @@
         <?php if ($briefType != "wrote") { ?>
           <figure>
             <a href="<?= $article->url(); ?>">
-              <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
-              <?php } else if ($article->image())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
-              <?php } ?>
+              <?php if ($coverFile2 = ($article->cover()->isNotEmpty() ? $article->cover()->toFile() : $article->images()->first())): ?>
+                <img src="<?= $article->coverImage() ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($coverFile2->extension() == 'png') { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
+              <?php endif ?>
             </a>
           </figure>
         <?php } ?>

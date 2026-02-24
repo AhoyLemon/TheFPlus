@@ -11,3 +11,7 @@ Caption: Puffy, The Cigarette
 ----
 
 Template: fanimage
+
+----
+
+Uuid: w00dr96x1begarxv

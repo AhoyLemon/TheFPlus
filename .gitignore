@@ -12,6 +12,7 @@ stripe/
 json/
 content_old/
 site/sessions
+media/pages/*
 
 # Ignore all files in the podcasts directory
 podcasts/*

@@ -15,7 +15,7 @@
         </div>
       </div>
       
-      <img src="<?= $article->cover()->isNotEmpty() ? $article->cover()->toFile()->url() : $image->url(); ?>" class="cover" loading="lazy" height="400" width="400" alt="<?= 'episode ' . $article->slug() . ' : ' . $article->title(); ?>" />
+      <img src="<?= $article->coverImage() ?>" class="cover" loading="lazy" height="400" width="400" alt="<?= 'episode ' . $article->slug() . ' : ' . $article->title(); ?>" />
     
       <figcaption>
         <summary>

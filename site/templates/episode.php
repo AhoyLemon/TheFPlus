@@ -30,11 +30,9 @@
   <article class="episode full" itemscope itemtype="http://schema.org/Episode">
     
     <figure>
-      <?php if($page->cover() != "") { ?>
-        <img itemprop="image" src="<?= $page->cover()->toFile()->url(); ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
-      <?php } else if($image = $page->image()) { ?>
-        <img itemprop="image" src="<?= $page->images()->first()->url(); ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
-      <?php } ?>
+      <?php if($coverUrl = $page->coverImage()): ?>
+        <img itemprop="image" src="<?= $coverUrl ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
+      <?php endif ?>
     </figure>
 
 
@@ -285,7 +283,7 @@
           "@id": "<?= $page->url(); ?>",
           "name": "<?= $page->title(); ?>",
           "url": "<?= $page->url(); ?>",
-          "image": "<?= $page->cover()->toFile()->url(); ?>"
+          "image": "<?= $page->coverImage(); ?>"
         }
       }
     ]
