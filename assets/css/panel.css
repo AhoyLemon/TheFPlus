@@ -1,21 +1,9 @@
-@-webkit-keyframes skeleton {
-  0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
-  }
-  100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
-  }
-}
 @keyframes skeleton {
   0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
+    transform: skewX(-10deg) translateX(-100%);
   }
   100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
+    transform: skewX(-10deg) translateX(200%);
   }
 }
 body.login {
@@ -33,3 +21,5 @@ body.login form.form:before {
   background-repeat: no-repeat;
   margin-bottom: 1.5rem;
 }
+
+/*# sourceMappingURL=panel.css.map */

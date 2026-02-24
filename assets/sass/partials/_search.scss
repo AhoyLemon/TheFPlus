@@ -1,30 +1,66 @@
-main.search { 
-  form { @include flex-container();
-    .input-holder { @include flex-item(50%); }
-    input, button { font-family:$sans-serif; background:transparent; border:none; color:$black; outline: none; }
-    input { font-size:3vw; border-bottom:0.05em solid rgba($black,0.8); font-weight: $light; width: 99%;
-      &:focus, &:active, :hover { border-color:$link; color:$link; }
+@use "shared" as *;
+
+main.search {
+  form {
+    @include flex-container();
+    .input-holder {
+      @include flex-item(50%);
     }
-    button { font-size:2vw; @include flex-item(6em,0,0); cursor: pointer;
-      &:focus, &:active, &:hover { background-color:$link; color:$white; }
+    input,
+    button {
+      font-family: $sans-serif;
+      background: transparent;
+      border: none;
+      color: $black;
+      outline: none;
+    }
+    input {
+      font-size: 3vw;
+      border-bottom: 0.05em solid rgba($black, 0.8);
+      font-weight: $light;
+      width: 99%;
+      &:focus,
+      &:active,
+      :hover {
+        border-color: $link;
+        color: $link;
+      }
+    }
+    button {
+      font-size: 2vw;
+      @include flex-item(6em, 0, 0);
+      cursor: pointer;
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $link;
+        color: $white;
+      }
     }
   }
 }
 
-
-@media (min-width:$desktop-min) {
+@media (min-width: $desktop-min) {
   main.search {
     form {
-      input { font-size:50px; }
-      button { font-size:30px; }
+      input {
+        font-size: 50px;
+      }
+      button {
+        font-size: 30px;
+      }
     }
   }
 }
-@media (max-width:$mobile-max) {
+@media (max-width: $mobile-max) {
   main.search {
-    form { 
-      input { font-size:32px;  }
-      button { font-size:20px;  }
+    form {
+      input {
+        font-size: 32px;
+      }
+      button {
+        font-size: 20px;
+      }
     }
   }
 }

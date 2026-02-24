@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "medienbaecker.kirby-content",
+    "oderwat.indent-rainbow",
+    "esbenp.prettier-vscode",
+    "eiminsasete.apacheconf-snippets"
+  ]
+}

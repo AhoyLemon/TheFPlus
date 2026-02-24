@@ -18,6 +18,7 @@ tabs:
     sections:
       episodePages:
         extends: sections/episodePages
+        info: "<time style='display:block;'>{{page.date.toDate('M j Y')}}</time>#<strong>{{ page.slug }}</strong>"
         limit: 40
   pageMeta:
     sections:

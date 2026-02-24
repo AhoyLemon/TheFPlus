@@ -1,49 +1,94 @@
-$tag-bg: rgba($white,0.5);
-$tag-border: rgba($black,0.8);
+@use "sass:math";
+@use "sass:color";
+@use "shared" as *;
 
-%tag { font-size:70%;
+$tag-bg: rgba($white, 0.5);
+$tag-border: rgba($black, 0.8);
+
+%tag {
+  font-size: 70%;
   background-color: $tag-bg;
   display: inline-block;
   position: relative;
   border-radius: 0.3em;
   padding: 0 0.7em 0 0.7em;
-  border:1px solid rgba($black,0.5);
+  border: 1px solid rgba($black, 0.5);
   line-height: 210%;
   overflow: visible;
-  color: rgba($black,0.5);
+  color: rgba($black, 0.5);
   margin-right: 0.4em;
   margin-bottom: 0.7em;
   text-decoration: none;
   cursor: text;
-  &:hover { text-decoration: none !important; }
-	&[href] { color:$black; cursor: pointer; color:darken($link,10%);
-    &:hover { background:#6d0c0c; color:$white; }
+  &:hover {
+    text-decoration: none !important;
+  }
+  &[href] {
+    color: $black;
+    cursor: pointer;
+    color: color.adjust($link, $lightness: -10%);
+    &:hover {
+      background: #6d0c0c;
+      color: $white;
+    }
   }
 }
 
 .tagcloud {
-  .tag { 
-    .tag-count { font-size: 10px; }
-    &:hover { background:$link; 
-      .tag-name { color:$card; }
+  .tag {
+    .tag-count {
+      font-size: 10px;
+    }
+    &:hover {
+      background: $link;
+      .tag-name {
+        color: $card;
+      }
     }
   }
 }
-@media (min-width:$desktop-min) {
-  .tagcloud { display:grid; grid-template-columns: repeat(auto-fill,160px); grid-gap: $gap;
-    .tag { position:relative; @include flex-center(); padding: $padding math.div($padding, 2); text-align: center; border: 1px solid rgba($black,0.2); font-size:14px;
-      .tag-count { position:absolute; top:0; right:$gap; color:$copy; font-size:80%; }
-      .tag-name { width:100%; width:100%; line-height: 120%; color:$black; }
+@media (min-width: $desktop-min) {
+  .tagcloud {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    grid-gap: $gap;
+    .tag {
+      position: relative;
+      @include flex-center();
+      padding: $padding math.div($padding, 2);
+      text-align: center;
+      border: 1px solid rgba($black, 0.2);
+      font-size: 14px;
+      .tag-count {
+        position: absolute;
+        top: 0;
+        right: $gap;
+        color: $copy;
+        font-size: 80%;
+      }
+      .tag-name {
+        width: 100%;
+        width: 100%;
+        line-height: 120%;
+        color: $black;
+      }
     }
   }
 }
 
-@media (max-width:$mobile-max) {
+@media (max-width: $mobile-max) {
   .tagcloud {
-    .tag { display: inline-block; margin-right: 0.4em;
-      .tag-count { display: inline; 
-        &:before { content: "("; }
-        &:after  { content: ")"; }
+    .tag {
+      display: inline-block;
+      margin-right: 0.4em;
+      .tag-count {
+        display: inline;
+        &:before {
+          content: "(";
+        }
+        &:after {
+          content: ")";
+        }
       }
     }
   }
