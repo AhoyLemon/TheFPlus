@@ -35,14 +35,21 @@ This repository contains all files powering [thefpl.us](https://thefpl.us), a we
    ```sh
    git clone https://github.com/AhoyLemon/TheFPlus.git
    ```
-2. (Recommended) Install [Laragon](https://laragon.org) and point it at your folder — the local dev URL is `http://thefplus.test`.
-3. Make sure you have PHP 8.2+ and Apache running in your local environment.
-4. Start your local server (Laragon, XAMPP, or similar).
-5. Visit [thefplus.test](http://thefplus.test) in your browser.
+2. Make sure you have PHP 8.2+ and Apache running in your local environment. (see Local PHP + Apache section below for recommendations)
+3. Start your local server (Laragon, XAMPP, or similar).
+4. Visit [thefplus.test](http://thefplus.test) in your browser.
+
+### Local PHP + Apache
+
+- **Windows:** Laragon is recommended for an easy, Apache+PHP local stack — https://laragon.org
+- **Linux (example):** On Debian/Ubuntu/Mint you can install Apache and PHP via apt, e.g. `sudo apt install apache2 php8.3 libapache2-mod-php8.3 php8.3-sqlite3`. See a quick guide: https://linuxize.com/post/how-to-install-php-on-ubuntu-22-04/ and Apache docs: https://httpd.apache.org/docs/
+- **Mac:** Consider MAMP (https://www.mamp.info) or install Apache and PHP with Homebrew (https://brew.sh, https://formulae.brew.sh/formula/httpd).
+
+Use whatever local setup you prefer — as long as PHP 8.2+ and Apache (or another webserver) are running, the site should work locally.
 
 ## Frontend Assets
 
-Sass and TypeScript are compiled via [Bun](https://bun.sh). Install it from [bun.sh](https://bun.sh) if you haven't already.
+Sass and TypeScript are compiled via [Bun](https://bun.sh). You can choose to use Node/npm instead if you like, just use the corresponding commands (e.g., `npm install`, `npm run dev`, etc.)
 
 **Install dependencies:**
 
