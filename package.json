@@ -1,0 +1,24 @@
+{
+  "name": "thefplus",
+  "version": "1.0.0",
+  "description": "The F Plus - website asset build tooling",
+  "type": "module",
+  "scripts": {
+    "dev": "bun scripts/dev.ts",
+    "watch": "bun scripts/dev.ts",
+    "build": "bun scripts/build.ts",
+    "build:sass": "bunx sass assets/sass/thefplus.scss:assets/css/thefplus.css assets/sass/issues.scss:assets/css/issues.css assets/sass/logo.scss:assets/css/logo.css assets/sass/merch.scss:assets/css/merch.css assets/sass/panel.scss:assets/css/panel.css assets/sass/shirt.scss:assets/css/shirt.css assets/sass/stan.scss:assets/css/stan.css assets/sass/stats.scss:assets/css/stats.css assets/sass/sticker-boxes.scss:assets/css/sticker-boxes.css assets/sass/stickers.scss:assets/css/stickers.css --no-source-map --style=compressed",
+    "build:ts": "bun build assets/js/src/thefplus.ts --outfile assets/js/thefplus.min.js --minify --target=browser",
+    "test:sass": "sass assets/sass/thefplus.scss --no-source-map --style=compressed --dry-run 2>&1 | head -5 || sass assets/sass/thefplus.scss /dev/null --no-source-map",
+    "test:ts": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "bun-types": "^1.3.9",
+    "chalk": "^5.6.2",
+    "chokidar": "^5.0.0",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3",
+    "js-yaml": "^4.1.1"
+  }
+}

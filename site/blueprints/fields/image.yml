@@ -1,0 +1,6 @@
+type: files
+accept: image/*
+required: true
+multiple: false
+query: page.images
+info: "{{ file.dimensions }}"

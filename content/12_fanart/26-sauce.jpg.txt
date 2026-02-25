@@ -1,0 +1,17 @@
+Episode: 26
+
+----
+
+Artist: Sauce
+
+----
+
+Caption: FAT Magazine
+
+----
+
+Uuid: lmspfc5f9pkbbxwt
+
+----
+
+Template: fanimage

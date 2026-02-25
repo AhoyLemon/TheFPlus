@@ -1,8 +1,8 @@
 <?php snippet('header') ?>
 
 <?php
-  $pubdate = date('l, F jS Y', $page->date());
-  $pubtime = date("g:ia", strtotime($page->time()));
+  $pubdate = $page->date()->toDate('l, F jS Y');
+  $pubtime = $page->time()->toDate("g:ia");
 ?>
 
 <main class="main page" role="main">
@@ -36,11 +36,11 @@
           } ?>
 
           <strong class="date">
-            <?php echo date('l, F jS Y', $page->date()); ?>
+            <?= $pubdate ?>
           </strong>
           @
           <strong class="time">
-            <?php echo date("g:ia", strtotime($page->time())); ?>
+            <?= $pubtime ?>
           </strong>
         </time>
       </header>
@@ -210,7 +210,7 @@
               <?php } ?>
               
               <div class="detail third released">
-                <?php if ($product->released == "") { ?>
+                <?php if ($product->released()->isEmpty()) { ?>
                   <label>Release</label>
                   <div class="text">
                     pending
@@ -218,7 +218,7 @@
                 <?php } else { ?>
                   <label>Released</label>
                   <div class="text">
-                    <?php echo $product->date('m/d/y', 'released'); ?>
+                    <?php echo $product->released()->toDate('m/d/y'); ?>
                   </div>
                   <meta itemprop="releaseDate" content="<?php echo $product->released(); ?>" />
                 <?php } ?>
@@ -227,14 +227,14 @@
                 <div class="detail third sold-out">
                   <label>Sold Out</label>
                   <div class="text">
-                    <?php echo $product->date('m/d/y', 'soldout'); ?>
+                    <?php echo $product->soldout()->toDate('m/d/y'); ?>
                   </div>
                 </div>
               <?php endif; ?>
               
               <?php $productAvailable = false; ?>
-              <?php if ($product->buy_type() == "single" && $product->released != "") { ?>
-                <?php if ($product->soldout() == "" && $product->single_slug() != "") { ?>
+              <?php if ($product->buy_type() == "single" && !$product->released()->isEmpty()) { ?>
+                <?php if ($product->soldout()->isEmpty() && $product->single_slug() != "") { ?>
                   <?php $productAvailable = true; ?>
                   <div class="detail full buy-buttons" itemprop="offers" itemscope itemtype="http://schema.org/Offer" >
                     <meta itemprop="priceCurrency" content="USD" />
@@ -254,7 +254,7 @@
                   </div>
                 <?php } ?>
               <?php } else if ($product->buy_type() == "multiple") { ?>
-                <?php if ($product->soldout() == "" && $product->buttona_slug() != "") { ?>
+                <?php if ($product->soldout()->isEmpty() && $product->buttona_slug() != "") { ?>
                   <?php $productAvailable = true; ?>
                   <div class="detail full buy-buttons">
                     <label>Buy Now</label>

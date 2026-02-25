@@ -1,0 +1,22 @@
+title: Page
+pages: true
+files: true
+
+columns:
+
+  main:
+    width: 3/4
+    fields:
+      text:
+        label: Page Text
+        type: markdown
+
+  sidebar:
+    width: 1/4
+    sections:
+      pageFiles:
+        label: Page Files
+        type: files
+      subpages:
+        label: Subpages
+        type: pages

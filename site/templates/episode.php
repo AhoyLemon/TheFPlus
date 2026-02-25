@@ -6,7 +6,7 @@
   <!-- SET UP VARIABLES -->
   <?php 
     $persons = explode(",", $page->cast()); 
-    $pubdate = date('l, F jS Y', $page->date());
+    $pubdate = $page->date()->toDate('l, F jS Y');
     $pubtime = date("g:ia", strtotime($page->time()));
     if (strpos($page->featured_site(),',') !== false) {
       $multisite = true;
@@ -30,11 +30,9 @@
   <article class="episode full" itemscope itemtype="http://schema.org/Episode">
     
     <figure>
-      <?php if($page->cover() != "") { ?>
-        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $page->cover()->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
-      <?php } else if($image = $page->image()) { ?>
-        <img itemprop="image" src="<?php echo $page->url() ?>/<?php echo $image->filename() ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
-      <?php } ?>
+      <?php if($coverUrl = $page->coverImage()): ?>
+        <img itemprop="image" src="<?= $coverUrl ?>" class="cover" alt="F Plus Episode <?php echo $page->uid() ?>" height="600" width="600" />
+      <?php endif ?>
     </figure>
 
 
@@ -285,7 +283,7 @@
           "@id": "<?= $page->url(); ?>",
           "name": "<?= $page->title(); ?>",
           "url": "<?= $page->url(); ?>",
-          "image": "<?= $page->cover()->toFile()->url(); ?>"
+          "image": "<?= $page->coverImage(); ?>"
         }
       }
     ]

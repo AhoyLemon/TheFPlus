@@ -28,7 +28,7 @@
   </nav>
   
   <section class="people people-grid">
-    <?php foreach($page->children()->visible()->sortBy('title', 'asc') as $article): ?>
+    <?php foreach($page->children()->listed()->sortBy('title', 'asc') as $article): ?>
       <a class="person brief <?php echo $article->role() ?> <?php if ($article->role() != "regular") { echo 'hidden'; } ?>" href="<?= $article->url(); ?>">
 
         <figcaption>
@@ -37,11 +37,11 @@
 
         <?php if ($article->cover() != "") { ?>
           <figure class="<?= $article->cover()->toFile()->extension(); ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $article->cover()->filename() ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
+            <img src="<?= $article->cover()->toFile()->url(); ?>" class="cover <?= $article->cover()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
           </figure>
         <?php } else { ?>
-          <figure class="<?= $article->image()->extension(); ?>">
-            <img src="<?php echo $article->url() ?>/<?php echo $article->image()->filename() ?>" class="cover <?= $article->image()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
+          <figure class="<?= $article->image()->toFile()->extension(); ?>">
+            <img src="<?= $article->image()->url(); ?>" class="cover <?= $article->image()->toFile()->extension(); ?>" alt="<?php echo $article->title(); ?>" height="300" width="300" loading="lazy" />
           </figure>
         <?php } ?>
 

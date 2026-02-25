@@ -1,0 +1,77 @@
+title: Submission Hopper
+icon: 🗄️
+
+options:
+  title: false
+  status: true
+  duplicate: true
+  url: true
+  delete: true
+
+# sections:
+fields:
+  text:
+    label: Above Table
+    type: markdown
+  docs:
+    label: Submitted Document
+    type: structure
+    modalsize: large
+    style: table
+    sortBy: subdate
+    columns:
+      title: true
+      submitter: true
+      subdate: true
+    fields:
+      title:
+        label: Title
+        type: text
+        icon: file-text-o
+        required: true
+      docurl:
+        label: URL
+        type: url
+        icon: link
+        required: true
+      submitter:
+        label: Submitter
+        type: tags
+        icon: user
+        required: true
+        width: 1/2
+      subdate:
+        label: Date Submitted
+        type: date
+        default: today
+        display: MMM d, YYYY
+        required: true
+        width: 1/4
+      gd_flag:
+        label: Garbage Day?
+        type: toggle
+        text: flagged
+        width: 1/4
+        icon: trash
+      dibs:
+        label: Dibs
+        type: tags
+        icon: flag
+        width: 3/4
+      recorded:
+        label: Recorded?
+        type: toggle
+        text: yup
+        width: 1/4
+        icon: play
+  # clients:
+  #   extends: sections/agency/clients
+  #   layout: table
+  #   columns:
+  #     email:
+  #       type: email
+  #     projects:
+  #       type: text
+  #       value: "{{ page.projects.count }}"
+  #       width: 6rem
+  #       align: center

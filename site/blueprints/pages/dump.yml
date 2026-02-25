@@ -1,0 +1,52 @@
+title: Rejected Submissions
+icon: 🚮
+
+# status:
+#   draft: Locked
+#   unlisted: Locked
+#   listed: Locked
+
+options:
+  title: true
+  status: true
+  duplicate: true
+  url: true
+  delete: true
+
+# sections:
+fields:
+  text:
+    label: Above Table
+    type: markdown
+  docs:
+    label: Rejected Documents
+    type: structure
+    style: table
+    sortBy: rejectdate desc
+    columns:
+      title: true
+      submitter: true
+      rejectdate: true
+    fields:
+      title:
+        label: Title
+        type: text
+        icon: file-text-o
+        required: true
+      docurl:
+        label: URL
+        type: url
+        icon: link
+        required: true
+      submitter:
+        label: Submitter
+        type: tags
+        icon: gift
+        width: 1/2
+      rejectdate:
+        label: Date Rejected
+        type: date
+        width: 1/2
+        default: today
+        required: true
+        display: MMM d, YYYY

@@ -1,54 +1,26 @@
-@-webkit-keyframes skeleton {
-  0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
-  }
-  100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
-  }
-}
 @keyframes skeleton {
   0% {
-    -webkit-transform: skewX(-10deg) translateX(-100%);
-            transform: skewX(-10deg) translateX(-100%);
+    transform: skewX(-10deg) translateX(-100%);
   }
   100% {
-    -webkit-transform: skewX(-10deg) translateX(200%);
-            transform: skewX(-10deg) translateX(200%);
+    transform: skewX(-10deg) translateX(200%);
   }
 }
 .stickers {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-items: baseline;
   margin-right: -10px;
   font-size: 20px;
 }
 
 .sticker-box {
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 33.3333%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
   border: 1px solid #343434;
   margin-bottom: 10px;
   margin-right: 10px;
@@ -58,7 +30,6 @@
   border: 1px solid #343434;
 }
 .sticker-box a.zoom {
-  cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
 .sticker-box .thumb {
@@ -70,96 +41,62 @@
 }
 .sticker-box .details {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 .sticker-box .details .full {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-box .details .half {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 50%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-box .details .third {
-  -ms-flex-preferred-size: 33.3333%;
-      flex-basis: 33.3333%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 33.3333%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-box .details .two-thirds {
-  -ms-flex-preferred-size: 66.6666%;
-      flex-basis: 66.6666%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 66.6666%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-box .details .one-quarter {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 25%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-box .details .three-quarters {
-  -ms-flex-preferred-size: 75%;
-      flex-basis: 75%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 75%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
-.sticker-box .details .full, .sticker-box .details .half, .sticker-box .details .third, .sticker-box .details .one-quarter, .sticker-box .details .three-quarters, .sticker-box .details .two-thirds {
+.sticker-box .details .full,
+.sticker-box .details .half,
+.sticker-box .details .third,
+.sticker-box .details .one-quarter,
+.sticker-box .details .three-quarters,
+.sticker-box .details .two-thirds {
   position: relative;
   text-transform: uppercase;
 }
-.sticker-box .details .full:before, .sticker-box .details .half:before, .sticker-box .details .third:before, .sticker-box .details .one-quarter:before, .sticker-box .details .three-quarters:before, .sticker-box .details .two-thirds:before {
+.sticker-box .details .full:before,
+.sticker-box .details .half:before,
+.sticker-box .details .third:before,
+.sticker-box .details .one-quarter:before,
+.sticker-box .details .three-quarters:before,
+.sticker-box .details .two-thirds:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -207,13 +144,18 @@
   padding: 1rem 0.25rem 0.25rem 0.25rem;
   position: relative;
 }
-.sticker-box .third, .sticker-box .two-thirds {
+.sticker-box .third,
+.sticker-box .two-thirds {
   border-top: 1px solid #343434;
   padding: 1rem 0.25rem 0.25rem 0.25rem;
   font-size: 0.85em;
   position: relative;
 }
-.sticker-box .series-number, .sticker-box .shape, .sticker-box .material, .sticker-box .sold-out, .sticker-box .released {
+.sticker-box .series-number,
+.sticker-box .shape,
+.sticker-box .material,
+.sticker-box .sold-out,
+.sticker-box .released {
   border-left: 1px solid #343434;
 }
 .sticker-box.tattoo .thumb-holder {
@@ -225,18 +167,10 @@
 }
 
 .buy-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
   position: relative;
   width: 100%;
 }
@@ -253,16 +187,10 @@
   overflow: hidden;
 }
 .buy-buttons form {
-  -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+  flex-basis: 33.333%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
   text-align: center;
   padding: 1.5em 0 0.5em 0;
   min-width: 85px;
@@ -274,8 +202,7 @@
   padding: 1em 0.5em;
   font-weight: 600;
   font-size: 1rem;
-  -webkit-box-shadow: 2px 2px 2px #343434;
-          box-shadow: 2px 2px 2px #343434;
+  box-shadow: 2px 2px 2px #343434;
 }
 .buy-buttons button:hover {
   color: #c0282d;
@@ -283,11 +210,8 @@
   cursor: pointer;
 }
 .buy-buttons button:active {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  -webkit-transform: translate(2px, 2px);
-      -ms-transform: translate(2px, 2px);
-          transform: translate(2px, 2px);
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 
 .no-buttons {
@@ -321,36 +245,21 @@
 }
 
 .sticker-photo-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
 }
 .sticker-photo-grid img {
   max-height: 260px;
 }
-.sticker-photo-grid h3, .sticker-photo-grid .share-your-photo {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-item-align: auto;
-      -ms-grid-row-align: auto;
-      align-self: auto;
+.sticker-photo-grid h3,
+.sticker-photo-grid .share-your-photo {
+  flex-basis: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  align-self: auto;
 }
 .sticker-photo-grid h3 {
   font-weight: 300;
@@ -365,64 +274,42 @@
 @media (max-width: 500px) {
   .sticker-box {
     width: calc(100% - 10px);
-    -ms-flex-preferred-size: calc(100% - 10px);
-        flex-basis: calc(100% - 10px);
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    flex-basis: calc(100% - 10px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: auto;
     max-width: calc(100% - 10px);
   }
 }
 @media (min-width: 501px) and (max-width: 1000px) {
   .sticker-box {
     width: calc(50% - 10px);
-    -ms-flex-preferred-size: calc(50% - 10px);
-        flex-basis: calc(50% - 10px);
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    flex-basis: calc(50% - 10px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: auto;
     max-width: calc(50% - 10px);
   }
 }
 @media (min-width: 1001px) and (max-width: 1600px) {
   .sticker-box {
     width: calc(33.3333% - 10px);
-    -ms-flex-preferred-size: calc(33.3333% - 10px);
-        flex-basis: calc(33.3333% - 10px);
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    flex-basis: calc(33.3333% - 10px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: auto;
     max-width: calc(33.3333% - 10px);
   }
 }
 @media (min-width: 1601px) {
   .sticker-box {
     width: calc(25% - 10px);
-    -ms-flex-preferred-size: calc(25% - 10px);
-        flex-basis: calc(25% - 10px);
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-item-align: auto;
-        -ms-grid-row-align: auto;
-        align-self: auto;
+    flex-basis: calc(25% - 10px);
+    flex-grow: 0;
+    flex-shrink: 0;
+    align-self: auto;
     max-width: calc(25% - 10px);
   }
 }
+
+/*# sourceMappingURL=sticker-boxes.css.map */

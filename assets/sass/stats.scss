@@ -1,63 +1,123 @@
-//NORMALIZE, GET DEFAULTS
-@import "partials/_variables";
-@import "partials/_mixins";
-@import "partials/_extends";
-@import "partials/_z-index";
+@use "partials/shared" as *;
 
 .vgt-wrap {
-  th { font-size:0.8rem; text-transform: uppercase; text-align: left;
+  th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: left;
     &.sortable {
-      button { cursor: pointer; }
-      &:hover span { color: #409eff; }
+      button {
+        cursor: pointer;
+      }
+      &:hover span {
+        color: #409eff;
+      }
     }
   }
-  .count { font-size:1.3rem; line-height: 80%; vertical-align: middle; }
-  .name { font-size:1.4rem; line-height: 80%; vertical-align: middle;
-    a { text-decoration: none;
-      &:hover, &:focus, &:active { text-decoration: underline; }
+  .count {
+    font-size: 1.3rem;
+    line-height: 80%;
+    vertical-align: middle;
+  }
+  .name {
+    font-size: 1.4rem;
+    line-height: 80%;
+    vertical-align: middle;
+    a {
+      text-decoration: none;
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
     }
   }
-  .name, .name-th { width:60% !important; }
-  .count, .count-th { width:15% !important; }
-  .vgt-fixed-header { width:100%;
-    @media (pointer: fine) { padding-right: 1rem; }
+  .name,
+  .name-th {
+    width: 60% !important;
+  }
+  .count,
+  .count-th {
+    width: 15% !important;
+  }
+  .vgt-fixed-header {
+    width: 100%;
+    @media (pointer: fine) {
+      padding-right: 1rem;
+    }
   }
 }
 
-.data-points { display:grid; gap:30px;
-  
+.data-points {
+  display: grid;
+  gap: 30px;
 }
 .runtime-holder {
-  .label { font-size:2.25vw; font-weight: bold; margin-bottom: 2rem; }
-  .measure { line-height: 1.35em; margin-bottom: 2rem;
-    .num { font-size:180%; }
-    &.days { font-size:5.35vw; }
-    &.hours { font-size:4.25vw; }
-    &.minutes { font-size:2.75vw; }
-    &.seconds { font-size:1.85vw; }
+  .label {
+    font-size: 2.25vw;
+    font-weight: bold;
+    margin-bottom: 2rem;
   }
-}
-
-@media (min-width:1330px) {
-  .data-points { grid-template-columns: 2fr 1fr;
-    .bonus-holder { order: 3; grid-column: span 2; }
-    .runtime-holder { order: 2; }
-    .table-holder { order: 1; }
-  }
-}
-@media (max-width:1329px) {
-  .table-holder { max-width: calc(100% - 1rem); }
-  .runtime-holder {
-    .measure {
-      &.days { font-size:14vw; }
-      &.hours { font-size:10vw; }
-      &.minutes { font-size:6.5vw; }
-      &.seconds { font-size:4vw; }
+  .measure {
+    line-height: 1.35em;
+    margin-bottom: 2rem;
+    .num {
+      font-size: 180%;
+    }
+    &.days {
+      font-size: 5.35vw;
+    }
+    &.hours {
+      font-size: 4.25vw;
+    }
+    &.minutes {
+      font-size: 2.75vw;
+    }
+    &.seconds {
+      font-size: 1.85vw;
     }
   }
 }
 
+@media (min-width: 1330px) {
+  .data-points {
+    grid-template-columns: 2fr 1fr;
+    .bonus-holder {
+      order: 3;
+      grid-column: span 2;
+    }
+    .runtime-holder {
+      order: 2;
+    }
+    .table-holder {
+      order: 1;
+    }
+  }
+}
+@media (max-width: 1329px) {
+  .table-holder {
+    max-width: calc(100% - 1rem);
+  }
+  .runtime-holder {
+    .measure {
+      &.days {
+        font-size: 14vw;
+      }
+      &.hours {
+        font-size: 10vw;
+      }
+      &.minutes {
+        font-size: 6.5vw;
+      }
+      &.seconds {
+        font-size: 4vw;
+      }
+    }
+  }
+}
 
 @media (min-width: $desktop-min) {
-  .chart-holder { padding-left: 320px; }
+  .chart-holder {
+    padding-left: 320px;
+  }
 }

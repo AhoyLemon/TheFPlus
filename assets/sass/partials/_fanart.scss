@@ -1,26 +1,71 @@
-.fanart-grid { display:grid; gap:$gap; justify-content: end;
-  .fanart-headline { grid-column:1/-1; padding:1em 0; }
+@use "shared" as *;
 
-  .fanart-options { grid-column:1/-1; padding-top:$gap; padding-bottom: $gap;
-    a { display: inline-block; font-size:92%; padding:0.5em 1.1em; border:1px solid currentColor; text-decoration:none; border-radius: 3px; margin-right:$gap; margin-bottom:$gap;
-      &:hover { background:$red; color:$white; }
-      &.active { background:$black; color:$white; }
+.fanart-grid {
+  display: grid;
+  gap: $gap;
+  justify-content: end;
+  .fanart-headline {
+    grid-column: 1/-1;
+    padding: 1em 0;
+  }
+
+  .fanart-options {
+    grid-column: 1/-1;
+    padding-top: $gap;
+    padding-bottom: $gap;
+    a {
+      display: inline-block;
+      font-size: 92%;
+      padding: 0.5em 1.1em;
+      border: 1px solid currentColor;
+      text-decoration: none;
+      border-radius: 3px;
+      margin-right: $gap;
+      margin-bottom: $gap;
+      &:hover {
+        background: $red;
+        color: $white;
+      }
+      &.active {
+        background: $black;
+        color: $white;
+      }
     }
   }
   .artist-box {
-    .inner { text-align: right; position: relative; font-size:1.8rem; padding:1.5em 0.5em; background:#333; color:#eee; height:100%
+    .inner {
+      text-align: right;
+      position: relative;
+      font-size: 1.8rem;
+      padding: 1.5em 0.5em;
+      background: #333;
+      color: #eee;
+      height: 100%;
     }
-    a { text-decoration:none;
-      &:hover, &:focus { text-decoration:underline; }
-    } 
+    a {
+      text-decoration: none;
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
-.fanart-cta { padding:1em; background:#fff; box-shadow: 0 0 4px rgba(52,52,52,0.2); margin-right:$gap; margin-bottom:($gap * 3); }
-
+.fanart-cta {
+  padding: 1em;
+  background: #fff;
+  box-shadow: 0 0 4px rgba(52, 52, 52, 0.2);
+  margin-right: $gap;
+  margin-bottom: ($gap * 3);
+}
 
 //Fanart grid, wherever it shows up.
 
-.fanart-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); padding-right: $gap;
-  .fanart-thumb { @include fanart-thumbnail() }
+.fanart-grid {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  padding-right: $gap;
+  .fanart-thumb {
+    @include fanart-thumbnail();
+  }
 }

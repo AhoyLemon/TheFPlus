@@ -9,13 +9,15 @@
     $artistPage = null;
   }
 
-  $fanartThumbnail = $fanart->crop(320)->url();
+  $fanartThumbnail = $fanart->crop(400,300)->url();
   $fanartFull = $fanart->url();
   if ($fanart->episode()->isNotEmpty() && $site->find('episode/'. $fanart->episode())) {
+    $episodeSlug = $fanart->episode();
     $episodeExists = true;
     $episodeTitle = $site->find('episode/'.$fanart->episode())->title();
     $episodeURL = $site->find('episode/'.$fanart->episode())->url();  
   } else {
+    $episodeSlug = "";
     $episodeExists = false;
     $episodeTitle = "";
     $episodeURL = "";  
@@ -44,13 +46,13 @@
       <?php if ($fanart->width()) { echo 'full-width="' . $fanart->width() . '"'; } ?>
       <?php if ($fanart->height()) { echo 'full-height="' . $fanart->height() . '"'; } ?>
     >
-      <img src="<?= $fanartThumbnail; ?>" loading="lazy" width="320" height="320" alt="<?= $altText; ?>" />
+      <img src="<?= $fanartThumbnail; ?>" loading="lazy" alt="<?= $altText; ?>" />
     </a>
     <figcaption class="details">
 
       <?php if ($episodeExists && $page->intendedTemplate() != 'episode') { ?>
         <div class="detail episode">
-          <label>Episode</label>
+          <label>Episode <?=$episodeSlug; ?></label>
           <div class="text">
             <a href="<?= $episodeURL; ?>">
               <span><?= $episodeTitle; ?></span>

@@ -1,0 +1,33 @@
+title: People
+icon: users
+pages:
+  sort: role asc
+  template:
+    - person
+files: false
+columns:
+  main:
+    width: 1/2
+    fields:
+      text:
+        label: Page Text
+        type: markdown
+  
+  # Project Pages
+  projectPages:
+    width: 1/2
+    sections:
+      pages:
+        type: pages
+        headline: Projects
+        parent: site.find("meet")
+        layout: table
+        sortBy: date desc
+        sortable: false
+        columns:
+          title:
+            width: 1/3
+          role:
+            width: 1/3
+          job:
+            width: 1/3

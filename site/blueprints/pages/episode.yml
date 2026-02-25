@@ -1,0 +1,214 @@
+title: F Plus Episode
+icon: play
+
+status:
+  draft:
+    label: Upcoming
+    text: We are probably going to work for this client soon
+  unlisted:
+    label: Archived
+    text: We are no longer working for this client
+  listed:
+    label: Current
+    text: Active client with current projects
+
+columns:
+  main:
+    width: 2/3
+    fields:
+      date:
+        label: Release Date
+        type: date
+        width: 1/4
+        display: MMM D, YYYY
+      time:
+        label: Release Time
+        type: time
+        interval: 1
+        width: 1/4
+      featured_site:
+        label: Site(s) featured
+        type: tags
+        icon: globe
+        width: 1/2
+        help: Comma separated, no HTTP://
+      cast:
+        label: Cast
+        type: tags
+        icon: users
+      episode_file:
+        label: Episode File
+        type: text
+        placeholder: (ex fplus_055.mp3)
+        required: true
+        width: 1/4
+        help: ~/podcasts/
+      transcript:
+        label: Transcript VTT
+        type: text
+        placeholder: (ex fplus_055.vtt)
+        width: 1/4
+        help: ~/podcasts/transcripts/
+      runtime:
+        label: Runtime
+        type: text
+        placeholder: H:MM:SS
+        icon: road
+        width: 1/4
+      file_size:
+        label: File Size (in Mb)
+        type: number
+        placeholder: (ex 36)
+        width: 1/4
+      document_link:
+        label: Document Link
+        type: url
+        icon: file-text-o
+        width: 1/2
+      editor:
+        label: Editor
+        type: tags
+        icon: scissors
+        width: 1/4
+      provider:
+        label: Provider
+        type: tags
+        width: 1/4
+        icon: gift
+      text:
+        label: Episode Summary
+        type: markdown
+        icon: align-left
+      music_used:
+        label: Music Used (comma separated)
+        type: text
+        icon: music
+      tags:
+        label: Episode Tags
+        lowercase: true
+        type: tags
+      bonus_content:
+        label: Additional Fun
+        type: markdown
+        icon: code
+        help: Optional, anything here will be under the **Additional Fun** header
+
+      # BALLPIT URL
+      ballpit_url:
+        label: Ballpit thread URL
+        type: url
+        width: 1/2
+
+      # COVER IMAGE CITATION
+      cover_cite_toggle:
+        label: Cite Cover Image?
+        type: toggle
+        default: "no"
+        options:
+          no: "No"
+          yes: "Yes"
+        width: 1/4
+      cover_cite_title:
+        label: Art Title
+        type: text
+        width: 1/3
+        when:
+          cover_cite_toggle: true
+      cover_cite_artist:
+        label: Artist Name
+        type: text
+        width: 1/3
+        when:
+          cover_cite_toggle: true
+      cover_cite_url:
+        label: Artist URL
+        type: url
+        width: 1/3
+        when:
+          cover_cite_toggle: true
+
+      # CHAPTERS
+      chapters_toggle:
+        label: Do you have chapters?
+        type: toggle
+        default: "no"
+        options:
+          no: "No"
+          yes: "Yes"
+        width: 1/4
+
+      chapters:
+        label: Chapters
+        type: structure
+        modalsize: large
+        style: table
+        fields:
+          timestamp:
+            label: Time Stamp
+            type: text
+            placeholder: HH:MM:SS
+            icon: clock-o
+            width: 1/3
+          name:
+            label: Name
+            type: text
+            width: 2/3
+        when:
+          chapters_toggle: true
+
+      chapters_json:
+        label: Chapters JSON
+        type: text
+        placeholder: (ex fplus_055.chapters.json)
+        width: 1/2
+        help: ~/podcasts/chapters/
+        when:
+          chapters_toggle: true
+      chapter_provider:
+        label: Chapter info provided by
+        type: tags
+        width: 1/2
+        when:
+          chapters_toggle: true
+
+  sidebar:
+    width: 1/3
+
+    fields:
+      cover:
+        label: Cover Image
+        type: files
+        layout: cards
+        width: 1/2
+    sections:
+      fields:
+        cover:
+          label: Cover Image
+          type: files
+          width: 1/2
+          required: true
+          multiple: false
+          layout: cards
+          query: page.images
+          info: "{{ file.dimensions }}"
+          image:
+            ratio: 1/1
+            cover: true
+            back: black
+      gallery:
+        label: Gallery
+        type: files
+        template: gallery
+      # files:
+      #   headline: Logo
+      #   max: 1
+      #   layout: cardlets
+      #   template: agency-client-logo
+      #   info: "{{ file.dimensions }}"
+      #   image:
+      #     back: white
+      #     ratio: 1/1
+      # projects:
+      #   create: false
+      #   type: pages
+      #   query: page.projects

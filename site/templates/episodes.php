@@ -2,8 +2,8 @@
     <!-- RSS LINK -->
 
   <main class="main edge-to-edge" role="main" data-template="episodes">
-    <?php $ftag = urldecode (param('tag')); ?>
-    <?php $thispage = urldecode(param('page')); ?>
+    <?php $ftag = param('tag') !== null ? urldecode(param('tag')) : null; ?>
+    <?php $thispage = param('page') !== null ? urldecode(param('page')) : null; ?>
     <?php if ($ftag): ?>
       <ul class="tags filtered">
         <label>browsing: </label>
@@ -14,15 +14,15 @@
     <?php $fsites = explode(",", $page->featured_site()); ?>
     
     <?php if ($thispage == "") {
-      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(27);
+      $articles = $page->children()->listed()->sortBy('date', 'desc')->paginate(27);
       $showRandom = true;
       $otherOptionsTile = false;
     } else if ($ftag) {
-      $articles = $page->children()->visible()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(26);
+      $articles = $page->children()->listed()->filterBy('tags', $ftag, ',')->sortBy('date', 'desc')->paginate(26);
       $showRandom = false;
       $otherOptionsTile = false;
     } else {
-      $articles = $page->children()->visible()->sortBy('date', 'desc')->paginate(26);
+      $articles = $page->children()->listed()->sortBy('date', 'desc')->paginate(26);
       $showRandom = false;
       $otherOptionsTile = rand(4, 20);
     } ?>

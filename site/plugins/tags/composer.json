@@ -1,0 +1,23 @@
+{
+  "name": "ahoylemon/kirby-tags",
+  "type": "kirby-plugin",
+  "version": "1.0",
+  "description": "A Kirby 5 plugin that generates a tagcloud page listing all tags used in the site and links to tag result pages.",
+  "homepage": "https://github.com/ahoylemon/kirby-tags",
+  "license": "CC-BY",
+  "authors": [
+    {
+      "name": "Lemon",
+      "email": "lemon@thefpl.us"
+    }
+  ],
+  "keywords": [
+    "kirby",
+    "kirby-cms",
+    "kirby-plugin",
+    "tags",
+    "tagcloud",
+    "tag-cloud",
+    "tag-results"
+  ]
+}

@@ -1,10 +1,9 @@
 <section class="briefs summaries">
-  <?php /*  $articles = $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(12) */ ?>
-
-    <?php $i = 0; $pageCount = urldecode(param('page')); ?>
-
+    <?php 
+      $i = 0;
+      $pageCount = param('page') !== null ? urldecode(param('page')) : null; 
+    ?>
     <?php foreach($articles as $article) { ?>
-
     <?php
       $i++;
       $briefType = $article->parent()->slug();
@@ -42,18 +41,16 @@
           <?php /* Brief Image */ ?>
           <figure>
             <a href="<?= $article->url(); ?>" >
-              <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" width="<?= $article->cover()->toFile()->width(); ?>" height="<?= $article->cover()->toFile()->height(); ?>" />
-              <?php } else if ($article->image())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" width="<?= $article->image()->toFile()->width(); ?>" height="<?= $article->image()->toFile()->width(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" />
-              <?php } ?>
+              <?php if ($coverFile = ($article->cover()->isNotEmpty() ? $article->cover()->toFile() : $article->images()->first())): ?>
+                <img src="<?= $article->coverImage() ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($coverFile->extension() == 'png') { echo ' no-shadow'; } ?>" width="<?= $coverFile->width(); ?>" height="<?= $coverFile->height(); ?>" />
+              <?php endif ?>
             </a>
           </figure>
 
           <figcaption>
             
             <?php if ($article->date()) { ?>
-              <time><?= date('l F jS, Y', $article->date()); ?></time>
+              <time><?= $article->date()->toDate('l F jS, Y') ?></time>
             <?php } ?>
 
             <h2 class="title">
@@ -64,9 +61,9 @@
 
             <div class="description">
               <?php if ($briefType == "wrote") {
-                echo excerpt($article->text(), 700);
+                echo $article->text()->excerpt(700);
               } else {
-                echo excerpt($article->text(), 460);
+                echo $article->text()->excerpt(460);
               } ?>
             </div>
             
@@ -145,11 +142,9 @@
         <?php if ($briefType != "wrote") { ?>
           <figure>
             <a href="<?= $article->url(); ?>">
-              <?php if ($article->cover()->isNotEmpty()) { ?>
-                <img src="<?= $article->cover()->toFile()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->cover()->toFile()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
-              <?php } else if ($article->image())  { ?>
-                <img src="<?= $article->image()->url(); ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($article->image()->extension() == "png") { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
-              <?php } ?>
+              <?php if ($coverFile2 = ($article->cover()->isNotEmpty() ? $article->cover()->toFile() : $article->images()->first())): ?>
+                <img src="<?= $article->coverImage() ?>" alt="<?= $article->title(); ?>" class="cover<?php if ($coverFile2->extension() == 'png') { echo ' no-shadow'; } ?>" width="450" height="450" loading="lazy" />
+              <?php endif ?>
             </a>
           </figure>
         <?php } ?>
@@ -168,9 +163,9 @@
           <figcaption>
             <div class="description">
               <?php if ($briefType == "wrote") {
-                echo excerpt($article->text(), 420);
+                echo $article->text()->excerpt(420);
               } else {
-                echo excerpt($article->text(), 265);
+                echo $article->text()->excerpt(265);
               } ?>
             </div>
           </figcaption>
@@ -264,9 +259,9 @@
 
       <?php if ($article->date()) { ?>
         <time class="timebox">
-          <span class="day"><?= date('d', $article->date()); ?></span>
-          <span class="month"><?= date('M', $article->date()); ?></span>
-          <span class="year"><?= date('Y', $article->date()); ?></span>
+          <span class="day"><?= $article->date()->toDate('d') ?></span>
+          <span class="month"><?= $article->date()->toDate('M') ?></span>
+          <span class="year"><?= $article->date()->toDate('Y') ?></span>
         </time>
       <?php } ?>
   

@@ -13,6 +13,7 @@
       "alternateName": "The F+",
       "sameAs" : [ 
         <?php 
+        /*
           $i = 0;
           $c = count($site->schema_sameas()->toStructure());
           foreach ($site->schema_sameas()->toStructure() as $sameas) {
@@ -21,6 +22,7 @@
             if ($i != $c) { echo ', 
             '; }
           }
+          */
         ?>
       ],
       "owns": {
@@ -45,6 +47,7 @@
       <h2>Cache flushed</h2>
     <?php endif ?>
 
-    <?php snippet('briefs',  [ 'articles' => $site->grandChildren()->visible()->sortBy('date', 'desc')->paginate(15)]) ?>
+    <?php snippet('briefs',  [ 'articles' => $site->grandChildren()->listed()->sortBy('date', 'desc')->paginate(15)]) ?>
+    
   </main>
 <?php snippet('footer') ?>

@@ -1,10 +1,12 @@
+@use "sass:color";
+
 // COLORS
 $white: #eee;
 
 $black: #343434;
 $red: #c0282d;
 $green: #3eae12;
-$yellow:#e5e972;
+$yellow: #e5e972;
 $teal: #4e7f71;
 
 // COLOR UTILITIES
@@ -19,40 +21,40 @@ $also-made: #1b1426;
 $adjudicated-guess: #afdbfe;
 $wrote: #faecce;
 $episode: #fff;
-$merchBorder: lighten($black,50%);
+$merchBorder: color.adjust($black, $lightness: 50%);
 
 // BRAND COLORS
-  $color-twitter: #55acee;
-  $color-ballpit: #4eb85d;
-  $color-github: #181717;
-  $color-youtube: #ff0000;
-  $color-googleplus: #D34836;
-  $color-flattr-green: #89b443;
-  $color-flattr-orange: #f9ad33;
-  $color-facebook: #3B5998;
-  $color-tumblr: #36465d;
-  $color-reddit: #ff4500;
-  $color-lemon: #e5e828;
-  $color-paypal: #00457C;
-  $color-pocket: #EF3F56;
-  $color-pocketcasts: #EF4438;
-  $color-twitch: #6441A4;
+$color-twitter: #55acee;
+$color-ballpit: #4eb85d;
+$color-github: #181717;
+$color-youtube: #ff0000;
+$color-googleplus: #d34836;
+$color-flattr-green: #89b443;
+$color-flattr-orange: #f9ad33;
+$color-facebook: #3b5998;
+$color-tumblr: #36465d;
+$color-reddit: #ff4500;
+$color-lemon: #e5e828;
+$color-paypal: #00457c;
+$color-pocket: #ef3f56;
+$color-pocketcasts: #ef4438;
+$color-twitch: #6441a4;
 
 // FONTS
-$source: 'Source Sans Pro', sans-serif;
+$source: "Source Sans Pro", sans-serif;
 $noto: "Noto Serif", serif;
 $font-size: 18px;
-$light:300;
-$normal:400;
-$bold:700;
-$heavy:600;
+$light: 300;
+$normal: 400;
+$bold: 700;
+$heavy: 600;
 
 // FONT UTILITIES
 $sans-serif: $noto;
 
 // MEASUREMENTS //////////////////////////////////////////////////////////////////////
 $sidebar: 320px;
-$mobile-top:56px;
+$mobile-top: 56px;
 $gap: 10px;
 $halfGap: 5px;
 $doubleGap: ($gap * 2);
@@ -60,10 +62,10 @@ $padding: 20px;
 $mobile-max: 980px;
 $desktop-min: 981px;
 $briefWidth: 330px;
+$mobileLogoSize: 64px;
 
 // ZAZZLE!!!!!!
-$boxShadow: 0 0 4px rgba($black,0.2);
-
+$boxShadow: 0 0 4px rgba($black, 0.2);
 
 // ANIMATIONS //////////////////////////////////////////////////////////////////////////////////////
 @keyframes skeleton {

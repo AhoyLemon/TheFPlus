@@ -6,14 +6,18 @@ crap/
 backup/
 site/accounts
 site/cache
-site/config/config.php
+!site/config/config.php
 thumbs/
 stripe/
 json/
+content_old/
+site/sessions
+media/pages/*
+site/logs/*
 
-
-#content/
-!site.txt
+# Node / Bun
+node_modules/
+bun.lockb
 
 # Ignore all files in the podcasts directory
 podcasts/*
@@ -25,3 +29,9 @@ podcasts/*
 # Except for the chapters directory and its contents
 !podcasts/chapters/
 !podcasts/chapters/*
+.htaccess
+
+
+## Kirby 2 -> 5 migration
+content_old/
+kirby_old/

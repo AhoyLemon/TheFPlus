@@ -1,0 +1,45 @@
+Title: Lemon
+
+----
+
+Job: President For Life
+
+----
+
+Role: regular
+
+----
+
+Text: Lemon makes websites and he hosts this podcast. He could tell you more about himself, and maybe he will, but let's talk about you for a minute. **How are you?** Are you comfortable? Do you need something to drink?
+
+----
+
+Website: https://ahoylemon.xyz
+
+----
+
+Twitter: 
+
+----
+
+Email: lemon@thefpl.us
+
+----
+
+Favorite-episode: 349,249,215
+
+----
+
+Ballpit-account: http://ballp.it/index.php?action=profile;u=1
+
+----
+
+Cover: lemonsquare.jpg
+
+----
+
+Mastodon: https://mastodon.social/@AhoyLemon
+
+----
+
+Uuid: plmfpeceqsej3cf5

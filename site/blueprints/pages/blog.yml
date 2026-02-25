@@ -1,0 +1,37 @@
+title: Blog Post
+pages: true
+
+columns:
+  main:
+    width: 3/4
+    fields:
+      author:
+        label: Author
+        type: tags
+        icon: user
+        width: 1/2
+      date:
+        label: Release Date
+        type: date
+        width: 1/4
+        display: MMM D, YYYY
+      time:
+        label: Release Time
+        type: time
+        interval: 1
+        width: 1/4
+        display: h:mm A
+      text:
+        label: Page Text
+        type: markdown
+      tags:
+        label: Tags
+        lowercase: true
+        type: tags
+
+  sidebar:
+    width: 1/4
+    sections:
+      pageFiles:
+        label: Page Files
+        type: files

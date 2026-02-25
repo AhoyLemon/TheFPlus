@@ -1,179 +1,252 @@
 title: Site
-pages: 
-  template:
-    - default
-    - episodes
-    - listing
-    - people
-    - results
-    - blogs
-    - stats
-    - guesses
-    - livestream
-    - merch
-fields:
-  title:
-    label: Title
-    type:  text
+icon: 🤪
 
-  sidebar_headline:
-    label: Sidebar Items
-    type: headline
+options:
+  title: false
+  duplicate: false
+  status: false
+  url: false
+  delete: false
 
-  sidebar_links:
-    label: Sidebar Links
-    type: builder
-    fieldsets:
-      page_link:
-        label: Page Link
-        entry: >
-          <a href="https://thefpl.us/{{slug}}">{{text}}</a>
-        fields:
-          slug:
-            label: Page
-            type: select
-            options: children
-            width: 1/2
-          text:
-            label: Text
-            type: Text
-            width: 1/2
-      custom_url:
-        label: Custom URL
-        entry: >
-          <a href="{{slug}}">{{text}}</a>
-        fields:
-          url:
-            label: URL
-            type: url
-            width: 1/2
-          text:
-            label: Text
-            type: text
-            width: 1/2
-      merch_page:
-        label: Merch Page
-        fields:
-          url:
-            label: " "
-            type: info
-            width: 1/2
-          text:
-            label: Text
-            type: text
-            width: 1/2
-      search_form:
-        label: Search Form
-        fields:
-          url:
-            label: " "
-            type: info
-            width: 1/2
-          text:
-            label: Placeholder
-            type: text
-            width: 1/2
-  sidebar_subscribe:
-    label: Subscribe Options
-    type: builder
-    width: 1/2
-    fieldsets:
-      subscribe_option:
-        label: Subscribe Option
-        entry: >
-          <a href="{{url}}" target="_blank">{{text}}</a>
-        fields:
-          icon:
-            label: Icon
-            type: select
-            width: 1/3
-            required: true
-            options:
-              rss: RSS
-              pocketcasts: Pocket Casts
-              itunes: Apple Podcasts
-              playmusic: Google Play Music
-              overcast: Overcast
-              radiopublic: Radio Public
-              podchaser: Podchaser
-          url:
-            label: URL
-            type: url
-            width: 2/3
-          text:
-            label: Text
-            type: Text
+tabs:
+  # Top Level Pages
+  pageTab:
+    label: Pages
+    columns:
+      - width: 1/2
+        sections:
+          top_pages:
+            headline: Top Level Pages
+            type: pages
+            info: "{{ page.children.count }} children"
+            layout: table
+            image:
+              cover: true
+              ratio: 1/1
+      - width: 1/2
+        sections:
+          hopper:
+            type: pages
+            headline: About Pages
+            parent: site.find("about")
+            layout: table
+          aboutPages:
+            type: pages
+            headline: Submit Pages
+            parent: site.find("submit")
+            layout: table
 
-  social_links:
-    label: Social Links
-    type: builder
-    width: 1/2
-    fieldsets:
-      page_link:
-        label: Network
-        entry: >
-          <a href="{{url}}" target="_blank">{{text}}</a>
+  # Site Sidebar
+  sidebarTab:
+    label: Sidebar
+    columns:
+      - width: 1/2
         fields:
-          icon:
-            label: Icon
-            type: select
-            width: 1/3
-            required: true
-            options:
-              ballpit: Ball Pit
-              twitter: Twitter
-              github: GitHub
-              youtube: YouTube
-              rss: RSS
-              pocketcasts: Pocket Casts
-              itunes: iTunes
-              paypal: PayPal
-              podchaser: Podchaser
-              lemon: Lemon
-              damndog: Damn Dog
-              twitch: Twitch
-              soundcloud: Soundcloud
-              mastodon: Mastodon
-          url:
-            label: URL
-            type: url
-            width: 1/3
-          text:
-            label: Text
-            type: Text
-            width: 1/3
-          
-  meta_headline:
-    label: Meta Information
-    type: headline
-  
-  email:
-    label: Site Admin Email
-    type: email
-    required: true
-    width: 1/2
-  twitter_handle:
-    label: Twitter Handle (no @)
-    type: text
-    placeholder: (no @)
-    icon: twitter
-    width: 1/2
-    required: true
+          sidebar_links:
+            label: Sidebar Links
+            type: structure
+            fields:
+              text:
+                label: Text
+                type: text
+                width: 1/2
+              link_type:
+                label: Link type:
+                type: select
+                width: 1/2
+                # required: true
+                options:
+                  url: URL
+                  slug: Page
+                  search: search
+              page_slug:
+                label: Page
+                type: pages
+                multiple: false
+                when:
+                  link_type: slug
+              page_url:
+                label: URL
+                type: url
+                when:
+                  link_type: url
+            columns:
+              text: true
+      - width: 1/2
+        fields:
+          subscribe_options:
+            label: Sidebar Links
+            type: structure
+            fields:
+              icon:
+                label: Icon
+                type: select
+                width: 1/3
+                required: true
+                options:
+                  rss: RSS
+                  pocketcasts: Pocket Casts
+                  itunes: Apple Podcasts
+                  playmusic: Google Play Music
+                  overcast: Overcast
+                  radiopublic: Radio Public
+                  podchaser: Podchaser
+              url:
+                label: URL
+                type: url
+                width: 2/3
+                required: true
+              text:
+                label: Text
+                type: text
+                required: true
+          social_links:
+            label: Social Links
+            type: structure
+            fields:
+              icon:
+                label: Icon
+                type: select
+                width: 1/3
+                required: true
+                options:
+                  ballpit: Ball Pit
+                  twitter: Twitter
+                  github: GitHub
+                  youtube: YouTube
+                  rss: RSS
+                  pocketcasts: Pocket Casts
+                  itunes: iTunes
+                  paypal: PayPal
+                  podchaser: Podchaser
+                  lemon: Lemon
+                  damndog: Damn Dog
+                  twitch: Twitch
+                  soundcloud: Soundcloud
+                  mastodon: Mastodon
+              url:
+                label: URL
+                type: url
+                width: 2/3
+                required: true
+              text:
+                label: Text
+                type: text
+                required: true
 
-  schema_sameas:
-    label: Schema SameAs
-    type: structure
-    entry: >
-      {{url}}
+  # Site Meta
+  siteMetaTab:
+    label: Site MetaInfo
     fields:
-      url:
-        label: URL
-        type: url
+      email:
+        label: Site Admin Email
+        type: email
+        required: true
+        width: 1/2
+      twitter_handle:
+        label: Twitter Handle (no @)
+        type: text
+        placeholder: (no @)
+        icon: twitter
+        width: 1/2
+        required: false
+      og_image:
+        label: OpenGraph Image
+        help: Will be used if a page-specific OG image cannot be found.
+        extends: fields/image
+        query: site.find('/').image
+        width: 1/2
+      description:
+        extends: fields/simpletext
+        width: 1/2
+        help: Will be used if a page-specific OG image cannot be found.
+      schema_sameas:
+        label: Schema SameAs
+        type: structure
+        fields:
+          url:
+            label: URL
+            type: url
 
+      copyright:
+        label: Copyright
+        type: text
 
-  description:
-    label: Description
-    type:  textarea
-  copyright:
-    label: Copyright
-    type:  text
+  # Episode Pages
+  episodeTab:
+    label: F+ Episodes
+    sections:
+      episodes:
+        extends: sections/episodePages
+        status: listed
+        layout: cards
+        size: medium
+        limit: 48
+
+  # Projects & Merch
+  projectTab:
+    label: Projects & Merch
+    columns:
+      - width: 1/2
+        sections:
+          projectItems:
+            type: pages
+            parent: site.find("also-made")
+            template:
+              - other-project
+            info: "{{ page.category }}"
+            layout: cardlets
+            size: small
+            sortBy: date desc
+            sortable: false
+            image:
+              cover: true
+      - width: 1/2
+        sections:
+          merchItems:
+            type: pages
+            parent: site.find("merch")
+            template:
+              - merch-type
+              - stickers
+            layout: cards
+            size: small
+            sortBy: date desc
+            sortable: false
+            image:
+              ratio: 1/1
+              cover: true
+
+  # People
+  peopleTab:
+    label: People
+    columns:
+      - width: 1/1
+        sections:
+          ridiculists:
+            type: pages
+            parent: site.find("meet")
+            layout: cardlets
+            size: small
+            sortBy: date desc
+            sortable: false
+            info: '<strong style="text-transform:capitalize">{{page.role}}</strong><br />{{page.job}}'
+            limit: 40
+
+  # People
+  fanartTab:
+    label: Fanart
+    columns:
+      - width: 1/1
+        sections:
+          fanartFiles:
+            parent: site.find('fanart')
+            label: Fanart Images
+            type: files
+            layout: cards
+            template: fanimage
+            sortable: false
+            image:
+              ratio: 1/1
+              cover: true
+            limit: 24

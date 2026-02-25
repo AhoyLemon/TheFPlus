@@ -5,7 +5,7 @@
 
   <!-- SET UP VARIABLES -->
   <?php 
-    $pubdate = date('l, F jS Y', $page->date());
+    $pubdate = $page->date()->toDate('F jS, Y');
     $pubtime = date("g:ia", strtotime($page->time()));
     $etags = explode(",", $page->tags());
   ?>

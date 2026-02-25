@@ -1,0 +1,31 @@
+title: Other Projects
+icon: circle-filled
+pages: true
+files: false
+columns:
+  main:
+    width: 2/3
+    fields:
+      title:
+        label: Title
+        type:  text
+      text:
+        label: Page Text
+        type: markdown
+  
+  # Project Pages
+  projectPages:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+        headline: Projects
+        parent: site.find("also-made")
+        layout: cardlets
+        size: small
+        sortBy: date desc
+        sortable: false
+        info: "<strong>{{ page.category }}</strong>"
+        image:
+          ratio: 16/9
+          cover: true

@@ -4,34 +4,63 @@
 
     $paginateCount = 50;
 
-    if (param('artist')) {
-      $sortType = "artist";
-      $fanartSort = $page->images()->filterBy('artist', param('artist'))->paginate($paginateCount);
-    } else if (param('sort') == "artist") {
-      $sortType = "artist";
-      $fanartSort = $page->images()->sortBy('artist')->paginate($paginateCount);
-    } else if (param('sort') == "artist-reverse") {
-      $sortType = "artist-reverse";
-      $fanartSort = $page->images()->sortBy('artist','desc')->paginate($paginateCount);
-    } else if (param('sort') == "episode") {
-      $sortType = "episode";
-      $fanartSort = $page->images()->sortBy('episode')->paginate($paginateCount);
-    } else if (param('sort') == "episode-reverse") {
-      $sortType = "episode-reverse";
-      $fanartSort = $page->images()->sortBy('episode','desc')->paginate($paginateCount);
-    } else if (param('sort') == "random") {
-      $sortType = "random";
-      $fanartSort = $page->images()->shuffle()->paginate($paginateCount);
-    } else {
-      $sortType = "random";
-      $fanartSort = $page->images()->shuffle()->paginate($paginateCount);
+    // use query parameters instead of URL segments
+    $artistParam = get('artist');
+    $sortParam   = get('sort');
+
+    // start with the full set of images then narrow/sort as needed
+    $images = $page->images();
+
+    if ($artistParam) {
+      $images = $images->filterBy('artist', $artistParam);
     }
+
+    $sortType = null;
+
+    switch ($sortParam) {
+      case 'artist':
+        $sortType = 'artist';
+        $images   = $images->sortBy('artist');
+        break;
+      case 'artist-reverse':
+        $sortType = 'artist-reverse';
+        $images   = $images->sortBy('artist', 'desc');
+        break;
+      case 'episode':
+        $sortType = 'episode';
+        $images   = $images->sortBy('episode');
+        break;
+      case 'episode-reverse':
+        $sortType = 'episode-reverse';
+        $images   = $images->sortBy('episode', 'desc');
+        break;
+      case 'random':
+        $sortType = 'random';
+        $images   = $images->shuffle();
+        break;
+      default:
+        // no explicit sort requested
+        break;
+    }
+
+    if (!$sortType) {
+      if ($artistParam) {
+        // default sort when filtering an artist: newest-first (episode-reverse)
+        $sortType = 'episode-reverse';
+        $images   = $images->sortBy('episode', 'desc');
+      } else {
+        $sortType = 'random';
+        $images   = $images->shuffle();
+      }
+    }
+
+    $fanartSort = $images->paginate($paginateCount);
   ?>
 
 
   <main class="main edge-to-edge fanart" role="main">
     
-    <section class="fanart-grid" <?php if (param('sort')) { echo 'sort="'. param('sort').'"';} ?> >
+<section class="fanart-grid" <?php if (!empty($sortParam)) { echo 'sort="'. $sortParam .'"';} ?> >
 
       <h1 class="fanart-headline"><?php echo $page->page_headline(); ?></h1>
 
@@ -41,11 +70,23 @@
           Sort all art by 
         </div>
         <div class="options">
-          <a class="switch-sort <?php if ($sortType == "artist") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort:artist">Artist↓</a>
-          <a class="switch-sort <?php if ($sortType == "artist-reverse") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort:artist-reverse">Artist↑</a>
-          <a class="switch-sort <?php if ($sortType == "episode") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort:episode">Episode↓</a>
-          <a class="switch-sort <?php if ($sortType == "episode-reverse") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort:episode-reverse">Episode↑</a>
-          <a class="switch-sort <?php if ($sortType == "random") { echo 'active'; } ?>" href="<?= $site->find('fanart')->url(); ?>/sort:random">Random!!!</a>
+          <?php
+            // helper to generate URLs for sort links
+            // if sort is artist/artist-reverse/random we clear any artist filter
+            $baseUrl = $site->find('fanart')->url();
+            function sortUrl($baseUrl, $sortName, $artistParam) {
+              $params = ['sort' => $sortName];
+              if ($artistParam && !in_array($sortName, ['artist','artist-reverse','random'])) {
+                $params['artist'] = $artistParam;
+              }
+              return $baseUrl . '?' . http_build_query($params);
+            }
+          ?>
+          <a class="switch-sort <?php if ($sortType == "artist") { echo 'active'; } ?>" href="<?= sortUrl($baseUrl, 'artist', $artistParam); ?>">Artist↓</a>
+          <a class="switch-sort <?php if ($sortType == "artist-reverse") { echo 'active'; } ?>" href="<?= sortUrl($baseUrl, 'artist-reverse', $artistParam); ?>">Artist↑</a>
+          <a class="switch-sort <?php if ($sortType == "episode") { echo 'active'; } ?>" href="<?= sortUrl($baseUrl, 'episode', $artistParam); ?>">Episode↓</a>
+          <a class="switch-sort <?php if ($sortType == "episode-reverse") { echo 'active'; } ?>" href="<?= sortUrl($baseUrl, 'episode-reverse', $artistParam); ?>">Episode↑</a>
+          <a class="switch-sort <?php if ($sortType == "random") { echo 'active'; } ?>" href="<?= sortUrl($baseUrl, 'random', $artistParam); ?>">Random!!!</a>
         </div>
       </div>
 
@@ -55,9 +96,23 @@
         </div>
         <div class="options">
           <?php foreach (explode(',', $page->featured_artists()) as $fartist) { ?>
-            <a class="filter-link <?php if (param('artist') == $fartist) { echo ' active'; } ?>"
-              href="<?= $site->find('fanart')->url() . '/artist:' . $fartist; ?>"
-            >
+            <?php
+              $activeClass = ($artistParam == $fartist) ? ' active' : '';
+
+              if ($fartist == $artistParam) {
+                // clicking the active artist link clears the filter
+                $artistParams = [];
+                if (!empty($sortParam)) {
+                  $artistParams['sort'] = $sortParam;
+                }
+              } else {
+                // selecting a new artist: default to episode-reverse sort
+                $artistParams = ['artist' => $fartist, 'sort' => 'episode-reverse'];
+              }
+
+              $artistUrl   = $site->find('fanart')->url() . '?' . http_build_query($artistParams);
+            ?>
+            <a class="filter-link<?= $activeClass ?>" href="<?= $artistUrl; ?>">
               <?= $fartist; ?>
             </a>
           <?php } ?>

@@ -1,9 +1,21 @@
 <?php snippet('header') ?>
 
+  <?php 
+    $showWhat = trim(strip_tags(kirby()->request()->get('show') ?? ''));
+    if ($showWhat == "links") {
+      $description = "A list of links submitted by listeners.";
+      $showLinks = true;
+    } else {
+      $description = "A list of documents submitted by listeners.";
+      $showLinks = false;
+    }
+  ?>
+
   <main class="main page" role="main">
 
     <article class="full">
       <h1><?php echo $page->title() ?></h1>
+      <h2><?= $description; ?></h2>
       <div class="article-text">
         <?php echo $page->text()->kirbytext() ?>
       </div>
@@ -18,7 +30,7 @@
             <span class="th">submitted by</span>
             <span class="th">submitted on</span>
           </li>
-          <?php foreach($page->builder()->toStructure()->sortBy('subdate', 'desc') as $section): ?>
+          <?php foreach($page->docs()->toStructure()->sortBy('subdate', 'desc') as $section): ?>
             <?php if (strpos($section->submitter(),',') !== false) {
               $multisubmit = true;
               $docsubmitters = explode(",", $section->submitter()); 
@@ -28,7 +40,7 @@
             <li>
               <span class="number-cell"></span>
               <span class="submission">
-                <?php if ((param('show') == "links")) { ?>
+                <?php if ($showLinks) { ?>
                   <a href="<?php echo $section->docurl(); ?>" target="_blank">
                     <?php echo $section->title(); ?>
                   </a>
@@ -43,7 +55,7 @@
                   </span>
                 <?php } ?>
                 
-                <?php if ((param('show') == "links") && ($section->dibs()->isNotEmpty())) { ?>
+                <?php if ($showLinks && ($section->dibs()->isNotEmpty())) { ?>
                   <?php $dibs = explode(',', $section->dibs()); ?>
                   <span class="dibs dibs-icon">
                     <?= count($dibs); ?>
@@ -82,14 +94,22 @@
                   <?php } ?>
                 </span>
               <?php } ?>
-              <?php if ($section->subdate() != "") { ?>
-                <time class="submitted-date">
-                  <?php $docdate = strtotime($section->subdate()); ?>
-                  <?php echo date('F jS, Y', $docdate); ?>
-                </time>
-              <?php } else { ?>
-                <span class="submitted-date blank"></span>
-              <?php } ?>
+              <?php
+                $subdateRaw = $section->subdate()->value();
+                if ($subdateRaw) {
+                  if (is_numeric($subdateRaw)) {
+                    // Assume Unix timestamp
+                    echo '<time class="submitted-date">' . date('M j, Y', (int)$subdateRaw) . '</time>';
+                  } elseif (strtotime($subdateRaw)) {
+                    // Assume date string
+                    echo '<time class="submitted-date">' . date('M j, Y', strtotime($subdateRaw)) . '</time>';
+                  } else {
+                    echo '<span class="submitted-date blank"></span>';
+                  }
+                } else {
+                  echo '<span class="submitted-date blank"></span>';
+                }
+              ?>
             </li>
           <?php endforeach ?>
         </ul>

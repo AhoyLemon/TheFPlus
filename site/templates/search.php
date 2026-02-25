@@ -4,7 +4,7 @@
   
   <form class="page-search">
     <div class="input-holder">
-      <input type="search" name="q" value="<?php echo esc($query) ?>">
+      <input type="search" name="q" value="<?php echo esc($query ?? '') ?>">
     </div>
     <button type="submit">search</button>
   </form>

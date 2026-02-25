@@ -1,0 +1,30 @@
+title: Episodes
+icon: rss
+
+status:
+  draft: true
+  listed: true
+
+create:
+  title:
+    label: Product name
+  fields:
+    - time
+    - slug
+  redirect: false
+
+tabs:
+  episodes:
+    sections:
+      episodePages:
+        extends: sections/episodePages
+        info: "<time style='display:block;'>{{page.date.toDate('M j Y')}}</time>#<strong>{{ page.slug }}</strong>"
+        limit: 40
+  pageMeta:
+    sections:
+      metaFields:
+        type: fields
+        fields:
+          text:
+            label: Meta Text
+            type: textarea

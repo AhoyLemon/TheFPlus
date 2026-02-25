@@ -1,0 +1,49 @@
+redirects:
+  -
+    from: episode/wctfm
+    to: 'page://acajntiwrkpyw8tn'
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: null
+  -
+    from: episode/200
+    to: /episode/200a
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: null
+  -
+    from: stickers
+    to: 'page://9a01qymj5mgi0sps'
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: lemon@thefpl.us
+  -
+    from: live
+    to: '/tags?tag=f%20plus%20live'
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: null
+  -
+    from: episode/100
+    to: /episode/100a
+    status: 301
+    priority: false
+    comment: '100 => 100a'
+    creator: lemon@thefpl.us
+    modifier: lemon@thefpl.us
+  -
+    from: donate
+    to: 'page://oxdddclkeyn44y70'
+    status: 301
+    priority: false
+    comment: ''
+    creator: lemon@thefpl.us
+    modifier: lemon@thefpl.us
