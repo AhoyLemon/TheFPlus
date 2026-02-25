@@ -32,10 +32,12 @@ fields:
         label: Title
         type: text
         icon: file-text-o
+        required: true
       docurl:
         label: URL
         type: url
         icon: link
+        required: true
       submitter:
         label: Submitter
         type: tags
@@ -46,20 +48,4 @@ fields:
         type: date
         width: 1/2
         default: today
-      gd_flag:
-        label: Garbage Day?
-        type: toggle
-        text: flagged
-        width: 1/4
-        icon: trash
-      dibs:
-        label: Dibs
-        type: tags
-        icon: flag
-        width: 3/4
-      recorded:
-        label: Recorded?
-        type: toggle
-        text: yup
-        width: 1/4
-        icon: play-circle
+        required: true

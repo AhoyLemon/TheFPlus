@@ -29,14 +29,16 @@ fields:
         label: Title
         type: text
         icon: file-text-o
+        required: true
       docurl:
         label: URL
         type: url
         icon: link
+        required: true
       submitter:
         label: Submitter
         type: tags
-        icon: gift
+        icon: user
         width: 1/2
       subdate:
         label: Date Submitted
@@ -60,7 +62,7 @@ fields:
         type: toggle
         text: yup
         width: 1/4
-        icon: play-circle
+        icon: play
   # clients:
   #   extends: sections/agency/clients
   #   layout: table
