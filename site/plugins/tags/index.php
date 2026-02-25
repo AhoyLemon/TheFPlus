@@ -22,7 +22,7 @@ Kirby::plugin('ahoylemon/tags', [
     // $site->tagCounts(array $slugs = [])
     //
     // Returns [ 'tagName' => int $count, ... ] sorted by count descending.
-    // Scans all listed grandchildren by default. Pass top-level page slugs
+    // Scans all listed pages by default. Pass top-level page slugs
     // to limit scope, e.g. $site->tagCounts(['episode', 'also-made']).
     // ------------------------------------------------------------------
     'siteMethods' => [
@@ -30,7 +30,7 @@ Kirby::plugin('ahoylemon/tags', [
             /** @var \Kirby\Cms\Site $this */
 
             if (empty($slugs)) {
-                $pages = $this->grandChildren()->listed();
+                $pages = $this->index()->listed();
             } else {
                 $collection = new \Kirby\Cms\Pages();
                 foreach ($slugs as $slug) {

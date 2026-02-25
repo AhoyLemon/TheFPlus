@@ -11,13 +11,16 @@ columns:
         icon: user
         width: 1/2
       date:
-        label: Publish Date
+        label: Release Date
         type: date
         width: 1/4
+        display: MMM D, YYYY
       time:
-        label: Publish Time
+        label: Release Time
         type: time
+        interval: 1
         width: 1/4
+        display: h:mm A
       text:
         label: Page Text
         type: markdown

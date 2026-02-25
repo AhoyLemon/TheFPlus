@@ -20,6 +20,7 @@ columns:
         label: Release Date
         type: date
         width: 1/4
+        display: MMM D, YYYY
       time:
         label: Release Time
         type: time

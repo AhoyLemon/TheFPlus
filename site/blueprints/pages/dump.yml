@@ -1,24 +1,24 @@
 title: Rejected Submissions
 icon: 🚮
 
-status:
-  draft: Locked
-  unlisted: Locked
-  listed: Locked
+# status:
+#   draft: Locked
+#   unlisted: Locked
+#   listed: Locked
 
 options:
-  title: false
-  status: false
-  duplicate: false
-  url: false
-  delete: false
+  title: true
+  status: true
+  duplicate: true
+  url: true
+  delete: true
 
 # sections:
 fields:
   text:
     label: Above Table
     type: markdown
-  rejected_documents:
+  docs:
     label: Rejected Documents
     type: structure
     style: table
@@ -49,3 +49,4 @@ fields:
         width: 1/2
         default: today
         required: true
+        display: MMM d, YYYY

@@ -3,17 +3,17 @@ icon: 🗄️
 
 options:
   title: false
-  status: false
-  duplicate: false
-  url: false
-  delete: false
+  status: true
+  duplicate: true
+  url: true
+  delete: true
 
 # sections:
 fields:
   text:
     label: Above Table
     type: markdown
-  documents:
+  docs:
     label: Submitted Document
     type: structure
     modalsize: large
@@ -23,7 +23,6 @@ fields:
       title: true
       submitter: true
       subdate: true
-      recorded: true
     fields:
       title:
         label: Title
@@ -39,11 +38,13 @@ fields:
         label: Submitter
         type: tags
         icon: user
+        required: true
         width: 1/2
       subdate:
         label: Date Submitted
         type: date
         default: today
+        display: MMM d, YYYY
         required: true
         width: 1/4
       gd_flag:

@@ -42,7 +42,7 @@ No composer step required. Kirby auto-loads all plugins in `site/plugins/`.
 ## How it works
 
 Kirby 5 removed the `tagcloud()` helper that existed in Kirby 2. This plugin
-replaces it with a `$site->tagCounts()` method that scans all listed grandchildren
+replaces it with a `$site->tagCounts()` method that scans all listed pages
 for comma-separated `tags` fields and returns a frequency map.
 
 Tag filtering uses a plain `?tag=` query string rather than Kirby 2's `key:value`
@@ -56,7 +56,7 @@ URL param style (e.g. `/find/tag:foo`). This avoids routing complications entire
 Returns `[ 'tagName' => count ]` sorted by count descending.
 
 ```php
-// Scan all grandchildren (every top-level section)
+// Scan all listed pages
 $tags = $site->tagCounts();
 
 // Limit to specific top-level sections

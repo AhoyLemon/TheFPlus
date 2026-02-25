@@ -18,7 +18,8 @@
   } else if ( in_array($page->template(), ['episodes', 'blogs', 'other-projects', 'guesses'] )) {
     $lastUpdated = $page->children()->listed()->sortBy('date', 'desc')->first()->date('Y-m-d');
   } else if ( in_array($page->template(), ['hopper', 'dump'] )) {
-    $lastUpdated = $page->builder()->toStructure()->sortBy('subdate', 'desc')->first()->subdate();
+    $firstDoc = $page->docs()->toStructure()->sortBy('subdate', 'desc')->first();
+    $lastUpdated = $firstDoc ? $firstDoc->subdate() : "";
   } else if ($page->template() == "stickers") { 
     $lastUpdated = $page->stickers()->toStructure()->sortBy('series_num', 'desc')->first()->released();
   } else {

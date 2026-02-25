@@ -16,7 +16,7 @@
             <span class="th">submitted by</span>
             <span class="th">dumped on</span>
           </li>
-          <?php foreach($page->builder()->toStructure()->flip() as $section): ?>
+          <?php foreach($page->docs()->toStructure()->flip() as $section): ?>
             <?php if (strpos($section->submitter(),',') !== false) {
               $multisubmit = true;
               $docsubmitters = explode(",", $section->submitter()); 

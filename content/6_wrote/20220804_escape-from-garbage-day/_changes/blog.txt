@@ -2,6 +2,18 @@ Title: Escape From Garbage Day
 
 ----
 
+Author: Lemon
+
+----
+
+Date: 2022-08-04
+
+----
+
+Time: 14:00:00
+
+----
+
 Text:
 
 On **September 17th 2022**, The Ridiculists will escape From Garbage Day.
@@ -22,22 +34,11 @@ You can familiarize yourself with the [2020](https://thefpl.us/episode/garbage-d
 
 ----
 
-Author: - Lemon
+Tags: garbage day, 24 terrible hours
 
 ----
 
-Date: 
-
-----
-
-Time: 14:00:00
-
-----
-
-Tags:
-
-- garbage day
-- 24 terrible hours
+Cover: garbage_day_square.jpg
 
 ----
 
@@ -46,7 +47,3 @@ Uuid: 9podrk0jj2pxf4l5
 ----
 
 Lock: RB6d4kpc
-
-----
-
-Cover: 
